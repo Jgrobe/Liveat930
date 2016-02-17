@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{website.siteTitle} | {collection.title}</title>
 
     <link rel="icon" type="image/png" href="favicon.png">
 
     <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/6811694/6322752/css/fonts.css"/>
-
-    {squarespace-headers}
 
     <squarespace:script combo="true" src="libs/jquery-2.1.0.min.js" />
     <squarespace:script combo="true" src="libs/greensock/TweenMax.min.js" />
@@ -27,7 +27,10 @@
     <squarespace:script combo="true" src="custom/FieldTracker.js" />
     <squarespace:script combo="true" src="custom/Parallaxer.js" />
 
+    {squarespace-headers}
+
 </head>
+
 <body id="{squarespace.page-id}" class="{squarespace.page-classes}{.if item}{.section item}{.if productType}{.or}{.main-image?} has-banner-image item-main-image{.end}{.end}{.end}{.or}{.section collection}{.collectionTypeNameEquals? index}{.section collections}{.section 0}{.main-image?} has-banner-image index-page{.end}{.end}{.end}{.or}{.main-image?} has-banner-image general-page{.end}{.end}{.end}{.end}">
 
 <div class="page">
