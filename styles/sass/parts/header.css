@@ -1,0 +1,51 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 2vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10; }
+  .header .logo {
+    background: url("assets/images/logo-full-dark.svg");
+    height: 5.7vw;
+    width: 10vw;
+    background-size: contain;
+    background-repeat: no-repeat; }
+  .header .navigation {
+    text-align: center;
+    font-family: "United Sans", script;
+    text-rendering: optimizeLegibility;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: #fff; }
+    .header .navigation ul {
+      margin: 0;
+      padding: 0;
+      display: flex; }
+      .header .navigation ul li {
+        list-style: none;
+        padding: 0;
+        margin-right: 3vw; }
+        .header .navigation ul li:after {
+          content: '/'; }
+        .header .navigation ul li:last-child:after {
+          content: none; }
+        .header .navigation ul li a {
+          text-decoration: none;
+          color: #fff;
+          margin-right: 3vw;
+          letter-spacing: 0.15vw;
+          border: 0 solid transparent;
+          border-width: 1px 0;
+          padding: 0.5vw 0; }
+          .header .navigation ul li a.selected {
+            border-bottom-color: #fff; }
+          .header .navigation ul li a.search {
+            background-image: url("assets/images/icon-magnifier.svg");
+            height: 1.4vw;
+            width: 1.4vw;
+            background-repeat: no-repeat;
+            display: block; }

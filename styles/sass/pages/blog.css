@@ -1,0 +1,90 @@
+.post-landing {
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  color: #fff;
+  font-family: "United Sans", script;
+  text-rendering: optimizeLegibility;
+  font-weight: normal;
+  text-transform: uppercase;
+  position: relative;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .post-landing h1 {
+    margin: 0;
+    font-size: 7vw;
+    letter-spacing: 0.5vw; }
+
+.post-landing-cta {
+  background-color: #000;
+  font-family: "Gotham A", "Gotham B";
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.6vw;
+  letter-spacing: 0.1vw;
+  padding: 1.4vw 1.8vw 1.3vw 4vw;
+  position: absolute;
+  bottom: -3vh;
+  right: 20vw; }
+
+.post-content {
+  width: 80vw;
+  max-width: 800px;
+  margin: 20vh auto;
+  font-size: 1vw; }
+  .post-content p {
+    line-height: 1.75em;
+    margin-bottom: 2.5vh; }
+
+.sharebox {
+  margin-bottom: 20vh; }
+  .sharebox ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto; }
+    .sharebox ul li {
+      padding: 0;
+      list-style: none;
+      margin: 0 0.75vw; }
+      .sharebox ul li a {
+        display: block;
+        height: 3vw;
+        width: 3vw;
+        background-color: #000;
+        background-repeat: no-repeat;
+        background-size: 40%;
+        background-position: center center;
+        position: relative; }
+        .sharebox ul li a.like {
+          background-image: url("assets/images/icon-like.svg"); }
+        .sharebox ul li a.share {
+          background-image: url("assets/images/icon-share.svg"); }
+        .sharebox ul li a .badge {
+          height: 1vw;
+          width: 1vw;
+          border-radius: 1vw;
+          background: #fff;
+          position: absolute;
+          top: -0.5vw;
+          left: -0.5vw;
+          font-size: 0.6vw;
+          font-weight: 500;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+          color: #000; }
+  .sharebox span {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 0.8vw;
+    font-weight: 700;
+    margin-top: 3vh; }

@@ -1,0 +1,94 @@
+.merch-landing {
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  color: #fff;
+  font-family: "United Sans", script;
+  text-rendering: optimizeLegibility;
+  font-weight: normal;
+  text-transform: uppercase;
+  position: relative;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .merch-landing h1 {
+    margin: 0;
+    font-size: 7vw;
+    letter-spacing: 0.5vw; }
+
+.merch-landing-cta {
+  background-color: #000;
+  font-family: "Gotham A", "Gotham B";
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.6vw;
+  letter-spacing: 0.1vw;
+  padding: 1.4vw 1.8vw 1.3vw 4vw;
+  position: absolute;
+  bottom: -3vh;
+  right: 20vw; }
+
+.merch-overview {
+  margin: 15vh 0; }
+
+.merch-overview-row {
+  display: flex;
+  justify-content: space-between;
+  width: 70vw;
+  margin: 0 auto 15vh; }
+
+.merch-item {
+  width: 30vw;
+  position: relative;
+  text-align: center; }
+  .merch-item .image {
+    background-size: contain;
+    background-position: center center;
+    height: 37vw; }
+  .merch-item .title {
+    font-family: "United Sans", script;
+    text-rendering: optimizeLegibility;
+    font-weight: normal;
+    text-transform: uppercase;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -2.25vh;
+    font-size: 2.5vw; }
+  .merch-item .price {
+    font-family: "United Sans", script;
+    text-rendering: optimizeLegibility;
+    font-weight: normal;
+    text-transform: uppercase;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 35.5vw;
+    font-size: 3vw; }
+  .merch-item .description {
+    margin: 4vw 0 2vw; }
+  .merch-item .sizes {
+    margin: 0;
+    padding: 0.5vw;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .merch-item .sizes li {
+      padding: 0 1vw;
+      list-style: none; }
+  .merch-item .cta {
+    background-color: #000;
+    font-family: "Gotham A", "Gotham B";
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.6vw;
+    letter-spacing: 0.1vw;
+    padding: 1.4vw 1.8vw 1.3vw 4vw;
+    padding: 1.4vw 5.5vw 1.3vw;
+    margin-top: 4vh;
+    display: inline-block; }

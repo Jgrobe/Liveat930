@@ -1,0 +1,11 @@
+.text-insert-container .rectangle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 23%;
+  height: 100%; }
+.text-insert-container .text-layer {
+  color: white;
+  background: black url("assets/images/") no-repeat center center/cover; }
+
+/*# sourceMappingURL=text-insert.css.map */

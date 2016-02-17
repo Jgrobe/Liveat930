@@ -1,0 +1,205 @@
+.sticky-header {
+  position: fixed;
+  top: 0;//$logoOffset;
+  left: 0;//$logoOffset;
+  width: 100%;//calc(100% - #{2*$logoOffset});
+  z-index: 99;
+  @include prefixed(transition, top $shortTrans);
+
+  .logo {
+    position: absolute;
+    top: $logoOffset;
+    left: $logoOffset;
+
+    @include svg-content() { @include prefixed(transition, fill $shortTrans); }
+    svg {
+      width: $logoW;
+      height: $logoH;
+    }
+
+    .home & { display: none; }
+  }// .logo
+
+  .burger {
+    position: absolute;
+    top: $logoOffset;
+    right: $logoOffset;
+    width: 0;//$logoW;
+    height: $logoH;
+    overflow: hidden;
+//    @include prefixed(transition, width $shortTrans);
+    @include prefixed(transition, none);
+
+    .inner {
+      width: $logoW;
+      height: $logoH;
+    }
+
+    .line, .line:nth-child(2) {
+      width: 0;
+//      @include prefixed(transition, none);
+    }
+
+    .line:nth-child(2) {
+      &:before {
+        content: '';
+        left: -$logoW;
+      }
+    }
+
+//    &.notactive {
+//      top: calc(#{-$logoH} - #{$logoOffset});
+//      width: 0;
+//    }
+
+//    .line:nth-child(2) {
+//      top: #{$logoH/2}
+//    }
+
+    &:hover {
+      .line:nth-child(2) {
+        &:before {left: 0;}
+        &:after {left: $logoW;}
+      }
+    }
+
+  }// .burger
+
+  &.on {
+//    .logo {background-image:url('assets/images/logo-small-white.svg');}
+
+    .logo {
+      @include svg-content() {
+        fill: black;
+      }
+      svg .bg {fill: white;}
+    }// .logo
+
+    .burger {
+      background: white;
+      .line {
+
+        &:before, &:after {
+          background: black;
+          width: 80%;
+        }
+
+        &:first-child {
+//          top:50%;
+//          left:50%;
+//          @include transform(translateX(-50%) translateY(-50%) rotate(45deg));
+          @include transform(translateX(25%) translateY(80%) rotate(45deg));
+        }
+        &:nth-child(2) {
+//          &:before, &:after { width: 0; }
+          &:before {left: $logoW;}
+          &:after {left: #{2*$logoW};}
+        }
+        &:last-child {
+//          bottom:50%;
+//          left:50%;
+//          @include transform(translateX(-50%) translateY(50%) rotate(-45deg));
+          @include transform(translateX(25%) translateY(-20%) rotate(-45deg));
+        }
+      }// .line
+    }// .burger
+//    .nav-overlay {
+////      height: 100vh;
+//      @include autoAlpha(1);
+//    }
+  }// .on
+
+  @include breakpoint(mobile) {
+
+    $logoOffset: $MOBILE_MARGIN;
+
+    .logo {
+      top:$logoOffset;
+      left:$logoOffset;
+    }// .logo
+
+    .burger {
+      top: $logoOffset;
+      right: $logoOffset;
+    }// .burger
+
+  }// BP MOBILE
+}// .sticky-header
+
+.nav-trigger {
+  position: absolute;
+  top:2vw;
+  right: 2vw;
+
+  >* {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    @include transform(translateX(-50%) translateY(-50%));
+  }
+
+  .close {
+//    padding: 18px;
+    background: none;
+    svg, img {
+      @include relative_units(width, 28);
+      @include relative_units(height, 28);
+    }
+  }
+}// .nav-trigger
+
+.burger {
+  display:inline-block;
+  cursor: pointer;
+  box-sizing: border-box;
+  background: black;
+  @include prefixed(transition, $shortTrans);
+
+  .inner {
+    position: relative;
+    height: 100%;
+    padding: 18px;
+  }// .inner
+
+  .line {
+    display: block;
+    position: relative;
+    margin-top: 6px;
+    left: 0;
+    width: 26px;//100%;
+    height: 2px;
+    @include superprefixed(transition, transform $shortTrans);
+//    @include prefixed(transform-origin, center);//top left);
+
+    &:before, &:after {
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: white;
+      @include prefixed(transition, $shortTrans);
+    }
+    &:after {content: '';}
+
+    &:first-child {
+//      top: 0;
+      margin-top: 0;
+      @include prefixed(transform-origin, top left);
+    }
+    &:nth-child(2) {
+      &:before, &:after {
+        width: 80%;
+        @include prefixed(transition-timing-function, cubic-bezier(0.000, 0.290, 0.200, 1.000));
+      }
+//      top: 50%;
+//      width: #{26 * .8}px;//80%;
+//      @include transform(translateY(-50%));
+    }// nth-child
+    &:last-child {
+      @include prefixed(transform-origin, bottom left);
+//      bottom: 0;
+    }
+  }// .line
+}// .burger

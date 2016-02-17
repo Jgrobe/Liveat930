@@ -1,0 +1,46 @@
+.poster.circle {
+
+  .layer {
+    &.bg-layer {
+      .half {
+        &:first-child {
+//          background: url('assets/images/textures/texture1.jpg') no-repeat center / cover;
+          &:before{
+            content: '';
+            display: block;
+            @extend .fill-parent;
+            left: -2%;
+            background:  url('assets/images/textures/texture2.png') no-repeat center / cover;
+          }
+        }
+
+        &:last-child {
+          background:  url('assets/images/textures/1b.jpg') no-repeat center / cover;
+        }
+      }
+    }
+
+    &.model-layer {
+      position: absolute;
+      top: 5%;
+      width: 80%;
+      left: 10%;
+      border-radius: 100%;
+      background: url('assets/images/textures/circle.jpg') no-repeat center / cover;
+      &:before {
+        content: '';
+        display: block;
+        padding-top: 100%;
+      }
+    }
+  }
+
+  .btn-play-episode {
+    background: white;
+    color: black;
+    &:hover {
+      background: #f0f0f0;
+    }
+  }
+
+}// .poster

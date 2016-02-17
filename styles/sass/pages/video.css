@@ -1,0 +1,129 @@
+.video-overview-landing {
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  color: #fff;
+  font-family: "United Sans", script;
+  text-rendering: optimizeLegibility;
+  font-weight: normal;
+  text-transform: uppercase;
+  position: relative;
+  height: 90vh; }
+  .video-overview-landing h1 {
+    font-size: 9vw;
+    letter-spacing: 0.75vw;
+    margin: 0 0 5vh 0; }
+  .video-overview-landing .rectangle {
+    position: absolute;
+    top: 37.5vh;
+    left: 25vw;
+    height: 15vh;
+    width: 50vw;
+    background: #000;
+    mix-blend-mode: multiply;
+    opacity: 0.45; }
+  .video-overview-landing .content {
+    position: absolute;
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .video-overview-landing .video-overview-filter-headline {
+    font-family: "United Sans", script;
+    text-rendering: optimizeLegibility;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 3vw;
+    letter-spacing: 0.25vw; }
+  .video-overview-landing .video-overview-filter {
+    margin: 3vh 0 0 0;
+    padding: 0;
+    display: flex;
+    align-items: center; }
+    .video-overview-landing .video-overview-filter li {
+      list-style: none;
+      padding: 0;
+      margin-right: 1.25vw;
+      font-size: 0.75vw;
+      font-family: "Gotham A", "Gotham B";
+      font-weight: 500; }
+      .video-overview-landing .video-overview-filter li:after {
+        content: '/'; }
+      .video-overview-landing .video-overview-filter li:last-child:after {
+        content: none; }
+      .video-overview-landing .video-overview-filter li a {
+        letter-spacing: 0.1vw;
+        text-decoration: none;
+        color: #fff;
+        margin-right: 1.25vw;
+        border-bottom: 1px solid #fff;
+        padding-bottom: 0.25vw; }
+
+.video-gallery {
+  margin: -10vh auto 25vh;
+  width: 75vw;
+  position: relative; }
+  .video-gallery .rectangle {
+    background: #fff;
+    height: 105vw;
+    position: absolute;
+    top: -5vw;
+    left: 3vw;
+    width: 69vw; }
+  .video-gallery .video-gallery-videos {
+    overflow: hidden; }
+    .video-gallery .video-gallery-videos.lefthand .video.small {
+      float: left;
+      margin-right: 5vw; }
+    .video-gallery .video-gallery-videos.lefthand .video.large {
+      float: right; }
+    .video-gallery .video-gallery-videos.righthand .video.small {
+      float: right;
+      margin-left: 5vw; }
+    .video-gallery .video-gallery-videos.righthand .video.large {
+      float: left; }
+  .video-gallery .video .image {
+    width: 21.66vw;
+    position: relative;
+    background-size: cover;
+    background-position: center center; }
+  .video-gallery .video .play {
+    position: absolute;
+    left: 8.83vw;
+    bottom: -1vw;
+    height: 4vw;
+    width: 4vw;
+    background-color: #fff;
+    background-image: url("assets/images/icon-play.svg");
+    background-size: 20%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25); }
+  .video-gallery .video .title {
+    font-family: "United Sans", script;
+    text-rendering: optimizeLegibility;
+    font-weight: normal;
+    text-transform: uppercase;
+    position: relative;
+    letter-spacing: 0.05vw;
+    margin: 2vw 0 4vw;
+    font-size: 1.25vw; }
+  .video-gallery .video.small .image {
+    height: 17vw; }
+  .video-gallery .video.large .image {
+    height: 41.5vw; }
+  .video-gallery .load-more {
+    background-color: #000;
+    font-family: "Gotham A", "Gotham B";
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.6vw;
+    letter-spacing: 0.1vw;
+    padding: 1.4vw 1.8vw 1.3vw 4vw;
+    position: absolute;
+    bottom: -4vw;
+    left: 31vw; }

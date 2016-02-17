@@ -1,0 +1,242 @@
+//@import "../base/vars";
+
+.footer {
+  position: relative;
+  padding: 20vh 0 15vh;
+  color: #fff;
+  text-align: center;
+  z-index: 1;
+  overflow: hidden;
+
+  &:before {
+    content:'';
+    pointer-events: none;
+    display: block;
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    background-image: url('assets/images/footer.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  p {
+    font-size: get_relative_units(34);
+    line-height: get_relative_units(48);
+    letter-spacing: .06em;
+  }
+
+  .cta-container {
+    .cta {
+      &.hover-cta {
+//        color: white;
+        background: #f0f0f0;
+//        @include svg-content() {stroke: white}
+      }
+    }
+
+    &.negative {
+      .cta {
+        &.hover-cta {
+//          color: black;
+          background: #191919;
+//          @include svg-content() {fill: black;}
+        }// .hover-cta
+      }// .cta
+    }// .negative
+  }// .cta-container
+
+  @include breakpoint(mobile) {
+
+    p {
+      font-size: 13px;
+      line-height: 15px;
+      max-width: 85%;
+    }
+  }// BP MOBILE
+}// .footer
+
+.footer-newsletter {
+  position: relative;
+
+  .footer-newsletter-row {
+    @include flexbox();
+    @include prefixed(justify-content, center);
+    @include prefixed(align-items, center);
+  }
+
+  .demand {
+    font-size: get_relative_units(144);
+    letter-spacing: .08em;
+    margin: 0 3vw 0 0;
+  }
+
+  form {
+    position: relative;
+//    padding-right: 13vw;
+    font-size:0;
+
+//    input[type=email], .submit-email {
+//      display: inline-block;
+//      vertical-align: bottom;
+//    }
+
+    input[type=email] {
+      width: 15vw;
+      background: white;
+    }
+
+    .submit-email {
+      position: absolute;
+      height: 100%;
+      width: auto;
+
+      .cta {
+        .icon {margin-right: 0;}
+        .label { display: none; }
+        .filler {
+          padding: 1.6vw;// input padding
+        }
+//        svg {
+//          height: calc(0.8vw + 3px);// input font-size + line-height tweak
+//        }
+      }
+    }
+  }// .form
+
+  p {
+//    text-transform: uppercase;
+//    margin: 2vh 0 0 -15vw;
+    position: absolute;
+    top: 140%;
+    left: 10%;
+    width: 80%;
+  }
+
+  @include breakpoint(mobile) {
+    margin-bottom: 15vh;
+
+    .footer-newsletter-row { display: block;}
+
+    .demand {
+      font-size: 11vw;
+      margin: 0 auto;
+    }// .demand
+
+    form {
+      width: auto;
+      display: inline-block;
+
+      input[type=email] {
+        font-size: 10px;
+        width: 100%;//65%;
+        display: block;
+        padding: 18px;
+//        padding-right: 36px;
+
+//        , &[type=submit] {
+//          width: 65%;
+//          padding: 18px;
+//          margin: 4vw auto 0 auto;
+//          position: static;
+//        }
+      }
+      .submit-email {
+        position: static;
+        margin-top: 20px;
+
+        .cta {
+          .filler {padding: 18px;}
+          .icon {margin-right: $ctaPaddMobile;}
+          .label { display: inline; }
+        }
+      }
+    }// form
+
+    p {
+      position: static;
+      margin: 2vw auto 10vw auto;
+    }// p
+
+  }// BP MOBILE
+
+}// .footer-newsletter
+
+.hosted-by-logo {
+  background: url("assets/images/hosted-by.svg") no-repeat center / contain;
+  width: 80%;
+  height: 2.4vw;
+  margin: 0 auto;
+
+  @include breakpoint(mobile) {
+    height: 5vw;
+  }
+}// .hosted-by-logo
+
+.footer-hosted-by {
+  padding: 20vh 0;
+
+  .hosted-by-p {
+//    width: 45vw;
+    margin: 6vh auto 8vh;
+//    letter-spacing: 0.1vw;
+//    font-weight: 100;
+//    line-height: 1.7em;
+  }
+
+//  .hosted-by-link {
+//    @include cta(#fff, #000);
+////    background-color: #fff;
+////    color: #000;
+//    font-size: 0.7vw;
+//  }
+
+  @include breakpoint(mobile) {
+    padding: 0;
+
+    .hosted-by-p {margin-bottom: 0;}
+
+    .hosted-by-link {
+      display: inline-block;
+      max-width: 90%;
+      margin: 15vh auto;
+    }
+  }// BP MOBILE
+}// .footer-hosted-by
+
+.footer-social {
+  ul {
+    margin: 0;
+    padding: 0;
+    @include flexbox();
+    @include prefixed(justify-content, center);
+    li {
+      padding: 0;
+      list-style: none;
+      margin: 0 1vw;
+      a {
+        $size:42px;
+        display: block;
+        width: $size;
+        height: $size;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 60%;
+        &.instagram { background-image: url('assets/images/instagram.svg'); }
+        &.facebook {
+          background-image: url('assets/images/facebook.svg');
+          background-size: 36%;
+        }
+        &.twitter {
+          background-image: url('assets/images/twitter.svg');
+          background-size: 72%;
+        }
+      }// a
+    }// li
+  }// ul
+}// .footer-social

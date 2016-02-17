@@ -1,0 +1,83 @@
+.footer {
+  background-color: #000;
+  background-image: url("assets/images/footer.jpg");
+  background-size: cover;
+  background-position: top center;
+  padding: 20vh 0 15vh;
+  color: #fff;
+  text-align: center; }
+
+.footer-newsletter .footer-newsletter-row {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.footer-newsletter .demand {
+  font-size: 6vw;
+  margin: 0 3vw 0 0; }
+
+.footer-newsletter form {
+  position: relative;
+  padding-right: 13vw; }
+  .footer-newsletter form input[type=email] {
+    width: 15vw; }
+  .footer-newsletter form input[type=submit] {
+    position: absolute;
+    top: 1vw;
+    left: 14vw;
+    padding: 1.6vw 2vw 1.6vw 4vw; }
+
+.footer-newsletter p {
+  text-transform: uppercase;
+  font-size: 1vw;
+  letter-spacing: 0.05vw;
+  margin: 2vh 0 0 -15vw; }
+
+.footer-hosted-by {
+  padding: 20vh 0; }
+  .footer-hosted-by .hosted-by-logo {
+    background-image: url("assets/images/hosted-by.svg");
+    width: 32vw;
+    height: 3vw;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0 auto; }
+  .footer-hosted-by .hosted-by-p {
+    width: 45vw;
+    margin: 6vh auto 8vh;
+    letter-spacing: 0.1vw;
+    font-weight: 100;
+    line-height: 1.7em; }
+  .footer-hosted-by .hosted-by-link {
+    background-color: #fff;
+    font-family: "Gotham A", "Gotham B";
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000;
+    font-size: 0.6vw;
+    letter-spacing: 0.1vw;
+    padding: 1.4vw 1.8vw 1.3vw 4vw;
+    background-color: #fff;
+    color: #000;
+    font-weight: 500;
+    font-size: 0.7vw; }
+
+.footer-social ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center; }
+  .footer-social ul li {
+    padding: 0;
+    list-style: none;
+    margin: 0 1vw; }
+    .footer-social ul li a {
+      display: block;
+      width: 2vw;
+      height: 2vw; }
+      .footer-social ul li a.instagram {
+        background-image: url("assets/images/instagram.svg"); }
+      .footer-social ul li a.facebook {
+        background-image: url("assets/images/facebook.svg"); }
+      .footer-social ul li a.twitter {
+        background-image: url("assets/images/twitter.svg"); }

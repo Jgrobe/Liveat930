@@ -1,0 +1,103 @@
+.text-insert-container {
+  $shift: 5vw;
+  position: relative;
+  padding-top: $shift;
+  margin-bottom: 20vh;
+
+  .rectangle {
+    background: white;
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 20%;
+    height: calc(100% - #{$shift});
+  }
+
+  .text-layer {
+    position: relative;
+    padding: 7.8vw 0 7.8vw 0;
+//    top: $shift;
+    margin-left: 12.5vw;
+    width: 87.5vw;
+    color: white;
+    @include halftone();
+
+    .section-head {
+      padding: 0;
+      text-align: left;
+      position: relative;
+    }
+
+    h2 {
+      width: 100%;
+      padding: 0 7.5vw;
+    }// h2
+
+    p {
+      width: 100%;
+      margin: 2vw 0 0 0;
+      padding: 0 12vw;
+    }// p
+
+    .cta-container {
+//      @include cta(white, black);
+      position: absolute;
+      top: 100%;
+      left: 7.5vw;
+      @include transform(translateY(-50%));
+    }// .cta
+
+    .blend-logo {
+      position: absolute;
+      width: auto;
+      height: 100%;
+      top: 0;
+      left: 50%;
+      mix-blend-mode: soft-light;
+      opacity: .8;
+
+      svg {
+        height: 100%;
+        width: auto;
+      }// svg
+    }// .blend-logo
+  }// .text-layer
+
+  @include breakpoint(mobile) {
+    margin: 0 auto $sectionMarginBottomMobile auto;
+    width: 100%;
+    padding: 0 0 40px 0;
+    overflow: hidden;
+
+    .rectangle {display: none;}
+
+    .text-layer {
+      margin: 0 auto;
+      width: 100%;
+      padding: 90px 40px;
+
+      .cta-container {
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+        max-width:95%;
+        white-space: normal;
+      }// .cta
+    }// .text-layer
+
+    .section-head {
+      width: 100%;
+
+      h2 {
+        width: 100%;
+        padding: 0;
+      }
+
+      p {
+        margin-top: 20px;
+        padding: 0;
+      }
+    }// .section-head
+
+  }// BP MOBILE
+
+}// .text-insert-container

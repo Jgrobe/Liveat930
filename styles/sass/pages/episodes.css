@@ -1,0 +1,132 @@
+.episodes-landing {
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  color: #fff;
+  font-family: "United Sans", script;
+  text-rendering: optimizeLegibility;
+  font-weight: normal;
+  text-transform: uppercase;
+  position: relative; }
+
+.episodes-landing-geo {
+  border-radius: 15vw;
+  width: 30vw;
+  height: 30vw;
+  position: absolute;
+  top: 40vh;
+  left: 15vw;
+  background: #89afe2;
+  mix-blend-mode: screen;
+  opacity: 0.8; }
+
+.episodes-landing-head {
+  position: absolute;
+  top: 28vh;
+  left: 30vw; }
+  .episodes-landing-head .small {
+    font-size: 2vw;
+    letter-spacing: 0.2vw; }
+  .episodes-landing-head h1 {
+    font-size: 10vw;
+    letter-spacing: 0.5vw;
+    margin: 0 0 0 -0.5vw; }
+
+.episodes-landing-sub {
+  position: absolute;
+  top: 53vh;
+  left: 48vw;
+  width: 35vw; }
+  .episodes-landing-sub span {
+    font-family: "Gotham A", "Gotham B";
+    font-size: 0.8vw; }
+  .episodes-landing-sub p {
+    margin: 0;
+    letter-spacing: 0.3vw;
+    font-size: 2.1vw; }
+
+.episodes-landing-cta {
+  background-color: #000;
+  font-family: "Gotham A", "Gotham B";
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.6vw;
+  letter-spacing: 0.1vw;
+  padding: 1.4vw 1.8vw 1.3vw 4vw;
+  position: absolute;
+  top: 70vh;
+  left: 37vw; }
+
+.episodes-previous {
+  margin: 10vh 0; }
+
+.episodes-overview .episodes-overview-row {
+  overflow: hidden;
+  padding: 10vh 10vw;
+  width: 90vw;
+  margin: 0 auto; }
+
+.episodes-overview .episodes-overview-episode {
+  width: 30vw;
+  height: 40vw;
+  box-shadow: 0 20px 80px rgba(0, 0, 0, 0.1), 0 5px 20px rgba(0, 0, 0, 0.15), 0 5px 165px rgba(0, 0, 0, 0.1), 0 2px 10px rgba(0, 0, 0, 0.2);
+  position: relative; }
+  .episodes-overview .episodes-overview-episode:first-child {
+    float: left; }
+  .episodes-overview .episodes-overview-episode:last-child {
+    float: right; }
+  .episodes-overview .episodes-overview-episode .image {
+    height: 100%;
+    width: 100%;
+    background-size: 100%; }
+  .episodes-overview .episodes-overview-episode .cta {
+    background-color: #000;
+    font-family: "Gotham A", "Gotham B";
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.6vw;
+    letter-spacing: 0.1vw;
+    padding: 1.4vw 1.8vw 1.3vw 4vw;
+    position: absolute;
+    bottom: -1.5vw;
+    left: 5.5vw; }
+
+.episodes-upcoming ul {
+  margin: 10vh 0;
+  padding: 0;
+  display: flex;
+  justify-content: center; }
+  .episodes-upcoming ul li {
+    padding: 0;
+    list-style: none;
+    margin: 0 1.5vw; }
+    .episodes-upcoming ul li a {
+      display: block;
+      width: 25vw;
+      height: 18.75vw;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #000;
+      text-decoration: none; }
+      .episodes-upcoming ul li a .inside {
+        background: #fff;
+        padding: 1vw;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        text-transform: uppercase; }
+        .episodes-upcoming ul li a .inside span {
+          font-family: "Gotham A", "Gotham B";
+          font-size: 0.6vw;
+          letter-spacing: 0.1vw; }
+        .episodes-upcoming ul li a .inside strong {
+          font-family: "United Sans", script;
+          text-rendering: optimizeLegibility;
+          font-weight: normal;
+          text-transform: uppercase;
+          font-size: 1.4vw; }

@@ -1,0 +1,126 @@
+.merch-landing {
+  @include landing;
+  height: 80vh;
+  @include flexbox();
+  @include prefixed(justify-content, center);
+  @include prefixed(align-items, center);
+
+  h1 {
+    text-align: center;
+  }
+}
+
+.merch-landing-cta {
+//  @include cta(#000, #fff);
+  position: absolute;
+  top: 100%;
+  right: 20vw;
+  @include transform(translateY(-50%));
+}
+
+.merch-overview {
+  margin-top: 15vh;
+
+  @include breakpoint(mobile) {
+    margin: 10vh $MOBILE_MARGIN;
+  }
+}// .merch-overview
+
+.merch-overview-row {
+  @include flexbox();
+  @include prefixed(justify-content, space-between);
+  width: 70vw;
+  margin: 0 auto 15vh;
+
+  @include breakpoint(mobile) {
+    display: block;
+    width: 100%;
+  }// BP MOBILE
+}// .merch-overview-row
+
+.merch-item {
+  width: 30vw;
+  position: relative;
+  text-align: center;
+  .image {
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    &:before {
+      content: '';
+      display: block;
+      padding-top: 120.5%;
+    }
+  }
+  .title, .price {
+    @include united;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    @include transform(translateY(-50%));
+  }
+  .title {
+    top: 0;
+    font-size: get_relative_units(60);
+  }// .title
+  .price {
+    top: 100%;
+    font-size: get_relative_units(88);
+  }// .price
+  .description {
+    margin: 4vw 0 2vw;
+  }
+  .sizes {
+    margin: 0;
+    padding: 0.5vw;
+    background: #fff;
+    @include flexbox();
+    @include prefixed(justify-content, center);
+    @include prefixed(align-items, center);
+    li {
+      padding: 0 1vw;
+      list-style: none;
+    }
+  }// .sizes
+  .cta-container {
+//    @include cta(#000, #fff);
+
+    margin-top: 4vh;
+    display: inline-block;
+
+    .filler {
+      padding: 1.4vw 5.5vw;
+    }
+  }
+
+  @include breakpoint(mobile) {
+
+    width: 100%;
+    margin-top: 100px;
+
+    .title, .price {
+      font-size: 19px;
+      letter-spacing: .06em;
+    }
+
+    .title {font-size: 30px;}
+    .price {font-size: 44px;}
+
+    .description {
+      margin: 40px 0 20px 0;
+    }
+
+    .sizes {
+      padding: 20px;
+    }
+
+    .cta {
+      padding: 24px 64px;
+      margin-top: 20px;
+      display: inline-block;
+    }
+
+  }// BP MOBILE
+}// .merch-item

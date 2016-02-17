@@ -1,0 +1,241 @@
+.show-landing {
+  @include landing();
+  @include flexbox();
+//  margin-bottom: $sectionMarginBottom;
+
+  @include breakpoint(mobile) {
+//    margin-bottom: $sectionMarginBottomMobile;
+  }// BP MOBILE
+}// .show-landing
+
+.show-content {
+  margin: auto;
+  text-align: center;
+
+  h1, .show-landing-info {
+    position: relative;
+  }
+
+  h1 {
+    display: inline-block;
+    text-align: left;
+//    font-size: 9.75vw;
+//    letter-spacing: .06em;
+//    text-transform: uppercase;
+
+    .show-landing-subline, {
+      font-size: 1.875vw;
+      line-height: 100%;
+      letter-spacing: .1em;
+      display: block;
+    }
+  }// h1
+
+  .show-landing-info {
+    text-align: left;
+    padding: get_relative_units(150);
+    background: white;
+    color: black;
+    width: 40%;
+    margin: 5% auto 0 40%;
+
+    font-family: $gotham;
+    @include relative_units(font-size, 28);
+    @include relative_units(line-height, 50);
+    letter-spacing: .04em;
+    text-transform: none;
+  }// .show-landing-info
+
+  .rectangle {
+    position: absolute;
+    background: rgba(0,0,0,.4);
+    top: 18%;
+    left: 12%;
+    width: 76%;
+    height: get_relative_units(480);
+  }
+
+//  .featuring {
+//    @include relative_units(font-size, 82);
+//    @include relative_units(line-height, 86);
+//    letter-spacing: .08em;
+//    @include relative_units(margin-top, 125);
+//    @include relative_units(margin-bottom, 125);
+//    @extend .medium;
+//    margin-left: 42%;
+//    width: 50%;
+//    text-align: left;
+//    position: relative;
+//
+//    .label {
+//      font-family: $gotham;
+//      @include relative_units(font-size, 20);
+//      letter-spacing: .1em;
+//      position: absolute;
+//      left: 0;
+//      top: 0;
+//      @include transform(translateX(-120%));
+//    }
+//
+//  }
+//
+//  .episodes-landing-geo {
+//    background-color: #4B90EE;
+//    background-blend-mode: screen;
+//    background-position: 14% 60%;
+//    mix-blend-mode: normal;
+//    opacity: 1;
+//    top: 7vw;
+//    left: -5vw;
+//    @include relative_units(width, 950);
+//    @include relative_units(height, 950);
+//  }// .episodes-landing-geo
+//
+//  .watch-latest-cta {
+//    position: relative;
+//    @include cta(white, black);
+//    display: inline-block;
+//    margin-left: 25%;
+//  }// .watch-latest-cta
+
+  @include breakpoint(mobile) {
+    width: $MOBILE_WIDTH;
+//    padding: 70px 30px;
+
+//    .episodes-landing-geo { display: none; }
+
+    .show-landing-info {
+      width: 100%;
+      margin: 40px auto;
+      font-size: 14px;
+      line-height: 22px;
+    }
+
+//    .show-landing-hardfacts {font-size: 19px;}
+
+    .rectangle { height: 35vw; }
+
+//    .featuring {
+//      letter-spacing: 0.06vw;
+//      font-size: 31px;
+//      line-height: 43px;
+//      margin: 20px auto;
+//      text-align: center;
+//      width: 100%;
+//      .label {display: none;}
+//    }
+
+    .lefted {
+      text-align: center;
+      .watch-latest-cta {margin: auto;}
+    }
+
+  }// BP MOBILE
+
+}// .show-content
+
+.history-slider {
+  padding: $sectionMarginBottom 0 0 0;
+  position: relative;
+  background: white;
+
+  .excerpt-head {
+    padding: 0;
+  }
+
+  .excerpt-container {
+    padding: 0;
+  }
+
+  .slider-images {
+    height: 37.5vw;
+
+    .image {
+      width: 100%;
+      right: -12.5vw;
+    }
+  }// .slider-images
+
+  .slider-ui {
+    //    width: auto;
+    //    height: auto;
+    //    top: 50%;
+    //    left: 90%;
+    //    white-space: nowrap;
+    //    @include transform(translateY(-50%));
+
+    .slider-label.onlymobile {@include transform(none);}
+
+    .slider-label {
+      color: white;
+      top: 108%;
+      left: auto;
+      right: 26%;
+    }// .slider-label
+
+    .slider-arrows {
+      top: 100%;
+      left: auto;
+      right: -12.5vw;
+    }// .slider-arrows
+  }// .slider-ui
+
+  .text-layer {
+    position: absolute;
+    width: 50%;
+    top: auto;
+    bottom: -10%;
+    left: -10vw;
+    margin: 0;
+    padding-right: 7vw;
+
+    background: black;
+    color: white;
+
+    .slider-ui .slider-label {
+      top: 50%;
+      left: 100%;
+      right: auto;
+      @include transform(translateX(-50%) translateY(-50%));
+    }// .slider-label
+  }// .text-layer
+
+  @include breakpoint(mobile) {
+    padding-top: $sectionMarginBottomMobile;
+
+    .text-layer { position: static; }
+
+    .slider-images {
+      height: auto;
+
+      .current-image {
+        position: static;
+        display: block;
+        height: 60vw;
+      }
+    }
+
+    .slider-ui {
+      position: relative;
+      height: auto;
+      margin: 3vw 0;
+      @include transform(none);
+
+      .slider-arrows {
+        position: static;
+        @include transform(none);
+      }// .slider-arrows
+//
+      .slider-label {
+        position: absolute;
+        color: black;
+        text-align: center;
+        top: 0;
+        width: 100%;
+        left: 0;
+      }// .slider-label
+    }// .slider-ui
+
+  }// BP MOBILE
+
+}// .history-slider

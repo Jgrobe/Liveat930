@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAEE,iCAAW;EACT,QAAQ,EAAE,QAAQ;EAClB,GAAG,EAAE,CAAC;EACN,IAAI,EAAC,CAAC;EACN,KAAK,EAAE,GAAG;EACV,MAAM,EAAE,IAAI;AAGd,kCAAY;EACV,KAAK,EAAE,KAAK;EACZ,UAAU,EAAE,yDAA2D",
+"sources": ["text-insert.scss"],
+"names": [],
+"file": "text-insert.css"
+}

@@ -1,0 +1,43 @@
+.upcoming {
+  text-transform: uppercase;
+  margin-bottom: 25vh;
+  position: relative; }
+  .upcoming h1 {
+    font-size: 7vw;
+    letter-spacing: 0.5vw;
+    margin: 0;
+    text-align: center; }
+
+.upcoming-info {
+  font-size: 1vw;
+  letter-spacing: 0.05vw;
+  padding: 3vw 4vw;
+  text-align: center;
+  line-height: 1.6em;
+  background: #fff;
+  box-shadow: 0 3px 30px rgba(0, 0, 0, 0.15);
+  width: 25vw;
+  position: absolute;
+  z-index: -1;
+  left: 42vw;
+  top: 5vw; }
+
+.upcoming-sub {
+  font-size: 1vw;
+  letter-spacing: 0.05vw;
+  position: absolute;
+  top: -1.5vw;
+  left: 21vw; }
+
+.upcoming-cta {
+  background-color: #000;
+  font-family: "Gotham A", "Gotham B";
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.6vw;
+  letter-spacing: 0.1vw;
+  padding: 1.4vw 1.8vw 1.3vw 4vw;
+  position: absolute;
+  top: 9vw;
+  left: 25vw; }
