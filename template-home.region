@@ -1,0 +1,27 @@
+<div class="site-content">
+    <section class="posters scroll-posters">
+        <div class="posters-hover-bg"></div>
+        <?php foreach( $posters as $i => $poster ) :
+
+
+        $poster['parallax'] = true;
+        include( ROOT_DIR . '/modules/module-poster.php'); ?>
+
+        <?php endforeach; ?>
+    </section>
+</div>
+
+<div id="fieldTracker">
+    <?php print_cta(array(
+        'label' => 'View Artist clips',
+    'icon' => 'images/eye',
+    'class' => array('negative'),
+    'hover' => false
+    )); ?>
+</div><!-- #fieldTracker -->
+<div id="preloader">
+    <div class="filler"></div>
+</div>
+<?php include('modules/upcoming.php'); ?>
+
+<squarespace:script src="custom/page_home.js" combo="true" />

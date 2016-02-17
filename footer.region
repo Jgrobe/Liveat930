@@ -1,0 +1,49 @@
+    <footer class="footer">
+        <!--<div class="footer-bg"></div>-->
+        <section class="footer-newsletter">
+            <div class="footer-newsletter-row">
+                <h2 class="demand">Know what's coming</h2>
+                <p>Sign up for regular show updates and exclusives</p>
+                <form>
+                    <input type="email" placeholder="Your email address" />
+                    <?php print_cta(array(
+                        'label' => 'Put me on the list',
+                    'icon' => 'images/icon-arrow',
+                    'class' => array('submit-email'),
+                    'tag' => 'button',
+                    'attributes' => array(
+                    'type' => 'submit',
+                    'data-prllx' => '-.02'
+                    )
+                    )); ?>
+                    <!--<input type="submit" value="Put me on the list" />-->
+                </form>
+            </div>
+        </section>
+        <section class="footer-hosted-by">
+            <div class="hosted-by-logo"></div>
+            <p class="hosted-by-p">Live at 9:30 is hosted by <a href="http://www.squarespace.com" class="plain-link">Squarespace</a>, the simplest way to build a beautiful website.</p>
+            <?php print_cta(array(
+                'label' => 'Build your own website with squarespace',
+            'icon' => 'images/browser',
+            'class' => array('negative', 'hosted-by-link', 'upsized-icon', 'prllx-custom'),
+            'attributes' => array( 'href'=>'#', 'data-prllx' => '-.02' )
+            )); ?>
+            <!--<a class="hosted-by-link icon-browser" href="">Build your own website with squarespace</a>-->
+        </section>
+        <section class="footer-social">
+            <ul>
+                <li><a class="instagram" href=""></a></li>
+                <li><a class="facebook" href=""></a></li>
+                <li><a class="twitter" href=""></a></li>
+            </ul>
+        </section>
+    </footer>
+
+</div><!-- .page -->
+
+<squarespace:script src="custom/ui.js" combo="true" />
+{squarespace-footers}
+
+</body>
+</html>

@@ -2,15 +2,63 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ba77c59-895c-4b6c-8ed1-52220cbb39bd" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.name" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sqsp.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/libs/greensock/plugins/AttrPlugin.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/libs/greensock/plugins/BezierPlugin.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/libs/greensock/plugins/CSSPlugin.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/libs/greensock/plugins/CSSRulePlugin.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/custom/ClippedCanvas.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/libs/greensock/plugins/ColorPropsPlugin.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/libs/greensock/plugins/DirectionalRotationPlugin.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/libs/greensock/utils/Draggable.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/libs/greensock/DrawSVGPlugin.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/libs/greensock/easing/EasePack.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/libs/greensock/plugins/EaselPlugin.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/libs/greensock/plugins/EndArrayPlugin.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/custom/FieldTracker.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/custom/ImageGallery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/libs/greensock/plugins/KineticPlugin.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/custom/ParallaxPoster.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/custom/ParallaxPoster_old.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/custom/Parallaxer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/custom/Preloader.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/libs/greensock/plugins/RaphaelPlugin.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/libs/greensock/plugins/RoundPropsPlugin.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/custom/ScrollHeader.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/custom/ScrollPoster.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/libs/greensock/ScrollToPlugin.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/libs/greensock/plugins/ScrollToPlugin.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/libs/SplitText.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/libs/greensock/plugins/TextPlugin.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/libs/greensock/TimelineLite.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/libs/greensock/TimelineMax.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/libs/greensock/TweenLite.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/libs/greensock/TweenMax.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/custom/autoScroll.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/collections/episodes.conf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/collections/episodes.item" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/collections/episodes.list" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/libs/fastclick.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/footer.region" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/custom/global_functions.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/header.region" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/libs/instafeed.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/libs/jquery-2.1.0.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/libs/greensock/jquery.gsap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/libs/lodash.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/custom/namespaces.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/libs/packery.pkgd.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/custom/page_episodes.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/custom/page_home.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/custom/poster.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/custom/scrollFX.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/libs/scrollMonitor.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blocks/static-nav.block" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blocks/sticky-nav.block" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template-home.region" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/custom/ui.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/libs/underscore-min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template.conf" afterPath="$PROJECT_DIR$/template.conf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="sqsp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,21 +84,41 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf>
-          <file leaf-file-name="template.conf" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/template.conf">
+          <file leaf-file-name="header.region" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/header.region">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.5232558" vertical-offset="0" max-vertical-offset="860">
-                  <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+                <state vertical-scroll-proportion="-3.2941177" vertical-offset="207" max-vertical-offset="1065">
+                  <caret line="25" column="48" selection-start-line="25" selection-start-column="48" selection-end-line="25" selection-end-column="48" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/.gitignore">
+          <file leaf-file-name="static-nav.block" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/blocks/static-nav.block">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-0.6" vertical-offset="0" max-vertical-offset="105">
-                  <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+                <state vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="1080">
+                  <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="sticky-nav.block" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/blocks/sticky-nav.block">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="-3.125" vertical-offset="0" max-vertical-offset="1080">
+                  <caret line="5" column="72" selection-start-line="5" selection-start-column="72" selection-end-line="5" selection-end-column="72" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="footer.region" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/footer.region">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="-11.25" vertical-offset="0" max-vertical-offset="810">
+                  <caret line="18" column="77" selection-start-line="18" selection-start-column="77" selection-end-line="18" selection-end-column="77" />
                   <folding />
                 </state>
               </provider>
@@ -61,6 +129,56 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435">
                   <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="site.region" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/site.region">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0" vertical-offset="2770" max-vertical-offset="3630">
+                  <caret line="207" column="14" selection-start-line="207" selection-start-column="14" selection-end-line="207" selection-end-column="14" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="template-home.region" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/template-home.region">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="-15.0" vertical-offset="0" max-vertical-offset="480">
+                  <caret line="24" column="41" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="41" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="episodes.item" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/collections/episodes.item">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1395">
+                  <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="episodes.list" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/collections/episodes.list">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1515">
+                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="episodes.conf" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/collections/episodes.conf">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.07177033" vertical-offset="0" max-vertical-offset="836">
+                  <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
                   <folding />
                 </state>
               </provider>
@@ -91,7 +209,12 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/collections/index.list" />
         <option value="$PROJECT_DIR$/template.conf" />
+        <option value="$PROJECT_DIR$/header.region" />
+        <option value="$PROJECT_DIR$/footer.region" />
+        <option value="$PROJECT_DIR$/template-home.region" />
+        <option value="$PROJECT_DIR$/collections/episodes.conf" />
       </list>
     </option>
   </component>
@@ -183,6 +306,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="scripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="custom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sqsp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sqsp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="presets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -222,6 +363,18 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="options.lastSelected" value="preferences.fileTypes" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/collections" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/blocks" />
+      <recent name="$PROJECT_DIR$/scripts" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
@@ -275,10 +428,10 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32981133" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32981133" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24299803" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13806707" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -321,10 +474,74 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/site.region">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.08083141" vertical-offset="0" max-vertical-offset="3630">
-          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+        <state vertical-scroll-proportion="0.017964073" vertical-offset="0" max-vertical-offset="835">
+          <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/sticky.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33139536" vertical-offset="0" max-vertical-offset="2145">
+          <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/custom/ui.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5232558" vertical-offset="0" max-vertical-offset="3945">
+          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="915">
+          <caret line="42" column="17" selection-start-line="42" selection-start-column="17" selection-end-line="42" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blocks/sticky-nav.block">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.125" vertical-offset="0" max-vertical-offset="1080">
+          <caret line="5" column="72" selection-start-line="5" selection-start-column="72" selection-end-line="5" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blocks/static-nav.block">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="1080">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/header.region">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.2941177" vertical-offset="207" max-vertical-offset="1065">
+          <caret line="25" column="48" selection-start-line="25" selection-start-column="48" selection-end-line="25" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/footer.region">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.25" vertical-offset="0" max-vertical-offset="810">
+          <caret line="18" column="77" selection-start-line="18" selection-start-column="77" selection-end-line="18" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blocks/secondary-navigation.block">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.20930232" vertical-offset="0" max-vertical-offset="1035">
+          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
           <folding />
         </state>
       </provider>
@@ -337,6 +554,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/site.region">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2770" max-vertical-offset="3630">
+          <caret line="207" column="14" selection-start-line="207" selection-start-column="14" selection-end-line="207" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/collections/blog.conf">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.108043216" vertical-offset="0" max-vertical-offset="833">
@@ -345,18 +570,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/template-home.region">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.6" vertical-offset="0" max-vertical-offset="105">
-          <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+        <state vertical-scroll-proportion="-15.0" vertical-offset="0" max-vertical-offset="480">
+          <caret line="24" column="41" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="41" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/template.conf">
+    <entry file="file://$PROJECT_DIR$/collections/episodes.item">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5232558" vertical-offset="0" max-vertical-offset="860">
-          <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1395">
+          <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collections/episodes.list">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1515">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collections/episodes.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.07177033" vertical-offset="0" max-vertical-offset="836">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
           <folding />
         </state>
       </provider>
