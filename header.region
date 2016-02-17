@@ -9,24 +9,6 @@
     <link rel="stylesheet" type="text/css" href="//cloud.typography.com/6811694/6322752/css/fonts.css"/>
     <link rel="stylesheet" href="style.css">
 
-    {squarespace-headers}
-
-    <squarespace: combo="true" src="libs/jquery-2.1.0.min.js">
-    <squarespace: combo="true" src="libs/greensock/TweenMax.min.js">
-    <squarespace: combo="true" src="libs/fastclick.js">
-    <squarespace: combo="true" src="libs/lodash.js">
-    <squarespace: combo="true" src="libs/scrollMonitor.js">
-
-    <squarespace: combo="true" src="custom/namespaces.js">
-    <squarespace: combo="true" src="custom/global_functions.js">
-    <squarespace: combo="true" src="custom/ScrollHeader.js">
-
-    <squarespace: combo="true" src="custom/Preloader.js">
-    <squarespace: combo="true" src="custom/ScrollPoster.js">
-    <squarespace: combo="true" src="custom/ParallaxPoster.js">
-    <squarespace: combo="true" src="custom/ClippedCanvas.js">
-    <squarespace: combo="true" src="custom/FieldTracker.js">
-    <squarespace: combo="true" src="custom/Parallaxer.js">
 
 </head>
 <body id="{squarespace.page-id}" class="{squarespace.page-classes}{.if item}{.section item}{.if productType}{.or}{.main-image?} has-banner-image item-main-image{.end}{.end}{.end}{.or}{.section collection}{.collectionTypeNameEquals? index}{.section collections}{.section 0}{.main-image?} has-banner-image index-page{.end}{.end}{.end}{.or}{.main-image?} has-banner-image general-page{.end}{.end}{.end}{.end}">

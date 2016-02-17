@@ -9,5 +9,3 @@
 <div id="preloader">
     <div class="filler"></div>
 </div>
-
-<squarespace:script src="custom/page_home.js" combo="true" />
