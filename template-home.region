@@ -1,6 +1,7 @@
 <div class="site-content">
     <section class="posters scroll-posters">
         <div class="posters-hover-bg"></div>
+        <h1>adfsdf</h1>
     </section>
 </div>
 
@@ -9,3 +10,5 @@
 <div id="preloader">
     <div class="filler"></div>
 </div>
+
+<squarespace:script src="custom/page_home.js" combo="true" />
