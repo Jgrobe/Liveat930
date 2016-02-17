@@ -3,12 +3,13 @@
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title> squarespace | <?php echo strtolower($page); ?></title>
 
     <link rel="icon" type="image/png" href="favicon.png">
 
     <link rel="stylesheet" type="text/css" href="//cloud.typography.com/6811694/6322752/css/fonts.css"/>
     <link rel="stylesheet" href="style.css">
+
+    {squarespace-headers}
 
     <squarespace: combo="true" src="libs/jquery-2.1.0.min.js">
     <squarespace: combo="true" src="libs/greensock/TweenMax.min.js">
@@ -35,10 +36,8 @@
     <!-- squarespace:navigation navigationId="mainNav" template="mobile-navigation" / -->
 
     <div class="sticky-header">
-        <?php include('modules/nav-search-overlay.php'); ?>
 
         <a href="?p=home" class="logo">
-            <?php svg('images/logo-small-dark'); ?>
         </a>
         <div class="burger">
             <div class="inner">
@@ -53,12 +52,8 @@
         <!--<a href="?p=home" class="logo"></a>-->
         <nav class="navigation">
             <ul class="menu">
-                <?php foreach($menu_main as $i => $item) : ?>
-                <li class="menu-item<?php if($page == $item['href']) {echo ' current-item';} ?>"><a href="?p=<?php echo $item['href']; ?>"><?php echo $item['label']; ?></a></li>
                 <li class="divider">/</li>
-                <?php endforeach;?>
                 <li class="menu-item">
-                    <?php include('modules/searchfield.php'); ?>
                 </li>
             </ul>
             <div class="header-marker"></div>

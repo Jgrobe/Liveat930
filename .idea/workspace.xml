@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ba77c59-895c-4b6c-8ed1-52220cbb39bd" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/collections/videoclips.conf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/collections/videoclips.item" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/collections/videoclips.list" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collections/episodes.conf" afterPath="$PROJECT_DIR$/collections/episodes.conf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template.conf" afterPath="$PROJECT_DIR$/template.conf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/footer.region" afterPath="$PROJECT_DIR$/footer.region" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/header.region" afterPath="$PROJECT_DIR$/header.region" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template-home.region" afterPath="$PROJECT_DIR$/template-home.region" />
     </list>
     <ignored path="sqsp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,8 +34,8 @@
           <file leaf-file-name="template.conf" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/template.conf">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-16.708334" vertical-offset="4" max-vertical-offset="1170">
-                  <caret line="27" column="14" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="28" />
+                <state vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="1170">
+                  <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
                   <folding />
                 </state>
               </provider>
@@ -66,8 +64,38 @@
           <file leaf-file-name="template-home.region" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/template-home.region">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-15.0" vertical-offset="0" max-vertical-offset="480">
-                  <caret line="24" column="41" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="41" />
+                <state vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="270">
+                  <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="footer.region" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/footer.region">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="600">
+                  <caret line="17" column="99" selection-start-line="17" selection-start-column="98" selection-end-line="17" selection-end-column="99" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="header.region" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/header.region">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.2039555" vertical-offset="0" max-vertical-offset="990">
+                  <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="site.region" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/site.region">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="3630">
+                  <caret line="7" column="25" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="25" />
                   <folding />
                 </state>
               </provider>
@@ -93,11 +121,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="episodes.conf" pinned="false" current-in-tab="true">
+          <file leaf-file-name="episodes.conf" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/collections/episodes.conf">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.1076555" vertical-offset="0" max-vertical-offset="836">
-                  <caret line="6" column="51" selection-start-line="6" selection-start-column="51" selection-end-line="6" selection-end-column="51" />
+                <state vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="195">
+                  <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
                   <folding />
                 </state>
               </provider>
@@ -129,13 +157,13 @@
       <list>
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/collections/index.list" />
-        <option value="$PROJECT_DIR$/header.region" />
-        <option value="$PROJECT_DIR$/footer.region" />
-        <option value="$PROJECT_DIR$/template-home.region" />
         <option value="$PROJECT_DIR$/styles/style.scss" />
         <option value="$PROJECT_DIR$/collections/videoclips.conf" />
         <option value="$PROJECT_DIR$/template.conf" />
         <option value="$PROJECT_DIR$/collections/episodes.conf" />
+        <option value="$PROJECT_DIR$/template-home.region" />
+        <option value="$PROJECT_DIR$/footer.region" />
+        <option value="$PROJECT_DIR$/header.region" />
       </list>
     </option>
   </component>
@@ -313,10 +341,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-2556" y="23" width="2556" height="1417" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32981133" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32981133" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32981133" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -396,34 +424,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/header.region">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.2941177" vertical-offset="207" max-vertical-offset="1065">
-          <caret line="25" column="48" selection-start-line="25" selection-start-column="48" selection-end-line="25" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/blocks/secondary-navigation.block">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.20930232" vertical-offset="0" max-vertical-offset="1035">
           <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/site.region">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2770" max-vertical-offset="3630">
-          <caret line="207" column="14" selection-start-line="207" selection-start-column="14" selection-end-line="207" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/template-home.region">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.0" vertical-offset="0" max-vertical-offset="480">
-          <caret line="24" column="41" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="41" />
           <folding />
         </state>
       </provider>
@@ -459,22 +463,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-17.5" vertical-offset="0" max-vertical-offset="630">
           <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/collections/blog.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.108043216" vertical-offset="0" max-vertical-offset="833">
-          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/footer.region">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32296652" vertical-offset="0" max-vertical-offset="836">
-          <caret line="18" column="77" selection-start-line="18" selection-start-column="77" selection-end-line="18" selection-end-column="77" />
           <folding />
         </state>
       </provider>
@@ -527,18 +515,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/template.conf">
+    <entry file="file://$PROJECT_DIR$/collections/episodes.conf">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.708334" vertical-offset="4" max-vertical-offset="1170">
-          <caret line="27" column="14" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="28" />
+        <state vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="195">
+          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/collections/episodes.conf">
+    <entry file="file://$PROJECT_DIR$/collections/blog.conf">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1076555" vertical-offset="0" max-vertical-offset="836">
-          <caret line="6" column="51" selection-start-line="6" selection-start-column="51" selection-end-line="6" selection-end-column="51" />
+        <state vertical-scroll-proportion="0.108043216" vertical-offset="0" max-vertical-offset="833">
+          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="1170">
+          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template-home.region">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="270">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/footer.region">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="600">
+          <caret line="17" column="99" selection-start-line="17" selection-start-column="98" selection-end-line="17" selection-end-column="99" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/site.region">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="3630">
+          <caret line="7" column="25" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/header.region">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2039555" vertical-offset="0" max-vertical-offset="990">
+          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
           <folding />
         </state>
       </provider>
