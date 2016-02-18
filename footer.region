@@ -28,7 +28,7 @@
 
 </div><!-- .page -->
 
-<squarespace:script src="custom/ui.js" combo="true" />
+<!-- squarespace:script src="custom/ui.js" combo="true" / -->
 {squarespace-footers}
 
 </body>

@@ -2,7 +2,100 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ba77c59-895c-4b6c-8ed1-52220cbb39bd" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collections/episodes.conf" afterPath="$PROJECT_DIR$/collections/episodes.conf" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/styles/sass/base/_vars.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/styles/sass/base/fonts.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/styles/sass/base/functions.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/styles/sass/base/functions.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/styles/sass/base/functions.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/styles/sass/base/main.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/styles/sass/base/main.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/styles/sass/base/main.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/styles/sass/base/mixins.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/styles/sass/base/mixins.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/styles/sass/base/mixins.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/styles/sass/base/reset.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/styles/sass/base/reset.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/styles/sass/base/typography.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/styles/sass/base/typography.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/styles/sass/base/typography.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/styles/sass/dev/aligner.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/styles/sass/dev/aligner.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/styles/sass/dev/aligner.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/styles/sass/modules/devices.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/styles/sass/modules/devices.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/styles/sass/modules/devices.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/styles/sass/modules/icons.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/styles/sass/modules/icons.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/styles/sass/modules/image-slider.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/styles/sass/modules/image-slider.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/styles/sass/modules/image-slider.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/styles/sass/modules/nav-overlay.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/styles/sass/modules/nav-overlay.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/styles/sass/modules/nav-overlay.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/styles/sass/modules/nav-search-overlay.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/styles/sass/modules/nav-search-overlay.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/styles/sass/modules/post-excerpt.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/styles/sass/modules/post-excerpt.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/styles/sass/modules/post-excerpt.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/styles/sass/modules/poster.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/styles/sass/modules/poster.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/styles/sass/modules/poster.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/styles/sass/modules/posters/circle.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/styles/sass/modules/posters/circle.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/styles/sass/modules/posters/circle.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/styles/sass/modules/posters/fullTriangle.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/styles/sass/modules/posters/fullTriangle.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/styles/sass/modules/posters/fullTriangle.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/styles/sass/modules/preloader.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/styles/sass/modules/preloader.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/styles/sass/modules/preloader.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/styles/sass/modules/search-overlay.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/styles/sass/modules/search-overlay.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/styles/sass/modules/text-insert.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/styles/sass/modules/text-insert.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/styles/sass/modules/text-insert.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/styles/sass/modules/upcoming.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/styles/sass/modules/upcoming.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/styles/sass/pages/blog.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/styles/sass/pages/blog.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/styles/sass/pages/episode-detail.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/styles/sass/pages/episode-detail.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/styles/sass/pages/episode-detail.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/styles/sass/pages/episodes.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/styles/sass/pages/episodes.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/styles/sass/pages/home.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/styles/sass/pages/home.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/styles/sass/pages/home.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/styles/sass/pages/host.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/styles/sass/pages/host.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/styles/sass/pages/host.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/styles/sass/pages/merch.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/styles/sass/pages/merch.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/styles/sass/pages/show.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/styles/sass/pages/show.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/styles/sass/pages/show.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/styles/sass/pages/video.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/styles/sass/pages/video.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/styles/sass/parts/footer.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/styles/sass/parts/footer.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/styles/sass/parts/header.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/styles/sass/parts/header.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/styles/sass/parts/sticky-header.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/styles/sass/parts/sticky-header.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/styles/sass/parts/sticky-header.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/styles/sass/ui/cta.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/styles/sass/ui/cta.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/styles/sass/ui/cta.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/styles/sass/ui/links.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/styles/sass/ui/links.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/styles/sass/ui/links.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/styles/site.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/styles/site.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/styles/site.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/styles/style.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/styles/style.scss" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/styles/style.css" afterPath="$PROJECT_DIR$/styles/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/footer.region" afterPath="$PROJECT_DIR$/footer.region" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template.conf" afterPath="$PROJECT_DIR$/template.conf" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -33,8 +126,8 @@
           <file leaf-file-name="template.conf" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/template.conf">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.5566502" vertical-offset="260" max-vertical-offset="1275">
-                  <caret line="55" column="24" selection-start-line="55" selection-start-column="24" selection-end-line="55" selection-end-column="24" />
+                <state vertical-scroll-proportion="0.73399013" vertical-offset="155" max-vertical-offset="1170">
+                  <caret line="60" column="9" selection-start-line="60" selection-start-column="9" selection-end-line="60" selection-end-column="9" />
                   <folding />
                 </state>
               </provider>
@@ -51,16 +144,6 @@
                     <element signature="n#style#0;n#a#0;n#li#1;n#ul#0;n#section#1;n#div#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#a#0;n#li#2;n#ul#0;n#section#1;n#div#0;n#!!top" expanded="true" />
                   </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="blog.item" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/collections/blog.item">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-18.125" vertical-offset="0" max-vertical-offset="1395">
-                  <caret line="29" column="58" selection-start-line="29" selection-start-column="58" selection-end-line="29" selection-end-column="58" />
-                  <folding />
                 </state>
               </provider>
             </entry>
@@ -98,8 +181,18 @@
           <file leaf-file-name="template-home.region" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/template-home.region">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-8.125" vertical-offset="0" max-vertical-offset="285">
-                  <caret line="13" column="47" selection-start-line="13" selection-start-column="47" selection-end-line="13" selection-end-column="47" />
+                <state vertical-scroll-proportion="-6.25" vertical-offset="0" max-vertical-offset="285">
+                  <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="footer.region" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/footer.region">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="-18.75" vertical-offset="0" max-vertical-offset="600">
+                  <caret line="30" column="60" selection-start-line="30" selection-start-column="60" selection-end-line="30" selection-end-column="60" />
                   <folding />
                 </state>
               </provider>
@@ -142,8 +235,8 @@
           <file leaf-file-name="episodes.conf" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/collections/episodes.conf">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.073891625" vertical-offset="0" max-vertical-offset="1015">
-                  <caret line="5" column="51" selection-start-line="5" selection-start-column="51" selection-end-line="5" selection-end-column="51" />
+                <state vertical-scroll-proportion="0.08866995" vertical-offset="0" max-vertical-offset="1015">
+                  <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
                   <folding />
                 </state>
               </provider>
@@ -162,7 +255,6 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/collections/index.list" />
         <option value="$PROJECT_DIR$/styles/style.scss" />
-        <option value="$PROJECT_DIR$/footer.region" />
         <option value="$PROJECT_DIR$/styles/style.css" />
         <option value="$PROJECT_DIR$/collections/videoclips.conf" />
         <option value="$PROJECT_DIR$/blocks/static-nav.block" />
@@ -176,6 +268,7 @@
         <option value="$PROJECT_DIR$/header.region" />
         <option value="$PROJECT_DIR$/template-home.region" />
         <option value="$PROJECT_DIR$/collections/episodes.conf" />
+        <option value="$PROJECT_DIR$/footer.region" />
         <option value="$PROJECT_DIR$/template.conf" />
       </list>
     </option>
@@ -254,42 +347,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="styles" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="style.scss" />
-              <option name="myItemType" value="com.intellij.plugins.watcher.projectView.NestingTreeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sqsp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sqsp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="styles" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="site.scss" />
-              <option name="myItemType" value="com.intellij.plugins.watcher.projectView.NestingTreeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sqsp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sqsp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="presets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -354,10 +411,10 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/styles" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/assets" />
       <recent name="$PROJECT_DIR$/collections" />
-      <recent name="$PROJECT_DIR$/styles" />
       <recent name="$PROJECT_DIR$/blocks" />
     </key>
   </component>
@@ -416,7 +473,7 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32981133" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13806707" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13806707" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
@@ -499,33 +556,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/styles/sass/ui/cta.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13953489" vertical-offset="0" max-vertical-offset="1095">
-          <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/styles/style.css.map">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.11166253" vertical-offset="0" max-vertical-offset="806">
-          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="sourcemapFileViewerProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/styles/style.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.5" vertical-offset="0" max-vertical-offset="630">
-          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/collections/index.list">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4011628" vertical-offset="0" max-vertical-offset="860">
@@ -546,22 +576,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5382775" vertical-offset="0" max-vertical-offset="1515">
           <caret line="30" column="25" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/footer.region">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.117647" vertical-offset="0" max-vertical-offset="600">
-          <caret line="14" column="46" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/styles/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.55813956" vertical-offset="0" max-vertical-offset="54195">
-          <caret line="32" column="44" selection-start-line="32" selection-start-column="44" selection-end-line="32" selection-end-column="44" />
           <folding />
         </state>
       </provider>
@@ -658,22 +672,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/styles/site.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1039">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/template-home.region">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.125" vertical-offset="0" max-vertical-offset="285">
-          <caret line="13" column="47" selection-start-line="13" selection-start-column="47" selection-end-line="13" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/header.region">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-15.294118" vertical-offset="0" max-vertical-offset="870">
@@ -729,16 +727,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/collections/episodes.conf">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.073891625" vertical-offset="0" max-vertical-offset="1015">
-          <caret line="5" column="51" selection-start-line="5" selection-start-column="51" selection-end-line="5" selection-end-column="51" />
+        <state vertical-scroll-proportion="0.08866995" vertical-offset="0" max-vertical-offset="1015">
+          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template-home.region">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.25" vertical-offset="0" max-vertical-offset="285">
+          <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/footer.region">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-18.75" vertical-offset="0" max-vertical-offset="600">
+          <caret line="30" column="60" selection-start-line="30" selection-start-column="60" selection-end-line="30" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4908566" vertical-offset="0" max-vertical-offset="54570">
+          <caret line="34" column="10" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/template.conf">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5566502" vertical-offset="260" max-vertical-offset="1275">
-          <caret line="55" column="24" selection-start-line="55" selection-start-column="24" selection-end-line="55" selection-end-column="24" />
+        <state vertical-scroll-proportion="0.73399013" vertical-offset="155" max-vertical-offset="1170">
+          <caret line="60" column="9" selection-start-line="60" selection-start-column="9" selection-end-line="60" selection-end-column="9" />
           <folding />
         </state>
       </provider>
