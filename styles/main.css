@@ -790,7 +790,7 @@ input {
         margin: 2vw auto 10vw auto; } }
 
 .hosted-by-logo {
-  background: url("assets/images/hosted-by.svg") no-repeat center / contain;
+  background: url("assets/images/hosted-by.svg") no-repeat center/contain;
   width: 80%;
   height: 2.4vw;
   margin: 0 auto; }
@@ -1300,7 +1300,7 @@ input {
 
 .poster {
   display: block;
-  background: url("assets/images/textures/paper.jpg") no-repeat center / cover;
+  background: url("assets/images/textures/paper.jpg") no-repeat center/cover;
   position: relative;
   background-color: white;
   -webkit-box-shadow: 0.01vw 0.01vw 3vw rgba(0, 0, 0, 0.2);
@@ -1552,16 +1552,16 @@ input {
   content: '';
   display: block;
   left: -2%;
-  background: url("assets/images/textures/texture2.png") no-repeat center / cover; }
+  background: url("assets/images/textures/texture2.png") no-repeat center/cover; }
 .poster.circle .layer.bg-layer .half:last-child {
-  background: url("assets/images/textures/1b.jpg") no-repeat center / cover; }
+  background: url("assets/images/textures/1b.jpg") no-repeat center/cover; }
 .poster.circle .layer.model-layer {
   position: absolute;
   top: 5%;
   width: 80%;
   left: 10%;
   border-radius: 100%;
-  background: url("assets/images/textures/circle.jpg") no-repeat center / cover; }
+  background: url("assets/images/textures/circle.jpg") no-repeat center/cover; }
   .poster.circle .layer.model-layer:before {
     content: '';
     display: block;
@@ -1579,14 +1579,14 @@ input {
     display: block;
     left: -2%;
     top: -3%;
-    background: url("assets/images/textures/2a.png") no-repeat center / cover;
+    background: url("assets/images/textures/2a.png") no-repeat center/cover;
     opacity: .5; }
 .poster.fullTriangle .layer.model-layer {
   position: absolute;
   top: -10%;
   width: 110%;
   left: -5%;
-  background: url("assets/images/textures/fullTriangle.png") no-repeat center / contain; }
+  background: url("assets/images/textures/fullTriangle.png") no-repeat center/contain; }
   .poster.fullTriangle .layer.model-layer:before {
     content: '';
     display: block;
@@ -1667,7 +1667,7 @@ input {
     margin-left: 12.5vw;
     width: 87.5vw;
     color: white;
-    background: rgba(0, 0, 0, 0.55) url("assets/images/halftone.jpg") no-repeat center center / cover;
+    background: rgba(0, 0, 0, 0.55) url("assets/images/halftone.jpg") no-repeat center center/cover;
     background-blend-mode: overlay; }
     .text-insert-container .text-layer .section-head {
       padding: 0;
@@ -2179,7 +2179,7 @@ input {
     .episodes-landing .landing-bg.video-bg:after {
       content: '';
       display: block;
-      background: rgba(0, 0, 0, 0.75) url("assets/images/halftone-pattern2.png") no-repeat center / cover;
+      background: rgba(0, 0, 0, 0.75) url("assets/images/halftone-pattern2.png") no-repeat center/cover;
       mix-blend-mode: overlay; }
   .episodes-landing .landing-cta {
     position: absolute;
@@ -2687,7 +2687,7 @@ a.episodes-landing-cta {
     left: 0;
     width: 6.18056vw;
     height: 6.18056vw;
-    background: white url("assets/images/icon-play.svg") no-repeat center center / 13%; }
+    background: white url("assets/images/icon-play.svg") no-repeat center center/13%; }
 
 .host-landing {
   width: 100vw;
@@ -2723,7 +2723,7 @@ a.episodes-landing-cta {
     .host-landing .landing-bg.video-bg:after {
       content: '';
       display: block;
-      background: rgba(0, 0, 0, 0.75) url("assets/images/halftone-pattern2.png") no-repeat center / cover;
+      background: rgba(0, 0, 0, 0.75) url("assets/images/halftone-pattern2.png") no-repeat center/cover;
       mix-blend-mode: overlay; }
   .host-landing:before {
     background-image: url("assets/images/the-host-title.jpg"); }
@@ -2831,7 +2831,7 @@ a.episodes-landing-cta {
     .merch-landing .landing-bg.video-bg:after {
       content: '';
       display: block;
-      background: rgba(0, 0, 0, 0.75) url("assets/images/halftone-pattern2.png") no-repeat center / cover;
+      background: rgba(0, 0, 0, 0.75) url("assets/images/halftone-pattern2.png") no-repeat center/cover;
       mix-blend-mode: overlay; }
   .merch-landing h1 {
     text-align: center; }
@@ -2996,7 +2996,7 @@ a.episodes-landing-cta {
     .post-landing .landing-bg.video-bg:after {
       content: '';
       display: block;
-      background: rgba(0, 0, 0, 0.75) url("assets/images/halftone-pattern2.png") no-repeat center / cover;
+      background: rgba(0, 0, 0, 0.75) url("assets/images/halftone-pattern2.png") no-repeat center/cover;
       mix-blend-mode: overlay; }
   .post-landing h1 {
     margin: 0; }
@@ -3148,7 +3148,7 @@ a.episodes-landing-cta {
     .show-landing .landing-bg.video-bg:after {
       content: '';
       display: block;
-      background: rgba(0, 0, 0, 0.75) url("assets/images/halftone-pattern2.png") no-repeat center / cover;
+      background: rgba(0, 0, 0, 0.75) url("assets/images/halftone-pattern2.png") no-repeat center/cover;
       mix-blend-mode: overlay; }
 
 .show-content {
@@ -3308,7 +3308,7 @@ a.episodes-landing-cta {
     .video-overview-landing .landing-bg.video-bg:after {
       content: '';
       display: block;
-      background: rgba(0, 0, 0, 0.75) url("assets/images/halftone-pattern2.png") no-repeat center / cover;
+      background: rgba(0, 0, 0, 0.75) url("assets/images/halftone-pattern2.png") no-repeat center/cover;
       mix-blend-mode: overlay; }
   .video-overview-landing h1 {
     margin: 0 0 5vh 0; }
