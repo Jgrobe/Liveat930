@@ -1,0 +1,15 @@
+<a class="cta-container" >
+
+    <div class="cta">
+        <span class="filler">
+            <span class="label">View</span>
+        </span>
+    </div><!-- .cta -->
+
+    <div class="cta hover-cta">
+        <span class="filler">
+            <span class="label">View</span>
+        </span>
+    </div><!-- .cta.hover-cta -->
+
+</a><!-- .cta-container -->

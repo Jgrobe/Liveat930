@@ -50,14 +50,4 @@
         </div><!-- .burger -->
     </div><!-- .sticky-header -->
 
-    <header class="header static-header">
-        <!--<a href="?p=home" class="logo"></a>-->
-        <nav class="navigation">
-            <ul class="menu">
-                <li class="divider">/</li>
-                <li class="menu-item">
-                </li>
-            </ul>
-            <div class="header-marker"></div>
-        </nav>
-    </header>
+    {@|apply static-nav.block}

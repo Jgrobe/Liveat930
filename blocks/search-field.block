@@ -1,0 +1,11 @@
+<div class="search">
+    <div class="search-icon">
+        {@|apply svg-icon-magnifier.block}
+    </div>
+    <div class="searchfield-container">
+        <input type="text" class="search-field" placeholder="Search">
+        <a class="clear-icon" href="#">
+            {@|apply svg-icon-x.block}
+        </a>
+    </div><!-- .searchfield -->
+</div><!-- .searchfield-container -->
