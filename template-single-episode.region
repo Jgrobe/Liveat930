@@ -1,4 +1,5 @@
 {.section collection}
+<script>console.log('collection pre', '{urlId}');</script>
 <squarespace:query collection="{urlId}" featured="true" limit="5">
 
     <script>console.log('collection data', '{urlId}', {@|json-pretty});</script>
