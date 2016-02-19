@@ -1,6 +1,6 @@
-{.section collection}
+
 <script>console.log('querying collection: {urlId}');</script>
-<squarespace:query collection="{urlId}" featured="true" limit="5">
+<squarespace:query collection="{.section collection}{urlId}{.end}" featured="true" limit="5">
 
     <script>console.log('collection data', '{urlId}', {@|json-pretty});</script>
     {.repeated section items}
@@ -8,7 +8,7 @@
     {.end}
 
 </squarespace:query>
-{.end}
+
 <section class="episodes-landing episode-detail">
     <h1>EPISODE.REGION</h1>
     <div class="fill-parent mask">
