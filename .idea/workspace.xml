@@ -54,7 +54,7 @@
                 <entry file="file://$PROJECT_DIR$/header.region">
                   <provider selected="true" editor-type-id="text-editor">
                     <state vertical-scroll-proportion="0.49342105" vertical-offset="0" max-vertical-offset="1064">
-                      <caret line="35" column="54" selection-start-line="35" selection-start-column="54" selection-end-line="35" selection-end-column="54" />
+                      <caret line="35" column="45" selection-start-line="35" selection-start-column="45" selection-end-line="35" selection-end-column="45" />
                       <folding />
                     </state>
                   </provider>
@@ -797,7 +797,7 @@
     <entry file="file://$PROJECT_DIR$/header.region">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.49342105" vertical-offset="0" max-vertical-offset="1064">
-          <caret line="35" column="54" selection-start-line="35" selection-start-column="54" selection-end-line="35" selection-end-column="54" />
+          <caret line="35" column="45" selection-start-line="35" selection-start-column="45" selection-end-line="35" selection-end-column="45" />
           <folding />
         </state>
       </provider>
