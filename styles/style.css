@@ -2687,7 +2687,7 @@ a.episodes-landing-cta {
     left: 0;
     width: 6.18056vw;
     height: 6.18056vw;
-    background: white url("assets/images/icon-play.svg") no-repeat center center/13%; }
+    background: white url("assets/images/icon-play.svg") no-repeat center center; background-size: 13%; }
 
 .host-landing {
   width: 100vw;
