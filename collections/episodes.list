@@ -1,4 +1,4 @@
-<section class="episodes-landing episode-detail" >
+<section class="episodes-landing episode-detail">
     <h1>EPISODES.LIST</h1>
     <div class="fill-parent mask">
         <div class="landing-bg" style="background-image:url('');" data-type="video" data-src="assets/videos/navigation-overlay-video_1.mp4" data-shape="<?php if(isset($_GET['shape'])){echo $_GET['shape'];}else{echo 'general';} ?>">

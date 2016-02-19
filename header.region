@@ -30,7 +30,7 @@
 
     {squarespace-headers}
 
-    <script>jQuery.ajax((location.href+'?format=json-pretty'), {success:function(e){console.log('SITE', e);}});</script>
+    <script>if(location.href.indexOf('localhost') < 0){jQuery.ajax((location.href+'?format=json-pretty'), {success:function(e){console.log('SITE', e);}});}</script>
 
 </head>
 
