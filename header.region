@@ -10,6 +10,7 @@
 
     <link rel="stylesheet" type="text/css" href="//cloud.typography.com/6811694/6322752/css/fonts.css"/>
     <!--yxyxyx-->
+    <script>console.log('SITE', {@|json-pretty});</script>
 
     <squarespace:script combo="true" src="libs/jquery-2.1.0.min.js" />
     <squarespace:script combo="true" src="libs/greensock/TweenMax.min.js" />
