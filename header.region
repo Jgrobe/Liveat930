@@ -10,7 +10,6 @@
 
     <link rel="stylesheet" type="text/css" href="//cloud.typography.com/6811694/6322752/css/fonts.css"/>
     <!--yxyxyx-->
-    <script>console.log('SITE', {@|json-pretty});</script>
 
     <squarespace:script combo="true" src="libs/jquery-2.1.0.min.js" />
     <squarespace:script combo="true" src="libs/greensock/TweenMax.min.js" />
@@ -34,6 +33,7 @@
 </head>
 
 <body id="{squarespace.page-id}" class="{squarespace.page-classes}{.if item}{.section item}{.if productType}{.or}{.main-image?} has-banner-image item-main-image{.end}{.end}{.end}{.or}{.section collection}{.collectionTypeNameEquals? index}{.section collections}{.section 0}{.main-image?} has-banner-image index-page{.end}{.end}{.end}{.or}{.main-image?} has-banner-image general-page{.end}{.end}{.end}{.end}">
+<script>console.log('SITE', {@|json-pretty});</script>
 
 <div class="page">
 
