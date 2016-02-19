@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ba77c59-895c-4b6c-8ed1-52220cbb39bd" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/header.region" afterPath="$PROJECT_DIR$/header.region" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template-single-episode.region" afterPath="$PROJECT_DIR$/template-single-episode.region" />
     </list>
     <ignored path="sqsp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,7 +27,7 @@
   <component name="FileEditorManager">
     <splitter split-orientation="horizontal" split-proportion="0.71679085">
       <split-first>
-        <splitter split-orientation="horizontal" split-proportion="0.5743119">
+        <splitter split-orientation="horizontal" split-proportion="0.2648318">
           <split-first>
             <leaf>
               <file leaf-file-name="template.conf" pinned="false" current-in-tab="false">
@@ -64,11 +64,11 @@
           </split-first>
           <split-second>
             <leaf>
-              <file leaf-file-name="template-single-episode.region" pinned="false" current-in-tab="false">
+              <file leaf-file-name="template-single-episode.region" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/template-single-episode.region">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="4695">
-                      <caret line="7" column="158" selection-start-line="7" selection-start-column="158" selection-end-line="7" selection-end-column="158" />
+                    <state vertical-scroll-proportion="0.027497709" vertical-offset="0" max-vertical-offset="4620">
+                      <caret line="2" column="70" selection-start-line="2" selection-start-column="70" selection-end-line="2" selection-end-column="70" />
                       <folding />
                     </state>
                   </provider>
@@ -84,11 +84,11 @@
                   </provider>
                 </entry>
               </file>
-              <file leaf-file-name="template-episodes.region" pinned="false" current-in-tab="true">
+              <file leaf-file-name="template-episodes.region" pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/template-episodes.region">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.43996334" vertical-offset="120" max-vertical-offset="1425">
-                      <caret line="40" column="69" selection-start-line="40" selection-start-column="54" selection-end-line="40" selection-end-column="69" />
+                    <state vertical-scroll-proportion="-11.25" vertical-offset="0" max-vertical-offset="1425">
+                      <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
                       <folding>
                         <element signature="n#style#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
                         <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#section#1;n#div#0;n#!!top" expanded="true" />
@@ -212,7 +212,6 @@
         <option value="$PROJECT_DIR$/collections/videoclips.list" />
         <option value="$PROJECT_DIR$/collections/episodes.list" />
         <option value="$PROJECT_DIR$/collections/index.conf" />
-        <option value="$PROJECT_DIR$/template-single-episode.region" />
         <option value="$PROJECT_DIR$/blocks/svg-icon-logo-full.block" />
         <option value="$PROJECT_DIR$/blocks/svg-icon-episodenr.block" />
         <option value="$PROJECT_DIR$/blocks/svg-hosted-by.block" />
@@ -222,6 +221,7 @@
         <option value="$PROJECT_DIR$/styles/style.css" />
         <option value="$PROJECT_DIR$/blocks/module-cta.block" />
         <option value="$PROJECT_DIR$/header.region" />
+        <option value="$PROJECT_DIR$/template-single-episode.region" />
       </list>
     </option>
   </component>
@@ -683,14 +683,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/template-single-episode.region">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="4695">
-          <caret line="7" column="158" selection-start-line="7" selection-start-column="158" selection-end-line="7" selection-end-column="158" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/blocks/svg-icon-logo-full.block">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.4711274" vertical-offset="0" max-vertical-offset="1695">
@@ -775,17 +767,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/template-episodes.region">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.43996334" vertical-offset="120" max-vertical-offset="1425">
-          <caret line="40" column="69" selection-start-line="40" selection-start-column="54" selection-end-line="40" selection-end-column="69" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#section#1;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/collections/episodes.conf">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.08249313" vertical-offset="0" max-vertical-offset="1091">
@@ -798,6 +779,25 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.45112783" vertical-offset="0" max-vertical-offset="1064">
           <caret line="32" column="82" selection-start-line="32" selection-start-column="82" selection-end-line="32" selection-end-column="82" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template-episodes.region">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.25" vertical-offset="0" max-vertical-offset="1425">
+          <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#section#1;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template-single-episode.region">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.027497709" vertical-offset="0" max-vertical-offset="4620">
+          <caret line="2" column="70" selection-start-line="2" selection-start-column="70" selection-end-line="2" selection-end-column="70" />
           <folding />
         </state>
       </provider>

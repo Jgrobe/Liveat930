@@ -1,11 +1,6 @@
-<script>
-    console.log('starting ajax call');
-    jQuery.ajax('https://liveat930.squarespace.com/episodes-1?format=json-pretty',{ success:function(e){console.log('api call json','https://liveat930.squarespace.com/episodes-1?format=json-pretty',e);}});
-//    jQuery.ajax('http://localhost:9000/episodes-1?format=main-content',{ success:function(e){console.log('api call html',e);}});
-</script>
 <section class="episodes-landing episode-detail">
     <div class="fill-parent mask">
-        <div class="landing-bg" style="background-image:url('assets/images/episodes-title2.jpg');" data-type="video" data-src="assets/videos/navigation-overlay-video_1.mp4" data-shape="<?php if(isset($_GET['shape'])){echo $_GET['shape'];}else{echo 'general';} ?>">
+        <div class="landing-bg" style="background-image:url('');" data-type="video" data-src="assets/videos/navigation-overlay-video_1.mp4" data-shape="<?php if(isset($_GET['shape'])){echo $_GET['shape'];}else{echo 'general';} ?>">
             <!--<video src="assets/videos/header-episode.mp4" loop autoplay></video>-->
         </div>
     </div><!-- .mask -->
