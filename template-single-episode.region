@@ -1,6 +1,6 @@
 {.section collection}
-<script>console.log('blog', '{urlId}');</script>
-<squarespace:query collection="blog" featured="true" limit="5">
+<script>console.log('querying collection: {urlId}');</script>
+<squarespace:query collection="{urlId}" featured="true" limit="5">
 
     <script>console.log('collection data', '{urlId}', {@|json-pretty});</script>
     {.repeated section items}
