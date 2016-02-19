@@ -1,7 +1,7 @@
 {.section collection}
 <squarespace:query collection="{urlId}" featured="true" limit="5">
 
-    <script>console.log('collection data', {@|json-pretty});</script>
+    <script>console.log('collection data', '{urlId}', {@|json-pretty});</script>
     {.repeated section items}
     <script>console.log('item data'+'{@index}', {@|json-pretty});</script>
     {.end}
