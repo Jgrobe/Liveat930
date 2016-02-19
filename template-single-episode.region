@@ -12,7 +12,7 @@
 <section class="episodes-landing episode-detail">
     <h1 style="color:black;">{.repeated section items}{customContent.customType} - {.end}</h1>
     <div class="fill-parent mask">
-        <div class="landing-bg" style="background-image:url('{.repeated section items}{.equal?:item.customContent.customType:"episode-hero"}{item.assetUrl}{.end}{.end}');" data-type="video" data-src="assets/videos/navigation-overlay-video_1.mp4" data-shape="<?php if(isset($_GET['shape'])){echo $_GET['shape'];}else{echo 'general';} ?>">
+        <div class="landing-bg" style="background-image:url('{.repeated section items}{.equal?:customContent.customType:"episode-hero"}{item.assetUrl}{.end}{.end}');" data-type="video" data-src="assets/videos/navigation-overlay-video_1.mp4" data-shape="<?php if(isset($_GET['shape'])){echo $_GET['shape'];}else{echo 'general';} ?>">
             <!--<video src="assets/videos/header-episode.mp4" loop autoplay></video>-->
         </div>
     </div><!-- .mask -->
