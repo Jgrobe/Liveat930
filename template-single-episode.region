@@ -1,7 +1,7 @@
 {.section collection}
-<script>console.log('section', {@|json-pretty});</script>
 <squarespace:query collection="{urlId}" featured="true" limit="5">
 
+    <script>console.log('collection data', {@|json-pretty});</script>
     <!--<div class="featured-wrapper">-->
         <!--{.repeated section items}-->
         <!--<div class="featured-post">-->
