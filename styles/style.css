@@ -790,7 +790,6 @@ input {
         margin: 2vw auto 10vw auto; } }
 
 .hosted-by-logo {
-  background: url("assets/images/hosted-by.svg") no-repeat center/contain;
   width: 80%;
   height: 2.4vw;
   margin: 0 auto; }
@@ -1586,7 +1585,6 @@ input {
   top: -10%;
   width: 110%;
   left: -5%;
-  background: url("assets/images/textures/fullTriangle.png") no-repeat center/contain; }
   .poster.fullTriangle .layer.model-layer:before {
     content: '';
     display: block;
