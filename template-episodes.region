@@ -1,3 +1,6 @@
+{.section collection}
+<script>console.log('test', {@|json-pretty});</script>
+{.end}
 <section class="episodes-landing">
     <div class="fill-parent mask">
         <div class="landing-bg" style="background-image:url('assets/images/episodes-title2.jpg');">
@@ -50,28 +53,6 @@
                 <?php endforeach; ?>
             </div>
             <?php endfor; ?>
-            <?php /*
-        <!--<div class="episodes-overview-row">-->
-            <!--<div class="episodes-overview-episode">-->
-            <!--<div class="image" style="background-image:url('assets/images/poster1.jpg');"></div>-->
-            <!--<a href="" class="cta icon-eye">Watch Episode No. 1, Feb 2016</a>-->
-            <!--</div>-->
-            <!--<div class="episodes-overview-episode">-->
-            <!--<div class="image" style="background-image:url('assets/images/poster2.jpg');"></div>-->
-            <!--<a href="" class="cta icon-eye">Watch Episode No. 2, Mar 2016</a>-->
-            <!--</div>-->
-            <!--</div>-->
-            <!--<div class="episodes-overview-row">-->
-            <!--<div class="episodes-overview-episode">-->
-            <!--<div class="image" style="background-image:url('assets/images/poster2.jpg');"></div>-->
-            <!--<a href="" class="cta icon-eye">Watch Episode No. 3, Apr 2016</a>-->
-            <!--</div>-->
-            <!--<div class="episodes-overview-episode">-->
-            <!--<div class="image" style="background-image:url('assets/images/poster1.jpg');"></div>-->
-            <!--<a href="" class="cta icon-eye">Watch Episode No. 4, May 2016</a>-->
-            <!--</div>-->
-            <!--</div>-->
-            */ ?>
 
         </div><!-- .posters.episodes-overview -->
     </section><!-- .episodes-previous -->
@@ -89,6 +70,4 @@
     </section>
 </div>
 
-{@|apply module-upcoming.block}
-
-<squarespace:script src="custom/page_episodes.js" combo="true" />
+<!--squarespace:script src="custom/page_episodes.js" combo="true" /-->

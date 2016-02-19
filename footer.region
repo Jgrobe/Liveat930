@@ -1,3 +1,6 @@
+
+    {@|apply module-upcoming.block}
+
     <footer class="footer">
         <!--<div class="footer-bg"></div>-->
         <section class="footer-newsletter">
