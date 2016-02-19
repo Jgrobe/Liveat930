@@ -1,6 +1,6 @@
 <script>
     console.log('starting ajax call');
-    jQuery.ajax('https://liveat930.squarespace.com/episodes-1?format=json-pretty',{ success:function(e){console.log('api call json',e);}});
+    jQuery.ajax('https://liveat930.squarespace.com/episodes-1?format=json-pretty',{ success:function(e){console.log('api call json','https://liveat930.squarespace.com/episodes-1?format=json-pretty',e);}});
     jQuery.ajax('http://localhost:9000/episodes-1?format=main-content',{ success:function(e){console.log('api call html',e);}});
 </script>
 <section class="episodes-landing episode-detail">

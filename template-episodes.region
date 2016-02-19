@@ -1,6 +1,4 @@
-{.section collection}
 <script>console.log('test', {@|json-pretty});</script>
-{.end}
 <section class="episodes-landing">
     <div class="fill-parent mask">
         <div class="landing-bg" style="background-image:url('assets/images/episodes-title2.jpg');">
@@ -36,25 +34,33 @@
             <h2>Past Show</h2>
             <p>See the performances</p>
         </div><!-- .section-head -->
-        <div class="episodes-overview posters">
 
-            <?php for($i=0; $i<3; $i++) : ?>
-            <div class="episodes-overview-row">
-                <?php foreach($posters as $key => $poster) : ?>
+
+        {.section collection}
+        <div class="episodes-overview posters">
+            <script>console.log('collectoins', {@|json-pretty});</script>
+            {.repeated section collections}
+            <span class="index">{@index}</span>
+            {.even?}<div class="episodes-overview-row">{.end}
                 <div class="episodes-overview-item prllxposter">
-                    <?php include('modules/module-poster.php'); ?>
-                    <?php print_cta(array(
+
+                    <!--php include('modules/module-poster.php'); -->
+                    <!--php print_cta(array(
                             'label' => 'Explore',
                     'icon' => 'images/eye',
                     'attributes' => array('href' => '?p=episode')
-                    )); ?>
+                    )); -->
+
+                    {@|apply module-cta.block}
                     <div class="light"></div>
+
                 </div><!-- .episodes-overview-item -->
-                <?php endforeach; ?>
-            </div>
-            <?php endfor; ?>
+            {.odd?}</div><!-- .episodes-overview-row -->{.end}
+            {.end}
 
         </div><!-- .posters.episodes-overview -->
+        {.end}
+
     </section><!-- .episodes-previous -->
 
     <section class="episodes-upcoming">
