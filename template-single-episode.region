@@ -2,14 +2,9 @@
 <squarespace:query collection="{urlId}" featured="true" limit="5">
 
     <script>console.log('collection data', {@|json-pretty});</script>
-    <!--<div class="featured-wrapper">-->
     {.repeated section items}
     <script>console.log('item data'+'{@index}', {@|json-pretty});</script>
-    <div class="featured-post">
-        {.main-image?}<img {@|image-meta} />{.end}
-        <h2>{title}</h2>
-    </div>
-    <!--</div>-->
+    {.end}
 
 </squarespace:query>
 {.end}
