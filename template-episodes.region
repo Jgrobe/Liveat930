@@ -38,24 +38,26 @@
 
         {.section collection}
         <div class="episodes-overview posters">
-            <script>console.log('collectoins', {@|json-pretty});</script>
+            <script>console.log('section collection', {@|json-pretty});</script>
             {.repeated section collections}
-            <span class="index">{@index}</span>
-            {.even?}<div class="episodes-overview-row">{.end}
-                <div class="episodes-overview-item prllxposter">
 
-                    <!--php include('modules/module-poster.php'); -->
-                    <!--php print_cta(array(
-                            'label' => 'Explore',
-                    'icon' => 'images/eye',
-                    'attributes' => array('href' => '?p=episode')
-                    )); -->
+                {.even?}<div class="episodes-overview-row">{.end}
+                    <div class="episodes-overview-item prllxposter">
 
-                    {@|apply module-cta.block}
-                    <div class="light"></div>
+                        {@|apply poster-parallax.block}
+                        <!--php include('modules/module-poster.php'); -->
+                        <!--php print_cta(array(
+                                'label' => 'Explore',
+                        'icon' => 'images/eye',
+                        'attributes' => array('href' => '?p=episode')
+                        )); -->
 
-                </div><!-- .episodes-overview-item -->
-            {.odd?}</div><!-- .episodes-overview-row -->{.end}
+                        {@|apply module-cta.block}
+                        <div class="light"></div>
+
+                    </div><!-- .episodes-overview-item -->
+                {.odd?}</div><!-- .episodes-overview-row -->{.end}
+
             {.end}
 
         </div><!-- .posters.episodes-overview -->
