@@ -88,6 +88,10 @@
 
     <section class="image-slider">
 
+        <script>
+            {.repeated section items}{.equal?:customContent.customType:"episode-gallery"}console.log('gallery data', {@});{.end}{.end}
+        </script>
+
         <div class="slider-container top-spaced">
             <div class="slider-images">
                 <div class="image current-image imgfill" style="background-image:url('assets/images/thumb-video5.jpg');"></div>
@@ -108,34 +112,36 @@
 
     </section><!-- .image-slider -->
 
-    <section class="post-excerpt">
+    <!--<squarespace:query collection="">-->
+    <!--<section class="post-excerpt">-->
 
-        <div class="section-head">
-            <h2>Explore the episode</h2>
-            <!--<p><b>Episode No.5, August 2016</b></p>-->
-        </div>
+        <!--<div class="section-head">-->
+            <!--<h2>Explore the episode</h2>-->
+            <!--&lt;!&ndash;<p><b>Episode No.5, August 2016</b></p>&ndash;&gt;-->
+        <!--</div>-->
 
-        <div class="excerpt-container top-spaced">
-            <div class="image pattern imgfill" style="background-image:url('assets/images/pattern-logo-bg.jpg');"></div>
-            <div class="image post-image imgfill" style="background-image:url('assets/images/the-show-slide2.jpg');"></div>
-            <div class="text-layer">
-                <div class="section-head excerpt-head">
-                    <h2>An encore</h2>
-                </div>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                    <br/><br/>
-                    Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, quam quaerat voluptatem …
-                </p>
-                <?php print_cta(array(
-                    'label' => 'Full story',
-                'icon' => 'images/eye'
-                )); ?>
-                <!--<a class="episodes-landing-cta icon-eye" href="">Full story</a>-->
-            </div><!-- .text-layer -->
-        </div><!-- .excerpt-container -->
+        <!--<div class="excerpt-container top-spaced">-->
+            <!--<div class="image pattern imgfill" style="background-image:url('assets/images/pattern-logo-bg.jpg');"></div>-->
+            <!--<div class="image post-image imgfill" style="background-image:url('assets/images/the-show-slide2.jpg');"></div>-->
+            <!--<div class="text-layer">-->
+                <!--<div class="section-head excerpt-head">-->
+                    <!--<h2>An encore</h2>-->
+                <!--</div>-->
+                <!--<p>-->
+                    <!--Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.-->
+                    <!--<br/><br/>-->
+                    <!--Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, quam quaerat voluptatem …-->
+                <!--</p>-->
+                <!--<?php print_cta(array(-->
+                    <!--'label' => 'Full story',-->
+                <!--'icon' => 'images/eye'-->
+                <!--)); ?>-->
+                <!--&lt;!&ndash;<a class="episodes-landing-cta icon-eye" href="">Full story</a>&ndash;&gt;-->
+            <!--</div>&lt;!&ndash; .text-layer &ndash;&gt;-->
+        <!--</div>&lt;!&ndash; .excerpt-container &ndash;&gt;-->
 
-    </section><!-- .post-excerpt -->
+    <!--</section>&lt;!&ndash; .post-excerpt &ndash;&gt;-->
+    <!--</squarespace:query>-->
 
     <section class="video-gallery teaser no-shift">
 
