@@ -50,4 +50,4 @@
         </div><!-- .burger -->
     </div><!-- .sticky-header -->
 
-    {@|apply static-nav.block}
+    <!--{@|apply static-nav.block}--
