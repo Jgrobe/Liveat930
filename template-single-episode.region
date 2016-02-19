@@ -18,13 +18,14 @@
     </div><!-- .mask -->
 
     <div class="episodes-landing-head">
-        <h1>Episode No.3</h1>
+        <h1>{collection.navigationTitle}</h1>
         <div class="small">Latest Show</div>
         <a href="#" class="cta-play-episode">Watch now</a>
     </div>
     <div class="text-layer">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eget sapien sed risus suscipit cursus. Quisque iaculis facilisis lacinia. Mauris euismod pellentesque tellus sit amet mollis. Nulla a scelerisque turpis, in gravida enim.</p>
-        <?php include('modules/sharebox.php'); ?>
+        {.repeated section items}{.equal?:customContent.customType:"episode-hero"}{body}{.end}{.end}
+        <!--php include('modules/sharebox.php'); -->
+        {@|apply module-sharebox.block}
     </div><!-- .episodes-landing-sub -->
 </section>
 
