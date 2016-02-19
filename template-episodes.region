@@ -1,4 +1,3 @@
-<script>console.log('test', {@|json-pretty});</script>
 <section class="episodes-landing">
     <div class="fill-parent mask">
         <div class="landing-bg" style="background-image:url('assets/images/episodes-title2.jpg');">
