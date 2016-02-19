@@ -1584,7 +1584,7 @@ input {
   position: absolute;
   top: -10%;
   width: 110%;
-  left: -5%;
+  left: -5%; }
   .poster.fullTriangle .layer.model-layer:before {
     content: '';
     display: block;

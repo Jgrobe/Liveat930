@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6ba77c59-895c-4b6c-8ed1-52220cbb39bd" name="Default" comment="" />
+    <list default="true" id="6ba77c59-895c-4b6c-8ed1-52220cbb39bd" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/style.css" afterPath="$PROJECT_DIR$/styles/style.css" />
+    </list>
     <ignored path="sqsp.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,16 +40,6 @@
                   </provider>
                 </entry>
               </file>
-              <file leaf-file-name="base.less" pinned="false" current-in-tab="true">
-                <entry file="file://$PROJECT_DIR$/styles/base.less">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.3499062" vertical-offset="26372" max-vertical-offset="29880">
-                      <caret line="1783" column="12" selection-start-line="1783" selection-start-column="12" selection-end-line="1783" selection-end-column="12" />
-                      <folding />
-                    </state>
-                  </provider>
-                </entry>
-              </file>
               <file leaf-file-name="footer.region" pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/footer.region">
                   <provider selected="true" editor-type-id="text-editor">
@@ -63,6 +55,16 @@
                   <provider selected="true" editor-type-id="text-editor">
                     <state vertical-scroll-proportion="-3.5294118" vertical-offset="0" max-vertical-offset="870">
                       <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+                      <folding />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+                <entry file="file://$PROJECT_DIR$/styles/style.css">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state vertical-scroll-proportion="0.3189338" vertical-offset="23443" max-vertical-offset="54540">
+                      <caret line="1586" column="13" selection-start-line="1586" selection-start-column="13" selection-end-line="1586" selection-end-column="13" />
                       <folding />
                     </state>
                   </provider>
@@ -205,7 +207,6 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/collections/index.list" />
         <option value="$PROJECT_DIR$/styles/style.scss" />
-        <option value="$PROJECT_DIR$/styles/style.css" />
         <option value="$PROJECT_DIR$/collections/videoclips.conf" />
         <option value="$PROJECT_DIR$/blocks/static-nav.block" />
         <option value="$PROJECT_DIR$/blocks/icon-magnifier.block" />
@@ -230,6 +231,7 @@
         <option value="$PROJECT_DIR$/template-episodes.region" />
         <option value="$PROJECT_DIR$/header.region" />
         <option value="$PROJECT_DIR$/template.conf" />
+        <option value="$PROJECT_DIR$/styles/style.css" />
       </list>
     </option>
   </component>
@@ -759,14 +761,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/styles/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.25768536" vertical-offset="0" max-vertical-offset="54570">
-          <caret line="19" column="46" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/template-episodes.region">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6874427" vertical-offset="0" max-vertical-offset="1425">
@@ -794,6 +788,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/styles/base.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.44840527" vertical-offset="26372" max-vertical-offset="29880">
+          <caret line="1790" column="33" selection-start-line="1790" selection-start-column="33" selection-end-line="1790" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/template.conf">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-27.958334" vertical-offset="394" max-vertical-offset="1500">
@@ -802,10 +804,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/styles/base.less">
+    <entry file="file://$PROJECT_DIR$/styles/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3499062" vertical-offset="26372" max-vertical-offset="29880">
-          <caret line="1783" column="12" selection-start-line="1783" selection-start-column="12" selection-end-line="1783" selection-end-column="12" />
+        <state vertical-scroll-proportion="0.3189338" vertical-offset="23443" max-vertical-offset="54540">
+          <caret line="1586" column="13" selection-start-line="1586" selection-start-column="13" selection-end-line="1586" selection-end-column="13" />
           <folding />
         </state>
       </provider>
