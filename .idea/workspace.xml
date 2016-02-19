@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6ba77c59-895c-4b6c-8ed1-52220cbb39bd" name="Default" comment="" />
+    <list default="true" id="6ba77c59-895c-4b6c-8ed1-52220cbb39bd" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/style.css" afterPath="$PROJECT_DIR$/styles/style.css" />
+    </list>
     <ignored path="sqsp.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,10 +30,10 @@
         <splitter split-orientation="horizontal" split-proportion="0.5743119">
           <split-first>
             <leaf>
-              <file leaf-file-name="template.conf" pinned="false" current-in-tab="true">
+              <file leaf-file-name="template.conf" pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/template.conf">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.9624198" vertical-offset="285" max-vertical-offset="1605">
+                    <state vertical-scroll-proportion="-43.75" vertical-offset="285" max-vertical-offset="1605">
                       <caret line="89" column="14" selection-start-line="89" selection-start-column="14" selection-end-line="89" selection-end-column="14" />
                       <folding />
                     </state>
@@ -58,11 +60,11 @@
                   </provider>
                 </entry>
               </file>
-              <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+              <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/styles/style.css">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="-12.851851" vertical-offset="23443" max-vertical-offset="54540">
-                      <caret line="1586" column="13" selection-start-line="1586" selection-start-column="13" selection-end-line="1586" selection-end-column="13" />
+                    <state vertical-scroll-proportion="0.33333334" vertical-offset="42052" max-vertical-offset="54570">
+                      <caret line="2827" column="26" selection-start-line="2827" selection-start-column="21" selection-end-line="2827" selection-end-column="26" />
                       <folding />
                     </state>
                   </provider>
@@ -228,8 +230,8 @@
         <option value="$PROJECT_DIR$/blocks/poster-parallax.block" />
         <option value="$PROJECT_DIR$/template-episodes.region" />
         <option value="$PROJECT_DIR$/header.region" />
-        <option value="$PROJECT_DIR$/styles/style.css" />
         <option value="$PROJECT_DIR$/template.conf" />
+        <option value="$PROJECT_DIR$/styles/style.css" />
       </list>
     </option>
   </component>
@@ -794,18 +796,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/styles/style.css">
+    <entry file="file://$PROJECT_DIR$/template.conf">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.851851" vertical-offset="23443" max-vertical-offset="54540">
-          <caret line="1586" column="13" selection-start-line="1586" selection-start-column="13" selection-end-line="1586" selection-end-column="13" />
+        <state vertical-scroll-proportion="-43.75" vertical-offset="285" max-vertical-offset="1605">
+          <caret line="89" column="14" selection-start-line="89" selection-start-column="14" selection-end-line="89" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/template.conf">
+    <entry file="file://$PROJECT_DIR$/styles/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9624198" vertical-offset="285" max-vertical-offset="1605">
-          <caret line="89" column="14" selection-start-line="89" selection-start-column="14" selection-end-line="89" selection-end-column="14" />
+        <state vertical-scroll-proportion="0.33333334" vertical-offset="42052" max-vertical-offset="54570">
+          <caret line="2827" column="26" selection-start-line="2827" selection-start-column="21" selection-end-line="2827" selection-end-column="26" />
           <folding />
         </state>
       </provider>
