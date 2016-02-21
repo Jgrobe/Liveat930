@@ -87,10 +87,11 @@
     </section><!-- .video-gallery -->
 
     <section class="image-slider">
-
+        {.repeated section items}{.equal?:customContent.customType:"episode-gallery"}
         <script>
-            {.repeated section items}{.equal?:customContent.customType:"episode-gallery"}console.log('gallery data', {@});{.end}{.end}
+            console.log('gallery data', {@|json-pretty});
         </script>
+        {.end}{.end}
 
         <div class="slider-container top-spaced">
             <div class="slider-images">
