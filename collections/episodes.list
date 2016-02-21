@@ -42,8 +42,7 @@
         <div class="episodes-overview posters">
 
             {.repeated section items}
-<h1>{.odd?}{@index}{.end}</h1>
-                {.odd?}<div class="episodes-overview-row">{.end}
+                {.odd?}<!--div class="episodes-overview-row"-->{.end}
                     <div class="episodes-overview-item prllxposter">
                         {@|apply poster-parallax.block}
                         {@|apply module-cta.block}
@@ -54,7 +53,7 @@
                         )); -->
                         <div class="light"></div>
                     </div><!-- .episodes-overview-item -->
-                {.even?}</div><!-- .episodes-overview-row -->{.end}
+                {.even?}<!--/div><!-- .episodes-overview-row -->{.end}
 
             {.end}<!-- .end repeated items -->
 

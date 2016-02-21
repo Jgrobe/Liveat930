@@ -1,5 +1,4 @@
-
-<div class="poster general">
+<div class="poster {customContent.episode-shape}">
     <div class="poster-content">
 
         <div class="layer hover-layer"></div><!-- .hover-layer -->
@@ -16,7 +15,8 @@
             </div>
 
             <div class="layer model-layer rel prllx-custom" data-prllx=".18">
-                <div class="model-container img widescreen" data-type="video" data-src="{.repeated section items}{.equal?:item.customContent.customType:"episode-hero"}{item.sourceUrl}{.end}{.end}" data-shape="general">
+                <div class="model-container img widescreen" data-type="video" data-src="{assetUrl}" data-shape="general">
+                    <div class="fill-parent" style="background-image:url('{assetUrl}');"></div>
                     <!-- video canvas is inserted here -->
                 </div><!-- .model-container.img.widescreen -->
             </div><!-- .model-layer -->
