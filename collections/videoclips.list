@@ -5,7 +5,7 @@
         </div>
         <div class="rectangle"></div>
         <div class="content">
-            <h1 class="l-headline">{.title}</h1>
+            <h1 class="l-headline">{title}</h1>
             <div class="video-overview-filter-headline s-headline">Browse & Filter</div>
             {.if categories}
                 <ul class="video-overview-filter">
@@ -16,6 +16,8 @@
             {.end}<!-- .end if categories -->
         </div>
     </section>
+
+{.end}<!-- .end section collection -->
 
     <div class="site-content">
 
@@ -150,5 +152,5 @@
             </div>
         </section><!-- .video-gallery -->
     </div>
-{.end}<!-- .end section collection -->
+
 <?php include('modules/upcoming.php'); ?>
