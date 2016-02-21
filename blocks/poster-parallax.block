@@ -34,7 +34,7 @@
                             <span class="icon-label">{@index}</span>
                         </div><!-- .icon.episode -->
 
-                        <h2 class="l-headline ep-headline prllx-custom" data-prllx=".12">{item.navigationTitle}</h2>
+                        <h2 class="l-headline ep-headline prllx-custom" data-prllx=".12">{customContent.episode-title}</h2>
                         <h3 class="m-headline ep-date prllx-custom" data-prllx=".13">March 2016</h3>
 
                     </div><!-- .relativizer -->
@@ -44,15 +44,13 @@
                 <div class="half padded lineup-container prllx-custom" data-prllx=".12">
                     <h6 class="s-headline ep-subheadline">Additional performances by:</h6>
                     <h4 class="m-headline ep-lineup">
+                        {.repeated section tags}
                         <a class="artist" href="#" data-img="">
-                            Hannibal Buress
+                            {@}
                             <span class="description">Nice</span>
                         </a>
                         <span class="divider">/</span>
-                        <a class="artist" href="#" data-img="">
-                            Hannibal Buress
-                            <span class="description">Nice</span>
-                        </a>
+                        {.end}
                     </h4>
                 </div><!-- .half -->
 
