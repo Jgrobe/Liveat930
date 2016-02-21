@@ -1,2 +1,4 @@
-<script>console.log('SITE', {@| json-pretty});</script>
+<script>
+    console.log('TEMPLATE CONTENT', {@|json-pretty});
+</script>
 {squarespace.main-content}
