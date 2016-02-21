@@ -30,10 +30,6 @@
 
     {squarespace-headers}
 
-    <script>
-        console.log('TEMPLATE CONTENT', {@|json-pretty});
-    </script>
-
 </head>
 
 <body id="{squarespace.page-id}" class="{squarespace.page-classes}{.if item}{.section item}{.if productType}{.or}{.main-image?} has-banner-image item-main-image{.end}{.end}{.end}{.or}{.section collection}{.collectionTypeNameEquals? index}{.section collections}{.section 0}{.main-image?} has-banner-image index-page{.end}{.end}{.end}{.or}{.main-image?} has-banner-image general-page{.end}{.end}{.end}{.end}">
