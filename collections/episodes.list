@@ -26,12 +26,6 @@
     </div><!-- .landing-container -->
 </section>
 
-<script>
-    jQuery.ajax(location.href+'?format=json-pretty', {success:function(e){
-        console.log('TEMPLATE CONTENT', e );
-    }});
-</script>
-
 <div class="site-content">
 
     <section class="episodes-previous">
