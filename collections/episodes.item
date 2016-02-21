@@ -9,26 +9,27 @@
 
 <!--</squarespace:query>-->
 
+{.section item}
 <section class="episodes-landing episode-detail">
     <h1 style="color:black;">Episodes Item</h1>
     <div class="fill-parent mask">
-        <!--<div class="landing-bg" style="background-image:url('{.repeated section items}{.equal?:customContent.customType:"episode-hero"}{assetUrl}{.end}{.end}');" data-type="video" data-src="assets/videos/navigation-overlay-video_1.mp4" data-shape="<?php if(isset($_GET['shape'])){echo $_GET['shape'];}else{echo 'general';} ?>">-->
-        <!--&lt;!&ndash;<video src="assets/videos/header-episode.mp4" loop autoplay></video>&ndash;&gt;-->
-    <!--</div>-->
-    <!--</div>&lt;!&ndash; .mask &ndash;&gt;-->
+        <div class="landing-bg" style="background-image:url('{assetUrl}');" data-type="video" data-src="assets/videos/navigation-overlay-video_1.mp4" data-shape="<?php if(isset($_GET['shape'])){echo $_GET['shape'];}else{echo 'general';} ?>">
+        <!--<video src="assets/videos/header-episode.mp4" loop autoplay></video>-->
+    </div>
+    </div><!-- .mask -->
 
-    <!--<div class="episodes-landing-head">-->
-        <!--<h1>{collection.navigationTitle}</h1>-->
-        <!--<div class="small">Latest Show</div>-->
-        <!--<a href="#" class="cta-play-episode">Watch now</a>-->
-    <!--</div>-->
-    <!--<div class="text-layer">-->
-        <!--{.repeated section items}{.equal?:customContent.customType:"episode-hero"}{body}{.end}{.end}-->
-        <!--&lt;!&ndash;php include('modules/sharebox.php'); &ndash;&gt;-->
-        <!--{@|apply module-sharebox.block}-->
-    <!--</div>&lt;!&ndash; .episodes-landing-sub &ndash;&gt;-->
+    <div class="episodes-landing-head">
+        <h1>{collection.navigationTitle}</h1>
+        <div class="small">Latest Show</div>
+        <a href="#" class="cta-play-episode">Watch now</a>
+    </div>
+    <div class="text-layer">
+        {body}
+        <!--php include('modules/sharebox.php'); -->
+        {@|apply module-share-episode.block}
+    </div><!-- .episodes-landing-sub -->
 </section>
-
+{.end}
 <div class="site-content">
 
     <section class="video-gallery teaser no-shift">
