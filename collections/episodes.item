@@ -1,13 +1,5 @@
 
 <script>console.log('--- EPISODES ITEM', {@|json-pretty});</script>
-<!--<squarespace:query collection="{.section collection}{urlId}{.end}" featured="true" limit="5">-->
-
-    <!--<script>console.log('collection data', '{urlId}', {@|json-pretty});</script>-->
-    <!--{.repeated section items}-->
-    <!--<script>console.log('item data'+'{@index}', {@|json-pretty});</script>-->
-    <!--{.end}-->
-
-<!--</squarespace:query>-->
 
 {.section item}
 
@@ -56,13 +48,14 @@
                                 'class' => array('negative', 'play')
                                 )); -->
                                 <!--<a href="" class="play"></a>-->
+                                {@|apply module-cta.block}
                             </div>
                             <div class="flex-cols">
                                 <div class="title">{title}</div>
                             </div>
                         </div>
 
-                    {.end}
+                    {.end}<!-- .end repeated section items -->
 
                     <!---->
                     <!--<div class="video small">-->
@@ -92,73 +85,85 @@
             </squarespace:query>
 
             <div class="centered top-spaced">
-                <?php print_cta(array(
+                <!--php print_cta(array(
                     'label' => 'Load more clips',
                 'icon' => 'images/icon-load',
                 'class' => array('load-clips', 'upsized-icon')
-                )); ?>
+                )); -->
+                {@|apply module-cta.block}
                 <!--<a class="episodes-landing-cta icon-refresh static" href="">Load more clips</a>-->
-            </div>
+            </div><!-- .centered.top-spaced -->
 
         </section><!-- .video-gallery -->
 
-        <section class="image-slider">
-            <!--{.repeated section items}{.equal?:customContent.customType:"episode-gallery"}-->
-            <script>
-    //            console.log('gallery data', {@|json-pretty});
-            </script>
-            <!--{.end}{.end}-->
+        {.end}<!-- .end if tags -->
 
-            <div class="slider-container top-spaced">
-                <div class="slider-images">
-                    <div class="image current-image imgfill" style="background-image:url('assets/images/thumb-video5.jpg');"></div>
+        {.if customContent}
+
+            {.if episode-gallery}
+                <section class="image-slider">
+                    <!--{.repeated section items}{.equal?:customContent.customType:"episode-gallery"}-->
+                    <script>
+                        {episode-gallery}
+                        console.log('gallery data', {@|json-pretty});
+                        {.end}
+                    </script>
+                    <!--{.end}{.end}-->
+
+                    <div class="slider-container top-spaced">
+                        <div class="slider-images">
+                            <div class="image current-image imgfill" style="background-image:url('assets/images/thumb-video5.jpg');"></div>
+                            <div class="image pattern imgfill" style="background-image:url('assets/images/pattern-logo-bg.jpg');"></div>
+                            <div class="image next-image imgfill" style="background-image:url('assets/images/video-clips-title.jpg');"></div>
+                        </div><!-- .slider-images -->
+
+                        <div class="slider-ui">
+                            <div class="slider-arrows">
+                                <div class="arrow prev"><?php svg('images/arrow-cap'); ?></div>
+                                <div class="arrow next"><?php svg('images/arrow-cap'); ?></div>
+                            </div><!-- .slider-arrows -->
+                            <div class="slider-label">
+                                <h3>2/8</h3>
+                            </div>
+                        </div><!-- .slider-ui -->
+                    </div><!-- .slider-container -->
+
+                </section><!-- .image-slider -->
+            {.end}<!-- .end if episode-gallery post -->
+
+
+            {.if epsiode-blog-post}
+                <section class="post-excerpt">
+
+                    <div class="section-head">
+                        <h2>Explore the episode</h2>
+                        <!--<p><b>Episode No.5, August 2016</b></p>-->
+                    </div><!-- .section-head -->
+
+                    <div class="excerpt-container top-spaced">
                     <div class="image pattern imgfill" style="background-image:url('assets/images/pattern-logo-bg.jpg');"></div>
-                    <div class="image next-image imgfill" style="background-image:url('assets/images/video-clips-title.jpg');"></div>
-                </div><!-- .slider-images -->
+                    <div class="image post-image imgfill" style="background-image:url('assets/images/the-show-slide2.jpg');"></div>
+                    <div class="text-layer">
+                        <div class="section-head excerpt-head">
+                        <h2>An encore</h2>
+                        </div>
+                        <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        <br/><br/>
+                        Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, quam quaerat voluptatem …
+                        </p>
+                        <?php print_cta(array(
+                        'label' => 'Full story',
+                        'icon' => 'images/eye'
+                        )); ?>
+                        <!--<a class="episodes-landing-cta icon-eye" href="">Full story</a>-->
+                    </div><!-- .text-layer -->
+                    </div><!-- .excerpt-container -->
 
-                <div class="slider-ui">
-                    <div class="slider-arrows">
-                        <div class="arrow prev"><?php svg('images/arrow-cap'); ?></div>
-                        <div class="arrow next"><?php svg('images/arrow-cap'); ?></div>
-                    </div><!-- .slider-arrows -->
-                    <div class="slider-label">
-                        <h3>2/8</h3>
-                    </div>
-                </div><!-- .slider-ui -->
-            </div><!-- .slider-container -->
+                </section><!-- .post-excerpt -->
+            {.end}<!-- .end if blog post -->
 
-        </section><!-- .image-slider -->
-
-        <!--<squarespace:query collection="">-->
-        <!--<section class="post-excerpt">-->
-
-        <!--<div class="section-head">-->
-        <!--<h2>Explore the episode</h2>-->
-        <!--&lt;!&ndash;<p><b>Episode No.5, August 2016</b></p>&ndash;&gt;-->
-        <!--</div>-->
-
-        <!--<div class="excerpt-container top-spaced">-->
-        <!--<div class="image pattern imgfill" style="background-image:url('assets/images/pattern-logo-bg.jpg');"></div>-->
-        <!--<div class="image post-image imgfill" style="background-image:url('assets/images/the-show-slide2.jpg');"></div>-->
-        <!--<div class="text-layer">-->
-        <!--<div class="section-head excerpt-head">-->
-        <!--<h2>An encore</h2>-->
-        <!--</div>-->
-        <!--<p>-->
-        <!--Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.-->
-        <!--<br/><br/>-->
-        <!--Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, quam quaerat voluptatem …-->
-        <!--</p>-->
-        <!--<?php print_cta(array(-->
-        <!--'label' => 'Full story',-->
-        <!--'icon' => 'images/eye'-->
-        <!--)); ?>-->
-        <!--&lt;!&ndash;<a class="episodes-landing-cta icon-eye" href="">Full story</a>&ndash;&gt;-->
-        <!--</div>&lt;!&ndash; .text-layer &ndash;&gt;-->
-        <!--</div>&lt;!&ndash; .excerpt-container &ndash;&gt;-->
-
-        <!--</section>&lt;!&ndash; .post-excerpt &ndash;&gt;-->
-        <!--</squarespace:query>-->
+        {.end}<!-- .end if customContent -->
 
         <section class="video-gallery teaser no-shift">
 
