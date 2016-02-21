@@ -1,7 +1,6 @@
-{.section collection}
 <section class="show-landing">
     <div class="fill-parent mask">
-        <div class="landing-bg" style="background-image:url('{assetUrl}');">
+        <div class="landing-bg" style="background-image:url('{collection.mainImage.assetUrl}');">
             <video src="assets/videos/header-kanye2.mp4" autoplay loop></video>
         </div>
     </div>
@@ -13,18 +12,17 @@
             <div class="rectangle"></div>
 
             <h1 class="l-headline">
-                <span class="show-landing-subline">Live at 9:30</span>
-                The show
+                <span class="show-landing-subline">{website.siteTitle}</span>
+                {collection.title}
             </h1>
             <div class="show-landing-info">
-                <p></p>
+                {collection.description}
             </div><!-- .show-landing-info -->
 
         </div><!-- .rel -->
 
     </div><!-- .show-content -->
 </section>
-{.end}
 
 <div class="site-content">
 
@@ -68,30 +66,6 @@
 
     </section><!-- .post-excerpt -->
 
-    <?php /*
-    <section class="video-gallery teaser no-shift">
-
-    <div class="section-head">
-        <h2>Watch more live at 9:30</h2>
-        <p><strong>Watch past episodes</strong></p>
-    </div><!-- .section-head -->
-
-    <div class="video-gallery-videos lefthand top-spaced">
-        <div class="video medium">
-            <div class="image poster" style="background-image:url('assets/images/poster1.jpg');">
-                <a href="?p=episode" class="upcoming-cta icon-eye">Watch episode No. 1, FEB 2016</a>
-            </div>
-        </div>
-        <div class="video medium">
-            <div class="image poster" style="background-image:url('assets/images/poster2.jpg');">
-                <a href="?p=episode" class="upcoming-cta icon-eye">Watch episode No. 2, MAR 2016</a>
-            </div>
-        </div>
-    </div><!-- .video-gallery-videos.lefthand -->
-
-    </section><!-- .video-gallery -->
-    */ ?>
-
 
     <section class="video-gallery teaser no-shift">
 
@@ -99,7 +73,7 @@
             <h2>Explore more</h2>
         </div>
 
-        <?php
+        <!-- php
 
         $videos = array(
             array(
@@ -128,25 +102,28 @@
         )
         );
 
-        ?>
+        -->
 
         <div class="video-gallery-videos lefthand top-spaced">
-            <?php foreach($videos as $i => $vid) : ?>
-            <div class="video <?php echo $vid['size']; ?>">
-                <div class="image" style="background-image:url('<?php echo $vid['img']; ?>');">
-                    <?php print_cta(array(
-                        'icon' => 'images/icon-arrow',
-                    'class' => array('negative', 'play', 'goto')
-                    )); ?>
-                    <?php if($vid['label']) : ?>
-                    <span class="video-label"><?php echo $vid['label']; ?></span>
-                    <?php endif; ?>
-                </div>
-                <div class="flex-cols">
-                    <div class="title"><?php echo $vid['title']; ?></div>
-                </div><!-- .flex-cols -->
-            </div>
-            <?php endforeach; ?>
+            <squarespace:query collection="clips">
+                <script>console.log('query data', {@|json-pretty});</script>
+                {.repeated section items}
+                    <div class="video medium">
+                        <div class="image" style="background-image:url('{assetUrl}');">
+                            <!--php print_cta(array(
+                                'icon' => 'images/icon-arrow',
+                            'class' => array('negative', 'play', 'goto')
+                            )); -->
+
+                            <span class="video-label">Shop merch</span>
+
+                        </div><!-- .image -->
+                        <div class="flex-cols">
+                            <div class="title">{title}</div>
+                        </div><!-- .flex-cols -->
+                    </div><!-- .video -->
+                {.end}
+            </squarespace:query>
         </div><!-- .flexbox -->
 
     </section><!-- .video-gallery -->
