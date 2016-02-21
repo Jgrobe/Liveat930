@@ -1,6 +1,4 @@
-<script>
-    console.log('EPISODES OVERVIEW REGION', {@|json-pretty});
-</script>
+
 <section class="episodes-landing">
     <div class="fill-parent mask">
         <div class="landing-bg" style="background-image:url('{collection assetUrl}');">
@@ -28,6 +26,10 @@
 
     </div><!-- .landing-container -->
 </section>
+
+<script>
+    console.log('EPISODES OVERVIEW REGION', {@|json-pretty});
+</script>
 
 <div class="site-content">
 
