@@ -112,8 +112,8 @@
               <file leaf-file-name="episodes.list" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/collections/episodes.list">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.4436519" vertical-offset="529" max-vertical-offset="1230">
-                      <caret line="56" column="22" selection-start-line="56" selection-start-column="22" selection-end-line="56" selection-end-column="22" />
+                    <state vertical-scroll-proportion="0.1868759" vertical-offset="529" max-vertical-offset="1230">
+                      <caret line="44" column="25" selection-start-line="44" selection-start-column="25" selection-end-line="44" selection-end-column="25" />
                       <folding>
                         <element signature="n#style#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
                         <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#section#1;n#div#0;n#!!top" expanded="true" />
@@ -837,8 +837,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/collections/episodes.list">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4436519" vertical-offset="529" max-vertical-offset="1230">
-          <caret line="56" column="22" selection-start-line="56" selection-start-column="22" selection-end-line="56" selection-end-column="22" />
+        <state vertical-scroll-proportion="0.1868759" vertical-offset="529" max-vertical-offset="1230">
+          <caret line="44" column="25" selection-start-line="44" selection-start-column="25" selection-end-line="44" selection-end-column="25" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#section#1;n#div#0;n#!!top" expanded="true" />

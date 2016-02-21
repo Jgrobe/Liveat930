@@ -42,7 +42,7 @@
         <div class="episodes-overview posters">
 
             {.repeated section items}
-<h1>{@index}</h1>
+<h1>{.odd?}{@index}{.end}</h1>
                 {.odd?}<div class="episodes-overview-row">{.end}
                     <div class="episodes-overview-item prllxposter">
                         {@|apply poster-parallax.block}
