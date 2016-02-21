@@ -1,148 +1,154 @@
-<section class="video-overview-landing">
-    <div class="fill-parent mask">
-        <div class="landing-bg" style="background-image:url('assets/images/clips-title.jpg');"></div>
-    </div>
-    <div class="rectangle"></div>
-    <div class="content">
-        <h1 class="l-headline">Clips</h1>
-        <div class="video-overview-filter-headline s-headline">Browse & Filter</div>
-        <ul class="video-overview-filter">
-            <li><a href="">Music</a></li>
-            <li><a href="">Comedy</a></li>
-            <li><a href="">Behind the Scenes</a></li>
-            <li><a href="">Art</a></li>
-        </ul>
-    </div>
-</section>
-
-<div class="site-content">
-
-    <section class="video-gallery">
+{.section collection}
+    <section class="video-overview-landing">
+        <div class="fill-parent mask">
+            <div class="landing-bg" style="background-image:url('{mainImage.assetUrl}');"></div>
+        </div>
         <div class="rectangle"></div>
-        <div class="video-gallery-videos lefthand">
-            <div class="video small">
-                <div class="image" style="background-image:url('assets/images/thumb-video1.jpg');">
-                    <?php print_cta(array(
-                'icon' => 'images/eye',
-                    'class' => array('negative', 'play')
-                    )); ?>
-                    <!--<a href="" class="play"></a>-->
-                </div>
-                <div class="flex-cols">
-                    <div class="title">Behind the scenes with Gogol Bordello</div>
-                </div>
-            </div>
-            <div class="video small">
-                <div class="image" style="background-image:url('assets/images/thumb-video2.jpg');">
-                    <?php print_cta(array(
-                'icon' => 'images/eye',
-                    'class' => array('negative', 'play')
-                    )); ?>
-                </div>
-                <div class="flex-cols">
-                    <div class="title">St. Paul and the broken bones</div>
-                </div>
-            </div>
-            <div class="video large">
-                <div class="image" style="background-image:url('assets/images/video-clips-thumb-big.jpg');">
-                    <?php print_cta(array(
-                'icon' => 'images/eye',
-                    'class' => array('negative', 'play')
-                    )); ?>
-                </div>
-                <div class="flex-cols">
-                    <div class="title">Shakey Graves</div>
-                </div>
-            </div>
-            <div class="video small">
-                <div class="image" style="background-image:url('assets/images/thumb-video3.jpg');">
-                    <?php print_cta(array(
-                'icon' => 'images/eye',
-                    'class' => array('negative', 'play')
-                    )); ?>
-                </div>
-                <div class="flex-cols">
-                    <div class="title">St. Paul and the broken bones</div>
-                </div>
-            </div>
-            <div class="video small">
-                <div class="image" style="background-image:url('assets/images/thumb-video4.jpg');">
-                    <?php print_cta(array(
-                'icon' => 'images/eye',
-                    'class' => array('negative', 'play')
-                    )); ?>
-                </div>
-                <div class="flex-cols">
-                    <div class="title">St. Paul and the broken bones</div>
-                </div>
-            </div>
-        </div>
-        <div class="video-gallery-videos righthand">
-            <div class="video large">
-                <div class="image" style="background-image:url('assets/images/video-clips-thumb-big.jpg');">
-                    <?php print_cta(array(
-                'icon' => 'images/eye',
-                    'class' => array('negative', 'play')
-                    )); ?>
-                </div>
-                <div class="flex-cols">
-                    <div class="title">Shakey Graves</div>
-                </div>
-            </div>
-            <div class="video small">
-                <div class="image" style="background-image:url('assets/images/thumb-video1.jpg');">
-                    <?php print_cta(array(
-                'icon' => 'images/eye',
-                    'class' => array('negative', 'play')
-                    )); ?>
-                </div>
-                <div class="flex-cols">
-                    <div class="title">Behind the scenes with Gogol Bordello</div>
-                </div>
-            </div>
-            <div class="video small">
-                <div class="image" style="background-image:url('assets/images/thumb-video2.jpg');">
-                    <?php print_cta(array(
-                'icon' => 'images/eye',
-                    'class' => array('negative', 'play')
-                    )); ?>
-                </div>
-                <div class="flex-cols">
-                    <div class="title">St. Paul and the broken bones</div>
-                </div>
-            </div>
-            <div class="video small">
-                <div class="image" style="background-image:url('assets/images/thumb-video3.jpg');">
-                    <?php print_cta(array(
-                'icon' => 'images/eye',
-                    'class' => array('negative', 'play')
-                    )); ?>
-                </div>
-                <div class="flex-cols">
-                    <div class="title">St. Paul and the broken bones</div>
-                </div>
-            </div>
-            <div class="video small">
-                <div class="image" style="background-image:url('assets/images/thumb-video4.jpg');">
-                    <?php print_cta(array(
-                'icon' => 'images/eye',
-                    'class' => array('negative', 'play')
-                    )); ?>
-                </div>
-                <div class="flex-cols">
-                    <div class="title">St. Paul and the broken bones</div>
-                </div>
-            </div>
-        </div>
-        <div class="centered">
-            <?php print_cta(array(
-                'label' => 'Load more clips',
-            'icon' => 'images/icon-load',
-            'class' => array('load-clips', 'upsized-icon')
-            )); ?>
-            <!--<a href="" class="cta load-more icon-refresh">load more clips</a>-->
+        <div class="content">
+            <h1 class="l-headline">{.title}</h1>
+            <div class="video-overview-filter-headline s-headline">Browse & Filter</div>
+            {.if categories}
+                <ul class="video-overview-filter">
+                    {.repeated section categories}
+                        <li><a href="?category">{@}</a></li>
+                    {.end}<!-- .end repeat categories -->
+                </ul>
+            {.end}<!-- .end if categories -->
         </div>
     </section>
-</div>
 
+    <div class="site-content">
+
+        <section class="video-gallery">
+            <div class="rectangle"></div>
+            <div class="video-gallery-videos lefthand">
+                {.repeated section items}
+                <div class="video small">
+                    <div class="image" style="background-image:url('{assetUrl}');">
+                        {@|apply module-cta.block}
+                        <!--php print_cta(array(
+                    'icon' => 'images/eye',
+                        'class' => array('negative', 'play')
+                        )); -->
+                        <!--<a href="" class="play"></a>-->
+                    </div>
+                    <div class="flex-cols">
+                        <div class="title">{title}</div>
+                    </div>
+                </div>
+                {.end}<!-- .end repeat clips -->
+                <!--<div class="video small">-->
+                    <!--<div class="image" style="background-image:url('assets/images/thumb-video2.jpg');">-->
+                        <!--<?php print_cta(array(-->
+                    <!--'icon' => 'images/eye',-->
+                        <!--'class' => array('negative', 'play')-->
+                        <!--)); ?>-->
+                    <!--</div>-->
+                    <!--<div class="flex-cols">-->
+                        <!--<div class="title">St. Paul and the broken bones</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="video large">-->
+                    <!--<div class="image" style="background-image:url('assets/images/video-clips-thumb-big.jpg');">-->
+                        <!--<?php print_cta(array(-->
+                    <!--'icon' => 'images/eye',-->
+                        <!--'class' => array('negative', 'play')-->
+                        <!--)); ?>-->
+                    <!--</div>-->
+                    <!--<div class="flex-cols">-->
+                        <!--<div class="title">Shakey Graves</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="video small">-->
+                    <!--<div class="image" style="background-image:url('assets/images/thumb-video3.jpg');">-->
+                        <!--<?php print_cta(array(-->
+                    <!--'icon' => 'images/eye',-->
+                        <!--'class' => array('negative', 'play')-->
+                        <!--)); ?>-->
+                    <!--</div>-->
+                    <!--<div class="flex-cols">-->
+                        <!--<div class="title">St. Paul and the broken bones</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="video small">-->
+                    <!--<div class="image" style="background-image:url('assets/images/thumb-video4.jpg');">-->
+                        <!--<?php print_cta(array(-->
+                    <!--'icon' => 'images/eye',-->
+                        <!--'class' => array('negative', 'play')-->
+                        <!--)); ?>-->
+                    <!--</div>-->
+                    <!--<div class="flex-cols">-->
+                        <!--<div class="title">St. Paul and the broken bones</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="video-gallery-videos righthand">-->
+                <!--<div class="video large">-->
+                    <!--<div class="image" style="background-image:url('assets/images/video-clips-thumb-big.jpg');">-->
+                        <!--<?php print_cta(array(-->
+                    <!--'icon' => 'images/eye',-->
+                        <!--'class' => array('negative', 'play')-->
+                        <!--)); ?>-->
+                    <!--</div>-->
+                    <!--<div class="flex-cols">-->
+                        <!--<div class="title">Shakey Graves</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="video small">-->
+                    <!--<div class="image" style="background-image:url('assets/images/thumb-video1.jpg');">-->
+                        <!--<?php print_cta(array(-->
+                    <!--'icon' => 'images/eye',-->
+                        <!--'class' => array('negative', 'play')-->
+                        <!--)); ?>-->
+                    <!--</div>-->
+                    <!--<div class="flex-cols">-->
+                        <!--<div class="title">Behind the scenes with Gogol Bordello</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="video small">-->
+                    <!--<div class="image" style="background-image:url('assets/images/thumb-video2.jpg');">-->
+                        <!--<?php print_cta(array(-->
+                    <!--'icon' => 'images/eye',-->
+                        <!--'class' => array('negative', 'play')-->
+                        <!--)); ?>-->
+                    <!--</div>-->
+                    <!--<div class="flex-cols">-->
+                        <!--<div class="title">St. Paul and the broken bones</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="video small">-->
+                    <!--<div class="image" style="background-image:url('assets/images/thumb-video3.jpg');">-->
+                        <!--<?php print_cta(array(-->
+                    <!--'icon' => 'images/eye',-->
+                        <!--'class' => array('negative', 'play')-->
+                        <!--)); ?>-->
+                    <!--</div>-->
+                    <!--<div class="flex-cols">-->
+                        <!--<div class="title">St. Paul and the broken bones</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="video small">-->
+                    <!--<div class="image" style="background-image:url('assets/images/thumb-video4.jpg');">-->
+                        <!--<?php print_cta(array(-->
+                    <!--'icon' => 'images/eye',-->
+                        <!--'class' => array('negative', 'play')-->
+                        <!--)); ?>-->
+                    <!--</div>-->
+                    <!--<div class="flex-cols">-->
+                        <!--<div class="title">St. Paul and the broken bones</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            </div><!-- .video-gallery-videos -->
+            <div class="centered">
+                {@|apply module-cta.block}
+                <!--php print_cta(array(
+                    'label' => 'Load more clips',
+                'icon' => 'images/icon-load',
+                'class' => array('load-clips', 'upsized-icon')
+                )); -->
+                <!--<a href="" class="cta load-more icon-refresh">load more clips</a>-->
+            </div>
+        </section><!-- .video-gallery -->
+    </div>
+{.end}<!-- .end section collection -->
 <?php include('modules/upcoming.php'); ?>
