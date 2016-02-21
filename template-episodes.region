@@ -1,90 +1,306 @@
-<section class="episodes-landing">
+<script>
+    console.log('EPISODES REGION', {@|json-pretty});
+</script>
+<section class="episodes-landing episode-detail">
     <div class="fill-parent mask">
-        <div class="landing-bg" style="background-image:url('');">
-            <video src="assets/videos/header-episode.mp4" loop autoplay></video>
+        <div class="landing-bg" style="background-image:url('');" data-type="video" data-src="assets/videos/navigation-overlay-video_1.mp4" data-shape="<?php if(isset($_GET['shape'])){echo $_GET['shape'];}else{echo 'general';} ?>">
+            <!--<video src="assets/videos/header-episode.mp4" loop autoplay></video>-->
         </div>
+    </div><!-- .mask -->
+
+    <div class="episodes-landing-head">
+        <h1>Episode No.3</h1>
+        <div class="small">Latest Show</div>
+        <a href="#" class="cta-play-episode">Watch now</a>
     </div>
-    <!--<div class="episodes-landing-geo"></div>-->
-    <div class="landing-container">
-
-        <div class="episodes-landing-head prllx-stndrd">
-            <div class="small">Latest Show</div>
-            <h1>Episode No.3</h1>
-        </div>
-        <div class="episodes-landing-sub prllx-stndrd">
-            <span>with</span>
-            <p>Shakey Graves / The Arcs / Dave Chapelle / Gogol Bordello & more</p>
-        </div>
-        {@|apply module-cta.block}
-        <!--php print_cta(array(
-            'icon' => 'images/eye',
-        'label' => 'Watch now',
-        'class' => array('landing-cta', 'prllx-custom'),
-        'attributes' => array('href' => '#', 'data-prllx' => '.04')
-        )); -->
-        <!--<a class="episodes-landing-cta icon-eye" href="">Watch episode no. 5, mar 2016</a>-->
-
-    </div><!-- .landing-container -->
+    <div class="text-layer">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eget sapien sed risus suscipit cursus. Quisque iaculis facilisis lacinia. Mauris euismod pellentesque tellus sit amet mollis. Nulla a scelerisque turpis, in gravida enim.</p>
+        <?php include('modules/sharebox.php'); ?>
+    </div><!-- .episodes-landing-sub -->
 </section>
 
 <div class="site-content">
 
-    <section class="episodes-previous">
-        <div class="section-head prllx-custom" data-prllx="-.04">
-            <h2>Past Show</h2>
-            <p>See the performances</p>
-        </div><!-- .section-head -->
+    <section class="video-gallery teaser no-shift">
 
-
-        {.section collection}
-        <div class="episodes-overview posters">
-            <script>console.log('section collection', {@|json-pretty});</script>
-            {.repeated section collections}
-
-                {.even?}<div class="episodes-overview-row">{.end}
-                    <div class="episodes-overview-item prllxposter">
-
-                        {@|apply poster-parallax.block}
-                        <!--php include('modules/module-poster.php'); -->
-                        <!--php print_cta(array(
-                                'label' => 'Explore',
-                        'icon' => 'images/eye',
-                        'attributes' => array('href' => '?p=episode')
-                        )); -->
-
-                        {@|apply module-cta.block}
-                        <div class="light"></div>
-
-                    </div><!-- .episodes-overview-item -->
-                {.odd?}</div><!-- .episodes-overview-row -->{.end}
-
-            {.end}
-
-        </div><!-- .posters.episodes-overview -->
-        {.end}
-
-    </section><!-- .episodes-previous -->
-
-    <section class="episodes-upcoming">
-        <div class="section-head prllx-custom" data-prllx=".03">
-            <h2>Next Shows</h2>
-            <p>See who's coming</p>
+        <div class="section-head">
+            <h2>Watch and share</h2>
+            <p><b>Video clips from this episode</b></p>
         </div>
-        {.section collection}
-        <ul>
-            {.repeated section collections}
-            <li>
-                <a href="" class="img tv prllx-custom" data-prllx=".086" style="background-image:url('');">
-                    <div class="inside prllx-lo-stndrd">
-                        <span>Ep105</span><strong>Mar 29</strong>
-                    </div>
-                </a>
-            </li>
-            {.end}
-            <!--<li><a href="" class="img tv prllx-custom" data-prllx=".074" style="background-image:url('');"><div class="inside prllx-lo-stndrd"><span>Ep106</span><strong>Apr 30</strong></div></a></li>-->
-            <!--<li><a href="" class="img tv prllx-custom" data-prllx=".062" style="background-image:url('');"><div class="inside prllx-lo-stndrd"><span>Ep107</span><strong>May 27</strong></div></a></li>-->
-        </ul>
-    </section>
+
+        <div class="video-gallery-videos lefthand top-spaced">
+            <div class="video small">
+                <div class="image current-image" style="background-image:url('assets/images/thumb-video2.jpg');">
+                    <?php print_cta(array(
+                'icon' => 'images/eye',
+                    'class' => array('negative', 'play')
+                    )); ?>
+                    <!--<a href="" class="play"></a>-->
+                </div>
+                <div class="flex-cols">
+                    <div class="title">Behind the scenes with Gogol Bordello</div>
+                </div>
+            </div>
+            <div class="video small">
+                <div class="image" style="background-image:url('assets/images/thumb-video1.jpg');">
+                    <?php print_cta(array(
+                'icon' => 'images/eye',
+                    'class' => array('negative', 'play')
+                    )); ?>
+                </div>
+                <div class="flex-cols">
+                    <div class="title">Behind the scenes with Gogol Bordello</div>
+                </div>
+            </div>
+            <div class="video small no-margin">
+                <div class="image" style="background-image:url('assets/images/thumb-video3.jpg');">
+                    <?php print_cta(array(
+                'icon' => 'images/eye',
+                    'class' => array('negative', 'play')
+                    )); ?>
+                </div>
+                <div class="flex-cols">
+                    <div class="title">Behind the scenes with youth lagoon</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="centered top-spaced">
+            <?php print_cta(array(
+                'label' => 'Load more clips',
+            'icon' => 'images/icon-load',
+            'class' => array('load-clips', 'upsized-icon')
+            )); ?>
+            <!--<a class="episodes-landing-cta icon-refresh static" href="">Load more clips</a>-->
+        </div>
+
+    </section><!-- .video-gallery -->
+
+    <section class="image-slider">
+
+        <div class="slider-container top-spaced">
+            <div class="slider-images">
+                <div class="image current-image imgfill" style="background-image:url('assets/images/thumb-video5.jpg');"></div>
+                <div class="image pattern imgfill" style="background-image:url('assets/images/pattern-logo-bg.jpg');"></div>
+                <div class="image next-image imgfill" style="background-image:url('assets/images/video-clips-title.jpg');"></div>
+            </div><!-- .slider-images -->
+
+            <div class="slider-ui">
+                <div class="slider-arrows">
+                    <div class="arrow prev"><?php svg('images/arrow-cap'); ?></div>
+                    <div class="arrow next"><?php svg('images/arrow-cap'); ?></div>
+                </div><!-- .slider-arrows -->
+                <div class="slider-label">
+                    <h3>2/8</h3>
+                </div>
+            </div><!-- .slider-ui -->
+        </div><!-- .slider-container -->
+
+    </section><!-- .image-slider -->
+
+    <section class="post-excerpt">
+
+        <div class="section-head">
+            <h2>Explore the episode</h2>
+            <!--<p><b>Episode No.5, August 2016</b></p>-->
+        </div>
+
+        <div class="excerpt-container top-spaced">
+            <div class="image pattern imgfill" style="background-image:url('assets/images/pattern-logo-bg.jpg');"></div>
+            <div class="image post-image imgfill" style="background-image:url('assets/images/the-show-slide2.jpg');"></div>
+            <div class="text-layer">
+                <div class="section-head excerpt-head">
+                    <h2>An encore</h2>
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    <br/><br/>
+                    Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, quam quaerat voluptatem …
+                </p>
+                <?php print_cta(array(
+                    'label' => 'Full story',
+                'icon' => 'images/eye'
+                )); ?>
+                <!--<a class="episodes-landing-cta icon-eye" href="">Full story</a>-->
+            </div><!-- .text-layer -->
+        </div><!-- .excerpt-container -->
+
+    </section><!-- .post-excerpt -->
+
+    <section class="video-gallery teaser no-shift">
+
+        <div class="section-head">
+            <h2>Get more</h2>
+        </div>
+
+        <?php
+
+        $videos = array(
+            array(
+                'size' => 'medium',
+        'img' => 'assets/images/thumb-video1.jpg',
+        'label' => 'More country music',
+        'title' => 'Shakey Graves'
+        ),
+        array(
+        'size' => 'medium',
+        'img' => 'assets/images/thumb-video2.jpg',
+        'label' => 'More comedy',
+        'title' => 'Episode No. 6, September 2016'
+        ),
+        array(
+        'size' => 'small',
+        'img' => 'assets/images/thumb-video3.jpg',
+        'label' => 'More rock & indie',
+        'title' => 'Gogol Bordello'
+        ),
+        array(
+        'size' => 'small',
+        'img' => 'assets/images/thumb-video1.jpg',
+        'label' => false,
+        'title' => 'Episode No. 5, August 2016'
+        ),
+        array(
+        'size' => 'small',
+        'img' => 'assets/images/thumb-video2.jpg',
+        'label' => false,
+        'title' => 'Youth lagoon'
+        )
+        );
+
+        ?>
+
+        <div class="video-gallery-videos lefthand top-spaced">
+            <?php foreach($videos as $i => $vid) : ?>
+            <div class="video <?php echo $vid['size']; ?>">
+                <div class="image" style="background-image:url('<?php echo $vid['img']; ?>');">
+                    <?php print_cta(array(
+                            'icon' => 'images/icon-arrow',
+                    'class' => array('negative', 'play', 'goto')
+                    )); ?>
+                    <?php if($vid['label']) : ?>
+                    <span class="video-label"><?php echo $vid['label']; ?></span>
+                    <?php endif; ?>
+                </div>
+                <div class="flex-cols">
+                    <div class="title"><?php echo $vid['title']; ?></div>
+                    <?php print_cta(array(
+                            'label' => 'View',
+                    'icon' => 'images/eye',
+                    'class' => array('plain'),
+                    'hover' => false
+                    )); ?>
+                    <!--<a class="cta-container plain">-->
+                    <!--<div class="cta">-->
+                    <!--<span class="icon"><?php svg('images/eye'); ?></span>-->
+                    <!--<span class="label">View</span>-->
+                    <!--</div>-->
+                    <!--</a>-->
+                </div><!-- .flex-cols -->
+            </div>
+            <?php endforeach; ?>
+        </div><!-- .flexbox -->
+
+    </section><!-- .video-gallery -->
 </div>
 
-<!--squarespace:script src="custom/page_episodes.js" combo="true" /-->
+<!--squarespace:script combo="true" src="custom/page_episode.js" /-->
+
+<!----------------------------
+
+<div class="blog-list">
+
+  {.repeated section items}
+  <article class="entry h-entry {@|item-classes}" id="article-{id}" data-item-id="{id}">
+
+    <header class="entry-header">
+      <div class="meta-above-title">
+        {.section author}
+        <div class="entry-byline">
+          <span class="entry-author"><a href="{collection.fullUrl}?author={author.id}" class="p-author author entry-byline-link" rel="author">{displayName}</a></span>
+        </div>
+        {.end}
+        <div class="entry-dateline">
+          <time class="dt-published published entry-date" datetime="{addedOn|date %F}" pubdate><a href="{fullUrl}" class="entry-dateline-link">{addedOn|date %B %e, %Y}</a></time>
+          {.if updatedOn}<time class="dt-updated updated" datetime="{updatedOn|date %F}"></time>{.end}
+        </div>
+        {.section categories}
+        <div class="entry-morefrom">
+          <span class="entry-category">{.repeated section @}<a href="{collection.fullUrl}?category={@|url-encode}" class="entry-morefrom-link" rel="tag">{@}</a>{.alternates with}, {.end}</span>
+        </div>
+        {.end}
+      </div>
+      <h1 data-content-field="title" class="entry-title p-name">
+      {.passthrough?}
+        <a href="{sourceUrl}" class="entry-title-passthrough" target="_blank">{title}</a>
+      {.or}
+        <a href="{fullUrl}" class="u-url" rel="bookmark">{title}</a>
+      {.end}
+      </h1>
+      <div class="meta-below-title">
+        {.section author}
+        <div class="entry-byline">
+          <span class="entry-author"><a href="{collection.fullUrl}?author={author.id}" class="p-author author entry-byline-link" rel="author">{displayName}</a></span>
+        </div>
+        {.end}
+        <div class="entry-dateline">
+          <time class="dt-published published entry-date" datetime="{addedOn|date %F}" pubdate><a href="{fullUrl}" class="entry-dateline-link">{addedOn|date %B %e, %Y}</a></time>
+          {.if updatedOn}<time class="dt-updated updated" datetime="{updatedOn|date %F}"></time>{.end}
+        </div>
+        {.section categories}
+        <div class="entry-morefrom">
+          <span class="entry-category">{.repeated section @}<a href="{collection.fullUrl}?category={@|url-encode}" class="entry-morefrom-link" rel="tag">{@}</a>{.alternates with}, {.end}</span>
+        </div>
+        {.end}
+      </div>
+    </header>
+
+    <div class="entry-content">
+      {.excerpt?}
+        {.main-image?}
+        <div class="excerpt-thumb">
+          <a href="{fullUrl}" class="excerpt-image content-fill"><img {@|image-meta} /></a>
+        </div>
+        {.end}
+        <div class="p-summary">{excerpt}</div>
+        <p class="entry-more-link"><a href="{fullUrl}"></a></p>
+      {.or}
+        {.section body}
+          <div class="e-content">{@}</div>
+        {.end}
+      {.end}
+    </div>
+
+    <footer class="entry-footer clear">
+      {.section sourceUrl}
+      <p class="entry-source">
+        Source: <a href="{sourceUrl}" target="_blank">{sourceUrl}</a>
+      </p>
+      {.end}
+      {.section tags}
+      <p class="entry-tags">
+        Tagged: {.repeated section @}<a href="{collection.fullUrl}?tag={@|url-encode}" rel="tag">{@}</a>{.alternates with}, {.end}
+      </p>
+      {.end}
+      <div class="entry-actions">
+        {.comments?}{.if websiteSettings.disqusShortname}{@|comment-link}{.or}
+        <a href="{fullUrl}#comments-{id}" class="entry-comments">{.section publicCommentCount}{@} Comment{@|pluralize}{.or}Comment{.end}</a>{.end}{.end}{@|like-button}{@|social-button-inline}
+      </div>
+    </footer>
+
+    {.if postItemInjectCode}<div class="entry-injection">{postItemInjectCode}</div>{.end}
+
+  </article>
+  {.end}
+
+  {.if pagination}
+  <nav class="pagination clear" data-paginate="scroll">
+    <div class="newer">{.if pagination.prevPage}<a href="{pagination.prevPageUrl}" rel="prev"><span class="prev-label">Newer Posts</span></a>{.end}</div><!-- comment the linebreak between these two elements because science
+        <div class="older">{.if pagination.nextPage}<a href="{pagination.nextPageUrl}" rel="next"><span class="next-label">Older Posts</span></a>{.end}</div>
+  </nav>
+  {.end}
+
+</div>
+
+
+-->
