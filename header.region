@@ -46,8 +46,8 @@
 
     <div class="sticky-header">
 
-        <a href="?p=home" class="logo">
-        </a>
+        <a href="?p=home" class="logo"></a>
+        
         <div class="burger">
             <div class="inner">
                 <span class="line"></span>
