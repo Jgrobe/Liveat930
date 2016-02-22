@@ -79,7 +79,7 @@
             }//endif
             ctaHTML += '>';
 
-            var numElems = settings.hover ? 1 : 2;
+            var numElems = (settings.hover !== false) ? 1 : 2;
             console.log('is hover?', settings.hover, numElems);
             for (var j = 0; j < numElems; j++) {
 

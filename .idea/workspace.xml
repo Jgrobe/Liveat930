@@ -43,8 +43,8 @@
               <file leaf-file-name="footer.region" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/footer.region">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.6150321" vertical-offset="574" max-vertical-offset="1830">
-                      <caret line="83" column="40" selection-start-line="83" selection-start-column="40" selection-end-line="83" selection-end-column="40" />
+                    <state vertical-scroll-proportion="0.58753437" vertical-offset="574" max-vertical-offset="1830">
+                      <caret line="81" column="44" selection-start-line="81" selection-start-column="44" selection-end-line="81" selection-end-column="44" />
                       <folding />
                     </state>
                   </provider>
@@ -986,8 +986,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/footer.region">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6150321" vertical-offset="574" max-vertical-offset="1830">
-          <caret line="83" column="40" selection-start-line="83" selection-start-column="40" selection-end-line="83" selection-end-column="40" />
+        <state vertical-scroll-proportion="0.58753437" vertical-offset="574" max-vertical-offset="1830">
+          <caret line="81" column="44" selection-start-line="81" selection-start-column="44" selection-end-line="81" selection-end-column="44" />
           <folding />
         </state>
       </provider>
