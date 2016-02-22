@@ -1,6 +1,6 @@
 <section class="show-landing">
     <div class="fill-parent mask">
-        <div class="landing-bg" style="background-image:url('{collection.mainImage.assetUrl}');">
+        <div class="landing-bg" style="background-image:url('{item.mainImage.assetUrl}');">
             <!--<video src="assets/videos/header-kanye2.mp4" autoplay loop></video>-->
         </div>
     </div>
@@ -13,10 +13,10 @@
 
             <h1 class="l-headline">
                 <span class="show-landing-subline">{website.siteTitle}</span>
-                {collection.title}
+                {item.title}
             </h1>
             <div class="show-landing-info">
-                {collection.description}
+                {item.description}
             </div><!-- .show-landing-info -->
 
         </div><!-- .rel -->
@@ -29,13 +29,13 @@
     <section class="host-create history-slider post-excerpt">
 
         <div class="section-head">
-            <h2>{collection.customContent.galleryTitle}</h2>
-            <p>{collection.customContent.gallerySubtitle}</p>
+            <h2>{item.customContent.galleryTitle}</h2>
+            <p>{item.customContent.gallerySubtitle}</p>
         </div>
 
         <div class="excerpt-container top-spaced">
             <script>
-                var _gallery = {collection.customContent.gallery|@json-pretty};
+                var _gallery = {item.customContent.gallery|@json-pretty};
             </script>
             <div class="slider-images">
                 <div class="image current-image imgfill" style="background-image:url('assets/images/the-show-slide1.jpg');"></div>
@@ -73,7 +73,7 @@
     <section class="video-gallery teaser no-shift">
 
         <div class="section-head">
-            <h2>{collection.customContent.gridTitle}</h2>
+            <h2>{item.customContent.gridTitle}</h2>
         </div>
 
         <!-- php
@@ -119,7 +119,7 @@
                             'class' => array('negative', 'play', 'goto')
                             )); -->
 
-                            <span class="video-label">{collection.customContent.griditemLabelMerch}</span>
+                            <span class="video-label">{item.customContent.griditemLabelMerch}</span>
 
                         </div><!-- .image -->
                         <div class="flex-cols">
