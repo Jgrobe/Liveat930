@@ -79,7 +79,9 @@
             }//endif
             ctaHTML += '>';
 
-            for (var j = 0; j < (settings.hover ? 1 : 2); j++) {
+            var numElems = settings.hover ? 1 : 2;
+            console.log('is hover?', settings.hover, numElems);
+            for (var j = 0; j < numElems; j++) {
 
                 var ctaElem = '<div class="cta';
                 if (j > 0) ctaElem += ' hover-cta';
