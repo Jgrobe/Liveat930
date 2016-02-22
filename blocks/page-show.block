@@ -115,67 +115,6 @@
             </script>
         </squarespace:query>
 
-        <div class="video-gallery-videos lefthand top-spaced" limit="100">
-            <squarespace:query collection="products" limit="100">
-                {.section item}
-                <div class="video medium">
-                    <div class="image" style="background-image:url('{assetUrl}');">
-                        {@|apply module-cta.block}
-                        <!--php print_cta(array(
-                            'icon' => 'images/icon-arrow',
-                        'class' => array('negative', 'play', 'goto')
-                        )); -->
-
-                        <span class="video-label">Shop merch</span>
-
-                    </div><!-- .image -->
-                    <div class="flex-cols">
-                        <div class="title">{title}</div>
-                    </div><!-- .flex-cols -->
-                </div><!-- .video -->
-                {.end}
-            </squarespace:query>
-            <squarespace:query collection="blog" limit="100">
-                <script>console.log('query blog data', {@|json-pretty});</script>
-                {.section item}
-                <div class="video medium">
-                    <div class="image" style="background-image:url('{assetUrl}');">
-                        {@|apply module-cta.block}
-                        <!--php print_cta(array(
-                            'icon' => 'images/icon-arrow',
-                        'class' => array('negative', 'play', 'goto')
-                        )); -->
-
-                        <span class="video-label">Read about it</span>
-
-                    </div><!-- .image -->
-                    <div class="flex-cols">
-                        <div class="title">{title}</div>
-                    </div><!-- .flex-cols -->
-                </div><!-- .video -->
-                {.end}
-            </squarespace:query>
-            <squarespace:query collection="clips" limit="100">
-                <script>console.log('query clips data', {@|json-pretty});</script>
-                {.section item}
-                <div class="video medium">
-                    <div class="image" style="background-image:url('{assetUrl}');">
-                        {@|apply module-cta.block}
-                        <!--php print_cta(array(
-                            'icon' => 'images/icon-arrow',
-                        'class' => array('negative', 'play', 'goto')
-                        )); -->
-
-                        <span class="video-label">Watch & share clips</span>
-
-                    </div><!-- .image -->
-                    <div class="flex-cols">
-                        <div class="title">{title}</div>
-                    </div><!-- .flex-cols -->
-                </div><!-- .video -->
-                {.end}
-            </squarespace:query>
-        </div><!-- .flexbox -->
 
     </section><!-- .video-gallery -->
 
