@@ -14,8 +14,8 @@
                 </div><!-- .half -->
             </div><!-- .bg-layer -->
 
-            <div class="layer model-layer rel prllx-custom prllx-no-disable" data-prllx=".18">
-                <div class="model-container img widescreen" style="background-image:url('{assetUrl}');" data-type="video" data-src="{assetUrl}" data-shape="{customContent.episode-shape}">
+            <div class="layer model-layer rel prllx-custom prllx-no-disable" data-prllx=".18" style="background-image:url('{assetUrl}');">
+                <div class="model-container img widescreen" data-type="video" data-src="{assetUrl}" data-shape="{customContent.episode-shape}">
                     <!-- /* video canvas is inserted here */ -->
                 </div><!-- .model-container.img.widescreen -->
             </div><!-- .model-layer -->
