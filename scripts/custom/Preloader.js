@@ -16,6 +16,11 @@ var Preloader = function( options ) {
     PL.preload = function(sources, functions) {
         if(typeof functions === 'undefined') functions = {};
         if(_.isFunction(functions.onStart)) functions.onStart(PL);
+
+        if(sources.length <= 0) {
+            if(_.isFunction(functions.onComplete)) functions.onComplete(PL);
+            return;
+        }// endif
         
         var loaded = 0;
         for(var i=0; i<sources.length; i++) {
