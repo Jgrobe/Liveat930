@@ -169,7 +169,7 @@
                 </div><!-- .video -->
                 {.end}
             </squarespace:query>
-            <squarespace:query collection="episodes" limit="100">
+            <squarespace:query collection="all-episodes" limit="100">
                 {.repeated section items}
                 <script>console.log('query eps data repeat', {@|json-pretty});</script>
                 {.end}
