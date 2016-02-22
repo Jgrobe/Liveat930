@@ -16,8 +16,8 @@
                         {.end}
                     </li>
                     <li class="divider">/</li>
-                {end}<!-- .end repeated items -->
-            {end}
+                {.end}<!-- .end repeated items -->
+            {.end}
             <li class="menu-item">
                 {@|apply search-field.block}
             </li>
