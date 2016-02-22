@@ -109,7 +109,7 @@
 
         }// get_cta_html()
     </script>
-    <squarespace:script combo="true" src="custom/ui.js" />
+    <squarespace:script src="custom/ui.js" />
 
 {squarespace-footers}
 
