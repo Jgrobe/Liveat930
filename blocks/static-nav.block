@@ -2,11 +2,18 @@
     <nav class="navigation">
         <ul class="menu">
             {.repeated section items}
-            <script>console.log('WHATUP', {@|json-pretty});</script>
-                <li class="menu-item{.if active} current-item{.end}">
-                    <a href="{url}">
-                        {title}
-                    </a>
+                <!--<script>console.log('WHATUP', {@|json-pretty});</script>-->
+                <li class="menu-item{.section active} current-item{.end}">
+                    {.section collection}
+                        <a href="{fullUrl}">
+                            {navigationTitle}
+                        </a>
+                    {.end}
+                    {.section externalLink}
+                        <a href="{url}"{.section newWindow} target="_blank"{.end}>
+                            {title}
+                        </a>
+                    {.end}
                 </li>
                 <li class="divider">/</li>
             {end}
