@@ -89,10 +89,10 @@
 
                 ctaElem += ctaInner;
                 ctaElem += '</div>';
+                ctaHTML += ctaElem;
 
             }//endfor
 
-            ctaHTML += ctaElem;
             console.log('Thats the new cta', ctaHTML);
             ctaHTML += '</' + settings.tag +'>';
             
