@@ -2,13 +2,14 @@
     <section class="posters scroll-posters">
         <div class="posters-hover-bg"></div>
 
-        <squarespace:query collection="all-episodes" limit="12">
+        <squarespace:query collection="episodes" limit="99">
             <script>
                 console.log('all episodes queried', {@|json-pretty});
             </script>
+            {@|apply poster-scroll.block}
         </squarespace:query>
-    </section>
-</div>
+    </section><!-- .posters -->
+</div><!-- .site-content -->
 
 <div id="fieldTracker">
 </div><!-- #fieldTracker -->
