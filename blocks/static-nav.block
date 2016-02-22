@@ -2,6 +2,23 @@
     <nav class="navigation">
         <ul class="menu">
             <script>console.log('WHATUP', {@|json-pretty});</script>
+            {.if items}
+                {.repeated section items}
+                    <li class="menu-item{.section active} current-item{.end}">
+                        {.section collection}
+                            <a href="{fullUrl}">
+                                {navigationTitle}
+                            </a>
+                        {.end}
+                        {.section externalLink}
+                            <a href="{url}"{.section newWindow} target="_blank"{.end}>
+                                {title}
+                            </a>
+                        {.end}
+                    </li>
+                    <li class="divider">/</li>
+                {end}<!-- .end repeated items -->
+            {.end}<!-- .end if items -->
             <li class="menu-item">
                 {@|apply search-field.block}
             </li>

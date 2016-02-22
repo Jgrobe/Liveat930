@@ -165,8 +165,8 @@
               <file leaf-file-name="static-nav.block" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/blocks/static-nav.block">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.24747938" vertical-offset="0" max-vertical-offset="1091">
-                      <caret line="18" column="21" selection-start-line="4" selection-start-column="44" selection-end-line="18" selection-end-column="21" />
+                    <state vertical-scroll-proportion="0.054995418" vertical-offset="0" max-vertical-offset="1091">
+                      <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
                       <folding />
                     </state>
                   </provider>
@@ -1021,8 +1021,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/blocks/static-nav.block">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24747938" vertical-offset="0" max-vertical-offset="1091">
-          <caret line="18" column="21" selection-start-line="4" selection-start-column="44" selection-end-line="18" selection-end-column="21" />
+        <state vertical-scroll-proportion="0.054995418" vertical-offset="0" max-vertical-offset="1091">
+          <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
           <folding />
         </state>
       </provider>
