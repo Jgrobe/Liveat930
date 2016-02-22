@@ -55,7 +55,7 @@
                 'tag': 'a',
                 'attributes': {'href': '#'}
             }, options);
-            console.log('cta opts', options, settings);
+            console.log('cta opts', options, 'cta settings', settings);
 
             var ctaHTML = '<' + settings.tag + ' class="cta-container';
             if (!settings.label) ctaHTML += ' no-label';
