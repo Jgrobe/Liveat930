@@ -142,7 +142,7 @@
                 {.end}
             </squarespace:query>
 
-            <squarespace:query collection="all-episodes" limit="1">
+            <squarespace:query collection="episodes" limit="1">
                 <script>
                     console.log('all episodes queried', {@|json-pretty});
                 </script>
