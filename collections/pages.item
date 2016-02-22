@@ -81,7 +81,7 @@
 
             <squarespace:query collection="products" limit="1">
                 <script>
-                    console.log('all episodes queried', {@|json-pretty});
+                    console.log('all products queried', {@|json-pretty});
                 </script>
                 {.repeated section items}
                 <div class="video medium">
@@ -102,7 +102,7 @@
 
             <squarespace:query collection="blog" limit="1">
                 <script>
-                    console.log('all episodes queried', {@|json-pretty});
+                    console.log('all blog queried', {@|json-pretty});
                 </script>
                 {.repeated section items}
                 <div class="video medium">
@@ -123,7 +123,7 @@
 
             <squarespace:query collection="clips" limit="1">
                 <script>
-                    console.log('all episodes queried', {@|json-pretty});
+                    console.log('all clips queried', {@|json-pretty});
                 </script>
                 {.repeated section items}
                 <div class="video medium">
