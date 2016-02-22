@@ -152,10 +152,11 @@
                         <br/><br/>
                         Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, quam quaerat voluptatem …
                         </p>
-                        <?php print_cta(array(
+                        <div class="cta-dummy" data-icon="eye" data-label="Full story">{@|apply svg-icon-eye.block}</div>
+                        <!--php print_cta(array(
                         'label' => 'Full story',
                         'icon' => 'images/eye'
-                        )); ?>
+                        )); -->
                         <!--<a class="episodes-landing-cta icon-eye" href="">Full story</a>-->
                     </div><!-- .text-layer -->
                     </div><!-- .excerpt-container -->
@@ -171,7 +172,7 @@
                 <h2>Get more</h2>
             </div>
 
-            <?php
+            <!--?php
 
             $videos = array(
                 array(
@@ -206,28 +207,30 @@
             )
             );
 
-            ?>
+            -->
 
             <div class="video-gallery-videos lefthand top-spaced">
                 <?php foreach($videos as $i => $vid) : ?>
                 <div class="video <?php echo $vid['size']; ?>">
                     <div class="image" style="background-image:url('<?php echo $vid['img']; ?>');">
-                        <?php print_cta(array(
+                        <div class="cta-dummy" data-icon="icon-arrow" data-class="negative play goto">{@|apply svg-icon-arrow.block}</div>
+                        <!--php print_cta(array(
                                 'icon' => 'images/icon-arrow',
                         'class' => array('negative', 'play', 'goto')
-                        )); ?>
+                        )); -->
                         <?php if($vid['label']) : ?>
                         <span class="video-label"><?php echo $vid['label']; ?></span>
                         <?php endif; ?>
                     </div>
                     <div class="flex-cols">
                         <div class="title"><?php echo $vid['title']; ?></div>
-                        <?php print_cta(array(
-                                'label' => 'View',
-                        'icon' => 'images/eye',
-                        'class' => array('plain'),
-                        'hover' => false
-                        )); ?>
+                        <div class="cta-dummy" data-label="View" data-icon="eye" data-class="plain" hover="false">{@|apply svg-icon-eye.block}</div>
+                        <!--php print_cta(array(
+                            'label' => 'View',
+                            'icon' => 'images/eye',
+                            'class' => array('plain'),
+                            'hover' => false
+                        )); -->
                         <!--<a class="cta-container plain">-->
                         <!--<div class="cta">-->
                         <!--<span class="icon"><?php svg('images/eye'); ?></span>-->
