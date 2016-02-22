@@ -162,7 +162,7 @@
                         </div>
                         <div class="flex-cols">
                             <div class="title">{title}</div>
-                            <div class="cta-dummy" data-label="View" data-icon="eye" data-class="plain" hover="true">{@|apply svg-icon-eye.block}</div>
+                            <div class="cta-dummy" data-label="View" data-icon="eye" data-class="plain" data-hover="true">{@|apply svg-icon-eye.block}</div>
                             <!--php print_cta(array(
                                 'label' => 'View',
                                 'icon' => 'images/eye',
