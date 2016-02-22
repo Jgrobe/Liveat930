@@ -1,0 +1,238 @@
+{.equal?:item.customContent.customType:"page-show"}
+<script>console.log('ITS THE SHOW TEMPLATE');</script>
+    <section class="show-landing">
+        <div class="fill-parent mask">
+            <div class="landing-bg" style="background-image:url('{item.mainImage.assetUrl}');">
+                <!--<video src="assets/videos/header-kanye2.mp4" autoplay loop></video>-->
+            </div>
+        </div>
+
+        <div class="show-content">
+
+            <div class="rel">
+
+                <div class="rectangle"></div>
+
+                <h1 class="l-headline">
+                    <span class="show-landing-subline">{website.siteTitle}</span>
+                    {item.title}
+                </h1>
+                <div class="show-landing-info">
+                    {item.description}
+                </div><!-- .show-landing-info -->
+
+            </div><!-- .rel -->
+
+        </div><!-- .show-content -->
+    </section>
+
+    <div class="site-content">
+
+        <section class="host-create history-slider post-excerpt">
+
+            <div class="section-head">
+                <h2>{item.customContent.galleryTitle}</h2>
+                <p>{item.customContent.gallerySubtitle}</p>
+            </div>
+
+            <div class="excerpt-container top-spaced">
+                <script>
+                    var _gallery = {item.customContent.gallery|@json-pretty};
+                </script>
+                <div class="slider-images">
+                    <div class="image current-image imgfill" style="background-image:url('assets/images/the-show-slide1.jpg');"></div>
+                </div><!-- .ipad -->
+
+                <div class="slider-ui">
+                    <div class="slider-arrows">
+                        <div class="arrow prev"><?php svg('images/arrow-cap'); ?></div>
+                        <div class="arrow next"><?php svg('images/arrow-cap'); ?></div>
+                    </div><!-- .slider-arrows -->
+                    <div class="slider-label onlymobile">
+                        <h3>2/7</h3>
+                    </div>
+                </div><!-- .slider-ui -->
+
+                <div class="text-layer">
+                    <div class="section-head excerpt-head">
+                        <h2>1996 - 2001</h2>
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    </p>
+
+                    <div class="slider-ui onlynomobile">
+                        <div class="slider-label">
+                            <h3>2/7</h3>
+                        </div><!-- .slider-label -->
+                    </div>
+                </div><!-- .text-layer -->
+            </div><!-- .excerpt-container -->
+
+        </section><!-- .post-excerpt -->
+
+
+        <section class="video-gallery teaser no-shift">
+
+            <div class="section-head">
+                <h2>{item.customContent.gridTitle}</h2>
+            </div>
+
+            <!-- php
+
+            $videos = array(
+                array(
+                    'size' => 'medium',
+            'img' => 'assets/images/thumb-video1.jpg',
+            'label' => 'Shop merch',
+            'title' => ''
+            ),
+            array(
+            'size' => 'medium',
+            'img' => 'assets/images/thumb-video2.jpg',
+            'label' => 'Read about it',
+            'title' => ''
+            ),
+            array(
+            'size' => 'medium',
+            'img' => 'assets/images/thumb-video3.jpg',
+            'label' => 'Watch & share clips',
+            'title' => ''
+            ),
+            array(
+            'size' => 'medium',
+            'img' => 'assets/images/thumb-video1.jpg',
+            'label' => 'See the shows',
+            'title' => ''
+            )
+            );
+
+            -->
+
+            <div class="video-gallery-videos lefthand top-spaced">
+                <squarespace:query collection="clips">
+                    <script>console.log('query data', {@|json-pretty});</script>
+                    {.repeated section items}
+                    <div class="video medium">
+                        <div class="image" style="background-image:url('{assetUrl}');">
+                            {@|apply module-cta.block}
+                            <!--php print_cta(array(
+                                'icon' => 'images/icon-arrow',
+                            'class' => array('negative', 'play', 'goto')
+                            )); -->
+
+                            <span class="video-label">{item.customContent.griditemLabelMerch}</span>
+
+                        </div><!-- .image -->
+                        <div class="flex-cols">
+                            <div class="title">{title}</div>
+                        </div><!-- .flex-cols -->
+                    </div><!-- .video -->
+                    {.end}
+                </squarespace:query>
+            </div><!-- .flexbox -->
+
+        </section><!-- .video-gallery -->
+
+    </div>
+{.end}
+{.equal?:item.customContent.customType:"page-host"}
+
+    <section class="host-landing">
+        <div class="fill-parent mask">
+            <div class="landing-bg video-bg" style="background-image:url('assets/images/the-host-title.jpg');">
+                <video src="assets/videos/header-kanye2.mp4" autoplay loop></video>
+            </div>
+        </div>
+        <div class="content">
+            <div class="rectangle"></div>
+            <div class="hosted-by-logo"></div>
+            <h1 class="l-headline">Build it beautiful</h1>
+            <div class="text-layer">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
+                    <br/><br/>
+                    Exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <?php print_cta(array(
+                    'label' => 'Build your own website with squarespace',
+                'icon' => 'images/browser',
+                'class' => array('upsized-icon')
+                )); ?>
+                <!--<a href="" class="cta icon-browser-white">Build your own website with squarespace</a>-->
+            </div>
+        </div>
+    </section>
+
+    <div class="site-content">
+
+        <section class="host-create device-slider post-excerpt top-spaced">
+
+            <div class="section-head">
+                <h2>Artists create</h2>
+                <p>using squarespace</p>
+            </div>
+
+            <div class="excerpt-container top-spaced">
+                <div class="device ipad">
+                    <div class="image pattern imgfill" style="background-image:url('assets/images/pattern-logo-bg.jpg');"></div>
+                    <img src="assets/images/ipad.png" class="device-image"/>
+                    <div class="image device-screen">
+                        <div class="fill-parent imgfill" style="background-image:url('assets/images/ipad-screen.jpg');"></div>
+                    </div>
+
+                    <div class="slider-ui">
+                        <div class="slider-arrows">
+                            <div class="arrow prev"><?php svg('images/arrow-cap'); ?></div>
+                            <div class="arrow next"><?php svg('images/arrow-cap'); ?></div>
+                        </div><!-- .slider-arrows -->
+                        <div class="slider-label">
+                            <h3>2/8</h3>
+                        </div>
+                    </div><!-- .slider-ui -->
+
+                </div><!-- .ipad -->
+
+                <div class="text-layer">
+                    <div class="section-head excerpt-head">
+                        <h2>Leon Bridges</h2>
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        <br/><br/>
+                        Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, quam quaerat voluptatem …
+                    </p>
+                    <?php print_cta(array(
+                        'label' => 'Visit website',
+                    'icon' => 'images/eye'
+                    )); ?>
+                    <!--<a class="episodes-landing-cta icon-eye" href="">Visit Website</a>-->
+                </div><!-- .text-layer -->
+            </div><!-- .excerpt-container -->
+
+        </section><!-- .post-excerpt -->
+
+        <section class="host-become text-insert-container">
+            <div class="rectangle"></div>
+            <div class="main text-layer">
+                <div class="logo blend-logo">
+                    <?php svg('images/logo-squarespace'); ?>
+                </div>
+                <div class="section-head">
+                    <h2>Become a part</h2>
+                    <p>Live at 9:30 is brought to you and hosted by Squarespace, the simplest way to build a beautiful website.</p>
+                </div><!-- .section-head -->
+                <?php print_cta(array(
+                    'label' => 'Build your own website with squarespace',
+                'icon' => 'images/browser',
+                'class' => array('upsized-icon', 'negative')
+                )); ?>
+                <!--<a href="" class="cta icon-browser">Build your own website with squarespace</a>-->
+            </div><!-- .text-layer -->
+        </section>
+
+    </div>
+
+{.end}
+
+<!--php include('modules/upcoming.php'); -->
