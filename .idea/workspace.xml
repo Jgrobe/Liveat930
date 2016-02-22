@@ -187,9 +187,11 @@
               <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/styles/style.css">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.33272058" vertical-offset="52828" max-vertical-offset="54555">
-                      <caret line="3546" column="18" selection-start-line="3546" selection-start-column="13" selection-end-line="3546" selection-end-column="18" />
-                      <folding />
+                    <state vertical-scroll-proportion="7.6279507" vertical-offset="6937" max-vertical-offset="54555">
+                      <caret line="1001" column="16" selection-start-line="1001" selection-start-column="16" selection-end-line="1001" selection-end-column="16" />
+                      <folding>
+                        <marker date="1456166139000" expanded="true" signature="27640:28080" placeholder="{...}" />
+                      </folding>
                     </state>
                   </provider>
                 </entry>
@@ -1011,9 +1013,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/styles/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33272058" vertical-offset="52828" max-vertical-offset="54555">
-          <caret line="3546" column="18" selection-start-line="3546" selection-start-column="13" selection-end-line="3546" selection-end-column="18" />
-          <folding />
+        <state vertical-scroll-proportion="7.6279507" vertical-offset="6937" max-vertical-offset="54555">
+          <caret line="1001" column="16" selection-start-line="1001" selection-start-column="16" selection-end-line="1001" selection-end-column="16" />
+          <folding>
+            <marker date="1456166139000" expanded="true" signature="27640:28080" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
