@@ -78,7 +78,8 @@
         <div class="rectangle"></div>
         <div class="main text-layer">
             <div class="logo blend-logo">
-                <?php svg('images/logo-squarespace'); ?>
+                {@|apply svg-logo-squarespace.block}
+                <!--php svg('images/logo-squarespace'); -->
             </div>
             <div class="section-head">
                 <h2>{item.customContent.infoblockTitle}</h2>
