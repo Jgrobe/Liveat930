@@ -8,15 +8,14 @@
             <div class="layer bg-layer padded">
                 <div class="half">
                     <div class="fill-parent imgfill"></div>
-                </div>
+                </div><!-- .half -->
                 <div class="half">
                     <div class="fill-parent imgfill"></div>
-                </div>
-            </div>
+                </div><!-- .half -->
+            </div><!-- .bg-layer -->
 
-            <div class="layer model-layer rel<?php if($poster['parallax']) { echo ' prllx-custom prllx-no-disable" data-prllx=".18'; } ?>">
-                <div class="model-container img widescreen" data-type="video" data-src="{assetUrl}" data-shape="{customContent.episode-shape}">
-                    <div class="fill-parent" style="background-image:url('{assetUrl}');"></div>
+            <div class="layer model-layer rel prllx-custom prllx-no-disable" data-prllx=".18">
+                <div class="model-container img widescreen" style="background-image:url('{assetUrl}');" data-type="video" data-src="{assetUrl}" data-shape="{customContent.episode-shape}">
                     <!-- /* video canvas is inserted here */ -->
                 </div><!-- .model-container.img.widescreen -->
             </div><!-- .model-layer -->
@@ -34,21 +33,21 @@
                             <span class="icon-label">{@index}</span>
                         </div><!-- .icon.episode -->
 
-                        <h2 class="l-headline ep-headline<?php if($poster['parallax']) { echo ' prllx-custom prllx-no-disable" data-prllx=".12'; } ?>">{customContent.episode-title}</h2>
-                        <h3 class="m-headline ep-date<?php if($poster['parallax']) { echo ' prllx-custom prllx-no-disable" data-prllx=".13'; } ?>">March 2016</h3>
+                        <h2 class="l-headline ep-headline prllx-custom prllx-no-disable" data-prllx=".12">{customContent.episode-title}</h2>
+                        <h3 class="m-headline ep-date prllx-custom prllx-no-disable" data-prllx=".13">March 2016</h3>
 
                     </div><!-- .relativizer -->
 
                 </div><!-- .half -->
 
-                <div class="half padded lineup-container<?php if($poster['parallax']) { echo ' prllx-custom prllx-no-disable" data-prllx=".12'; } ?>">
+                <div class="half padded lineup-container prllx-custom prllx-no-disable" data-prllx=".12">
                     <h6 class="s-headline ep-subheadline">Additional performances by:</h6>
                     <h4 class="m-headline ep-lineup">
                         {.repeated section tags}
                             <a class="artist" href="#" data-img="">
                                 {@}
                                 <span class="description">That's the artist's description</span>
-                            </a>
+                            </a><!-- .artist -->
                             <span class="divider">/</span>
                         {.end}
                     </h4>
@@ -61,6 +60,7 @@
         <div class="poster-part info">
             <div class="hosted-logo">{@|apply svg-hosted-by.block}<!--php svg('images/hosted-by'); --></div>
         </div><!-- .poster-part.info -->
+
     </div><!-- .fill-parent --><!-- .poster-content -->
 
     <a class="btn-play-episode prllx-custom prllx-no-disable" data-prllx="-.65" href="{fullUrl}">Play Episode</a>
