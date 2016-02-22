@@ -1,13 +1,20 @@
 var ctaVars = ['class', 'icon', 'label', 'hover', 'tag', 'attributes'];
 jQuery('.cta-dummy').each(function() {
     var $this = jQuery(this);
-    console.log('this is cta converter', $this.data('icon'));
+//            //console.log('this is cta converter', $this.data('icon'));
     var ctaOpts = {};
     for(var k=0; k< ctaVars.length; k++) {
-        console.log('proofing '+ctaVars[k], 'attr '+'data-'+ctaVars[k], $this.hasAttr('data-'+ctaVars[k]));
-        if($this.hasAttr('data-'+ctaVars[k])) ctaOpts[ctaVars[k]] = $this.data(ctaVars[k]);
+        //console.log('proofing '+ctaVars[k], 'attr '+'data-'+ctaVars[k], $this.hasAttr('data-'+ctaVars[k]));
+        if(ctaVars[k] == 'icon') {
+            ctaOpts['icon'] = {
+                title : $this.data(ctaVars[k]),
+                html : $this.html()
+            };
+        } else {
+            if($this.hasAttr('data-'+ctaVars[k])) ctaOpts[ctaVars[k]] = $this.data(ctaVars[k]);
+        }
     };
-    console.log('input cta opts');
+    //console.log('input cta opts');
     var $CTA = jQuery(get_cta_html(ctaOpts));
     $this.replaceWith($CTA);
 });
@@ -22,7 +29,7 @@ function get_cta_html(options) {
         'tag': 'a',
         'attributes': 'href=#'
     }, options);
-    console.log('cta opts', options, 'cta settings', settings);
+    //console.log('cta opts', options, 'cta settings', settings);
 
     var ctaHTML = '<' + settings.tag + ' class="cta-container';
     if (!settings.label) ctaHTML += ' no-label';
@@ -38,7 +45,9 @@ function get_cta_html(options) {
     }//endif
     ctaHTML += '>';
 
-    for (var j = 0; j < (settings.hover ? 1 : 2); j++) {
+    var numElems = (settings.hover !== false) ? 1 : 2;
+    //console.log('is hover?', settings.hover, numElems);
+    for (var j = 0; j < numElems; j++) {
 
         var ctaElem = '<div class="cta';
         if (j > 0) ctaElem += ' hover-cta';
@@ -59,7 +68,7 @@ function get_cta_html(options) {
 
     }//endfor
 
-    console.log('Thats the new cta', ctaHTML);
+    //console.log('Thats the new cta', ctaHTML);
     ctaHTML += '</' + settings.tag +'>';
 
     return ctaHTML;

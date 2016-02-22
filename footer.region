@@ -9,16 +9,30 @@
                 <p>Sign up for regular show updates and exclusives</p>
                 <form>
                     <input type="email" placeholder="Your email address" />
-
-                    <!--<input type="submit" value="Put me on the list" />-->
+                    <div class="cta-dummy" data-tag="button" data-label="Put me on the list" data-icon="icon-arrow" data-class="submit-email" data-attributes="type=submit,data-prllx=-.02">{@|apply svg-icon-arrow.block}</div>
+                    <!--php print_cta(array(
+                    'label' => 'Put me on the list',
+                    'icon' => 'images/icon-arrow',
+                    'class' => array('submit-email'),
+                    'tag' => 'button',
+                    'attributes' => array(
+                    'type' => 'submit',
+                    'data-prllx' => '-.02'
+                    )
+                    )); -->
                 </form>
             </div>
         </section>
         <section class="footer-hosted-by">
             <div class="hosted-by-logo"></div>
             <p class="hosted-by-p">Live at 9:30 is hosted by <a href="http://www.squarespace.com" class="plain-link">Squarespace</a>, the simplest way to build a beautiful website.</p>
-
-            <!--<a class="hosted-by-link icon-browser" href="">Build your own website with squarespace</a>-->
+            <div class="cta-dummy" data-label="Build your own website with squarespace" data-icon="browser" data-class="negative hosted-by-link upsized-icon prllx-custom" data-attributes="href=http://www.squarespace.com,data-prllx=-.02">{@|apply svg-icon-browser.block}</div>
+            <!--php print_cta(array(
+            'label' => 'Build your own website with squarespace',
+            'icon' => 'images/browser',
+            'class' => array('negative', 'hosted-by-link', 'upsized-icon', 'prllx-custom'),
+            'attributes' => array( 'href'=>'#', 'data-prllx' => '-.02' )
+            )); -->
         </section>
         <section class="footer-social">
             <ul>
@@ -31,84 +45,7 @@
 
 </div><!-- .page -->
 
-    <script>
-        var ctaVars = ['class', 'icon', 'label', 'hover', 'tag', 'attributes'];
-        jQuery('.cta-dummy').each(function() {
-            var $this = jQuery(this);
-//            //console.log('this is cta converter', $this.data('icon'));
-            var ctaOpts = {};
-            for(var k=0; k< ctaVars.length; k++) {
-                //console.log('proofing '+ctaVars[k], 'attr '+'data-'+ctaVars[k], $this.hasAttr('data-'+ctaVars[k]));
-                if(ctaVars[k] == 'icon') {
-                    ctaOpts['icon'] = {
-                        title : $this.data(ctaVars[k]),
-                        html : $this.html()
-                    };
-                } else {
-                    if($this.hasAttr('data-'+ctaVars[k])) ctaOpts[ctaVars[k]] = $this.data(ctaVars[k]);
-                }
-            };
-            //console.log('input cta opts');
-            var $CTA = jQuery(get_cta_html(ctaOpts));
-            $this.replaceWith($CTA);
-        });
-
-
-        function get_cta_html(options) {
-            var settings = jQuery.extend({
-                'class': false,
-                'icon': false,
-                'label': false,
-                'hover': false,
-                'tag': 'a',
-                'attributes': 'href=#'
-            }, options);
-            //console.log('cta opts', options, 'cta settings', settings);
-
-            var ctaHTML = '<' + settings.tag + ' class="cta-container';
-            if (!settings.label) ctaHTML += ' no-label';
-            if (settings.icon) ctaHTML += ' icon-' + settings.icon.title;
-            if (settings.class) ctaHTML += ' ' + settings.class;
-            ctaHTML += '"';
-            if (settings.attributes) {
-                var pairs = settings.attributes.split(',');
-                for (var i = 0; i < pairs.length; i++) {
-                    var data = pairs[i].split('=');
-                    ctaHTML += ' ' + data[0] + '="' + data[1] + '"';
-                }// endfor
-            }//endif
-            ctaHTML += '>';
-
-            var numElems = (settings.hover !== false) ? 1 : 2;
-            console.log('is hover?', settings.hover, numElems);
-            for (var j = 0; j < numElems; j++) {
-
-                var ctaElem = '<div class="cta';
-                if (j > 0) ctaElem += ' hover-cta';
-                ctaElem += '">';
-
-                var ctaInner = '<span class="filler">';
-                if (settings.icon) {
-                    ctaInner += '<span class="icon">' + settings.icon.html + '</span>';
-                }// endif
-                if (settings.label) {
-                    ctaInner += '<span class="label">' + settings.label + '</span>';
-                }//endif
-                ctaInner += '</span>';
-
-                ctaElem += ctaInner;
-                ctaElem += '</div>';
-                ctaHTML += ctaElem;
-
-            }//endfor
-
-            //console.log('Thats the new cta', ctaHTML);
-            ctaHTML += '</' + settings.tag +'>';
-
-            return ctaHTML;
-
-        }// get_cta_html()
-    </script>
+    <squarespace:script src="custom/cta-converter.js" />
     <squarespace:script src="custom/ui.js" />
 
 {squarespace-footers}
