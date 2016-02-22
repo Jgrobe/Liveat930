@@ -38,8 +38,8 @@
             console.log('this is cta converter', $this.data('icon'));
             var ctaOpts = {};
             for(var k=0; k< ctaVars.length; k++) {
-                console.log('proofing '+ctaVars[k]);
-                if($this.hasAttr('data-'+ctaVars[k])) ctaOpts.class = $this.data(ctaVars[k]);
+                console.log('proofing '+ctaVars[k], 'attr '+'data-'+ctaVars[k], $this.hasAttr('data-'+ctaVars[k]));
+                if($this.hasAttr('data-'+ctaVars[k])) ctaOpts[ctaVars[k]] = $this.data(ctaVars[k]);
             };
             console.log('input cta opts');
             var $CTA = jQuery(get_cta_html(ctaOpts));
