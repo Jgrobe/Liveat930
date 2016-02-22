@@ -31,6 +31,75 @@
 
 </div><!-- .page -->
 
+    <script>
+        jQuery('.cta-dummy').each(function() {
+            var $this = jQuery(this);
+            console.log('this is cta converter', $this.data('icon'));
+            var $CTA = jQuery(get_cta_html({
+                'class' : $this.data('class'),
+                'icon' : $this.data('icon'),
+                'label' : $this.data('label'),
+                'hover' : $this.data('hover'),
+                'tag' : $this.data('tag'),
+                'attributes' : $this.data('attributes')
+            }));
+            $this.replaceWith($CTA);
+        });
+
+
+        function get_cta_html(options) {
+            var settings = jQuery.extend({
+                'class': false,
+                'icon': false,
+                'label': false,
+                'hover': true,
+                'tag': 'a',
+                'attributes': {'href': '#'}
+            }, options);
+
+            var ctaHTML = '<' + settings.tag + ' class="cta-container';
+            if (!settings.label) ctaHTML += ' no-label';
+            if (!settings.icon) ctaHTML += ' icon-' + settings.icon.title;
+            if (settings.class) ctaHTML += ' ' + settings.class + '"';
+            if (settings.attributes) {
+                var pairs = settings.attributes.split(',');
+                for (var i = 0; i < pairs.length; i++) {
+                    var data = pairs[i].split('=');
+                    ctaHTML += ' ' + data[0] + '="' + data[1] + '"';
+                }// endfor
+            }//endif
+            ctaHTML += '>';
+
+            for (var j = 0; j < (settings.hover ? 2 : 1); j++) {
+
+                var ctaElem = '<div class="cta';
+                if (j > 0) ctaElem += ' hover-cta';
+                ctaElem += '">';
+
+                var ctaInner = '<span class="filler">';
+                if (settings.icon) {
+                    ctaInner += '<span class="icon">' + settings.icon.html + '</span>';
+                }// endif
+                if (settings.label) {
+                    ctaInner += '<span class="label">' + settings.label + '</span>';
+                }//endif
+                ctaInner += '</span>';
+
+                ctaElem += ctaInner;
+                ctaElem += '</div>';
+
+            }//endfor
+
+            ctaHTML += ctaElem;
+            console.log('Thats the new cta', ctaHTML);
+            ctaHTML += '</' + settings.tag +'>';
+            
+            return ctaHTML;
+
+        }// get_cta_html()
+
+    </script>
+
 <!-- squarespace:script src="custom/ui.js" combo="true" / -->
 {squarespace-footers}
 

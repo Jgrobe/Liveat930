@@ -33,7 +33,7 @@
                         {.end}
                     {.end}
                 </ul><!-- .sizes -->
-                {@|apply module-cta.block}
+                <div class="cta-dummy" data-label="Buy now!" data-class="cta-buy"></div>
                 <!-- php print_cta(array(
                 'label' => 'Buy now!',
                 'class' => array('cta-buy')
