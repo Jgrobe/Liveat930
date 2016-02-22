@@ -6,8 +6,9 @@
             <script>
                 console.log('all episodes queried', {@|json-pretty});
             </script>
-            <h1>WTF</h1>
-            {@|apply poster-scroll.block}
+            {.repeated section items}
+                {@|apply poster-scroll.block}
+            {.end}
         </squarespace:query>
     </section><!-- .posters -->
 </div><!-- .site-content -->
