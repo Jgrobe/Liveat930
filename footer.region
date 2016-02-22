@@ -60,8 +60,9 @@
 
             var ctaHTML = '<' + settings.tag + ' class="cta-container';
             if (!settings.label) ctaHTML += ' no-label';
-            if (!settings.icon) ctaHTML += ' icon-' + settings.icon.title;
-            if (settings.class) ctaHTML += ' ' + settings.class + '"';
+            if (settings.icon) ctaHTML += ' icon-' + settings.icon.title;
+            if (settings.class) ctaHTML += ' ' + settings.class;
+            ctaHTML += '"';
             if (settings.attributes) {
                 var pairs = settings.attributes.split(',');
                 for (var i = 0; i < pairs.length; i++) {
