@@ -37,7 +37,7 @@
             </script>
             <div class="device ipad">
                 <div class="image pattern imgfill" style="background-image:url('assets/images/pattern-logo-bg.jpg');"></div>
-                <img src="{website.authenticUrl}assets/images/ipad.png" class="device-image"/>
+                <img src="{website.authenticUrl}/assets/images/ipad.png" class="device-image"/>
                 <div class="image device-screen">
                     <div class="fill-parent imgfill" style="background-image:url('assets/images/ipad-screen.jpg');"></div>
                 </div>
