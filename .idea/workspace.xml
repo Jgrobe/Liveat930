@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ba77c59-895c-4b6c-8ed1-52220cbb39bd" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collections/blog.conf" afterPath="$PROJECT_DIR$/collections/blog.conf" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template.conf" afterPath="$PROJECT_DIR$/template.conf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collections/videoclips.conf" afterPath="$PROJECT_DIR$/collections/videoclips.conf" />
     </list>
     <ignored path="sqsp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,8 +33,8 @@
               <file leaf-file-name="template.conf" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/template.conf">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.8661778" vertical-offset="240" max-vertical-offset="2850">
-                      <caret line="79" column="35" selection-start-line="79" selection-start-column="21" selection-end-line="79" selection-end-column="35" />
+                    <state vertical-scroll-proportion="0.82493126" vertical-offset="240" max-vertical-offset="2850">
+                      <caret line="76" column="21" selection-start-line="76" selection-start-column="21" selection-end-line="76" selection-end-column="21" />
                       <folding />
                     </state>
                   </provider>
@@ -195,8 +193,8 @@
           <file leaf-file-name="blog.conf" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/collections/blog.conf">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.06874427" vertical-offset="0" max-vertical-offset="1091">
-                  <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+                <state vertical-scroll-proportion="0.08249313" vertical-offset="0" max-vertical-offset="1091">
+                  <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
                   <folding />
                 </state>
               </provider>
@@ -512,7 +510,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13735849" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13735849" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -949,16 +947,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/collections/blog.conf">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.06874427" vertical-offset="0" max-vertical-offset="1091">
-          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+        <state vertical-scroll-proportion="0.08249313" vertical-offset="0" max-vertical-offset="1091">
+          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/template.conf">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8661778" vertical-offset="240" max-vertical-offset="2850">
-          <caret line="79" column="35" selection-start-line="79" selection-start-column="21" selection-end-line="79" selection-end-column="35" />
+        <state vertical-scroll-proportion="0.82493126" vertical-offset="240" max-vertical-offset="2850">
+          <caret line="76" column="21" selection-start-line="76" selection-start-column="21" selection-end-line="76" selection-end-column="21" />
           <folding />
         </state>
       </provider>
