@@ -1,7 +1,12 @@
 <div class="site-content">
     <section class="posters scroll-posters">
         <div class="posters-hover-bg"></div>
-        <h1>adfsdf</h1>
+
+        <squarespace:query collection="all-episodes" limit="12">
+            <script>
+                console.log('all episodes queried', {@|json-pretty});
+            </script>
+        </squarespace:query>
     </section>
 </div>
 
