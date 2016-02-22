@@ -1,7 +1,6 @@
 <header class="header static-header">
     <nav class="navigation">
         <ul class="menu">
-            <script>console.log('WHATUP', {@|json-pretty});</script>
             {.if items}
                 {.repeated section items}
                     <li class="menu-item{.section active} current-item{.end}">

@@ -1,0 +1,93 @@
+<section class="merch-landing">
+    <div class="fill-parent mask">
+        <div class="landing-bg" style="background-image:url('assets/images/merchbooth-title.jpg');"></div>
+    </div>
+    <h1 class="l-headline">{collection.navigationTitle}</h1>
+    {@|apply module-cta.block}
+    <!--php print_cta(array(
+        'label' => 'View my shopping cart',
+    'icon' => 'images/icon-arrow',
+    'class' => array('merch-landing-cta')
+    )); -->
+</section>
+
+<section class="merch-overview">
+    <div class="merch-overview-row">
+        {.repeated section items}
+            <div class="merch-item">
+                <div class="image img vertical rel" style="background-image:url('{assetUrl}');">
+                    <div class="title">Live at 9:30 {title}</div>
+                    <div class="price">$ 25.00</div>
+                </div>
+                <div class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
+                <ul class="sizes">
+                    <li>S</li>
+                    <li>M</li>
+                    <li>L</li>
+                    <li>XL</li>
+                </ul>
+                {@|apply module-cta.block}
+                <!-- php print_cta(array(
+                'label' => 'Buy now!',
+                'class' => array('cta-buy')
+                )); -->
+                <!--<a href="" class="cta buy">Buy now!</a>-->
+            </div>
+        {.end}
+        <!--<div class="merch-item">-->
+            <!--<div class="image img vertical rel" style="background-image:url('assets/images/shirt2.jpg');">-->
+                <!--<div class="title">Live at 9:30 white shirt</div>-->
+                <!--<div class="price">$ 25.00</div>-->
+            <!--</div>-->
+            <!--<div class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>-->
+            <!--<ul class="sizes">-->
+                <!--<li>S</li>-->
+                <!--<li>M</li>-->
+                <!--<li>L</li>-->
+                <!--<li>XL</li>-->
+            <!--</ul>-->
+            <!--<?php print_cta(array(-->
+            <!--'label' => 'Buy now!',-->
+            <!--'class' => array('cta-buy')-->
+            <!--)); ?>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<div class="merch-overview-row">-->
+        <!--<div class="merch-item">-->
+            <!--<div class="image img vertical rel" style="background-image:url('assets/images/shirt3.jpg');">-->
+                <!--<div class="title">Live at 9:30 black shirt</div>-->
+                <!--<div class="price">$ 25.00</div>-->
+            <!--</div>-->
+            <!--<div class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>-->
+            <!--<ul class="sizes">-->
+                <!--<li>S</li>-->
+                <!--<li>M</li>-->
+                <!--<li>L</li>-->
+                <!--<li>XL</li>-->
+            <!--</ul>-->
+            <!--<?php print_cta(array(-->
+            <!--'label' => 'Buy now!',-->
+            <!--'class' => array('cta-buy')-->
+            <!--)); ?>-->
+        <!--</div>-->
+        <!--<div class="merch-item">-->
+            <!--<div class="image img vertical rel" style="background-image:url('assets/images/shirt4.jpg');">-->
+                <!--<div class="title">Live at 9:30 white shirt</div>-->
+                <!--<div class="price">$ 25.00</div>-->
+            <!--</div>-->
+            <!--<div class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>-->
+            <!--<ul class="sizes">-->
+                <!--<li>S</li>-->
+                <!--<li>M</li>-->
+                <!--<li>L</li>-->
+                <!--<li>XL</li>-->
+            <!--</ul>-->
+            <!--<?php print_cta(array(-->
+            <!--'label' => 'Buy now!',-->
+            <!--'class' => array('cta-buy')-->
+            <!--)); ?>-->
+        </div><!-- .merch-overview-row -->
+    </div><!-- .merch-overview -->
+</section>
+
+<?php include('modules/upcoming.php'); ?>
