@@ -2,6 +2,7 @@
     <nav class="navigation">
         <ul class="menu">
             {.repeated section items}
+            <script>console.log('WHATUP', {@|json-pretty});</script>
                 <li class="menu-item{.if active} current-item{.end}">
                     <a href="{url}">
                         {title}

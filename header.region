@@ -42,7 +42,7 @@
 
 <div class="page">
 
-    <!-- squarespace:navigation navigationId="mainNav" template="mobile-navigation" / -->
+    <squarespace:navigation navigationId="staticNav" template="static-nav" />
 
     <div class="sticky-header">
 
