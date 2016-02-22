@@ -82,8 +82,8 @@
             </div>
             <div class="section-head">
                 <h2>{item.customContent.infoblockTitle}</h2>
-                <p>{item.customContent.infoblockCopy</p>
-                <h2>{item.customContent.infoblockCTALabel</h2>
+                <p>{item.customContent.infoblockCopy}</p>
+                <!--h2>{item.customContent.infoblockCTALabel}</h2-->
             </div><!-- .section-head -->
             {@|apply module-cta.block}
             <!--php print_cta(array(
