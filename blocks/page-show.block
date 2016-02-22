@@ -110,8 +110,7 @@
         -->
 
         <div class="video-gallery-videos lefthand top-spaced" limit="100">
-            <squarespace:query collection="products" limit="1">
-                <script>console.log('query products data', {@|json-pretty});</script>
+            <squarespace:query collection="products" limit="100">
                 {.section item}
                 <div class="video medium">
                     <div class="image" style="background-image:url('{assetUrl}');">
@@ -171,6 +170,9 @@
                 {.end}
             </squarespace:query>
             <squarespace:query collection="episodes" limit="100">
+                {.repeated section items}
+                <script>console.log('query eps data repeat', {@|json-pretty});</script>
+                {.end}
                 <script>console.log('query episodes data', {@|json-pretty});</script>
                 {.section item}
                 <div class="video medium">
