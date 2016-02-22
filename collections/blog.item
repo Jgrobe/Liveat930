@@ -1,6 +1,6 @@
 <section class="post-landing">
     <div class="fill-parent mask">
-        <div class="landing-bg" style="background-image:url('{item.mainImag.assetUrl}');"></div>
+        <div class="landing-bg" style="background-image:url('{item.assetUrl}');"></div>
     </div>
     <h1 class="l-headline">{item.title}</h1>
     <a href="" class="post-landing-cta icon-arrow-reverse">{item.customContent.ctaLabel}</a>
