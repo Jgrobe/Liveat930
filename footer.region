@@ -15,7 +15,7 @@
             </div>
         </section>
         <section class="footer-hosted-by">
-            <div class="hosted-by-logo"></div>
+            <div class="hosted-by-logo">{@|apply svg-hosted-by.block}</div>
             <p class="hosted-by-p">Live at 9:30 is hosted by <a href="http://www.squarespace.com" class="plain-link">Squarespace</a>, the simplest way to build a beautiful website.</p>
 
             <!--<a class="hosted-by-link icon-browser" href="">Build your own website with squarespace</a>-->

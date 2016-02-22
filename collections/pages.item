@@ -18,7 +18,7 @@
                     {item.title}
                 </h1>
                 <div class="show-landing-info">
-                    {item.description}
+                    {item.body}
                 </div><!-- .show-landing-info -->
 
             </div><!-- .rel -->
@@ -45,8 +45,8 @@
 
                 <div class="slider-ui">
                     <div class="slider-arrows">
-                        <div class="arrow prev"><?php svg('images/arrow-cap'); ?></div>
-                        <div class="arrow next"><?php svg('images/arrow-cap'); ?></div>
+                        <div class="arrow prev">{@|apply svg-arrow-cap.block}</div>
+                        <div class="arrow next">{@|apply svg-arrow-cap.block}></div>
                     </div><!-- .slider-arrows -->
                     <div class="slider-label onlymobile">
                         <h3>2/7</h3>
