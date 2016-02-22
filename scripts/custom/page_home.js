@@ -11,6 +11,7 @@ SQSP.functions.initPage = function() {
 
         SQSP.instances.Preloader = new Preloader({
             onStart:function(e) {
+                console.log('PRELOAD START');
                 SQSP.faders = jQuery('.static-header, .site-content');
                 SQSP.preloadTL = new TimelineMax({});
                 TweenMax.set(SQSP.faders, {autoAlpha:0});
@@ -22,6 +23,7 @@ SQSP.functions.initPage = function() {
                 });
             },
             onProgress:function(e) {
+                console.log('PRELOAD PROGRESS', e.progress.pct);
                 //console.log('preloading', e.progress);
                 console.log(SQSP.$objects.preloader.find('.filler'),e.progress,  (e.progress.pct*100));
                 SQSP.preloadTL.to(SQSP.$objects.preloader.find('.filler'),.2,{width: (e.progress.pct*100)+'%'});

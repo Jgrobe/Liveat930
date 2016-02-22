@@ -10,6 +10,7 @@
                 {@|apply poster-scroll.block}
             {.end}
         </squarespace:query>
+
     </section><!-- .posters -->
 </div><!-- .site-content -->
 
