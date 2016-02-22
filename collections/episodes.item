@@ -75,7 +75,7 @@
 
         {.end}<!-- .end if tags -->
 
-        {.if customContent}
+        {.if customContent}{.section customContent}
 
             {.if episode-gallery}
                 <section class="image-slider">
@@ -141,50 +141,13 @@
                 </section><!-- .post-excerpt -->
             {.end}<!-- .end if blog post -->
 
-        {.end}<!-- .end if customContent -->
+        {.end}{.end}<!-- .end if customContent -->
 
         <section class="video-gallery teaser no-shift">
 
             <div class="section-head">
                 <h2>Get more</h2>
             </div>
-
-            <!--?php
-
-            $videos = array(
-                array(
-                    'size' => 'medium',
-            'img' => 'assets/images/thumb-video1.jpg',
-            'label' => 'More country music',
-            'title' => 'Shakey Graves'
-            ),
-            array(
-            'size' => 'medium',
-            'img' => 'assets/images/thumb-video2.jpg',
-            'label' => 'More comedy',
-            'title' => 'Episode No. 6, September 2016'
-            ),
-            array(
-            'size' => 'small',
-            'img' => 'assets/images/thumb-video3.jpg',
-            'label' => 'More rock & indie',
-            'title' => 'Gogol Bordello'
-            ),
-            array(
-            'size' => 'small',
-            'img' => 'assets/images/thumb-video1.jpg',
-            'label' => false,
-            'title' => 'Episode No. 5, August 2016'
-            ),
-            array(
-            'size' => 'small',
-            'img' => 'assets/images/thumb-video2.jpg',
-            'label' => false,
-            'title' => 'Youth lagoon'
-            )
-            );
-
-            -->
 
             <squarespace:query collection="clips" tag="{.repeated section tags}{@},{.end}">
 
