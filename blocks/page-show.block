@@ -109,7 +109,7 @@
 
         -->
 
-        <div class="video-gallery-videos lefthand top-spaced" limit="1">
+        <div class="video-gallery-videos lefthand top-spaced" limit="100">
             <squarespace:query collection="products" limit="1">
                 <script>console.log('query products data', {@|json-pretty});</script>
                 {.section item}
@@ -130,7 +130,7 @@
                 </div><!-- .video -->
                 {.end}
             </squarespace:query>
-            <squarespace:query collection="blog" limit="1">
+            <squarespace:query collection="blog" limit="100">
                 <script>console.log('query blog data', {@|json-pretty});</script>
                 {.section item}
                 <div class="video medium">
@@ -150,7 +150,7 @@
                 </div><!-- .video -->
                 {.end}
             </squarespace:query>
-            <squarespace:query collection="clips" limit="1">
+            <squarespace:query collection="clips" limit="100">
                 <script>console.log('query clips data', {@|json-pretty});</script>
                 {.section item}
                 <div class="video medium">
@@ -170,7 +170,7 @@
                 </div><!-- .video -->
                 {.end}
             </squarespace:query>
-            <squarespace:query collection="episodes" limit="1">
+            <squarespace:query collection="episodes" limit="100">
                 <script>console.log('query episodes data', {@|json-pretty});</script>
                 {.section item}
                 <div class="video medium">
