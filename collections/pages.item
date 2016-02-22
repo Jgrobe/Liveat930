@@ -2,7 +2,7 @@
 <script>console.log('ITS THE SHOW TEMPLATE');</script>
     <section class="show-landing">
         <div class="fill-parent mask">
-            <div class="landing-bg" style="background-image:url('{item.mainImage.assetUrl}');">
+            <div class="landing-bg" style="background-image:url('{item.assetUrl}');">
                 <!--<video src="assets/videos/header-kanye2.mp4" autoplay loop></video>-->
             </div>
         </div>
@@ -37,7 +37,7 @@
 
             <div class="excerpt-container top-spaced">
                 <script>
-                    var _gallery = {item.customContent.gallery|@json-pretty};
+                    console.log('gallery data', {item.customContent.gallery|@json-pretty});
                 </script>
                 <div class="slider-images">
                     <div class="image current-image imgfill" style="background-image:url('assets/images/the-show-slide1.jpg');"></div>
@@ -109,25 +109,85 @@
 
             -->
 
-            <div class="video-gallery-videos lefthand top-spaced">
-                <squarespace:query collection="clips">
+            <div class="video-gallery-videos lefthand top-spaced" limit="1">
+                <squarespace:query collection="products">
                     <script>console.log('query data', {@|json-pretty});</script>
                     {.repeated section items}
-                    <div class="video medium">
-                        <div class="image" style="background-image:url('{assetUrl}');">
-                            {@|apply module-cta.block}
-                            <!--php print_cta(array(
-                                'icon' => 'images/icon-arrow',
-                            'class' => array('negative', 'play', 'goto')
-                            )); -->
+                        <div class="video medium">
+                            <div class="image" style="background-image:url('{assetUrl}');">
+                                {@|apply module-cta.block}
+                                <!--php print_cta(array(
+                                    'icon' => 'images/icon-arrow',
+                                'class' => array('negative', 'play', 'goto')
+                                )); -->
 
-                            <span class="video-label">{item.customContent.griditemLabelMerch}</span>
+                                <span class="video-label">Shop merch</span>
 
-                        </div><!-- .image -->
-                        <div class="flex-cols">
-                            <div class="title">{title}</div>
-                        </div><!-- .flex-cols -->
-                    </div><!-- .video -->
+                            </div><!-- .image -->
+                            <div class="flex-cols">
+                                <div class="title">{title}</div>
+                            </div><!-- .flex-cols -->
+                        </div><!-- .video -->
+                    {.end}
+                </squarespace:query>
+                <squarespace:query collection="blog" limit="1">
+                    <script>console.log('query data', {@|json-pretty});</script>
+                    {.repeated section items}
+                        <div class="video medium">
+                            <div class="image" style="background-image:url('{assetUrl}');">
+                                {@|apply module-cta.block}
+                                <!--php print_cta(array(
+                                    'icon' => 'images/icon-arrow',
+                                'class' => array('negative', 'play', 'goto')
+                                )); -->
+
+                                <span class="video-label">Read about it</span>
+
+                            </div><!-- .image -->
+                            <div class="flex-cols">
+                                <div class="title">{title}</div>
+                            </div><!-- .flex-cols -->
+                        </div><!-- .video -->
+                    {.end}
+                </squarespace:query>
+                <squarespace:query collection="clips" limit="1">
+                    <script>console.log('query data', {@|json-pretty});</script>
+                    {.repeated section items}
+                        <div class="video medium">
+                            <div class="image" style="background-image:url('{assetUrl}');">
+                                {@|apply module-cta.block}
+                                <!--php print_cta(array(
+                                    'icon' => 'images/icon-arrow',
+                                'class' => array('negative', 'play', 'goto')
+                                )); -->
+
+                                <span class="video-label">Watch & share clips</span>
+
+                            </div><!-- .image -->
+                            <div class="flex-cols">
+                                <div class="title">{title}</div>
+                            </div><!-- .flex-cols -->
+                        </div><!-- .video -->
+                    {.end}
+                </squarespace:query>
+                <squarespace:query collection="episodes" limit="1">
+                    <script>console.log('query data', {@|json-pretty});</script>
+                    {.repeated section items}
+                        <div class="video medium">
+                            <div class="image" style="background-image:url('{assetUrl}');">
+                                {@|apply module-cta.block}
+                                <!--php print_cta(array(
+                                    'icon' => 'images/icon-arrow',
+                                'class' => array('negative', 'play', 'goto')
+                                )); -->
+
+                                <span class="video-label">See the shows</span>
+
+                            </div><!-- .image -->
+                            <div class="flex-cols">
+                                <div class="title">{title}</div>
+                            </div><!-- .flex-cols -->
+                        </div><!-- .video -->
                     {.end}
                 </squarespace:query>
             </div><!-- .flexbox -->
