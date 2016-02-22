@@ -16,12 +16,7 @@
             <span>with</span>
             <p>Shakey Graves / The Arcs / Dave Chapelle / Gogol Bordello & more</p>
         </div>
-        <?php print_cta(array(
-            'icon' => 'images/eye',
-        'label' => 'Watch now',
-        'class' => array('landing-cta', 'prllx-custom'),
-        'attributes' => array('href' => '#', 'data-prllx' => '.04')
-        )); ?>
+        <div class="cta-dummy" data-icon="eye" data-label="Watch now" data-class="landing-cta prllx-custom" data-attributes="href=#,data-prllx=.04">{@|apply svg-icon-eye.block}</div>
         <!--<a class="episodes-landing-cta icon-eye" href="">Watch episode no. 5, mar 2016</a>-->
 
     </div><!-- .landing-container -->

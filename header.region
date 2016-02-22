@@ -46,7 +46,7 @@
 
     <div class="sticky-header">
 
-        <a href="?p=home" class="logo"></a>
+        <a href="?p=home" class="logo">{@|apply svg-logo-small-dark.block}</a>
 
         <div class="burger">
             <div class="inner">
