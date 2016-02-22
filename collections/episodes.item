@@ -155,7 +155,7 @@
 
                     {.repeated section items}
 
-                    <div class="video <?php echo $vid['size']; ?>">
+                    <div class="video medium ?>">
                         <div class="image" style="background-image:url('{assetUrl}');">
                             <div class="cta-dummy" data-icon="icon-arrow" data-class="negative play goto">{@|apply svg-icon-arrow.block}</div>
                             <!--php print_cta(array(
