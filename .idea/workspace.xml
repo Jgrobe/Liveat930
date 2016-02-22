@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="6ba77c59-895c-4b6c-8ed1-52220cbb39bd" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/footer.region" afterPath="$PROJECT_DIR$/footer.region" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collections/products.list" afterPath="$PROJECT_DIR$/collections/products.list" />
     </list>
     <ignored path="sqsp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -44,8 +43,8 @@
               <file leaf-file-name="footer.region" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/footer.region">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.47729468" vertical-offset="91" max-vertical-offset="1680">
-                      <caret line="39" column="43" selection-start-line="39" selection-start-column="43" selection-end-line="39" selection-end-column="43" />
+                    <state vertical-scroll-proportion="0.5362053" vertical-offset="0" max-vertical-offset="1665">
+                      <caret line="39" column="50" selection-start-line="39" selection-start-column="50" selection-end-line="39" selection-end-column="50" />
                       <folding />
                     </state>
                   </provider>
@@ -1045,8 +1044,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/footer.region">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.47729468" vertical-offset="91" max-vertical-offset="1680">
-          <caret line="39" column="43" selection-start-line="39" selection-start-column="43" selection-end-line="39" selection-end-column="43" />
+        <state vertical-scroll-proportion="0.5362053" vertical-offset="0" max-vertical-offset="1665">
+          <caret line="39" column="50" selection-start-line="39" selection-start-column="50" selection-end-line="39" selection-end-column="50" />
           <folding />
         </state>
       </provider>

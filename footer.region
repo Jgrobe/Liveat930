@@ -32,17 +32,16 @@
 </div><!-- .page -->
 
     <script>
+        var ctaVars = ['class', 'icon', 'label', 'hover', 'tag', 'attributes'];
         jQuery('.cta-dummy').each(function() {
             var $this = jQuery(this);
             console.log('this is cta converter', $this.data('icon'));
-            var $CTA = jQuery(get_cta_html({
-                'class' : $this.data('class'),
-                'icon' : $this.data('icon'),
-                'label' : $this.data('label'),
-                'hover' : $this.data('hover'),
-                'tag' : $this.data('tag'),
-                'attributes' : $this.data('attributes')
-            }));
+            var ctaOpts = {};
+            for(var k=0; k< ctaVars.length; k++) {
+                console.log('proofing '+ctaVars['k']);
+                if($this.hasAttr('data-'+ctaVars['k'])) ctaOpts.class = $this.data(ctaVars['k']);
+            }
+            var $CTA = jQuery(get_cta_html(ctaOpts));
             $this.replaceWith($CTA);
         });
 
