@@ -169,28 +169,11 @@
                 </div><!-- .video -->
                 {.end}
             </squarespace:query>
-            <squarespace:query collection="all-episodes" limit="100">
-                {.repeated section items}
-                <script>console.log('query eps data repeat', {@|json-pretty});</script>
-                {.end}
-                <script>console.log('query episodes data', {@|json-pretty});</script>
-                {.section item}
-                <div class="video medium">
-                    <div class="image" style="background-image:url('{assetUrl}');">
-                        {@|apply module-cta.block}
-                        <!--php print_cta(array(
-                            'icon' => 'images/icon-arrow',
-                        'class' => array('negative', 'play', 'goto')
-                        )); -->
 
-                        <span class="video-label">See the shows</span>
-
-                    </div><!-- .image -->
-                    <div class="flex-cols">
-                        <div class="title">{title}</div>
-                    </div><!-- .flex-cols -->
-                </div><!-- .video -->
-                {.end}
+            <squarespace:query collection="all-episodes" limit="12">
+                <script>
+                    console.log('all episodes queried', {@|json-pretty});
+                </script>
             </squarespace:query>
         </div><!-- .flexbox -->
 
