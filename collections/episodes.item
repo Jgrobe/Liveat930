@@ -43,12 +43,12 @@
 
                         <div class="video small">
                             <div class="image current-image" style="background-image:url('{assetUrl}');">
+                                <div class="cta-dummy" data-icon="eye" data-class="negative play">{@|apply svg-icon-eye.block}</div>
                                 <!--php print_cta(array(
                         'icon' => 'images/eye',
                                 'class' => array('negative', 'play')
                                 )); -->
                                 <!--<a href="" class="play"></a>-->
-                                {@|apply module-cta.block}
                             </div>
                             <div class="flex-cols">
                                 <div class="title">{title}</div>
@@ -57,40 +57,17 @@
 
                     {.end}<!-- .end repeated section items -->
 
-                    <!---->
-                    <!--<div class="video small">-->
-                        <!--<div class="image" style="background-image:url('assets/images/thumb-video1.jpg');">-->
-                            <!--<?php print_cta(array(-->
-                        <!--'icon' => 'images/eye',-->
-                            <!--'class' => array('negative', 'play')-->
-                            <!--)); ?>-->
-                        <!--</div>-->
-                        <!--<div class="flex-cols">-->
-                            <!--<div class="title">Behind the scenes with Gogol Bordello</div>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                    <!--<div class="video small no-margin">-->
-                        <!--<div class="image" style="background-image:url('assets/images/thumb-video3.jpg');">-->
-                            <!--<?php print_cta(array(-->
-                        <!--'icon' => 'images/eye',-->
-                            <!--'class' => array('negative', 'play')-->
-                            <!--)); ?>-->
-                        <!--</div>-->
-                        <!--<div class="flex-cols">-->
-                            <!--<div class="title">Behind the scenes with youth lagoon</div>-->
-                        <!--</div>-->
-                    <!--</div>-->
                 </div><!-- .video-gallery-videos -->
 
             </squarespace:query>
 
             <div class="centered top-spaced">
+                <div class="cta-dummy" data-label="Load more clips" data-icon="icon-load" data-class="load-clips upsized-icon">{@|apply svg-icon-load.block}</div>
                 <!--php print_cta(array(
                     'label' => 'Load more clips',
                 'icon' => 'images/icon-load',
                 'class' => array('load-clips', 'upsized-icon')
                 )); -->
-                {@|apply module-cta.block}
                 <!--<a class="episodes-landing-cta icon-refresh static" href="">Load more clips</a>-->
             </div><!-- .centered.top-spaced -->
 
@@ -209,38 +186,37 @@
 
             -->
 
-            <div class="video-gallery-videos lefthand top-spaced">
-                <?php foreach($videos as $i => $vid) : ?>
-                <div class="video <?php echo $vid['size']; ?>">
-                    <div class="image" style="background-image:url('<?php echo $vid['img']; ?>');">
-                        <div class="cta-dummy" data-icon="icon-arrow" data-class="negative play goto">{@|apply svg-icon-arrow.block}</div>
-                        <!--php print_cta(array(
-                                'icon' => 'images/icon-arrow',
-                        'class' => array('negative', 'play', 'goto')
-                        )); -->
-                        <?php if($vid['label']) : ?>
-                        <span class="video-label"><?php echo $vid['label']; ?></span>
-                        <?php endif; ?>
-                    </div>
-                    <div class="flex-cols">
-                        <div class="title"><?php echo $vid['title']; ?></div>
-                        <div class="cta-dummy" data-label="View" data-icon="eye" data-class="plain" hover="false">{@|apply svg-icon-eye.block}</div>
-                        <!--php print_cta(array(
-                            'label' => 'View',
-                            'icon' => 'images/eye',
-                            'class' => array('plain'),
-                            'hover' => false
-                        )); -->
-                        <!--<a class="cta-container plain">-->
-                        <!--<div class="cta">-->
-                        <!--<span class="icon"><?php svg('images/eye'); ?></span>-->
-                        <!--<span class="label">View</span>-->
-                        <!--</div>-->
-                        <!--</a>-->
-                    </div><!-- .flex-cols -->
-                </div>
-                <?php endforeach; ?>
-            </div><!-- .flexbox -->
+            <squarespace:query collection="clips" tag="{.repeated section tags}{@},{.end}">
+
+                <div class="video-gallery-videos lefthand top-spaced">
+
+                    {.repeated section items}
+
+                    <div class="video <?php echo $vid['size']; ?>">
+                        <div class="image" style="background-image:url('{assetUrl}');">
+                            <div class="cta-dummy" data-icon="icon-arrow" data-class="negative play goto">{@|apply svg-icon-arrow.block}</div>
+                            <!--php print_cta(array(
+                                    'icon' => 'images/icon-arrow',
+                            'class' => array('negative', 'play', 'goto')
+                            )); -->
+                            <span class="video-label">More {.repeated section categories}{.equal?:@index:1}{@}{.end}{.end}</span>
+                        </div>
+                        <div class="flex-cols">
+                            <div class="title">{title}</div>
+                            <div class="cta-dummy" data-label="View" data-icon="eye" data-class="plain" hover="false">{@|apply svg-icon-eye.block}</div>
+                            <!--php print_cta(array(
+                                'label' => 'View',
+                                'icon' => 'images/eye',
+                                'class' => array('plain'),
+                                'hover' => false
+                            )); -->
+                        </div><!-- .flex-cols -->
+                    </div><!-- .video -->
+
+                    {.end}<!-- .end repeated section items -->
+                </div><!-- .video-gallery-videos -->
+
+            </squarespace:query>
 
         </section><!-- .video-gallery -->
     </div>
