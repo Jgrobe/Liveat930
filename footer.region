@@ -40,7 +40,8 @@
             for(var k=0; k< ctaVars.length; k++) {
                 console.log('proofing '+ctaVars['k']);
                 if($this.hasAttr('data-'+ctaVars['k'])) ctaOpts.class = $this.data(ctaVars['k']);
-            }
+            };
+            console.log('input cta opts');
             var $CTA = jQuery(get_cta_html(ctaOpts));
             $this.replaceWith($CTA);
         });
@@ -53,7 +54,7 @@
                 'label': false,
                 'hover': true,
                 'tag': 'a',
-                'attributes': {'href': '#'}
+                'attributes': 'href=#'
             }, options);
             console.log('cta opts', options, 'cta settings', settings);
 
