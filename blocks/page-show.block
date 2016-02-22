@@ -132,7 +132,7 @@
             </squarespace:query>
             <squarespace:query collection="blog" limit="1">
                 <script>console.log('query blog data', {@|json-pretty});</script>
-                {.section items}
+                {.section item}
                 <div class="video medium">
                     <div class="image" style="background-image:url('{assetUrl}');">
                         {@|apply module-cta.block}
@@ -152,7 +152,7 @@
             </squarespace:query>
             <squarespace:query collection="clips" limit="1">
                 <script>console.log('query clips data', {@|json-pretty});</script>
-                {.section items}
+                {.section item}
                 <div class="video medium">
                     <div class="image" style="background-image:url('{assetUrl}');">
                         {@|apply module-cta.block}
@@ -172,7 +172,7 @@
             </squarespace:query>
             <squarespace:query collection="episodes" limit="1">
                 <script>console.log('query episodes data', {@|json-pretty});</script>
-                {.section items}
+                {.section item}
                 <div class="video medium">
                     <div class="image" style="background-image:url('{assetUrl}');">
                         {@|apply module-cta.block}
