@@ -29,11 +29,14 @@
     <section class="host-create history-slider post-excerpt">
 
         <div class="section-head">
-            <h2>The 9:30 club - history in pictures</h2>
-            <p>Washington, D.C.</p>
+            <h2>{collection.customContent.galleryTitle}</h2>
+            <p>{collection.customContent.gallerySubtitle}</p>
         </div>
 
         <div class="excerpt-container top-spaced">
+            <script>
+                var _gallery = {collection.customContent.gallery|@json-pretty};
+            </script>
             <div class="slider-images">
                 <div class="image current-image imgfill" style="background-image:url('assets/images/the-show-slide1.jpg');"></div>
             </div><!-- .ipad -->
@@ -70,7 +73,7 @@
     <section class="video-gallery teaser no-shift">
 
         <div class="section-head">
-            <h2>Explore more</h2>
+            <h2>{collection.customContent.gridTitle}</h2>
         </div>
 
         <!-- php
@@ -116,7 +119,7 @@
                             'class' => array('negative', 'play', 'goto')
                             )); -->
 
-                            <span class="video-label">Shop merch</span>
+                            <span class="video-label">{collection.customContent.griditemLabelMerch}</span>
 
                         </div><!-- .image -->
                         <div class="flex-cols">
