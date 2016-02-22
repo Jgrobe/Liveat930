@@ -1,0 +1,98 @@
+<script>console.log('ITS THE HOST TEMPLATE');</script>
+<section class="host-landing">
+    <div class="fill-parent mask">
+        <div class="landing-bg video-bg" style="background-image:url('{item.assetUrl}');">
+            <video src="assets/videos/header-kanye2.mp4" autoplay loop></video>
+        </div>
+    </div>
+    <div class="content">
+        <div class="rectangle"></div>
+        <div class="hosted-by-logo"></div>
+        <h1 class="l-headline">{item.title}</h1>
+        <div class="text-layer">
+            {item.body}
+            {@|apply module-cta.block}
+            <!--php print_cta(array(
+                    'label' => 'Build your own website with squarespace',
+            'icon' => 'images/browser',
+            'class' => array('upsized-icon')
+            )); -->
+            <!--<a href="" class="cta icon-browser-white">Build your own website with squarespace</a>-->
+        </div>
+    </div>
+</section>
+
+<div class="site-content">
+
+    <section class="host-create device-slider post-excerpt top-spaced">
+
+        <div class="section-head">
+            <h2>{item.customContent.galleryTitle}</h2>
+            <p>{item.customContent.gallerysubTitle}</p>
+        </div>
+
+        <div class="excerpt-container top-spaced">
+            <script>
+                console.log('gallery data', {item.customContent.gallery|json-pretty});
+            </script>
+            <div class="device ipad">
+                <div class="image pattern imgfill" style="background-image:url('assets/images/pattern-logo-bg.jpg');"></div>
+                <img src="assets/images/ipad.png" class="device-image"/>
+                <div class="image device-screen">
+                    <div class="fill-parent imgfill" style="background-image:url('assets/images/ipad-screen.jpg');"></div>
+                </div>
+
+                <div class="slider-ui">
+                    <div class="slider-arrows">
+                        <div class="arrow prev">{@|apply svg-arrow-cap.block}</div>
+                        <div class="arrow next">{@|apply svg-arrow-cap.block}</div>
+                    </div><!-- .slider-arrows -->
+                    <div class="slider-label">
+                        <h3>2/8</h3>
+                    </div>
+                </div><!-- .slider-ui -->
+
+            </div><!-- .ipad -->
+
+            <div class="text-layer">
+                <div class="section-head excerpt-head">
+                    <h2>Leon Bridges</h2>
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    <br/><br/>
+                    Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, quam quaerat voluptatem …
+                </p>
+                {@|apply module-cta.block}
+                <!--php print_cta(array(
+                        'label' => 'Visit website',
+                'icon' => 'images/eye'
+                )); -->
+                <!--<a class="episodes-landing-cta icon-eye" href="">Visit Website</a>-->
+            </div><!-- .text-layer -->
+        </div><!-- .excerpt-container -->
+
+    </section><!-- .post-excerpt -->
+
+    <section class="host-become text-insert-container">
+        <div class="rectangle"></div>
+        <div class="main text-layer">
+            <div class="logo blend-logo">
+                <?php svg('images/logo-squarespace'); ?>
+            </div>
+            <div class="section-head">
+                <h2>{item.customContent.infoblockTitle}</h2>
+                <p>{item.customContent.infoblockCopy</p>
+                <h2>{item.customContent.infoblockCTALabel</h2>
+            </div><!-- .section-head -->
+            {@|apply module-cta.block}
+            <!--php print_cta(array(
+                    'label' => 'Build your own website with squarespace',
+            'icon' => 'images/browser',
+            'class' => array('upsized-icon', 'negative')
+            )); -->
+            <!--<a href="" class="cta icon-browser">Build your own website with squarespace</a>-->
+        </div><!-- .text-layer -->
+    </section>
+
+</div>
