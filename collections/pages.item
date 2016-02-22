@@ -79,74 +79,13 @@
                 <h2>{item.customContent.gridTitle}</h2>
             </div>
 
-            <squarespace:query collection="products" limit="1">
-                <script>
-                    console.log('all products queried', {@|json-pretty});
-                </script>
-                {.repeated section items}
-                <div class="video medium">
-                    <div class="image" style="background-image:url('{assetUrl}');">
-                        <div class="cta-dummy" data-icon="icon-arrow" data-class="negative play goto" data-attributes="href={fullUrl}">{@|apply svg-icon-arrow.block}</div>
-                        <!--php print_cta(array(
-                        'icon' => 'images/icon-arrow',
-                        'class' => array('negative', 'play', 'goto')
-                        )); -->
-                        <span class="video-label">Shop merch</span>
-                    </div>
-                    <div class="flex-cols">
-                        <div class="title">{title}</div>
-                    </div><!-- .flex-cols -->
-                </div><!-- .video -->
-                {.end}
-            </squarespace:query>
+            <div class="video-gallery-videos lefthand top-spaced">
 
-            <squarespace:query collection="blog" limit="1">
-                <script>
-                    console.log('all blog queried', {@|json-pretty});
-                </script>
-                {.repeated section items}
-                <div class="video medium">
-                    <div class="image" style="background-image:url('{assetUrl}');">
-                        <div class="cta-dummy" data-icon="icon-arrow" data-class="negative play goto" data-attributes="href={fullUrl}">{@|apply svg-icon-arrow.block}</div>
-                        <!--php print_cta(array(
-                        'icon' => 'images/icon-arrow',
-                        'class' => array('negative', 'play', 'goto')
-                        )); -->
-                        <span class="video-label">Read about it</span>
-                    </div>
-                    <div class="flex-cols">
-                        <div class="title">{title}</div>
-                    </div><!-- .flex-cols -->
-                </div><!-- .video -->
-                {.end}
-            </squarespace:query>
-
-            <squarespace:query collection="clips" limit="1">
-                <script>
-                    console.log('all clips queried', {@|json-pretty});
-                </script>
-                {.repeated section items}
-                <div class="video medium">
-                    <div class="image" style="background-image:url('{assetUrl}');">
-                        <div class="cta-dummy" data-icon="icon-arrow" data-class="negative play goto" data-attributes="href={fullUrl}">{@|apply svg-icon-arrow.block}</div>
-                        <!--php print_cta(array(
-                        'icon' => 'images/icon-arrow',
-                        'class' => array('negative', 'play', 'goto')
-                        )); -->
-                        <span class="video-label">Watch & share clips</span>
-                    </div>
-                    <div class="flex-cols">
-                        <div class="title">{title}</div>
-                    </div><!-- .flex-cols -->
-                </div><!-- .video -->
-                {.end}
-            </squarespace:query>
-
-            <squarespace:query collection="episodes" limit="1">
-                <script>
-                    console.log('all episodes queried', {@|json-pretty});
-                </script>
-                {.repeated section items}
+                <squarespace:query collection="products" limit="1">
+                    <script>
+                        console.log('all products queried', {@|json-pretty});
+                    </script>
+                    {.repeated section items}
                     <div class="video medium">
                         <div class="image" style="background-image:url('{assetUrl}');">
                             <div class="cta-dummy" data-icon="icon-arrow" data-class="negative play goto" data-attributes="href={fullUrl}">{@|apply svg-icon-arrow.block}</div>
@@ -154,15 +93,79 @@
                             'icon' => 'images/icon-arrow',
                             'class' => array('negative', 'play', 'goto')
                             )); -->
-                            <span class="video-label">See the shows</span>
+                            <span class="video-label">Shop merch</span>
                         </div>
                         <div class="flex-cols">
                             <div class="title">{title}</div>
                         </div><!-- .flex-cols -->
                     </div><!-- .video -->
-                {.end}
-            </squarespace:query>
+                    {.end}
+                </squarespace:query>
 
+                <squarespace:query collection="blog" limit="1">
+                    <script>
+                        console.log('all blog queried', {@|json-pretty});
+                    </script>
+                    {.repeated section items}
+                    <div class="video medium">
+                        <div class="image" style="background-image:url('{assetUrl}');">
+                            <div class="cta-dummy" data-icon="icon-arrow" data-class="negative play goto" data-attributes="href={fullUrl}">{@|apply svg-icon-arrow.block}</div>
+                            <!--php print_cta(array(
+                            'icon' => 'images/icon-arrow',
+                            'class' => array('negative', 'play', 'goto')
+                            )); -->
+                            <span class="video-label">Read about it</span>
+                        </div>
+                        <div class="flex-cols">
+                            <div class="title">{title}</div>
+                        </div><!-- .flex-cols -->
+                    </div><!-- .video -->
+                    {.end}
+                </squarespace:query>
+
+                <squarespace:query collection="clips" limit="1">
+                    <script>
+                        console.log('all clips queried', {@|json-pretty});
+                    </script>
+                    {.repeated section items}
+                    <div class="video medium">
+                        <div class="image" style="background-image:url('{assetUrl}');">
+                            <div class="cta-dummy" data-icon="icon-arrow" data-class="negative play goto" data-attributes="href={fullUrl}">{@|apply svg-icon-arrow.block}</div>
+                            <!--php print_cta(array(
+                            'icon' => 'images/icon-arrow',
+                            'class' => array('negative', 'play', 'goto')
+                            )); -->
+                            <span class="video-label">Watch & share clips</span>
+                        </div>
+                        <div class="flex-cols">
+                            <div class="title">{title}</div>
+                        </div><!-- .flex-cols -->
+                    </div><!-- .video -->
+                    {.end}
+                </squarespace:query>
+
+                <squarespace:query collection="episodes" limit="1">
+                    <script>
+                        console.log('all episodes queried', {@|json-pretty});
+                    </script>
+                    {.repeated section items}
+                        <div class="video medium">
+                            <div class="image" style="background-image:url('{assetUrl}');">
+                                <div class="cta-dummy" data-icon="icon-arrow" data-class="negative play goto" data-attributes="href={fullUrl}">{@|apply svg-icon-arrow.block}</div>
+                                <!--php print_cta(array(
+                                'icon' => 'images/icon-arrow',
+                                'class' => array('negative', 'play', 'goto')
+                                )); -->
+                                <span class="video-label">See the shows</span>
+                            </div>
+                            <div class="flex-cols">
+                                <div class="title">{title}</div>
+                            </div><!-- .flex-cols -->
+                        </div><!-- .video -->
+                    {.end}
+                </squarespace:query>
+
+            </div><!-- .video-gallery-videos -->
 
         </section><!-- .video-gallery -->
 
