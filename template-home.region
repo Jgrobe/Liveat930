@@ -6,6 +6,7 @@
             <script>
                 console.log('all episodes queried', {@|json-pretty});
             </script>
+            <h1>WTF</h1>
             {@|apply poster-scroll.block}
         </squarespace:query>
     </section><!-- .posters -->
