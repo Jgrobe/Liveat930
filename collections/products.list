@@ -1,6 +1,6 @@
 <section class="merch-landing">
     <div class="fill-parent mask">
-        <div class="landing-bg" style="background-image:url('assets/images/merchbooth-title.jpg');"></div>
+        <div class="landing-bg" style="background-image:url('{collection.mainImage.assetUrl}');"></div>
     </div>
     <h1 class="l-headline">{collection.navigationTitle}</h1>
     {@|apply module-cta.block}
