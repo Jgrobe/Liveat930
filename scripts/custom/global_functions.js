@@ -81,9 +81,16 @@ function getUriParams(param) {
     return query_string;
 }// getUriParams()
 
+
+jQuery(window).load(function() {
+    jQuery(window).resize();
+}).resize(function(){
+    size_video();
+});
+
 function size_video(done) {
     //console.log('size_video fired');
-    jQuery('video, .video-sizeable').each(function(){
+    jQuery('video, .video-sizeable, iframe').each(function(){
         var $video = jQuery(this);
         if($video.hasClass('no_size_video')) return true;
 

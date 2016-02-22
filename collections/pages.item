@@ -4,6 +4,7 @@
         <div class="fill-parent mask">
             <div class="landing-bg" style="background-image:url('{item.assetUrl}');">
                 <!--<video src="assets/videos/header-kanye2.mp4" autoplay loop></video>-->
+                {item.structuredContent.oembed.html}
             </div>
         </div>
 
@@ -46,7 +47,7 @@
                 <div class="slider-ui">
                     <div class="slider-arrows">
                         <div class="arrow prev">{@|apply svg-arrow-cap.block}</div>
-                        <div class="arrow next">{@|apply svg-arrow-cap.block}></div>
+                        <div class="arrow next">{@|apply svg-arrow-cap.block}</div>
                     </div><!-- .slider-arrows -->
                     <div class="slider-label onlymobile">
                         <h3>2/7</h3>
