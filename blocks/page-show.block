@@ -111,7 +111,8 @@
 
         <div class="video-gallery-videos lefthand top-spaced" limit="1">
             <squarespace:query collection="products">
-                <script>console.log('query products data', {@|json-pretty});</script>
+                <script>console.log('query data', {@|json-pretty});</script>
+                {.section item}
                 <div class="video medium">
                     <div class="image" style="background-image:url('{assetUrl}');">
                         {@|apply module-cta.block}
@@ -127,9 +128,11 @@
                         <div class="title">{title}</div>
                     </div><!-- .flex-cols -->
                 </div><!-- .video -->
+                {.end}
             </squarespace:query>
             <squarespace:query collection="blog" limit="1">
-                <script>console.log('query blog data', {@|json-pretty});</script>
+                <script>console.log('query data', {@|json-pretty});</script>
+                {.section items}
                 <div class="video medium">
                     <div class="image" style="background-image:url('{assetUrl}');">
                         {@|apply module-cta.block}
@@ -145,9 +148,11 @@
                         <div class="title">{title}</div>
                     </div><!-- .flex-cols -->
                 </div><!-- .video -->
+                {.end}
             </squarespace:query>
             <squarespace:query collection="clips" limit="1">
-                <script>console.log('query clips data', {@|json-pretty});</script>
+                <script>console.log('query data', {@|json-pretty});</script>
+                {.section items}
                 <div class="video medium">
                     <div class="image" style="background-image:url('{assetUrl}');">
                         {@|apply module-cta.block}
@@ -163,9 +168,11 @@
                         <div class="title">{title}</div>
                     </div><!-- .flex-cols -->
                 </div><!-- .video -->
+                {.end}
             </squarespace:query>
             <squarespace:query collection="episodes" limit="1">
-                <script>console.log('query episodes data', {@|json-pretty});</script>
+                <script>console.log('query data', {@|json-pretty});</script>
+                {.section items}
                 <div class="video medium">
                     <div class="image" style="background-image:url('{assetUrl}');">
                         {@|apply module-cta.block}
@@ -181,6 +188,7 @@
                         <div class="title">{title}</div>
                     </div><!-- .flex-cols -->
                 </div><!-- .video -->
+                {.end}
             </squarespace:query>
         </div><!-- .flexbox -->
 
