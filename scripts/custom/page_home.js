@@ -11,7 +11,7 @@ SQSP.functions.initPage = function() {
 
         SQSP.instances.Preloader = new Preloader({
             onStart:function(e) {
-                console.log('PRELOAD START');
+                console.log('PRELOAD START', e);
                 SQSP.faders = jQuery('.static-header, .site-content');
                 SQSP.preloadTL = new TimelineMax({});
                 TweenMax.set(SQSP.faders, {autoAlpha:0});
