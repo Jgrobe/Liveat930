@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6ba77c59-895c-4b6c-8ed1-52220cbb39bd" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/custom/page_home.js" afterPath="$PROJECT_DIR$/scripts/custom/page_home.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template-home.region" afterPath="$PROJECT_DIR$/template-home.region" />
-    </list>
+    <list default="true" id="6ba77c59-895c-4b6c-8ed1-52220cbb39bd" name="Default" comment="" />
     <ignored path="sqsp.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -44,7 +41,7 @@
               <file leaf-file-name="footer.region" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/footer.region">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.85668105" vertical-offset="0" max-vertical-offset="928">
+                    <state vertical-scroll-proportion="0.72868925" vertical-offset="0" max-vertical-offset="1091">
                       <caret line="53" column="7" selection-start-line="53" selection-start-column="7" selection-end-line="53" selection-end-column="7" />
                       <folding />
                     </state>
@@ -186,7 +183,7 @@
               <file leaf-file-name="page_home.js" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/scripts/custom/page_home.js">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.51995796" vertical-offset="0" max-vertical-offset="3900">
+                    <state vertical-scroll-proportion="0.44394618" vertical-offset="0" max-vertical-offset="3900">
                       <caret line="33" column="47" selection-start-line="33" selection-start-column="47" selection-end-line="33" selection-end-column="47" />
                       <folding />
                     </state>
@@ -214,7 +211,7 @@
           <file leaf-file-name="poster-parallax.block" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/blocks/poster-parallax.block">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.7491676" vertical-offset="0" max-vertical-offset="1065">
+                <state vertical-scroll-proportion="0.6343985" vertical-offset="0" max-vertical-offset="1065">
                   <caret line="45" column="43" selection-start-line="45" selection-start-column="43" selection-end-line="45" selection-end-column="43" />
                   <folding>
                     <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
@@ -561,18 +558,18 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-2556" y="23" width="2556" height="1417" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13735849" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13735849" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26037735" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26037735" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12149902" sideWeight="0.92142856" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12149902" sideWeight="0.9212598" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12149902" sideWeight="0.07857143" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12149902" sideWeight="0.07874016" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290566" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -1030,7 +1027,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/footer.region">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.85668105" vertical-offset="0" max-vertical-offset="928">
+        <state vertical-scroll-proportion="0.72868925" vertical-offset="0" max-vertical-offset="1091">
           <caret line="53" column="7" selection-start-line="53" selection-start-column="7" selection-end-line="53" selection-end-column="7" />
           <folding />
         </state>
@@ -1038,7 +1035,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/blocks/poster-parallax.block">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7491676" vertical-offset="0" max-vertical-offset="1065">
+        <state vertical-scroll-proportion="0.6343985" vertical-offset="0" max-vertical-offset="1065">
           <caret line="45" column="43" selection-start-line="45" selection-start-column="43" selection-end-line="45" selection-end-column="43" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
@@ -1056,7 +1053,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/custom/page_home.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.51995796" vertical-offset="0" max-vertical-offset="3900">
+        <state vertical-scroll-proportion="0.44394618" vertical-offset="0" max-vertical-offset="3900">
           <caret line="33" column="47" selection-start-line="33" selection-start-column="47" selection-end-line="33" selection-end-column="47" />
           <folding />
         </state>

@@ -30,11 +30,11 @@
 
     {squarespace-headers}
 
-    <script>
-        jQuery.ajax(location.href+'?format=json-pretty', {success:function(e){
-            console.log('SITE', e );
-        }});
-    </script>
+    <!--<script>-->
+        <!--jQuery.ajax(location.href+'?format=json-pretty', {success:function(e){-->
+            <!--console.log('SITE', e );-->
+        <!--}});-->
+    <!--</script>-->
 
 </head>
 
