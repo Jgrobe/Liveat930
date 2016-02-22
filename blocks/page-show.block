@@ -109,6 +109,12 @@
 
         -->
 
+        <squarespace:query collection="all-episodes" limit="12">
+            <script>
+                console.log('all episodes queried', {@|json-pretty});
+            </script>
+        </squarespace:query>
+
         <div class="video-gallery-videos lefthand top-spaced" limit="100">
             <squarespace:query collection="products" limit="100">
                 {.section item}
@@ -168,12 +174,6 @@
                     </div><!-- .flex-cols -->
                 </div><!-- .video -->
                 {.end}
-            </squarespace:query>
-
-            <squarespace:query collection="all-episodes" limit="12">
-                <script>
-                    console.log('all episodes queried', {@|json-pretty});
-                </script>
             </squarespace:query>
         </div><!-- .flexbox -->
 
