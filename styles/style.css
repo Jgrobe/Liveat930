@@ -176,7 +176,7 @@ input {
       width: 80%; }
   @media only screen and (max-width: 750px) {
     .section-head {
-      width: calc(100vw - 24px); }
+      width: calc(~"100vw - 24px"); }
       .section-head h2 {
         width: 100%;
         font-size: 42px;
@@ -397,7 +397,7 @@ input {
 
 .header {
   position: absolute;
-  top: calc(2vw + 27.5px);
+  top: calc(~"2vw + 27.5px");
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -1200,7 +1200,7 @@ input {
     transform: translateY(-50%); }
   @media only screen and (max-width: 750px) {
     .post-excerpt {
-      width: calc(100vw - 24px);
+      width: calc(~"100vw - 24px");
       margin-bottom: 20vH; }
       .post-excerpt .image {
         display: none; }
@@ -1290,7 +1290,7 @@ input {
     opacity: 0; }
   @media only screen and (max-width: 750px) {
     .posters {
-      width: calc(100vw - 24px);
+      width: calc(~"100vw - 24px");
       padding: 0;
       margin-bottom: 10vH; }
       .posters.scroll-posters {
@@ -1399,9 +1399,9 @@ input {
       content: '';
       display: block;
       position: absolute;
-      bottom: calc(5.20833vw / 2);
+      bottom: calc(~"5.20833vw / 2");
       left: 5.20833vw;
-      width: calc(100% - 5.20833vw/0.5);
+      width: calc(~"100% - 5.20833vw/0.5");
       height: 0.5vw;
       background: white; }
   .poster .ep-headline {
@@ -1659,7 +1659,7 @@ input {
     top: 0;
     left: 0;
     width: 20%;
-    height: calc(100% - 5vw); }
+    height: calc(~"100% - 5vw"); }
   .text-insert-container .text-layer {
     position: relative;
     padding: 7.8vw 0 7.8vw 0;
@@ -1843,7 +1843,7 @@ input {
     .nav-overlay .social-container .label {
       position: absolute;
       left: 0;
-      top: calc(100% + 0.69444vw);
+      top: calc(~"100% + 0.69444vw");
       font-size: 0.69444vw;
       letter-spacing: .1em;
       text-transform: uppercase; }
@@ -1870,7 +1870,7 @@ input {
         height: 1.04167vw; }
   @media only screen and (max-width: 750px) {
     .nav-overlay .cell {
-      width: calc(100vw - 24px); }
+      width: calc(~"100vw - 24px"); }
     .nav-overlay .shortcuts, .nav-overlay .share-col {
       display: none; }
     .nav-overlay .menu-container {
@@ -1895,7 +1895,7 @@ input {
           width: 32px;
           height: 32px; }
       .nav-overlay .search .searchfield-container {
-        width: calc(80% - 67px); }
+        width: calc(~"80% - 67px"); }
       .nav-overlay .search .search-field {
         font-size: 16px;
         letter-spacing: .02em; }
@@ -2122,7 +2122,7 @@ input {
 
 #preloader {
   position: fixed;
-  top: calc(50vh - 2px);
+  top: calc(~"50vh - 2px");
   left: 45vw;
   width: 10vw;
   height: 4px;
@@ -2281,7 +2281,7 @@ input {
     font-size: 2.1vw; }
   @media only screen and (max-width: 750px) {
     .episodes-landing-sub {
-      width: calc(100vw - 24px);
+      width: calc(~"100vw - 24px");
       left: 12px;
       text-align: center; }
       .episodes-landing-sub span {
@@ -2376,9 +2376,9 @@ a.episodes-landing-cta {
   .episodes-overview .poster .layer.hover-layer {
     display: none; }
   .episodes-overview .poster .lineup-container:after {
-    bottom: calc(1.73611vw / 2);
+    bottom: calc(~"1.73611vw / 2");
     left: 1.73611vw;
-    width: calc(100% - 1.73611vw/0.5);
+    width: calc(~"100% - 1.73611vw/0.5");
     height: 0.2vw; }
   .episodes-overview .poster .ep-headline {
     margin-top: 1.38889vw;
@@ -2433,9 +2433,9 @@ a.episodes-landing-cta {
     font-size: 52px;
     line-height: 52px; }
   .episodes-overview .poster .lineup-container:after {
-    bottom: calc(25px / 2);
+    bottom: calc(~"25px / 2");
     left: 25px;
-    width: calc(100% - 50px);
+    width: calc(~"100% - 50px");
     height: 0.2vw; } }
 @media only screen and (max-width: 750px) {
   .episodes-overview .episodes-overview-row {
@@ -2548,7 +2548,7 @@ a.episodes-landing-cta {
           font-size: 1.4vw; }
 @media only screen and (max-width: 750px) {
   .episodes-upcoming ul {
-    width: calc(100vw - 24px);
+    width: calc(~"100vw - 24px");
     display: block; }
     .episodes-upcoming ul li {
       margin: 12px auto; }
@@ -2674,7 +2674,7 @@ a.episodes-landing-cta {
   letter-spacing: .1em;
   font-weight: 500;
   text-transform: uppercase;
-  padding: 0 2.77778vw 0 calc(6.18056vw + 2.77778vw);
+  padding: 0 2.77778vw 0 calc(~"6.18056vw + 2.77778vw");
   display: inline-block;
   background: black;
   position: relative; }
@@ -2758,7 +2758,7 @@ a.episodes-landing-cta {
       transform: translateX(-50%) translateY(-50%); }
   @media only screen and (max-width: 750px) {
     .host-landing .content {
-      width: calc(100vw - 24px); }
+      width: calc(~"100vw - 24px"); }
     .host-landing .hosted-by-logo {
       margin: 0 auto; }
     .host-landing h1 {
@@ -3184,7 +3184,7 @@ a.episodes-landing-cta {
     height: 16.66667vw; }
   @media only screen and (max-width: 750px) {
     .show-content {
-      width: calc(100vw - 24px); }
+      width: calc(~"100vw - 24px"); }
       .show-content .show-landing-info {
         width: 100%;
         margin: 40px auto;
@@ -3544,7 +3544,7 @@ a.episodes-landing-cta {
   @media only screen and (max-width: 750px) {
     .video-gallery {
       padding-bottom: 50px;
-      width: calc(100vw - 24px);
+      width: calc(~"100vw - 24px");
       margin-bottom: 20vh; }
       .video-gallery .rectangle {
         top: -1%;
