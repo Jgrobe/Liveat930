@@ -1,3 +1,6 @@
+<squarespace:query collection="episodes">
+    <script>console.log('upcoming query', {@|json-pretty}); </script>
+</squarespace:query>
 <section class="upcoming">
     <div class="upcoming-headline prllx-custom" data-prllx=".04">
         <div class="upcoming-sub">Ep <strong>No. 2</strong></div>
