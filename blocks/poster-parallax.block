@@ -35,7 +35,7 @@
                         </div><!-- .icon.episode -->
 
                         <h2 class="l-headline ep-headline">{customContent.episode-title}</h2>
-                        <h3 class="m-headline ep-date">March 2016</h3>
+                        <h3 class="m-headline ep-date">{addedOn|date %B %G}</h3>
 
                     </div><!-- .relativizer -->
 
