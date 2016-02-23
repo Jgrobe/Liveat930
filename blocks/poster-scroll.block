@@ -35,7 +35,7 @@
                         </div><!-- .icon.episode -->
 
                         <h2 class="l-headline ep-headline prllx-custom prllx-no-disable" data-prllx=".12">{customContent.episode-title}</h2>
-                        <h3 class="m-headline ep-date prllx-custom prllx-no-disable" data-prllx=".13">March 2016</h3>
+                        <h3 class="m-headline ep-date prllx-custom prllx-no-disable" data-prllx=".13">{addedOn|date %B %G}</h3>
 
                     </div><!-- .relativizer -->
 
