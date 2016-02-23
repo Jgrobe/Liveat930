@@ -46,6 +46,8 @@
 
     <div class="sticky-header">
 
+        {@|apply nav-searc-overlay.block}
+
         <a href="{website.baseUrl}" class="logo">{@|apply svg-logo-small-dark.block}</a>
 
         <div class="burger">

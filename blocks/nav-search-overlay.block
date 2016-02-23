@@ -1,0 +1,97 @@
+<div class="nav-overlay search-on">
+    <video src="assets/videos/header-kanye2.mp4" autoplay loop style="background-image: url('assets/images/nav-overlay-bgimg.jpg');"></video>
+    <div class="fill-parent">
+
+        <div class="table nav-table">
+            <div class="fill-parent bg-container"></div>
+
+            <div class="cell nav-cell">
+                <div class="columns nav-columns">
+                    <div class="col col-left menu-container">
+
+                        <squarespace:navigation navigationId="stickyNav" template="sticky-nav" />
+
+                    </div><!-- .col -->
+                    <div class="col col-right shortcuts">
+
+                        <div class="quick-videos">
+                            <div class="video last-episode stagger-item">
+                                <div class="img tv imgfill" style="background-image:url('assets/images/thumb1.jpg');">
+                                    <div class="title">
+                                        <a href="#"><?php svg('images/icon-play'); ?></a>
+                                    </div><!-- .title -->
+                                </div><!-- .img.tv -->
+                                <div class="label">Watch EP.2</div><!-- .label -->
+                            </div><!-- .video.last-episode -->
+                            <div class="video teaser stagger-item">
+                                <div class="img tv imgfill" style="background-image:url('assets/images/thumb1.jpg');">
+                                    <div class="title">Airs next friday @ 9:30 on WGWN</div>
+                                </div><!-- .img.tv -->
+                                <div class="label">EP.3 Sneak Peek</div>
+                            </div><!-- .video.teaser -->
+                        </div><!-- .quick-videos -->
+
+                    </div><!-- .col.quick-videos -->
+                </div><!-- .nav-columns -->
+
+                <div class="columns search-columns stagger-item">
+                    <div class="col col-left search-col">
+                        <?php include('modules/searchfield.php'); ?>
+                    </div><!-- .search-col -->
+
+                    <div class="col col-right share-col">
+
+                        <div class="social-container">
+                            <a href="" class="square-btn instagram stagger-item"><?php svg('images/instagram'); ?></a>
+                            <a href="" class="square-btn facebook stagger-item"><?php svg('images/facebook'); ?></a>
+                            <a href="" class="square-btn twitter stagger-item"><?php svg('images/twitter'); ?></a>
+                            <div class="label stagger-item">Follow us for updates</div>
+                        </div><!-- .social-container -->
+
+                    </div><!-- .share-col -->
+                </div><!-- .search-columns -->
+
+            </div><!-- .cell -->
+
+        </div><!-- .navigation -->
+
+        <div class="table search-table">
+
+            <div class="part info">
+                <div class="result-sized">
+                    <p>There are <span style="color:black;"><?php echo count($search_results); ?> results</span> for "Comedy"</p>
+                </div><!-- .result-sized -->
+            </div><!-- .part-info -->
+
+            <div class="part results">
+                <div class="results-wrapper">
+
+                    <?php foreach($search_results as $i => $r) : ?>
+
+                    <div class="result<?php if(isset($r['img'])) {echo ' hovered';} ?>">
+
+                        <?php if(isset($r['img'])) : ?>
+                        <div class="hover-container imgfill" style="background-image: url('<?php echo $r['img']['src']; ?>');"></div>
+                        <?php endif; ?>
+
+                        <div class="result-sized">
+                            <h3>
+                                <?php echo prefix_int($i + 1); ?>
+                                <span class="title"><?php echo $r['title']?></span>
+                            </h3>
+                            <div class="square-btn arrow">
+                                <?php svg('images/icon-arrow'); ?>
+                            </div><!-- .arrow -->
+                        </div>
+                    </div><!-- .result -->
+
+                    <?php endforeach; ?>
+
+                </div>
+            </div><!-- .results -->
+
+        </div><!-- .search-results -->
+
+    </div>
+
+</div><!-- .nav-overlay -->

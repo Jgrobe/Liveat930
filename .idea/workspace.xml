@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ba77c59-895c-4b6c-8ed1-52220cbb39bd" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collections/products.list" afterPath="$PROJECT_DIR$/collections/products.list" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blocks/nav-search-overlay.block" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/header.region" afterPath="$PROJECT_DIR$/header.region" />
     </list>
     <ignored path="sqsp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,7 +28,7 @@
   <component name="FileEditorManager">
     <splitter split-orientation="horizontal" split-proportion="0.80062866">
       <split-first>
-        <splitter split-orientation="horizontal" split-proportion="0.38194054">
+        <splitter split-orientation="horizontal" split-proportion="0.5302352">
           <split-first>
             <leaf>
               <file leaf-file-name="template.conf" pinned="false" current-in-tab="false">
@@ -40,10 +41,10 @@
                   </provider>
                 </entry>
               </file>
-              <file leaf-file-name="footer.region" pinned="false" current-in-tab="true">
+              <file leaf-file-name="footer.region" pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/footer.region">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.21998167" vertical-offset="0" max-vertical-offset="1155">
+                    <state vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="1155">
                       <caret line="16" column="61" selection-start-line="16" selection-start-column="61" selection-end-line="16" selection-end-column="61" />
                       <folding />
                     </state>
@@ -73,8 +74,18 @@
               <file leaf-file-name="header.region" pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/header.region">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="-22.5" vertical-offset="0" max-vertical-offset="945">
-                      <caret line="36" column="5" selection-start-line="32" selection-start-column="9" selection-end-line="36" selection-end-column="5" />
+                    <state vertical-scroll-proportion="-27.5" vertical-offset="0" max-vertical-offset="975">
+                      <caret line="44" column="4" selection-start-line="44" selection-start-column="4" selection-end-line="44" selection-end-column="77" />
+                      <folding />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file leaf-file-name="nav-search-overlay.block" pinned="false" current-in-tab="true">
+                <entry file="file://$PROJECT_DIR$/blocks/nav-search-overlay.block">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state vertical-scroll-proportion="0.46746105" vertical-offset="0" max-vertical-offset="1845">
+                      <caret line="34" column="39" selection-start-line="34" selection-start-column="39" selection-end-line="34" selection-end-column="39" />
                       <folding />
                     </state>
                   </provider>
@@ -113,11 +124,11 @@
                   </provider>
                 </entry>
               </file>
-              <file leaf-file-name="products.list" pinned="false" current-in-tab="true">
+              <file leaf-file-name="products.list" pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/collections/products.list">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.4812099" vertical-offset="15" max-vertical-offset="1590">
-                      <caret line="36" column="34" selection-start-line="36" selection-start-column="34" selection-end-line="36" selection-end-column="34" />
+                    <state vertical-scroll-proportion="-23.125" vertical-offset="15" max-vertical-offset="1590">
+                      <caret line="38" column="24" selection-start-line="38" selection-start-column="24" selection-end-line="38" selection-end-column="24" />
                       <folding />
                     </state>
                   </provider>
@@ -143,11 +154,11 @@
                   </provider>
                 </entry>
               </file>
-              <file leaf-file-name="episodes.item" pinned="false" current-in-tab="false">
+              <file leaf-file-name="episodes.item" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/collections/episodes.item">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="-9.588235" vertical-offset="261" max-vertical-offset="2835">
-                      <caret line="50" column="34" selection-start-line="50" selection-start-column="34" selection-end-line="50" selection-end-column="34" />
+                    <state vertical-scroll-proportion="0.35150376" vertical-offset="1771" max-vertical-offset="2835">
+                      <caret line="143" column="38" selection-start-line="143" selection-start-column="38" selection-end-line="143" selection-end-column="38" />
                       <folding>
                         <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#squarespace:query#0;n#section#3;n#div#0;n#!!top" expanded="true" />
                       </folding>
@@ -261,7 +272,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/styles/style.scss" />
         <option value="$PROJECT_DIR$/blocks/icon-magnifier.block" />
         <option value="$PROJECT_DIR$/blocks/icon-x.block" />
         <option value="$PROJECT_DIR$/blocks/search-field.block" />
@@ -307,11 +317,12 @@
         <option value="$PROJECT_DIR$/scripts/custom/page_home.js" />
         <option value="$PROJECT_DIR$/scripts/custom/Preloader.js" />
         <option value="$PROJECT_DIR$/collections/episodes.list" />
-        <option value="$PROJECT_DIR$/header.region" />
         <option value="$PROJECT_DIR$/collections/videoclips.list" />
         <option value="$PROJECT_DIR$/blocks/module-upcoming.block" />
         <option value="$PROJECT_DIR$/footer.region" />
         <option value="$PROJECT_DIR$/collections/products.list" />
+        <option value="$PROJECT_DIR$/header.region" />
+        <option value="$PROJECT_DIR$/blocks/nav-search-overlay.block" />
       </list>
     </option>
   </component>
@@ -622,13 +633,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/blocks/svg-icon-episodenr.block">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3299725" vertical-offset="0" max-vertical-offset="1091">
-          <caret line="24" column="6" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/blocks/svg-hosted-by.block">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.66543436" vertical-offset="0" max-vertical-offset="1082">
@@ -999,14 +1003,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/header.region">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-22.5" vertical-offset="0" max-vertical-offset="945">
-          <caret line="36" column="5" selection-start-line="32" selection-start-column="9" selection-end-line="36" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/collections/videoclips.list">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-42.416668" vertical-offset="1142" max-vertical-offset="2415">
@@ -1025,26 +1021,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/footer.region">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21998167" vertical-offset="0" max-vertical-offset="1155">
+        <state vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="1155">
           <caret line="16" column="61" selection-start-line="16" selection-start-column="61" selection-end-line="16" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collections/products.list">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-23.125" vertical-offset="15" max-vertical-offset="1590">
+          <caret line="38" column="24" selection-start-line="38" selection-start-column="24" selection-end-line="38" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/collections/episodes.item">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.588235" vertical-offset="261" max-vertical-offset="2835">
-          <caret line="50" column="34" selection-start-line="50" selection-start-column="34" selection-end-line="50" selection-end-column="34" />
+        <state vertical-scroll-proportion="0.35150376" vertical-offset="1771" max-vertical-offset="2835">
+          <caret line="143" column="38" selection-start-line="143" selection-start-column="38" selection-end-line="143" selection-end-column="38" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#squarespace:query#0;n#section#3;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/collections/products.list">
+    <entry file="file://$PROJECT_DIR$/header.region">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4812099" vertical-offset="15" max-vertical-offset="1590">
-          <caret line="36" column="34" selection-start-line="36" selection-start-column="34" selection-end-line="36" selection-end-column="34" />
+        <state vertical-scroll-proportion="-27.5" vertical-offset="0" max-vertical-offset="975">
+          <caret line="44" column="4" selection-start-line="44" selection-start-column="4" selection-end-line="44" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blocks/nav-search-overlay.block">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.46746105" vertical-offset="0" max-vertical-offset="1845">
+          <caret line="34" column="39" selection-start-line="34" selection-start-column="39" selection-end-line="34" selection-end-column="39" />
           <folding />
         </state>
       </provider>

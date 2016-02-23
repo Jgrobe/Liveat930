@@ -1,66 +1,37 @@
-{.section items}<div id="mainNavWrapper" class="nav-wrapper" data-content-field="navigation-mainNav">
-  <nav id="mainNavigation" data-content-field="navigation-mainNav">
-    {.repeated section @}
-      {.collection?}
-        {.index?}
-        <div class="index{.if active} active{.end}{.section collection}{.if homepage} homepage{.end}{.end}">
-          <a href="{collection.fullUrl}">
-            {collection.navigationTitle}
-          </a>
-        </div>
-        {.or}
+{.if items}
+<div class="overlay-menu">
+    {.repeated section items}
 
-        {.folder?}
-        <div class="folder{.if folderActive} active{.end}{.section collection}{.if homepage} homepage{.end}{.end}">
-          <input type="checkbox" name="folder-toggle-{collection.id}" id="folder-toggle-{collection.id}" class="folder-toggle-box hidden" />
-          <label for="folder-toggle-{collection.id}" class="folder-toggle-label" onclick data-href="{collection.fullUrl}">{collection.navigationTitle}</label>
-          <div class="subnav">
-          {.repeated section items}
-
-            {.collection?}
-            <div class="collection{.if active} active{.end}">
-              <a href="{collection.fullUrl}">
-                {collection.navigationTitle}
-              </a>
-            </div>
-            {.end}
-            {.section externalLink}
-            <div class="external">
-              <a href="{url}"{.section newWindow} target="_blank"{.end}>
-                {title}
-              </a>
-            </div>
-            {.end}
-          {.end}
-          </div>
-        </div>
-        {.or}
-
-          {.section collection}
-          <div class="collection{.if active} active{.end}{.if homepage} homepage{.end}">
-            <a href="{fullUrl}">
-              {navigationTitle}
-            </a>
-          </div>
-          {.end}
-
+    <div class="menu-item stagger-item{.section active} current-item{.end}">
+        {.section collection}
+        <a href="{fullUrl}">
+            {navigationTitle}
+        </a>
         {.end}
-      {.end}
-      {.or}
         {.section externalLink}
-        <div class="external">
-          <a href="{url}"{.section newWindow} target="_blank"{.end}>
+        <a href="{url}"{.section newWindow} target="_blank"{.end}>
             {title}
-          </a>
-        </div>
+        </a>
         {.end}
-
-      {.end}
+    </div><!-- .menu-item -->
 
     {.end}
-  </nav>
-</div>
-<!-- style below blocks out the mobile nav toggle only when nav is loaded -->
-<style>.mobile-nav-toggle-label { display: inline-block !important; }</style>
-{.end}
 
+    <!--<div class="menu-item stagger-item">-->
+    <!--<a href="?p=video-overview">Watch video clips</a>-->
+    <!--</div>&lt;!&ndash; .menu-item &ndash;&gt;-->
+    <!--<div class="menu-item stagger-item">-->
+    <!--<a href="?p=merch">Browse merch</a>-->
+    <!--</div>&lt;!&ndash; .menu-item &ndash;&gt;-->
+    <!--<div class="menu-item stagger-item">-->
+    <!--<a href="?p=show">The show-->
+    <!--<span class="description">Lorem ipsum dolor sit amet. Consectetuer adipiscing elit.</span>-->
+    <!--</a>-->
+    <!--</div>&lt;!&ndash; .menu-item &ndash;&gt;-->
+    <!--<div class="menu-item stagger-item">-->
+    <!--<a href="?p=host">The host-->
+    <!--<span class="description">Lorem ipsum dolor sit amet. Consectetuer adipiscing elit.</span>-->
+    <!--</a>-->
+    <!--</div>&lt;!&ndash; .menu-item &ndash;&gt;-->
+</div><!-- .overlay-menu -->
+{.end}
