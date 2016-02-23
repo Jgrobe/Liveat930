@@ -46,7 +46,7 @@
 
     <div class="sticky-header">
 
-        {@|apply nav-searc-overlay.block}
+        {@|apply nav-search-overlay.block}
 
         <a href="{website.baseUrl}" class="logo">{@|apply svg-logo-small-dark.block}</a>
 
