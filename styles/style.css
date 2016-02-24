@@ -2430,7 +2430,8 @@ a.episodes-landing-cta {
   wrap: wrap;
   width: 79.86111vw;
   max-width: 1150px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding: 0; }
 .episodes-overview .episodes-overview-item {
   position: relative;
   width: calc(~"50% - 7.91667vw/2");
