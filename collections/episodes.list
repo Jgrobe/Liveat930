@@ -41,8 +41,7 @@
         <div class="episodes-overview posters">
 
             {.repeated section items}
-                {.repeated section categories}
-                    {.equal?:@:"aired"}
+
                         <!--div class="episodes-overview-row"-->
                             <div class="episodes-overview-item prllxposter">
                                 {@|apply poster-parallax.block}
@@ -55,8 +54,6 @@
                                 <div class="light"></div>
                             </div><!-- .episodes-overview-item -->
                         <!--/div><!-- .episodes-overview-row -->
-                    {.end}
-                {.end}
             {.end}<!-- .end repeated items -->
 
         </div><!-- .posters.episodes-overview -->
