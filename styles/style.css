@@ -1480,6 +1480,8 @@ input {
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover; }
+    .poster .model-container svg {
+      display: none; }
   .poster .icon.logo svg {
     width: 18.125vw;
     height: 9.84375vw; }
@@ -1639,7 +1641,7 @@ input {
   position: absolute;
   width: 80%;
   height: 80%;
-  top: 10%;
+  top: -5%;
   left: 10%; }
 .poster.circle .artist:hover .label {
   background: black; }

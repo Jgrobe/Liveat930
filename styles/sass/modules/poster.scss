@@ -273,6 +273,8 @@ $posterWidth: 84vw;
       background-position: center;
       background-size: cover;
     }
+
+    svg {display: none;}// thats only clips/masks & gradientmaps
 //    background: rgba(255,100,100,.5);
     //test
   }// .model-container
