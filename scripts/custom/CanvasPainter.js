@@ -113,7 +113,9 @@ var CanvasPainter = function($container, options) {
 
         if(_.isFunction(fn)) fn();
 
-        requestAnimationFrame( CP.drawVideo );
+        requestAnimationFrame( function() {
+            CP.drawVideo(fn)
+        } );
 
     };// drawVideo()
 
