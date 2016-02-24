@@ -188,4 +188,4 @@
     </div>
 {.end}
 
-<!--squarespace:script combo="true" src="custom/page_episode.js" /-->
+<squarespace:script src="custom/page_episode.js" />
