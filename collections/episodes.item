@@ -107,15 +107,12 @@
                 </section><!-- .image-slider -->
             {.end}<!-- .end if episode-gallery post -->
 
-
-        <script>
-            console.log('thats the customContent', {@|json-pretty});
-        </script>
             {.if episode-blogpost}
                 <squarespace:query collection="blog" limit="1" tags="{episode-blogpost}">
                     <script>
                         console.log('thats the blog query', {@|json-pretty});
                     </script>
+                    {.section items.0}
                     <section class="post-excerpt">
 
                         <div class="section-head">
@@ -124,27 +121,26 @@
                         </div><!-- .section-head -->
 
                         <div class="excerpt-container top-spaced">
-                        <div class="image pattern imgfill" style="background-image:url('assets/images/pattern-logo-bg.jpg');"></div>
-                        <div class="image post-image imgfill" style="background-image:url('assets/images/the-show-slide2.jpg');"></div>
-                        <div class="text-layer">
-                            <div class="section-head excerpt-head">
-                            <h2>An encore</h2>
-                            </div>
-                            <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                            <br/><br/>
-                            Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, quam quaerat voluptatem …
-                            </p>
-                            <div class="cta-dummy" data-icon="eye" data-label="Full story">{@|apply svg-icon-eye.block}</div>
-                            <!--php print_cta(array(
-                            'label' => 'Full story',
-                            'icon' => 'images/eye'
-                            )); -->
-                            <!--<a class="episodes-landing-cta icon-eye" href="">Full story</a>-->
-                        </div><!-- .text-layer -->
+                            <div class="image pattern imgfill" style="background-image:url('assets/images/pattern-logo-bg.jpg');"></div>
+                            <div class="image post-image imgfill" style="background-image:url('{assetUrl}}');"></div>
+                            <div class="text-layer">
+                                <div class="section-head excerpt-head">
+                                    <h2>{title}</h2>
+                                </div>
+                                <div class="excerpt-body">
+                                    {body}
+                                </div>
+                                <div class="cta-dummy" data-icon="eye" data-label="Full story" data-attributes="href={fullUrl}">{@|apply svg-icon-eye.block}</div>
+                                <!--php print_cta(array(
+                                'label' => 'Full story',
+                                'icon' => 'images/eye'
+                                )); -->
+                                <!--<a class="episodes-landing-cta icon-eye" href="">Full story</a>-->
+                            </div><!-- .text-layer -->
                         </div><!-- .excerpt-container -->
 
                     </section><!-- .post-excerpt -->
+                    {.end}
                 </squarespace:query>
             {.end}<!-- .end if blog post -->
 
