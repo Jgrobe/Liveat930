@@ -23,20 +23,29 @@
       }
     }
 
-//    &.model-layer {
+    &.model-layer {
 ////      position: absolute;
 ////      top: 5%;
 ////      width: 80%;
 ////      left: 10%;
 ////      border-radius: 100%;
 ////      background-size: cover;
-////      &:before {
-////        content: '';
-////        display: block;
-////        padding-top: 100%;
-////      }
-//    }
-  }
+      &:before {
+        content: '';
+        display: block;
+        padding-top: 100%;
+      }
+    }// .model-layer
+
+    .model-container {
+      position:absolute;
+      width: 80%;
+      height: 80%;
+      top: 10%;
+      left: 10%;
+    }
+
+  }// .layer
 
   .artist{
     &:hover {

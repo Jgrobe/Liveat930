@@ -1631,6 +1631,16 @@ input {
   opacity: .9;
   background: url("assets/images/textures/1b.jpg") no-repeat center;
   background-size: cover; }
+.poster.circle .layer.model-layer:before {
+  content: '';
+  display: block;
+  padding-top: 100%; }
+.poster.circle .layer .model-container {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  top: 10%;
+  left: 10%; }
 .poster.circle .artist:hover .label {
   background: black; }
 .poster.circle .btn-play-episode {
