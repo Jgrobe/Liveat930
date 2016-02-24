@@ -2,7 +2,7 @@
     <section class="posters scroll-posters">
         <div class="posters-hover-bg"></div>
 
-        <squarespace:query collection="episodes" limit="99">
+        <squarespace:query collection="episodes" limit="999" category="aired">
             <!--<script>-->
                 <!--console.log('all episodes queried', {@|json-pretty});-->
             <!--</script>-->
