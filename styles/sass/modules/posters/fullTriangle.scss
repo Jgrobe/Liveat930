@@ -23,7 +23,25 @@
       }
     }
 
+    .model-container {
+      position: absolute;
+      top: -30%;
+      left: -50%;
+      width: 200%;
+    }
+
 //    &.model-layer {
+//      position: absolute;
+//      top: -10%;
+//      width: 110%;
+//      left: -5%;
+//      background-size: cover;
+//      &:before {
+//        content: '';
+//        display: block;
+//        padding-top: 100%;
+//      }
+//    }
 
     &.copy-layer {
 
