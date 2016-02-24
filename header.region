@@ -27,8 +27,8 @@
     <!--squarespace:script src="custom/ClippedCanvas.js" /-->
 
 
-    <squarespace:script src="js/custom/CanvasPainter.js" />
-    <squarespace:script src="js/custom/SVGClipper.js" />
+    <squarespace:script src="custom/CanvasPainter.js" />
+    <squarespace:script src="custom/SVGClipper.js" />
 
     <squarespace:script src="custom/FieldTracker.js" />
     <squarespace:script src="custom/Parallaxer.js" />
