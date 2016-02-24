@@ -16,7 +16,7 @@
 
             <div class="layer model-layer rel prllx-custom prllx-no-disable" data-prllx=".18">
                 <div class="model-container img widescreen" data-type="video" data-src="{assetUrl}" data-shape="{customContent.episode-shape}">
-                    <div class="fill-parent" style="background-image:url('{assetUrl}'); display:none;"></div>
+                    <div class="fill-parent" style="background-image:url('{customContent.poster-image}'); display:none;"></div>
                     <!-- /* video canvas is inserted here */ -->
                 </div><!-- .model-container.img.widescreen -->
             </div><!-- .model-layer -->
