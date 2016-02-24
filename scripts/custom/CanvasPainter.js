@@ -112,7 +112,7 @@ var CanvasPainter = function($container, options) {
 
     //CP.textureImg = new Image();
     //CP.textureImg.onload = function() {
-    //    init();
+        init();
     //};
     //CP.textureImg.src = 'assets/images/textures/texture-halftone-compressor-2-70k.jpg';
 
