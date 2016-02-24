@@ -110,11 +110,11 @@ var CanvasPainter = function($container, options) {
 
     };// draw()
 
-    CP.textureImg = new Image();
-    CP.textureImg.onload = function() {
-        init();
-    };
-    CP.textureImg.src = 'assets/images/textures/texture-halftone-compressor-2-70k.jpg';
+    //CP.textureImg = new Image();
+    //CP.textureImg.onload = function() {
+    //    init();
+    //};
+    //CP.textureImg.src = 'assets/images/textures/texture-halftone-compressor-2-70k.jpg';
 
 
     function createCanvas() {
