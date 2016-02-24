@@ -8,6 +8,7 @@ SQSP.functions.initPage = function() {
         var $thisPoster = jQuery(this);
         var $thismodel =  $thisPoster.find('.model-container');
         new SVGClipper($thismodel, {
+            shape: $thismodel.data('shape')
         });
     });
 
