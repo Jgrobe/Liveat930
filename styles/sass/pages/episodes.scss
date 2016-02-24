@@ -174,14 +174,10 @@ a.episodes-landing-cta {
 
   .episodes-overview-item {
     $itemMargin: get_relative_units(228);
-    margin-top: $itemMargin 0 0 0;
-//$itemWidth: 46%;
-//    margin: $posterVertMargin 0 0 0;
-//    width: $itemWidth;//46%;//#{100/2 - $posterVertMargin/2};
-//    max-width: 520px;
 
     position: relative;
     width: calc(50% - #{$itemMargin/2});
+    margin: $itemMargin 0 0 0;
 
     &:nth-child(2n) { margin-left: $itemMargin; }
 
