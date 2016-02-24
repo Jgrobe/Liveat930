@@ -1392,6 +1392,8 @@ input {
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
     -ms-backface-visibility: hidden; }
+  .poster .layer.model-layer svg {
+    display: none; }
   .poster .layer.copy-layer {
     z-index: 1;
     color: white; }
@@ -1482,8 +1484,6 @@ input {
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover; }
-    .poster .model-container svg {
-      display: none; }
   .poster .icon.logo svg {
     width: 18.125vw;
     height: 9.84375vw; }
