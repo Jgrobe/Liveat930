@@ -309,7 +309,7 @@ var CanvasPainter = function($container, options) {
 
     function init() {
 
-        //console.log('CanvasPainter', CP);
+        console.log('CanvasPainter', CP);
 
         createCanvas();
 
