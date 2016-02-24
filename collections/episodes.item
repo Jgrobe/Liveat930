@@ -128,7 +128,7 @@
                                     <h2>{title}</h2>
                                 </div>
                                 <div class="excerpt-body">
-                                    {body}
+                                    {excerpt}
                                 </div>
                                 <div class="cta-dummy" data-icon="eye" data-label="Full story" data-attributes="href={fullUrl}">{@|apply svg-icon-eye.block}</div>
                                 <!--php print_cta(array(
