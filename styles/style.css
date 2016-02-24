@@ -189,7 +189,7 @@ input {
         letter-spacing: .06em;
         margin: 0 auto; } }
 
-.fill-parent, .slider-ui, .poster .poster-content, .poster .layer.bg-layer, .poster .layer.copy-layer, .poster.circle .layer.bg-layer .half:first-child:before, .poster.fullTriangle .layer.bg-layer .half:first-child:before, #preloader .filler, .episodes-landing .landing-bg.video-bg:after, .host-landing .landing-bg.video-bg:after, .merch-landing .landing-bg.video-bg:after, .post-landing .landing-bg.video-bg:after, .show-landing .landing-bg.video-bg:after, .video-overview-landing .landing-bg.video-bg:after {
+.fill-parent, .slider-ui, .poster .poster-content, .poster .layer.bg-layer, .poster .layer.copy-layer, .poster.circle .layer.bg-layer .half:first-child:before, .poster.fullTriangle .layer.bg-layer .half:first-child:before, #preloader .filler, .episodes-landing .landing-bg:after, .host-landing .landing-bg:after, .merch-landing .landing-bg:after, .post-landing .landing-bg:after, .show-landing .landing-bg:after, .video-overview-landing .landing-bg:after {
   position: absolute;
   top: 0;
   left: 0;
@@ -2262,7 +2262,7 @@ input {
     height: 100%;
     background-size: cover;
     background-position: center center; }
-    .episodes-landing .landing-bg.video-bg:after {
+    .episodes-landing .landing-bg:after {
       content: '';
       display: block;
       background-image: url("assets/images/textures/texture-halftone-compressor-2-70k.jpg");
@@ -2807,7 +2807,7 @@ a.episodes-landing-cta {
     height: 100%;
     background-size: cover;
     background-position: center center; }
-    .host-landing .landing-bg.video-bg:after {
+    .host-landing .landing-bg:after {
       content: '';
       display: block;
       background-image: url("assets/images/textures/texture-halftone-compressor-2-70k.jpg");
@@ -2911,7 +2911,7 @@ a.episodes-landing-cta {
     height: 100%;
     background-size: cover;
     background-position: center center; }
-    .merch-landing .landing-bg.video-bg:after {
+    .merch-landing .landing-bg:after {
       content: '';
       display: block;
       background-image: url("assets/images/textures/texture-halftone-compressor-2-70k.jpg");
@@ -3072,7 +3072,7 @@ a.episodes-landing-cta {
     height: 100%;
     background-size: cover;
     background-position: center center; }
-    .post-landing .landing-bg.video-bg:after {
+    .post-landing .landing-bg:after {
       content: '';
       display: block;
       background-image: url("assets/images/textures/texture-halftone-compressor-2-70k.jpg");
@@ -3220,7 +3220,7 @@ a.episodes-landing-cta {
     height: 100%;
     background-size: cover;
     background-position: center center; }
-    .show-landing .landing-bg.video-bg:after {
+    .show-landing .landing-bg:after {
       content: '';
       display: block;
       background-image: url("assets/images/textures/texture-halftone-compressor-2-70k.jpg");
@@ -3376,7 +3376,7 @@ a.episodes-landing-cta {
     height: 100%;
     background-size: cover;
     background-position: center center; }
-    .video-overview-landing .landing-bg.video-bg:after {
+    .video-overview-landing .landing-bg:after {
       content: '';
       display: block;
       background-image: url("assets/images/textures/texture-halftone-compressor-2-70k.jpg");
