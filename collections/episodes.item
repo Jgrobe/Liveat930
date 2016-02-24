@@ -29,7 +29,8 @@
                 <p><b>Video clips from this episode</b></p>
             </div>
 
-            <squarespace:query collection="clips" tag="{.repeated section tags}{@},{.end}">
+            <squarespace:query collection="clips" tag="{customContent.episode-videoclips}" limit="3">
+                <!--{.repeated section tags}{@},{.end}-->
 
                 <script>console.log('Clips Tags query ', {@|json-pretty});</script>
 
@@ -107,7 +108,7 @@
             {.end}<!-- .end if episode-gallery post -->
 
 
-            {.if epsiode-blog-post}
+            {.if epsiode-blogpost}
                 <squarespace:query collection="blog" limit="1" tags="{epsiode-blog-post}">
                     <script>
                         console.log('thats the blog query', {@|json-pretty});
