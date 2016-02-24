@@ -64,12 +64,12 @@ SQSP.functions.initPage = function() {
         }
     });
 
-    jQuery(window).scroll(function() {
-        if(jQuery(window).scrollTop() > SQSP.instances.CanvasPainter.$object.container.height()) {
-            SQSP.instances.CanvasPainter.stopVideo();
-        } else {
-            if(!SQSP.instances.CanvasPainter.PLAY) SQSP.instances.CanvasPainter.playVideo();
-        }
-    });
+    //jQuery(window).scroll(function() {
+    //    if(jQuery(window).scrollTop() > SQSP.instances.CanvasPainter.$object.container.height()) {
+    //        SQSP.instances.CanvasPainter.stopVideo();
+    //    } else {
+    //        if(!SQSP.instances.CanvasPainter.PLAY) SQSP.instances.CanvasPainter.playVideo();
+    //    }
+    //});
 
 };
