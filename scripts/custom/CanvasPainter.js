@@ -112,13 +112,12 @@ var CanvasPainter = function($container, options) {
     };// draw()
 
     CP.textureImg = new Image();
-    CP.textureImg.onload = function() {
+    CP.textureImg.onload = CP.textureImg.onerror = CP.textureImg.onabort = function() {
         init();
     };
     var imgsrc = location.hostname+'/assets/images/textures/texture-halftone-compressor-2-70k.jpg';
     console.log('the txture img src', imgsrc);
     CP.textureImg.src = imgsrc;
-
 
     function createCanvas() {
 
