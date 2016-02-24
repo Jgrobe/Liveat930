@@ -145,7 +145,7 @@ var CanvasPainter = function($container, options) {
             }
         };
 
-        CP.PATTERN = CP.DOM.layerCanvas.context.createPattern(CP.textureImg,"repeat");
+        //CP.PATTERN = CP.DOM.layerCanvas.context.createPattern(CP.textureImg,"repeat");
 
         CP.DOM.model.object.load();
 
