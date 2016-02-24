@@ -2,13 +2,13 @@
 
     <section class="episodes-landing episode-detail">
         <div class="fill-parent mask">
-            <div class="landing-bg" style="background-image:url('{assetUrl}');" data-type="video" data-src="assets/videos/navigation-overlay-video_1.mp4" data-shape="<?php if(isset($_GET['shape'])){echo $_GET['shape'];}else{echo 'general';} ?>">
+            <div class="landing-bg" style="background-image:url('{assetUrl}');" data-type="video" data-src="{customContent.episode-hero-video}" data-shape="{customContent.episode-shape}">
             <!--<video src="assets/videos/header-episode.mp4" loop autoplay></video>-->
         </div>
         </div><!-- .mask -->
 
         <div class="episodes-landing-head">
-            <h1>{item.title}</h1>
+            <h1>Episode No.{customContent.episode-number}</h1>
             <div class="small">Latest Show</div>
             <a href="#" class="cta-play-episode">Watch now</a>
         </div>
@@ -77,7 +77,7 @@
                 <section class="image-slider">
                     <!--{.repeated section items}{.equal?:customContent.customType:"episode-gallery"}-->
                     <script>
-                        {episode-gallery}
+                        {.section episode-gallery}
                         console.log('gallery data', {@|json-pretty});
                         {.end}
                     </script>
@@ -92,11 +92,13 @@
 
                         <div class="slider-ui">
                             <div class="slider-arrows">
-                                <div class="arrow prev"><?php svg('images/arrow-cap'); ?></div>
-                                <div class="arrow next"><?php svg('images/arrow-cap'); ?></div>
+                                <div class="arrow prev">{@|apply svg-arrow-cap.block}</div>
+                                <div class="arrow next">{@|apply svg-arrow-cap.block}</div>
                             </div><!-- .slider-arrows -->
                             <div class="slider-label">
-                                <h3>2/8</h3>
+                                <h3>
+                                    <span class="current">2</span>/<span class="total">8</span>
+                                </h3>
                             </div>
                         </div><!-- .slider-ui -->
                     </div><!-- .slider-container -->
@@ -106,35 +108,40 @@
 
 
             {.if epsiode-blog-post}
-                <section class="post-excerpt">
+                <squarespace:query collection="blog" limit="1" tags="{epsiode-blog-post}">
+                    <script>
+                        console.log('thats the blog query', {@|json-pretty});
+                    </script>
+                    <section class="post-excerpt">
 
-                    <div class="section-head">
-                        <h2>Explore the episode</h2>
-                        <!--<p><b>Episode No.5, August 2016</b></p>-->
-                    </div><!-- .section-head -->
+                        <div class="section-head">
+                            <h2>Explore the episode</h2>
+                            <!--<p><b>Episode No.5, August 2016</b></p>-->
+                        </div><!-- .section-head -->
 
-                    <div class="excerpt-container top-spaced">
-                    <div class="image pattern imgfill" style="background-image:url('assets/images/pattern-logo-bg.jpg');"></div>
-                    <div class="image post-image imgfill" style="background-image:url('assets/images/the-show-slide2.jpg');"></div>
-                    <div class="text-layer">
-                        <div class="section-head excerpt-head">
-                        <h2>An encore</h2>
-                        </div>
-                        <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                        <br/><br/>
-                        Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, quam quaerat voluptatem …
-                        </p>
-                        <div class="cta-dummy" data-icon="eye" data-label="Full story">{@|apply svg-icon-eye.block}</div>
-                        <!--php print_cta(array(
-                        'label' => 'Full story',
-                        'icon' => 'images/eye'
-                        )); -->
-                        <!--<a class="episodes-landing-cta icon-eye" href="">Full story</a>-->
-                    </div><!-- .text-layer -->
-                    </div><!-- .excerpt-container -->
+                        <div class="excerpt-container top-spaced">
+                        <div class="image pattern imgfill" style="background-image:url('assets/images/pattern-logo-bg.jpg');"></div>
+                        <div class="image post-image imgfill" style="background-image:url('assets/images/the-show-slide2.jpg');"></div>
+                        <div class="text-layer">
+                            <div class="section-head excerpt-head">
+                            <h2>An encore</h2>
+                            </div>
+                            <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                            <br/><br/>
+                            Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, quam quaerat voluptatem …
+                            </p>
+                            <div class="cta-dummy" data-icon="eye" data-label="Full story">{@|apply svg-icon-eye.block}</div>
+                            <!--php print_cta(array(
+                            'label' => 'Full story',
+                            'icon' => 'images/eye'
+                            )); -->
+                            <!--<a class="episodes-landing-cta icon-eye" href="">Full story</a>-->
+                        </div><!-- .text-layer -->
+                        </div><!-- .excerpt-container -->
 
-                </section><!-- .post-excerpt -->
+                    </section><!-- .post-excerpt -->
+                </squarespace:query>
             {.end}<!-- .end if blog post -->
 
         {.end}{.end}<!-- .end if customContent -->
