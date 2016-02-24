@@ -2,97 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ba77c59-895c-4b6c-8ed1-52220cbb39bd" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/sass/base/_vars.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/sass/dev/aligner.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/sass/dev/aligner.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/sass/dev/aligner.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/sass/pages/blog.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/sass/pages/blog.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/sass/modules/posters/circle.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/sass/modules/posters/circle.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/sass/modules/posters/circle.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/sass/ui/cta.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/sass/ui/cta.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/sass/ui/cta.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/sass/modules/devices.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/sass/modules/devices.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/sass/modules/devices.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/sass/pages/episode-detail.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/sass/pages/episode-detail.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/sass/pages/episode-detail.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/sass/pages/episodes.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/sass/pages/episodes.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/sass/base/fonts.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/sass/parts/footer.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/sass/parts/footer.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/sass/modules/posters/fullTriangle.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/sass/modules/posters/fullTriangle.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/sass/modules/posters/fullTriangle.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/sass/base/functions.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/sass/base/functions.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/sass/base/functions.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/sass/parts/header.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/sass/parts/header.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/sass/pages/home.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/sass/pages/home.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/sass/pages/home.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/sass/pages/host.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/sass/pages/host.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/sass/pages/host.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/sass/modules/icons.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/sass/modules/icons.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/sass/modules/image-slider.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/sass/modules/image-slider.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/sass/modules/image-slider.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/sass/ui/links.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/sass/ui/links.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/sass/ui/links.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/sass/base/main.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/sass/base/main.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/sass/base/main.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/sass/pages/merch.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/sass/pages/merch.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/sass/base/mixins.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/sass/base/mixins.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/sass/base/mixins.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/sass/modules/nav-overlay.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/sass/modules/nav-overlay.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/sass/modules/nav-overlay.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/sass/modules/nav-search-overlay.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/sass/modules/nav-search-overlay.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/sass/modules/post-excerpt.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/sass/modules/post-excerpt.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/sass/modules/post-excerpt.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/sass/modules/poster.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/sass/modules/poster.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/sass/modules/poster.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/sass/modules/preloader.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/sass/modules/preloader.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/sass/modules/preloader.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/sass/base/reset.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/sass/base/reset.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/sass/modules/search-overlay.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/sass/modules/search-overlay.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/sass/pages/show.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/sass/pages/show.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/sass/pages/show.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/sass/parts/sticky-header.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/sass/parts/sticky-header.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/sass/parts/sticky-header.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/style.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/style.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/sass/modules/text-insert.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/sass/modules/text-insert.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/sass/modules/text-insert.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/sass/base/typography.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/sass/base/typography.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/sass/base/typography.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/sass/modules/upcoming.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/sass/modules/upcoming.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/sass/pages/video.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/sass/pages/video.scss" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/styles/style.css" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/custom/episode-hero.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collections/episodes.item" afterPath="$PROJECT_DIR$/collections/episodes.item" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collections/episodes.list" afterPath="$PROJECT_DIR$/collections/episodes.list" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/custom/page_episode.js" afterPath="$PROJECT_DIR$/scripts/custom/page_episode.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/custom/page_episodes.js" afterPath="$PROJECT_DIR$/scripts/custom/page_episodes.js" />
     </list>
     <ignored path="sqsp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -123,7 +37,7 @@
               <file leaf-file-name="template.conf" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/template.conf">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.37176725" vertical-offset="195" max-vertical-offset="3000">
+                    <state vertical-scroll-proportion="0.31593406" vertical-offset="195" max-vertical-offset="3000">
                       <caret line="36" column="47" selection-start-line="36" selection-start-column="47" selection-end-line="36" selection-end-column="47" />
                       <folding />
                     </state>
@@ -255,13 +169,29 @@
                   </provider>
                 </entry>
               </file>
-              <file leaf-file-name="episodes.list" pinned="false" current-in-tab="true">
+              <file leaf-file-name="episodes.list" pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/collections/episodes.list">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="1.080819" vertical-offset="122" max-vertical-offset="1395">
-                      <caret line="75" column="157" selection-start-line="75" selection-start-column="157" selection-end-line="75" selection-end-column="157" />
+                    <state vertical-scroll-proportion="-41.75" vertical-offset="303" max-vertical-offset="1395">
+                      <caret line="87" column="38" selection-start-line="87" selection-start-column="38" selection-end-line="87" selection-end-column="38" />
                       <folding>
                         <element signature="n#style#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
+                        <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#section#0;n#squarespace:query#0;n#div#0;n#!!top" expanded="true" />
+                      </folding>
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file leaf-file-name="page_episodes.js" pinned="false" current-in-tab="true">
+                <entry file="file://$PROJECT_DIR$/scripts/custom/page_episodes.js">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state vertical-scroll-proportion="0.37634408" vertical-offset="0" max-vertical-offset="1116">
+                      <caret line="28" column="9" selection-start-line="6" selection-start-column="41" selection-end-line="28" selection-end-column="9" />
+                      <folding>
+                        <marker date="1456321993000" expanded="true" signature="375:850" placeholder="{...}" />
+                        <marker date="1456321993000" expanded="true" signature="512:831" placeholder="{&quot;amount&quot;: 5...}" />
+                        <marker date="1456321993000" expanded="true" signature="561:819" placeholder="{&quot;container&quot;: 13...}" />
+                        <marker date="1456321993000" expanded="true" signature="622:803" placeholder="[...]" />
                       </folding>
                     </state>
                   </provider>
@@ -270,8 +200,8 @@
               <file leaf-file-name="episodes.item" pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/collections/episodes.item">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="2940">
-                      <caret line="4" column="187" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="187" />
+                    <state vertical-scroll-proportion="-41.125" vertical-offset="1848" max-vertical-offset="2940">
+                      <caret line="189" column="0" selection-start-line="189" selection-start-column="0" selection-end-line="189" selection-end-column="52" />
                       <folding>
                         <element signature="n#style#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
                         <element signature="n#style#0;n#div#0;n#div#1;n#section#0;n#squarespace:query#0;n#div#0;n#!!top" expanded="true" />
@@ -295,8 +225,18 @@
               <file leaf-file-name="page_episode.js" pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/scripts/custom/page_episode.js">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1200">
-                      <caret line="44" column="48" selection-start-line="44" selection-start-column="48" selection-end-line="44" selection-end-column="48" />
+                    <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
+                      <caret line="4" column="39" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
+                      <folding />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file leaf-file-name="episode-hero.js" pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/scripts/custom/episode-hero.js">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="795">
+                      <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="32" />
                       <folding />
                     </state>
                   </provider>
@@ -381,8 +321,8 @@
           <file leaf-file-name="header.scss" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/styles/sass/parts/header.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.61422414" vertical-offset="0" max-vertical-offset="2295">
-                  <caret line="38" column="25" selection-start-line="38" selection-start-column="25" selection-end-line="38" selection-end-column="25" />
+                <state vertical-scroll-proportion="0.3021978" vertical-offset="0" max-vertical-offset="2295">
+                  <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -428,8 +368,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/blocks/svg-arrow-cap.block" />
-        <option value="$PROJECT_DIR$/collections/pages.conf" />
         <option value="$PROJECT_DIR$/blocks/svg-logo-squarespace.block" />
         <option value="$PROJECT_DIR$/blocks/page-host.block" />
         <option value="$PROJECT_DIR$/blocks/svg-logo-small-dark.block" />
@@ -460,11 +398,8 @@
         <option value="$PROJECT_DIR$/scripts/custom/ui.js" />
         <option value="$PROJECT_DIR$/header.region" />
         <option value="$PROJECT_DIR$/scripts/custom/CanvasPainter.js" />
-        <option value="$PROJECT_DIR$/scripts/custom/page_episode.js" />
-        <option value="$PROJECT_DIR$/collections/episodes.item" />
         <option value="$PROJECT_DIR$/collections/episodes.conf" />
         <option value="$PROJECT_DIR$/template.conf" />
-        <option value="$PROJECT_DIR$/collections/episodes.list" />
         <option value="$PROJECT_DIR$/styles/styles/ui/cta.css" />
         <option value="$PROJECT_DIR$/styles/style.scss" />
         <option value="$PROJECT_DIR$/styles/sass/modules/posters/circle.scss" />
@@ -479,6 +414,11 @@
         <option value="$PROJECT_DIR$/styles/sass/pages/episode-detail.scss" />
         <option value="$PROJECT_DIR$/styles/sass/pages/episodes.scss" />
         <option value="$PROJECT_DIR$/styles/sass/parts/header.scss" />
+        <option value="$PROJECT_DIR$/scripts/custom/episode-hero.js" />
+        <option value="$PROJECT_DIR$/scripts/custom/page_episode.js" />
+        <option value="$PROJECT_DIR$/collections/episodes.item" />
+        <option value="$PROJECT_DIR$/collections/episodes.list" />
+        <option value="$PROJECT_DIR$/scripts/custom/page_episodes.js" />
       </list>
     </option>
   </component>
@@ -864,22 +804,42 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView" selected-index="0">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
     <frame x="-2556" y="23" width="2556" height="1417" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13660377" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26037735" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13660377" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32981133" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26037735" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12149902" sideWeight="0.91938776" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12149902" sideWeight="0.9195804" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32981133" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12149902" sideWeight="0.08061224" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12149902" sideWeight="0.08041958" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290566" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32830188" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -909,20 +869,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/blocks/svg-icon-arrow.block">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.05882353" vertical-offset="0" max-vertical-offset="1275">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/images/icon-load.svg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12107623" vertical-offset="0" max-vertical-offset="1115">
-          <caret line="9" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/blocks/svg-icon-load.block">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.109990835" vertical-offset="0" max-vertical-offset="1091">
@@ -1079,7 +1025,7 @@
         <state vertical-scroll-proportion="-23.083334" vertical-offset="1" max-vertical-offset="1065">
           <caret line="37" column="75" selection-start-line="37" selection-start-column="75" selection-end-line="37" selection-end-column="75" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1155,30 +1101,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/custom/page_episode.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1200">
-          <caret line="44" column="48" selection-start-line="44" selection-start-column="48" selection-end-line="44" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/collections/episodes.item">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="2940">
-          <caret line="4" column="187" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="187" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#section#0;n#squarespace:query#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#1;n#section#0;n#squarespace:query#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#squarespace:query#0;n#section#2;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/template.conf">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37176725" vertical-offset="195" max-vertical-offset="3000">
+        <state vertical-scroll-proportion="0.31593406" vertical-offset="195" max-vertical-offset="3000">
           <caret line="36" column="47" selection-start-line="36" selection-start-column="47" selection-end-line="36" selection-end-column="47" />
           <folding />
         </state>
@@ -1208,16 +1133,6 @@
         <state vertical-scroll-proportion="0.24744697" vertical-offset="0" max-vertical-offset="1273">
           <caret line="21" column="35" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/collections/episodes.list">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.080819" vertical-offset="122" max-vertical-offset="1395">
-          <caret line="75" column="157" selection-start-line="75" selection-start-column="157" selection-end-line="75" selection-end-column="157" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1327,9 +1242,62 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/styles/sass/parts/header.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.61422414" vertical-offset="0" max-vertical-offset="2295">
-          <caret line="38" column="25" selection-start-line="38" selection-start-column="25" selection-end-line="38" selection-end-column="25" />
+        <state vertical-scroll-proportion="0.3021978" vertical-offset="0" max-vertical-offset="2295">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/custom/episode-hero.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="795">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/custom/page_episode.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
+          <caret line="4" column="39" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collections/episodes.item">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-41.125" vertical-offset="1848" max-vertical-offset="2940">
+          <caret line="189" column="0" selection-start-line="189" selection-start-column="0" selection-end-line="189" selection-end-column="52" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#section#0;n#squarespace:query#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#1;n#section#0;n#squarespace:query#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#squarespace:query#0;n#section#2;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collections/episodes.list">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-41.75" vertical-offset="303" max-vertical-offset="1395">
+          <caret line="87" column="38" selection-start-line="87" selection-start-column="38" selection-end-line="87" selection-end-column="38" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#section#0;n#squarespace:query#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/custom/page_episodes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.37634408" vertical-offset="0" max-vertical-offset="1116">
+          <caret line="28" column="9" selection-start-line="6" selection-start-column="41" selection-end-line="28" selection-end-column="9" />
+          <folding>
+            <marker date="1456321993000" expanded="true" signature="375:850" placeholder="{...}" />
+            <marker date="1456321993000" expanded="true" signature="512:831" placeholder="{&quot;amount&quot;: 5...}" />
+            <marker date="1456321993000" expanded="true" signature="561:819" placeholder="{&quot;container&quot;: 13...}" />
+            <marker date="1456321993000" expanded="true" signature="622:803" placeholder="[...]" />
+          </folding>
         </state>
       </provider>
     </entry>

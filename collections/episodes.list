@@ -84,5 +84,5 @@
         </section>
     </squarespace:query>
 </div>
-<!--php include('modules/upcoming.php'); -->
-<!--php $enqueued_scripts = array_merge($enqueued_scripts, array('js/custom/page_episodes.js')); -->
+<squarespace:script src="custom/episdode-hero.js" />
+<squarespace:script src="custom/page_episodes.js" />
