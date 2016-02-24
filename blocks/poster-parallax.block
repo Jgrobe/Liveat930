@@ -16,7 +16,7 @@
 
             <div class="layer model-layer rel">
                 <div class="model-container img widescreen" data-type="video" data-src="{assetUrl}" data-shape="{customContent.episode-shape}">
-                    <div class="fill-parent" style="background-image:url('{assetUrl}');"></div>
+                    <div class="fill-parent imgfill" style="background-image:url('{assetUrl}');"></div>
                     <!-- video canvas is inserted here -->
                 </div><!-- .model-container.img.widescreen -->
             </div><!-- .model-layer -->

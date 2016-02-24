@@ -51,7 +51,7 @@ var CanvasPainter = function($container, options) {
 
     CP.stopVideo = function() {
         if(CP.options.type !== 'video') return false;
-        CP.DOM.model.object.pause();
+        CP.DOM.model.object.pause()
         CP.PLAY = false;
     };
 

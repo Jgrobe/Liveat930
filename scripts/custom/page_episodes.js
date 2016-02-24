@@ -4,6 +4,13 @@ SQSP.functions.initPage = function() {
 
     SQSP.functions.createEpisodeHero();
 
+    jQuery('.poster').each(function() {
+        var $thisPoster = jQuery(this);
+        var $thismodel =  $thisPoster.find('.model-container');
+        new SVGClipper($thismodel, {
+        });
+    });
+
     //SQSP.$objects.postersContainer = jQuery('.posters');
     //SQSP.$objects.postersItems = jQuery('.prllxposter');
     //SQSP.instances.ParallaxPosters = [];
