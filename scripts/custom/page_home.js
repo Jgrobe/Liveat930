@@ -63,7 +63,10 @@ console.log('git add');
         }) );
 
         new SVGClipper($modelContainer, {
-            shape: $modelContainer.data('shape')
+            shape: $modelContainer.data('shape'),
+            onInit:function(Clip){
+                GradientMaps.applyGradientMap(Clip.$object.container, Clip.shapes[Clip.options.shape].gradientMaps.shape);
+            }
         });
 
         SQSP.instances.Posters[i].$object.hoverApplicants = [SQSP.$objects.postersContainer, SQSP.instances.Posters[i].$object.hoverLayer];
