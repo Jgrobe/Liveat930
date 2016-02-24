@@ -10,7 +10,8 @@
         <div class="episodes-landing-head">
             <h1>Episode No.{customContent.episode-number}</h1>
             <div class="small">Latest Show</div>
-            <a href="#" class="cta-play-episode">Watch now</a>
+            <div class="cta-dummy" data-label="Watch now" data-icon="eye">{@|apply svg-icon-eye.block}</div>
+            <!--<a href="#" class="cta-play-episode">Watch now</a>-->
         </div>
         <div class="text-layer">
             {body}

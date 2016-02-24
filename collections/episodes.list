@@ -18,7 +18,7 @@
                         <span>with</span>
                         <p>Shakey Graves / The Arcs / Dave Chapelle / Gogol Bordello & more</p>
                     </div>
-                    <div class="cta-dummy" data-icon="eye" data-label="Watch now" data-class="landing-cta prllx-custom" data-attributes="href=#,data-prllx=.04">{@|apply svg-icon-eye.block}</div>
+                    <div class="cta-dummy" data-icon="eye" data-label="Watch now" data-class="landing-cta prllx-custom" data-attributes="href={fullUrl},data-prllx=.04">{@|apply svg-icon-eye.block}</div>
                     <!--php print_cta(array(
                         'icon' => 'images/eye',
                     'label' => 'Watch now',
