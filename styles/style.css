@@ -1475,7 +1475,10 @@ input {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%; }
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; }
   .poster .icon.logo svg {
     width: 18.125vw;
     height: 9.84375vw; }
