@@ -62,6 +62,7 @@
     </footer>
 
 </div><!-- .page -->
+    <squarespace:script src="custom/page_episode.js" />
 
     <squarespace:script src="custom/cta-converter.js" />
     <squarespace:script src="custom/ui.js" />
