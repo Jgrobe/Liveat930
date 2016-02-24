@@ -1,6 +1,11 @@
 SQSP.functions.initPage = function() {
 
-    console.log('------------------ artists artists', _artists);
+
+    SQSP.$objects.postersContainer = jQuery('.posters');
+    SQSP.$objects.postersHoverContainer = SQSP.$objects.postersContainer.find('.posters-hover-bg');
+    //console.log('hovercontainer', SQSP.$objects.postersHoverContainer);
+    SQSP.$objects.posters = jQuery('.poster');
+    SQSP.instances.Posters = [];
 
     if(_artistsReady === true) {
 
@@ -27,12 +32,6 @@ SQSP.functions.initPage = function() {
         //
         //});
     }// endif artists ready
-
-    SQSP.$objects.postersContainer = jQuery('.posters');
-    SQSP.$objects.postersHoverContainer = SQSP.$objects.postersContainer.find('.posters-hover-bg');
-    //console.log('hovercontainer', SQSP.$objects.postersHoverContainer);
-    SQSP.$objects.posters = jQuery('.poster');
-    SQSP.instances.Posters = [];
 
     SQSP.$objects.preloader = jQuery('#preloader');
     if(elem_exists(SQSP.$objects.preloader)) {
