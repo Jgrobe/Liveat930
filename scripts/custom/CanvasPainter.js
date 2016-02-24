@@ -9,6 +9,7 @@ var CanvasPainter = function($container, options) {
     if(typeof $container === 'undefined') return;
     var CP = this;
     CP.options = {
+        autoInit: true,
         canvasScale: 1,
         layeredCanvas: false,
         texturize: false,
@@ -111,14 +112,29 @@ var CanvasPainter = function($container, options) {
 
     };// draw()
 
-    CP.textureImg = new Image();
-    CP.textureImg.onload = CP.textureImg.onerror = CP.textureImg.onabort = function() {
-        init();
-    };
-    var imgsrc = location.origin+'/assets/images/textures/texture-halftone-compressor-2-70k.jpg';
+    CP.init = function() {
 
-    CP.textureImg.src = imgsrc;
+        console.log('CanvasPainter', CP);
+
+        createCanvas();
+
+        jQuery(window).load(function() {
+            ////console.log('window loaded');
+            jQuery(window).trigger('resize');
+        }).resize(function() {
+            get_sizes();
+            CP.redrawShape = true;
+            //CP.draw();
+        });
+
+    };// init()
+
+    if(CP.options.autoInit) CP.init();
+
+    CP.textureImg = new Image();
+    var imgsrc = location.origin+'/assets/images/textures/texture-halftone-compressor-2-70k.jpg';
     console.log('the txture img src', CP.textureImg.src);
+    CP.textureImg.src = imgsrc;
 
     function createCanvas() {
 
@@ -309,22 +325,5 @@ var CanvasPainter = function($container, options) {
             top:offsetY
         };
     }// getSizeToCover()
-
-    function init() {
-
-        console.log('CanvasPainter', CP);
-
-        createCanvas();
-
-        jQuery(window).load(function() {
-            ////console.log('window loaded');
-            jQuery(window).trigger('resize');
-        }).resize(function() {
-            get_sizes();
-            CP.redrawShape = true;
-            //CP.draw();
-        });
-
-    }// init()
 
 };// CanvasPainter()
