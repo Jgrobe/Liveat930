@@ -116,8 +116,9 @@ var CanvasPainter = function($container, options) {
         init();
     };
     var imgsrc = location.hostname+'/assets/images/textures/texture-halftone-compressor-2-70k.jpg';
-    console.log('the txture img src', imgsrc);
+
     CP.textureImg.src = imgsrc;
+    console.log('the txture img src', CP.textureImg.src);
 
     function createCanvas() {
 
