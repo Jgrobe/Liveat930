@@ -68,9 +68,9 @@ function populate_namespaces() {
 
     var $fixed = jQuery('.landing-bg');
     jQuery(window).scroll(function() {
-        if(elem_exists($fixed)) {
-            TweenMax.set($fixed, {top:jQuery(window).scrollTop()});
-        }
+        //if(elem_exists($fixed)) {
+        //    TweenMax.set($fixed, {top:jQuery(window).scrollTop()});
+        //}
     });
 
 }// populate_namespaces()
