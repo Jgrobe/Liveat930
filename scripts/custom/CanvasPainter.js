@@ -115,7 +115,7 @@ var CanvasPainter = function($container, options) {
     CP.textureImg.onload = CP.textureImg.onerror = CP.textureImg.onabort = function() {
         init();
     };
-    var imgsrc = location.hostname+'/assets/images/textures/texture-halftone-compressor-2-70k.jpg';
+    var imgsrc = location.origin+'/assets/images/textures/texture-halftone-compressor-2-70k.jpg';
 
     CP.textureImg.src = imgsrc;
     console.log('the txture img src', CP.textureImg.src);
