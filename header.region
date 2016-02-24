@@ -37,11 +37,11 @@
     {squarespace-headers}
 
     <script>
-//        jQuery.ajax(location.href+'?format=json-pretty', {success:function(e){
-//            console.log('SITE', e );
-//        }});
+        jQuery.ajax(location.href+'?format=json-pretty', {success:function(e){
+            console.log('SITE', e );
+        }});
 
-        var _sqsp_site = {@|json};
+//        var _sqsp_site = {@|htmltag};
     </script>
 
 </head>
