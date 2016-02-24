@@ -8,7 +8,10 @@ SQSP.functions.initPage = function() {
         var $thisPoster = jQuery(this);
         var $thismodel =  $thisPoster.find('.model-container');
         new SVGClipper($thismodel, {
-            shape: $thismodel.data('shape')
+            shape: $thismodel.data('shape'),
+            onInit:function(Clip){
+                GradientMaps.applyGradientMap(Clip.DOM.container.object, Clip.shapes[Clip.options.shape].gradientMaps.shape);
+            }
         });
     });
 
