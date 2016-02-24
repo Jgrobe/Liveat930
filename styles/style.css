@@ -1447,30 +1447,32 @@ input {
       pointer-events: none;
       position: relative;
       z-index: 1; }
-    .poster .ep-lineup .artist:before {
-      content: '';
-      display: inline-block;
-      padding-left: 1vw; }
-    .poster .ep-lineup .artist:first-child:before {
-      content: none; }
-    .poster .ep-lineup .artist .label {
-      -webkit-transition: background 0.3s;
-      -moz-transition: background 0.3s;
-      -ms-transition: background 0.3s;
-      -o-transition: background 0.3s;
-      transition: background 0.3s; }
-    .poster .ep-lineup .artist .description {
-      visibility: hidden;
-      opacity: 0;
-      display: block;
-      position: absolute;
-      max-width: 90%;
-      left: 5%;
-      font-size: 2.77778vw;
-      line-height: 2.77778vw;
-      letter-spacing: .04em;
-      word-break: normal;
-      text-align: left; }
+    .poster .ep-lineup .artist {
+      cursor: pointer; }
+      .poster .ep-lineup .artist:before {
+        content: '';
+        display: inline-block;
+        padding-left: 1vw; }
+      .poster .ep-lineup .artist:first-child:before {
+        content: none; }
+      .poster .ep-lineup .artist .label {
+        -webkit-transition: background 0.3s;
+        -moz-transition: background 0.3s;
+        -ms-transition: background 0.3s;
+        -o-transition: background 0.3s;
+        transition: background 0.3s; }
+      .poster .ep-lineup .artist .description {
+        visibility: hidden;
+        opacity: 0;
+        display: block;
+        position: absolute;
+        max-width: 90%;
+        left: 5%;
+        font-size: 2.77778vw;
+        line-height: 2.77778vw;
+        letter-spacing: .04em;
+        word-break: normal;
+        text-align: left; }
   .poster .model-container {
     position: absolute;
     top: 0;
