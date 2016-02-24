@@ -81,16 +81,9 @@ function getUriParams(param) {
     return query_string;
 }// getUriParams()
 
-
-jQuery(window).load(function() {
-    jQuery(window).resize();
-}).resize(function(){
-    size_video();
-});
-
 function size_video(done) {
     //console.log('size_video fired');
-    jQuery('video, .video-sizeable, iframe').each(function(){
+    jQuery('video, .video-sizeable').each(function(){
         var $video = jQuery(this);
         if($video.hasClass('no_size_video')) return true;
 
@@ -115,8 +108,8 @@ function size_video(done) {
             width: newWidth,
             height: newHeight,
             left:offsetX,
-            top:(offsetY),
-            display: ''
+            top:(offsetY)
+            //display: ''
         });// 14px = height of binary strip
 
         if(_.isFunction(done)) done(newWidth, newHeight, offsetX, offsetY);

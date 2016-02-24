@@ -66,6 +66,13 @@ function populate_namespaces() {
     // individual page init function may add to namespaces -> must fire before window load & resize
     if(_.isFunction(SQSP.functions.initPage)) SQSP.functions.initPage();
 
+    var $fixed = jQuery('.landing-bg');
+    jQuery(window).scroll(function() {
+        if(elem_exists($fixed)) {
+            TweenMax.set($fixed, {y:jQuery(window).scrollTop()});
+        }
+    });
+
 }// populate_namespaces()
 
 //function sizeVideosOnReady() {

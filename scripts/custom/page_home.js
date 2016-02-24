@@ -11,7 +11,6 @@ SQSP.functions.initPage = function() {
 
         SQSP.instances.Preloader = new Preloader({
             onStart:function(e) {
-                console.log('PRELOAD START', e);
                 SQSP.faders = jQuery('.static-header, .site-content');
                 SQSP.preloadTL = new TimelineMax({});
                 TweenMax.set(SQSP.faders, {autoAlpha:0});
@@ -23,7 +22,6 @@ SQSP.functions.initPage = function() {
                 });
             },
             onProgress:function(e) {
-                console.log('PRELOAD PROGRESS', e.progress.pct);
                 //console.log('preloading', e.progress);
                 console.log(SQSP.$objects.preloader.find('.filler'),e.progress,  (e.progress.pct*100));
                 SQSP.preloadTL.to(SQSP.$objects.preloader.find('.filler'),.2,{width: (e.progress.pct*100)+'%'});
@@ -101,11 +99,11 @@ console.log('git add');
     // CREATE TRACKINGFIELDS FOR ARTIST HOVER LABEL
 
     SQSP.instances.FieldTracker = new FieldTracker(jQuery('#fieldTracker'), {
-        fieldSelector: '.artist',
+        fieldSelector: '.posters.hover-on',
         functions: {
             onStart: function(e, instance) {
                 //console.log('START CURSOR TRACKING');
-                instance.$object.tracker.addClass('active');
+                //instance.$object.tracker.addClass('active'); // -> THIS HANDLER HAS MOVED TO .artist click()
             },
             onTrack: function(e, instance) {
                 //console.log(e.clientX);
@@ -114,7 +112,7 @@ console.log('git add');
             },
             onStop: function(e, instance) {
                 //console.log('STOP CURSOR TRACKING');
-                instance.$object.tracker.removeClass('active');
+                //instance.$object.tracker.removeClass('active');
             }
         }
     });// new TrackingField()

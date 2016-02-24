@@ -6,64 +6,64 @@ SQSP.functions.initPage = function() {
 
     SQSP.$objects.siteHero = jQuery('.episodes-landing');
     var $modelContainer = SQSP.$objects.siteHero.find('.landing-bg');
-    SQSP.instances.ClippedCanvas = new ClippedCanvas($modelContainer, {
-        autoPlay: true,
-        //autoStop: true,
-        type: 'video',
-        shapeScale:.65,
-        blendMode: 'overlay',
-        partialClip: true,
-        //modelAttr: {loop:'true', muted:'false'},
-        modelClass : ['clipper-model'],
-        shapeClass: ['prllx-custom'],
-        shapeAttr: {'data-prllx' : '.8'},
-        shape: $modelContainer.attr('data-shape'),
-        onCreateComplete: function() {
-        }
-    });
-
-    //SQSP.instances.CanvasPainter = new CanvasPainter($modelContainer, {
+    //SQSP.instances.ClippedCanvas = new ClippedCanvas($modelContainer, {
     //    autoPlay: true,
     //    //autoStop: true,
-    //    canvasScale:.5,
     //    type: 'video',
+    //    shapeScale:.65,
     //    blendMode: 'overlay',
-    //    layeredCanvas: true,
+    //    partialClip: true,
     //    //modelAttr: {loop:'true', muted:'false'},
     //    modelClass : ['clipper-model'],
     //    shapeClass: ['prllx-custom'],
     //    shapeAttr: {'data-prllx' : '.8'},
     //    shape: $modelContainer.attr('data-shape'),
-    //    onCreateComplete: function(Painter) {
-    //
-    //
-    //        var testClipper = new SVGClipper(Painter.$object.layerCanvas, {
-    //            shape:'general',
-    //            maskID: 'heroClipper',
-    //            onInit:function(Clip){
-    //                GradientMaps.applyGradientMap(Painter.DOM.baseCanvas.object, Clip.shapes[Clip.options.shape].gradientMaps.full);
-    //                GradientMaps.applyGradientMap(Painter.DOM.layerCanvas.object, Clip.shapes[Clip.options.shape].gradientMaps.shape);
-    //            }
-    //        });
-    //
-    //        //GradientMaps.applyGradientMap(CP.DOM.shapeCanvas.object, CP.shapes[CP.options.shape].gradientMaps.shape);
-    //        //GradientMaps.applyGradientMap(CP.DOM.fullCanvas.object, CP.shapes[CP.options.shape].gradientMaps.full );
+    //    onCreateComplete: function() {
     //    }
     //});
 
+    SQSP.instances.CanvasPainter = new CanvasPainter($modelContainer, {
+        autoPlay: true,
+        //autoStop: true,
+        canvasScale:.5,
+        type: 'video',
+        blendMode: 'overlay',
+        layeredCanvas: true,
+        //modelAttr: {loop:'true', muted:'false'},
+        modelClass : ['clipper-model'],
+        shapeClass: ['prllx-custom'],
+        shapeAttr: {'data-prllx' : '.8'},
+        shape: $modelContainer.attr('data-shape'),
+        onCreateComplete: function(Painter) {
+
+
+            var testClipper = new SVGClipper(Painter.$object.layerCanvas, {
+                shape:'general',
+                maskID: 'heroClipper',
+                onInit:function(Clip){
+                    GradientMaps.applyGradientMap(Painter.DOM.baseCanvas.object, Clip.shapes[Clip.options.shape].gradientMaps.full);
+                    GradientMaps.applyGradientMap(Painter.DOM.layerCanvas.object, Clip.shapes[Clip.options.shape].gradientMaps.shape);
+                }
+            });
+
+            //GradientMaps.applyGradientMap(CP.DOM.shapeCanvas.object, CP.shapes[CP.options.shape].gradientMaps.shape);
+            //GradientMaps.applyGradientMap(CP.DOM.fullCanvas.object, CP.shapes[CP.options.shape].gradientMaps.full );
+        }
+    });
+
     jQuery(document).on('click', function() {
-        if(SQSP.instances.ClippedCanvas.PLAY){
-            SQSP.instances.ClippedCanvas.stopVideo();
+        if(SQSP.instances.CanvasPainter.PLAY){
+            SQSP.instances.CanvasPainter.stopVideo();
         } else {
-            SQSP.instances.ClippedCanvas.playVideo();
+            SQSP.instances.CanvasPainter.playVideo();
         }
     });
 
     jQuery(window).scroll(function() {
-        if(jQuery(window).scrollTop() > SQSP.instances.ClippedCanvas.$object.container.height()) {
-            SQSP.instances.ClippedCanvas.stopVideo();
+        if(jQuery(window).scrollTop() > SQSP.instances.CanvasPainter.$object.container.height()) {
+            SQSP.instances.CanvasPainter.stopVideo();
         } else {
-            if(!SQSP.instances.ClippedCanvas.PLAY) SQSP.instances.ClippedCanvas.playVideo();
+            if(!SQSP.instances.CanvasPainter.PLAY) SQSP.instances.CanvasPainter.playVideo();
         }
     });
 

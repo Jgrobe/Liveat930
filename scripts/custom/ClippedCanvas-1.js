@@ -11,10 +11,9 @@ var ClippedCanvas = function($container, options) {
     CC.options = {
         canvasScale: 1,
         shapeScale : 1,
-        canvasMask: false,
         partialClip: false,
         blendMode: 'screen',
-        colorize: '#ff7800',
+        colorize: '#0cff3f',
         autoPlay: false,
         autoStop: false,
         type: $container.attr('data-type'), // img || video (the actual DOM element)
@@ -22,13 +21,10 @@ var ClippedCanvas = function($container, options) {
         shape: 'star',  // one of the shapes defined in CC.shapes
         modelClass: false, // [ 'class1', 'class2', ... ]
         modelAttr: false,   // {attr1: val1, attr2: val2, ...}
-        shapeClass: false, // [ 'class1', 'class2', ... ]
-        shapeAttr: false,   // {attr1: val1, attr2: val2, ...}
         loadEvents : {
             video : 'loadeddata',
             img : 'load'
-        },
-        cssMaskID: 'shapeMask'
+        }
     };
     if(typeof options !== 'undefined') jQuery.extend(CC.options, options);
     CC.PLAY = CC.options.autoPlay;
@@ -36,18 +32,9 @@ var ClippedCanvas = function($container, options) {
         container: $container
     };
     CC.shapes = {
-        circle: {
-            gradientMaps: {
-                full: '#000000, #6d5e79',
-                shape: '#9f53e0, #d6b9db'
-            }
-        },
+        circle: {},
         fullTriangle: {
             type : 'polygon',
-            gradientMaps: {
-                full : '#000000, #34544d',
-                shape : '#26a58c, #ade4d7'
-            },
             values : [
                 [
                     {x:0, y:100},
@@ -57,18 +44,9 @@ var ClippedCanvas = function($container, options) {
                 ]
             ]
         },
-        verticalRect: {
-            gradientMaps: {
-                full: '#060d26, #79515a',
-                shape: '#e08585, #f7d7d7'
-            }
-        },
+        verticalRect: {},
         deltoid: {
             type : 'polygon',
-            gradientMaps: {
-                full : '#000000, #244a4e',
-                shape : '#79bebc, #d8e6e6'
-            },
             values : [
                 [
                     {x:100, y:25},
@@ -84,10 +62,6 @@ var ClippedCanvas = function($container, options) {
             //type : 'path',
             //values : 'M0,75.5L50,0l50,75.5H77.3L50,34.3L22.7,75.5H0z'
             type: 'polygon',
-            gradientMaps: {
-                full : '#000000, #244a4e',
-                shape : '#6ecca3, #c5e8db'
-            },
             values : [
                 [
                     {x:0, y:75.5},
@@ -100,24 +74,10 @@ var ClippedCanvas = function($container, options) {
                 ]
             ]
         },
-        arc: {
-            gradientMaps: {
-                full : '#151517, #3d444a',
-                shape: '#d2caa0, #ffffff'
-            }
-        },
-        halfCircle: {
-            gradientMaps: {
-                full: '#361314, #3f466d',
-                shape: '#3d6cf3, #b9c9fb'
-            }
-        },
+        quarterCircle: {},
+        halfCircle: {},
         square: {
             type : 'polygon',
-            gradientMaps: {
-                full: '#041341, #583332',
-                shape: '#f54848, #edb1b1'
-            },
             values : [
                 [
                     {x:0, y:0},
@@ -129,10 +89,6 @@ var ClippedCanvas = function($container, options) {
         },
         doubleSlash: {
             type: 'polygon',
-            gradientMaps: {
-                full: '#081e24, #ca7d90',
-                shape : '#e68cbd, #f4dbed'
-            },
             values: [
                 //[
                 //    {x:50, y:0},
@@ -164,10 +120,6 @@ var ClippedCanvas = function($container, options) {
         },
         general: {
             type : 'polygon',
-            gradientMaps: {
-                full : '#101f37, #483b30',
-                shape : '#ff7800, #dfc0a4'
-            },
             values : [
                 //[
                 //    {x:50, y:35.8},
@@ -210,10 +162,6 @@ var ClippedCanvas = function($container, options) {
         },
         tripleRect: {
             type : 'polygon',
-            gradientMaps: {
-                full: '#291c25, #313f51',
-                shape : '#388292, #ffffff'
-            },
             values: [
                 //[
                 //    {x:0, y:0},
@@ -256,10 +204,6 @@ var ClippedCanvas = function($container, options) {
         },
         pentagon: {
             type: 'polygon',
-            gradientMaps: {
-                full : '#10171f, #4d2e3d',
-                shape: '#9b1856, #f2c1d8'
-            },
             values: [
                 [
                     {x:94.9, y:81.2},
@@ -290,50 +234,42 @@ var ClippedCanvas = function($container, options) {
         },
         functions : {
             polygon : {
-                //draw: function(ctx, paths) {
-                //    ////console.log('Draw Polygon', points);
-                //    ctx.save();
-                //    ctx.beginPath();
-                //
-                //    for(var i=0; i < paths.length; i++) {
-                //
-                //        //if(i > 0) {// shape consists of more than one polygon path // which must not happen b/c the clipping won't work
-                //        //    ////console.log('DRAWING SHAPE PATH NO. '+i);
-                //        //    ctx.closePath();
-                //        //    ctx.clip();
-                //        //    CC.draw();
-                //        //    ctx.restore();
-                //        //    ctx.save();
-                //        //    ctx.beginPath();
-                //        //}// endif
-                //
-                //        var points = paths[i];
-                //        for(var j=0; j < points.length; j++) {
-                //            if(j <= 0) { // begin Path
-                //                ctx.moveTo(points[j].x, points[j].y);
-                //            } else { // then draw lines
-                //                ctx.lineTo(points[j].x, points[j].y);
-                //            }// endif
-                //        }// endfor points
-                //
-                //    }// endfor paths
-                //
-                //    ctx.closePath();
-                //},// draw()
+                draw: function(ctx, paths) {
+                    //console.log('Draw Polygon', points);
+                    ctx.save();
+                    ctx.beginPath();
+
+                    for(var i=0; i < paths.length; i++) {
+
+                        if(i > 0) {// shape consists of more than one polygon path // which must not happen b/c the clipping won't work
+                            //console.log('DRAWING SHAPE PATH NO. '+i);
+                            ctx.closePath();
+                            ctx.clip();
+                            CC.draw();
+                            ctx.restore();
+                            ctx.save();
+                            ctx.beginPath();
+                        }// endif
+
+                        var points = paths[i];
+                        for(var j=0; j < points.length; j++) {
+                            if(j <= 0) { // begin Path
+                                ctx.moveTo(points[j].x, points[j].y);
+                            } else { // then draw lines
+                                ctx.lineTo(points[j].x, points[j].y);
+                            }// endif
+                        }// endfor points
+
+                    }// endfor paths
+
+                    ctx.closePath();
+                },// draw()
                 getShapeDimensions: function() {
-                    var shapeCSS='', shapePoints='', shapeWidth=0, shapeHeight= 0, paths = CC.shapes[CC.options.shape].values;
+                    var shapeWidth=0, shapeHeight= 0, paths = CC.shapes[CC.options.shape].values;
 
                     for(var i=0; i<paths.length; i++) {
                         var points = paths[i];
                         for(var j=0; j < points.length; j++) {
-
-                            if(j>0) {
-                                shapePoints += ' ';
-                                shapeCSS += ', ';
-                            }
-                            shapePoints += (points[j].x * .01) + ',' + (points[j].y * .01);
-                            shapeCSS += points[j].x + '% ' + points[j].y + '%';
-
                             if(points[j].x > shapeWidth) { shapeWidth = points[j].x; }
                             if(points[j].y > shapeHeight) { shapeHeight = points[j].y; }
                         }// endfor points
@@ -343,53 +279,36 @@ var ClippedCanvas = function($container, options) {
                         width: shapeWidth,
                         height: shapeHeight
                     };
-
-                    CC.shapes[CC.options.shape].clipPath = {
-                        inline: '<polygon points="'+ shapePoints +'" />',
-                        css : 'polygon('+ shapeCSS +')'
-                    }
-
                 },// getShapeDimensions
                 recalculateValues: function() {
                     // Recalculate Point coordinates to keep the shape centered in all scales
                     // scaleRatio : used for sizing (ratio of shape's original size to the viewport)
-                   
-                    //CC.DOM.shapeCanvas.scaleRatio = Math.min(CC.DOM.shapeCanvas.object.width/CC.SHAPE.originalSize.width, CC.DOM.shapeCanvas.object.height/CC.SHAPE.originalSize.height) * CC.options.shapeScale;
-                    //CC.DOM.shapeCanvas.object = {
-                    //    width:  CC.SHAPE.originalSize.width * CC.DOM.shapeCanvas.scaleRatio,
-                    //    height:  CC.SHAPE.originalSize.height * CC.DOM.shapeCanvas.scaleRatio
-                    //};
-                    //CC.DOM.shapeCanvas.object.x = (CC.DOM.shapeCanvas.object.width - CC.DOM.shapeCanvas.object.width)*.5;
-                    //CC.DOM.shapeCanvas.object.y = (CC.DOM.shapeCanvas.object.height - CC.DOM.shapeCanvas.object.height)*.5;
-
-                    CC.DOM.shapeCanvas.scaleRatio = Math.min(CC.RATIO.width/CC.SHAPE.originalSize.width, CC.RATIO.height/CC.SHAPE.originalSize.height) * CC.options.shapeScale;
-                    CC.DOM.shapeCanvas.object.width = CC.SHAPE.originalSize.width * CC.DOM.shapeCanvas.scaleRatio;
-                    CC.DOM.shapeCanvas.object.height = CC.SHAPE.originalSize.height * CC.DOM.shapeCanvas.scaleRatio;
-
-                    CC.$object.shapeCanvas.css({
-                        position: 'absolute',
-                        left: (window.innerWidth - CC.DOM.shapeCanvas.object.width) *.5,
-                        top: (window.innerHeight - CC.DOM.shapeCanvas.object.height) *.5
-                    });
+                    CC.SHAPE.scaleRatio = Math.min(CC.DOM.canvas.object.width/CC.SHAPE.originalSize.width, CC.DOM.canvas.object.height/CC.SHAPE.originalSize.height) * CC.options.shapeScale;
+                    CC.SHAPE.relativeSize = {
+                        width:  CC.SHAPE.originalSize.width * CC.SHAPE.scaleRatio,
+                        height:  CC.SHAPE.originalSize.height * CC.SHAPE.scaleRatio
+                    };
+                    CC.SHAPE.relativeSize.x = (CC.DOM.canvas.object.width - CC.SHAPE.relativeSize.width)*.5;
+                    CC.SHAPE.relativeSize.y = (CC.DOM.canvas.object.height - CC.SHAPE.relativeSize.height)*.5;
 
                     var paths = CC.shapes[CC.options.shape].values;
                     for(var i=0; i < paths.length; i++) {
                         var points = paths[i];
                         for(var j=0; j < points.length; j++) {
-                            CC.SHAPE.values[i][j].x = ( points[j].x) * CC.DOM.shapeCanvas.scaleRatio;// + ( CC.DOM.shapeCanvas.object.width * .5 - CC.DOM.shapeCanvas.object.width *.5 );
-                            CC.SHAPE.values[i][j].y = ( points[j].y) * CC.DOM.shapeCanvas.scaleRatio;// + ( CC.DOM.shapeCanvas.object.height * .5 - CC.DOM.shapeCanvas.object.height *.5 );
+                            CC.SHAPE.values[i][j].x = ( points[j].x * CC.SHAPE.scaleRatio ) + ( CC.DOM.canvas.object.width * .5 - CC.SHAPE.relativeSize.width *.5 );
+                            CC.SHAPE.values[i][j].y = ( points[j].y * CC.SHAPE.scaleRatio ) + ( CC.DOM.canvas.object.height * .5 - CC.SHAPE.relativeSize.height *.5 );
                         }// endfor points
 
                     }// endfor paths
                 }// recalculateValues
             },
             path: {
-                //draw: function(ctx, values) {
-                //
-                //    var p = new Path2D(values);
-                //    p.closePath();
-                //
-                //}, // draw(),
+                draw: function(ctx, values) {
+
+                    var p = new Path2D(values);
+                    p.closePath();
+
+                }, // draw(),
                 getShapeDimensions: function() {
                 },// getShapeDimensions
                 recalculateValues: function() {
@@ -406,20 +325,15 @@ var ClippedCanvas = function($container, options) {
         CC.DOM.model.object.play();
         CC.PLAY = true;
 
-        //drawClippingShape();
-        ////console.log(
-        //    'model size',
-        //    CC.DOM.model.size,'\n',
-        //    'start clip x',
-        //    ( (CC.RATIO.width - CC.DOM.shapeCanvas.object.width) *.5 ) / CC.RATIO.ratio,'\n',
-        //    'start clip y',
-        //    ( (CC.RATIO.height - CC.DOM.shapeCanvas.object.height ) *.5 ) / CC.RATIO.ratio,'\n',
-        //    'clip width',
-        //    (CC.DOM.shapeCanvas.object.width / CC.RATIO.ratio),'\n',
-        //    'clip height',
-        //    (CC.DOM.shapeCanvas.object.height / CC.RATIO.ratio),'\n',
-        //    CC.RATIO
-        //);
+        drawClippingShape();
+        console.log(
+            'shape size on video',
+            {width:(CC.SHAPE.relativeSize.width / CC.RATIO),
+                height:(CC.SHAPE.relativeSize.height / CC.RATIO)},'\n',
+            'shape size on canvas',
+            CC.SHAPE.relativeSize,'\n',
+            CC.RATIO
+        );
         CC.drawVideo();
     };
 
@@ -430,54 +344,56 @@ var ClippedCanvas = function($container, options) {
     };
 
     CC.drawVideo = function() {
-        ////console.log('playing!');
-        ////console.log('context', ctx);
+        //console.log('playing!');
+        //console.log('context', ctx);
         if(CC.DOM.model.object.paused || CC.DOM.model.object.ended || !CC.PLAY) return false;
 
         if(CC.options.partialClip) {
-            //jQuery(window).resize(); // needed to clear the clipping shape
+            //CC.DOM.canvas.context.clearRect(0, 0, CC.DOM.canvas.object.width, CC.DOM.canvas.object.height);
+            jQuery(window).resize(); // needed to clear the clipping shape
+            //console.log('drawWholeVideo');
+            //CC.DOM.canvas.context.globalCompositeOperation = 'source-over';
+            CC.draw();
+            CC.DOM.canvas.context.globalCompositeOperation = 'screen';//CC.options.blendMode;
 
-            CC.DOM.fullCanvas.context.drawImage(
-                CC.DOM.model.object,
-                0,0,CC.DOM.fullCanvas.object.width,CC.DOM.fullCanvas.object.height
-            );
-            rasterize(0, 0, CC.DOM.shapeCanvas.object.width, CC.DOM.shapeCanvas.object.height);
+            rasterize(0, 0, CC.DOM.canvas.object.width, CC.DOM.canvas.object.height);
         }
 
-        //if(CC.redrawShape === true) {
-        //    ////console.log('----- REDRAW CLIPPING MASK');
-        //    //drawClippingShape();
-        //    CC.redrawShape = false;
-        //}// endif
+        //rotateContext(CC.DOM.canvas.context,.3);
+        if(CC.redrawShape === true) {
+            //console.log('----- REDRAW CLIPPING MASK');
+            drawClippingShape();
+            CC.redrawShape = false;
+        }// endif
 
         // Draw only the area the size of the clipping shape
-        CC.DOM.shapeCanvas.context.drawImage(
+        CC.DOM.canvas.context.drawImage(
             CC.DOM.model.object,
-            //0,0,CC.DOM.shapeCanvas.object.width,CC.DOM.shapeCanvas.object.height
+            //0,0,CC.DOM.canvas.object.width,CC.DOM.canvas.object.height
 
             // 1. Define clipped area on original
-            // must reverse-compute coordinates to original video size -> hence / CC.RATIO.ratio
+            // must reverse-compute coordinates to original video size -> hence / CC.RATIO
 
             // start clip x
-            ( (CC.RATIO.width - CC.DOM.shapeCanvas.object.width) *.5 ) / CC.RATIO.ratio,
+            ( (CC.DOM.canvas.object.width *.5  - CC.SHAPE.relativeSize.width *.5) / CC.RATIO),
             // start clip y
-            ( (CC.RATIO.height - CC.DOM.shapeCanvas.object.height ) *.5 ) / CC.RATIO.ratio,
+            ( (CC.DOM.canvas.object.height *.5 - CC.SHAPE.relativeSize.height *.5 ) / CC.RATIO),
             // clip width
-            (CC.DOM.shapeCanvas.object.width / CC.RATIO.ratio),
+            (CC.SHAPE.relativeSize.width / CC.RATIO),
             // clip height
-            (CC.DOM.shapeCanvas.object.height / CC.RATIO.ratio),
+            (CC.SHAPE.relativeSize.height / CC.RATIO),
 
             // 2. Draw defined area on canvas
             // using canvas coordinates
 
             // position clip x
-            0,//( CC.DOM.shapeCanvas.object.width *.5 - CC.DOM.shapeCanvas.object.width *.5 ),
+            ( CC.DOM.canvas.object.width *.5 - CC.SHAPE.relativeSize.width *.5 ),
             // position clip y
-            0,//( CC.DOM.shapeCanvas.object.height *.5 - CC.DOM.shapeCanvas.object.height *.5 ),
+            ( CC.DOM.canvas.object.height *.5 - CC.SHAPE.relativeSize.height *.5 ),
             // clip width
-            (CC.DOM.shapeCanvas.object.width),
+            (CC.SHAPE.relativeSize.width),
             // clip height
-            (CC.DOM.shapeCanvas.object.height)
+            (CC.SHAPE.relativeSize.height)
         );
         //CC.draw();
 
@@ -491,7 +407,7 @@ var ClippedCanvas = function($container, options) {
 
     CC.draw = function() {
 
-        CC.DOM.shapeCanvas.context.drawImage(CC.DOM.model.object, 0, 0, CC.DOM.shapeCanvas.object.width, CC.DOM.shapeCanvas.object.height);
+        CC.DOM.canvas.context.drawImage(CC.DOM.model.object, 0, 0, CC.DOM.canvas.object.width, CC.DOM.canvas.object.height);
 
     };// draw()
 
@@ -504,14 +420,7 @@ var ClippedCanvas = function($container, options) {
 
     function createCanvas() {
 
-        CC.$object.shapeCanvas = jQuery('<canvas/>');
-        if(CC.options.shapeClass) CC.$object.shapeCanvas.addClass(CC.options.shapeClass.join(' '));
-        if(CC.options.shapeAttr) {
-            for(var attr in CC.options.shapeAttr) {
-                CC.$object.shapeCanvas.attr(attr, CC.options.shapeAttr[attr]);
-            }// endfor
-        }// endif
-
+        CC.$object.canvas = jQuery('<canvas/>');
         CC.$object.model = jQuery('<'+ CC.options.type +' src="'+ CC.options.mediaSrc +'"/>');
         if(CC.options.modelClass) CC.$object.model.addClass(CC.options.modelClass.join(' '));
         if(CC.options.modelAttr) {
@@ -521,41 +430,28 @@ var ClippedCanvas = function($container, options) {
         }// endif
 
         CC.DOM = {
-            shapeCanvas : {
-                object: CC.$object.shapeCanvas.get(0),
-                context: CC.$object.shapeCanvas.get(0).getContext('2d')
+            canvas : {
+                object: CC.$object.canvas.get(0),
+                context: CC.$object.canvas.get(0).getContext('2d')
             },
             model : {
                 object : CC.$object.model.get(0)
             }
         };
 
-        CC.PATTERN = CC.DOM.shapeCanvas.context.createPattern(CC.textureImg,"repeat");
+        CC.PATTERN = CC.DOM.canvas.context.createPattern(CC.textureImg,"repeat");
 
         CC.DOM.model.object.load();
 
         CC.DOM.model.object.addEventListener(CC.options.loadEvents[CC.options.type], function() {
-            ////console.log('THE MODEL RATIO: ', CC.DOM.model.object.ratio);
+            //console.log('THE MODEL RATIO: ', CC.DOM.model.object.ratio);
             var onComplete;
 
-            if(CC.options.partialClip) {
-                // add the fullscreen canvas
-                CC.$object.fullCanvas = jQuery('<canvas/>');
-
-                CC.DOM.fullCanvas = {
-                    object: CC.$object.fullCanvas.get(0),
-                    context: CC.$object.fullCanvas.get(0).getContext('2d')
-                };
-                CC.$object.container.append(CC.$object.fullCanvas);
-                GradientMaps.applyGradientMap(CC.DOM.fullCanvas.object, CC.shapes[CC.options.shape].gradientMaps.full );
-            }// endif
-
-            CC.$object.container.append(CC.$object.shapeCanvas);
+            CC.$object.container.append(CC.$object.canvas);
             CC.$object.container.append(CC.$object.model);
-            //jQuery(window).resize();
+            jQuery(window).trigger('resize');
 
-            //colorize();
-            GradientMaps.applyGradientMap(CC.DOM.shapeCanvas.object, CC.shapes[CC.options.shape].gradientMaps.shape);
+            GradientMaps.applyGradientMap(CC.DOM.canvas.object, '#101f37, #483b30');
 
             switch(CC.options.type) {
                 case 'video' :
@@ -564,9 +460,12 @@ var ClippedCanvas = function($container, options) {
                         width: CC.DOM.model.object.videoWidth,
                         height: CC.DOM.model.object.videoHeight
                     };
-                    ////console.log('DOM MODEL LOADED => SIZE', CC.DOM.model.size);
+                    //console.log('DOM MODEL LOADED => SIZE', CC.DOM.model.size);
 
+                    //CC.DOM.model.object.ratio = CC.$object.container.width / CC.DOM.model.object.videoWidth;
                     CC.DOM.model.object.volume = 0;
+                    //CC.DOM.canvas.object.width = CC.DOM.model.object.videoWidth;
+                    //CC.DOM.canvas.object.height = CC.DOM.model.object.videoHeight;
                     CC.DOM.model.object.addEventListener('ended', function() {
                         CC.playVideo();
                     });
@@ -578,7 +477,7 @@ var ClippedCanvas = function($container, options) {
 
                         //setTimeout(function() {
                         //    CC.stopVideo();
-                        //    //console.log('------------------------------- VIDEO STOPPED');
+                        //    console.log('------------------------------- VIDEO STOPPED');
                         //}, 400);
                     }
 
@@ -592,6 +491,7 @@ var ClippedCanvas = function($container, options) {
                     };
 
                     CC.DOM.model.ratio = CC.$object.container.width / CC.DOM.model.object.width;
+                    //CC.DOM.canvas.context.drawImage(CC.DOM.model.object, 0, 0, CC.DOM.canvas.width, CC.DOM.canvas.height);
                     CC.draw();
 
                     break;
@@ -604,35 +504,37 @@ var ClippedCanvas = function($container, options) {
             if(_.isFunction(onComplete)) onComplete();
         });
 
-        ////console.log('canvas created');
+        //console.log('canvas created');
 
     }// createCanvas()
 
-    //function drawClippingShape() {
-    //    if(!CC.options.canvasMask) return false;
-    //    if(!CC.options.shape) return false;
-    //    // call the shape type's draw function
-    //    CC.shapes.functions[ CC.SHAPE.type ][ 'draw' ]( CC.DOM.shapeCanvas.context, CC.SHAPE.values );
-    //    // clip the canvas to the shape
-    //    CC.DOM.shapeCanvas.context.clip();
-    //    rasterize(CC.DOM.shapeCanvas.object.x, CC.DOM.shapeCanvas.object.y, CC.DOM.shapeCanvas.object.width, CC.DOM.shapeCanvas.object.height);
-    //}// drawClippingShape
+    function drawClippingShape() {
+        //return false;
+        if(!CC.options.shape) return false;
+        //console.log('drawClippingShape()', CC.SHAPE);
+        // clear the canvas to avoid remains of the old shape being visible
+        //CC.DOM.canvas.context.clearRect(0, 0, CC.DOM.canvas.object.width, CC.DOM.canvas.object.height);
+        // call the shape type's draw function
+        CC.shapes.functions[ CC.SHAPE.type ][ 'draw' ]( CC.DOM.canvas.context, CC.SHAPE.values );
+        // clip the canvas to the shape
+        CC.DOM.canvas.context.clip();
+        colorize();
+        rasterize(CC.SHAPE.relativeSize.x, CC.SHAPE.relativeSize.y, CC.SHAPE.relativeSize.width, CC.SHAPE.relativeSize.height);
+    }// drawClippingShape
 
     function colorize() {
-        //return false;
-        //if(!CC.options.colorize) return false;
-        CC.DOM.shapeCanvas.context.globalCompositeOperation = 'multiply';
-        CC.DOM.shapeCanvas.context.fillStyle = CC.options.colorize;
-        //console.log('COLORIEZ', CC.DOM.shapeCanvas.context.fillStyle);
-        CC.DOM.shapeCanvas.context.fillRect(0, 0, CC.DOM.shapeCanvas.object.width, CC.DOM.shapeCanvas.object.height)
+        return false;
+        if(!CC.options.colorize) return false;
+        CC.DOM.canvas.context.globalCompositeOperation = CC.options.blendMode;
+        CC.DOM.canvas.context.fillStyle = CC.options.colorize;
+        CC.DOM.canvas.context.fillRect(CC.SHAPE.relativeSize.x, CC.SHAPE.relativeSize.y, CC.SHAPE.relativeSize.width, CC.SHAPE.relativeSize.height)
     }// colorize()
-
     function rasterize(x, y, width, height) {
         return false;
-        //CC.DOM.shapeCanvas.context.globalCompositeOperation = 'multiply';// multiply
-        CC.DOM.shapeCanvas.context.rect(x, y, width, height);
-        CC.DOM.shapeCanvas.context.fillStyle = CC.PATTERN;
-        CC.DOM.shapeCanvas.context.fill();
+        CC.DOM.canvas.context.globalCompositeOperation = 'multiply';// multiply
+        CC.DOM.canvas.context.rect(x, y, width, height);
+        CC.DOM.canvas.context.fillStyle = CC.PATTERN;
+        CC.DOM.canvas.context.fill();
     }
 
     function rotateContext(ctx, radians) {
@@ -642,42 +544,59 @@ var ClippedCanvas = function($container, options) {
     }// rotateContext()
 
     function get_sizes() {
+        //console.log('get_sizes()');
+        //CC.window = {
+        //    width: window.innerWidth,
+        //    height: window.innerHeight
+        //};
 
         if(typeof CC.DOM.model.size === 'undefined') return false;
 
-        // shapeCanvas & fullCanvas always have the same parent but fullCanvas may not always exist
-        // so it is safe to use shapeCanvas to compute cover size & ratio
-        CC.RATIO = getSizeToCover({ width:CC.$object.shapeCanvas.parent().width(), height:CC.$object.shapeCanvas.parent().height() }, CC.DOM.model.size);
-//console.log('CC RATIO VALUES', CC.RATIO);
-        
-        if(typeof CC.DOM.fullCanvas !== 'undefined') {
-            CC.DOM.fullCanvas.object.width = CC.RATIO.width;
-            CC.DOM.fullCanvas.object.height = CC.RATIO.height;
-            CC.$object.fullCanvas.css({
-                position: 'absolute',
-                top: CC.RATIO.top,
-                left: CC.RATIO.left
-            });
-        }
+        // the ratio to scale the canvas in order to 'cover' its parent
+        //console.log('RAIOT PARAMS' , CC.$object.canvas.parent().width(), CC.DOM.model.size.width, CC.$object.canvas.parent().height(), CC.DOM.model.size.width);
+        //CC.RATIO = Math.max( (CC.$object.canvas.parent().width() / CC.DOM.model.size.width), (CC.$object.canvas.parent().height() / CC.DOM.model.size.width));
+
+        var cover = getSizeToCover({ width:CC.$object.canvas.parent().width(), height:CC.$object.canvas.parent().height() }, CC.DOM.model.size);
+CC.RATIO = cover.ratio;
+
+        CC.DOM.canvas.object.width = cover.width;//CC.DOM.model.size.width * CC.RATIO * CC.options.canvasScale;//CC.DOM.model.object.videoWidth;
+        CC.DOM.canvas.object.height = cover.height;//CC.DOM.model.size.height * CC.RATIO * CC.options.canvasScale;//CC.DOM.model.object.videoHeight;
+        CC.$object.canvas.css({
+            position: 'absolute',
+            top: cover.top,
+            left: cover.left
+        });
+
+        //console.log('sizeToCover', cover);
+
+        //CC.DOM.canvas.object = {
+        //    width: CC.DOM.canvas.object.width,//CC.$object.canvas.outerWidth(),
+        //    height: CC.DOM.canvas.object.height//CC.$object.canvas.outerHeight()
+        //};
+        //console.log(CC.DOM.canvas.object.height);
 
         recalculate_shape_coordinates();
-
+        // get shape size by getting max Coordinates
     }// get_sizes()
 
     function get_shape_dimensions() {
         // must only be triggered once on initiation
+        //console.log('get_shape_dimensions()');
         if(typeof CC.SHAPE !== 'undefined') return false;
         // get original shape size
 
         CC.shapes.functions[ CC.shapes[CC.options.shape]['type'] ]['getShapeDimensions']();
 
         CC.SHAPE = _.cloneDeep(CC.shapes[CC.options.shape]);
-
-        create_svg_mask();
-
+        //console.log('dats the shape', CC.SHAPE);
+        //console.log('CC.SHAPE',CC.SHAPE);
     }// get_shape_dimensions
 
     function recalculate_shape_coordinates() {
+        //console.log('recalculate_shape_coordinates()');
+        // outsourced so points dont have to be calculated each draw cycle
+        // points coordintates must be recalculated to fit the canvas size
+        //console.log('CC.shapes[CC.options.shape]', CC.shapes, CC.options.shape, CC.shapes[CC.options.shape]);
 
         get_shape_dimensions();
         
@@ -701,41 +620,20 @@ var ClippedCanvas = function($container, options) {
         };
     }// getSizeToCover()
 
-    function create_svg_mask() {
-
-        var inlineOpener = '<svg><defs><clipPath id="'+ CC.options.cssMaskID +'" clipPathUnits="objectBoundingBox">',
-            inlineCloser = '</clipPath></defs></svg>';
-//console.log('SHAPE CSS MASK DEFS', CC.SHAPE.clipPath);
-        CC.$object.inlineClippingMask = jQuery(inlineOpener + CC.SHAPE.clipPath.inline + inlineCloser);
-        CC.$object.container.append(CC.$object.inlineClippingMask);
-
-        CC.$object.shapeCanvas.css({
-            'clip-path' : 'url(#'+ CC.options.cssMaskID +')',
-            '-webkit-clip-path' : CC.SHAPE.clipPath.css
-        });
-
-    }// create_svg_mask()
-
     function init() {
 
 
-        //console.log('ClippedCanvas', CC);
+        console.log('ClippedCanvas', CC);
 
         createCanvas();
 
         jQuery(window).load(function() {
-            ////console.log('window loaded');
+            //console.log('window loaded');
             jQuery(window).trigger('resize');
         }).resize(function() {
             get_sizes();
             CC.redrawShape = true;
             //CC.draw();
-        }).scroll(function() {
-            if(jQuery(window).scrollTop() > CC.$object.container.height()) {
-                CC.stopVideo();
-            } else {
-                if(!CC.PLAY) CC.playVideo();
-            }
         });
 
     }// init()
