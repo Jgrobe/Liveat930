@@ -160,6 +160,11 @@ $posterWidth: 84vw;
     }// .hover-layer
 
     &.model-layer {
+      &:before {
+        content: '';
+        display: block;
+        padding-top: 100%;
+      }
       svg {display: none;}// thats only clips/masks & gradientmaps
     }// .model-layer
     &.copy-layer {

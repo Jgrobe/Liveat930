@@ -1392,6 +1392,10 @@ input {
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
     -ms-backface-visibility: hidden; }
+  .poster .layer.model-layer:before {
+    content: '';
+    display: block;
+    padding-top: 100%; }
   .poster .layer.model-layer svg {
     display: none; }
   .poster .layer.copy-layer {
@@ -1635,16 +1639,12 @@ input {
   opacity: .9;
   background: url("assets/images/textures/1b.jpg") no-repeat center;
   background-size: cover; }
-.poster.circle .layer.model-layer:before {
-  content: '';
-  display: block;
-  padding-top: 100%; }
 .poster.circle .layer .model-container {
   position: absolute;
-  width: 80%;
-  height: 80%;
+  width: 90%;
+  height: 90%;
   top: -5%;
-  left: 10%; }
+  left: 5%; }
 .poster.circle .artist:hover .label {
   background: black; }
 .poster.circle .btn-play-episode {
