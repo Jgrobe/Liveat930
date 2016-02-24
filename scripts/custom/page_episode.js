@@ -22,6 +22,8 @@ SQSP.functions.initPage = function() {
     //    }
     //});
 
+    console.log('start canvas');
+
     SQSP.instances.CanvasPainter = new CanvasPainter($modelContainer, {
         autoPlay: true,
         //autoStop: true,
