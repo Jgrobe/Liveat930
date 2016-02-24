@@ -36,14 +36,13 @@ SQSP.functions.initPage = function() {
         modelClass : ['clipper-model'],
         shapeClass: ['prllx-custom'],
         shapeAttr: {'data-prllx' : '.8'},
-        shape: $modelContainer.attr('data-shape'),
         onCreateComplete: function(Painter) {
 
             console.log('canvas createcomplete',Painter);
 
 
             var testClipper = new SVGClipper(Painter.$object.layerCanvas, {
-                shape:'general',
+                shape: Painter.$object.container.attr('data-shape'),
                 maskID: 'heroClipper',
                 onInit:function(Clip){
                     console.log('svgclipper oninit',Clip);
