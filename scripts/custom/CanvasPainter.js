@@ -131,9 +131,14 @@ var CanvasPainter = function($container, options) {
 
     if(CP.options.autoInit) CP.init();
 
+    CP.isTextureReady = false;
     CP.textureImg = new Image();
     var imgsrc = location.origin+'/assets/images/textures/texture-halftone-compressor-2-70k.jpg';
     console.log('the txture img src', CP.textureImg.src);
+    CP.textureImg.onload = function() {
+        CP.PATTERN = CP.DOM.layerCanvas.context.createPattern(CP.textureImg,"repeat");
+        CP.isTextureReady = true;
+    };
     CP.textureImg.src = imgsrc;
 
     function createCanvas() {
@@ -163,8 +168,6 @@ var CanvasPainter = function($container, options) {
                 object : CP.$object.model.get(0)
             }
         };
-
-        CP.PATTERN = CP.DOM.layerCanvas.context.createPattern(CP.textureImg,"repeat");
 
         CP.DOM.model.object.load();
 
@@ -252,7 +255,7 @@ var CanvasPainter = function($container, options) {
     //}// colorize()
 
     function texturize(x, y, width, height) {
-        return false;
+        if(!CP.isTextureReady) return false;
         //CP.DOM.layerCanvas.context.globalCompositeOperation = 'multiply';// multiply
         CP.DOM.layerCanvas.context.rect(x, y, width, height);
         CP.DOM.layerCanvas.context.fillStyle = CP.PATTERN;

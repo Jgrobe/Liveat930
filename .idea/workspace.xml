@@ -73,8 +73,8 @@
               <file leaf-file-name="CanvasPainter.js" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/scripts/custom/CanvasPainter.js">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.6198347" vertical-offset="1380" max-vertical-offset="5010">
-                      <caret line="137" column="0" selection-start-line="137" selection-start-column="0" selection-end-line="137" selection-end-column="0" />
+                    <state vertical-scroll-proportion="0.34710744" vertical-offset="3477" max-vertical-offset="5055">
+                      <caret line="257" column="31" selection-start-line="257" selection-start-column="31" selection-end-line="257" selection-end-column="31" />
                       <folding>
                         <element signature="n#!!doc" expanded="true" />
                       </folding>
@@ -1279,8 +1279,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/custom/CanvasPainter.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6198347" vertical-offset="1380" max-vertical-offset="5010">
-          <caret line="137" column="0" selection-start-line="137" selection-start-column="0" selection-end-line="137" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.34710744" vertical-offset="3477" max-vertical-offset="5055">
+          <caret line="257" column="31" selection-start-line="257" selection-start-column="31" selection-end-line="257" selection-end-column="31" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
