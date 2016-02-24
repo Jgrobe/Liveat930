@@ -121,7 +121,7 @@
                         </div><!-- .section-head -->
 
                         <div class="excerpt-container top-spaced">
-                            <div class="image pattern imgfill" style="background-image:url('assets/images/pattern-logo-bg.jpg');"></div>
+                            <div class="image pattern imgfill" style="background-image:url('{website.baseUrl}assets/images/pattern-logo-bg.jpg');"></div>
                             <div class="image post-image imgfill" style="background-image:url('{assetUrl}}');"></div>
                             <div class="text-layer">
                                 <div class="section-head excerpt-head">
