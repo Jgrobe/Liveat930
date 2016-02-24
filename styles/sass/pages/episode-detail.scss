@@ -1,0 +1,146 @@
+.episodes-landing {
+
+  &.episode-detail {
+    .small {
+      position: absolute;
+      text-align: right;
+      width: 100%;
+    }
+
+    .episodes-landing-geo {
+      width: 40vw;
+      height: 40vw;
+      top: 50%;
+      left: 50%;
+      @include transform(translateX(-50%) translateY(-50%));
+    }// .episode-landing-geo
+  }// .episode-detail
+
+  .cta-play-episode {
+    margin-left: 4vw;
+    @include shadow(0 0 5vw rgba(0,0,0,.3));
+  }// .cta-play-episode
+
+  .text-layer {
+    position: absolute;
+    top: 65vh;
+    left: 39vw;
+    width: 40vw;
+    color: #000000;
+
+//    span {
+//      font-family: $gotham;
+//      font-size: 0.8vw;
+//    }// p
+//    p {
+//      margin: 0;
+//      letter-spacing: 0.3vw;
+//      font-size: 2.1vw;
+//    }// p
+  }
+
+  .sharebox {
+    margin: 0;
+    position: absolute;
+    top: 100%;
+    transform: translateY(-2.25vw);
+
+    .label {
+      color: white;
+      margin-top: 1.25vw;
+    }
+  }
+
+  @include breakpoint(mobile) {
+
+    &.episode-detail {
+      @include flexbox();
+      @include flex-value(direction, column);
+      padding: 0 $MOBILE_MARGIN;
+      margin: 0 auto;
+
+      .episodes-landing-head {
+        position: static;
+        width: 100%;
+        margin: auto 0 0 0;
+        text-align: right;
+        white-space: normal;
+        @include transform(none);
+
+        h1 {text-align: center;}
+
+        .small {display: none;}
+      }
+      .text-layer {
+        position: relative;// necessary for .sharebox positioning
+        top:0;
+        left:0;
+        width: 100%;
+        margin: 0 auto auto auto;
+        font-size: 15px;
+        line-height: 26px;
+        letter-spacing: .02em;
+        padding: 8vh 40px;
+      }
+
+      .cta-play-episode {
+        margin: 0 auto;
+        font-size: 11px;
+        padding: 0 35px 0 105px;
+        line-height: 70px;
+        z-index: 1;
+        @include transform(translateY(50%));
+
+        &:before {
+          width: 70px;
+          height: 70px;
+        }
+      }// .cta-play-episode
+
+      .episodes-landing-geo {
+        width: 110vw;
+        height: 110vw;
+      }// .episodes-landing-geo
+
+      .sharebox {
+        @include transform(translateY(-19px));
+
+        .label {
+          font-size: 10px;
+          line-height: 100%;
+//          letter-spacing: .06em;
+        }
+      }
+    }// .episode-detail
+
+  }// BP MOBILE
+}// .episodes-landing
+
+.cta-play-episode {
+  $size : get_relative_units(178);
+  $padd: get_relative_units(80);
+//  @include cta(black, white);
+  font-family: $gotham;
+  line-height: $size;
+  font-size: get_relative_units(32);
+  letter-spacing: .1em;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 0 $padd 0 calc(~"#{$size} + #{$padd}");
+  display: inline-block;
+  background: black;
+  position: relative;
+
+  &:before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top:0;
+    left:0;
+    width: $size;
+    height: $size;
+    background: white url('assets/images/icon-play.svg') no-repeat center center;
+    background-size: 13%;
+  }// before
+
+}// .play-episode

@@ -1,0 +1,109 @@
+.post-landing {
+  @include landing;
+  height: 80vh;
+  @include flexbox();
+  @include prefixed(justify-content, center);
+  @include prefixed(align-items, center);
+  h1 {
+    margin: 0;
+//    font-size: 7vw;
+//    letter-spacing: 0.5vw;
+  }
+}
+
+.post-landing-cta {
+  @include cta(#000, #fff);
+  position: absolute;
+  bottom: -3vh;
+  right: 20vw;
+}
+
+.post-content {
+  width: 80vw;
+  max-width: 800px;
+  margin: 20vh auto;
+  font-size: 1vw;
+  p {
+    line-height: 1.75em;
+    margin-bottom: 2.5vh;
+  }
+}
+
+.sharebox {
+  margin-bottom: 20vh;
+  ul {
+    padding: 0;
+//    margin: 0;
+    @include flexbox();
+    @include prefixed(justify-content, center);
+    margin: 0 auto;
+    li {
+      padding: 0;
+      list-style: none;
+      margin: 0 0.75vw;
+      a {
+        display: block;
+        height: 3vw;
+        width: 3vw;
+        background-color: #000;
+        background-repeat: no-repeat;
+        background-size: 40%;
+        background-position: center center;
+        position: relative;
+        &.like {
+          background-image: url('assets/images/icon-like.svg');
+        }
+        &.share {
+          background-image: url('assets/images/icon-share.svg');
+        }
+        .badge {
+          height: 1vw;
+          width: 1vw;
+          border-radius: 100%;
+          background: #fff;
+          position: absolute;
+          top: 0;
+          left: 0;
+          @include transform(translateX(-50%) translateY(-50%));
+          font-size: 0.6vw;
+          font-weight: 500;
+          @include flexbox();
+          @include prefixed(justify-content, center);
+          @include prefixed(align-items, center);
+          box-shadow: 0 1px 3px rgba(0,0,0,0.25);
+          color: #000;
+        }
+      }
+    }
+  }
+  span {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 0.8vw;
+    font-weight: 700;
+    margin-top: 3vh;
+    letter-spacing: .06em;
+  }
+
+  @include breakpoint(mobile) {
+
+    ul {
+      li {
+        a {
+          width: 38px;
+          height: 38px;
+
+          .badge {
+            font-size: 10px;
+            width: 15px;
+            height:15px;
+          }
+        }
+      }
+    }
+  }// BP MOBILE
+
+  span { font-size: 9px;}
+}// .sharebox

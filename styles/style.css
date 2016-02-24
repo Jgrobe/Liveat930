@@ -101,7 +101,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Gotham A", "Gotham B";
-  }
+  visibility: hidden;
+  opacity: 0; }
 
 .page {
   background: url("assets/images/paper-texture.jpg"); }
@@ -484,32 +485,32 @@ input {
           height: 1.21528vw;
           background-repeat: no-repeat;
           display: block; }
-  .homepage .header .logo {
+  .home .header .logo {
     display: none; }
-  .homepage .header .navigation {
+  .home .header .navigation {
     color: black; }
-    .homepage .header .navigation .menu-item:after {
+    .home .header .navigation .menu-item:after {
       background: black; }
-    .homepage .header .navigation .search svg * {
+    .home .header .navigation .search svg * {
       fill: black; }
-    .homepage .header .navigation .search .search-field {
+    .home .header .navigation .search .search-field {
       color: black;
       border-color: black; }
-      .homepage .header .navigation .search .search-field::-webkit-input-placeholder {
+      .home .header .navigation .search .search-field::-webkit-input-placeholder {
         /* WebKit, Blink, Edge */
         color: black;
         opacity: 1; }
-      .homepage .header .navigation .search .search-field:-moz-placeholder {
+      .home .header .navigation .search .search-field:-moz-placeholder {
         /* Mozilla Firefox 4 to 18 */
         color: black; }
-      .homepage .header .navigation .search .search-field::-moz-placeholder {
+      .home .header .navigation .search .search-field::-moz-placeholder {
         /* Mozilla Firefox 19+ */
         color: black;
         opacity: 1; }
-      .homepage .header .navigation .search .search-field:-ms-input-placeholder {
+      .home .header .navigation .search .search-field:-ms-input-placeholder {
         /* Internet Explorer 10-11 */
         color: black; }
-      .homepage .header .navigation .search .search-field:placeholder-shown {
+      .home .header .navigation .search .search-field:placeholder-shown {
         /* Standard (https://drafts.csswg.org/selectors-4/#placeholder) */
         color: black; }
   @media only screen and (max-width: 750px) {
@@ -540,7 +541,7 @@ input {
     .sticky-header .logo svg {
       width: 62px;
       height: 55px; }
-    .homepage .sticky-header .logo {
+    .home .sticky-header .logo {
       display: none; }
   .sticky-header .burger {
     position: absolute;
@@ -686,22 +687,10 @@ input {
   color: #fff;
   text-align: center;
   z-index: 1;
-  overflow: hidden; }
-  .footer:before {
-    content: '';
-    pointer-events: none;
-    display: block;
-    position: fixed;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #000;
-    background-image: url("assets/images/footer.jpg");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed; }
+  overflow: hidden;
+  background: url("assets/images/footer.jpg") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed; }
   .footer p {
     font-size: 1.18056vw;
     line-height: 1.66667vw;
@@ -789,7 +778,8 @@ input {
         margin: 2vw auto 10vw auto; } }
 
 .hosted-by-logo {
-  background: url("assets/images/hosted-by.svg") no-repeat center; background-size: contain;
+  background: url("assets/images/hosted-by.svg") no-repeat center;
+  background-size: contain;
   width: 80%;
   height: 2.4vw;
   margin: 0 auto; }
@@ -981,7 +971,7 @@ input {
   margin-bottom: 10.41667vw;
   position: relative;
   text-align: center; }
-  .homepage .upcoming {
+  .home .upcoming {
     margin-top: 10.41667vw-10; }
   .upcoming .upcoming-cta {
     position: absolute;
@@ -999,7 +989,7 @@ input {
     .upcoming {
       text-align: center;
       margin-bottom: 10vH; }
-      .homepage .upcoming {
+      .home .upcoming {
         margin-top: 10vH; }
       .upcoming .upcoming-sub {
         margin: auto;
@@ -1276,12 +1266,19 @@ input {
     height: 102%;
     visibility: hidden;
     opacity: 0;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
     -ms-backface-visibility: hidden; }
   .posters .poster {
     margin: 8vw auto 0 auto;
     max-width: 1350px; }
+  .posters.hover-on * {
+    cursor: none; }
   .posters.hover-on .posters-hover-bg {
     visibility: visible;
     opacity: 1; }
@@ -1299,7 +1296,8 @@ input {
 
 .poster {
   display: block;
-  background: url("assets/images/textures/paper.jpg") no-repeat center; background-size: cover;
+  background: url("assets/images/textures/paper.jpg") no-repeat center;
+  background-size: cover;
   position: relative;
   background-color: white;
   -webkit-box-shadow: 0.01vw 0.01vw 3vw rgba(0, 0, 0, 0.2);
@@ -1346,6 +1344,12 @@ input {
     -ms-direction: column;
     direction: column;
     overflow: hidden; }
+  .poster .poster-part, .poster .layer {
+    -webkit-transition: opacity 0.3s, visibility 0.3s;
+    -moz-transition: opacity 0.3s, visibility 0.3s;
+    -ms-transition: opacity 0.3s, visibility 0.3s;
+    -o-transition: opacity 0.3s, visibility 0.3s;
+    transition: opacity 0.3s, visibility 0.3s; }
   .poster .poster-part.content {
     -webkit-box-grow: 1;
     -moz-box-grow: 1;
@@ -1392,7 +1396,12 @@ input {
     z-index: 1;
     color: white; }
   .poster .layer .half {
-    height: 50%; }
+    height: 50%;
+    -webkit-transition: opacity 0.3s, visiblity 0.3s;
+    -moz-transition: opacity 0.3s, visiblity 0.3s;
+    -ms-transition: opacity 0.3s, visiblity 0.3s;
+    -o-transition: opacity 0.3s, visiblity 0.3s;
+    transition: opacity 0.3s, visiblity 0.3s; }
   .poster .lineup-container {
     position: relative; }
     .poster .lineup-container:after {
@@ -1403,7 +1412,12 @@ input {
       left: 5.20833vw;
       width: calc(~"100% - 5.20833vw/0.5");
       height: 0.5vw;
-      background: white; }
+      background: white;
+      -webkit-transition: 0.3s;
+      -moz-transition: 0.3s;
+      -ms-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s; }
   .poster .ep-headline {
     margin-top: 5.20833vw;
     line-height: 9.375vw;
@@ -1411,21 +1425,40 @@ input {
   .poster .ep-date {
     color: black; }
   .poster .ep-subheadline {
-    display: none; }
+    display: none;
+    -webkit-transition: opacity 0.3s;
+    -moz-transition: opacity 0.3s;
+    -ms-transition: opacity 0.3s;
+    -o-transition: opacity 0.3s;
+    transition: opacity 0.3s; }
   .poster .ep-lineup {
     text-align: justify;
     position: relative;
     word-break: break-all; }
+    .poster .ep-lineup > * {
+      -webkit-transition: opacity 0.3s, color 0.3s;
+      -moz-transition: opacity 0.3s, color 0.3s;
+      -ms-transition: opacity 0.3s, color 0.3s;
+      -o-transition: opacity 0.3s, color 0.3s;
+      transition: opacity 0.3s, color 0.3s; }
     .poster .ep-lineup .divider {
       display: inline-block;
       width: 0;
-      pointer-events: none; }
+      pointer-events: none;
+      position: relative;
+      z-index: 1; }
     .poster .ep-lineup .artist:before {
       content: '';
       display: inline-block;
       padding-left: 1vw; }
     .poster .ep-lineup .artist:first-child:before {
       content: none; }
+    .poster .ep-lineup .artist .label {
+      -webkit-transition: background 0.3s;
+      -moz-transition: background 0.3s;
+      -ms-transition: background 0.3s;
+      -o-transition: background 0.3s;
+      transition: background 0.3s; }
     .poster .ep-lineup .artist .description {
       visibility: hidden;
       opacity: 0;
@@ -1477,6 +1510,32 @@ input {
       margin: auto; }
     .poster .hosted-logo svg * {
       fill: black; }
+  .poster .btn-play-episode {
+    font-family: "United Sans", script;
+    text-rendering: optimizeLegibility;
+    font-weight: normal;
+    text-transform: uppercase;
+    position: absolute;
+    right: -2%;
+    top: 35%;
+    font-size: 2.56944vw;
+    letter-spacing: .1em;
+    background: black;
+    text-transform: uppercase;
+    padding: 1.38889vw 2.43056vw;
+    color: white;
+    z-index: 1;
+    -webkit-transition: background 0.3s, opacity 0.3s, visibility 0.3s;
+    -moz-transition: background 0.3s, opacity 0.3s, visibility 0.3s;
+    -ms-transition: background 0.3s, opacity 0.3s, visibility 0.3s;
+    -o-transition: background 0.3s, opacity 0.3s, visibility 0.3s;
+    transition: background 0.3s, opacity 0.3s, visibility 0.3s; }
+    .poster .btn-play-episode:hover {
+      background: #2F2F2F; }
+    .poster .btn-play-episode.scrolling {
+      position: fixed; }
+    .episodes-overview-item .poster .btn-play-episode {
+      display: none; }
   .poster.hover-on .layer.hover-layer {
     visibility: visible;
     opacity: 1; }
@@ -1496,6 +1555,8 @@ input {
     opacity: 0; }
   .poster.hover-on .lineup-container:after {
     background: black; }
+  .poster.hover-on .ep-lineup .artist:hover .label {
+    background: none; }
   .poster.hover-on .ep-lineup > * {
     visibility: visible;
     opacity: 0.1; }
@@ -1505,32 +1566,41 @@ input {
       .poster.hover-on .ep-lineup > *.hovered .description {
         visibility: visible;
         opacity: 1; }
-  .poster .btn-play-episode {
-    font-family: "United Sans", script;
-    text-rendering: optimizeLegibility;
-    font-weight: normal;
-    text-transform: uppercase;
-    position: absolute;
-    right: -2%;
-    top: 35%;
-    font-size: 2.56944vw;
-    letter-spacing: .1em;
-    background: black;
-    text-transform: uppercase;
-    padding: 1.38889vw 2.43056vw;
-    color: white;
-    z-index: 1;
-    -webkit-transition: background 0.3s;
-    -moz-transition: background 0.3s;
-    -ms-transition: background 0.3s;
-    -o-transition: background 0.3s;
-    transition: background 0.3s; }
-    .poster .btn-play-episode:hover {
-      background: #2F2F2F; }
-    .poster .btn-play-episode.scrolling {
-      position: fixed; }
-    .episodes-overview-item .poster .btn-play-episode {
-      display: none; }
+  .poster.hover-on .btn-play-episode {
+    visibility: hidden;
+    opacity: 0; }
+  @media only screen and (min-width: 1450px) {
+    .poster .padded {
+      padding: 100px;
+      padding-bottom: 138px; }
+    .poster .icon.logo svg {
+      width: 264px;
+      height: 142px; }
+    .poster .icon.episode svg {
+      width: 133px;
+      height: 115px; }
+    .poster .icon.episode .icon-label {
+      top: 10px;
+      font-size: 41px; }
+    .poster .ep-headline {
+      margin-top: 65px;
+      font-size: 200px;
+      line-height: 200px; }
+    .poster .ep-date {
+      font-size: 105px;
+      line-height: 105px; }
+    .poster .ep-lineup {
+      font-size: 104px;
+      line-height: 104px;
+      padding-top: 60px; }
+      .poster .ep-lineup .description {
+        font-size: 46px;
+        line-height: 46px; }
+    .poster .lineup-container:after {
+      bottom: calc(~"100px / 2");
+      left: 100px;
+      width: calc(~"100% - 200px");
+      height: 0.2vw; } }
   @media only screen and (max-width: 750px) {
     .poster .l-headline, .poster .episodes-landing-head h1, .episodes-landing-head .poster h1 {
       font-size: 10.83333vw;
@@ -1551,20 +1621,26 @@ input {
   content: '';
   display: block;
   left: -2%;
-  background: url("assets/images/textures/texture2.png") no-repeat center; background-size: cover; }
+  background: url("assets/images/textures/texture2.png") no-repeat center;
+  background-size: cover; }
 .poster.circle .layer.bg-layer .half:last-child {
-  background: url("assets/images/textures/1b.jpg") no-repeat center; background-size: cover; }
+  opacity: .9;
+  background: url("assets/images/textures/1b.jpg") no-repeat center;
+  background-size: cover; }
 .poster.circle .layer.model-layer {
   position: absolute;
   top: 5%;
   width: 80%;
   left: 10%;
   border-radius: 100%;
-  background: url("assets/images/textures/circle.jpg") no-repeat center; background-size: cover; }
+  background: url("assets/images/textures/circle.jpg") no-repeat center;
+  background-size: cover; }
   .poster.circle .layer.model-layer:before {
     content: '';
     display: block;
     padding-top: 100%; }
+.poster.circle .artist:hover .label {
+  background: black; }
 .poster.circle .btn-play-episode {
   background: white;
   color: black; }
@@ -1578,20 +1654,26 @@ input {
     display: block;
     left: -2%;
     top: -3%;
-    background: url("assets/images/textures/2a.png") no-repeat center; background-size: cover;
+    background: url("assets/images/textures/2a.png") no-repeat center;
+    background-size: cover;
     opacity: .5; }
+.poster.fullTriangle .layer.bg-layer .half:last-child {
+  background: rgba(0, 0, 0, 0.1); }
 .poster.fullTriangle .layer.model-layer {
   position: absolute;
   top: -10%;
   width: 110%;
   left: -5%;
-  background: url("assets/images/textures/fullTriangle.png") no-repeat center; background-size: contain; }
+  background: url("assets/images/textures/fullTriangle.png") no-repeat center;
+  background-size: cover; }
   .poster.fullTriangle .layer.model-layer:before {
     content: '';
     display: block;
     padding-top: 100%; }
 .poster.fullTriangle .lineup-container:after {
   background: black; }
+.poster.fullTriangle .artist:hover .label {
+  background: white; }
 .poster.fullTriangle .ep-lineup {
   color: black; }
 
@@ -1666,7 +1748,8 @@ input {
     margin-left: 12.5vw;
     width: 87.5vw;
     color: white;
-    background: rgba(0, 0, 0, 0.55) url("assets/images/halftone.jpg") no-repeat center center; background-size: cover;
+    background: rgba(0, 0, 0, 0.55) url("assets/images/halftone.jpg") no-repeat center;
+    background-size: cover;
     background-blend-mode: overlay; }
     .text-insert-container .text-layer .section-head {
       padding: 0;
@@ -2134,10 +2217,15 @@ input {
 
 #fieldTracker {
   position: fixed;
-  z-index: 1;
+  z-index: 8;
   pointer-events: none;
   visibility: hidden;
   opacity: 0;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
   -webkit-transition: opacity 0.3s, visibility 0.3s;
   -moz-transition: opacity 0.3s, visibility 0.3s;
   -ms-transition: opacity 0.3s, visibility 0.3s;
@@ -2146,6 +2234,9 @@ input {
   #fieldTracker.active {
     visibility: visible;
     opacity: 1; }
+  #fieldTracker svg {
+    width: 50px;
+    height: 50px; }
   @media only screen and (max-width: 750px) {
     #fieldTracker {
       display: none; } }
@@ -2158,27 +2249,24 @@ input {
   text-rendering: optimizeLegibility;
   font-weight: normal;
   text-transform: uppercase;
-  position: relative;
-  z-index: 1; }
+  position: relative; }
   .episodes-landing .mask {
-    overflow: hidden;
-    z-index: -1; }
+    overflow: hidden; }
   .episodes-landing .landing-bg {
     display: block;
     pointer-events: none;
-    position: fixed;
-    z-index: -1;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background-size: cover;
-    background-position: center center;
-    background-attachment: fixed; }
+    background-position: center center; }
     .episodes-landing .landing-bg.video-bg:after {
       content: '';
       display: block;
-      background: rgba(0, 0, 0, 0.75) url("assets/images/halftone-pattern2.png") no-repeat center; background-size: cover;
+      background: rgba(0, 0, 0, 0.75) url("assets/images/halftone-pattern2.png") no-repeat center;
+      background-size: cover;
       mix-blend-mode: overlay; }
   .episodes-landing .landing-cta {
     position: absolute;
@@ -2686,7 +2774,8 @@ a.episodes-landing-cta {
     left: 0;
     width: 6.18056vw;
     height: 6.18056vw;
-    background: white url("assets/images/icon-play.svg") no-repeat center center; background-size: 13%; }
+    background: white url("assets/images/icon-play.svg") no-repeat center center;
+    background-size: 13%; }
 
 .host-landing {
   width: 100vw;
@@ -2697,7 +2786,6 @@ a.episodes-landing-cta {
   font-weight: normal;
   text-transform: uppercase;
   position: relative;
-  z-index: 1;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -2705,24 +2793,22 @@ a.episodes-landing-cta {
   display: flex;
   text-align: center; }
   .host-landing .mask {
-    overflow: hidden;
-    z-index: -1; }
+    overflow: hidden; }
   .host-landing .landing-bg {
     display: block;
     pointer-events: none;
-    position: fixed;
-    z-index: -1;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background-size: cover;
-    background-position: center center;
-    background-attachment: fixed; }
+    background-position: center center; }
     .host-landing .landing-bg.video-bg:after {
       content: '';
       display: block;
-      background: rgba(0, 0, 0, 0.75) url("assets/images/halftone-pattern2.png") no-repeat center; background-size: cover;
+      background: rgba(0, 0, 0, 0.75) url("assets/images/halftone-pattern2.png") no-repeat center;
+      background-size: cover;
       mix-blend-mode: overlay; }
   .host-landing:before {
     background-image: url("assets/images/the-host-title.jpg"); }
@@ -2795,7 +2881,6 @@ a.episodes-landing-cta {
   font-weight: normal;
   text-transform: uppercase;
   position: relative;
-  z-index: 1;
   height: 80vh;
   display: -webkit-box;
   display: -moz-box;
@@ -2813,24 +2898,22 @@ a.episodes-landing-cta {
   -o-align-items: center;
   align-items: center; }
   .merch-landing .mask {
-    overflow: hidden;
-    z-index: -1; }
+    overflow: hidden; }
   .merch-landing .landing-bg {
     display: block;
     pointer-events: none;
-    position: fixed;
-    z-index: -1;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background-size: cover;
-    background-position: center center;
-    background-attachment: fixed; }
+    background-position: center center; }
     .merch-landing .landing-bg.video-bg:after {
       content: '';
       display: block;
-      background: rgba(0, 0, 0, 0.75) url("assets/images/halftone-pattern2.png") no-repeat center; background-size: cover;
+      background: rgba(0, 0, 0, 0.75) url("assets/images/halftone-pattern2.png") no-repeat center;
+      background-size: cover;
       mix-blend-mode: overlay; }
   .merch-landing h1 {
     text-align: center; }
@@ -2960,7 +3043,6 @@ a.episodes-landing-cta {
   font-weight: normal;
   text-transform: uppercase;
   position: relative;
-  z-index: 1;
   height: 80vh;
   display: -webkit-box;
   display: -moz-box;
@@ -2978,24 +3060,22 @@ a.episodes-landing-cta {
   -o-align-items: center;
   align-items: center; }
   .post-landing .mask {
-    overflow: hidden;
-    z-index: -1; }
+    overflow: hidden; }
   .post-landing .landing-bg {
     display: block;
     pointer-events: none;
-    position: fixed;
-    z-index: -1;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background-size: cover;
-    background-position: center center;
-    background-attachment: fixed; }
+    background-position: center center; }
     .post-landing .landing-bg.video-bg:after {
       content: '';
       display: block;
-      background: rgba(0, 0, 0, 0.75) url("assets/images/halftone-pattern2.png") no-repeat center; background-size: cover;
+      background: rgba(0, 0, 0, 0.75) url("assets/images/halftone-pattern2.png") no-repeat center;
+      background-size: cover;
       mix-blend-mode: overlay; }
   .post-landing h1 {
     margin: 0; }
@@ -3123,31 +3203,28 @@ a.episodes-landing-cta {
   font-weight: normal;
   text-transform: uppercase;
   position: relative;
-  z-index: 1;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex; }
   .show-landing .mask {
-    overflow: hidden;
-    z-index: -1; }
+    overflow: hidden; }
   .show-landing .landing-bg {
     display: block;
     pointer-events: none;
-    position: fixed;
-    z-index: -1;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background-size: cover;
-    background-position: center center;
-    background-attachment: fixed; }
+    background-position: center center; }
     .show-landing .landing-bg.video-bg:after {
       content: '';
       display: block;
-      background: rgba(0, 0, 0, 0.75) url("assets/images/halftone-pattern2.png") no-repeat center; background-size: cover;
+      background: rgba(0, 0, 0, 0.75) url("assets/images/halftone-pattern2.png") no-repeat center;
+      background-size: cover;
       mix-blend-mode: overlay; }
 
 .show-content {
@@ -3287,27 +3364,24 @@ a.episodes-landing-cta {
   text-rendering: optimizeLegibility;
   font-weight: normal;
   text-transform: uppercase;
-  position: relative;
-  z-index: 1; }
+  position: relative; }
   .video-overview-landing .mask {
-    overflow: hidden;
-    z-index: -1; }
+    overflow: hidden; }
   .video-overview-landing .landing-bg {
     display: block;
     pointer-events: none;
-    position: fixed;
-    z-index: -1;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background-size: cover;
-    background-position: center center;
-    background-attachment: fixed; }
+    background-position: center center; }
     .video-overview-landing .landing-bg.video-bg:after {
       content: '';
       display: block;
-      background: rgba(0, 0, 0, 0.75) url("assets/images/halftone-pattern2.png") no-repeat center; background-size: cover;
+      background: rgba(0, 0, 0, 0.75) url("assets/images/halftone-pattern2.png") no-repeat center;
+      background-size: cover;
       mix-blend-mode: overlay; }
   .video-overview-landing h1 {
     margin: 0 0 5vh 0; }

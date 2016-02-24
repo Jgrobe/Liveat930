@@ -1,0 +1,105 @@
+.search-table {
+
+  .part {
+
+    &.search-bar {
+      padding: 3vw 0;
+      @include relative_units(padding-left, 550, vw, 2880);
+      background: black;
+    }
+
+    &.info {
+      @include relative_units(font-size, 28);
+      letter-spacing: .02em;
+      background: #ececec;
+      padding: 1.75vw 0;
+      color: #adadad;
+      box-sizing: content-box;
+      .result-sized { @include relative_units(padding-left, 130);}
+    }
+
+    &.results {
+      overflow: scroll;
+      @include flex-value(grow, 1);
+
+      .results-wrapper{background: url('assets/images/paper-texture.jpg');}
+
+      .result-sized {
+        position: relative;
+        @include relative_units(padding, 130);
+
+        &:after {
+          content: '';
+          display: block;
+          position: absolute;
+          top:100%;
+          left: 0;
+          width: 100%;
+          height: 1px;
+          background: #e8e8e8;
+        }
+      }// .result-sized
+    }// .results
+
+  }// part
+
+  .result {
+    position: relative;
+    color: black;
+
+    @extend .s-headline;
+    @include relative_units(font-size, 94);
+    @include relative_units(line-height, 94);
+    letter-spacing: .08em;
+
+    .title {
+      @include relative_units(font-size, 48);
+      @include relative_units(margin-left, 60);
+      vertical-align: top;
+    }
+
+    .square-btn {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+      background: transparent;
+
+      @include svg-content() {
+        fill: none;
+        stroke: black;
+      }
+    }
+
+    .hover-container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 0;
+      background-color: rgba(255,100,120,1);
+      background-blend-mode: multiply;
+    }
+
+    &.hovered {
+      color: white;
+      .hover-container {height: 100%;}
+      .square-btn { background: white; }
+    }
+
+  }// .result
+
+}// .search-overlay
+
+.result-sized {
+  @include relative_units(width, 2550);
+  margin: 0 auto;
+}
+
+.fixed-nav {
+  position:fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index:99;
+}

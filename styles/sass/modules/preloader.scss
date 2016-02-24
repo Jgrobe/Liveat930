@@ -1,0 +1,15 @@
+#preloader {
+  position: fixed;
+  top: calc(~"50vh - 2px");
+  left: 45vw;
+  width: 10vw;
+  height: 4px;
+  border-radius: 4px;
+  overflow: hidden;
+
+  .filler {
+    @extend .fill-parent;
+    width: 0;
+    background: rgba(0,0,0,.6);
+  }
+}

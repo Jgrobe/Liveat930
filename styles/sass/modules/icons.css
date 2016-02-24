@@ -1,0 +1,21 @@
+.icon-eye, .icon-browser, .icon-browser-white, .icon-arrow, .icon-arrow-reverse, .icon-refresh {
+  background-size: 1.5vw;
+  background-repeat: no-repeat;
+  background-position: 1.5vw 50%; }
+
+.icon-browser {
+  background-image: url("assets/images/browser.svg"); }
+
+.icon-browser-white {
+  background-image: url("assets/images/browser_white.svg"); }
+
+.icon-arrow {
+  background-image: url("assets/images/icon-arrow.svg"); }
+
+.icon-arrow-reverse {
+  background-image: url("assets/images/icon-arrow-reverse.svg"); }
+
+.icon-refresh {
+  background-image: url("assets/images/icon-load.svg"); }
+
+/*# sourceMappingURL=icons.css.map */

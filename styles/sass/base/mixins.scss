@@ -1,0 +1,194 @@
+@mixin breakpoint($point) {
+  @if $point == mobile {
+    @media only screen
+    and (max-width : #{$BPMOBILE}px) {
+      @content;
+    }
+  }
+
+  @if $point == tablet {
+    @media only screen
+    and (max-width : 1024px) {
+      @content;
+    }
+  }
+
+  @if $point == overWrapper {
+    @media only screen
+    and (min-width : 1450px) {
+      @content;
+    }
+  }// overWrapper
+
+}// breakpoint
+
+@mixin cta ($maincolor, $offcolor) {
+  background-color: $maincolor;
+  font-family: $gotham;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 500;
+  color: $offcolor;
+  font-size: get_relative_units(20);
+  letter-spacing: 0.1em;
+  padding: 1.4vw 1.8vw 1.3vw 4vw;
+
+  @include breakpoint(mobile) {
+    font-size: 10px;
+    line-height: 100%;
+    padding: 24px 24px 24px 64px;
+    background-size: 20px;
+    background-position-x: 23px;
+  }// BP MOBILE
+}// cta
+
+@mixin halftone($color:rgba(0,0,0,.55), $blendmode:overlay) {
+  background: $color url('assets/images/halftone.jpg') no-repeat center;
+  background-size: cover;
+  background-blend-mode: $blendmode;
+}
+
+@mixin landing {
+  width: 100vw;
+  height: 100vh;
+  color: #fff;
+  font-family: "United Sans", script;
+  text-rendering: optimizeLegibility;
+  font-weight: normal;
+  text-transform: uppercase;
+  position: relative;
+//  z-index: 1;
+
+  .mask {
+    overflow: hidden;
+//    z-index: -1;
+  }
+
+  .landing-bg {
+//    content: '';
+    display: block;
+    pointer-events: none;
+    position: absolute;
+//    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+//    background-attachment: fixed;
+
+    &.video-bg {
+      &:after {
+        content: '';
+        display: block;
+        @extend .fill-parent;
+        background: rgba(0,0,0,.75) url('assets/images/halftone-pattern2.png') no-repeat center;
+        background-size: cover;
+        mix-blend-mode: overlay;
+      }
+    }
+  }
+}
+
+@mixin svg-content() {
+  svg * { @content; }
+}
+
+@mixin united {
+  font-family: "United Sans", script;
+  text-rendering: optimizeLegibility;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+@mixin prefixed($attr, $val) {
+  -webkit-#{$attr}: $val;
+  -moz-#{$attr}: $val;
+  -ms-#{$attr}: $val;
+  -o-#{$attr}: $val;
+  #{$attr}: $val;
+}
+
+@mixin superprefixed($attr, $val) {
+  -webkit-#{$attr}: -webkit-#{$val};
+  -moz-#{$attr}: -webkit-#{$val};
+  -ms-#{$attr}: -webkit-#{$val};
+  -o-#{$attr}: -webkit-#{$val};
+  #{$attr}: $val;
+}
+
+@mixin transform($transformation ...) {
+  -webkit-transform: $transformation;
+  -moz-transform: $transformation;
+  -ms-transform: $transformation;
+  -o-transform: $transformation;
+  transform: $transformation;
+}
+
+@mixin transform-origin($transformation ...) {
+  -webkit-transform-origin: $transformation;
+  -moz-transform-origin: $transformation;
+  -ms-transform-origin: $transformation;
+  -o-transform-origin: $transformation;
+  transform-origin: $transformation;
+}
+
+@mixin flexbox($display:'') {
+  $xtra:'';
+  @if $display != '' {$xtra:'-';}
+  display: -webkit-#{$display}#{$xtra}box;
+  display: -moz-#{$display}#{$xtra}box;
+  display: -ms-#{$display}#{$xtra}flexbox;
+  display: -webkit-#{$display}#{$xtra}flex;
+  display: #{$display}#{$xtra}flex;
+}
+//
+@mixin flex-value($attr, $val) {
+  -webkit-box-#{$attr}: $val;
+  -moz-box-#{$attr}:  $val;
+  -webkit-flex-#{$attr}:  $val;
+  -ms-flex-#{$attr}:  $val;
+  flex-#{$attr}:  $val;
+  -webkit-#{$attr}:  $val;
+  -ms-#{$attr}:  $val;
+  #{$attr}:  $val;
+}
+
+@mixin flex($values) {
+  -webkit-box-flex: $values;
+  -moz-box-flex:  $values;
+  -webkit-flex:  $values;
+  -ms-flex:  $values;
+  flex:  $values;
+}
+
+@mixin order($val) {
+  -webkit-box-ordinal-group: $val;
+  -moz-box-ordinal-group: $val;
+  -ms-flex-order: $val;
+  -webkit-order: $val;
+  order: $val;
+}
+
+@mixin shadow($shadow ...) {
+  -webkit-box-shadow: $shadow;
+  -moz-box-shadow: $shadow;
+  -ms-box-shadow: $shadow;
+  -o-box-shadow: $shadow;
+  box-shadow: $shadow;
+}
+
+@mixin relative_units($attr, $value, $unit:vw, $base:2880) {
+  #{$attr}: #{$value / $base*100}#{$unit};
+}
+
+@mixin autoAlpha($val) {
+  @if $val > 0 {
+    visibility: visible;
+    opacity: $val;
+  } @else {
+    visibility: hidden;
+    opacity: 0;
+  }
+}

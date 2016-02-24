@@ -1,0 +1,107 @@
+.host-landing {
+  @include landing;
+  @include flexbox();
+  text-align: center;
+
+  &:before {
+    background-image: url('assets/images/the-host-title.jpg');
+  }
+
+  .content {
+    margin: auto;
+  }// .content
+
+  .rectangle {
+    position: absolute;
+    top: 37%;
+    left: 25vw;
+    height: 15vh;
+    width: 50vw;
+    background: #000;
+    mix-blend-mode: multiply;
+    opacity: 0.45;
+  }// .rectangle
+
+  .hosted-by-logo {
+    margin-left: 23%;
+    position: relative;
+  }
+
+  h1 {
+    position: relative;
+//    font-size: 9vw;
+//    line-height: 6.5vw;
+//    letter-spacing: 0.75vw;
+    margin: 0 0 5vh 0;
+  }// h1
+
+  .text-layer {
+    position: relative;
+    width: 37%;
+    margin-left: 42%;
+
+    .cta-container {
+//      @include cta(black, white);
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      @include transform(translateX(-50%) translateY(-50%));
+    }// .cta
+  }// .text-layer
+
+  @include breakpoint(mobile) {
+
+    .content {width: $MOBILE_WIDTH;}
+
+    .hosted-by-logo {
+      margin: 0 auto;
+    }
+
+    h1 {
+      margin: 15px auto;
+      font-size: 48px;
+      font-size: 13vw;
+    }
+
+    .text-layer {
+      width: 100%;
+      margin: 0 auto;
+      padding: 40px 40px 60px 40px;
+
+      .cta {
+        width:90%;
+        white-space: normal;
+      }
+
+      p {
+        font-size: 14px;
+        line-height: 21px;
+      }
+    }
+  }// BP MOBILE
+
+}// .host-landing
+
+.host-create {
+
+  .section-head {
+
+    p {
+      font-weight: bold;
+      width: 39vw;
+      text-align: left;
+    }
+  }
+
+  @include breakpoint(mobile) {
+
+    .section-head {
+      p {
+        margin-top: 20px;
+        width: 100%;
+        text-align: center;
+      }
+    }// .section-head
+
+  }// BP MOBILE
+}// .host-create
