@@ -64,7 +64,7 @@
         </div><!-- .posters.episodes-overview -->
     </section><!-- .episodes-previous -->
 
-    <squarespace:query collection="{collection.urlId}" categories="upcoming" limit="3">
+    <squarespace:query collection="{collection.urlId}" category="upcoming" limit="3">
         <section class="episodes-upcoming">
             <div class="section-head prllx-custom" data-prllx=".03">
                 <h2>Next Shows</h2>
