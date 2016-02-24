@@ -13,7 +13,7 @@ SQSP.functions.initPage = function() {
             var $thisPoster = jQuery(this);
             var $artistContainer = $thisPoster.find('.ep-lineup');
             var filters = $artistContainer.data('artists').split(',');
-            console.log('filter: ', filter);
+            console.log('filter: ', filters);
 
             printArtists(filters, _artists, $artistContainer);
         });
