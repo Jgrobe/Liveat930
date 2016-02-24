@@ -7,31 +7,6 @@ SQSP.functions.initPage = function() {
     SQSP.$objects.posters = jQuery('.poster');
     SQSP.instances.Posters = [];
 
-    if(_artistsReady === true) {
-        SQSP.$objects.posters.each(function() {
-            var $thisPoster = jQuery(this);
-            var $artistContainer = $thisPoster.find('.ep-lineup');
-            var filters = $artistContainer.data('artists').split(',');
-            console.log('filter: ', filters);
-
-            printArtists(filters, _artists, $artistContainer);
-        });
-
-    } else {
-        //jQuery(document).on('artistsReady', function(artists) {
-        //
-        //    SQSP.$objects.posters.each(function() {
-        //        var $thisPoster = jQuery(this);
-        //        var $artistContainer = $thisPoster.find('.ep-lineup');
-        //        var filter = $artistContainer.data('artists').split(',');
-        //        console.log('filter: ', filter);
-        //
-        //        printArtists(filter, _artists, $artistContainer);
-        //    });
-        //
-        //});
-    }// endif artists ready
-
     SQSP.$objects.preloader = jQuery('#preloader');
     if(elem_exists(SQSP.$objects.preloader)) {
 

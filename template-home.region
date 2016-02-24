@@ -19,8 +19,7 @@
     </section><!-- .posters -->
 </div><!-- .site-content -->
 
-<div id="fieldTracker">
-</div><!-- #fieldTracker -->
+<div id="fieldTracker">{@|apply svg-close-cursor.block}</div><!-- #fieldTracker -->
 <div id="preloader">
     <div class="filler"></div>
 </div>

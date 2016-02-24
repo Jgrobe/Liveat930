@@ -1,3 +1,11 @@
+<squarespace:query collection="artists">
+    <script>
+        var _artists = {items|json};
+        console.log('_artists', _artists);
+        var _artistsReady = true;
+        jQuery(document).trigger('artistsReady', _artists);
+    </script>
+</squarespace:query>
 {.repeated section items}
     {.repeated section categories}
         {.equal?:@:"current"}
@@ -84,5 +92,6 @@
         </section>
     </squarespace:query>
 </div>
+<squarespace:script src="custom/handleArtists.js" />
 <squarespace:script src="custom/episode-hero.js" />
 <squarespace:script src="custom/page_episodes.js" />

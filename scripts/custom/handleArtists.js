@@ -1,3 +1,27 @@
+if(_artistsReady === true) {
+
+    loopPostersForArtists();
+
+} else {
+
+    jQuery(document).on('artistsReady', function() {
+        loopPostersForArtists();
+    });
+
+}// endif artists ready
+
+function loopPostersForArtists() {
+
+    jQuery('.poster').each(function() {
+        var $thisPoster = jQuery(this);
+        var $artistContainer = $thisPoster.find('.ep-lineup');
+        var filters = $artistContainer.data('artists').split(',');
+        console.log('filter: ', filters);
+
+        printArtists(filters, _artists, $artistContainer);// _artists is declared inline by squarespace:query
+    });
+}// loopPostersForArtists()
+
 function printArtists(filters,artists, $container) {
 
     var artistCounter = 0;

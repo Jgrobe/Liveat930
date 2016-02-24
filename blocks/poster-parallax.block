@@ -43,14 +43,8 @@
 
                 <div class="half padded lineup-container">
                     <h6 class="s-headline ep-subheadline">Additional performances by:</h6>
-                    <h4 class="m-headline ep-lineup">
-                        {.repeated section tags}
-                        <a class="artist" href="#" data-img="">
-                            {@}
-                            <span class="description">Nice</span>
-                        </a>
-                        <span class="divider">/</span>
-                        {.end}
+                    <h4 class="m-headline ep-lineup" data-artists="{customContent.featured-artists}">
+                        <!-- js populated -->
                     </h4>
                 </div><!-- .half -->
 
