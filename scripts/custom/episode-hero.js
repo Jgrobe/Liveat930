@@ -18,7 +18,7 @@ SQSP.functions.createEpisodeHero = function() {
         shapeAttr: {'data-prllx' : '.8'},
         onCreateComplete: function(Painter) {
 
-            console.log('canvas createcomplete',Painter);
+            console.log('------------------canvas createcomplete',Painter);
 
 
             var testClipper = new SVGClipper(Painter.$object.layerCanvas, {

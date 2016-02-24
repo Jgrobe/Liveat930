@@ -156,18 +156,26 @@ a.episodes-landing-cta {
 
 .episodes-overview {
 
-  .episodes-overview-row {
+  &.posters {
     @include flexbox();
-    @include prefixed(justify-content, space-between);
+    @include flex-value(wrap, wrap);
     width: get_relative_units(2300);
     max-width: $wrapperMaxWidth;
     margin: 0 auto;
-  }// .episodes-overview-row
+  }
+
+//  .episodes-overview-row {
+//    @include flexbox();
+//    @include prefixed(justify-content, space-between);
+//    width: get_relative_units(2300);
+//    max-width: $wrapperMaxWidth;
+//    margin: 0 auto;
+//  }// .episodes-overview-row
 
   .episodes-overview-item {
-    margin-top: 8vw;
+    $itemMargin: get_relative_units(228);
+    margin-top: $itemMargin 0 0 0;
 //$itemWidth: 46%;
-$itemMargin: get_relative_units(228);
 //    margin: $posterVertMargin 0 0 0;
 //    width: $itemWidth;//46%;//#{100/2 - $posterVertMargin/2};
 //    max-width: 520px;
@@ -175,7 +183,7 @@ $itemMargin: get_relative_units(228);
     position: relative;
     width: 100%;
 
-    &:nth-child(2) { margin-left: $itemMargin; }
+    &:nth-child(2n) { margin-left: $itemMargin; }
 
     .cta-container {
       position: absolute;
