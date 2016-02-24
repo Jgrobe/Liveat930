@@ -6,9 +6,10 @@ var SVGClipper = function($container, options) {
         autoInit : true,
         shape : 'star',
         maskID : 'shapeMask',
-        onInit : false
+        onInit : false,
+        assetPath : 'assets/images/shapes/'
     }, options);
-    
+
     SC.$object = {
         container : $container
     };
@@ -20,9 +21,15 @@ var SVGClipper = function($container, options) {
 
     SC.shapes = {
         circle: {
+            type: "circle",
             gradientMaps: {
                 full: '#000000, #6d5e79',
                 shape: '#9f53e0, #d6b9db'
+            },
+            values: {
+                cx: 50,
+                cy: 50,
+                r: 50
             }
         },
         fullTriangle: {
@@ -84,16 +91,20 @@ var SVGClipper = function($container, options) {
             ]
         },
         arc: {
+            type: 'path',
             gradientMaps: {
                 full : '#151517, #3d444a',
                 shape: '#d2caa0, #ffffff'
-            }
+            },
+            values: 'arc2.svg'
         },
         halfCircle: {
+            type: 'path',
             gradientMaps: {
                 full: '#361314, #3f466d',
                 shape: '#3d6cf3, #b9c9fb'
-            }
+            },
+            values : 'halfCircle.svg'
         },
         square: {
             type : 'polygon',
@@ -318,7 +329,6 @@ var SVGClipper = function($container, options) {
                 //    return shapeHTML;
                 //},
                 getShapeDimensions:function() {
-                    if(typeof SC.SHAPE.originalSize !== 'undefined') return false;// only run once
                     var width= 0, height=0;
                     SC.shapes.functions.polygon.computePoints(function(e){
                         if(e.point.x > width) width = e.point.x;
@@ -368,23 +378,51 @@ var SVGClipper = function($container, options) {
                         SC.SHAPE.points.inline += point.x + ',' + point.y ;
                         SC.SHAPE.points.css += (point.x * 100) + '% ' + (point.y * 100) + '%';
                     });
-                    
+
+                    SC.SHAPE.ATTRIBUTES = {
+                        points: SC.SHAPE.points.inline
+                    };
+                    SC.SHAPE.CSS = {
+                        'clip-path' : 'url(#'+ SC.options.maskID +')',
+                        '-webkit-clip-path' : 'polygon('+ SC.SHAPE.points.css +')'
+                    };
+
                 }
             },
             path: {
-                //draw: function(ctx, values) {
-                //
-                //    var p = new Path2D(values);
-                //    p.closePath();
-                //
-                //}, // draw(),
-                getShapeDimensions: function() {
-                },// getShapeDimensions
-                recalculateValues: function() {
-                }// recalculateValues
+                getShapeDimensions:function() {
+                    return;
+                },
+                updateMask: function() {
+
+                    if(SC.isPathApplied === true) return;// needed only once on instanciation
+                    SC.isPathApplied = true;
+
+                    var shapeURL = SC.options.assetPath + SC.SHAPE.values;
+
+                    SC.SHAPE.ATTRIBUTES = {};
+                    SC.SHAPE.CSS = {
+                        'mask' : 'url(' + shapeURL + '#mask)',
+                        '-webkit-mask-image' : 'url(' + shapeURL + ')'
+                    };
+                }
             },
             circle : {
-
+                getShapeDimensions:function() {
+                    var width = SC.SHAPE.values.r* 2, height = SC.SHAPE.values.r*2;
+                    SC.SHAPE.originalSize = {
+                        width: width,
+                        height: height,
+                        ratio: width/height
+                    };
+                },
+                updateMask: function() {
+                    SC.SHAPE.ATTRIBUTES = SC.SHAPE.values;
+                    SC.SHAPE.CSS = {
+                        'clip-path' : 'url(#'+ SC.options.maskID +')',
+                        '-webkit-clip-path' : 'circle('+ (SC.SHAPE.values.r+'%') +' at '+ (SC.SHAPE.values.cx+'%') +' '+ (SC.SHAPE.values.cy+'%') +')'
+                    };
+                }
             }
         }
     };// shapes
@@ -418,9 +456,16 @@ var SVGClipper = function($container, options) {
         //console.log('SC.DOM.container.size', SC.DOM.container.size);
     }// get_sizes()
 
+    function get_shape_dimensions() {
+
+        if(typeof SC.SHAPE.originalSize !== 'undefined') return false;// only run once
+        SC.shapes.functions[SC.SHAPE.type].getShapeDimensions();
+    }
+
     function create_clipping_mask() {
 
-        SC.shapes.functions[SC.SHAPE.type].getShapeDimensions();
+        get_shape_dimensions();
+
         var inlineOpener = '<svg><defs><clipPath id="'+ SC.options.maskID +'" clipPathUnits="objectBoundingBox">',
             inlineCloser = '</clipPath></defs></svg>';
 
@@ -441,18 +486,12 @@ var SVGClipper = function($container, options) {
 
         get_sizes();
 
-
         SC.shapes.functions[SC.SHAPE.type].updateMask();
 
-        //console.log('MASK VALUES', SC.SHAPE.points);
+        SC.$object.inlineClippingMaskElement.attr(SC.SHAPE.ATTRIBUTES);
+        SC.$object.container.css(SC.SHAPE.CSS);
 
-        SC.$object.inlineClippingMaskElement.attr({
-            points: SC.SHAPE.points.inline
-        });
-        SC.$object.container.css({
-            'clip-path' : 'url(#'+ SC.options.maskID +')',
-            '-webkit-clip-path' : 'polygon('+ SC.SHAPE.points.css +')'
-        });
+        //console.log('MASK VALUES', SC.SHAPE.points);
 
     }// update_mask()
 

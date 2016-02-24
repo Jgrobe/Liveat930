@@ -21,6 +21,7 @@ SQSP.functions.createEpisodeHero = function() {
             SQSP.instances.heroClipper = new SVGClipper(Painter.$object.layerCanvas, {
                 shape: Painter.$object.container.attr('data-shape'),
                 maskID: 'heroClipper',
+                assetPath: location.origin + '/assets/images/shapes/',
                 onInit:function(Clip){
                     console.log('svgclipper oninit',Clip);
                     GradientMaps.applyGradientMap(Painter.DOM.baseCanvas.object, Clip.shapes[Clip.options.shape].gradientMaps.full);

@@ -1,0 +1,36 @@
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+<g>
+	<!-- polygon class="st0" points="50,35.8 0,0 0,27.4 50,63.2 100,27.4 100,0 	"/>
+	<polygon class="st0" points="
+	    50,72.6
+        0,36.8
+        0,64.2
+        50,100
+        100,64.2
+        100,36.8
+    "/ -->
+
+    <polygon class="st0" points="
+    50,35.8
+    0,0
+    0,27.4
+    50,63.2
+
+    	    50,72.6
+            0,36.8
+            0,64.2
+            50,100
+            100,64.2
+            100,36.8
+
+
+    50,72.6
+    50,63.2
+
+
+    100,27.4
+    100,0
+        "/>
+</g>
+</svg>

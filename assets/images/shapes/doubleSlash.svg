@@ -1,0 +1,25 @@
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+
+<!--path class="st0" d="M63.9,13.9L50,0c0,0-0.1,0-0.2,0L0,49.9c0,0,0,0.1,0,0.2l13.9,13.9c0,0,0.1,0,0.2,0l49.8-49.8
+			C63.9,14,63.9,14,63.9,13.9z"/-->
+<!-- polygon points="50,0 0,50 14.1,64 63.9,14.2" fill="#cecece"/>
+<polygon points="86.1,0 36.1,50 50.2,64 100,14.2" fill="#cecece"/-->
+
+<polygon points="
+
+50,0
+0,50
+14.1,64
+63.9,14.2
+
+86.1,0
+36.1,50
+50.2,64
+100,14.2
+
+86.1,0
+63.9,14.2
+
+" fill="black"/>
+</svg>
