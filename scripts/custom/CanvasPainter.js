@@ -37,7 +37,16 @@ var CanvasPainter = function($container, options) {
         CP.DOM.model.object.play();
         CP.PLAY = true;
 
-        CP.drawVideo();
+        var lastCalledTime = Date.now(), fps = 0, delta;
+
+        CP.drawVideo(function() {
+
+            delta = (Date.now() - lastCalledTime)/1000;
+            lastCalledTime = Date.now();
+            fps = 1/delta;
+
+            console.log('--------------- RAF FPS', fps);
+        });
     };
 
     CP.stopVideo = function() {
@@ -46,7 +55,7 @@ var CanvasPainter = function($container, options) {
         CP.PLAY = false;
     };
 
-    CP.drawVideo = function() {
+    CP.drawVideo = function(fn) {
         ////console.log('playing!');
         ////console.log('context', ctx);
         if(CP.DOM.model.object.paused || CP.DOM.model.object.ended || !CP.PLAY) return false;
@@ -101,6 +110,8 @@ var CanvasPainter = function($container, options) {
         if(CP.options.autoStop) {
             CP.stopVideo();
         }
+
+        if(_.isFunction(fn)) fn();
 
         requestAnimationFrame( CP.drawVideo );
 
