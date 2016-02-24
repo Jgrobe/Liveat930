@@ -2,20 +2,31 @@ SQSP.functions.initPage = function() {
 
     console.log('------------------ artists artists', _artists);
 
-    //jQuery.ajax(jQuery('#hrefartists').val(), {
-    //    success:function(data){
-    //        console.log('GOT THE ARTISTS!', data);
-    //
-    //        SQSP.$objects.posters.each(function() {
-    //            var $thisPoster = jQuery(this);
-    //            var $artistContainer = $thisPoster.find('.ep-lineup');
-    //            var filter = $artistContainer.data('artists').split(',');
-    //            console.log('filter: ', filter);
-    //
-    //
-    //        });
-    //    }// success
-    //});// ajax
+    if(_artistsReady === true) {
+
+        SQSP.$objects.posters.each(function() {
+            var $thisPoster = jQuery(this);
+            var $artistContainer = $thisPoster.find('.ep-lineup');
+            var filters = $artistContainer.data('artists').split(',');
+            console.log('filter: ', filter);
+
+            printArtists(filters, _artists, $artistContainer);
+        });
+
+    } else {
+        //jQuery(document).on('artistsReady', function(artists) {
+        //
+        //    SQSP.$objects.posters.each(function() {
+        //        var $thisPoster = jQuery(this);
+        //        var $artistContainer = $thisPoster.find('.ep-lineup');
+        //        var filter = $artistContainer.data('artists').split(',');
+        //        console.log('filter: ', filter);
+        //
+        //        printArtists(filter, _artists, $artistContainer);
+        //    });
+        //
+        //});
+    }// endif artists ready
 
     SQSP.$objects.postersContainer = jQuery('.posters');
     SQSP.$objects.postersHoverContainer = SQSP.$objects.postersContainer.find('.posters-hover-bg');
@@ -48,7 +59,7 @@ SQSP.functions.initPage = function() {
                 console.log('NICE REVEAL');
                 SQSP.preloadTL.add(function() {
                     var tl = new TimelineMax({delay:.2, onUpdate:function() {
-console.log('git add');
+
                         jQuery(window).scroll();
                     }});
                     tl.to(SQSP.$objects.preloader,.2, {autoAlpha:0});

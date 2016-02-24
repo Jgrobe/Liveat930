@@ -1,24 +1,29 @@
-var ArtistsHandler = function(url, options) {
-    if(typeof url === 'undefined') return;
-    if(typeof options === 'undefined') options = {};
-    var AH = this;
-    AH.options = jQuery.extend({
-        autoInit : true,
-        target : false,
-        onSuccess:false,
-        onError: false
-    }, options);
+function printArtists(filters,artists, $container) {
 
-    AH.dataReady = false;
+    var artistCounter = 0;
 
-    AH.init = function() {
-        jQuery.ajax(url, {
-            success:function(data) {
-                if(_.isFunction(AH.options.onSuccess)) AH.options.onSuccess(data);
-            },
-            error:function(data) {
-                if(_.isFunction(AH.options.onError)) AH.options.onError(data);
-            }
-        });// ajax()
-    };// init()
-};// ArtistsHandler()
+    for(var f=0; f<filters.length; f++) {
+        
+        for(var a=0; a<artists.length; a++) {
+
+            if( slugify( filters[f] ) == slugify( artists.title ) ) {
+
+                if(artistCounter > 0) {
+                    $container.append(jQuery('<span class="divider">/</span>'));
+                }//endif
+
+
+                var artistHTML = '<span class="artist" data-img="'+ artists[a].assetUrl +'">';
+                artistHTML += '<span class="label">'+ artists[a].title +'</span>';
+                artistHTML += '<span class="description">'+ artists[a].body +'</span>';
+                artistHTML += '</span>';
+                $container.append(jQuery(artistHTML));
+
+                artistCounter++
+            }// endif
+
+        }// endfor artists
+
+    }// endfor filters
+    
+}// printArtists()

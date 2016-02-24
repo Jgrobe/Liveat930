@@ -203,3 +203,21 @@ function get_preload_sources() {
     ////console.log('found img srcs: ', srcs);
     return srcs;
 }
+
+function slugify(input) {
+    var vowelMap = {
+        'Ä':'ae',
+        'ä' : 'ae',
+        'Ö' : 'oe',
+        'ö' : 'oe',
+        'Ü' : 'ue',
+        'ü' : 'ue',
+        ' ' : '',
+        '_' : '',
+        '-' : ''
+    };
+    var output = input.replace(new RegExp(Object.keys(vowelMap).join("|"),"gi"), function(matched){
+        return vowelMap[matched];
+    }).toLowerCase();
+    return output;
+}// slugify()

@@ -1,7 +1,7 @@
 <squarespace:query collection="artists">
     <script>
         var _artists = {items|json};
-        console.log('artists ready', _artists);
+        var _artistsReady = true;
         jQuery(document).trigger('artistsReady', _artists);
     </script>
 </squarespace:query>
@@ -10,9 +10,6 @@
         <div class="posters-hover-bg"></div>
 
         <squarespace:query collection="episodes" limit="99" category="aired">
-            <!--<script>-->
-                <!--console.log('all episodes queried', {@|json-pretty});-->
-            <!--</script>-->
             {.repeated section items}
                 {@|apply poster-scroll.block}
             {.end}
