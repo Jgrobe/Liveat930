@@ -23,19 +23,7 @@
       }
     }
 
-    &.model-layer {
-      position: absolute;
-      top: -10%;
-      width: 110%;
-      left: -5%;
-      background: url('assets/images/textures/fullTriangle.png') no-repeat center;
-      background-size: cover;
-      &:before {
-        content: '';
-        display: block;
-        padding-top: 100%;
-      }
-    }
+//    &.model-layer {
 
     &.copy-layer {
 

@@ -15,7 +15,7 @@
             </div>
 
             <div class="layer model-layer rel">
-                <div class="model-container img widescreen" data-type="video" data-src="{assetUrl}" data-shape="{customContent.episode-shape}">
+                <div class="model-container img widescreen" data-shape="{customContent.episode-shape}">
                     <div class="fill-parent imgfill" style="background-image:url('{customContent.poster-image.assetUrl}');"></div>
                     <!-- video canvas is inserted here -->
                 </div><!-- .model-container.img.widescreen -->
@@ -31,7 +31,7 @@
                         </div><!-- .icon.logo -->
                         <div class="icon episode">
                             {@|apply svg-icon-episodenr.block}
-                            <span class="icon-label">{@index}</span>
+                            <span class="icon-label">{customContent.episode-number}</span>
                         </div><!-- .icon.episode -->
 
                         <h2 class="l-headline ep-headline">{customContent.episode-title}</h2>

@@ -15,8 +15,8 @@
             </div><!-- .bg-layer -->
 
             <div class="layer model-layer rel prllx-custom prllx-no-disable" data-prllx=".18">
-                <div class="model-container img widescreen" data-type="video" data-src="{assetUrl}" data-shape="{customContent.episode-shape}">
-                    <div class="fill-parent" style="background-image:url('{customContent.poster-image.assetUrl}'); display:none;"></div>
+                <div class="model-container img widescreen" data-type="video" data-src="{customContent.episode-hero-video}" data-shape="{customContent.episode-shape}">
+                    <div class="fill-parent" style="background-image:url('{customContent.poster-image.assetUrl}');"></div>
                     <!-- /* video canvas is inserted here */ -->
                 </div><!-- .model-container.img.widescreen -->
             </div><!-- .model-layer -->
@@ -31,7 +31,7 @@
                         </div><!-- .icon.logo -->
                         <div class="icon episode">
                             {@|apply svg-icon-episodenr.block}
-                            <span class="icon-label">{@index}</span>
+                            <span class="icon-label">{customContent.episode-number}</span>
                         </div><!-- .icon.episode -->
 
                         <h2 class="l-headline ep-headline prllx-custom prllx-no-disable" data-prllx=".12">{customContent.episode-title}</h2>
