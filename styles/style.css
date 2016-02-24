@@ -1667,7 +1667,7 @@ input {
   background: rgba(0, 0, 0, 0.1); }
 .poster.fullTriangle .layer .model-container {
   position: absolute;
-  top: -30%;
+  top: -15%;
   left: -50%;
   width: 200%; }
 .poster.fullTriangle .lineup-container:after {
