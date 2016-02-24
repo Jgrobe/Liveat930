@@ -1,9 +1,7 @@
 <script>console.log('ITS THE HOST TEMPLATE');</script>
 <section class="host-landing">
     <div class="fill-parent mask">
-        <div class="landing-bg video-bg" style="background-image:url('{item.assetUrl}');">
-            <video src="assets/videos/header-kanye2.mp4" autoplay loop></video>
-        </div>
+        <div class="landing-bg video-bg" style="background-image:url('{item.assetUrl}');"></div>
     </div>
     <div class="content">
         <div class="rectangle"></div>

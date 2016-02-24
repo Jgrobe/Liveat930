@@ -2265,8 +2265,7 @@ input {
     .episodes-landing .landing-bg.video-bg:after {
       content: '';
       display: block;
-      background: rgba(0, 0, 0, 0.75) url("assets/images/halftone-pattern2.png") no-repeat center;
-      background-size: cover;
+      background-image: url("assets/images/textures/texture-halftone-compressor-2-70k.jpg");
       mix-blend-mode: overlay; }
   .episodes-landing .landing-cta {
     position: absolute;
@@ -2811,8 +2810,7 @@ a.episodes-landing-cta {
     .host-landing .landing-bg.video-bg:after {
       content: '';
       display: block;
-      background: rgba(0, 0, 0, 0.75) url("assets/images/halftone-pattern2.png") no-repeat center;
-      background-size: cover;
+      background-image: url("assets/images/textures/texture-halftone-compressor-2-70k.jpg");
       mix-blend-mode: overlay; }
   .host-landing:before {
     background-image: url("assets/images/the-host-title.jpg"); }
@@ -2916,8 +2914,7 @@ a.episodes-landing-cta {
     .merch-landing .landing-bg.video-bg:after {
       content: '';
       display: block;
-      background: rgba(0, 0, 0, 0.75) url("assets/images/halftone-pattern2.png") no-repeat center;
-      background-size: cover;
+      background-image: url("assets/images/textures/texture-halftone-compressor-2-70k.jpg");
       mix-blend-mode: overlay; }
   .merch-landing h1 {
     text-align: center; }
@@ -3078,8 +3075,7 @@ a.episodes-landing-cta {
     .post-landing .landing-bg.video-bg:after {
       content: '';
       display: block;
-      background: rgba(0, 0, 0, 0.75) url("assets/images/halftone-pattern2.png") no-repeat center;
-      background-size: cover;
+      background-image: url("assets/images/textures/texture-halftone-compressor-2-70k.jpg");
       mix-blend-mode: overlay; }
   .post-landing h1 {
     margin: 0; }
@@ -3227,8 +3223,7 @@ a.episodes-landing-cta {
     .show-landing .landing-bg.video-bg:after {
       content: '';
       display: block;
-      background: rgba(0, 0, 0, 0.75) url("assets/images/halftone-pattern2.png") no-repeat center;
-      background-size: cover;
+      background-image: url("assets/images/textures/texture-halftone-compressor-2-70k.jpg");
       mix-blend-mode: overlay; }
 
 .show-content {
@@ -3384,8 +3379,7 @@ a.episodes-landing-cta {
     .video-overview-landing .landing-bg.video-bg:after {
       content: '';
       display: block;
-      background: rgba(0, 0, 0, 0.75) url("assets/images/halftone-pattern2.png") no-repeat center;
-      background-size: cover;
+      background-image: url("assets/images/textures/texture-halftone-compressor-2-70k.jpg");
       mix-blend-mode: overlay; }
   .video-overview-landing h1 {
     margin: 0 0 5vh 0; }

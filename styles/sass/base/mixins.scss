@@ -83,13 +83,13 @@
         content: '';
         display: block;
         @extend .fill-parent;
-        background: rgba(0,0,0,.75) url('assets/images/halftone-pattern2.png') no-repeat center;
-        background-size: cover;
+        background-image: url('assets/images/textures/texture-halftone-compressor-2-70k.jpg');
+//        background-size: cover;
         mix-blend-mode: overlay;
       }
     }
-  }
-}
+  }// .landing-bg
+}// @landing
 
 @mixin svg-content() {
   svg * { @content; }
