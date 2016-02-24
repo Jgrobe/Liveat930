@@ -65,7 +65,7 @@ console.log('git add');
         new SVGClipper($modelContainer, {
             shape: $modelContainer.data('shape'),
             onInit:function(Clip){
-                GradientMaps.applyGradientMap(Clip.$object.container, Clip.shapes[Clip.options.shape].gradientMaps.shape);
+                GradientMaps.applyGradientMap(Clip.DOM.container.object, Clip.shapes[Clip.options.shape].gradientMaps.shape);
             }
         });
 
