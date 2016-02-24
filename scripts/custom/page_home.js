@@ -1,9 +1,6 @@
-
-jQuery(document).on('artistsReady', function(e) {
-    console.log('-----------------------------artistsReady evt fired!', e);
-});
 SQSP.functions.initPage = function() {
 
+    console.log('------------------ artists artists', _artists);
 
     //jQuery.ajax(jQuery('#hrefartists').val(), {
     //    success:function(data){
