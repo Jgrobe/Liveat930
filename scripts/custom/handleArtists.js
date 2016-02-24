@@ -6,9 +6,9 @@ function printArtists(filters,artists, $container) {
         
         for(var a=0; a<artists.length; a++) {
 
-            console.log('COMPARING: filter('+filters[f]+') >< artist'+artists.title+')');
+            console.log('COMPARING: filter('+filters[f]+') >< artist('+artists[a].title+')');
 
-            if( slugify( filters[f] ) == slugify( artists.title ) ) {
+            if( slugify( filters[f] ) == slugify( artists[a].title ) ) {
 
                 if(artistCounter > 0) {
                     $container.append(jQuery('<span class="divider">/</span>'));
