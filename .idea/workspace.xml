@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6ba77c59-895c-4b6c-8ed1-52220cbb39bd" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/sass/pages/episodes.scss" afterPath="$PROJECT_DIR$/styles/sass/pages/episodes.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/style.css" afterPath="$PROJECT_DIR$/styles/style.css" />
     </list>
     <ignored path="sqsp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -302,8 +303,8 @@
           <file leaf-file-name="episodes.scss" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/styles/sass/pages/episodes.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.489011" vertical-offset="2166" max-vertical-offset="7740">
-                  <caret line="180" column="4" selection-start-line="180" selection-start-column="4" selection-end-line="180" selection-end-column="4" />
+                <state vertical-scroll-proportion="0.4752747" vertical-offset="2166" max-vertical-offset="7740">
+                  <caret line="179" column="4" selection-start-line="179" selection-start-column="4" selection-end-line="179" selection-end-column="4" />
                   <folding />
                 </state>
               </provider>
@@ -1281,8 +1282,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/styles/sass/pages/episodes.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.489011" vertical-offset="2166" max-vertical-offset="7740">
-          <caret line="180" column="4" selection-start-line="180" selection-start-column="4" selection-end-line="180" selection-end-column="4" />
+        <state vertical-scroll-proportion="0.4752747" vertical-offset="2166" max-vertical-offset="7740">
+          <caret line="179" column="4" selection-start-line="179" selection-start-column="4" selection-end-line="179" selection-end-column="4" />
           <folding />
         </state>
       </provider>

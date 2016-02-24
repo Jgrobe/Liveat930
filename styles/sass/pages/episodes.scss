@@ -176,7 +176,7 @@ a.episodes-landing-cta {
     $itemMargin: get_relative_units(228);
 
     position: relative;
-    width: calc(50% - #{$itemMargin/2});
+    width: calc(~"50% - #{$itemMargin/2}");
     margin: $itemMargin 0 0 0;
 
     &:nth-child(2n) { margin-left: $itemMargin; }

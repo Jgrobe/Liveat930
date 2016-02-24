@@ -2433,7 +2433,7 @@ a.episodes-landing-cta {
   margin: 0 auto; }
 .episodes-overview .episodes-overview-item {
   position: relative;
-  width: calc(50% - 7.91667vw/2);
+  width: calc(~"50% - 7.91667vw/2");
   margin: 7.91667vw 0 0 0; }
   .episodes-overview .episodes-overview-item:nth-child(2n) {
     margin-left: 7.91667vw; }
