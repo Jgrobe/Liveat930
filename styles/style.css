@@ -1475,10 +1475,11 @@ input {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover; }
+    width: 100%; }
+    .poster .model-container .fill-parent, .poster .model-container .slider-ui, .poster .model-container .poster-content, .poster .model-container .layer.bg-layer, .poster .model-container .layer.copy-layer, .poster.circle .model-container .layer.bg-layer .half:first-child:before, .poster.circle .layer.bg-layer .model-container .half:first-child:before, .poster.fullTriangle .model-container .layer.bg-layer .half:first-child:before, .poster.fullTriangle .layer.bg-layer .model-container .half:first-child:before, .poster .model-container #preloader .filler, #preloader .poster .model-container .filler, .poster .model-container .episodes-landing .landing-bg:after, .episodes-landing .poster .model-container .landing-bg:after, .poster .model-container .host-landing .landing-bg:after, .host-landing .poster .model-container .landing-bg:after, .poster .model-container .merch-landing .landing-bg:after, .merch-landing .poster .model-container .landing-bg:after, .poster .model-container .post-landing .landing-bg:after, .post-landing .poster .model-container .landing-bg:after, .poster .model-container .show-landing .landing-bg:after, .show-landing .poster .model-container .landing-bg:after, .poster .model-container .video-overview-landing .landing-bg:after, .video-overview-landing .poster .model-container .landing-bg:after {
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover; }
   .poster .icon.logo svg {
     width: 18.125vw;
     height: 9.84375vw; }
