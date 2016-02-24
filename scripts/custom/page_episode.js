@@ -36,11 +36,14 @@ SQSP.functions.initPage = function() {
         shape: $modelContainer.attr('data-shape'),
         onCreateComplete: function(Painter) {
 
+            console.log('canvas createcomplete',Painter);
+
 
             var testClipper = new SVGClipper(Painter.$object.layerCanvas, {
                 shape:'general',
                 maskID: 'heroClipper',
                 onInit:function(Clip){
+                    console.log('svgclipper oninit',Clip);
                     GradientMaps.applyGradientMap(Painter.DOM.baseCanvas.object, Clip.shapes[Clip.options.shape].gradientMaps.full);
                     GradientMaps.applyGradientMap(Painter.DOM.layerCanvas.object, Clip.shapes[Clip.options.shape].gradientMaps.shape);
                 }
