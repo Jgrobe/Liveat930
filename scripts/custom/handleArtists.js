@@ -6,6 +6,8 @@ function printArtists(filters,artists, $container) {
         
         for(var a=0; a<artists.length; a++) {
 
+            console.log('COMPARING: filter('+filters[f]+') >< artist'+artists.title+')');
+
             if( slugify( filters[f] ) == slugify( artists.title ) ) {
 
                 if(artistCounter > 0) {

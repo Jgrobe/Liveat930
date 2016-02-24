@@ -8,7 +8,6 @@ SQSP.functions.initPage = function() {
     SQSP.instances.Posters = [];
 
     if(_artistsReady === true) {
-
         SQSP.$objects.posters.each(function() {
             var $thisPoster = jQuery(this);
             var $artistContainer = $thisPoster.find('.ep-lineup');
