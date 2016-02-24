@@ -40,8 +40,6 @@
         jQuery.ajax(location.href+'?format=json-pretty', {success:function(e){
             console.log('SITE', e );
         }});
-
-        var _sqsp_site = {squarespace.website|json};
     </script>
 
 </head>

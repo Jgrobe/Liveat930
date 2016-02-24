@@ -11,6 +11,7 @@ var CanvasPainter = function($container, options) {
     CP.options = {
         canvasScale: 1,
         layeredCanvas: false,
+        texturize: false,
         //colorize: '#ff7800',
         autoPlay: false,
         autoStop: false,
@@ -56,7 +57,7 @@ var CanvasPainter = function($container, options) {
                 CP.DOM.model.object,
                 0,0,CP.DOM.baseCanvas.object.width,CP.DOM.baseCanvas.object.height
             );
-            //texturize(0, 0, CP.DOM.layerCanvas.object.width, CP.DOM.layerCanvas.object.height);
+            if(CP.options.texturize) texturize(0, 0, CP.DOM.layerCanvas.object.width, CP.DOM.layerCanvas.object.height);
         }
 
         //if(CP.redrawShape === true) {
@@ -110,11 +111,11 @@ var CanvasPainter = function($container, options) {
 
     };// draw()
 
-    //CP.textureImg = new Image();
-    //CP.textureImg.onload = function() {
+    CP.textureImg = new Image();
+    CP.textureImg.onload = function() {
         init();
-    //};
-    //CP.textureImg.src = 'assets/images/textures/texture-halftone-compressor-2-70k.jpg';
+    };
+    CP.textureImg.src = location.hostname+'/assets/images/textures/texture-halftone-compressor-2-70k.jpg';
 
 
     function createCanvas() {
@@ -145,7 +146,7 @@ var CanvasPainter = function($container, options) {
             }
         };
 
-        //CP.PATTERN = CP.DOM.layerCanvas.context.createPattern(CP.textureImg,"repeat");
+        CP.PATTERN = CP.DOM.layerCanvas.context.createPattern(CP.textureImg,"repeat");
 
         CP.DOM.model.object.load();
 

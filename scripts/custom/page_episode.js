@@ -29,6 +29,7 @@ SQSP.functions.initPage = function() {
         //autoStop: true,
         canvasScale:.5,
         type: 'video',
+        texturize: true,
         blendMode: 'overlay',
         layeredCanvas: true,
         //modelAttr: {loop:'true', muted:'false'},
