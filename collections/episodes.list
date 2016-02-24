@@ -73,7 +73,7 @@
             <ul>
                 {.repeated section items}
                 <li>
-                    <a href="{fullUrl}" class="img tv prllx-custom" data-prllx=".086" style="background-image:url('{customContent.upcoming-thumbnail}');">
+                    <a href="{fullUrl}" class="img tv prllx-custom" data-prllx=".086" style="background-image:url('{customContent.upcoming-thumbnail.assetUrl}');">
                         <div class="inside prllx-lo-stndrd">
                             <span>Ep10{customContent.episode-number}</span><strong>{addedOn|date %b %d}</strong>
                         </div>
