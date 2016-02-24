@@ -9,7 +9,11 @@
 
         <div class="episodes-landing-head prllx-stndrd">
             <div class="small">Latest Show</div>
-            <h1>Episode No.3</h1>
+            {.repeated section items}
+                {.equal?:@index:{items|count}}
+                    <h1>Episode No.{@index}</h1>
+                {.end}
+            {.end}
         </div>
         <div class="episodes-landing-sub prllx-stndrd">
             <span>with</span>
