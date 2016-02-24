@@ -108,6 +108,9 @@
             {.end}<!-- .end if episode-gallery post -->
 
 
+        <script>
+            console.log('thats the customContent', {@|json-pretty});
+        </script>
             {.if epsiode-blogpost}
                 <squarespace:query collection="blog" limit="1" tags="{epsiode-blogpost}">
                     <script>
