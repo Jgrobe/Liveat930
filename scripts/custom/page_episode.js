@@ -1,5 +1,7 @@
 SQSP.functions.initPage = function() {
 
+    console.log('init page');
+
     SQSP.functions.windowLoad.push(function() {
         console.log('Page Episode loaded');
     });
@@ -21,8 +23,6 @@ SQSP.functions.initPage = function() {
     //    onCreateComplete: function() {
     //    }
     //});
-
-    console.log('start canvas');
 
     SQSP.instances.CanvasPainter = new CanvasPainter($modelContainer, {
         autoPlay: true,
