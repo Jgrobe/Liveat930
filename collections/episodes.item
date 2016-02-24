@@ -109,7 +109,7 @@
 
 
             {.if epsiode-blogpost}
-                <squarespace:query collection="blog" limit="1" tags="{epsiode-blog-post}">
+                <squarespace:query collection="blog" limit="1" tags="{epsiode-blogpost}">
                     <script>
                         console.log('thats the blog query', {@|json-pretty});
                     </script>
