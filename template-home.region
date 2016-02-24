@@ -1,3 +1,10 @@
+<squarespace:query collection="artists">
+    <script>
+        var _artists = {items|json};
+        console.log('artists ready', _artists);
+        jQuery.trigger('artistsReady', _artists);
+    </script>
+</squarespace:query>
 <div class="site-content">
     <section class="posters scroll-posters">
         <div class="posters-hover-bg"></div>
@@ -19,5 +26,4 @@
 <div id="preloader">
     <div class="filler"></div>
 </div>
-
 <squarespace:script src="custom/page_home.js" />

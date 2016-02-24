@@ -1,5 +1,24 @@
 SQSP.functions.initPage = function() {
 
+    jQuery(window).on('artistsReady', function(e) {
+        console.log('artistsReady evt fired!', e);
+    });
+
+    //jQuery.ajax(jQuery('#hrefartists').val(), {
+    //    success:function(data){
+    //        console.log('GOT THE ARTISTS!', data);
+    //
+    //        SQSP.$objects.posters.each(function() {
+    //            var $thisPoster = jQuery(this);
+    //            var $artistContainer = $thisPoster.find('.ep-lineup');
+    //            var filter = $artistContainer.data('artists').split(',');
+    //            console.log('filter: ', filter);
+    //
+    //
+    //        });
+    //    }// success
+    //});// ajax
+
     SQSP.$objects.postersContainer = jQuery('.posters');
     SQSP.$objects.postersHoverContainer = SQSP.$objects.postersContainer.find('.posters-hover-bg');
     //console.log('hovercontainer', SQSP.$objects.postersHoverContainer);
