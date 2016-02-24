@@ -150,10 +150,10 @@
         <section class="video-gallery teaser no-shift">
 
             <div class="section-head">
-                <h2>Get more<br/>{customContent.related-clips-categories}</h2>
+                <h2>Get more<br/>{customContent.episode-clips-categories}</h2>
             </div>
 
-            <squarespace:query collection="clips" tag="{customContent.related-clips-categories}">
+            <squarespace:query collection="clips" tag="{customContent.episode-clips-categories}">
 
                 <div class="video-gallery-videos lefthand top-spaced">
 
