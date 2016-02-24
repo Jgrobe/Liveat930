@@ -111,8 +111,8 @@
         <script>
             console.log('thats the customContent', {@|json-pretty});
         </script>
-            {.if epsiode-blogpost}
-                <squarespace:query collection="blog" limit="1" tags="{epsiode-blogpost}">
+            {.if episode-blogpost}
+                <squarespace:query collection="blog" limit="1" tags="{episode-blogpost}">
                     <script>
                         console.log('thats the blog query', {@|json-pretty});
                     </script>
