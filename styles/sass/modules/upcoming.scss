@@ -4,7 +4,7 @@
   position: relative;
   text-align: center;
 
-  .home & {
+  .homepage & {
     margin-top: #{$sectionMarginBottom - 10};
   }
 
@@ -23,7 +23,7 @@
   @include breakpoint(mobile) {
     text-align: center;
     margin-bottom: $sectionMarginBottomMobile;
-    .home & {
+    .homepage & {
       margin-top: $sectionMarginBottomMobile;
     }
 

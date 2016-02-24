@@ -485,32 +485,32 @@ input {
           height: 1.21528vw;
           background-repeat: no-repeat;
           display: block; }
-  .home .header .logo {
+  .homepage .header .logo {
     display: none; }
-  .home .header .navigation {
+  .homepage .header .navigation {
     color: black; }
-    .home .header .navigation .menu-item:after {
+    .homepage .header .navigation .menu-item:after {
       background: black; }
-    .home .header .navigation .search svg * {
+    .homepage .header .navigation .search svg * {
       fill: black; }
-    .home .header .navigation .search .search-field {
+    .homepage .header .navigation .search .search-field {
       color: black;
       border-color: black; }
-      .home .header .navigation .search .search-field::-webkit-input-placeholder {
+      .homepage .header .navigation .search .search-field::-webkit-input-placeholder {
         /* WebKit, Blink, Edge */
         color: black;
         opacity: 1; }
-      .home .header .navigation .search .search-field:-moz-placeholder {
+      .homepage .header .navigation .search .search-field:-moz-placeholder {
         /* Mozilla Firefox 4 to 18 */
         color: black; }
-      .home .header .navigation .search .search-field::-moz-placeholder {
+      .homepage .header .navigation .search .search-field::-moz-placeholder {
         /* Mozilla Firefox 19+ */
         color: black;
         opacity: 1; }
-      .home .header .navigation .search .search-field:-ms-input-placeholder {
+      .homepage .header .navigation .search .search-field:-ms-input-placeholder {
         /* Internet Explorer 10-11 */
         color: black; }
-      .home .header .navigation .search .search-field:placeholder-shown {
+      .homepage .header .navigation .search .search-field:placeholder-shown {
         /* Standard (https://drafts.csswg.org/selectors-4/#placeholder) */
         color: black; }
   @media only screen and (max-width: 750px) {
@@ -541,7 +541,7 @@ input {
     .sticky-header .logo svg {
       width: 62px;
       height: 55px; }
-    .home .sticky-header .logo {
+    .homepage .sticky-header .logo {
       display: none; }
   .sticky-header .burger {
     position: absolute;
@@ -971,7 +971,7 @@ input {
   margin-bottom: 10.41667vw;
   position: relative;
   text-align: center; }
-  .home .upcoming {
+  .homepage .upcoming {
     margin-top: 10.41667vw-10; }
   .upcoming .upcoming-cta {
     position: absolute;
@@ -989,7 +989,7 @@ input {
     .upcoming {
       text-align: center;
       margin-bottom: 10vH; }
-      .home .upcoming {
+      .homepage .upcoming {
         margin-top: 10vH; }
       .upcoming .upcoming-sub {
         margin: auto;
