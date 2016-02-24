@@ -41,7 +41,7 @@
             console.log('SITE', e );
         }});
 
-        var _sqsp_site = {squarespace|json-pretty};
+        var _sqsp_site = {squarespace|json};
     </script>
 
 </head>
