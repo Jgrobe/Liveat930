@@ -2434,7 +2434,7 @@ a.episodes-landing-cta {
 .episodes-overview .episodes-overview-item {
   margin-top: 7.91667vw 0 0 0;
   position: relative;
-  width: 100%; }
+  width: calc(50% - 7.91667vw/2); }
   .episodes-overview .episodes-overview-item:nth-child(2n) {
     margin-left: 7.91667vw; }
   .episodes-overview .episodes-overview-item .cta-container {

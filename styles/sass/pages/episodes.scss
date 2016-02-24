@@ -181,7 +181,7 @@ a.episodes-landing-cta {
 //    max-width: 520px;
 
     position: relative;
-    width: 100%;
+    width: calc(50% - #{$itemMargin/2});
 
     &:nth-child(2n) { margin-left: $itemMargin; }
 
