@@ -41,19 +41,22 @@
         <div class="episodes-overview posters">
 
             {.repeated section items}
-                {.odd?}<!--div class="episodes-overview-row"-->{.end}
-                    <div class="episodes-overview-item prllxposter">
-                        {@|apply poster-parallax.block}
-                        <div class="cta-dummy" data-label="Explore" data-icon="eye" data-attributes="href={fullUrl}">{@|apply svg-icon-eye.block}</div>
-                        <!--php print_cta(array(
-                                'label' => 'Explore',
-                        'icon' => 'images/eye',
-                        'attributes' => array('href' => '?p=episode')
-                        )); -->
-                        <div class="light"></div>
-                    </div><!-- .episodes-overview-item -->
-                {.even?}<!--/div><!-- .episodes-overview-row -->{.end}
-
+                {.repeated section categories}
+                    {.equal?:@:"aired"}
+                        <!--div class="episodes-overview-row"-->
+                            <div class="episodes-overview-item prllxposter">
+                                {@|apply poster-parallax.block}
+                                <div class="cta-dummy" data-label="Explore" data-icon="eye" data-attributes="href={fullUrl}">{@|apply svg-icon-eye.block}</div>
+                                <!--php print_cta(array(
+                                        'label' => 'Explore',
+                                'icon' => 'images/eye',
+                                'attributes' => array('href' => '?p=episode')
+                                )); -->
+                                <div class="light"></div>
+                            </div><!-- .episodes-overview-item -->
+                        <!--/div><!-- .episodes-overview-row -->
+                    {.end}
+                {.end}
             {.end}<!-- .end repeated items -->
 
         </div><!-- .posters.episodes-overview -->
