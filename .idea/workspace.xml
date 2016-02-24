@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ba77c59-895c-4b6c-8ed1-52220cbb39bd" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/sass/modules/posters/circle.scss" afterPath="$PROJECT_DIR$/styles/sass/modules/posters/circle.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/sass/modules/posters/fullTriangle.scss" afterPath="$PROJECT_DIR$/styles/sass/modules/posters/fullTriangle.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blocks/poster-parallax.block" afterPath="$PROJECT_DIR$/blocks/poster-parallax.block" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blocks/poster-scroll.block" afterPath="$PROJECT_DIR$/blocks/poster-scroll.block" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/style.css.map" afterPath="$PROJECT_DIR$/styles/style.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/style.css" afterPath="$PROJECT_DIR$/styles/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/custom/page_home.js" afterPath="$PROJECT_DIR$/scripts/custom/page_home.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="sqsp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -150,19 +146,6 @@
                   </provider>
                 </entry>
               </file>
-              <file leaf-file-name="episodes.list" pinned="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/collections/episodes.list">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="-13.75" vertical-offset="0" max-vertical-offset="1395">
-                      <caret line="22" column="47" selection-start-line="22" selection-start-column="47" selection-end-line="22" selection-end-column="47" />
-                      <folding>
-                        <element signature="n#style#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
-                        <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#section#0;n#squarespace:query#0;n#div#0;n#!!top" expanded="true" />
-                      </folding>
-                    </state>
-                  </provider>
-                </entry>
-              </file>
               <file leaf-file-name="page_episodes.js" pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/scripts/custom/page_episodes.js">
                   <provider selected="true" editor-type-id="text-editor">
@@ -173,10 +156,10 @@
                   </provider>
                 </entry>
               </file>
-              <file leaf-file-name="poster-parallax.block" pinned="false" current-in-tab="true">
+              <file leaf-file-name="poster-parallax.block" pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/blocks/poster-parallax.block">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.26760563" vertical-offset="0" max-vertical-offset="1065">
+                    <state vertical-scroll-proportion="-5.5882354" vertical-offset="0" max-vertical-offset="1065">
                       <caret line="19" column="58" selection-start-line="19" selection-start-column="58" selection-end-line="19" selection-end-column="58" />
                       <folding>
                         <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
@@ -214,7 +197,17 @@
                 <entry file="file://$PROJECT_DIR$/scripts/custom/page_episode.js">
                   <provider selected="true" editor-type-id="text-editor">
                     <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
-                      <caret line="4" column="39" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
+                      <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+                      <folding />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file leaf-file-name="page_home.js" pinned="false" current-in-tab="true">
+                <entry file="file://$PROJECT_DIR$/scripts/custom/page_home.js">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state vertical-scroll-proportion="0.6182796" vertical-offset="270" max-vertical-offset="3930">
+                      <caret line="64" column="41" selection-start-line="64" selection-start-column="41" selection-end-line="64" selection-end-column="41" />
                       <folding />
                     </state>
                   </provider>
@@ -331,8 +324,8 @@
           <file leaf-file-name="fullTriangle.scss" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/styles/sass/modules/posters/fullTriangle.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.4945055" vertical-offset="0" max-vertical-offset="1092">
-                  <caret line="36" column="7" selection-start-line="25" selection-start-column="21" selection-end-line="36" selection-end-column="7" />
+                <state vertical-scroll-proportion="0.3434066" vertical-offset="0" max-vertical-offset="1092">
+                  <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
                   <folding />
                 </state>
               </provider>
@@ -382,7 +375,6 @@
         <option value="$PROJECT_DIR$/styles/style.css" />
         <option value="$PROJECT_DIR$/scripts/custom/cta-converter.js" />
         <option value="$PROJECT_DIR$/blocks/svg-icon-browser.block" />
-        <option value="$PROJECT_DIR$/scripts/custom/page_home.js" />
         <option value="$PROJECT_DIR$/scripts/custom/Preloader.js" />
         <option value="$PROJECT_DIR$/collections/videoclips.list" />
         <option value="$PROJECT_DIR$/blocks/module-upcoming.block" />
@@ -419,6 +411,7 @@
         <option value="$PROJECT_DIR$/blocks/poster-scroll.block" />
         <option value="$PROJECT_DIR$/styles/sass/modules/posters/circle.scss" />
         <option value="$PROJECT_DIR$/styles/sass/modules/posters/fullTriangle.scss" />
+        <option value="$PROJECT_DIR$/scripts/custom/page_home.js" />
       </list>
     </option>
   </component>
@@ -865,16 +858,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/blocks/page-show.block">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="799" max-vertical-offset="1890">
-          <caret line="80" column="7" selection-start-line="0" selection-start-column="0" selection-end-line="120" selection-end-column="6" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#section#0;n#div#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/blocks/module-share-episode.block">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="270">
@@ -1106,14 +1089,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/custom/page_episode.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
-          <caret line="4" column="39" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/collections/episodes.list">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-13.75" vertical-offset="0" max-vertical-offset="1395">
@@ -1247,7 +1222,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/blocks/poster-parallax.block">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.26760563" vertical-offset="0" max-vertical-offset="1065">
+        <state vertical-scroll-proportion="-5.5882354" vertical-offset="0" max-vertical-offset="1065">
           <caret line="19" column="58" selection-start-line="19" selection-start-column="58" selection-end-line="19" selection-end-column="58" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
@@ -1291,8 +1266,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/styles/sass/modules/posters/fullTriangle.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4945055" vertical-offset="0" max-vertical-offset="1092">
-          <caret line="36" column="7" selection-start-line="25" selection-start-column="21" selection-end-line="36" selection-end-column="7" />
+        <state vertical-scroll-proportion="0.3434066" vertical-offset="0" max-vertical-offset="1092">
+          <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/custom/page_episode.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/custom/page_home.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6182796" vertical-offset="270" max-vertical-offset="3930">
+          <caret line="64" column="41" selection-start-line="64" selection-start-column="41" selection-end-line="64" selection-end-column="41" />
           <folding />
         </state>
       </provider>

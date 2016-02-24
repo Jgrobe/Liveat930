@@ -62,6 +62,10 @@ console.log('git add');
             //})
         }) );
 
+        new SVGClipper($modelContainer, {
+            shape: $modelContainer.data('shape')
+        });
+
         SQSP.instances.Posters[i].$object.hoverApplicants = [SQSP.$objects.postersContainer, SQSP.instances.Posters[i].$object.hoverLayer];
         SQSP.instances.Posters[i].init();
 
