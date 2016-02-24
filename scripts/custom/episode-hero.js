@@ -1,9 +1,7 @@
 SQSP.functions.createEpisodeHero = function() {
 
-    var $hero = jQuery('.episodes-landing');
     var $canvasContainer = jQuery('.landing-bg');
 
-    console.log($canvasContainer, $hero);
     SQSP.instances.CanvasPainter = new CanvasPainter($canvasContainer, {
         autoPlay: true,
         //autoStop: true,
@@ -42,9 +40,11 @@ SQSP.functions.createEpisodeHero = function() {
     });
 
     jQuery(window).scroll(function() {
-        if(jQuery(window).scrollTop() > SQSP.instances.CanvasPainter.$object.container.height()) {
+        var scrolltop = jQuery(window).scrollTop();
+        if(scrolltop > SQSP.instances.CanvasPainter.$object.container.height()) {
             SQSP.instances.CanvasPainter.stopVideo();
         } else {
+            TweenMax.set($canvasContainer, {y:scrolltop});
             if(!SQSP.instances.CanvasPainter.PLAY) SQSP.instances.CanvasPainter.playVideo();
         }
     });
