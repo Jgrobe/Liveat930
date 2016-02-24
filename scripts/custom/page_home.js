@@ -1,6 +1,6 @@
 SQSP.functions.initPage = function() {
 
-    jQuery(window).on('artistsReady', function(e) {
+    jQuery(document).on('artistsReady', function(e) {
         console.log('artistsReady evt fired!', e);
     });
 
