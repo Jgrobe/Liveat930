@@ -2,6 +2,8 @@ SQSP.functions.createEpisodeHero = function() {
 
     var $canvasContainer = jQuery('.landing-bg');
 
+    if(!$canvasContainer.hasAttr('data-src')) return;
+
     SQSP.instances.CanvasPainter = new CanvasPainter($canvasContainer, {
         autoPlay: true,
         //autoStop: true,
