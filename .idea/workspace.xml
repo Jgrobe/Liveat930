@@ -28,10 +28,10 @@
         <splitter split-orientation="horizontal" split-proportion="0.449375">
           <split-first>
             <leaf>
-              <file leaf-file-name="template.conf" pinned="false" current-in-tab="true">
+              <file leaf-file-name="template.conf" pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/template.conf">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="2.3598902" vertical-offset="528" max-vertical-offset="3375">
+                    <state vertical-scroll-proportion="-107.375" vertical-offset="528" max-vertical-offset="3375">
                       <caret line="207" column="15" selection-start-line="207" selection-start-column="15" selection-end-line="207" selection-end-column="15" />
                       <folding />
                     </state>
@@ -104,10 +104,10 @@
                   </provider>
                 </entry>
               </file>
-              <file leaf-file-name="nav-search-overlay.block" pinned="false" current-in-tab="false">
+              <file leaf-file-name="nav-search-overlay.block" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/blocks/nav-search-overlay.block">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="1530">
+                    <state vertical-scroll-proportion="0.16483517" vertical-offset="0" max-vertical-offset="1530">
                       <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
                       <folding />
                     </state>
@@ -187,8 +187,8 @@
               <file leaf-file-name="episodes.item" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/collections/episodes.item">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.25824177" vertical-offset="933" max-vertical-offset="2925">
-                      <caret line="81" column="69" selection-start-line="81" selection-start-column="69" selection-end-line="81" selection-end-column="69" />
+                    <state vertical-scroll-proportion="0.29945055" vertical-offset="933" max-vertical-offset="2925">
+                      <caret line="84" column="0" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
                       <folding>
                         <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#section#1;n#div#0;n#!!top" expanded="true" />
                       </folding>
@@ -732,10 +732,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-2556" y="23" width="2556" height="1417" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13660377" sideWeight="0.49980277" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13660377" sideWeight="0.49980277" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32981133" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26037735" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -777,17 +777,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/styles/style.css.map">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.07240547" vertical-offset="0" max-vertical-offset="1243">
-          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="sourcemapFileViewerProvider">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/styles/sass/ui/cta.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1116">
@@ -1186,21 +1175,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/collections/episodes.item">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.29945055" vertical-offset="933" max-vertical-offset="2925">
+          <caret line="84" column="0" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#section#1;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/template.conf">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.3598902" vertical-offset="528" max-vertical-offset="3375">
+        <state vertical-scroll-proportion="-107.375" vertical-offset="528" max-vertical-offset="3375">
           <caret line="207" column="15" selection-start-line="207" selection-start-column="15" selection-end-line="207" selection-end-column="15" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/collections/episodes.item">
+    <entry file="file://$PROJECT_DIR$/blocks/nav-search-overlay.block">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.25824177" vertical-offset="933" max-vertical-offset="2925">
-          <caret line="81" column="69" selection-start-line="81" selection-start-column="69" selection-end-line="81" selection-end-column="69" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#section#1;n#div#0;n#!!top" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.16483517" vertical-offset="0" max-vertical-offset="1530">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
