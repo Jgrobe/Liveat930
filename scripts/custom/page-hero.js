@@ -22,7 +22,10 @@ SQSP.functions.createPageHero = function() {
 
             console.log('------------------canvas createcomplete',Painter);
 
-            if(!Painter.$object.container.hasAttr('data-shape')) return;
+            if(!Painter.$object.container.hasAttr('data-shape')) {
+                GradientMaps.applyGradientMap(Painter.DOM.layerCanvas.object, 'black, white');
+                return;
+            }// endif !has shape
 
             SQSP.instances.heroClipper = new SVGClipper(Painter.$object.layerCanvas, {
                 shape: Painter.$object.container.attr('data-shape'),
