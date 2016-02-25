@@ -30,8 +30,7 @@
                     {.end}
                 {.end}
             </ul><!-- .sizes -->
-            <div class="cta-dummy" data-tag="div" data-label="Buy now!" data-class="cta-buy sqs-add-to-cart-button" data-attributes="data-collection-id={collectionId},data-item-id={id}"></div>
-
+            <div class="cta-dummy" data-label="Buy now!" data-class="cta-buy" data-attributes="href={fullUrl}"></div>
         </div><!-- .merch-item -->
     {.end}
 </section>
