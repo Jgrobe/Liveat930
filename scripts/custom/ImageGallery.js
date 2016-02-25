@@ -80,6 +80,7 @@ var ImageGallery = function($container, options) {
             if(_.isFunction(functions.onComplete)) functions.onComplete();
         });
 
+        tl.add( update_imageCounter(), 0 );
         tl.add( update_imageTitle(), 0 );
         tl.add( update_imageCopy(), 0 );
     };// switchImage()
@@ -99,6 +100,8 @@ var ImageGallery = function($container, options) {
                 if(_.isFunction(functions.onComplete)) functions.onComplete();
             }
         });
+
+        IG.$object.labelCurrent.html(IG.options.images.length);
 
         IG.$object.arrows.click(function(e) {
             IG.arrowClick(e);
@@ -125,11 +128,14 @@ var ImageGallery = function($container, options) {
     }// update_imageTitle()
 
     function update_imageCopy() {
-        if(!elem_exists(IG.$object.imageCopy) || !IG.options.images[IG.options.currentIndex].copy) return 'null'; // must be tween, timeline, fn or string b/c inserted into timeline
+        if( !elem_exists(IG.$object.imageCopy) ) return 'null'; // must be tween, timeline, fn or string b/c inserted into timeline
         //console.log('------- update_imageCopy()');
 
         var copyTL = new TimelineMax();
         copyTL.to(IG.$object.imageCopy, IG.options.duration, {autoAlpha:0});
+
+        if( !IG.options.images[IG.options.currentIndex].copy ) return 'null'; // must be tween, timeline, fn or string b/c inserted into timeline
+
         copyTL.add(function() {
             IG.$object.imageCopy.html(IG.options.images[IG.options.currentIndex].copy);
         });
@@ -137,6 +143,18 @@ var ImageGallery = function($container, options) {
 
         return copyTL;
     }// update_imageCopy()
+
+    function update_imageCounter() {
+        if( !elem_exists(IG.$object.labelCurrent) ) return 'null'; // must be tween, timeline, fn or string b/c inserted into timeline
+
+        var labelTL = new TimelineMax();
+        labelTL.to(IG.$object.labelCurrent, IG.options.duration, {autoAlpha:0});
+        labelTL.add(function() {
+            IG.$object.labelCurrent.html(IG.options.currentIndex+1);
+        });
+        labelTL.to(IG.$object.labelCurrent, IG.options.duration, {autoAlpha:1});
+        return labelTL;
+    }
 
 
     function preloadImages(imgs) {
