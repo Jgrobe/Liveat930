@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ba77c59-895c-4b6c-8ed1-52220cbb39bd" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/scripts/custom/episode-hero.js" afterPath="$PROJECT_DIR$/scripts/custom/page-hero.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collections/episodes.item" afterPath="$PROJECT_DIR$/collections/episodes.item" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collections/episodes.list" afterPath="$PROJECT_DIR$/collections/episodes.list" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/header.region" afterPath="$PROJECT_DIR$/header.region" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/custom/page_episode.js" afterPath="$PROJECT_DIR$/scripts/custom/page_episode.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/custom/page_episodes.js" afterPath="$PROJECT_DIR$/scripts/custom/page_episodes.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collections/pages.item" afterPath="$PROJECT_DIR$/collections/pages.item" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/custom/ui.js" afterPath="$PROJECT_DIR$/scripts/custom/ui.js" />
     </list>
     <ignored path="sqsp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,9 +25,9 @@
     <favorites_list name="sqsp" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.701392">
+    <splitter split-orientation="horizontal" split-proportion="0.78760666">
       <split-first>
-        <splitter split-orientation="horizontal" split-proportion="0.5070422">
+        <splitter split-orientation="horizontal" split-proportion="0.35746863">
           <split-first>
             <leaf>
               <file leaf-file-name="template.conf" pinned="false" current-in-tab="false">
@@ -70,7 +63,7 @@
               <file leaf-file-name="header.region" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/header.region">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.58189654" vertical-offset="0" max-vertical-offset="1095">
+                    <state vertical-scroll-proportion="0.4945055" vertical-offset="0" max-vertical-offset="1095">
                       <caret line="36" column="40" selection-start-line="36" selection-start-column="40" selection-end-line="36" selection-end-column="40" />
                       <folding />
                     </state>
@@ -135,11 +128,11 @@
           </split-first>
           <split-second>
             <leaf>
-              <file leaf-file-name="pages.item" pinned="false" current-in-tab="false">
+              <file leaf-file-name="pages.item" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/collections/pages.item">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="-41.75" vertical-offset="1443" max-vertical-offset="2535">
-                      <caret line="163" column="6" selection-start-line="163" selection-start-column="6" selection-end-line="163" selection-end-column="6" />
+                    <state vertical-scroll-proportion="0.3543956" vertical-offset="858" max-vertical-offset="2520">
+                      <caret line="83" column="67" selection-start-line="83" selection-start-column="67" selection-end-line="83" selection-end-column="67" />
                       <folding>
                         <element signature="n#style#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
                         <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#section#0;n#div#0;n#!!top" expanded="true" />
@@ -224,11 +217,11 @@
                   </provider>
                 </entry>
               </file>
-              <file leaf-file-name="page-hero.js" pinned="false" current-in-tab="true">
+              <file leaf-file-name="page-hero.js" pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/scripts/custom/page-hero.js">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.89810926" vertical-offset="0" max-vertical-offset="952">
-                      <caret line="57" column="19" selection-start-line="57" selection-start-column="19" selection-end-line="57" selection-end-column="19" />
+                    <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="945">
+                      <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
                       <folding />
                     </state>
                   </provider>
@@ -323,8 +316,8 @@
           <file leaf-file-name="ui.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/scripts/custom/ui.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.6302521" vertical-offset="0" max-vertical-offset="4080">
-                  <caret line="40" column="33" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
+                <state vertical-scroll-proportion="0.53763443" vertical-offset="0" max-vertical-offset="4080">
+                  <caret line="40" column="36" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="36" />
                   <folding />
                 </state>
               </provider>
@@ -405,12 +398,12 @@
         <option value="$PROJECT_DIR$/scripts/custom/episode-hero.js" />
         <option value="$PROJECT_DIR$/collections/episodes.list" />
         <option value="$PROJECT_DIR$/collections/episodes.item" />
-        <option value="$PROJECT_DIR$/collections/pages.item" />
         <option value="$PROJECT_DIR$/header.region" />
         <option value="$PROJECT_DIR$/scripts/custom/page_episodes.js" />
         <option value="$PROJECT_DIR$/scripts/custom/page_episode.js" />
         <option value="$PROJECT_DIR$/scripts/custom/page-hero.js" />
         <option value="$PROJECT_DIR$/scripts/custom/ui.js" />
+        <option value="$PROJECT_DIR$/collections/pages.item" />
       </list>
     </option>
   </component>
@@ -851,15 +844,15 @@
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13660377" sideWeight="0.49980277" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13660377" sideWeight="0.49980277" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32981133" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26037735" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26037735" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12149902" sideWeight="0.91938776" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12149902" sideWeight="0.9195804" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32981133" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12149902" sideWeight="0.08061224" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12149902" sideWeight="0.08041958" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13660377" sideWeight="0.50019723" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32830188" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -1236,24 +1229,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/collections/pages.item">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-41.75" vertical-offset="1443" max-vertical-offset="2535">
-          <caret line="163" column="6" selection-start-line="163" selection-start-column="6" selection-end-line="163" selection-end-column="6" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#section#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#squarespace:query#0;n#div#1;n#section#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#squarespace:query#1;n#div#1;n#section#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#squarespace:query#2;n#div#1;n#section#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#squarespace:query#3;n#div#1;n#section#1;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/header.region">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.58189654" vertical-offset="0" max-vertical-offset="1095">
+        <state vertical-scroll-proportion="0.4945055" vertical-offset="0" max-vertical-offset="1095">
           <caret line="36" column="40" selection-start-line="36" selection-start-column="40" selection-end-line="36" selection-end-column="40" />
           <folding />
         </state>
@@ -1299,19 +1277,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/custom/page-hero.js">
+    <entry file="file://$PROJECT_DIR$/scripts/custom/ui.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.89810926" vertical-offset="0" max-vertical-offset="952">
-          <caret line="57" column="19" selection-start-line="57" selection-start-column="19" selection-end-line="57" selection-end-column="19" />
+        <state vertical-scroll-proportion="0.53763443" vertical-offset="0" max-vertical-offset="4080">
+          <caret line="40" column="36" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/custom/ui.js">
+    <entry file="file://$PROJECT_DIR$/scripts/custom/page-hero.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6302521" vertical-offset="0" max-vertical-offset="4080">
-          <caret line="40" column="33" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="945">
+          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collections/pages.item">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3543956" vertical-offset="858" max-vertical-offset="2520">
+          <caret line="83" column="67" selection-start-line="83" selection-start-column="67" selection-end-line="83" selection-end-column="67" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#section#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#squarespace:query#0;n#div#1;n#section#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#squarespace:query#1;n#div#1;n#section#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#squarespace:query#2;n#div#1;n#section#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#squarespace:query#3;n#div#1;n#section#1;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
