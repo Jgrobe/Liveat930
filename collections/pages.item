@@ -1,3 +1,11 @@
+{.section item.customContent}
+<script>
+    var _gallery = false;
+    {.if gallery}
+        _gallery = {gallery|json};
+    {.end}
+</script>
+{.end}
 {.equal?:item.customContent.customType:"page-show"}
     <script>console.log('ITS THE SHOW TEMPLATE');</script>
     <section class="show-landing">
