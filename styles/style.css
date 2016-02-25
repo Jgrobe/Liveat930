@@ -3091,6 +3091,7 @@ a.episodes-landing-cta {
       background-image: url("assets/images/textures/texture-halftone-compressor-2-70k.jpg");
       mix-blend-mode: overlay; }
   .post-landing h1 {
+    position: relative;
     margin: 0; }
 
 .post-landing-cta {

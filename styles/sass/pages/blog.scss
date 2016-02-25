@@ -5,6 +5,7 @@
   @include prefixed(justify-content, center);
   @include prefixed(align-items, center);
   h1 {
+    position: relative;
     margin: 0;
 //    font-size: 7vw;
 //    letter-spacing: 0.5vw;
