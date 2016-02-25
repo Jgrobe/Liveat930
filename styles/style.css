@@ -189,7 +189,7 @@ input {
         letter-spacing: .06em;
         margin: 0 auto; } }
 
-.fill-parent, .slider-ui, .poster .poster-content, .poster .layer.bg-layer, .poster .layer.copy-layer, .poster.circle .layer.bg-layer .half:first-child:before, .poster.fullTriangle .layer.bg-layer .half:first-child:before, #preloader .filler, .episodes-landing .landing-bg:after, .host-landing .landing-bg:after, .merch-landing .landing-bg:after, .post-landing .landing-bg:after, .show-landing .landing-bg:after, .video-overview-landing .landing-bg:after {
+.fill-parent, .slider-ui, .poster .poster-content, .poster .layer.bg-layer, .poster .layer.copy-layer, .poster.circle .layer.bg-layer .half:first-child:before, .poster.fullTriangle .layer.bg-layer .half:first-child:before, .nav-overlay .video-container, #preloader .filler, .episodes-landing .landing-bg:after, .host-landing .landing-bg:after, .merch-landing .landing-bg:after, .post-landing .landing-bg:after, .show-landing .landing-bg:after, .video-overview-landing .landing-bg:after {
   position: absolute;
   top: 0;
   left: 0;
@@ -1484,7 +1484,7 @@ input {
     top: 0;
     left: 0;
     width: 100%; }
-    .poster .model-container .fill-parent, .poster .model-container .slider-ui, .poster .model-container .poster-content, .poster .model-container .layer.bg-layer, .poster .model-container .layer.copy-layer, .poster.circle .model-container .layer.bg-layer .half:first-child:before, .poster.circle .layer.bg-layer .model-container .half:first-child:before, .poster.fullTriangle .model-container .layer.bg-layer .half:first-child:before, .poster.fullTriangle .layer.bg-layer .model-container .half:first-child:before, .poster .model-container #preloader .filler, #preloader .poster .model-container .filler, .poster .model-container .episodes-landing .landing-bg:after, .episodes-landing .poster .model-container .landing-bg:after, .poster .model-container .host-landing .landing-bg:after, .host-landing .poster .model-container .landing-bg:after, .poster .model-container .merch-landing .landing-bg:after, .merch-landing .poster .model-container .landing-bg:after, .poster .model-container .post-landing .landing-bg:after, .post-landing .poster .model-container .landing-bg:after, .poster .model-container .show-landing .landing-bg:after, .show-landing .poster .model-container .landing-bg:after, .poster .model-container .video-overview-landing .landing-bg:after, .video-overview-landing .poster .model-container .landing-bg:after {
+    .poster .model-container .fill-parent, .poster .model-container .slider-ui, .poster .model-container .poster-content, .poster .model-container .layer.bg-layer, .poster .model-container .layer.copy-layer, .poster.circle .model-container .layer.bg-layer .half:first-child:before, .poster.circle .layer.bg-layer .model-container .half:first-child:before, .poster.fullTriangle .model-container .layer.bg-layer .half:first-child:before, .poster.fullTriangle .layer.bg-layer .model-container .half:first-child:before, .poster .model-container .nav-overlay .video-container, .nav-overlay .poster .model-container .video-container, .poster .model-container #preloader .filler, #preloader .poster .model-container .filler, .poster .model-container .episodes-landing .landing-bg:after, .episodes-landing .poster .model-container .landing-bg:after, .poster .model-container .host-landing .landing-bg:after, .host-landing .poster .model-container .landing-bg:after, .poster .model-container .merch-landing .landing-bg:after, .merch-landing .poster .model-container .landing-bg:after, .poster .model-container .post-landing .landing-bg:after, .post-landing .poster .model-container .landing-bg:after, .poster .model-container .show-landing .landing-bg:after, .show-landing .poster .model-container .landing-bg:after, .poster .model-container .video-overview-landing .landing-bg:after, .video-overview-landing .poster .model-container .landing-bg:after {
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover; }
@@ -1817,6 +1817,17 @@ input {
   overflow: hidden;
   visibility: hidden;
   opacity: 0; }
+  .nav-overlay .video-container:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5) url("assets/images/textures/texture-halftone.3.jpg");
+    background-size: 5%;
+    mix-blend-mode: overlay; }
   .nav-overlay .stagger-item {
     visibility: hidden;
     opacity: 0; }

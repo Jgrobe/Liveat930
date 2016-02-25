@@ -11,6 +11,11 @@ $rightColMargin: 10vw;
   overflow: hidden;
   @include autoAlpha(0);
 
+  .video-container {
+    @extend .fill-parent;
+    @include texturizer();
+  }
+
   .stagger-item { @include autoAlpha(0);}
 
 //  &.search-on {

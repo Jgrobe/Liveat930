@@ -1,5 +1,9 @@
 <div class="nav-overlay search-on">
-    <video src="https://player.vimeo.com/external/154087449.sd.mp4?s=27f1c7ba706337f65f606c14ab0fed5d95cc6337&profile_id=112" muted loop style="background-image: url('assets/images/nav-overlay-bgimg.jpg');"></video>
+    <div id="nav-bg" class="video-container">
+        <video src="https://player.vimeo.com/external/154087449.sd.mp4?s=27f1c7ba706337f65f606c14ab0fed5d95cc6337&profile_id=112" muted loop style="background-image: url('assets/images/nav-overlay-bgimg.jpg');"></video>
+        <script>GradientMaps.applyGradientMap(document.getElementById('nav-bg'), 'black, white');</script>
+    </div><!-- video-container -->
+
     <div class="fill-parent">
 
         <div class="table nav-table">
