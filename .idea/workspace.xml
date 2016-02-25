@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6ba77c59-895c-4b6c-8ed1-52220cbb39bd" name="Default" comment="" />
+    <list default="true" id="6ba77c59-895c-4b6c-8ed1-52220cbb39bd" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/sass/pages/merch.scss" afterPath="$PROJECT_DIR$/styles/sass/pages/merch.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collections/products.list" afterPath="$PROJECT_DIR$/collections/products.list" />
+    </list>
     <ignored path="sqsp.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -141,8 +144,8 @@
               <file leaf-file-name="pages.item" pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/collections/pages.item">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="-8.0" vertical-offset="393" max-vertical-offset="2640">
-                      <caret line="39" column="65" selection-start-line="39" selection-start-column="65" selection-end-line="39" selection-end-column="65" />
+                    <state vertical-scroll-proportion="-1.125" vertical-offset="1143" max-vertical-offset="2640">
+                      <caret line="78" column="40" selection-start-line="78" selection-start-column="40" selection-end-line="78" selection-end-column="40" />
                       <folding>
                         <element signature="n#style#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
                         <element signature="n#style#0;n#div#0;n#div#0;n#squarespace:query#0;n#div#1;n#section#1;n#div#0;n#!!top" expanded="true" />
@@ -154,24 +157,22 @@
                   </provider>
                 </entry>
               </file>
-              <file leaf-file-name="page_episodes.js" pinned="false" current-in-tab="true">
+              <file leaf-file-name="page_episodes.js" pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/scripts/custom/page_episodes.js">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.2016129" vertical-offset="0" max-vertical-offset="1116">
-                      <caret line="15" column="47" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
+                    <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="675">
+                      <caret line="6" column="63" selection-start-line="6" selection-start-column="63" selection-end-line="6" selection-end-column="63" />
                       <folding />
                     </state>
                   </provider>
                 </entry>
               </file>
-              <file leaf-file-name="poster-parallax.block" pinned="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/blocks/poster-parallax.block">
+              <file leaf-file-name="products.list" pinned="false" current-in-tab="true">
+                <entry file="file://$PROJECT_DIR$/collections/products.list">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="-9.431373" vertical-offset="74" max-vertical-offset="975">
-                      <caret line="37" column="80" selection-start-line="37" selection-start-column="80" selection-end-line="37" selection-end-column="80" />
-                      <folding>
-                        <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-                      </folding>
+                    <state vertical-scroll-proportion="0.6181319" vertical-offset="0" max-vertical-offset="1092">
+                      <caret line="45" column="41" selection-start-line="45" selection-start-column="41" selection-end-line="45" selection-end-column="41" />
+                      <folding />
                     </state>
                   </provider>
                 </entry>
@@ -252,16 +253,6 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="artists.conf" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/collections/artists.conf">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-3.125" vertical-offset="0" max-vertical-offset="180">
-                  <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="handleArtists.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/scripts/custom/handleArtists.js">
               <provider selected="true" editor-type-id="text-editor">
@@ -322,11 +313,31 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="ImageGallery.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="ImageGallery.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/scripts/custom/ImageGallery.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.47658402" vertical-offset="1521" max-vertical-offset="2610">
-                  <caret line="136" column="0" selection-start-line="136" selection-start-column="0" selection-end-line="136" selection-end-column="0" />
+                <state vertical-scroll-proportion="-9.814815" vertical-offset="1340" max-vertical-offset="2610">
+                  <caret line="107" column="11" selection-start-line="107" selection-start-column="11" selection-end-line="107" selection-end-column="11" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="merch.scss" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/styles/sass/pages/merch.scss">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.5631868" vertical-offset="105" max-vertical-offset="2070">
+                  <caret line="48" column="28" selection-start-line="48" selection-start-column="28" selection-end-line="48" selection-end-column="28" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="episodes.scss" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/styles/sass/pages/episodes.scss">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="-21.0" vertical-offset="2166" max-vertical-offset="7740">
+                  <caret line="178" column="23" selection-start-line="178" selection-start-column="23" selection-end-line="179" selection-end-column="43" />
                   <folding />
                 </state>
               </provider>
@@ -335,8 +346,8 @@
           <file leaf-file-name="poster.scss" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/styles/sass/modules/poster.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-11.666667" vertical-offset="1895" max-vertical-offset="7680">
-                  <caret line="166" column="7" selection-start-line="166" selection-start-column="7" selection-end-line="166" selection-end-column="7" />
+                <state vertical-scroll-proportion="-3.72549" vertical-offset="1895" max-vertical-offset="7680">
+                  <caret line="139" column="16" selection-start-line="139" selection-start-column="16" selection-end-line="139" selection-end-column="16" />
                   <folding />
                 </state>
               </provider>
@@ -352,13 +363,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/styles/style.css" />
         <option value="$PROJECT_DIR$/scripts/custom/cta-converter.js" />
         <option value="$PROJECT_DIR$/blocks/svg-icon-browser.block" />
         <option value="$PROJECT_DIR$/scripts/custom/Preloader.js" />
         <option value="$PROJECT_DIR$/collections/videoclips.list" />
         <option value="$PROJECT_DIR$/blocks/module-upcoming.block" />
-        <option value="$PROJECT_DIR$/collections/products.list" />
         <option value="$PROJECT_DIR$/blocks/nav-search-overlay.block" />
         <option value="$PROJECT_DIR$/blocks/sticky-nav.block" />
         <option value="$PROJECT_DIR$/collections/episodes.conf" />
@@ -401,8 +410,10 @@
         <option value="$PROJECT_DIR$/scripts/custom/ui.js" />
         <option value="$PROJECT_DIR$/scripts/custom/page-gallery.js" />
         <option value="$PROJECT_DIR$/scripts/custom/ImageGallery.js" />
-        <option value="$PROJECT_DIR$/collections/pages.item" />
         <option value="$PROJECT_DIR$/scripts/custom/page_episodes.js" />
+        <option value="$PROJECT_DIR$/collections/pages.item" />
+        <option value="$PROJECT_DIR$/collections/products.list" />
+        <option value="$PROJECT_DIR$/styles/sass/pages/merch.scss" />
       </list>
     </option>
   </component>
@@ -854,10 +865,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-2556" y="23" width="2556" height="1417" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13660377" sideWeight="0.49980277" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13660377" sideWeight="0.49980277" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32981133" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26037735" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -899,13 +910,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/scripts/libs/greensock/utils/Draggable.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.013452915" vertical-offset="0" max-vertical-offset="1115">
-          <caret line="13" column="79" selection-start-line="13" selection-start-column="79" selection-end-line="13" selection-end-column="79" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/styles/style.css.map">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.07240547" vertical-offset="0" max-vertical-offset="1243">
@@ -1011,14 +1015,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.067204304" vertical-offset="0" max-vertical-offset="1116">
           <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/styles/sass/pages/episodes.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.875" vertical-offset="2166" max-vertical-offset="7740">
-          <caret line="157" column="0" selection-start-line="157" selection-start-column="0" selection-end-line="157" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1163,14 +1159,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/styles/sass/modules/poster.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.666667" vertical-offset="1895" max-vertical-offset="7680">
-          <caret line="166" column="7" selection-start-line="166" selection-start-column="7" selection-end-line="166" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/template-home.region">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="480">
@@ -1277,28 +1265,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/custom/ImageGallery.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.47658402" vertical-offset="1521" max-vertical-offset="2610">
-          <caret line="136" column="0" selection-start-line="136" selection-start-column="0" selection-end-line="136" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/collections/pages.item">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.0" vertical-offset="393" max-vertical-offset="2640">
-          <caret line="39" column="65" selection-start-line="39" selection-start-column="65" selection-end-line="39" selection-end-column="65" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#squarespace:query#0;n#div#1;n#section#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#squarespace:query#1;n#div#1;n#section#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#squarespace:query#2;n#div#1;n#section#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#squarespace:query#3;n#div#1;n#section#1;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/custom/page_episode.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="210">
@@ -1309,8 +1275,62 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/custom/page_episodes.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2016129" vertical-offset="0" max-vertical-offset="1116">
-          <caret line="15" column="47" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="675">
+          <caret line="6" column="63" selection-start-line="6" selection-start-column="63" selection-end-line="6" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collections/pages.item">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.125" vertical-offset="1143" max-vertical-offset="2640">
+          <caret line="78" column="40" selection-start-line="78" selection-start-column="40" selection-end-line="78" selection-end-column="40" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#squarespace:query#0;n#div#1;n#section#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#squarespace:query#1;n#div#1;n#section#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#squarespace:query#2;n#div#1;n#section#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#squarespace:query#3;n#div#1;n#section#1;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/custom/ImageGallery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.814815" vertical-offset="1340" max-vertical-offset="2610">
+          <caret line="107" column="11" selection-start-line="107" selection-start-column="11" selection-end-line="107" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collections/products.list">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6181319" vertical-offset="0" max-vertical-offset="1092">
+          <caret line="45" column="41" selection-start-line="45" selection-start-column="41" selection-end-line="45" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/sass/modules/poster.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.72549" vertical-offset="1895" max-vertical-offset="7680">
+          <caret line="139" column="16" selection-start-line="139" selection-start-column="16" selection-end-line="139" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/sass/pages/episodes.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-21.0" vertical-offset="2166" max-vertical-offset="7740">
+          <caret line="178" column="23" selection-start-line="178" selection-start-column="23" selection-end-line="179" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/sass/pages/merch.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5631868" vertical-offset="105" max-vertical-offset="2070">
+          <caret line="48" column="28" selection-start-line="48" selection-start-column="28" selection-end-line="48" selection-end-column="28" />
           <folding />
         </state>
       </provider>

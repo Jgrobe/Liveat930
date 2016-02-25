@@ -2930,12 +2930,6 @@ a.episodes-landing-cta {
   transform: translateY(-50%); }
 
 .merch-overview {
-  margin-top: 15vh; }
-  @media only screen and (max-width: 750px) {
-    .merch-overview {
-      margin: 10vh 12px; } }
-
-.merch-overview-row {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -2946,15 +2940,24 @@ a.episodes-landing-cta {
   -ms-justify-content: space-between;
   -o-justify-content: space-between;
   justify-content: space-between;
+  -webkit-box-wrap: wrap;
+  -moz-box-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-wrap: wrap;
+  -ms-wrap: wrap;
+  wrap: wrap;
   width: 70vw;
-  margin: 0 auto 15vh; }
+  margin: 10.41667vw auto; }
   @media only screen and (max-width: 750px) {
-    .merch-overview-row {
+    .merch-overview {
+      margin: 10vh 12px;
       display: block;
       width: 100%; } }
 
 .merch-item {
-  width: 30vw;
+  width: calc(~"50% - 4vw");
   position: relative;
   text-align: center; }
   .merch-item .image {

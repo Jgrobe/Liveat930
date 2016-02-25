@@ -19,27 +19,34 @@
 }
 
 .merch-overview {
-  margin-top: 15vh;
+  @include flexbox();
+  @include prefixed(justify-content, space-between);
+  @include flex-value(wrap, wrap);
+  width: 70vw;
+  margin: $sectionMarginBottom auto;
 
   @include breakpoint(mobile) {
     margin: 10vh $MOBILE_MARGIN;
-  }
-}// .merch-overview
-
-.merch-overview-row {
-  @include flexbox();
-  @include prefixed(justify-content, space-between);
-  width: 70vw;
-  margin: 0 auto 15vh;
-
-  @include breakpoint(mobile) {
     display: block;
     width: 100%;
   }// BP MOBILE
-}// .merch-overview-row
+}// .merch-overview
+
+//.merch-overview-row {
+//  @include flexbox();
+//  @include prefixed(justify-content, space-between);
+//  width: 70vw;
+//  margin: 0 auto 15vh;
+//
+//  @include breakpoint(mobile) {
+//    display: block;
+//    width: 100%;
+//  }// BP MOBILE
+//}// .merch-overview-row
 
 .merch-item {
-  width: 30vw;
+
+  width: calc(~"50% - 4vw");
   position: relative;
   text-align: center;
   .image {

@@ -12,90 +12,35 @@
 </section>
 
 <section class="merch-overview">
-    <div class="merch-overview-row">
-        {.repeated section items}
-            <div class="merch-item">
-                <div class="image img vertical rel" style="background-image:url('{assetUrl}');">
-                    <div class="title">Live at 9:30 {title}</div>
-                    {.repeated section variants}
-                        {.equal?:@index:1}
-                            <div class="price">$ {price}</div>
+    {.repeated section items}
+        <div class="merch-item">
+            <div class="image img vertical rel" style="background-image:url('{assetUrl}');">
+                <div class="title">Live at 9:30 {title}</div>
+                {.repeated section variants}
+                    {.equal?:@index:1}
+                        <div class="price">$ {price}</div>
+                    {.end}
+                {.end}
+            </div>
+            <div class="description">{excerpt}</div>
+            <ul class="sizes">
+                {.repeated section variants}
+                    {.repeated section optionValues}
+                        {.equal?:optionName:"Size"}
+                            <li>{value}</li>
                         {.end}
                     {.end}
-                </div>
-                <div class="description">{excerpt}</div>
-                <ul class="sizes">
-                    {.repeated section variants}
-                        {.repeated section optionValues}
-                            {.equal?:optionName:"Size"}
-                                <li>{value}</li>
-                            {.end}
-                        {.end}
-                    {.end}
-                </ul><!-- .sizes -->
-                <!--div class="cta-dummy" data-label="Buy now!" data-class="cta-buy"></div-->
-                {@|product-status}
-                <!-- php print_cta(array(
-                'label' => 'Buy now!',
-                'class' => array('cta-buy')
-                )); -->
-                <!--<a href="" class="cta buy">Buy now!</a>-->
-            </div><!-- .merch-item -->
-        {.end}
-        <!--<div class="merch-item">-->
-            <!--<div class="image img vertical rel" style="background-image:url('assets/images/shirt2.jpg');">-->
-                <!--<div class="title">Live at 9:30 white shirt</div>-->
-                <!--<div class="price">$ 25.00</div>-->
-            <!--</div>-->
-            <!--<div class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>-->
-            <!--<ul class="sizes">-->
-                <!--<li>S</li>-->
-                <!--<li>M</li>-->
-                <!--<li>L</li>-->
-                <!--<li>XL</li>-->
-            <!--</ul>-->
-            <!--<?php print_cta(array(-->
-            <!--'label' => 'Buy now!',-->
-            <!--'class' => array('cta-buy')-->
-            <!--)); ?>-->
-        <!--</div>-->
-    <!--</div>-->
-    <!--<div class="merch-overview-row">-->
-        <!--<div class="merch-item">-->
-            <!--<div class="image img vertical rel" style="background-image:url('assets/images/shirt3.jpg');">-->
-                <!--<div class="title">Live at 9:30 black shirt</div>-->
-                <!--<div class="price">$ 25.00</div>-->
-            <!--</div>-->
-            <!--<div class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>-->
-            <!--<ul class="sizes">-->
-                <!--<li>S</li>-->
-                <!--<li>M</li>-->
-                <!--<li>L</li>-->
-                <!--<li>XL</li>-->
-            <!--</ul>-->
-            <!--<?php print_cta(array(-->
-            <!--'label' => 'Buy now!',-->
-            <!--'class' => array('cta-buy')-->
-            <!--)); ?>-->
-        <!--</div>-->
-        <!--<div class="merch-item">-->
-            <!--<div class="image img vertical rel" style="background-image:url('assets/images/shirt4.jpg');">-->
-                <!--<div class="title">Live at 9:30 white shirt</div>-->
-                <!--<div class="price">$ 25.00</div>-->
-            <!--</div>-->
-            <!--<div class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>-->
-            <!--<ul class="sizes">-->
-                <!--<li>S</li>-->
-                <!--<li>M</li>-->
-                <!--<li>L</li>-->
-                <!--<li>XL</li>-->
-            <!--</ul>-->
-            <!--<?php print_cta(array(-->
-            <!--'label' => 'Buy now!',-->
-            <!--'class' => array('cta-buy')-->
-            <!--)); ?>-->
-        </div><!-- .merch-overview-row -->
-    </div><!-- .merch-overview -->
+                {.end}
+            </ul><!-- .sizes -->
+            <!--div class="cta-dummy" data-label="Buy now!" data-class="cta-buy"></div-->
+            {@|product-status}
+            <!-- php print_cta(array(
+            'label' => 'Buy now!',
+            'class' => array('cta-buy')
+            )); -->
+            <!--<a href="" class="cta buy">Buy now!</a>-->
+        </div><!-- .merch-item -->
+    {.end}
 </section>
 
 <?php include('modules/upcoming.php'); ?>
