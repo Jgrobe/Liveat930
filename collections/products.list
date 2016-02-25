@@ -16,10 +16,8 @@
         <div class="merch-item">
             <div class="image img vertical rel" style="background-image:url('{assetUrl}');">
                 <div class="title">Live at 9:30 {title}</div>
-                {.repeated section variants}
-                    {.equal?:@index:1}
-                        <div class="price">{@|product-price}</div>
-                    {.end}
+                {.repeated section variants.0}
+                    <div class="price">$ {price}</div>
                 {.end}
             </div>
             <div class="description">{excerpt}</div>
@@ -31,15 +29,13 @@
                         {.end}
                     {.end}
                 {.end}
-            </ul><!-- .sizes harro mada -->
-            <!--div class="cta-dummy" data-label="Buy now!" data-class="cta-buy"></div-->
-            {@|product-status}
+            </ul><!-- .sizes -->
+            <div class="cta-dummy" data-label="Buy now!" data-class="cta-buy" data-attributes="href={fullUrl}"></div>
             <!-- php print_cta(array(
             'label' => 'Buy now!',
             'class' => array('cta-buy')
             )); -->
             <!--<a href="" class="cta buy">Buy now!</a>-->
-            {@|like-button}
         </div><!-- .merch-item -->
     {.end}
 </section>
