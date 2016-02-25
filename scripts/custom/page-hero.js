@@ -13,7 +13,7 @@ SQSP.functions.createPageHero = function() {
         type: 'video',
         texturize: true,
         blendMode: 'overlay',
-        layeredCanvas: $canvasContainer.hasAttr('data-shape'),
+        layeredCanvas: true,
         //modelAttr: {loop:'true', muted:'false'},
         modelClass : ['clipper-model'],
         shapeClass: ['prllx-custom'],
@@ -23,7 +23,7 @@ SQSP.functions.createPageHero = function() {
             console.log('------------------canvas createcomplete',Painter);
 
             if(!Painter.$object.container.hasAttr('data-shape')) {
-                GradientMaps.applyGradientMap(Painter.DOM.layerCanvas.object, 'black, white');
+                //GradientMaps.applyGradientMap(Painter.DOM.layerCanvas.object, 'black, white');
                 return;
             }// endif !has shape
 
