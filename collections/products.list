@@ -39,6 +39,7 @@
             'class' => array('cta-buy')
             )); -->
             <!--<a href="" class="cta buy">Buy now!</a>-->
+            {@|like-button}
         </div><!-- .merch-item -->
     {.end}
 </section>
