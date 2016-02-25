@@ -2954,7 +2954,7 @@ a.episodes-landing-cta {
     .merch-overview {
       margin: 10vh 12px;
       display: block;
-      width: 100%; } }
+      width: calc(~"100vw - 24px"); } }
 
 .merch-item {
   width: calc(~"50% - 4vw");

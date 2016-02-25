@@ -28,7 +28,7 @@
   @include breakpoint(mobile) {
     margin: 10vh $MOBILE_MARGIN;
     display: block;
-    width: 100%;
+    width: $MOBILE_WIDTH;
   }// BP MOBILE
 }// .merch-overview
 
