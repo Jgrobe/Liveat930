@@ -30,18 +30,13 @@
                     {.end}
                 {.end}
             </ul><!-- .sizes -->
-            <div class="cta-dummy" data-label="Buy now!" data-class="cta-buy" data-attributes="href={fullUrl}"></div>
-            <!-- php print_cta(array(
-            'label' => 'Buy now!',
-            'class' => array('cta-buy')
-            )); -->
-            <!--<a href="" class="cta buy">Buy now!</a>-->
+            <div class="cta-dummy" data-tag="div" data-label="Buy now!" data-class="cta-buy sqs-add-to-cart-button" data-attributes="data-collection-id={collectionId},data-item-id={id}"></div>
+
         </div><!-- .merch-item -->
     {.end}
 </section>
 
 <script>
+    // format prices
     jQuery('.price .amount').each(function(){jQuery(this).html((parseFloat(jQuery(this).html())/100).toFixed(2))});
 </script>
-
-<?php include('modules/upcoming.php'); ?>
