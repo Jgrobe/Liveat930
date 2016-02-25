@@ -76,7 +76,7 @@
         {.if customContent}{.section customContent}
 
             {.if episode-gallery}
-                <section class="image-slider">
+                <section class="image-slider gallery-container">
                     <!--{.repeated section items}{.equal?:customContent.customType:"episode-gallery"}-->
                     <script>
                         {.section episode-gallery}
@@ -87,7 +87,7 @@
 
                     <div class="slider-container top-spaced">
                         <div class="slider-images">
-                            <div class="image current-image imgfill" style="background-image:url('assets/images/thumb-video5.jpg');"></div>
+                            <div class="image current-image imgfill gallery-image" style="background-image:url('assets/images/thumb-video5.jpg');"></div>
                             <div class="image pattern imgfill" style="background-image:url('assets/images/pattern-logo-bg.jpg');"></div>
                             <div class="image next-image imgfill" style="background-image:url('assets/images/video-clips-title.jpg');"></div>
                         </div><!-- .slider-images -->
@@ -99,7 +99,7 @@
                             </div><!-- .slider-arrows -->
                             <div class="slider-label">
                                 <h3>
-                                    <span class="current">2</span>/<span class="total">8</span>
+                                    <span class="gallery-current">2</span>/<span class="gallery-total">8</span>
                                 </h3>
                             </div>
                         </div><!-- .slider-ui -->

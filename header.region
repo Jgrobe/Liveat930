@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="//cloud.typography.com/6811694/6322752/css/fonts.css"/>
     <!--yxyxyx-->
 
+    <squarespace:script combo="true" src="libs/bowser.min.js" />
     <squarespace:script combo="true" src="libs/jquery-2.1.0.min.js" />
     <squarespace:script combo="true" src="libs/greensock/TweenMax.min.js" />
     <squarespace:script combo="true" src="libs/fastclick.js" />
@@ -36,7 +37,7 @@
     <squarespace:script src="custom/Parallaxer.js" />
 
     <squarespace:script src="custom/page-hero.js" />
-    <squarespace:script src="custom/page-gallery.js">
+    <squarespace:script src="custom/page-gallery.js" />
 
     {squarespace-headers}
 
