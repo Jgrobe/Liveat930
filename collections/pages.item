@@ -89,7 +89,7 @@
                             'icon' => 'images/icon-arrow',
                             'class' => array('negative', 'play', 'goto')
                             )); -->
-                            <span class="video-label">thats custom->{item.customContent.griditemLabelMerch}<-</span>
+                            <span class="video-label get-label"></span>
                         </div>
                         <div class="flex-cols">
                             <div class="title">{.section items.0}{title}{.end}</div>
@@ -98,58 +98,60 @@
                 </squarespace:query>
 
                 <squarespace:query collection="blog" limit="1">
-                    {.repeated section items}
                     <div class="video medium">
-                        <div class="image" style="background-image:url('{assetUrl}');">
+                        <div class="image" style="background-image:url('{.section items.0}{assetUrl}{.end}');">
                             <div class="cta-dummy" data-icon="icon-arrow" data-class="negative play goto" data-attributes="href={collection.fullUrl}">{@|apply svg-icon-arrow.block}</div>
                             <!--php print_cta(array(
                             'icon' => 'images/icon-arrow',
                             'class' => array('negative', 'play', 'goto')
                             )); -->
-                            <span class="video-label">Read about it</span>
+                            <span class="video-label"></span>
                         </div>
                         <div class="flex-cols">
-                            <div class="title">{title}</div>
+                            <div class="title">{.section items.0}{title}{.end}</div>
                         </div><!-- .flex-cols -->
                     </div><!-- .video -->
-                    {.end}
                 </squarespace:query>
 
                 <squarespace:query collection="clips" limit="1">
-                    {.repeated section items}
                     <div class="video medium">
-                        <div class="image" style="background-image:url('{assetUrl}');">
+                        <div class="image" style="background-image:url('{.section items.0}{assetUrl}{.end}');">
                             <div class="cta-dummy" data-icon="icon-arrow" data-class="negative play goto" data-attributes="href={fullUrl}">{@|apply svg-icon-arrow.block}</div>
                             <!--php print_cta(array(
                             'icon' => 'images/icon-arrow',
                             'class' => array('negative', 'play', 'goto')
                             )); -->
-                            <span class="video-label">Watch & share clips</span>
+                            <span class="video-label"></span>
                         </div>
                         <div class="flex-cols">
-                            <div class="title">{title}</div>
+                            <div class="title">{.section items.0}{title}{.end}</div>
                         </div><!-- .flex-cols -->
                     </div><!-- .video -->
-                    {.end}
                 </squarespace:query>
 
                 <squarespace:query collection="episodes" limit="1">
-                    {.repeated section items}
                         <div class="video medium">
-                            <div class="image" style="background-image:url('{assetUrl}');">
+                            <div class="image" style="background-image:url('{.section items.0}{assetUrl}{.end}');">
                                 <div class="cta-dummy" data-icon="icon-arrow" data-class="negative play goto" data-attributes="href={fullUrl}">{@|apply svg-icon-arrow.block}</div>
                                 <!--php print_cta(array(
                                 'icon' => 'images/icon-arrow',
                                 'class' => array('negative', 'play', 'goto')
                                 )); -->
-                                <span class="video-label">See the shows</span>
+                                <span class="video-label"></span>
                             </div>
                             <div class="flex-cols">
-                                <div class="title">{title}</div>
+                                <div class="title">{.section items.0}{title}{.end}</div>
                             </div><!-- .flex-cols -->
                         </div><!-- .video -->
-                    {.end}
                 </squarespace:query>
+
+
+                {.section item.customContent}
+                <script>
+                    var _labels = ['{griditemLabelMerch}', '{griditemLabelBlog}', '{griditemLabelClips}', '{griditemLabelEpisodes}'];
+                    jQuery('.get-label').each(function(i){ jQuery(this).html(_labels[i]); });
+                </script>
+                {.end}
 
             </div><!-- .video-gallery-videos -->
 
