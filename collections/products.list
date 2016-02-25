@@ -16,7 +16,7 @@
         <div class="merch-item">
             <div class="image img vertical rel" style="background-image:url('{assetUrl}');">
                 <div class="title">Live at 9:30 {title}</div>
-                {.repeated section variants.0}
+                {.section variants.0}
                     <div class="price">$ {price}</div>
                 {.end}
             </div>
