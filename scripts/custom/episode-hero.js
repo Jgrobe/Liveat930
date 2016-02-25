@@ -18,6 +18,8 @@ SQSP.functions.createEpisodeHero = function() {
 
             console.log('------------------canvas createcomplete',Painter);
 
+            if(!Painter.$object.container.hasAttr('data-shape')) return;
+
             SQSP.instances.heroClipper = new SVGClipper(Painter.$object.layerCanvas, {
                 shape: Painter.$object.container.attr('data-shape'),
                 maskID: 'heroClipper',

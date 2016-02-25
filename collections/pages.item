@@ -2,7 +2,7 @@
     <script>console.log('ITS THE SHOW TEMPLATE');</script>
     <section class="show-landing">
         <div class="fill-parent mask">
-            <div class="landing-bg" style="background-image:url('{item.assetUrl}');">
+            <div class="landing-bg" style="background-image:url('{item.assetUrl}');" data-type="video" data-src="{customContent.hero-video}">
                 <!--<video src="assets/videos/header-kanye2.mp4" autoplay loop></video>-->
                 {item.structuredContent.oembed.html}
             </div>
@@ -82,9 +82,6 @@
             <div class="video-gallery-videos lefthand top-spaced">
 
                 <squarespace:query collection="products" limit="1">
-                    <script>
-                        console.log('all products queried', {@|json-pretty});
-                    </script>
                     {.repeated section items}
                     <div class="video medium">
                         <div class="image" style="background-image:url('{assetUrl}');">
@@ -103,9 +100,6 @@
                 </squarespace:query>
 
                 <squarespace:query collection="blog" limit="1">
-                    <script>
-                        console.log('all blog queried', {@|json-pretty});
-                    </script>
                     {.repeated section items}
                     <div class="video medium">
                         <div class="image" style="background-image:url('{assetUrl}');">
@@ -124,9 +118,6 @@
                 </squarespace:query>
 
                 <squarespace:query collection="clips" limit="1">
-                    <script>
-                        console.log('all clips queried', {@|json-pretty});
-                    </script>
                     {.repeated section items}
                     <div class="video medium">
                         <div class="image" style="background-image:url('{assetUrl}');">
@@ -145,9 +136,6 @@
                 </squarespace:query>
 
                 <squarespace:query collection="episodes" limit="1">
-                    <script>
-                        console.log('all episodes queried', {@|json-pretty});
-                    </script>
                     {.repeated section items}
                         <div class="video medium">
                             <div class="image" style="background-image:url('{assetUrl}');">
@@ -174,3 +162,5 @@
 {.equal?:item.customContent.customType:"page-host"}
     {@|apply page-host.block}
 {.end}
+
+<squarespace:script src="custom/episode-hero.js" />

@@ -1,23 +1,26 @@
 
-    <squarespace:query collection="episodes">
+    <squarespace:query collection="episodes" category="upcoming" limit="1">
         <script>console.log('upcoming query', {@|json-pretty}); </script>
+        {.section items.0}
+        <section class="upcoming">
+            <div class="upcoming-headline prllx-custom" data-prllx=".04">
+                <div class="upcoming-sub">Ep <strong>No.{customContent.episode-number}</strong></div>
+                <h1>The next live at 9:30</h1>
+            </div>
+            <div class="upcoming-info prllx-custom" data-prllx=".08">
+                Check your local listing for the air date in your market.
+                <div class="cta-dummy" data-label="View Trailer" data-class="upcoming-cta prllx-custom" data-attributes="href={fullUrl},data-prllx=-0.05" data-icon="eye">{@|apply svg-icon-eye.block}</div>
+                <!-- print_cta(array(
+                    'label' => 'View Trailer',
+                'class' => array('upcoming-cta', 'prllx-custom'),
+                'icon' => 'images/eye',
+                'attributes' => array('href' => '#', 'data-prllx' => '-0.05')
+                )); -->
+            </div><!-- .upcoming-info -->
+        </section><!-- .upcoming -->
+        {.end}
+
     </squarespace:query>
-    <section class="upcoming">
-        <div class="upcoming-headline prllx-custom" data-prllx=".04">
-            <div class="upcoming-sub">Ep <strong>No. 2</strong></div>
-            <h1>The next live at 9:30</h1>
-        </div>
-        <div class="upcoming-info prllx-custom" data-prllx=".08">
-            Check your local listing for the air date in your market.
-            {@|apply module-cta.block}
-            <!-- print_cta(array(
-                'label' => 'View Trailer',
-            'class' => array('upcoming-cta', 'prllx-custom'),
-            'icon' => 'images/eye',
-            'attributes' => array('href' => '#', 'data-prllx' => '-0.05')
-            )); -->
-        </div><!-- .upcoming-info -->
-    </section><!-- .upcoming -->
 
     <footer class="footer">
         <!--<div class="footer-bg"></div>-->
