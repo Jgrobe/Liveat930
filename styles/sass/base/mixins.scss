@@ -183,6 +183,21 @@
   #{$attr}: #{$value / $base*100}#{$unit};
 }
 
+@mixin texturizer($mode:after) {
+  &:#{$mode} {
+    content:'';
+    display: block;
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: rgba(0,0,0,.5) url('assets/images/textures/texture-halftone.3.jpg');
+    background-size: 5%;
+    mix-blend-mode: overlay;
+  }
+}
+
 @mixin autoAlpha($val) {
   @if $val > 0 {
     visibility: visible;
