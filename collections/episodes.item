@@ -188,5 +188,4 @@
         </section><!-- .video-gallery -->
     </div>
 {.end}
-<squarespace:script src="custom/episode-hero.js" />
 <squarespace:script src="custom/page_episode.js" />

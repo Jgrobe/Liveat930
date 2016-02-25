@@ -1,4 +1,4 @@
-SQSP.functions.createEpisodeHero = function() {
+SQSP.functions.createPageHero = function() {
 
     var $canvasContainer = jQuery('.landing-bg');
 
@@ -55,4 +55,4 @@ SQSP.functions.createEpisodeHero = function() {
         }
     });
 
-};// createEpisodeHero
+};// createPageHero

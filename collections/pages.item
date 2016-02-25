@@ -162,5 +162,3 @@
 {.equal?:item.customContent.customType:"page-host"}
     {@|apply page-host.block}
 {.end}
-
-<squarespace:script src="custom/episode-hero.js" />

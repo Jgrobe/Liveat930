@@ -38,6 +38,8 @@ function init_sqsp() {
 
     //sizeVideosOnReady();
 
+    SQSP.functions.createPageHero();
+
 }// init_page()
 
 function populate_namespaces() {

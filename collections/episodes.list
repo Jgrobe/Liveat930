@@ -93,5 +93,4 @@
     </squarespace:query>
 </div>
 <squarespace:script src="custom/handleArtists.js" />
-<squarespace:script src="custom/episode-hero.js" />
 <squarespace:script src="custom/page_episodes.js" />

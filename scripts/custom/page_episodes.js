@@ -2,8 +2,6 @@ SQSP.functions.initPage = function() {
 
     console.log('INIT EPISODES PAGE');
 
-    SQSP.functions.createEpisodeHero();
-
     jQuery('.poster').each(function() {
         var $thisPoster = jQuery(this);
         var $thismodel =  $thisPoster.find('.model-container');
