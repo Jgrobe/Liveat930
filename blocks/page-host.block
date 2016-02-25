@@ -11,7 +11,7 @@
         <h1 class="l-headline">{item.title}</h1>
         <div class="text-layer">
             {item.body}
-            <div class="cta-dummy" data-label="Build your own website with squarespace" data-icon="browser" data-class="upsized-icon">{@|apply svg-icon-browser.block}</div>
+            <div class="cta-dummy" data-label="Build your own website with squarespace" data-icon="browser" data-class="upsized-icon" data-attributes="href=http://www.squarespace.com">{@|apply svg-icon-browser.block}</div>
             <!--php print_cta(array(
                     'label' => 'Build your own website with squarespace',
             'icon' => 'images/browser',
@@ -84,7 +84,7 @@
                 <p>{item.customContent.infoblockCopy}</p>
                 <!--h2>{item.customContent.infoblockCTALabel}</h2-->
             </div><!-- .section-head -->
-            {@|apply module-cta.block}
+            <div class="cta-dummy" data-label="Build your own website with squarespace" data-icon="browser" data-attributes="href=http://www.squarespace.com">{@|apply svg-icon-browser.block}</div>
             <!--php print_cta(array(
                     'label' => 'Build your own website with squarespace',
             'icon' => 'images/browser',
