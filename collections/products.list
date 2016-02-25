@@ -18,7 +18,7 @@
                 <div class="title">Live at 9:30 {title}</div>
                 {.repeated section variants}
                     {.equal?:@index:1}
-                        <div class="price">$ {price}</div>
+                        <div class="price">{@|product-price}</div>
                     {.end}
                 {.end}
             </div>
@@ -31,7 +31,7 @@
                         {.end}
                     {.end}
                 {.end}
-            </ul><!-- .sizes -->
+            </ul><!-- .sizes harro mada -->
             <!--div class="cta-dummy" data-label="Buy now!" data-class="cta-buy"></div-->
             {@|product-status}
             <!-- php print_cta(array(
