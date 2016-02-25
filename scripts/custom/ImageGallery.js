@@ -134,8 +134,6 @@ var ImageGallery = function($container, options) {
         var copyTL = new TimelineMax();
         copyTL.to(IG.$object.imageCopy, IG.options.duration, {autoAlpha:0});
 
-        if( !IG.options.images[IG.options.currentIndex].copy ) return 'null'; // must be tween, timeline, fn or string b/c inserted into timeline
-
         copyTL.add(function() {
             IG.$object.imageCopy.html(IG.options.images[IG.options.currentIndex].copy);
         });
