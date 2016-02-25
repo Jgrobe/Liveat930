@@ -77,12 +77,12 @@
 
             {.if episode-gallery}
                 <section class="image-slider gallery-container">
-                    <!--{.repeated section items}{.equal?:customContent.customType:"episode-gallery"}-->
+
                     <script>
                         console.log('gallery data???', {@|json-pretty});
                         var _gallery = {episode-gallery|json};
                     </script>
-                    <!--{.end}{.end}-->
+
 
                     <div class="slider-container top-spaced">
                         <div class="slider-images">
