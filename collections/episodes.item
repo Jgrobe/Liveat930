@@ -79,9 +79,9 @@
                 <section class="image-slider gallery-container">
                     <!--{.repeated section items}{.equal?:customContent.customType:"episode-gallery"}-->
                     <script>
-                        {.section episode-gallery}
-                        console.log('gallery data', {@|json-pretty});
-                        {.end}
+                    {.section episode-gallery}
+                        var _gallery = {@|json};
+                    {.end}
                     </script>
                     <!--{.end}{.end}-->
 
