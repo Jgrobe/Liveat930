@@ -101,7 +101,7 @@ var ImageGallery = function($container, options) {
             }
         });
 
-        IG.$object.labelCurrent.html(IG.options.images.length);
+        IG.$object.labelTotal.html(IG.options.images.length);
 
         IG.$object.arrows.click(function(e) {
             IG.arrowClick(e);
