@@ -17,7 +17,7 @@
             <div class="image img vertical rel" style="background-image:url('{assetUrl}');">
                 <div class="title">Live at 9:30 {title}</div>
                 {.section variants.0}
-                    <div class="price">$ {price}</div>
+                    <div class="price">$ <span class="amount">{price}</span></div>
                 {.end}
             </div>
             <div class="description">{excerpt}</div>
@@ -39,5 +39,9 @@
         </div><!-- .merch-item -->
     {.end}
 </section>
+
+<script>
+    jQuery('.price .amount').each(function(){jQuery(this).html((parseFloat(jQuery(this).html())/100).toFixed(2))});
+</script>
 
 <?php include('modules/upcoming.php'); ?>
