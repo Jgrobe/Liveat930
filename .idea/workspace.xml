@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ba77c59-895c-4b6c-8ed1-52220cbb39bd" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/footer.region" afterPath="$PROJECT_DIR$/footer.region" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collections/pages.item" afterPath="$PROJECT_DIR$/collections/pages.item" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template.conf" afterPath="$PROJECT_DIR$/template.conf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/header.region" afterPath="$PROJECT_DIR$/header.region" />
     </list>
     <ignored path="sqsp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,17 +33,17 @@
               <file leaf-file-name="template.conf" pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/template.conf">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="-10.625" vertical-offset="2055" max-vertical-offset="3375">
-                      <caret line="154" column="10" selection-start-line="154" selection-start-column="10" selection-end-line="154" selection-end-column="10" />
+                    <state vertical-scroll-proportion="-17.5" vertical-offset="2055" max-vertical-offset="3375">
+                      <caret line="165" column="23" selection-start-line="165" selection-start-column="23" selection-end-line="165" selection-end-column="23" />
                       <folding />
                     </state>
                   </provider>
                 </entry>
               </file>
-              <file leaf-file-name="footer.region" pinned="false" current-in-tab="true">
+              <file leaf-file-name="footer.region" pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/footer.region">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.027472528" vertical-offset="0" max-vertical-offset="1200">
+                    <state vertical-scroll-proportion="-1.25" vertical-offset="0" max-vertical-offset="1200">
                       <caret line="2" column="61" selection-start-line="2" selection-start-column="61" selection-end-line="2" selection-end-column="61" />
                       <folding />
                     </state>
@@ -62,11 +60,11 @@
                   </provider>
                 </entry>
               </file>
-              <file leaf-file-name="header.region" pinned="false" current-in-tab="false">
+              <file leaf-file-name="header.region" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/header.region">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="-24.375" vertical-offset="0" max-vertical-offset="1065">
-                      <caret line="39" column="78" selection-start-line="39" selection-start-column="78" selection-end-line="39" selection-end-column="78" />
+                    <state vertical-scroll-proportion="0.1510989" vertical-offset="0" max-vertical-offset="1092">
+                      <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
                       <folding />
                     </state>
                   </provider>
@@ -133,8 +131,8 @@
               <file leaf-file-name="pages.item" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/collections/pages.item">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="-1.2390109" vertical-offset="1443" max-vertical-offset="2535">
-                      <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="52" />
+                    <state vertical-scroll-proportion="0.03846154" vertical-offset="1473" max-vertical-offset="2565">
+                      <caret line="101" column="63" selection-start-line="101" selection-start-column="63" selection-end-line="101" selection-end-column="63" />
                       <folding>
                         <element signature="n#style#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
                         <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#section#0;n#div#0;n#!!top" expanded="true" />
@@ -222,8 +220,8 @@
               <file leaf-file-name="episode-hero.js" pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/scripts/custom/episode-hero.js">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="855">
-                      <caret line="24" column="16" selection-start-line="24" selection-start-column="16" selection-end-line="28" selection-end-column="17" />
+                    <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="885">
+                      <caret line="20" column="72" selection-start-line="20" selection-start-column="72" selection-end-line="20" selection-end-column="72" />
                       <folding />
                     </state>
                   </provider>
@@ -381,7 +379,6 @@
         <option value="$PROJECT_DIR$/styles/sass/pages/episodes.scss" />
         <option value="$PROJECT_DIR$/scripts/custom/CanvasPainter.js" />
         <option value="$PROJECT_DIR$/scripts/custom/SVGClipper.js" />
-        <option value="$PROJECT_DIR$/scripts/custom/episode-hero.js" />
         <option value="$PROJECT_DIR$/blocks/page-host.block" />
         <option value="$PROJECT_DIR$/styles/sass/base/mixins.scss" />
         <option value="$PROJECT_DIR$/styles/sass/modules/posters/general.scss" />
@@ -389,7 +386,6 @@
         <option value="$PROJECT_DIR$/styles/sass/parts/header.scss" />
         <option value="$PROJECT_DIR$/styles/sass/parts/sticky-header.scss" />
         <option value="$PROJECT_DIR$/scripts/custom/page_episodes.js" />
-        <option value="$PROJECT_DIR$/header.region" />
         <option value="$PROJECT_DIR$/collections/artists.conf" />
         <option value="$PROJECT_DIR$/scripts/custom/global_functions.js" />
         <option value="$PROJECT_DIR$/blocks/poster-scroll.block" />
@@ -403,9 +399,11 @@
         <option value="$PROJECT_DIR$/styles/sass/modules/poster.scss" />
         <option value="$PROJECT_DIR$/styles/sass/modules/posters/fullTriangle.scss" />
         <option value="$PROJECT_DIR$/collections/episodes.item" />
-        <option value="$PROJECT_DIR$/collections/pages.item" />
         <option value="$PROJECT_DIR$/template.conf" />
         <option value="$PROJECT_DIR$/footer.region" />
+        <option value="$PROJECT_DIR$/scripts/custom/episode-hero.js" />
+        <option value="$PROJECT_DIR$/collections/pages.item" />
+        <option value="$PROJECT_DIR$/header.region" />
       </list>
     </option>
   </component>
@@ -1107,22 +1105,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/custom/page_episodes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="705">
-          <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/header.region">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-24.375" vertical-offset="0" max-vertical-offset="1065">
-          <caret line="39" column="78" selection-start-line="39" selection-start-column="78" selection-end-line="39" selection-end-column="78" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/collections/artists.conf">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.125" vertical-offset="0" max-vertical-offset="180">
@@ -1135,14 +1117,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/custom/episode-hero.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="855">
-          <caret line="24" column="16" selection-start-line="24" selection-start-column="16" selection-end-line="28" selection-end-column="17" />
           <folding />
         </state>
       </provider>
@@ -1271,10 +1245,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/blocks/module-upcoming.block">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1092">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/footer.region">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.25" vertical-offset="0" max-vertical-offset="1200">
+          <caret line="2" column="61" selection-start-line="2" selection-start-column="61" selection-end-line="2" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/custom/episode-hero.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="885">
+          <caret line="20" column="72" selection-start-line="20" selection-start-column="72" selection-end-line="20" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/custom/page_episodes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="705">
+          <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/collections/pages.item">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.2390109" vertical-offset="1443" max-vertical-offset="2535">
-          <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="52" />
+        <state vertical-scroll-proportion="0.03846154" vertical-offset="1473" max-vertical-offset="2565">
+          <caret line="101" column="63" selection-start-line="101" selection-start-column="63" selection-end-line="101" selection-end-column="63" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#section#0;n#div#0;n#!!top" expanded="true" />
@@ -1288,24 +1294,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/template.conf">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.625" vertical-offset="2055" max-vertical-offset="3375">
-          <caret line="154" column="10" selection-start-line="154" selection-start-column="10" selection-end-line="154" selection-end-column="10" />
+        <state vertical-scroll-proportion="-17.5" vertical-offset="2055" max-vertical-offset="3375">
+          <caret line="165" column="23" selection-start-line="165" selection-start-column="23" selection-end-line="165" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blocks/module-upcoming.block">
+    <entry file="file://$PROJECT_DIR$/header.region">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1092">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/footer.region">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.027472528" vertical-offset="0" max-vertical-offset="1200">
-          <caret line="2" column="61" selection-start-line="2" selection-start-column="61" selection-end-line="2" selection-end-column="61" />
+        <state vertical-scroll-proportion="0.1510989" vertical-offset="0" max-vertical-offset="1092">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
           <folding />
         </state>
       </provider>
