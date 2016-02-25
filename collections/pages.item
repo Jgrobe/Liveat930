@@ -116,7 +116,7 @@
                 <squarespace:query collection="clips" limit="1">
                     <div class="video medium">
                         <div class="image" style="background-image:url('{.section items.0}{assetUrl}{.end}');">
-                            <div class="cta-dummy" data-icon="icon-arrow" data-class="negative play goto" data-attributes="href={fullUrl}">{@|apply svg-icon-arrow.block}</div>
+                            <div class="cta-dummy" data-icon="icon-arrow" data-class="negative play goto" data-attributes="href={collection.fullUrl}">{@|apply svg-icon-arrow.block}</div>
                             <!--php print_cta(array(
                             'icon' => 'images/icon-arrow',
                             'class' => array('negative', 'play', 'goto')
@@ -132,7 +132,7 @@
                 <squarespace:query collection="episodes" limit="1">
                         <div class="video medium">
                             <div class="image" style="background-image:url('{.section items.0}{assetUrl}{.end}');">
-                                <div class="cta-dummy" data-icon="icon-arrow" data-class="negative play goto" data-attributes="href={fullUrl}">{@|apply svg-icon-arrow.block}</div>
+                                <div class="cta-dummy" data-icon="icon-arrow" data-class="negative play goto" data-attributes="href={collection.fullUrl}">{@|apply svg-icon-arrow.block}</div>
                                 <!--php print_cta(array(
                                 'icon' => 'images/icon-arrow',
                                 'class' => array('negative', 'play', 'goto')
@@ -148,6 +148,7 @@
 
                 {.section item.customContent}
                 <script>
+                    // populate griditem labels
                     var _labels = ['{griditemLabelMerch}', '{griditemLabelBlog}', '{griditemLabelClips}', '{griditemLabelEpisodes}'];
                     jQuery('.get-label').each(function(i){ jQuery(this).html(_labels[i]); });
                 </script>
