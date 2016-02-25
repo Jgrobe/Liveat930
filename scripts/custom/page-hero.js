@@ -13,7 +13,7 @@ SQSP.functions.createPageHero = function() {
         type: 'video',
         texturize: true,
         blendMode: 'overlay',
-        layeredCanvas: true,
+        layeredCanvas: $canvasContainer.hasAttr('data-shape'),
         //modelAttr: {loop:'true', muted:'false'},
         modelClass : ['clipper-model'],
         shapeClass: ['prllx-custom'],
