@@ -79,17 +79,16 @@
                 <section class="image-slider gallery-container">
                     <!--{.repeated section items}{.equal?:customContent.customType:"episode-gallery"}-->
                     <script>
-                    {.section episode-gallery}
-                        var _gallery = {@|json};
-                    {.end}
+                        console.log('gallery data???', {@|json-pretty});
+                        var _gallery = {episode-gallery|json};
                     </script>
                     <!--{.end}{.end}-->
 
                     <div class="slider-container top-spaced">
                         <div class="slider-images">
-                            <div class="image current-image imgfill gallery-image" style="background-image:url('assets/images/thumb-video5.jpg');"></div>
-                            <div class="image pattern imgfill" style="background-image:url('assets/images/pattern-logo-bg.jpg');"></div>
-                            <div class="image next-image imgfill" style="background-image:url('assets/images/video-clips-title.jpg');"></div>
+                            <div class="image current-image imgfill gallery-image" style=""></div>
+                            <div class="image pattern imgfill" style="background-image:url('{website.baseUrl}/assets/images/pattern-logo-bg.jpg');"></div>
+                            <div class="image next-image imgfill gallery-image" style=""></div>
                         </div><!-- .slider-images -->
 
                         <div class="slider-ui">
