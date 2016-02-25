@@ -25,6 +25,7 @@
     <squarespace:script src="custom/Preloader.js" />
     <squarespace:script src="custom/ScrollPoster.js" />
     <squarespace:script src="custom/ParallaxPoster.js" />
+    <squarespace:script src="custom/ImageGallery.js" />
     <!--squarespace:script src="custom/ClippedCanvas.js" /-->
 
 
@@ -35,6 +36,7 @@
     <squarespace:script src="custom/Parallaxer.js" />
 
     <squarespace:script src="custom/page-hero.js" />
+    <squarespace:script src="custom/page-gallery.js">
 
     {squarespace-headers}
 
