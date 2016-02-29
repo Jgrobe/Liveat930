@@ -28,7 +28,6 @@
 
     <squarespace:query collection="episodes" category="current" limit="1">
         <script>
-            console.log('queried episode', {@|json-pretty});
         </script>
 
         {.section items.0}
@@ -49,7 +48,6 @@
                 <squarespace:query collection="clips" tag="{tags}">
 
                     <script>
-                        console.log('queryception', {@|json-pretty});
                     </script>
 
                     <div class="video-gallery-videos lefthand">
@@ -110,7 +108,6 @@
     {.if item.categories}
 
         <script>
-            console.log('queried clips', {@|json-pretty});
         </script>
 
         <section class="video-gallery video-detail-clips related-category-clips">
