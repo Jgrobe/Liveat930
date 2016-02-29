@@ -22,7 +22,9 @@
     <div class="site-content">
 
         <div class="top-spaced"></div>
-        <div class="sqs-search-ui-button sqs-search-ui-button-wrapper" boost_title="10"><span class="title">Search</span>
+        <div class="sqs-search-ui-button sqs-search-ui-button-wrapper" boost_title="10">
+            <span class="title">Search</span>
+        </div>
             <div class="top-spaced"></div>
 
         <section class="video-gallery">
