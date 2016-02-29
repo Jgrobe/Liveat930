@@ -126,7 +126,7 @@
                     {.repeated section items}
 
                         <div class="video small">
-                            <div class="image current-image" style="background-image:url('{customContent.clip-thumbnail}');">
+                            <div class="image current-image" style="background-image:url('{assetUrl}');">
 
                                 <div class="cta-dummy" data-icon="eye" data-class="negative play">{@|apply svg-icon-eye.block}</div>
 
