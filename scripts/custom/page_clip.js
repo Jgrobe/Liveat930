@@ -17,4 +17,13 @@ SQSP.functions.initPage = function() {
             }
         }));
     });
+
+    jQuery(document).on('click', 'video', function(e) {
+        var vid = jQuery(this).get(0);
+        if(vid.paused ||vid.ended) {
+            vid.play();
+        } else {
+            vid.pause();
+        }
+    });
 };
