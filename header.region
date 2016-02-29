@@ -21,15 +21,13 @@
 
     <squarespace:script src="custom/namespaces.js" />
     <squarespace:script src="custom/global_functions.js" />
+    <squarespace:script src="custom/AjaxSearch.js" />
     <squarespace:script src="custom/ScrollHeader.js" />
 
     <squarespace:script src="custom/Preloader.js" />
     <squarespace:script src="custom/ScrollPoster.js" />
     <squarespace:script src="custom/ParallaxPoster.js" />
     <squarespace:script src="custom/ImageGallery.js" />
-    <!--squarespace:script src="custom/ClippedCanvas.js" /-->
-
-
     <squarespace:script src="custom/CanvasPainter.js" />
     <squarespace:script src="custom/SVGClipper.js" />
 

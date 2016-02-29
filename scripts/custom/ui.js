@@ -76,6 +76,8 @@ function populate_namespaces() {
         //}
     });
 
+    SQSP.instances.SEARCH = new AjaxSearch({});
+
 }// populate_namespaces()
 
 //function sizeVideosOnReady() {
@@ -112,8 +114,11 @@ function windowloaded() {
     });// search click
 
     // SEARCH FIELD FUNCTIONALITY
-    var $searchInput  = jQuery('.search-field');
-    $searchInput.on('focus', function(e) {
+    SQSP.instances.SEARCH.options.onSuccess = function(html, results) {
+        console.log('search done: ', results);
+    };// search onSuccess()
+    SQSP.$objects.searchFields  = jQuery('.search-field');
+    SQSP.$objects.searchFields.on('focus', function(e) {
         SQSP.vars.focusOnSearch = true;
     }).on('focusout', function(e) {
         SQSP.vars.focusOnSearch = false;
@@ -121,7 +126,12 @@ function windowloaded() {
     SQSP.$objects.window.on('keyup', function(e) {
         switch(e.keyCode) {
             case 13 :// enter
-                if(SQSP.vars.focusOnSearch === true) toggleSearchOverlay();
+                if(SQSP.vars.focusOnSearch === true) {
+                    var query = SQSP.$objects.searchFields.val();
+                    if(query.trim() == '') return false;
+                    SQSP.instances.SEARCH.search(query);
+                    //toggleSearchOverlay();
+                }
                 break;
         }// endswitch()
     });

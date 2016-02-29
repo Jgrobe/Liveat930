@@ -3,8 +3,7 @@
 * jQuery
 * lodash
 * */
-var AjaxSearch = function($container, options) {
-    if(typeof $container === 'undefined') return;
+var AjaxSearch = function(options) {
     if(typeof options === 'undefined') options = {};
     var AS = this;
     AS.options = {
@@ -12,13 +11,7 @@ var AjaxSearch = function($container, options) {
         searchPath: '/search',
         onSuccess : false,
         onError : false,
-        resultSelector: '.search-result',
-        extractionMatrix: {
-            image : {
-                selector : 'img',
-                value : ''
-            }
-        }
+        resultSelector: '.search-result'
     };
 
     AS.init = function() {
@@ -30,14 +23,16 @@ var AjaxSearch = function($container, options) {
             $results = jQuery(data).find(AS.options.resultSelector);
 
         $results.each(function(i) {
-            var result = {};
-
-            for(var attr in AS.options.extractionMatrix) {
-
-            }// endfor
+            var $thisResult = jQuery(this);
+            var result = {
+                img : $thisResult.find('img').attr('src'),
+                title : $thisResult.find('.sqs-title').html()
+            };
 
             extractedResults.push(result);
         });// endeach(results)
+
+        return extractedResults;
 
     };// extractData
     
