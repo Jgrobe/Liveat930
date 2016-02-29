@@ -1,0 +1,53 @@
+.episode-summary {
+  position: relative;
+  width: $contentWidth;
+  margin: auto;
+
+  .shape-container {
+    position: relative;
+    width: 50%;
+//    top:-5%;
+    left: -5%;
+    overflow: hidden;
+
+    &:before {
+      content: '';
+      display: block;
+      width: 100%;
+      padding-top: 100%;
+    }// :before
+  }// .shape-container
+
+  .summary-copy {
+    position: absolute;
+    width: 80%;
+    left: 20%;
+    top: 50%;
+    @include transform(translateY(-50%));
+  }
+
+  .head {
+    @extend .m-headline;
+    .small {
+      font-size: 2vw;
+      line-height: 2vw;
+      letter-spacing: .08em;
+    }// .small
+  }// .header
+
+  .lineup {
+    margin: 3vw 0;
+    padding-left: 20%;
+    span, p { @extend .s-headline;}
+    span {
+      position: absolute;
+      right: 82%;
+      font-size: 1.5vw;
+    }
+  }
+
+  .cta-container {
+    margin-left: 5%;
+  }
+
+}// .episode-summary

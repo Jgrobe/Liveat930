@@ -189,7 +189,7 @@ input {
         letter-spacing: .06em;
         margin: 0 auto; } }
 
-.fill-parent, .slider-ui, .poster .poster-content, .poster .layer.bg-layer, .poster .layer.copy-layer, .poster.circle .layer.bg-layer .half:first-child:before, .poster.fullTriangle .layer.bg-layer .half:first-child:before, .nav-overlay .video-container, #preloader .filler, .episodes-landing .landing-bg:after, .host-landing .landing-bg:after, .merch-landing .landing-bg:after, .post-landing .landing-bg:after, .show-landing .landing-bg:after, .video-overview-landing .landing-bg:after {
+.fill-parent, .slider-ui, .poster .poster-content, .poster .layer.bg-layer, .poster .layer.copy-layer, .poster.circle .layer.bg-layer .half:first-child:before, .poster.fullTriangle .layer.bg-layer .half:first-child:before, .nav-overlay .video-container, #preloader .filler, .episodes-landing .landing-bg:after, .host-landing .landing-bg:after, .merch-landing .landing-bg:after, .post-landing .landing-bg:after, .show-landing .landing-bg:after, .video-overview-landing .landing-bg:after, .clip-landing .landing-bg:after {
   position: absolute;
   top: 0;
   left: 0;
@@ -314,14 +314,14 @@ input {
   *.onlynomobile {
     display: none !important; } }
 
-.l-headline, .episodes-landing-head h1 {
+.l-headline, .episodes-landing-head h1, .clip-landing .landing-head {
   font-family: "United Sans", script;
   text-transform: uppercase;
   font-size: 10.83333vw;
   line-height: 10.83333vw;
   letter-spacing: .06em; }
   @media only screen and (max-width: 750px) {
-    .l-headline, .episodes-landing-head h1 {
+    .l-headline, .episodes-landing-head h1, .clip-landing .landing-head {
       font-size: 73px;
       line-height: 73px; } }
 
@@ -332,14 +332,14 @@ input {
   line-height: 2.08333vw;
   letter-spacing: .1em; }
 
-.m-headline {
+.m-headline, .episode-summary .head {
   font-family: "United Sans", script;
   text-transform: uppercase;
   font-size: 7.22222vw;
   line-height: 7.22222vw;
   letter-spacing: .08em; }
   @media only screen and (max-width: 750px) {
-    .m-headline {
+    .m-headline, .episode-summary .head {
       font-size: 48px;
       line-height: 48px; } }
 
@@ -351,18 +351,18 @@ input {
   line-height: 0.97222vw;
   letter-spacing: .1em; }
 
-.s-headline, .nav-overlay .menu-item, .shortcuts .video .title, .search-table .result {
+.s-headline, .nav-overlay .menu-item, .shortcuts .video .title, .search-table .result, .episode-summary .lineup span, .episode-summary .lineup p, .clip-landing .landing-head .small {
   font-family: "United Sans", script;
   text-transform: uppercase;
   font-size: 3.61111vw;
   line-height: 3.61111vw;
   letter-spacing: .08em; }
-  .s-headline .s-sub, .nav-overlay .menu-item .s-sub, .shortcuts .video .title .s-sub, .search-table .result .s-sub {
+  .s-headline .s-sub, .nav-overlay .menu-item .s-sub, .shortcuts .video .title .s-sub, .search-table .result .s-sub, .episode-summary .lineup span .s-sub, .episode-summary .lineup p .s-sub, .clip-landing .landing-head .small .s-sub {
     width: 100%;
     text-align: right;
     margin-left: 1.38889vw; }
   @media only screen and (max-width: 750px) {
-    .s-headline, .nav-overlay .menu-item, .shortcuts .video .title, .search-table .result {
+    .s-headline, .nav-overlay .menu-item, .shortcuts .video .title, .search-table .result, .episode-summary .lineup span, .episode-summary .lineup p, .clip-landing .landing-head .small {
       font-size: 35px;
       line-height: 35px; } }
 
@@ -1484,7 +1484,7 @@ input {
     top: 0;
     left: 0;
     width: 100%; }
-    .poster .model-container .fill-parent, .poster .model-container .slider-ui, .poster .model-container .poster-content, .poster .model-container .layer.bg-layer, .poster .model-container .layer.copy-layer, .poster.circle .model-container .layer.bg-layer .half:first-child:before, .poster.circle .layer.bg-layer .model-container .half:first-child:before, .poster.fullTriangle .model-container .layer.bg-layer .half:first-child:before, .poster.fullTriangle .layer.bg-layer .model-container .half:first-child:before, .poster .model-container .nav-overlay .video-container, .nav-overlay .poster .model-container .video-container, .poster .model-container #preloader .filler, #preloader .poster .model-container .filler, .poster .model-container .episodes-landing .landing-bg:after, .episodes-landing .poster .model-container .landing-bg:after, .poster .model-container .host-landing .landing-bg:after, .host-landing .poster .model-container .landing-bg:after, .poster .model-container .merch-landing .landing-bg:after, .merch-landing .poster .model-container .landing-bg:after, .poster .model-container .post-landing .landing-bg:after, .post-landing .poster .model-container .landing-bg:after, .poster .model-container .show-landing .landing-bg:after, .show-landing .poster .model-container .landing-bg:after, .poster .model-container .video-overview-landing .landing-bg:after, .video-overview-landing .poster .model-container .landing-bg:after {
+    .poster .model-container .fill-parent, .poster .model-container .slider-ui, .poster .model-container .poster-content, .poster .model-container .layer.bg-layer, .poster .model-container .layer.copy-layer, .poster.circle .model-container .layer.bg-layer .half:first-child:before, .poster.circle .layer.bg-layer .model-container .half:first-child:before, .poster.fullTriangle .model-container .layer.bg-layer .half:first-child:before, .poster.fullTriangle .layer.bg-layer .model-container .half:first-child:before, .poster .model-container .nav-overlay .video-container, .nav-overlay .poster .model-container .video-container, .poster .model-container #preloader .filler, #preloader .poster .model-container .filler, .poster .model-container .episodes-landing .landing-bg:after, .episodes-landing .poster .model-container .landing-bg:after, .poster .model-container .host-landing .landing-bg:after, .host-landing .poster .model-container .landing-bg:after, .poster .model-container .merch-landing .landing-bg:after, .merch-landing .poster .model-container .landing-bg:after, .poster .model-container .post-landing .landing-bg:after, .post-landing .poster .model-container .landing-bg:after, .poster .model-container .show-landing .landing-bg:after, .show-landing .poster .model-container .landing-bg:after, .poster .model-container .video-overview-landing .landing-bg:after, .video-overview-landing .poster .model-container .landing-bg:after, .poster .model-container .clip-landing .landing-bg:after, .clip-landing .poster .model-container .landing-bg:after {
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover; }
@@ -1614,13 +1614,13 @@ input {
       width: calc(~"100% - 200px");
       height: 0.2vw; } }
   @media only screen and (max-width: 750px) {
-    .poster .l-headline, .poster .episodes-landing-head h1, .episodes-landing-head .poster h1 {
+    .poster .l-headline, .poster .episodes-landing-head h1, .episodes-landing-head .poster h1, .poster .clip-landing .landing-head, .clip-landing .poster .landing-head {
       font-size: 10.83333vw;
       line-height: 10.83333vw; }
-    .poster .m-headline {
+    .poster .m-headline, .poster .episode-summary .head, .episode-summary .poster .head {
       font-size: 8.75vw;
       line-height: 8.75vw; }
-    .poster .s-headline, .poster .nav-overlay .menu-item, .nav-overlay .poster .menu-item, .poster .shortcuts .video .title, .shortcuts .video .poster .title, .poster .search-table .result, .search-table .poster .result {
+    .poster .s-headline, .poster .nav-overlay .menu-item, .nav-overlay .poster .menu-item, .poster .shortcuts .video .title, .shortcuts .video .poster .title, .poster .search-table .result, .search-table .poster .result, .poster .episode-summary .lineup span, .episode-summary .lineup .poster span, .poster .episode-summary .lineup p, .episode-summary .lineup .poster p, .poster .clip-landing .landing-head .small, .clip-landing .landing-head .poster .small {
       font-size: 3.61111vw;
       line-height: 3.61111vw; } }
 
@@ -2224,6 +2224,44 @@ input {
   #preloader .filler {
     width: 0;
     background: rgba(0, 0, 0, 0.6); }
+
+.episode-summary {
+  position: relative;
+  width: 75vw;
+  margin: auto; }
+  .episode-summary .shape-container {
+    position: relative;
+    width: 50%;
+    left: -5%;
+    overflow: hidden; }
+    .episode-summary .shape-container:before {
+      content: '';
+      display: block;
+      width: 100%;
+      padding-top: 100%; }
+  .episode-summary .summary-copy {
+    position: absolute;
+    width: 80%;
+    left: 20%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%); }
+  .episode-summary .head .small {
+    font-size: 2vw;
+    line-height: 2vw;
+    letter-spacing: .08em; }
+  .episode-summary .lineup {
+    margin: 3vw 0;
+    padding-left: 20%; }
+    .episode-summary .lineup span {
+      position: absolute;
+      right: 82%;
+      font-size: 1.5vw; }
+  .episode-summary .cta-container {
+    margin-left: 5%; }
 
 #fieldTracker {
   position: fixed;
@@ -3696,6 +3734,88 @@ a.episodes-landing-cta {
   -webkit-wrap: wrap;
   -ms-wrap: wrap;
   wrap: wrap; }
+
+.clip-landing {
+  width: 100vw;
+  height: 100vh;
+  color: #fff;
+  font-family: "United Sans", script;
+  text-rendering: optimizeLegibility;
+  font-weight: normal;
+  text-transform: uppercase;
+  position: relative;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex; }
+  .clip-landing .mask {
+    overflow: hidden; }
+  .clip-landing .landing-bg {
+    display: block;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center; }
+    .clip-landing .landing-bg:after {
+      content: '';
+      display: block;
+      background-image: url("assets/images/textures/texture-halftone-compressor-2-70k.jpg");
+      mix-blend-mode: overlay; }
+  .clip-landing .landing-container {
+    margin: auto; }
+  .clip-landing .landing-head {
+    max-width: 85vw;
+    text-align: center; }
+    .clip-landing .landing-head .small {
+      text-align: right;
+      padding-right: 10%; }
+
+.video-gallery.video-detail-clips {
+  margin-top: 10.41667vw;
+  padding-top: 2vw; }
+  .video-gallery.video-detail-clips.related-episode-clips {
+    margin-bottom: 0; }
+    .video-gallery.video-detail-clips.related-episode-clips .cta-container {
+      z-index: 1; }
+  .video-gallery.video-detail-clips.related-category-clips {
+    margin-top: 0; }
+
+.linked-episode {
+  margin-top: 10.41667vw; }
+
+.clip-container {
+  width: 75vw;
+  margin: auto; }
+  .clip-container .text-layer {
+    width: 60%;
+    margin-left: 28%; }
+    .clip-container .text-layer .sharebox {
+      margin: 0;
+      position: absolute;
+      top: 98%; }
+
+.clip-preview-container {
+  width: 100%;
+  background: url("assets/images/clip.jpg") no-repeat center/cover;
+  -webkit-box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
+  -ms-box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
+  position: relative; }
+  .clip-preview-container:before {
+    content: '';
+    display: block;
+    padding-top: 58%; }
+
+.overlap-container {
+  position: relative;
+  margin-top: -15vw; }
 
 ._aligner {
   background: rgba(255, 0, 100, 0.5);

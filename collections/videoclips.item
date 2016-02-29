@@ -1,87 +1,149 @@
-<div class="blog-item">
+<section class="clip-landing" style="background-image:url('{item.assetUrl}');">
 
-  {.section item}
-  <article class="entry h-entry {@|item-classes}{.main-image?} has-main-image{.end} clear" id="article-{id}" data-item-id="{id}">
+    <div class="landing-container">
+        <div class="landing-head">
+            <h1>{item.title}</h1>
+            <div class="small">{item.customContent.subtitle}</div>
+        </div><!-- .landing-head -->
+    </div><!-- .landing-container -->
 
-    <header class="entry-header">
-      <div class="meta-above-title">
-        {.section author}
-        <div class="entry-byline">
-          <span class="entry-author"><a href="{collection.fullUrl}?author={author.id}" class="p-author author entry-byline-link" rel="author">{displayName}</a></span>
+</section>
+
+<div class="site-content">
+
+    <section class="clip-container overlap-container">
+
+        <div class="clip-preview-container" style="background-image:url('{item.customContent.clip-thumbnail.assetUrl}')">
+            <video src="{item.customContent.clip-url}"></video>
         </div>
-        {.end}
-        <div class="entry-dateline">
-          <time class="dt-published published entry-date" datetime="{addedOn|date %F}" pubdate><a href="{fullUrl}" class="entry-dateline-link">{addedOn|date %B %e, %Y}</a></time>
-          {.if updatedOn}<time class="dt-updated updated" datetime="{updatedOn|date %F}"></time>{.end}
-        </div>
-        {.section categories}
-        <div class="entry-morefrom">
-          <span class="entry-category">{.repeated section @}<a href="{collection.fullUrl}?category={@|url-encode}" class="entry-morefrom-link" rel="tag">{@}</a>{.alternates with}, {.end}</span>
-        </div>
-        {.end}
-      </div>
-      <h1 data-content-field="title" class="entry-title p-name">
-      {.passthrough?}
-        <a href="{sourceUrl}" class="entry-title-passthrough" target="_blank">{title}</a>
-      {.or}
-        <a href="{fullUrl}" class="u-url" rel="bookmark">{title}</a>
-      {.end}
-      </h1>
-      <div class="meta-below-title {.section categories}{.or}no-categories{.end}">
-        {.section author}
-        <div class="entry-byline">
-          <span class="entry-author"><a href="{collection.fullUrl}?author={author.id}" class="p-author author entry-byline-link" rel="author">{displayName}</a></span>
-        </div>
-        {.end}
-        <div class="entry-dateline">
-          <time class="dt-published published entry-date" datetime="{addedOn|date %F}" pubdate><a href="{fullUrl}" class="entry-dateline-link">{addedOn|date %B %e, %Y}</a></time>
-          {.if updatedOn}<time class="dt-updated updated" datetime="{updatedOn|date %F}"></time>{.end}
-        </div>
-        {.section categories}
-        <div class="entry-morefrom">
-          <span class="entry-category">{.repeated section @}<a href="{collection.fullUrl}?category={@|url-encode}" class="entry-morefrom-link" rel="tag">{@}</a>{.alternates with}, {.end}</span>
-        </div>
-        {.end}
-      </div>
-    </header>
 
-    <div class="entry-content e-content">
-      {.section body}
-        {@}
-      {.end}
-    </div>
+        <div class="text-layer">
+            {item.body}
+            {@|social-button}
+            <!--php $sharelabel = 'Share this episode'; ?>
+            <?php include('modules/sharebox.php'); -->
+        </div><!-- .episodes-landing-sub -->
 
-    <footer class="entry-footer clear">
-      {.section sourceUrl}
-      <p class="entry-source">
-        Source: <a href="{sourceUrl}" target="_blank">{sourceUrl}</a>
-      </p>
-      {.end}
-      {.section tags}
-      <p class="entry-tags">
-        Tagged: {.repeated section @}<a href="{collection.fullUrl}?tag={@|url-encode}" rel="tag">{@}</a>{.alternates with}, {.end}
-      </p>
-      {.end}
-      <div class="entry-actions">
-        {@|like-button}{@|social-button-inline}
-      </div>
-    </footer>
+    </section>
 
-    {.if postItemInjectCode}<div class="entry-injection">{postItemInjectCode}</div>{.end}
+    {.if item.customContent.linkedEpisode}
 
-  </article>
+    <squarespace:query collection="episodes" category="current" limit="1">
 
-  <div id="comments-{id}" class="p-comment">
-    {.comments?}{@|comments}{.end}
-  </div>
+        <section class="linked-episode">
+            {@|apply linked-episode.block}
+            <!--php include('modules/episode-summary.php');-->
+        </section>
 
-  {.end}
+        <section class="video-gallery video-detail-clips">
 
-  {.if pagination}
-  <nav class="pagination clear">
-    <div class="newer">{.if pagination.prevItem}<span class="prev-label">Newer Post</span><a href="{pagination.prevItem.fullUrl}" rel="prev"><span>{pagination.prevItem.title}</span></a>{.end}</div><!-- comment the linebreak between these two elements because science
-  --><div class="older">{.if pagination.nextItem}<span class="next-label">Older Post</span><a href="{pagination.nextItem.fullUrl}" rel="next"><span>{pagination.nextItem.title}</span></a>{.end}</div>
-  </nav>
-  {.end}
+            <div class="rectangle"></div>
 
-</div>
+            <div class="section-head top-spaced">
+                <h2>More from this episode</h2>
+            </div>
+
+            <div class="video-gallery-videos lefthand">
+                <div class="video small">
+                    <div class="image current-image" style="background-image:url('assets/images/thumb-video2.jpg');">
+
+                        <div class="cta-dummy" data-icon="eye" data-class="negative play">{@|apply svg-icon-eye.block}</div>
+
+                    </div>
+                    <div class="flex-cols">
+                        <div class="title">Behind the scenes with Gogol Bordello</div>
+                    </div>
+                </div>
+                <div class="video small">
+                    <div class="image" style="background-image:url('assets/images/thumb-video1.jpg');">
+
+                        <div class="cta-dummy" data-icon="eye" data-class="negative play">{@|apply svg-icon-eye.block}</div>
+
+                    </div>
+                    <div class="flex-cols">
+                        <div class="title">Behind the scenes with Gogol Bordello</div>
+                    </div>
+                </div>
+                <div class="video small no-margin">
+                    <div class="image" style="background-image:url('assets/images/thumb-video3.jpg');">
+
+                        <div class="cta-dummy" data-icon="eye" data-class="negative play">{@|apply svg-icon-eye.block}</div>
+
+                    </div>
+                    <div class="flex-cols">
+                        <div class="title">Behind the scenes with youth lagoon</div>
+                    </div>
+                </div>
+            </div><!-- .video-gallery-videos -->
+
+            <div class="centered top-spaced">
+                <div class="cta-dummy" data-label="Load more from the same episode" data-icon="icon-load" data-class="load-clips load-from-category upsized-icon">{@|apply svg-icon-load.block}</div>
+                <!--php print_cta(array(
+                    'label' => 'Load more from the same episode',
+                'icon' => 'images/icon-load',
+                'class' => array('load-clips', 'load-from-episode', 'upsized-icon')
+                )); -->
+                <!--<a class="episodes-landing-cta icon-refresh static" href="">Load more clips</a>-->
+            </div>
+
+        </section>
+
+    </squarespace:query>
+
+    <squarespace:query collection="{collection.urlId}" category="{.repeated section item.categories}{@},{.end}">
+
+        <section class="video-gallery video-detail-clips">
+            <div class="rectangle"></div>
+
+            <div class="section-head top-spaced">
+                <h2>More Comedy Video Clips</h2>
+            </div>
+
+            <div class="video-gallery-videos lefthand">
+                <div class="video small">
+                    <div class="image current-image" style="background-image:url('assets/images/thumb-video2.jpg');">
+
+                        <div class="cta-dummy" data-icon="eye" data-class="negative play">{@|apply svg-icon-eye.block}</div>
+
+                    </div>
+                    <div class="flex-cols">
+                        <div class="title">Behind the scenes with Gogol Bordello</div>
+                    </div>
+                </div>
+                <div class="video small">
+                    <div class="image" style="background-image:url('assets/images/thumb-video1.jpg');">
+
+                        <div class="cta-dummy" data-icon="eye" data-class="negative play">{@|apply svg-icon-eye.block}</div>
+
+                    </div>
+                    <div class="flex-cols">
+                        <div class="title">Behind the scenes with Gogol Bordello</div>
+                    </div>
+                </div>
+                <div class="video small no-margin">
+                    <div class="image" style="background-image:url('assets/images/thumb-video3.jpg');">
+
+                        <div class="cta-dummy" data-icon="eye" data-class="negative play">{@|apply svg-icon-eye.block}</div>
+
+                    </div>
+                    <div class="flex-cols">
+                        <div class="title">Behind the scenes with youth lagoon</div>
+                    </div>
+                </div>
+            </div><!-- .video-gallery-videos -->
+
+            <div class="centered top-spaced">
+                <div class="cta-dummy" data-label="Load more from the same category" data-icon="icon-load" data-class="load-clips load-from-category upsized-icon">{@|apply svg-icon-load.block}</div>
+                <!--php print_cta(array(
+                    'label' => 'Load more from the same category',
+                'icon' => 'images/icon-load',
+                'class' => array('load-clips', 'load-from-category', 'upsized-icon')
+                )); -->
+                <!--<a class="episodes-landing-cta icon-refresh static" href="">Load more clips</a>-->
+            </div>
+
+        </section>
+
+    </squarespace:query>
+
+</div><!-- .site-content -->
