@@ -87,13 +87,13 @@
 
   >*{ position: absolute;}
 
-//  video {
-//    cursor: pointer;
+  video {
+    cursor: pointer;
 //    width: 105%;
 //    top: 50%;
 //    left: 50%;
 //    @include transform(translateX(-50%) translateY(-50%));
-//  }
+  }
 }
 
 .overlap-container {

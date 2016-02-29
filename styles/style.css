@@ -3818,6 +3818,8 @@ a.episodes-landing-cta {
     padding-top: 58%; }
   .clip-preview-container > * {
     position: absolute; }
+  .clip-preview-container video {
+    cursor: pointer; }
 
 .overlap-container {
   position: relative;
