@@ -135,7 +135,7 @@
                             <div class="flex-cols">
                                 <div class="title">{title}</div>
                             </div>
-                        </div>
+                        </div><!-- .video -->
 
                     {.end}
                         <!--<div class="video small">-->
