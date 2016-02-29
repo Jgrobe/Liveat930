@@ -26,12 +26,9 @@
 
     </section>
 
-
-    {.if item.customContent.linkedEpisode}
-
     <div class="vert-spacer"></div>
 
-    <squarespace:query collection="episodes" category="current" limit="1">
+    <squarespace:query collection="episodes" category="{item.customContent.linkedEpisode}" limit="1">
         <script>
             console.log('queried episode', {@|json-pretty});
         </script>
@@ -112,7 +109,6 @@
 
     </squarespace:query>
 
-    {.end}
 
     {.if item.categories}
 
