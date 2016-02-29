@@ -40,7 +40,7 @@ var AjaxSearch = function(options) {
 
         console.log('search()', query);
         
-        jQuery.ajax(AS.options.searchPath, {
+        jQuery.ajax((AS.options.searchPath +'?q='+ query), {
             success: function(data) {
                 
                 AS.results = AS.extractData(data);
