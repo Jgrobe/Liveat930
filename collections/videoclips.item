@@ -26,8 +26,6 @@
 
     </section>
 
-    <div class="vert-spacer"></div>
-
     <squarespace:query collection="episodes" category="{item.customContent.linkedEpisode}" limit="1">
         <script>
             console.log('queried episode', {@|json-pretty});
@@ -39,7 +37,6 @@
                 {@|apply episode-summary.block}
                 <!--php include('modules/episode-summary.php');-->
             </section>
-
 
             <section class="video-gallery video-detail-clips related-episode-clips">
 
