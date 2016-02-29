@@ -1,4 +1,4 @@
-<div class="episode-summary">
+<div class="episode-summary prllx-custom" data-prllx=".08">
 
     <div class="shape-container make-shape imgfill" data-shape="circle" class="imgfill" style="background-image:url('{assetUrl}');"></div>
 
