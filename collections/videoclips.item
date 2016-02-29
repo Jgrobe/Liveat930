@@ -51,6 +51,10 @@
 
                 <squarespace:query collection="clips" tag="{tags}">
 
+                    <script>
+                        console.log('queryception', {@|json-pretty});
+                    </script>
+
                     <div class="video-gallery-videos lefthand">
 
                         {.repeated section items}
