@@ -28,8 +28,9 @@ var AjaxSearch = function(options) {
             var $thisResult = jQuery(this);
             console.log('filtering result', $thisResult, $thisResult.get(0));
             var result = {
-                img : $thisResult.find('img').attr('src'),
-                title : $thisResult.find('.sqs-title').html()
+                img : $thisResult.find('img').data('src'),
+                title : $thisResult.find('.sqs-title').html(),
+                url : $thisResult.data('url')
             };
 
             extractedResults.push(result);
