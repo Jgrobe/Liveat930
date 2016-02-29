@@ -22,7 +22,7 @@ var AjaxSearch = function(options) {
         var cachedHtml = jQuery('<div/>').html(data);
         var extractedResults = [],
             $results = cachedHtml.find(AS.options.resultSelector);
-        console.log('results found', $results);
+        console.log('results found', cachedHtml, $results);
 
         $results.each(function(i) {
             var $thisResult = jQuery(this);
