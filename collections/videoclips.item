@@ -34,7 +34,7 @@
             <!--php include('modules/episode-summary.php');-->
         </section>
 
-        <section class="video-gallery video-detail-clips">
+        <section class="video-gallery video-detail-clips related-episode-clips">
 
             <div class="rectangle"></div>
 
@@ -93,7 +93,7 @@
 
     <squarespace:query collection="{collection.urlId}" category="{.repeated section item.categories}{@},{.end}">
 
-        <section class="video-gallery video-detail-clips">
+        <section class="video-gallery video-detail-clips related-category-clips">
             <div class="rectangle"></div>
 
             <div class="section-head top-spaced">
