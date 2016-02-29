@@ -13,13 +13,12 @@
 
     <section class="clip-container overlap-container">
 
-        <div class="clip-preview-container" style="background-image:url('{item.customContent.clip-thumbnail.assetUrl}')">
-            <video src="{item.customContent.clip-url}"></video>
+        <div class="clip-preview-container" style="background-image:url('')">
+            <video src="{item.customContent.clip-url}" poster="{item.customContent.clip-thumbnail.assetUrl}"></video>
         </div>
 
         <div class="text-layer">
             {item.body}
-            {@|apply}
             <!--php $sharelabel = 'Share this episode'; ?>
             <?php include('modules/sharebox.php'); -->
         </div><!-- .episodes-landing-sub -->

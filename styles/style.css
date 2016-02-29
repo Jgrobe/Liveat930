@@ -3784,6 +3784,8 @@ a.episodes-landing-cta {
       z-index: 1; }
   .video-gallery.video-detail-clips.related-category-clips {
     margin-top: 0; }
+  .video-gallery.video-detail-clips .section-head {
+    position: relative; }
 
 .linked-episode {
   margin-top: 10.41667vw; }
@@ -3808,7 +3810,8 @@ a.episodes-landing-cta {
   -ms-box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
   -o-box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
   .clip-preview-container:before {
     content: '';
     display: block;
