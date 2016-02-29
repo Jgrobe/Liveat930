@@ -67,7 +67,7 @@
 
             <div class="part info">
                 <div class="result-sized">
-                    <p>There are <span style="color:black;"><?php echo count($search_results); ?> results</span> for "Comedy"</p>
+                    <p>There are <span style="color:black;"><span id="num_results"></span> results</span> for "<span id="search_query"></span>"</p>
                 </div><!-- .result-sized -->
             </div><!-- .part-info -->
 

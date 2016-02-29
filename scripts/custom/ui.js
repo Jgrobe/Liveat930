@@ -117,8 +117,11 @@ function windowloaded() {
 
     // SEARCH FIELD FUNCTIONALITY
     SQSP.$objects.searchResultsContainer = jQuery('.nav-overlay .results-wrapper');
-    SQSP.instances.SEARCH.options.onSuccess = function(ajaxHTML, formattedResults) {
+    SQSP.instances.SEARCH.options.onSuccess = function(query, ajaxHTML, formattedResults) {
         console.log('search done: ', formattedResults);
+
+        jQuery('#num_results').html(formattedResults.length);
+        jQuery('#search_query').html(query);
 
         var $resultModel = SQSP.$objects.searchResultsContainer.find('.result.placeholder');
         for(var i=0; i<formattedResults.length; i++) {

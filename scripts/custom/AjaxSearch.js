@@ -51,7 +51,7 @@ var AjaxSearch = function(options) {
 
                 console.log('success()', AS.results);
 
-                if(_.isFunction(AS.options.onSuccess)) AS.options.onSuccess(data, AS.results);
+                if(_.isFunction(AS.options.onSuccess)) AS.options.onSuccess(query, data, AS.results);
             },
             error : function() {
                 
