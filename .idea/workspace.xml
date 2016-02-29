@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6ba77c59-895c-4b6c-8ed1-52220cbb39bd" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/custom/AjaxSearch.js" afterPath="$PROJECT_DIR$/scripts/custom/AjaxSearch.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/header.region" afterPath="$PROJECT_DIR$/header.region" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/sass/modules/search-overlay.scss" afterPath="$PROJECT_DIR$/styles/sass/modules/search-overlay.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/style.css" afterPath="$PROJECT_DIR$/styles/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/custom/ui.js" afterPath="$PROJECT_DIR$/scripts/custom/ui.js" />
-    </list>
+    <list default="true" id="6ba77c59-895c-4b6c-8ed1-52220cbb39bd" name="Default" comment="" />
     <ignored path="sqsp.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,9 +23,9 @@
     <favorites_list name="sqsp" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.7178697">
+    <splitter split-orientation="horizontal" split-proportion="0.6619718">
       <split-first>
-        <splitter split-orientation="horizontal" split-proportion="0.26131955">
+        <splitter split-orientation="horizontal" split-proportion="0.4035904">
           <split-first>
             <leaf>
               <file leaf-file-name="template.conf" pinned="false" current-in-tab="false">
@@ -79,8 +73,8 @@
               <file leaf-file-name="header.region" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/header.region">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.7596983" vertical-offset="0" max-vertical-offset="1170">
-                      <caret line="47" column="71" selection-start-line="47" selection-start-column="71" selection-end-line="47" selection-end-column="71" />
+                    <state vertical-scroll-proportion="0.64171124" vertical-offset="0" max-vertical-offset="1170">
+                      <caret line="48" column="10" selection-start-line="48" selection-start-column="10" selection-end-line="48" selection-end-column="10" />
                       <folding />
                     </state>
                   </provider>
@@ -177,8 +171,8 @@
               <file leaf-file-name="ui.js" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/scripts/custom/ui.js">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.41491598" vertical-offset="2050" max-vertical-offset="4815">
-                      <caret line="163" column="63" selection-start-line="163" selection-start-column="63" selection-end-line="163" selection-end-column="63" />
+                    <state vertical-scroll-proportion="0.5410122" vertical-offset="1375" max-vertical-offset="4815">
+                      <caret line="133" column="84" selection-start-line="133" selection-start-column="61" selection-end-line="133" selection-end-column="84" />
                       <folding />
                     </state>
                   </provider>
@@ -278,10 +272,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="AjaxSearch.js" pinned="false" current-in-tab="false">
+          <file leaf-file-name="AjaxSearch.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/scripts/custom/AjaxSearch.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1065">
+                <state vertical-scroll-proportion="0.31413612" vertical-offset="0" max-vertical-offset="1146">
                   <caret line="24" column="52" selection-start-line="24" selection-start-column="52" selection-end-line="24" selection-end-column="52" />
                   <folding>
                     <element signature="n#!!doc" expanded="true" />
@@ -290,10 +284,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="search-overlay.scss" pinned="false" current-in-tab="true">
+          <file leaf-file-name="search-overlay.scss" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/styles/sass/modules/search-overlay.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.58943963" vertical-offset="698" max-vertical-offset="1650">
+                <state vertical-scroll-proportion="-36.166668" vertical-offset="377" max-vertical-offset="1650">
                   <caret line="83" column="24" selection-start-line="83" selection-start-column="24" selection-end-line="83" selection-end-column="24" />
                   <folding />
                 </state>
@@ -428,9 +422,9 @@
         <option value="$PROJECT_DIR$/collections/episodes.item" />
         <option value="$PROJECT_DIR$/scripts/custom/SiteSearch.js" />
         <option value="$PROJECT_DIR$/scripts/custom/AjaxSearch.js" />
-        <option value="$PROJECT_DIR$/header.region" />
         <option value="$PROJECT_DIR$/styles/sass/modules/search-overlay.scss" />
         <option value="$PROJECT_DIR$/scripts/custom/ui.js" />
+        <option value="$PROJECT_DIR$/header.region" />
       </list>
     </option>
   </component>
@@ -645,15 +639,15 @@
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.11396226" sideWeight="0.49980277" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.11396226" sideWeight="0.49980277" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32981133" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26037735" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26037735" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.10374753" sideWeight="0.8969388" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.10374753" sideWeight="0.89778537" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32981133" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.10374753" sideWeight="0.10306122" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.10374753" sideWeight="0.10221465" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13660377" sideWeight="0.50019723" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32830188" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -1077,17 +1071,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/header.region">
+    <entry file="file://$PROJECT_DIR$/styles/sass/modules/search-overlay.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7596983" vertical-offset="0" max-vertical-offset="1170">
-          <caret line="47" column="71" selection-start-line="47" selection-start-column="71" selection-end-line="47" selection-end-column="71" />
+        <state vertical-scroll-proportion="-36.166668" vertical-offset="377" max-vertical-offset="1650">
+          <caret line="83" column="24" selection-start-line="83" selection-start-column="24" selection-end-line="83" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/custom/AjaxSearch.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1065">
+        <state vertical-scroll-proportion="0.31413612" vertical-offset="0" max-vertical-offset="1146">
           <caret line="24" column="52" selection-start-line="24" selection-start-column="52" selection-end-line="24" selection-end-column="52" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
@@ -1095,18 +1089,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/styles/sass/modules/search-overlay.scss">
+    <entry file="file://$PROJECT_DIR$/scripts/custom/ui.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.58943963" vertical-offset="698" max-vertical-offset="1650">
-          <caret line="83" column="24" selection-start-line="83" selection-start-column="24" selection-end-line="83" selection-end-column="24" />
+        <state vertical-scroll-proportion="0.5410122" vertical-offset="1375" max-vertical-offset="4815">
+          <caret line="133" column="84" selection-start-line="133" selection-start-column="61" selection-end-line="133" selection-end-column="84" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/custom/ui.js">
+    <entry file="file://$PROJECT_DIR$/header.region">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41491598" vertical-offset="2050" max-vertical-offset="4815">
-          <caret line="163" column="63" selection-start-line="163" selection-start-column="63" selection-end-line="163" selection-end-column="63" />
+        <state vertical-scroll-proportion="0.64171124" vertical-offset="0" max-vertical-offset="1170">
+          <caret line="48" column="10" selection-start-line="48" selection-start-column="10" selection-end-line="48" selection-end-column="10" />
           <folding />
         </state>
       </provider>

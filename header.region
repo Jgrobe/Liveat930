@@ -45,7 +45,7 @@
         }});
 
         SQSP.$objects.svg = {
-            arrow: jQuery('<div/>').html('{@|apply svg-icon-arrow.block}')
+            arrow: jQuery('<div/>').html(('{@|apply svg-icon-arrow.block}').trim())
         };
     </script>
 
