@@ -43,6 +43,10 @@
         jQuery.ajax(location.href+'?format=json-pretty', {success:function(e){
             console.log('SITE', e );
         }});
+
+        SQSP.$objects.svg = {
+            arrow: jQuery('<div/>').html('{@|apply svg-icon-arrow.block}')
+        };
     </script>
 
 </head>

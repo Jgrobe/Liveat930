@@ -116,9 +116,37 @@ function windowloaded() {
     });// search click
 
     // SEARCH FIELD FUNCTIONALITY
-    SQSP.instances.SEARCH.options.onSuccess = function(html, results) {
-        console.log('search done: ', results);
+    SQSP.$objects.searchResultsContainer = jQuery('.nav-overlay .results-wrapper');
+    SQSP.instances.SEARCH.options.onSuccess = function(ajaxHTML, formattedResults) {
+        console.log('search done: ', formattedResults);
+
+        for(var i=0; i<formattedResults.length; i++) {
+
+            var resultHTML = '<div class="result"><a href="'+ formattedResults[i].href +'">';
+
+            resultHTML += '<div class="hover-container imgfill" style="background-image: url(\''+ formattedResults[i].img +'\');"></div>';
+
+            resultHTML += '<div class="result-sized"><h3>';
+            resultHTML += prefix_int(i);
+            resultHTML += '<span class="title">'+ formattedResults[i].title +'</span>';
+            resultHTML += '</h3>';
+
+            resultHTML += '<div class="square-btn arrow">' + SQSP.$objects.svg.arrow.html() + '</div>';
+
+
+            resultHTML += '</a></div>';
+            var $resultItem = jQuery(resultHTML);
+
+            SQSP.$objects.searchResultsContainer.append($resultItem);
+
+        }//endfor
+
+        TweenMax.to('body',.4, {autoAlpha:1, clearProps:'autoAlpha'});
+
+        toggleSearchOverlay();
+
     };// search onSuccess()
+
     SQSP.$objects.searchFields  = jQuery('.search-field');
     SQSP.$objects.searchFields.on('focus', function(e) {
         SQSP.vars.focusOnSearch = true;
@@ -131,8 +159,12 @@ function windowloaded() {
                 if(SQSP.vars.focusOnSearch === true) {
                     var query = SQSP.$objects.searchFields.val();
                     if(query.trim() == '') return false;
+                    TweenMax.to(jQuery('body'),.3, {autoAlpha:.5});
+
+                    if(!SQSP.$objects.stickyHeader.hasClass('on')) {
+                        toggleNavOverlay();
+                    };
                     SQSP.instances.SEARCH.search(query);
-                    //toggleSearchOverlay();
                 }
                 break;
         }// endswitch()
@@ -140,32 +172,36 @@ function windowloaded() {
 
 
     SQSP.$objects.burger.click(function() {
-        SQSP.$objects.stickyHeader.toggleClass('on');
-        var $overlay = SQSP.$objects.stickyHeader.find('.nav-overlay');
-        var $items = SQSP.$objects.stickyHeader.find('.stagger-item');
-        TweenMax.killTweensOf($overlay);
-        TweenMax.killTweensOf($items);
-        var tl = new TimelineMax();
-        if(SQSP.$objects.stickyHeader.hasClass('on')) {
-            // open overlay
-            tl.add(function() {
-                SQSP.$objects.stickyHeader.find('video').get(0).play();
-            });
-            tl.to($overlay, .2, {autoAlpha:1});
-            tl.staggerTo($items,.2, {autoAlpha:1},.04, '-=.075');
-        } else {
-            // close overlay
-            tl.staggerTo($items,.2, {autoAlpha:0, clearProps:'all'},-.04);
-            tl.to($overlay,.2, {autoAlpha:0, clearProps:'all'}, '-=.3');
-            tl.add(function() {
-                SQSP.$objects.stickyHeader.find('video').get(0).pause();
-            });
-        }// endif;
+        toggleNavOverlay();
     });// click()
 
     cta_hovers();
 
 }// windowloaded
+
+function toggleNavOverlay() {
+    SQSP.$objects.stickyHeader.toggleClass('on');
+    var $overlay = SQSP.$objects.stickyHeader.find('.nav-overlay');
+    var $items = SQSP.$objects.stickyHeader.find('.stagger-item');
+    TweenMax.killTweensOf($overlay);
+    TweenMax.killTweensOf($items);
+    var tl = new TimelineMax();
+    if(SQSP.$objects.stickyHeader.hasClass('on')) {
+        // open overlay
+        tl.add(function() {
+            SQSP.$objects.stickyHeader.find('video').get(0).play();
+        });
+        tl.to($overlay, .2, {autoAlpha:1});
+        tl.staggerTo($items,.2, {autoAlpha:1},.04, '-=.075');
+    } else {
+        // close overlay
+        tl.staggerTo($items,.2, {autoAlpha:0, clearProps:'all'},-.04);
+        tl.to($overlay,.2, {autoAlpha:0, clearProps:'all'}, '-=.3');
+        tl.add(function() {
+            SQSP.$objects.stickyHeader.find('video').get(0).pause();
+        });
+    }// endif;
+}
 
 function toggleSearchOverlay() {
     //console.log('On search submit triggered()');

@@ -30,7 +30,7 @@ var AjaxSearch = function(options) {
             var result = {
                 img : $thisResult.find('img').data('src'),
                 title : $thisResult.find('.sqs-title').html(),
-                url : $thisResult.data('url')
+                href : $thisResult.data('url')
             };
 
             extractedResults.push(result);

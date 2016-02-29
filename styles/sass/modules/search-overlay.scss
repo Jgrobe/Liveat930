@@ -81,7 +81,7 @@
       background-blend-mode: multiply;
     }
 
-    &.hovered {
+    &:hover, &.hovered {
       color: white;
       .hover-container {height: 100%;}
       .square-btn { background: white; }

@@ -2194,11 +2194,11 @@ input {
     height: 0;
     background-color: #ff6478;
     background-blend-mode: multiply; }
-  .search-table .result.hovered {
+  .search-table .result:hover, .search-table .result.hovered {
     color: white; }
-    .search-table .result.hovered .hover-container {
+    .search-table .result:hover .hover-container, .search-table .result.hovered .hover-container {
       height: 100%; }
-    .search-table .result.hovered .square-btn {
+    .search-table .result:hover .square-btn, .search-table .result.hovered .square-btn {
       background: white; }
 
 .result-sized {
