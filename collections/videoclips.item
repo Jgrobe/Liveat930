@@ -26,7 +26,7 @@
 
     </section>
 
-    <squarespace:query collection="episodes" category="{item.customContent.linkedEpisode}" limit="1">
+    <squarespace:query collection="episodes" category="current" limit="1">
         <script>
             console.log('queried episode', {@|json-pretty});
         </script>
