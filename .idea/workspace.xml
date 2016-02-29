@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ba77c59-895c-4b6c-8ed1-52220cbb39bd" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/scripts/custom/SiteSearch.js" afterPath="$PROJECT_DIR$/scripts/custom/AjaxSearch.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/header.region" afterPath="$PROJECT_DIR$/header.region" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/custom/ui.js" afterPath="$PROJECT_DIR$/scripts/custom/ui.js" />
     </list>
     <ignored path="sqsp.iws" />
@@ -175,8 +173,8 @@
               <file leaf-file-name="ui.js" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/scripts/custom/ui.js">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.31559634" vertical-offset="1411" max-vertical-offset="4245">
-                      <caret line="117" column="44" selection-start-line="117" selection-start-column="44" selection-end-line="117" selection-end-column="44" />
+                    <state vertical-scroll-proportion="0.4256881" vertical-offset="721" max-vertical-offset="4275">
+                      <caret line="79" column="47" selection-start-line="79" selection-start-column="47" selection-end-line="79" selection-end-column="47" />
                       <folding />
                     </state>
                   </provider>
@@ -289,8 +287,8 @@
           <file leaf-file-name="AjaxSearch.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/scripts/custom/AjaxSearch.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.4842932" vertical-offset="0" max-vertical-offset="1146">
-                  <caret line="37" column="4" selection-start-line="37" selection-start-column="4" selection-end-line="37" selection-end-column="4" />
+                <state vertical-scroll-proportion="0.2486911" vertical-offset="0" max-vertical-offset="1146">
+                  <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
                   <folding>
                     <element signature="n#!!doc" expanded="true" />
                   </folding>
@@ -1079,8 +1077,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/custom/AjaxSearch.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4842932" vertical-offset="0" max-vertical-offset="1146">
-          <caret line="37" column="4" selection-start-line="37" selection-start-column="4" selection-end-line="37" selection-end-column="4" />
+        <state vertical-scroll-proportion="0.2486911" vertical-offset="0" max-vertical-offset="1146">
+          <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
@@ -1089,8 +1087,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/custom/ui.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.31559634" vertical-offset="1411" max-vertical-offset="4245">
-          <caret line="117" column="44" selection-start-line="117" selection-start-column="44" selection-end-line="117" selection-end-column="44" />
+        <state vertical-scroll-proportion="0.4256881" vertical-offset="721" max-vertical-offset="4275">
+          <caret line="79" column="47" selection-start-line="79" selection-start-column="47" selection-end-line="79" selection-end-column="47" />
           <folding />
         </state>
       </provider>
