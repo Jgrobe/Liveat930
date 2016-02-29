@@ -13,7 +13,7 @@
             <p>{customContent.featured-artists}</p>
         </div>
 
-        <div class="cta-dummy" data-label="'Watch episode No.{customContent.episode-number}, {addedOn|date %b %G}" data-icon="eye">{@|apply svg-icon-eye.block}</div>
+        <div class="cta-dummy" data-label="Watch episode No.{customContent.episode-number}, {addedOn|date %b %G}" data-icon="eye">{@|apply svg-icon-eye.block}</div>
         <!--php print_cta(array(
         'label' => 'Watch episode No. 5, MAR 2016',
         'icon' => 'images/eye',
