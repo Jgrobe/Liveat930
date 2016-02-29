@@ -63,7 +63,8 @@
 
 .clip-preview-container {
   width: 100%;
-  background: url('assets/images/clip.jpg') no-repeat center / cover;
+  background: url('assets/images/clip.jpg') no-repeat center;
+  background-size: cover;
   @include shadow(0 0 15px 5px rgba(0, 0, 0, 0.2));
   position: relative;
 
