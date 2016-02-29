@@ -255,6 +255,7 @@ a.episodes-landing-cta {
     .ep-lineup {
       font-size: get_relative_units(105);
       line-height: get_relative_units(105);
+      .divider { padding: 0 .75vw;}
       .artist {
         pointer-events: none;
         .description { display: none; }// .description
