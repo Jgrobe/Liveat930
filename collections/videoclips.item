@@ -42,7 +42,7 @@
 
                 <div class="rectangle"></div>
 
-                <div class="section-head top-spaced">
+                <div class="section-head">
                     <h2>More from this episode</h2>
                 </div>
 
@@ -117,7 +117,7 @@
             <section class="video-gallery video-detail-clips related-category-clips">
                 <div class="rectangle"></div>
 
-                <div class="section-head top-spaced">
+                <div class="section-head">
                     <h2>More Comedy Video Clips</h2>
                 </div>
 
