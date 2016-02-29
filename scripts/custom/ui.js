@@ -120,24 +120,21 @@ function windowloaded() {
     SQSP.instances.SEARCH.options.onSuccess = function(ajaxHTML, formattedResults) {
         console.log('search done: ', formattedResults);
 
+        var $resultModel = SQSP.$objects.searchResultsContainer.find('.result.placeholder');
         for(var i=0; i<formattedResults.length; i++) {
 
-            var resultHTML = '<div class="result"><a href="'+ formattedResults[i].href +'">';
+            var $newResult = $resultModel.clone();
 
-            resultHTML += '<div class="hover-container imgfill" style="background-image: url(\''+ formattedResults[i].img +'\');"></div>';
+            $newResult.find('.result-link').attr({
+                href : formattedResults[i].href
+            });
+            $newResult.find('.hover-container').css({
+                'background-image' : formattedResults[i].img
+            });
+            $newResult.find('.result-title').html(formattedResults[i].title);
+            $newResult.find('.result-num').html(prefix_int(i+1));
 
-            resultHTML += '<div class="result-sized"><h3>';
-            resultHTML += prefix_int(i);
-            resultHTML += '<span class="title">'+ formattedResults[i].title +'</span>';
-            resultHTML += '</h3>';
-
-            resultHTML += '<div class="square-btn arrow">' + strip_tags(SQSP.$objects.svg.arrow.html()) + '</div>';
-
-
-            resultHTML += '</a></div>';
-            var $resultItem = jQuery(resultHTML);
-
-            SQSP.$objects.searchResultsContainer.append($resultItem);
+            SQSP.$objects.searchResultsContainer.append($newResult);
 
         }//endfor
 

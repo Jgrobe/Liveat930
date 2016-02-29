@@ -74,26 +74,18 @@
             <div class="part results">
                 <div class="results-wrapper">
 
-                    <?php foreach($search_results as $i => $r) : ?>
-
-                    <div class="result<?php if(isset($r['img'])) {echo ' hovered';} ?>">
-
-                        <?php if(isset($r['img'])) : ?>
-                        <div class="hover-container imgfill" style="background-image: url('<?php echo $r['img']['src']; ?>');"></div>
-                        <?php endif; ?>
-
-                        <div class="result-sized">
-                            <h3>
-                                <?php echo prefix_int($i + 1); ?>
-                                <span class="title"><?php echo $r['title']?></span>
-                            </h3>
-                            <div class="square-btn arrow">
-                                <?php svg('images/icon-arrow'); ?>
-                            </div><!-- .arrow -->
-                        </div>
+                    <div class="result placeholder">
+                        <a href="" class="result-link">
+                            <div class="hover-container imgfill" style=""></div>
+                            <div class="result-sized">
+                                <h3>
+                                    <span class="result-num"></span>
+                                    <span class="result-title"></span>
+                                </h3>
+                                <div class="square-btn arrow">{@|apply svg-icon-arrow.block}</div><!-- .arrow -->
+                            </div>
+                        </a>
                     </div><!-- .result -->
-
-                    <?php endforeach; ?>
 
                 </div>
             </div><!-- .results -->

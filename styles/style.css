@@ -314,6 +314,9 @@ input {
   *.onlynomobile {
     display: none !important; } }
 
+.placeholder {
+  display: none; }
+
 .l-headline, .episodes-landing-head h1, .clip-landing .landing-head {
   font-family: "United Sans", script;
   text-transform: uppercase;
@@ -2173,7 +2176,7 @@ input {
   font-size: 3.26389vw;
   line-height: 3.26389vw;
   letter-spacing: .08em; }
-  .search-table .result .title {
+  .search-table .result .result-title {
     font-size: 1.66667vw;
     margin-left: 2.08333vw;
     vertical-align: top; }

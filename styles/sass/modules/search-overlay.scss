@@ -52,7 +52,7 @@
     @include relative_units(line-height, 94);
     letter-spacing: .08em;
 
-    .title {
+    .result-title {
       @include relative_units(font-size, 48);
       @include relative_units(margin-left, 60);
       vertical-align: top;

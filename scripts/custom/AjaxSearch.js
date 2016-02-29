@@ -29,7 +29,7 @@ var AjaxSearch = function(options) {
             console.log('filtering result', $thisResult, $thisResult.get(0));
             var result = {
                 img : $thisResult.find('img').data('src'),
-                title : $thisResult.find('.sqs-title').html(),
+                title : strip_tags( $thisResult.find('.sqs-title').html() ),
                 href : $thisResult.data('url')
             };
 
