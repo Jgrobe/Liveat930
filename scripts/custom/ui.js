@@ -131,7 +131,7 @@ function windowloaded() {
             resultHTML += '<span class="title">'+ formattedResults[i].title +'</span>';
             resultHTML += '</h3>';
 
-            resultHTML += '<div class="square-btn arrow">' + SQSP.$objects.svg.arrow.html() + '</div>';
+            resultHTML += '<div class="square-btn arrow">' + strip_tags(SQSP.$objects.svg.arrow.html()) + '</div>';
 
 
             resultHTML += '</a></div>';
