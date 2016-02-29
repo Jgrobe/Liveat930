@@ -109,17 +109,18 @@
 
     {.if item.categories}
 
-        <squarespace:query collection="{collection.urlId}" category="{.repeated section item.categories}{@},{.end}">
-            <script>
-                console.log('queried clips', {@|json-pretty});
-            </script>
+        <script>
+            console.log('queried clips', {@|json-pretty});
+        </script>
 
-            <section class="video-gallery video-detail-clips related-category-clips">
-                <div class="rectangle"></div>
+        <section class="video-gallery video-detail-clips related-category-clips">
+            <div class="rectangle"></div>
 
-                <div class="section-head">
-                    <h2>More Comedy Video Clips</h2>
-                </div>
+            <div class="section-head">
+                <h2>More {item.categories.0} Video Clips</h2>
+            </div>
+
+            <squarespace:query collection="{collection.urlId}" category="{item.categories.0}">
 
                 <div class="video-gallery-videos lefthand">
 
@@ -161,19 +162,19 @@
 
                 </div><!-- .video-gallery-videos -->
 
-                <div class="centered top-spaced">
-                    <div class="cta-dummy" data-label="Load more from the same category" data-icon="icon-load" data-class="load-clips load-from-category upsized-icon">{@|apply svg-icon-load.block}</div>
-                    <!--php print_cta(array(
-                        'label' => 'Load more from the same category',
-                    'icon' => 'images/icon-load',
-                    'class' => array('load-clips', 'load-from-category', 'upsized-icon')
-                    )); -->
-                    <!--<a class="episodes-landing-cta icon-refresh static" href="">Load more clips</a>-->
-                </div>
+            </squarespace:query>
 
-            </section>
+            <div class="centered top-spaced">
+                <div class="cta-dummy" data-label="Load more from the same category" data-icon="icon-load" data-class="load-clips load-from-category upsized-icon">{@|apply svg-icon-load.block}</div>
+                <!--php print_cta(array(
+                    'label' => 'Load more from the same category',
+                'icon' => 'images/icon-load',
+                'class' => array('load-clips', 'load-from-category', 'upsized-icon')
+                )); -->
+                <!--<a class="episodes-landing-cta icon-refresh static" href="">Load more clips</a>-->
+            </div>
 
-        </squarespace:query>
+        </section>
 
     {.end}
 
