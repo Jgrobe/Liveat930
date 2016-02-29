@@ -107,70 +107,74 @@
 
     {.end}
 
-    <squarespace:query collection="{collection.urlId}" category="{.repeated section item.categories}{@},{.end}">
-        <script>
-            console.log('queried clips', {@|json-pretty});
-        </script>
+    {.if item.categories}
 
-        <section class="video-gallery video-detail-clips related-category-clips">
-            <div class="rectangle"></div>
+        <squarespace:query collection="{collection.urlId}" category="{.repeated section item.categories}{@},{.end}">
+            <script>
+                console.log('queried clips', {@|json-pretty});
+            </script>
 
-            <div class="section-head top-spaced">
-                <h2>More Comedy Video Clips</h2>
-            </div>
+            <section class="video-gallery video-detail-clips related-category-clips">
+                <div class="rectangle"></div>
 
-            <div class="video-gallery-videos lefthand">
+                <div class="section-head top-spaced">
+                    <h2>More Comedy Video Clips</h2>
+                </div>
 
-                {.repeated section items}
+                <div class="video-gallery-videos lefthand">
 
-                    <div class="video small">
-                        <div class="image current-image" style="background-image:url('{customContent.clip-thumbnail}');">
+                    {.repeated section items}
 
-                            <div class="cta-dummy" data-icon="eye" data-class="negative play">{@|apply svg-icon-eye.block}</div>
+                        <div class="video small">
+                            <div class="image current-image" style="background-image:url('{customContent.clip-thumbnail}');">
 
+                                <div class="cta-dummy" data-icon="eye" data-class="negative play">{@|apply svg-icon-eye.block}</div>
+
+                            </div>
+                            <div class="flex-cols">
+                                <div class="title">{title}</div>
+                            </div>
                         </div>
-                        <div class="flex-cols">
-                            <div class="title">{title}</div>
-                        </div>
-                    </div>
 
-                {.end}
-                    <!--<div class="video small">-->
-                        <!--<div class="image" style="background-image:url('assets/images/thumb-video1.jpg');">-->
-        <!---->
-                            <!--<div class="cta-dummy" data-icon="eye" data-class="negative play">{@|apply svg-icon-eye.block}</div>-->
-        <!---->
+                    {.end}
+                        <!--<div class="video small">-->
+                            <!--<div class="image" style="background-image:url('assets/images/thumb-video1.jpg');">-->
+            <!---->
+                                <!--<div class="cta-dummy" data-icon="eye" data-class="negative play">{@|apply svg-icon-eye.block}</div>-->
+            <!---->
+                            <!--</div>-->
+                            <!--<div class="flex-cols">-->
+                                <!--<div class="title">Behind the scenes with Gogol Bordello</div>-->
+                            <!--</div>-->
                         <!--</div>-->
-                        <!--<div class="flex-cols">-->
-                            <!--<div class="title">Behind the scenes with Gogol Bordello</div>-->
+                        <!--<div class="video small no-margin">-->
+                            <!--<div class="image" style="background-image:url('assets/images/thumb-video3.jpg');">-->
+            <!---->
+                                <!--<div class="cta-dummy" data-icon="eye" data-class="negative play">{@|apply svg-icon-eye.block}</div>-->
+            <!---->
+                            <!--</div>-->
+                            <!--<div class="flex-cols">-->
+                                <!--<div class="title">Behind the scenes with youth lagoon</div>-->
+                            <!--</div>-->
                         <!--</div>-->
-                    <!--</div>-->
-                    <!--<div class="video small no-margin">-->
-                        <!--<div class="image" style="background-image:url('assets/images/thumb-video3.jpg');">-->
-        <!---->
-                            <!--<div class="cta-dummy" data-icon="eye" data-class="negative play">{@|apply svg-icon-eye.block}</div>-->
-        <!---->
-                        <!--</div>-->
-                        <!--<div class="flex-cols">-->
-                            <!--<div class="title">Behind the scenes with youth lagoon</div>-->
-                        <!--</div>-->
-                    <!--</div>-->
 
 
-            </div><!-- .video-gallery-videos -->
+                </div><!-- .video-gallery-videos -->
 
-            <div class="centered top-spaced">
-                <div class="cta-dummy" data-label="Load more from the same category" data-icon="icon-load" data-class="load-clips load-from-category upsized-icon">{@|apply svg-icon-load.block}</div>
-                <!--php print_cta(array(
-                    'label' => 'Load more from the same category',
-                'icon' => 'images/icon-load',
-                'class' => array('load-clips', 'load-from-category', 'upsized-icon')
-                )); -->
-                <!--<a class="episodes-landing-cta icon-refresh static" href="">Load more clips</a>-->
-            </div>
+                <div class="centered top-spaced">
+                    <div class="cta-dummy" data-label="Load more from the same category" data-icon="icon-load" data-class="load-clips load-from-category upsized-icon">{@|apply svg-icon-load.block}</div>
+                    <!--php print_cta(array(
+                        'label' => 'Load more from the same category',
+                    'icon' => 'images/icon-load',
+                    'class' => array('load-clips', 'load-from-category', 'upsized-icon')
+                    )); -->
+                    <!--<a class="episodes-landing-cta icon-refresh static" href="">Load more clips</a>-->
+                </div>
 
-        </section>
+            </section>
 
-    </squarespace:query>
+        </squarespace:query>
+
+    {.end}
 
 </div><!-- .site-content -->
