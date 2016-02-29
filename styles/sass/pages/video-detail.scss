@@ -1,6 +1,7 @@
 .clip-landing {
   @include landing();
   @include flexbox();
+  @extend .imgfill;
 
   .landing-container {
     margin: auto;
@@ -73,6 +74,8 @@
     display: block;
     padding-top: 58%;
   }
+
+  >*{ position: absolute;}
 }
 
 .overlap-container {

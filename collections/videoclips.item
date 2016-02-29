@@ -19,7 +19,7 @@
 
         <div class="text-layer">
             {item.body}
-            {@|social-button}
+            {@|apply}
             <!--php $sharelabel = 'Share this episode'; ?>
             <?php include('modules/sharebox.php'); -->
         </div><!-- .episodes-landing-sub -->
@@ -89,6 +89,8 @@
         </section>
 
     </squarespace:query>
+
+    {.end}
 
     <squarespace:query collection="{collection.urlId}" category="{.repeated section item.categories}{@},{.end}">
 
