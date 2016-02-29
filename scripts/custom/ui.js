@@ -132,7 +132,7 @@ function windowloaded() {
                 href : formattedResults[i].href
             });
             $newResult.find('.hover-container').css({
-                'background-image' : formattedResults[i].img
+                'background-image' : 'url('+ formattedResults[i].img +')'
             });
             $newResult.find('.result-title').html(formattedResults[i].title);
             $newResult.find('.result-num').html(prefix_int(i+1));
