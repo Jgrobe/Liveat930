@@ -37,12 +37,16 @@ var AjaxSearch = function(options) {
     };// extractData
     
     AS.search = function(query) {
+
+        console.log('search()', query);
         
         jQuery.ajax(AS.options.searchPath, {
             success: function(data) {
                 
                 AS.results = AS.extractData(data);
-                
+
+                console.log('success()', AS.results);
+
                 if(_.isFunction(AS.options.onSuccess)) AS.options.onSuccess(data, AS.results);
             },
             error : function() {
