@@ -123,7 +123,7 @@ function windowloaded() {
         var $resultModel = SQSP.$objects.searchResultsContainer.find('.result.placeholder');
         for(var i=0; i<formattedResults.length; i++) {
 
-            var $newResult = $resultModel.clone();
+            var $newResult = $resultModel.clone().removeClass('placeholder');
 
             $newResult.find('.result-link').attr({
                 href : formattedResults[i].href
