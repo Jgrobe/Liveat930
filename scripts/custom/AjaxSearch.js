@@ -19,8 +19,10 @@ var AjaxSearch = function(options) {
     
     AS.extractData = function(data) {
 
+        var cachedHtml = jQuery('<div/>').html(data);
         var extractedResults = [],
-            $results = jQuery(data).find(AS.options.resultSelector);
+            $results = cachedHtml.find(AS.options.resultSelector);
+        console.log('results found', $results);
 
         $results.each(function(i) {
             var $thisResult = jQuery(this);
