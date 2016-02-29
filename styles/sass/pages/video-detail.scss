@@ -20,8 +20,12 @@
 
 }// .clip-landing
 
+.site-content.clip-detail {
+  margin-bot: $sectionMarginBottom;
+}
+
 .video-gallery.video-detail-clips {
-  margin-top: $sectionMarginBottom;
+  margin: 0 auto;
   padding-top: 2vw;
 
 //  .load-from-episode {
@@ -32,12 +36,13 @@
 //  }
 
   &.related-episode-clips {
-    margin-bottom: 0;
+//    margin-bottom: 0;
     .cta-container {z-index: 1;}
   }// .related-episode-clips
 
   &.related-category-clips {
-    margin-top:0;
+//    margin-top:0;
+//    margin-bottom:0
   }// .related-category-clips
 
   .section-head {
@@ -87,4 +92,8 @@
   position: relative;
   margin-top: -15vw;
 //  margin-bottom: -10vw;
+}
+
+.vert-spacer {
+  margin-top: $sectionMarginBottom;
 }

@@ -3775,15 +3775,14 @@ a.episodes-landing-cta {
       text-align: right;
       padding-right: 10%; }
 
+.site-content.clip-detail {
+  margin-bot: 10.41667vw; }
+
 .video-gallery.video-detail-clips {
-  margin-top: 10.41667vw;
+  margin: 0 auto;
   padding-top: 2vw; }
-  .video-gallery.video-detail-clips.related-episode-clips {
-    margin-bottom: 0; }
-    .video-gallery.video-detail-clips.related-episode-clips .cta-container {
-      z-index: 1; }
-  .video-gallery.video-detail-clips.related-category-clips {
-    margin-top: 0; }
+  .video-gallery.video-detail-clips.related-episode-clips .cta-container {
+    z-index: 1; }
   .video-gallery.video-detail-clips .section-head {
     position: relative; }
 
@@ -3822,6 +3821,9 @@ a.episodes-landing-cta {
 .overlap-container {
   position: relative;
   margin-top: -15vw; }
+
+.vert-spacer {
+  margin-top: 10.41667vw; }
 
 ._aligner {
   background: rgba(255, 0, 100, 0.5);

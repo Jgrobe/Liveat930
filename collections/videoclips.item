@@ -9,9 +9,9 @@
 
 </section>
 
-<div class="site-content">
+<div class="site-content clip-detail">
 
-    <section class="clip-container overlap-container prllx-custom" data-prllx=".05">
+    <section class="clip-container overlap-container prllx-custom" data-prllx=".08">
 
         <div class="clip-preview-container" style="background-image:url('')">
             <video src="{item.customContent.clip-url}" poster="{item.customContent.clip-thumbnail.assetUrl}"></video>
@@ -26,7 +26,10 @@
 
     </section>
 
+
     {.if item.customContent.linkedEpisode}
+
+    <div class="vert-spacer"></div>
 
     <squarespace:query collection="episodes" category="current" limit="1">
         <script>
@@ -182,3 +185,4 @@
     {.end}
 
 </div><!-- .site-content -->
+<div class="vert-spacer"></div>
