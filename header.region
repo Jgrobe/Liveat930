@@ -20,6 +20,7 @@
     <squarespace:script combo="true" src="libs/gradientmaps.min.js" />
     <squarespace:script combo="true" src="libs/isotope.pkgd.min.js" />
     <squarespace:script combo="true" src="libs/jquery.gray.min.js" />
+    <squarespace:script combo="true" src="libs/jquery.touchSwipe.min.js" />
 
     <squarespace:script src="custom/namespaces.js" />
     <squarespace:script src="custom/global_functions.js" />

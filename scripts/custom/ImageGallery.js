@@ -1,3 +1,11 @@
+/**
+ *Dependencies:
+ *
+ * jQuery
+ * lodash
+ * touchswipe
+ * GSAP
+ */
 var ImageGallery = function($container, options) {
     if(typeof $container === 'undefined') return;
     if(typeof options === 'undefined') options = {};
@@ -48,19 +56,34 @@ var ImageGallery = function($container, options) {
     //    return true;
     //};// setup()
 
-    IG.arrowClick = function(e) {
-        e.preventDefault();
-        var $clicked = jQuery(e.currentTarget);
-        if($clicked.hasClass('prev')) {
-            IG.options.currentIndex--;
-            if(IG.options.currentIndex < 0) IG.options.currentIndex = IG.options.images.length -1;
-        } else if($clicked.hasClass('next')) {
-            IG.options.currentIndex++;
-            if(IG.options.currentIndex >= IG.options.images.length) IG.options.currentIndex = 0;
-        }
+    IG.leftright = function(direction) {
+        switch(direction) {
+            case 'next' :
+                IG.options.currentIndex++;
+                if(IG.options.currentIndex >= IG.options.images.length) IG.options.currentIndex = 0;
+                break;
+            case 'prev' :
+                IG.options.currentIndex--;
+                if(IG.options.currentIndex < 0) IG.options.currentIndex = IG.options.images.length -1;
+                break;
+        }// endswitch
 
         IG.switchImage(IG.options.currentIndex);
-    };// arrowClick()
+    };
+
+    //IG.arrowClick = function(e) {
+    //    e.preventDefault();
+    //    var $clicked = jQuery(e.currentTarget);
+    //    if($clicked.hasClass('prev')) {
+    //        IG.options.currentIndex--;
+    //        if(IG.options.currentIndex < 0) IG.options.currentIndex = IG.options.images.length -1;
+    //    } else if($clicked.hasClass('next')) {
+    //        IG.options.currentIndex++;
+    //        if(IG.options.currentIndex >= IG.options.images.length) IG.options.currentIndex = 0;
+    //    }
+    //
+    //    IG.switchImage(IG.options.currentIndex);
+    //};// arrowClick()
 
     IG.switchImage = function(index, functions) {
         if(typeof functions === 'undefined') functions = {};
@@ -104,8 +127,22 @@ var ImageGallery = function($container, options) {
         IG.$object.labelTotal.html(IG.options.images.length);
 
         IG.$object.arrows.click(function(e) {
-            IG.arrowClick(e);
+            e.preventDefault();
+            IG.leftright( $clicked.hasClass('prev') ? 'prev' : 'next ');
         });
+
+        IG.$object.container.swipe({
+            swipe:function(e, direction) {
+                switch(direction) {
+                    case 'left' :
+                        IG.leftright('next');
+                        break;
+                    case 'right' :
+                        IG.leftright('prev');
+                        break;
+                }// endswitch
+            }
+        });// swipe
 
     };// init()
 
