@@ -16,11 +16,24 @@ var ClipGrid = function($container, options) {
         distributeSizes: false,
         filter : false,
         onInit : false,
-        onLayout : false
+        onLayout : false,
+        staggerDuration:.3,
+        staggerOffset:.1,
+        filterOut : function() {
+            var tl = new TimelineMax();
+            tl.staggerTo(CG.$object.currentItems, CG.options.staggerDuration, {autoAlpha:0}, CG.options.staggerOffset);
+            return tl;
+        },
+        filterIn : function() {
+            var tl = new TimelineMax();
+            tl.staggerTo(CG.$object.currentItems, CG.options.staggerDuration, {autoAlpha:1}, CG.options.staggerOffset);
+            return tl;
+        }
     }, options);
     CG.$object = {
         container: $container,
-        items : $container.find(CG.options.itemSelector)
+        items : $container.find(CG.options.itemSelector),
+        currentItems : ( CG.options.filter ? $container.find(CG.options.filter) : $container.find(CG.options.itemSelector) )
     };
 
     CG.setSizes = function($items) {
@@ -51,29 +64,47 @@ var ClipGrid = function($container, options) {
 
         CG.$object.container.isotope({
             itemSelector : CG.options.itemSelector,
+            transitionDuration: 0,// use custom transitions via functions defined in options
             layoutMode : 'masonry',
             masonry : {
                 gutter: CG.options.gutterSizerSelector
             }
         });
 
-        CG.filter( CG.options.filter? CG.options.filter : CG.options.itemSelector );
+        CG.filter( CG.options.filter ? CG.options.filter : CG.options.itemSelector );
 
         if(_.isFunction(CG.options.onIinit)) CG.options.onIinit();
 
     };// initGrid
 
     CG.filter = function(filter) {
+        if(filter == CG.currentFilter) return false;
 
         CG.currentFilter = filter;
 
-        CG.setSizes( CG.$object.container.find(filter) );
+        var filterTL = new TimelineMax();
 
-        CG.$object.container.isotope({
-            filter: CG.currentFilter
+        if(_.isFunction(CG.options.filterOut)) {
+            // animate items out
+            filterTL.add( CG.options.filterOut );
+        }// endif
+
+        filterTL.add(function() {
+            CG.$object.currentItems = CG.$object.container.find(filter);
+
+            CG.setSizes( CG.$object.currentItems );
+
+            CG.$object.container.isotope({
+                filter: CG.currentFilter
+            });
         });
 
-    };// filter
+        if(_.isFunction(CG.options.filterIn)) {
+            // animate items in
+            filterTL.add( CG.options.filterIn );
+        }// endif
+
+    };// filter()
 
     CG.layout = function() {
 
