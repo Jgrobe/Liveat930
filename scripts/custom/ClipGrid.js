@@ -92,15 +92,19 @@ var ClipGrid = function($container, options) {
         }// endif
 
         filterTL.add(function() {
-            CG.$object.currentItems = CG.$object.container.find(filter);
 
-            CG.setSizes( CG.$object.currentItems );
+            var tl = new TimelineMax();
+            tl.add(function(){
+                CG.$object.currentItems = CG.$object.container.find(filter);
 
-            CG.$object.container.isotope({
-                filter: CG.currentFilter
+                CG.setSizes( CG.$object.currentItems );
+
+                CG.$object.container.isotope({
+                    filter: CG.currentFilter
+                });
             });
-
-            TweenMax.set(CG.$object.currentItems, {autoAlpha:0});
+            tl.set(CG.$object.currentItems, {autoAlpha:0});
+            return tl;
         });
 
         if(_.isFunction(CG.options.filterIn)) {
