@@ -308,6 +308,7 @@ $gridGutter: 5vw;
     //}// .video-gallery-videos
 
     .video {
+      width: 100%;
 
       &.small, &.medium, &.large, &:last-child {
         float: none;
