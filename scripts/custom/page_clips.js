@@ -16,7 +16,7 @@ SQSP.functions.initPage = function() {
     $filterBtns.click(function(e) {
         e.preventDefault();
         var $clicked = jQuery(this);
-        $clicked.siblings.removeClass('current-item');
+        $clicked.siblings().removeClass('current-item');
         $clicked.toggleClass('current-item');
         SQSP.instances.videoGrid.filter( ('.'+$clicked.data('filter')) );
     });

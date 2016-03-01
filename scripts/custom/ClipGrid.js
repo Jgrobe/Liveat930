@@ -27,7 +27,7 @@ var ClipGrid = function($container, options) {
             return tl;
         },
         filterIn : function() {
-            var tl = new TimelineMax({onComplete:function(){console.log('filterIn complete', tl.duration());}});
+            var tl = new TimelineMax({onComplete:function(){CG.isFilterInProgress = false;}});
             tl.staggerTo(CG.$object.currentItems, CG.options.staggerDuration, {autoAlpha:1}, CG.options.staggerOffset);
             return tl;
         }
@@ -78,6 +78,9 @@ var ClipGrid = function($container, options) {
     };// initGrid
 
     CG.filter = function(filter) {
+        if(CG.isFilterInProgress) return false;
+        CG.isFilterInProgress = true;
+
         if(filter == CG.currentFilter) filter = CG.options.itemSelector;
 
         CG.currentFilter = filter;
@@ -109,6 +112,8 @@ var ClipGrid = function($container, options) {
                 // animate items in
                 console.log('animate items in');
                 inTL.add( CG.options.filterIn(), '-='+(CG.options.duration *.5) );
+            } else {
+                CG.isFilterInProgress = false;
             }// endif
         });
 
