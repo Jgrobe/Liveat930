@@ -3525,7 +3525,7 @@ a.episodes-landing-cta {
           -ms-transition: width 0.3s;
           -o-transition: width 0.3s;
           transition: width 0.3s; }
-        .video-overview-landing .video-overview-filter li .clips-filter-trigger.current-item {
+        .video-overview-landing .video-overview-filter li .clips-filter-trigger.current-item:after {
           width: 100%; }
   @media only screen and (max-width: 750px) {
     .video-overview-landing .video-overview-filter li {

@@ -70,7 +70,7 @@ $gridGutter: 5vw;
         }
 
         &.current-item {
-          width: 100%;
+          &:after { width: 100%; }
         }
       }// a
     }// li
