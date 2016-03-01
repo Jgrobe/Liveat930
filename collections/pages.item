@@ -165,7 +165,10 @@
         </section><!-- .video-gallery -->
 
     </div>
+
+    <squarespace:script src="custom/page_show.js"/>
 {.end}
 {.equal?:item.customContent.customType:"page-host"}
     {@|apply page-host.block}
+    <!--quarespace:script src="custom/page_host.js"/-->
 {.end}

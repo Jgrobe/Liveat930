@@ -23,7 +23,7 @@
 
     <section class="video-gallery">
         <div class="rectangle"></div>
-        <div class="video-gallery-videos lefthand">
+        <div class="video-gallery-videos">
 
             <div class="gutter-sizer"></div>
 

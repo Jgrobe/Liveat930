@@ -4,7 +4,7 @@ SQSP.functions.initPage = function() {
 
     SQSP.instances.videoGrid = new ClipGrid(jQuery('.video-gallery-videos'), {
         itemSelector : '.video',
-        filter : '.video',
+        //filter : '.video',
         sizes : ['small', 'large'],
         distributeSizes : [0,0,1,0,0,1,0,0,0,0],
         onInit:function() {
