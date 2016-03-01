@@ -32,6 +32,8 @@ var ClipGrid = function($container, options) {
         $items.each(function(i) {
 
             var $thisItem = jQuery(this);
+            console.log('applying item size', $thisItem,CG.options.sizes[sizeCounter] );
+
             $thisItem.addClass( CG.options.sizes[sizeCounter] );
 
             sizeCounter++;
