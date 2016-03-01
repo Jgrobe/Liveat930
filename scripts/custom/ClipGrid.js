@@ -20,12 +20,12 @@ var ClipGrid = function($container, options) {
         staggerDuration:.3,
         staggerOffset:.1,
         filterOut : function() {
-            var tl = new TimelineMax({onComplete:function(){console.log('filterOut complete');}});
+            var tl = new TimelineMax({onComplete:function(){console.log('filterOut complete', tl.duration());}});
             tl.staggerTo(CG.$object.currentItems, CG.options.staggerDuration, {autoAlpha:0}, CG.options.staggerOffset);
             return tl;
         },
         filterIn : function() {
-            var tl = new TimelineMax({onComplete:function(){console.log('filterIn complete');}});
+            var tl = new TimelineMax({onComplete:function(){console.log('filterIn complete', tl.duration());}});
             tl.staggerTo(CG.$object.currentItems, CG.options.staggerDuration, {autoAlpha:1}, CG.options.staggerOffset);
             return tl;
         }
