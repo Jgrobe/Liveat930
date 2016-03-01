@@ -37,7 +37,7 @@ var ClipGrid = function($container, options) {
             $thisItem.addClass( CG.options.sizes[sizeCounter] );
 
             sizeCounter++;
-            if( sizeCounter >= CG.options.sizes.length );
+            if( sizeCounter >= CG.options.sizes.length ) sizeCounter = 0;
 
         });// each()
 

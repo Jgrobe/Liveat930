@@ -196,8 +196,8 @@
               <file leaf-file-name="page_clips.js" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/scripts/custom/page_clips.js">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.089020774">
-                      <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+                    <state vertical-scroll-proportion="0.118694365">
+                      <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
                       <folding />
                     </state>
                   </provider>
@@ -244,8 +244,8 @@
           <file leaf-file-name="ClipGrid.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/scripts/custom/ClipGrid.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.6646884">
-                  <caret line="57" column="82" selection-start-line="57" selection-start-column="82" selection-end-line="57" selection-end-column="82" />
+                <state vertical-scroll-proportion="0.41246292">
+                  <caret line="39" column="72" selection-start-line="39" selection-start-column="72" selection-end-line="39" selection-end-column="72" />
                   <folding>
                     <element signature="n#!!doc" expanded="true" />
                   </folding>
@@ -1093,16 +1093,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/custom/page_clips.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.089020774">
-          <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+        <state vertical-scroll-proportion="0.118694365">
+          <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/custom/ClipGrid.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6646884">
-          <caret line="57" column="82" selection-start-line="57" selection-start-column="82" selection-end-line="57" selection-end-column="82" />
+        <state vertical-scroll-proportion="0.41246292">
+          <caret line="39" column="72" selection-start-line="39" selection-start-column="72" selection-end-line="39" selection-end-column="72" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
