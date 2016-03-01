@@ -105,11 +105,11 @@ var ClipGrid = function($container, options) {
             });
         });
 
-        //// animate items in
-        //if(_.isFunction(CG.options.filterIn)) {
-        //    console.log('animate items in');
-        //    filterTL.add( CG.options.filterIn() );
-        //}// endif
+        // animate items in
+        if(_.isFunction(CG.options.filterIn)) {
+            console.log('animate items in');
+            filterTL.add( CG.options.filterIn() );
+        }// endif
 
     };// filter()
 
