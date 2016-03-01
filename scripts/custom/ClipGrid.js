@@ -98,12 +98,12 @@ var ClipGrid = function($container, options) {
 
         if(_.isFunction(CG.options.filterIn)) filterTL.set(CG.$object.currentItems, {autoAlpha: 0});
 
-        filterTL.add(function() {
-            CG.setSizes( CG.$object.currentItems );
-            CG.$object.container.isotope({
-                filter: CG.currentFilter
-            });
-        });
+        //filterTL.add(function() {
+        //    CG.setSizes( CG.$object.currentItems );
+        //    CG.$object.container.isotope({
+        //        filter: CG.currentFilter
+        //    });
+        //});
 
         // animate items in
         if(_.isFunction(CG.options.filterIn)) {
