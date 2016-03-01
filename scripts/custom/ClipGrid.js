@@ -88,7 +88,7 @@ var ClipGrid = function($container, options) {
         if(_.isFunction(CG.options.filterOut)) {
             // animate items out
             console.log('animate items out');
-            filterTL.add( CG.options.filterOut );
+            filterTL.add( CG.options.filterOut() );// must fire fn() to return timeline!
         }// endif
 
         filterTL.add(function() {
@@ -104,7 +104,7 @@ var ClipGrid = function($container, options) {
         if(_.isFunction(CG.options.filterIn)) {
             // animate items in
             console.log('animate items in');
-            filterTL.add( CG.options.filterIn );
+            filterTL.add( CG.options.filterIn() );
         }// endif
 
     };// filter()
