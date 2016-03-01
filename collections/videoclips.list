@@ -10,7 +10,7 @@
             {.if categories}
                 <ul class="video-overview-filter">
                     {.repeated section categories}
-                        <li><a href="?category={@|url-encode}">{@}</a></li>
+                        <li class="video-filter-item"><a class="clips-filter-trigger" href="?category={@|url-encode}" data-filter="{@}">{@}</a></li>
                     {.end}<!-- .end repeat categories -->
                 </ul>
             {.end}<!-- .end if categories -->
@@ -28,19 +28,7 @@
             <div class="gutter-sizer"></div>
 
             {.repeated section items}
-            <div class="video small">
-                <div class="image" style="background-image:url('{assetUrl}');">
-                    <div class="cta-dummy" data-icon="eye" data-class="negative play" data-attributes="href={fullUrl}">{@|apply svg-icon-eye.block}</div>
-                    <!--php print_cta(array(
-                'icon' => 'images/eye',
-                    'class' => array('negative', 'play')
-                    )); -->
-                    <!--<a href="" class="play"></a>-->
-                </div>
-                <div class="flex-cols">
-                    <div class="title">{title}</div>
-                </div>
-            </div>
+                {@|apply module-clip-item.block}
             {.end}<!-- .end repeat clips -->
             <!--<div class="video small">-->
                 <!--<div class="image" style="background-image:url('assets/images/thumb-video2.jpg');">-->

@@ -9,4 +9,10 @@ SQSP.functions.initPage = function() {
             console.log('Grid initialized');
         }
     });
+
+    jQuery('.clips-filter-trigger').click(function(e) {
+        e.preventDefault();
+        var $clicked = jQuery(this);
+        SQSP.instances.videoGrid.filter($clicked.data('filter'));
+    })
 };
