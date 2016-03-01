@@ -17,6 +17,7 @@ var ClipGrid = function($container, options) {
         filter : false,
         onInit : false,
         onLayout : false,
+        duration:.4,
         staggerDuration:.2,
         staggerOffset:.08,
         filterOut : function() {
@@ -82,6 +83,7 @@ var ClipGrid = function($container, options) {
         if(filter == CG.currentFilter) filter = CG.options.itemSelector;
 
         CG.currentFilter = filter;
+        var oldGridHeight = CG.$object.container.outerHeight();
 
         var filterTL = new TimelineMax({onComplete:function(){console.log('filterTL complete')}});
 
@@ -100,10 +102,15 @@ var ClipGrid = function($container, options) {
                 filter: CG.currentFilter
             });
 
+            var inTL = new TimelineMax();
+            // tween grid height
+            var newGridHeight = CG.$object.container.outerHeight();
+            inTL.fromTo(CG.$object.container, CG.options.duration, {height:oldGridHeight}, {height:newGridHeight, ease:Expo.easeOut});
+
             if(_.isFunction(CG.options.filterIn)) {
                 // animate items in
                 console.log('animate items in');
-                CG.options.filterIn();
+                inTL.add( CG.options.filterIn(), '-='+(CG.options.duration *.5) );
             }// endif
         });
 
