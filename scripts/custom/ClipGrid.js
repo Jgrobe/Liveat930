@@ -21,7 +21,7 @@ var ClipGrid = function($container, options) {
         staggerOffset:.1,
         filterOut : function() {
             var tl = new TimelineMax({onComplete:function(){console.log('filterOut complete', tl.duration());}});
-            tl.staggerTo(CG.$object.currentItems, CG.options.staggerDuration, {autoAlpha:0}, CG.options.staggerOffset);
+            tl.staggerTo(CG.$object.currentItems, CG.options.staggerDuration, {autoAlpha:0, onComplete:function(){console.log('item staggered');}}, CG.options.staggerOffset);
             return tl;
         },
         filterIn : function() {
@@ -41,6 +41,8 @@ var ClipGrid = function($container, options) {
         // remove all sizes
         CG.$object.items.removeClass(CG.options.sizes.join(' '));
 
+        if(is_mobile()) return false;
+
         var sizeCounter = 0;
 
         $items.each(function(i) {
@@ -59,8 +61,6 @@ var ClipGrid = function($container, options) {
     };// setSizes()
 
     CG.initGrid = function() {
-
-        console.log('Init ClipGrid', CG);
 
         CG.$object.container.isotope({
             itemSelector : CG.options.itemSelector,
@@ -115,6 +115,8 @@ var ClipGrid = function($container, options) {
     };// rearrange
 
     CG.init = function() {
+
+        console.log('Init ClipGrid', CG);
 
         CG.initGrid();
 
