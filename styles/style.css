@@ -2148,6 +2148,7 @@ input {
     padding-left: 4.51389vw; }
 .search-table .part.results {
   overflow: scroll;
+  background: white;
   -webkit-box-grow: 1;
   -moz-box-grow: 1;
   -webkit-flex-grow: 1;

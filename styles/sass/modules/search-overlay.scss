@@ -20,6 +20,7 @@
 
     &.results {
       overflow: scroll;
+      background: white;
       @include flex-value(grow, 1);
 
       .results-wrapper{background: url('assets/images/paper-texture.jpg');}
