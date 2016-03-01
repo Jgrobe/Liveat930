@@ -128,6 +128,7 @@ var ImageGallery = function($container, options) {
 
         IG.$object.arrows.click(function(e) {
             e.preventDefault();
+            var $clicked = jQuery(this);
             IG.leftright( $clicked.hasClass('prev') ? 'prev' : 'next ');
         });
 
