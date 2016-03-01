@@ -85,30 +85,28 @@ var ClipGrid = function($container, options) {
 
         var filterTL = new TimelineMax({onComplete:function(){console.log('filterTL complete')}});
 
+        // animate items out
         if(_.isFunction(CG.options.filterOut)) {
-            // animate items out
             console.log('animate items out');
             filterTL.add( CG.options.filterOut() );// must fire fn() to return timeline!
         }// endif
 
+        // do actual filtering
         filterTL.add(function() {
-
-            var tl = new TimelineMax();
-            tl.add(function(){
-                CG.$object.currentItems = CG.$object.container.find(filter);
-
-                CG.setSizes( CG.$object.currentItems );
-
-                CG.$object.container.isotope({
-                    filter: CG.currentFilter
-                });
-            });
-            tl.set(CG.$object.currentItems, {autoAlpha:0});
-            return tl;
+            CG.$object.currentItems = CG.$object.container.find(filter);
         });
 
+        if(_.isFunction(CG.options.filterIn)) filterTL.set(CG.$object.currentItems, {autoAlpha: 0});
+
+        filterTL.add(function() {
+            CG.setSizes( CG.$object.currentItems );
+            CG.$object.container.isotope({
+                filter: CG.currentFilter
+            });
+        });
+
+        // animate items in
         if(_.isFunction(CG.options.filterIn)) {
-            // animate items in
             console.log('animate items in');
             filterTL.add( CG.options.filterIn() );
         }// endif
