@@ -14,6 +14,7 @@ SQSP.functions.initPage = function() {
 
     var $filterBtns = jQuery('.video-filter-item');
     $filterBtns.click(function(e) {
+        if(SQSP.instances.videoGrid.isFilterInProgress) return false;// this is done in the instance automatically but needed to avoid toggleClass if still filtering
         e.preventDefault();
         var $clicked = jQuery(this);
         $clicked.siblings().removeClass('current-item');
