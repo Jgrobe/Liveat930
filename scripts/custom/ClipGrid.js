@@ -48,7 +48,7 @@ var ClipGrid = function($container, options) {
             itemSelector : CG.options.itemSelector,
             layoutMode : 'masonry',
             masonry : {
-                columnWidth: '5vw'
+                gutter: '5vw'
             }
         });
 
