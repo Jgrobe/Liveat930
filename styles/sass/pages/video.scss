@@ -87,15 +87,15 @@ $gridGutter: 5vw;
     height: 103%;
   }
 
-  .video-gallery-videos {
-//    overflow: hidden;
-
-    &:after {
-      content: '';
-      display: block;
-      clear:both;
-    }
-
+//  .video-gallery-videos {
+////    overflow: hidden;
+//
+//    &:after {
+//      content: '';
+//      display: block;
+//      clear:both;
+//    }
+//
 //    &.lefthand {
 //      .video {
 ////        &.small, &.medium, &.large {
@@ -140,7 +140,7 @@ $gridGutter: 5vw;
 //        &:last-child { margin-left: 0; }
 //      }
 //    }
-  }
+//  }
 
   .video {
     margin-top: 4vw;
@@ -205,9 +205,7 @@ $gridGutter: 5vw;
     }
     .title {
       position: relative;
-      font-size: 19px;
-      line-height: 21px;
-      letter-spacing: .1em;
+//      margin: 2vw 0 4vw;
     }
     &.small {
       .image {
@@ -241,60 +239,8 @@ $gridGutter: 5vw;
       @include flex-value(direction, row);
 
       .title { @include flex-value(grow, 1); }
-      .cta {
-//        font-size: .7vw;
-//        letter-spacing: .08em;
-//        font-weight: bold;
-//        text-transform: uppercase;
-//        margin: 2.4vw 0 3.6vw;
-//        @include svg-content() { fill: black; }
-//        svg {
-//          display: inline-block;
-//          width: 1vw;
-//          height: 0.6vw;
-//          margin-right: .5vw;
-//        }// svg
-      }// .cta
+
     }// .flex-cols
-
-    .play {
-      bottom: -10px;
-      height: 65px;
-      width: 65px;
-
-      &.goto {
-        svg {
-          width: 16px;
-          height: 11px;
-        }// svg
-      }// .goto
-    }// .play
-
-    .flex-cols {
-      margin-top: 30px;
-      //        .cta {
-      //          font-size: 10px;
-      //          line-height: 14px;
-      //          letter-spacing: .08em;
-      //          margin: 8% 0;
-      //          svg {
-      //            width: 17px;
-      //            height: 14px;
-      //            margin-right: 5px;
-      //            vertical-align: middle;
-      //          }// svg
-      //        }// .cta
-    }// .flex-cols
-
-    .video-label {
-      font-size: 19px;
-      letter-spacing: .08em;
-      padding: 30px 35px;
-      left: 50%;
-      @include transform(translateY(-50%) translateX(-50%));
-      white-space: nowrap;
-    }// .video-label
-
   }// .video
 
   .cta-container {
@@ -312,6 +258,8 @@ $gridGutter: 5vw;
     @include transform(translateX(-50%) translateY(-50%));
   }
 
+  //------------------------------------------------------------
+
   @include breakpoint(mobile) {
     padding-bottom: 50px;
     width: $MOBILE_WIDTH;
@@ -322,49 +270,80 @@ $gridGutter: 5vw;
       height: 101%;
     }
 
-    //.video-gallery-videos {
-    //
-    //  &:after { content: none; }
-    //
-    //  &.lefthand, &.righthand {
-    //    .video {
-    //      &.small, &.medium, &.large, &:last-child {
-    //        float: none;
-    //        margin: 70px auto 0 auto;
-    //
-    //        .image {
-    //          width: 100%;
-    //          height: auto;
-    //          &:before {
-    //            content: '';
-    //            display: block;
-    //            padding-top: 70%;
-    //          }
-    //        }
-    //      }
-    //
-    //
-    //      .image {
-    //        &.poster {
-    //          &:before {
-    //            padding-top: 135%;
-    //          }
-    //        }
-    //      }
-    //
-    //    }// .video
-    //  }// .lefthand
-    //}// .video-gallery-videos
+    .video-gallery-videos {
+
+      &:after { content: none; }
+
+      &.lefthand, &.righthand {
+        .video {
+          &.small, &.medium, &.large, &:last-child {
+            float: none;
+            margin: 70px auto 0 auto;
+
+            .image {
+              width: 100%;
+              height: auto;
+              &:before {
+                content: '';
+                display: block;
+                padding-top: 70%;
+              }
+            }
+          }
+
+
+          .image {
+            &.poster {
+              &:before {
+                padding-top: 135%;
+              }
+            }
+          }
+
+        }// .video
+      }// .lefthand
+    }// .video-gallery-videos
+
+    .video {
+      .play {
+        bottom: -10px;
+        height: 65px;
+        width: 65px;
+
+        &.goto {
+          svg {
+            width: 16px;
+            height: 11px;
+          }// svg
+        }// .goto
+      }// .play
+
+      .title {
+//        margin: 30px $MOBILE_MARGIN;
+        font-size: 19px;
+        line-height: 21px;
+        letter-spacing: .1em;
+      }
+
+      .flex-cols {
+        margin-top: 30px;
+      }// .flex-cols
+
+      .video-label {
+        font-size: 19px;
+        letter-spacing: .08em;
+        padding: 30px 35px;
+        left: 50%;
+        @include transform(translateY(-50%) translateX(-50%));
+        white-space: nowrap;
+      }// .video-label
+
+    }// .video
 
     .episodes-landing-cta.static {
       transform: none;
       margin-top: 40px;
     }// .episodes-landing-cta
-
-//    .cta.load-more {
-//      position: static;
-//      display: inline-block;
-//    }// .cta.loadmore
 
   }// BP MOBILE
 

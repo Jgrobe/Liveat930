@@ -151,11 +151,11 @@
                   </provider>
                 </entry>
               </file>
-              <file leaf-file-name="videoclips.list" pinned="false" current-in-tab="false">
+              <file leaf-file-name="videoclips.list" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/collections/videoclips.list">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="-34.458332">
-                      <caret line="153" column="28" selection-start-line="153" selection-start-column="28" selection-end-line="153" selection-end-column="28" />
+                    <state vertical-scroll-proportion="0.41033435">
+                      <caret line="27" column="38" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
                       <folding />
                     </state>
                   </provider>
@@ -181,10 +181,10 @@
                   </provider>
                 </entry>
               </file>
-              <file leaf-file-name="page_clips.js" pinned="false" current-in-tab="true">
+              <file leaf-file-name="page_clips.js" pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/scripts/custom/page_clips.js">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.014836796">
+                    <state vertical-scroll-proportion="0.0">
                       <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
                       <folding />
                     </state>
@@ -229,11 +229,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="ClipGrid.js" pinned="false" current-in-tab="false">
+          <file leaf-file-name="ClipGrid.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/scripts/custom/ClipGrid.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="32" column="12" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="12" />
+                <state vertical-scroll-proportion="0.20771514">
+                  <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
                   <folding>
                     <element signature="n#!!doc" expanded="true" />
                   </folding>
@@ -281,10 +281,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="video.scss" pinned="false" current-in-tab="true">
+          <file leaf-file-name="video.scss" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/styles/sass/pages/video.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="1.096875">
+                <state vertical-scroll-proportion="-20.647058">
                   <caret line="142" column="3" selection-start-line="142" selection-start-column="3" selection-end-line="142" selection-end-column="3" />
                   <folding />
                 </state>
@@ -378,10 +378,10 @@
         <option value="$PROJECT_DIR$/scripts/custom/AjaxSearch.js" />
         <option value="$PROJECT_DIR$/scripts/custom/ui.js" />
         <option value="$PROJECT_DIR$/header.region" />
-        <option value="$PROJECT_DIR$/collections/videoclips.list" />
         <option value="$PROJECT_DIR$/scripts/custom/page_clips.js" />
-        <option value="$PROJECT_DIR$/scripts/custom/ClipGrid.js" />
         <option value="$PROJECT_DIR$/styles/sass/pages/video.scss" />
+        <option value="$PROJECT_DIR$/collections/videoclips.list" />
+        <option value="$PROJECT_DIR$/scripts/custom/ClipGrid.js" />
       </list>
     </option>
   </component>
@@ -643,7 +643,7 @@
     <frame x="-2556" y="23" width="2556" height="1417" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14990138" sideWeight="0.879692" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14990138" sideWeight="0.879692" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32981133" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13660377" sideWeight="0.50019723" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25847778" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -651,7 +651,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32931423" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2170309" sideWeight="0.49980277" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14990138" sideWeight="0.12030799" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14990138" sideWeight="0.12030799" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -662,6 +662,26 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32981133" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13660377" sideWeight="0.50019723" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32830188" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32931423" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2170309" sideWeight="0.49980277" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14990138" sideWeight="0.879692" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25847778" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14990138" sideWeight="0.12030799" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -1039,37 +1059,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/collections/videoclips.list">
+    <entry file="file://$PROJECT_DIR$/scripts/custom/page_clips.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-34.458332">
-          <caret line="153" column="28" selection-start-line="153" selection-start-column="28" selection-end-line="153" selection-end-column="28" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/custom/page_clips.js">
+    <entry file="file://$PROJECT_DIR$/styles/sass/pages/video.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.014836796">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        <state vertical-scroll-proportion="-20.647058">
+          <caret line="142" column="3" selection-start-line="142" selection-start-column="3" selection-end-line="142" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collections/videoclips.list">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.41033435">
+          <caret line="27" column="38" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/custom/ClipGrid.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="32" column="12" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="12" />
+        <state vertical-scroll-proportion="0.20771514">
+          <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/styles/sass/pages/video.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.096875">
-          <caret line="142" column="3" selection-start-line="142" selection-start-column="3" selection-end-line="142" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
