@@ -55,7 +55,7 @@ var ClipGrid = function($container, options) {
             }
         });
 
-        if(CG.options.filter) CG.filter(CG.options.filter);
+        CG.filter( CG.options.filter? CG.options.filter : CG.options.itemSelector );
 
         if(_.isFunction(CG.options.onIinit)) CG.options.onIinit();
 
@@ -65,7 +65,7 @@ var ClipGrid = function($container, options) {
 
         CG.currentFilter = filter;
 
-        CG.setSizes(CG.$object.container.find(filter));
+        CG.setSizes( CG.$object.container.find(filter) );
 
         CG.$object.container.isotope({
             filter: CG.currentFilter
