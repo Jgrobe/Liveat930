@@ -241,11 +241,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="ClipGrid.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="ClipGrid.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/scripts/custom/ClipGrid.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.27299702">
-                  <caret line="27" column="106" selection-start-line="27" selection-start-column="106" selection-end-line="27" selection-end-column="106" />
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
                   <folding>
                     <element signature="n#!!doc" expanded="true" />
                   </folding>
@@ -293,11 +293,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="video.scss" pinned="false" current-in-tab="false">
+          <file leaf-file-name="video.scss" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/styles/sass/pages/video.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-8.529411">
-                  <caret line="162" column="18" selection-start-line="162" selection-start-column="18" selection-end-line="162" selection-end-column="18" />
+                <state vertical-scroll-proportion="0.609375">
+                  <caret line="310" column="6" selection-start-line="310" selection-start-column="6" selection-end-line="310" selection-end-column="6" />
                   <folding />
                 </state>
               </provider>
@@ -307,7 +307,7 @@
             <entry file="file://$PROJECT_DIR$/styles/style.css">
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0">
-                  <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+                  <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -389,11 +389,11 @@
         <option value="$PROJECT_DIR$/scripts/custom/AjaxSearch.js" />
         <option value="$PROJECT_DIR$/scripts/custom/ui.js" />
         <option value="$PROJECT_DIR$/header.region" />
-        <option value="$PROJECT_DIR$/styles/sass/pages/video.scss" />
         <option value="$PROJECT_DIR$/scripts/custom/page_clips.js" />
         <option value="$PROJECT_DIR$/blocks/module-clip-item.block" />
         <option value="$PROJECT_DIR$/collections/videoclips.list" />
         <option value="$PROJECT_DIR$/scripts/custom/ClipGrid.js" />
+        <option value="$PROJECT_DIR$/styles/sass/pages/video.scss" />
       </list>
     </option>
   </component>
@@ -946,7 +946,7 @@
     <entry file="file://$PROJECT_DIR$/styles/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1065,14 +1065,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/styles/sass/pages/video.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.529411">
-          <caret line="162" column="18" selection-start-line="162" selection-start-column="18" selection-end-line="162" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/blocks/module-clip-item.block">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0">
@@ -1101,11 +1093,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/custom/ClipGrid.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.27299702">
-          <caret line="27" column="106" selection-start-line="27" selection-start-column="106" selection-end-line="27" selection-end-column="106" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/sass/pages/video.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.609375">
+          <caret line="310" column="6" selection-start-line="310" selection-start-column="6" selection-end-line="310" selection-end-column="6" />
+          <folding />
         </state>
       </provider>
     </entry>

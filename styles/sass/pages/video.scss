@@ -271,41 +271,67 @@ $gridGutter: 5vw;
       height: 101%;
     }
 
-    .video-gallery-videos {
-
-      &:after { content: none; }
-
-      &.lefthand, &.righthand {
-        .video {
-          &.small, &.medium, &.large, &:last-child {
-            float: none;
-            margin: 70px auto 0 auto;
-
-            .image {
-              width: 100%;
-              height: auto;
-              &:before {
-                content: '';
-                display: block;
-                padding-top: 70%;
-              }
-            }
-          }
-
-
-          .image {
-            &.poster {
-              &:before {
-                padding-top: 135%;
-              }
-            }
-          }
-
-        }// .video
-      }// .lefthand
-    }// .video-gallery-videos
+    //.video-gallery-videos {
+    //
+    //  &:after { content: none; }
+    //
+    //  //&.lefthand, &.righthand {
+    //
+    //    .video {
+    //      &.small, &.medium, &.large, &:last-child {
+    //        float: none;
+    //        margin: 70px auto 0 auto;
+    //
+    //        .image {
+    //          width: 100%;
+    //          height: auto;
+    //          &:before {
+    //            content: '';
+    //            display: block;
+    //            padding-top: 70%;
+    //          }
+    //        }
+    //      }
+    //
+    //
+    //      .image {
+    //        &.poster {
+    //          &:before {
+    //            padding-top: 135%;
+    //          }
+    //        }
+    //      }
+    //
+    //    }// .video
+    //  //}// .lefthand
+    //
+    //}// .video-gallery-videos
 
     .video {
+
+      &.small, &.medium, &.large, &:last-child {
+        float: none;
+        margin: 70px auto 0 auto;
+
+        .image {
+          width: 100%;
+          height: auto;
+          &:before {
+            content: '';
+            display: block;
+            padding-top: 70%;
+          }
+        }
+      }// small, medium, large
+
+      .image {
+        &.poster {
+          &:before {
+            padding-top: 135%;
+          }
+        }
+      }// image
+
       .play {
         bottom: -10px;
         height: 65px;
