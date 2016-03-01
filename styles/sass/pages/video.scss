@@ -48,13 +48,30 @@ $gridGutter: 5vw;
       &:last-child:after {
         content: none;
       }
-      a {
+      .clips-filter-trigger {
+        display: inline-block;
+        position: relative;
         letter-spacing: 0.1vw;
         text-decoration: none;
         color: #fff;
         margin-right: 1.25vw;
-        border-bottom: 1px solid #fff;
+        //border-bottom: 1px solid #fff;
         padding-bottom: 0.25vw;
+
+        &:after {
+          content: '';
+          display: block;
+          top: 100%;
+          left: 0;
+          width: 0;
+          height: 1px;
+          background:white;
+          @include prefixed(transition, (width $shortTrans));
+        }
+
+        &.current-item {
+          width: 100%;
+        }
       }// a
     }// li
   }// .video-overview-filter

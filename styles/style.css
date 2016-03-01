@@ -3504,13 +3504,29 @@ a.episodes-landing-cta {
         content: '/'; }
       .video-overview-landing .video-overview-filter li:last-child:after {
         content: none; }
-      .video-overview-landing .video-overview-filter li a {
+      .video-overview-landing .video-overview-filter li .clips-filter-trigger {
+        display: inline-block;
+        position: relative;
         letter-spacing: 0.1vw;
         text-decoration: none;
         color: #fff;
         margin-right: 1.25vw;
-        border-bottom: 1px solid #fff;
         padding-bottom: 0.25vw; }
+        .video-overview-landing .video-overview-filter li .clips-filter-trigger:after {
+          content: '';
+          display: block;
+          top: 100%;
+          left: 0;
+          width: 0;
+          height: 1px;
+          background: white;
+          -webkit-transition: width 0.3s;
+          -moz-transition: width 0.3s;
+          -ms-transition: width 0.3s;
+          -o-transition: width 0.3s;
+          transition: width 0.3s; }
+        .video-overview-landing .video-overview-filter li .clips-filter-trigger.current-item {
+          width: 100%; }
   @media only screen and (max-width: 750px) {
     .video-overview-landing .video-overview-filter li {
       font-size: 12px; } }
