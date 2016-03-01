@@ -3530,7 +3530,12 @@ a.episodes-landing-cta {
     width: 94%;
     height: 103%; }
   .video-gallery .video {
-    margin-top: 4vw; }
+    margin-top: 4vw;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%); }
     .video-gallery .video .image {
       width: 21.66vw;
       position: relative;
