@@ -17,8 +17,8 @@ var ClipGrid = function($container, options) {
         filter : false,
         onInit : false,
         onLayout : false,
-        staggerDuration:.3,
-        staggerOffset:.1,
+        staggerDuration:.2,
+        staggerOffset:.08,
         filterOut : function() {
             var tl = new TimelineMax({onComplete:function(){console.log('filterOut complete', tl.duration());}});
             console.log('stagger animate out items : ', CG.$object.currentItems);
@@ -79,7 +79,7 @@ var ClipGrid = function($container, options) {
     };// initGrid
 
     CG.filter = function(filter) {
-        if(filter == CG.currentFilter) return false;
+        if(filter == CG.currentFilter) filter = '';
 
         CG.currentFilter = filter;
 
