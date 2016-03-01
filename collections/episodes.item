@@ -36,6 +36,7 @@
                 <script>console.log('Clips Tags query ', {@|json-pretty});</script>
 
                 <div class="video-gallery-videos related-clips-gallery top-spaced">
+                    <div class="gutter-sizer"></div>
 
                     {.repeated section items}
 
@@ -155,6 +156,7 @@
             <squarespace:query collection="clips" category="{customContent.episode-clips-categories}">
 
                 <div class="video-gallery-videos  related-clips-categories-gallery top-spaced">
+                    <div class="gutter-sizer"></div>
 
                     {.repeated section items}
 
