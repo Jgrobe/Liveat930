@@ -13,6 +13,7 @@ var ClipGrid = function($container, options) {
         itemSelector : '.video',
         gutterSizerSelector : '.gutter-sizer',
         sizes : ['medium'],
+        distributeSizes: false,
         filter : false,
         onInit : false,
         onLayout : false
@@ -34,10 +35,11 @@ var ClipGrid = function($container, options) {
             var $thisItem = jQuery(this);
             console.log('applying item size', $thisItem,CG.options.sizes[sizeCounter] );
 
-            $thisItem.addClass( CG.options.sizes[sizeCounter] );
+            var itemSize = CG.options.sizes[ ( CG.options.distributeSizes ? CG.options.distributeSizes[sizeCounter] : sizeCounter ) ];
+            $thisItem.addClass( itemSize );
 
             sizeCounter++;
-            if( sizeCounter >= CG.options.sizes.length ) sizeCounter = 0;
+            if( sizeCounter >= (CG.options.distributeSizes ? CG.options.distributeSizes.length : CG.options.sizes.length) ) sizeCounter = 0;
 
         });// each()
 

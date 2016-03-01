@@ -6,6 +6,7 @@ SQSP.functions.initPage = function() {
         itemSelector : '.video',
         filter : '.video',
         sizes : ['small', 'large'],
+        distributeSizes : [0,0,1,0,0,1,0,0,0,0],
         onInit:function() {
             console.log('Grid initialized');
         }
