@@ -87,8 +87,10 @@
 
             <div class="video-gallery-videos lefthand top-spaced">
 
+                <div class="gutter-sizer"></div>
+
                 <squarespace:query collection="products" limit="1">
-                    <div class="video medium">
+                    <div class="video">
                         <div class="image" style="background-image:url('{.section items.0}{assetUrl}{.end}');">
                             <div class="cta-dummy" data-icon="icon-arrow" data-class="negative play goto" data-attributes="href={collection.fullUrl}">{@|apply svg-icon-arrow.block}</div>
                             <!--php print_cta(array(
@@ -104,7 +106,7 @@
                 </squarespace:query>
 
                 <squarespace:query collection="blog" limit="1">
-                    <div class="video medium">
+                    <div class="video">
                         <div class="image" style="background-image:url('{.section items.0}{assetUrl}{.end}');">
                             <div class="cta-dummy" data-icon="icon-arrow" data-class="negative play goto" data-attributes="href={.section items.0}{fullUrl}{.end}">{@|apply svg-icon-arrow.block}</div>
                             <!--php print_cta(array(
@@ -120,7 +122,7 @@
                 </squarespace:query>
 
                 <squarespace:query collection="clips" limit="1">
-                    <div class="video medium">
+                    <div class="video">
                         <div class="image" style="background-image:url('{.section items.0}{assetUrl}{.end}');">
                             <div class="cta-dummy" data-icon="icon-arrow" data-class="negative play goto" data-attributes="href={collection.fullUrl}">{@|apply svg-icon-arrow.block}</div>
                             <!--php print_cta(array(
@@ -136,7 +138,7 @@
                 </squarespace:query>
 
                 <squarespace:query collection="episodes" category="aired" limit="1">
-                        <div class="video medium">
+                        <div class="video">
                             <div class="image" style="background-image:url('{.section items.0}{assetUrl}{.end}');">
                                 <div class="cta-dummy" data-icon="icon-arrow" data-class="negative play goto" data-attributes="href={collection.fullUrl}">{@|apply svg-icon-arrow.block}</div>
                                 <!--php print_cta(array(
