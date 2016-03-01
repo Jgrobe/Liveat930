@@ -10,7 +10,9 @@
             {.if categories}
                 <ul class="video-overview-filter">
                     {.repeated section categories}
-                        <li class="video-filter-item"><a class="clips-filter-trigger" href="?category={@|url-encode}" data-filter="{@|slugify}">{@}</a></li>
+                        <li class="video-filter-item" data-filter="{@|slugify}">
+                            <a class="clips-filter-trigger" href="?category={@|url-encode}">{@}</a>
+                        </li>
                     {.end}<!-- .end repeat categories -->
                 </ul>
             {.end}<!-- .end if categories -->

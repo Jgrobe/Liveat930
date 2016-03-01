@@ -35,7 +35,8 @@ $gridGutter: 5vw;
     padding: 0;
     @include flexbox();
     @include prefixed(align-items, center);
-    li {
+
+    .video-filter-item {
       list-style: none;
       padding: 0;
       margin-right: 1.25vw;
@@ -48,32 +49,34 @@ $gridGutter: 5vw;
       &:last-child:after {
         content: none;
       }
-      .clips-filter-trigger {
-        display: inline-block;
-        position: relative;
-        letter-spacing: 0.1vw;
-        text-decoration: none;
-        color: #fff;
-        margin-right: 1.25vw;
-        //border-bottom: 1px solid #fff;
-        padding-bottom: 0.25vw;
 
-        &:after {
-          content: '';
-          display: block;
-          top: 100%;
-          left: 0;
-          width: 0;
-          height: 1px;
-          background:white;
-          @include prefixed(transition, (width $shortTrans));
-        }
-
-        &.current-item {
-          &:after { width: 100%; }
-        }
-      }// a
+      &.current-item {
+        .clips-filter-trigger:after { width: 100%; }
+      }
     }// li
+
+    .clips-filter-trigger {
+      display: inline-block;
+      position: relative;
+      letter-spacing: 0.1vw;
+      text-decoration: none;
+      color: #fff;
+      margin-right: 1.25vw;
+      //border-bottom: 1px solid #fff;
+      padding-bottom: 0.25vw;
+
+      &:after {
+        content: '';
+        display: block;
+        top: 100%;
+        left: 0;
+        width: 0;
+        height: 1px;
+        background:white;
+        @include prefixed(transition, (width $shortTrans));
+      }
+    }// a
+
   }// .video-overview-filter
 
   @include breakpoint(mobile) {

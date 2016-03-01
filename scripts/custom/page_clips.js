@@ -12,12 +12,12 @@ SQSP.functions.initPage = function() {
         }
     });
 
-    var $filterBtns = jQuery('.clips-filter-trigger');
+    var $filterBtns = jQuery('.video-filter-item');
     $filterBtns.click(function(e) {
         e.preventDefault();
-        $filterBtns.removeClass('current-item');
         var $clicked = jQuery(this);
-        $clicked.addClass('current-item');
+        $clicked.siblings.removeClass('current-item');
+        $clicked.toggleClass('current-item');
         SQSP.instances.videoGrid.filter( ('.'+$clicked.data('filter')) );
-    })
+    });
 };

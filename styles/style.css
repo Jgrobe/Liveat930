@@ -3493,40 +3493,40 @@ a.episodes-landing-cta {
     -ms-align-items: center;
     -o-align-items: center;
     align-items: center; }
-    .video-overview-landing .video-overview-filter li {
+    .video-overview-landing .video-overview-filter .video-filter-item {
       list-style: none;
       padding: 0;
       margin-right: 1.25vw;
       font-size: 0.75vw;
       font-family: "Gotham A", "Gotham B";
       font-weight: 500; }
-      .video-overview-landing .video-overview-filter li:after {
+      .video-overview-landing .video-overview-filter .video-filter-item:after {
         content: '/'; }
-      .video-overview-landing .video-overview-filter li:last-child:after {
+      .video-overview-landing .video-overview-filter .video-filter-item:last-child:after {
         content: none; }
-      .video-overview-landing .video-overview-filter li .clips-filter-trigger {
-        display: inline-block;
-        position: relative;
-        letter-spacing: 0.1vw;
-        text-decoration: none;
-        color: #fff;
-        margin-right: 1.25vw;
-        padding-bottom: 0.25vw; }
-        .video-overview-landing .video-overview-filter li .clips-filter-trigger:after {
-          content: '';
-          display: block;
-          top: 100%;
-          left: 0;
-          width: 0;
-          height: 1px;
-          background: white;
-          -webkit-transition: width 0.3s;
-          -moz-transition: width 0.3s;
-          -ms-transition: width 0.3s;
-          -o-transition: width 0.3s;
-          transition: width 0.3s; }
-        .video-overview-landing .video-overview-filter li .clips-filter-trigger.current-item:after {
-          width: 100%; }
+      .video-overview-landing .video-overview-filter .video-filter-item.current-item .clips-filter-trigger:after {
+        width: 100%; }
+    .video-overview-landing .video-overview-filter .clips-filter-trigger {
+      display: inline-block;
+      position: relative;
+      letter-spacing: 0.1vw;
+      text-decoration: none;
+      color: #fff;
+      margin-right: 1.25vw;
+      padding-bottom: 0.25vw; }
+      .video-overview-landing .video-overview-filter .clips-filter-trigger:after {
+        content: '';
+        display: block;
+        top: 100%;
+        left: 0;
+        width: 0;
+        height: 1px;
+        background: white;
+        -webkit-transition: width 0.3s;
+        -moz-transition: width 0.3s;
+        -ms-transition: width 0.3s;
+        -o-transition: width 0.3s;
+        transition: width 0.3s; }
   @media only screen and (max-width: 750px) {
     .video-overview-landing .video-overview-filter li {
       font-size: 12px; } }
