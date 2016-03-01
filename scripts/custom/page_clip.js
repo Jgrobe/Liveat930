@@ -27,4 +27,11 @@ SQSP.functions.initPage = function() {
             vid.pause();
         }
     });
+
+    SQSP.instances.clipGrids = [];
+    jQuery('.video-gallery-videos').each(function() {
+        SQSP.instances.clipGrids.push(new ClipGrid(jQuery(this), {
+            sizes : ['small']
+        }));
+    });
 };

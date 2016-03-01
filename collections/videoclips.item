@@ -50,7 +50,8 @@
                     <script>
                     </script>
 
-                    <div class="video-gallery-videos lefthand">
+                    <div class="video-gallery-videos">
+                        <div class="gutter-sizer"></div>
 
                         {.repeated section items}
                         <div class="video small">
@@ -119,7 +120,8 @@
 
             <squarespace:query collection="{collection.urlId}" category="{item.categories.0}">
 
-                <div class="video-gallery-videos lefthand">
+                <div class="video-gallery-videos">
+                    <div class="gutter-sizer"></div>
 
                     {.repeated section items}
 
