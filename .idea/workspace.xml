@@ -60,7 +60,7 @@
               <file leaf-file-name="header.region" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/header.region">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.56231004">
+                    <state vertical-scroll-proportion="0.59549356">
                       <caret line="37" column="40" selection-start-line="37" selection-start-column="40" selection-end-line="37" selection-end-column="40" />
                       <folding />
                     </state>
@@ -154,7 +154,7 @@
               <file leaf-file-name="videoclips.list" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/collections/videoclips.list">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.18237083">
+                    <state vertical-scroll-proportion="0.19313304">
                       <caret line="12" column="141" selection-start-line="12" selection-start-column="141" selection-end-line="12" selection-end-column="141" />
                       <folding />
                     </state>
@@ -233,7 +233,7 @@
             <entry file="file://$PROJECT_DIR$/scripts/custom/AjaxSearch.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0">
-                  <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+                  <caret line="38" column="32" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="32" />
                   <folding>
                     <element signature="n#!!doc" expanded="true" />
                   </folding>
@@ -244,8 +244,8 @@
           <file leaf-file-name="ClipGrid.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/scripts/custom/ClipGrid.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.9416419">
-                  <caret line="111" column="17" selection-start-line="107" selection-start-column="27" selection-end-line="111" selection-end-column="17" />
+                <state vertical-scroll-proportion="0.6589958">
+                  <caret line="104" column="38" selection-start-line="104" selection-start-column="38" selection-end-line="104" selection-end-column="38" />
                   <folding>
                     <element signature="n#!!doc" expanded="true" />
                   </folding>
@@ -256,7 +256,7 @@
           <file leaf-file-name="search-overlay.scss" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/styles/sass/modules/search-overlay.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
+                <state vertical-scroll-proportion="-3.8333333">
                   <caret line="54" column="12" selection-start-line="54" selection-start-column="12" selection-end-line="54" selection-end-column="12" />
                   <folding />
                 </state>
@@ -386,13 +386,13 @@
         <option value="$PROJECT_DIR$/styles/sass/modules/search-overlay.scss" />
         <option value="$PROJECT_DIR$/blocks/svg-icon-arrow.block" />
         <option value="$PROJECT_DIR$/blocks/nav-search-overlay.block" />
-        <option value="$PROJECT_DIR$/scripts/custom/AjaxSearch.js" />
         <option value="$PROJECT_DIR$/scripts/custom/ui.js" />
         <option value="$PROJECT_DIR$/header.region" />
         <option value="$PROJECT_DIR$/scripts/custom/page_clips.js" />
         <option value="$PROJECT_DIR$/blocks/module-clip-item.block" />
         <option value="$PROJECT_DIR$/collections/videoclips.list" />
         <option value="$PROJECT_DIR$/styles/sass/pages/video.scss" />
+        <option value="$PROJECT_DIR$/scripts/custom/AjaxSearch.js" />
         <option value="$PROJECT_DIR$/scripts/custom/ClipGrid.js" />
       </list>
     </option>
@@ -659,11 +659,11 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14990138" sideWeight="0.879692" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32981133" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13660377" sideWeight="0.50019723" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25847778" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25847778" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32830188" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32931423" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2170309" sideWeight="0.49980277" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2170309" sideWeight="0.49980277" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14990138" sideWeight="0.12030799" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -927,14 +927,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/styles/sass/modules/search-overlay.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="54" column="12" selection-start-line="54" selection-start-column="12" selection-end-line="54" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/styles/sass/modules/episode-summary.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -983,16 +975,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/custom/AjaxSearch.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/styles/style.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-12.5">
@@ -1035,7 +1017,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/header.region">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.56231004">
+        <state vertical-scroll-proportion="0.59549356">
           <caret line="37" column="40" selection-start-line="37" selection-start-column="40" selection-end-line="37" selection-end-column="40" />
           <folding />
         </state>
@@ -1085,7 +1067,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/collections/videoclips.list">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18237083">
+        <state vertical-scroll-proportion="0.19313304">
           <caret line="12" column="141" selection-start-line="12" selection-start-column="141" selection-end-line="12" selection-end-column="141" />
           <folding />
         </state>
@@ -1099,10 +1081,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/custom/AjaxSearch.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="38" column="32" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="32" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/sass/modules/search-overlay.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.8333333">
+          <caret line="54" column="12" selection-start-line="54" selection-start-column="12" selection-end-line="54" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/custom/ClipGrid.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9416419">
-          <caret line="111" column="17" selection-start-line="107" selection-start-column="27" selection-end-line="111" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.6589958">
+          <caret line="104" column="38" selection-start-line="104" selection-start-column="38" selection-end-line="104" selection-end-column="38" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>

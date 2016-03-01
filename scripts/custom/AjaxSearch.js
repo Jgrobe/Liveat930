@@ -22,11 +22,11 @@ var AjaxSearch = function(options) {
         var cachedHtml = jQuery('<div/>').html(data);
         var extractedResults = [],
             $results = cachedHtml.find(AS.options.resultSelector);
-        console.log('results found', data, $results);
+        //console.log('results found', data, $results);
 
         $results.each(function(i) {
             var $thisResult = jQuery(this);
-            console.log('filtering result', $thisResult, $thisResult.get(0));
+            //console.log('filtering result', $thisResult, $thisResult.get(0));
             var result = {
                 img : $thisResult.find('img').data('src'),
                 title : strip_tags( $thisResult.find('.sqs-title').html() ),
@@ -42,14 +42,14 @@ var AjaxSearch = function(options) {
     
     AS.search = function(query) {
 
-        console.log('search()', query);
+        //console.log('search()', query);
         
         jQuery.ajax((AS.options.searchPath +'?q='+ query), {
             success: function(data) {
                 
                 AS.results = AS.extractData(data);
 
-                console.log('success()', AS.results);
+                //console.log('success()', AS.results);
 
                 if(_.isFunction(AS.options.onSuccess)) AS.options.onSuccess(query, data, AS.results);
             },

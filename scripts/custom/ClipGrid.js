@@ -22,12 +22,12 @@ var ClipGrid = function($container, options) {
         filterOut : function() {
             var tl = new TimelineMax({onComplete:function(){console.log('filterOut complete', tl.duration());}});
             console.log('stagger animate out items : ', CG.$object.currentItems);
-            tl.staggerTo(CG.$object.currentItems, CG.options.staggerDuration, {opacity:0, onComplete:function(){console.log('item staggered');}}, CG.options.staggerOffset);
+            tl.staggerTo(CG.$object.currentItems, CG.options.staggerDuration, {autoAlpha:0, onComplete:function(){console.log('item staggered');}}, CG.options.staggerOffset);
             return tl;
         },
         filterIn : function() {
             var tl = new TimelineMax({onComplete:function(){console.log('filterIn complete', tl.duration());}});
-            tl.staggerTo(CG.$object.currentItems, CG.options.staggerDuration, {opacity:1}, CG.options.staggerOffset);
+            tl.staggerTo(CG.$object.currentItems, CG.options.staggerDuration, {autoAlpha:1}, CG.options.staggerOffset);
             return tl;
         }
     }, options);
@@ -94,22 +94,18 @@ var ClipGrid = function($container, options) {
         // do actual filtering
         filterTL.add(function() {
             CG.$object.currentItems = CG.$object.container.find(filter);
-        });
-
-        if(_.isFunction(CG.options.filterIn)) filterTL.set(CG.$object.currentItems, {opacity: 0});
-
-        filterTL.add(function() {
+            if(_.isFunction(CG.options.filterIn)) TweenMax.set(CG.$object.currentItems, {autoAlpha: 0});
             CG.setSizes( CG.$object.currentItems );
             CG.$object.container.isotope({
                 filter: CG.currentFilter
             });
-        });
 
-        // animate items in
-        if(_.isFunction(CG.options.filterIn)) {
-            console.log('animate items in');
-            filterTL.add( CG.options.filterIn() );
-        }// endif
+            if(_.isFunction(CG.options.filterIn)) {
+                // animate items in
+                console.log('animate items in');
+                CG.options.filterIn();
+            }// endif
+        });
 
     };// filter()
 
