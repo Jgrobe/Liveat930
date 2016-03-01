@@ -46,7 +46,10 @@ var ClipGrid = function($container, options) {
 
         CG.$object.container.isotope({
             itemSelector : CG.options.itemSelector,
-            layoutModer : 'fitRows'
+            layoutMode : 'masonry',
+            masonry : {
+                columnWidth: '5vw'
+            }
         });
 
         if(CG.options.filter) CG.filter(CG.options.filter);
