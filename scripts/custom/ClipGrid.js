@@ -79,7 +79,7 @@ var ClipGrid = function($container, options) {
     };// initGrid
 
     CG.filter = function(filter) {
-        if(filter == CG.currentFilter) filter = '.'+CG.options.itemSelector;
+        if(filter == CG.currentFilter) filter = CG.options.itemSelector;
 
         CG.currentFilter = filter;
 
