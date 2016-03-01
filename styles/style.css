@@ -3682,9 +3682,7 @@ a.episodes-landing-cta {
         .video-gallery .video .image.poster:before {
           padding-top: 135%; }
         .video-gallery .video .play {
-          bottom: -10px;
-          height: 65px;
-          width: 65px; }
+          bottom: -10px; }
           .video-gallery .video .play.goto svg {
             width: 16px;
             height: 11px; }
