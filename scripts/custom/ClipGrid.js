@@ -20,12 +20,12 @@ var ClipGrid = function($container, options) {
         staggerDuration:.3,
         staggerOffset:.1,
         filterOut : function() {
-            var tl = new TimelineMax();
+            var tl = new TimelineMax({onComplete:function(){console.log('filterOut complete');}});
             tl.staggerTo(CG.$object.currentItems, CG.options.staggerDuration, {autoAlpha:0}, CG.options.staggerOffset);
             return tl;
         },
         filterIn : function() {
-            var tl = new TimelineMax();
+            var tl = new TimelineMax({onComplete:function(){console.log('filterIn complete');}});
             tl.staggerTo(CG.$object.currentItems, CG.options.staggerDuration, {autoAlpha:1}, CG.options.staggerOffset);
             return tl;
         }
@@ -82,10 +82,11 @@ var ClipGrid = function($container, options) {
 
         CG.currentFilter = filter;
 
-        var filterTL = new TimelineMax();
+        var filterTL = new TimelineMax({onComplete:function(){console.log('filterTL complete')}});
 
         if(_.isFunction(CG.options.filterOut)) {
             // animate items out
+            console.log('animate items out');
             filterTL.add( CG.options.filterOut );
         }// endif
 
@@ -101,6 +102,7 @@ var ClipGrid = function($container, options) {
 
         if(_.isFunction(CG.options.filterIn)) {
             // animate items in
+            console.log('animate items in');
             filterTL.add( CG.options.filterIn );
         }// endif
 
