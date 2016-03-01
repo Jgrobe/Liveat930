@@ -22,12 +22,12 @@ var ClipGrid = function($container, options) {
         filterOut : function() {
             var tl = new TimelineMax({onComplete:function(){console.log('filterOut complete', tl.duration());}});
             console.log('stagger animate out items : ', CG.$object.currentItems);
-            tl.staggerTo(CG.$object.currentItems, CG.options.staggerDuration, {autoAlpha:0, onComplete:function(){console.log('item staggered');}}, CG.options.staggerOffset);
+            tl.staggerTo(CG.$object.currentItems, CG.options.staggerDuration, {opacity:0, onComplete:function(){console.log('item staggered');}}, CG.options.staggerOffset);
             return tl;
         },
         filterIn : function() {
             var tl = new TimelineMax({onComplete:function(){console.log('filterIn complete', tl.duration());}});
-            tl.staggerTo(CG.$object.currentItems, CG.options.staggerDuration, {autoAlpha:1}, CG.options.staggerOffset);
+            tl.staggerTo(CG.$object.currentItems, CG.options.staggerDuration, {opacity:1}, CG.options.staggerOffset);
             return tl;
         }
     }, options);
@@ -96,7 +96,7 @@ var ClipGrid = function($container, options) {
             CG.$object.currentItems = CG.$object.container.find(filter);
         });
 
-        if(_.isFunction(CG.options.filterIn)) filterTL.set(CG.$object.currentItems, {autoAlpha: 0});
+        if(_.isFunction(CG.options.filterIn)) filterTL.set(CG.$object.currentItems, {opacity: 0});
 
         filterTL.add(function() {
             CG.setSizes( CG.$object.currentItems );
