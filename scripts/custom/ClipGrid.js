@@ -99,6 +99,8 @@ var ClipGrid = function($container, options) {
             CG.$object.container.isotope({
                 filter: CG.currentFilter
             });
+
+            TweenMax.set(CG.$object.currentItems, {autoAlpha:0});
         });
 
         if(_.isFunction(CG.options.filterIn)) {
