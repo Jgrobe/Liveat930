@@ -11,6 +11,7 @@ var ClipGrid = function($container, options) {
     CG.options = jQuery.extend({
         autoInit : true,
         itemSelector : '.video',
+        gutterSizerSelector : '.gutter-sizer',
         sizes : ['medium'],
         filter : false,
         onInit : false,
@@ -48,7 +49,7 @@ var ClipGrid = function($container, options) {
             itemSelector : CG.options.itemSelector,
             layoutMode : 'masonry',
             masonry : {
-                gutter: '5vw'
+                gutter: CG.options.gutterSizerSelector
             }
         });
 

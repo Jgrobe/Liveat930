@@ -24,6 +24,9 @@
     <section class="video-gallery">
         <div class="rectangle"></div>
         <div class="video-gallery-videos lefthand">
+
+            <div class="gutter-sizer"></div>
+
             {.repeated section items}
             <div class="video small">
                 <div class="image" style="background-image:url('{assetUrl}');">
