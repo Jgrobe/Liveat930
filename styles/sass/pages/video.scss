@@ -1,12 +1,9 @@
-//@import "_vars.scss";
+$gridGutter: 5vw;
 
 .video-overview-landing {
   @include landing;
-//  height: 90vh;
 
   h1 {
-//    font-size: 9vw;
-//    letter-spacing: 0.75vw;
     margin: 0 0 5vh 0;
   }
   .rectangle {
@@ -99,51 +96,52 @@
       clear:both;
     }
 
-    &.lefthand {
-      .video {
-//        &.small, &.medium, &.large {
+//    &.lefthand {
+//      .video {
+////        &.small, &.medium, &.large {
+////        }
+//
+//        &.small {
+//          float: left;
+//          margin-right: 5vw;
 //        }
-
-        &.small {
-          float: left;
-          margin-right: 5vw;
-        }
-        &.medium {
-          float: left;
-          margin-right: 5vw;
-          &:nth-child(2n) {
-            margin-right: 0;
-          }
-        }
-        &.large {
-          float: right;
-        }
-        &:last-child { margin-right: 0; }
-
-      }
-    }
-    &.righthand {
-      .video {
-//        &.small, &.medium, &.large {
+//        &.medium {
+//          float: left;
+//          margin-right: 5vw;
+//          &:nth-child(2n) {
+//            margin-right: 0;
+//          }
 //        }
-        &.small {
-          float: right;
-          margin-left: 5vw;
-        }
-        &.medium {
-          float: right;
-          margin-left: 5vw;
-          &:nth-child(2n+1) {
-            margin-left: 0;
-          }
-        }
-        &.large {
-          float: left;
-        }
-        &:last-child { margin-left: 0; }
-      }
-    }
+//        &.large {
+//          float: right;
+//        }
+//        &:last-child { margin-right: 0; }
+//
+//      }
+//    }
+//    &.righthand {
+//      .video {
+////        &.small, &.medium, &.large {
+////        }
+//        &.small {
+//          float: right;
+//          margin-left: 5vw;
+//        }
+//        &.medium {
+//          float: right;
+//          margin-left: 5vw;
+//          &:nth-child(2n+1) {
+//            margin-left: 0;
+//          }
+//        }
+//        &.large {
+//          float: left;
+//        }
+//        &:last-child { margin-left: 0; }
+//      }
+//    }
   }
+
   .video {
     margin-top: 4vw;
 
@@ -207,7 +205,9 @@
     }
     .title {
       position: relative;
-//      margin: 2vw 0 4vw;
+      font-size: 19px;
+      line-height: 21px;
+      letter-spacing: .1em;
     }
     &.small {
       .image {
@@ -256,6 +256,45 @@
 //        }// svg
       }// .cta
     }// .flex-cols
+
+    .play {
+      bottom: -10px;
+      height: 65px;
+      width: 65px;
+
+      &.goto {
+        svg {
+          width: 16px;
+          height: 11px;
+        }// svg
+      }// .goto
+    }// .play
+
+    .flex-cols {
+      margin-top: 30px;
+      //        .cta {
+      //          font-size: 10px;
+      //          line-height: 14px;
+      //          letter-spacing: .08em;
+      //          margin: 8% 0;
+      //          svg {
+      //            width: 17px;
+      //            height: 14px;
+      //            margin-right: 5px;
+      //            vertical-align: middle;
+      //          }// svg
+      //        }// .cta
+    }// .flex-cols
+
+    .video-label {
+      font-size: 19px;
+      letter-spacing: .08em;
+      padding: 30px 35px;
+      left: 50%;
+      @include transform(translateY(-50%) translateX(-50%));
+      white-space: nowrap;
+    }// .video-label
+
   }// .video
 
   .cta-container {
@@ -283,87 +322,39 @@
       height: 101%;
     }
 
-    .video-gallery-videos {
-
-      &:after { content: none; }
-
-      &.lefthand, &.righthand {
-        .video {
-          &.small, &.medium, &.large, &:last-child {
-            float: none;
-            margin: 70px auto 0 auto;
-
-            .image {
-              width: 100%;
-              height: auto;
-              &:before {
-                content: '';
-                display: block;
-                padding-top: 70%;
-              }
-            }
-          }
-
-
-          .image {
-            &.poster {
-              &:before {
-                padding-top: 135%;
-              }
-            }
-          }
-
-        }// .video
-      }// .lefthand
-    }// .video-gallery-videos
-
-    .video {
-      .play {
-        bottom: -10px;
-        height: 65px;
-        width: 65px;
-
-        &.goto {
-          svg {
-            width: 16px;
-            height: 11px;
-          }// svg
-        }// .goto
-      }// .play
-
-      .title {
-//        margin: 30px $MOBILE_MARGIN;
-        font-size: 19px;
-        line-height: 21px;
-        letter-spacing: .1em;
-      }
-
-      .flex-cols {
-        margin-top: 30px;
-//        .cta {
-//          font-size: 10px;
-//          line-height: 14px;
-//          letter-spacing: .08em;
-//          margin: 8% 0;
-//          svg {
-//            width: 17px;
-//            height: 14px;
-//            margin-right: 5px;
-//            vertical-align: middle;
-//          }// svg
-//        }// .cta
-      }// .flex-cols
-
-      .video-label {
-        font-size: 19px;
-        letter-spacing: .08em;
-        padding: 30px 35px;
-        left: 50%;
-        @include transform(translateY(-50%) translateX(-50%));
-        white-space: nowrap;
-      }// .video-label
-
-    }// .video
+    //.video-gallery-videos {
+    //
+    //  &:after { content: none; }
+    //
+    //  &.lefthand, &.righthand {
+    //    .video {
+    //      &.small, &.medium, &.large, &:last-child {
+    //        float: none;
+    //        margin: 70px auto 0 auto;
+    //
+    //        .image {
+    //          width: 100%;
+    //          height: auto;
+    //          &:before {
+    //            content: '';
+    //            display: block;
+    //            padding-top: 70%;
+    //          }
+    //        }
+    //      }
+    //
+    //
+    //      .image {
+    //        &.poster {
+    //          &:before {
+    //            padding-top: 135%;
+    //          }
+    //        }
+    //      }
+    //
+    //    }// .video
+    //  }// .lefthand
+    //}// .video-gallery-videos
 
     .episodes-landing-cta.static {
       transform: none;
@@ -384,3 +375,51 @@
   @include prefixed(justify-content, space-between);
   @include flex-value(wrap, wrap);
 }
+
+.gutter-sizer {
+  width: $gridGutter;
+}
+
+
+//.video {
+//
+//  &:before {
+//    content: '';
+//    display: block;
+//  }
+//
+//  &.small, &.large {
+//    width: calc(~"33% - #{$gridGutter/2}");
+//  }
+//
+//  &.small {
+//  }
+//  &.medium {}
+//  &.large {}
+//
+//  .cta-container {
+//
+//    &.play {
+//      position: absolute;
+//      top: 100%;
+//      left: 50%;
+//      @include transform(translateX(-50%) translateY(-70%));
+//      .filler {padding: 1.6vw 1.5vw;}
+//      @include shadow(0 1px 4px rgba(0,0,0,0.25));
+//
+//      &.goto {
+//        @include flexbox();
+//        svg {
+//          margin: auto;
+//          width: 1.3vw;
+//          height: 1vw;
+//        }
+//      }
+//    }
+//
+//    &.plain {
+//      position: static;
+//      @include transform(none);
+//    }
+//  }
+//}// .video
