@@ -43,8 +43,6 @@ var ClipGrid = function($container, options) {
         // remove all sizes
         CG.$object.items.removeClass(CG.options.sizes.join(' '));
 
-        if(is_mobile()) return false;
-
         var sizeCounter = 0;
 
         $items.each(function(i) {
