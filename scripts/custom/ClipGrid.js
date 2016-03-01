@@ -21,6 +21,7 @@ var ClipGrid = function($container, options) {
         staggerOffset:.1,
         filterOut : function() {
             var tl = new TimelineMax({onComplete:function(){console.log('filterOut complete', tl.duration());}});
+            console.log('stagger animate out items : ', CG.$object.currentItems);
             tl.staggerTo(CG.$object.currentItems, CG.options.staggerDuration, {autoAlpha:0, onComplete:function(){console.log('item staggered');}}, CG.options.staggerOffset);
             return tl;
         },
