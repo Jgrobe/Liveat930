@@ -3565,10 +3565,7 @@ a.episodes-landing-cta {
       -moz-transform: translateX(-50%) translateY(-70%);
       -ms-transform: translateX(-50%) translateY(-70%);
       -o-transform: translateX(-50%) translateY(-70%);
-      transform: translateX(-50%) translateY(-70%);
-      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25); }
-      .video-gallery .video .cta-container.play .filler {
-        padding: 1.6vw 1.5vw; }
+      transform: translateX(-50%) translateY(-70%); }
       .video-gallery .video .cta-container.play.goto {
         display: -webkit-box;
         display: -moz-box;
