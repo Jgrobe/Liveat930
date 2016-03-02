@@ -13,7 +13,7 @@ SQSP.functions.initPage = function() {
             onInit:function(Clip){
                 console.log('svgclipper oninit',Clip);
                 //GradientMaps.applyGradientMap(Painter.DOM.baseCanvas.object, Clip.shapes[Clip.options.shape].gradientMaps.full);
-                GradientMaps.applyGradientMap($this.get(0), Clip.shapes[Clip.options.shape].gradientMaps.shape);
+                //GradientMaps.applyGradientMap($this.get(0), Clip.shapes[Clip.options.shape].gradientMaps.shape);
             }
         }));
     });

@@ -8,7 +8,7 @@ SQSP.functions.initPage = function() {
         new SVGClipper($thismodel, {
             shape: $thismodel.data('shape'),
             onInit:function(Clip){
-                GradientMaps.applyGradientMap(Clip.DOM.container.object, Clip.shapes[Clip.options.shape].gradientMaps.shape);
+                //GradientMaps.applyGradientMap(Clip.DOM.container.object, Clip.shapes[Clip.options.shape].gradientMaps.shape);
             }
         });
     });
