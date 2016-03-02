@@ -26,7 +26,7 @@ var Preloader = function( options ) {
         for(var i=0; i<sources.length; i++) {
             ////console.log('preload '+sources[i]);
             var img = new Image();
-            img.onload = img.onerror = function() {
+            img.onload = img.onabort = img.onerror = function() {
                 ////console.log(img.src + ' loaded');
                 loaded++;
                 PL.progress = {
