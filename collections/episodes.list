@@ -11,8 +11,8 @@
         {.equal?:@:"current"}
             <section class="episodes-landing">
                 <div class="fill-parent mask">
-                    <div class="landing-bg" style="background-image:url('{assetUrl}');" data-type="video" data-src="{customContent.episode-hero-video}" data-shape="{customContent.episode-shape}">
-                        <!--<video src="assets/videos/header-episode.mp4" loop autoplay></video>-->
+                    <div class="landing-bg" style="background-image:url('{assetUrl}');" data-shape="{customContent.episode-shape}">
+                        <video src="{customContent.episode-hero-video}" loop autoplay></video>
                     </div><!-- landing-bg -->
                 </div><!-- .fill-parent -->
                 <!--<div class="episodes-landing-geo"></div>-->
