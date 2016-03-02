@@ -413,14 +413,14 @@ var SVGClipper = function($container, options) {
                     };
                 },
                 updateMask: function() {
-                    if( !SC.$object.inlineClippingMask.hasAttr('clipPathUnits') ) {
-                        SC.$object.inlineClippingMask.attr({clipPathUnits : 'objectBoundingBox'});
-                    }// endif
+
+                    var pathScale = getSizeTo('contain',SC.DOM.container.size, {width:100, height:100});
+                    SC.$object.inlineClippingMask.attr({transform : 'scale('+ pathScale.ratio +')'});
 
                     SC.SHAPE.ATTRIBUTES = {
-                        cx: SC.SHAPE.values.cx,
-                        cy: SC.SHAPE.values.cy,
-                        r : SC.SHAPE.values.r * SC.options.shapeScale
+                        cx: SC.SHAPE.values.cx*100,
+                        cy: SC.SHAPE.values.cy*100,
+                        r : SC.SHAPE.values.r*100 * SC.options.shapeScale
                     };
                     SC.SHAPE.CSS = {
                         'clip-path' : 'url(#'+ SC.options.maskID +')',
