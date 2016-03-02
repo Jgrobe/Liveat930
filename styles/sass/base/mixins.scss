@@ -183,7 +183,17 @@
   #{$attr}: #{$value / $base*100}#{$unit};
 }
 
-@mixin texturizer($mode:after) {
+@mixin autoAlpha($val) {
+  @if $val > 0 {
+    visibility: visible;
+    opacity: $val;
+  } @else {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+@mixin texturizer($mode:after, $color:rgba(0,0,0,.5), $blendmode:overlay, $scale:5%) {
   &:#{$mode} {
     content:'';
     display: block;
@@ -192,18 +202,9 @@
     left:0;
     width:100%;
     height:100%;
-    background: rgba(0,0,0,.5) url('assets/images/textures/texture.jpg');
-//    background-size: 5%;
-    mix-blend-mode: overlay;
-  }
-}
-
-@mixin autoAlpha($val) {
-  @if $val > 0 {
-    visibility: visible;
-    opacity: $val;
-  } @else {
-    visibility: hidden;
-    opacity: 0;
+    background: $color url('assets/images/textures/halftone.png');
+    opacity: .4;
+    //background-size: $scale;
+    //mix-blend-mode: $blendmode;
   }
 }
