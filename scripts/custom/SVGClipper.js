@@ -437,7 +437,11 @@ var SVGClipper = function($container, options) {
     SC.init = function() {
         console.log('SVGClipper', SC);
 
-        SC.$object.container.css('overflow', 'hidden');
+        SC.$object.container.css({
+            overflow: 'hidden',
+            'webkit-transform': 'translateZ(0)',
+            transform: 'translateZ(0)'
+        });
 
         create_clipping_mask();
 
