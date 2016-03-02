@@ -22,9 +22,9 @@
     <favorites_list name="sqsp" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.585708">
+    <splitter split-orientation="horizontal" split-proportion="0.76896095">
       <split-first>
-        <splitter split-orientation="horizontal" split-proportion="0.35688406">
+        <splitter split-orientation="horizontal" split-proportion="0.6764045">
           <split-first>
             <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
               <file leaf-file-name="template.conf" pinned="false" current-in-tab="false">
@@ -77,21 +77,21 @@
                   </provider>
                 </entry>
               </file>
-              <file leaf-file-name="poster-scroll.block" pinned="false" current-in-tab="false">
+              <file leaf-file-name="poster-scroll.block" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/blocks/poster-scroll.block">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="-11.25">
-                      <caret line="18" column="68" selection-start-line="18" selection-start-column="68" selection-end-line="18" selection-end-column="77" />
+                    <state vertical-scroll-proportion="0.24340771">
+                      <caret line="16" column="57" selection-start-line="16" selection-start-column="57" selection-end-line="16" selection-end-column="57" />
                       <folding />
                     </state>
                   </provider>
                 </entry>
               </file>
-              <file leaf-file-name="nav-search-overlay.block" pinned="false" current-in-tab="true">
+              <file leaf-file-name="nav-search-overlay.block" pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/blocks/nav-search-overlay.block">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.43914807">
-                      <caret line="46" column="66" selection-start-line="46" selection-start-column="66" selection-end-line="46" selection-end-column="66" />
+                    <state vertical-scroll-proportion="-17.416666">
+                      <caret line="33" column="122" selection-start-line="33" selection-start-column="122" selection-end-line="33" selection-end-column="122" />
                       <folding />
                     </state>
                   </provider>
@@ -161,11 +161,11 @@
                   </provider>
                 </entry>
               </file>
-              <file leaf-file-name="page_home.js" pinned="false" current-in-tab="false">
+              <file leaf-file-name="page_home.js" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/scripts/custom/page_home.js">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="-7.5555553">
-                      <caret line="62" column="16" selection-start-line="62" selection-start-column="16" selection-end-line="62" selection-end-column="16" />
+                    <state vertical-scroll-proportion="0.32960325">
+                      <caret line="70" column="13" selection-start-line="70" selection-start-column="13" selection-end-line="70" selection-end-column="13" />
                       <folding />
                     </state>
                   </provider>
@@ -205,11 +205,11 @@
                   </provider>
                 </entry>
               </file>
-              <file leaf-file-name="poster-parallax.block" pinned="false" current-in-tab="true">
+              <file leaf-file-name="poster-parallax.block" pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/blocks/poster-parallax.block">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.27383366">
-                      <caret line="18" column="89" selection-start-line="18" selection-start-column="89" selection-end-line="18" selection-end-column="89" />
+                    <state vertical-scroll-proportion="-5.625">
+                      <caret line="9" column="59" selection-start-line="9" selection-start-column="59" selection-end-line="9" selection-end-column="59" />
                       <folding />
                     </state>
                   </provider>
@@ -241,6 +241,16 @@
               </provider>
             </entry>
           </file>
+          <file leaf-file-name="ui.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/scripts/custom/ui.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.1980198">
+                  <caret line="267" column="0" selection-start-line="267" selection-start-column="0" selection-end-line="267" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
           <file leaf-file-name="video.scss" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/styles/sass/pages/video.scss">
               <provider selected="true" editor-type-id="text-editor">
@@ -261,11 +271,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="SVGClipper.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="SVGClipper.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/scripts/custom/SVGClipper.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.36317396">
-                  <caret line="441" column="48" selection-start-line="441" selection-start-column="48" selection-end-line="441" selection-end-column="48" />
+                <state vertical-scroll-proportion="-3.2222223">
+                  <caret line="423" column="10" selection-start-line="423" selection-start-column="10" selection-end-line="423" selection-end-column="10" />
                   <folding />
                 </state>
               </provider>
@@ -313,16 +323,6 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="fullTriangle.scss" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/styles/sass/modules/posters/fullTriangle.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-10.625">
-                  <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
         </leaf>
       </split-second>
     </splitter>
@@ -354,7 +354,6 @@
         <option value="$PROJECT_DIR$/scripts/custom/global_functions.js" />
         <option value="$PROJECT_DIR$/blocks/svg-icon-arrow.block" />
         <option value="$PROJECT_DIR$/blocks/nav-search-overlay.block" />
-        <option value="$PROJECT_DIR$/scripts/custom/ui.js" />
         <option value="$PROJECT_DIR$/blocks/module-clip-item.block" />
         <option value="$PROJECT_DIR$/scripts/custom/AjaxSearch.js" />
         <option value="$PROJECT_DIR$/scripts/custom/page_show.js" />
@@ -371,9 +370,7 @@
         <option value="$PROJECT_DIR$/styles/sass/modules/poster.scss" />
         <option value="$PROJECT_DIR$/scripts/custom/page_clip.js" />
         <option value="$PROJECT_DIR$/scripts/custom/page_episodes.js" />
-        <option value="$PROJECT_DIR$/scripts/custom/page_home.js" />
         <option value="$PROJECT_DIR$/template.conf" />
-        <option value="$PROJECT_DIR$/blocks/poster-scroll.block" />
         <option value="$PROJECT_DIR$/scripts/custom/page-hero.js" />
         <option value="$PROJECT_DIR$/styles/sass/pages/video.scss" />
         <option value="$PROJECT_DIR$/scripts/custom/ClipGrid.js" />
@@ -384,6 +381,9 @@
         <option value="$PROJECT_DIR$/scripts/custom/page_episode.js" />
         <option value="$PROJECT_DIR$/blocks/poster-parallax.block" />
         <option value="$PROJECT_DIR$/scripts/custom/SVGClipper.js" />
+        <option value="$PROJECT_DIR$/scripts/custom/ui.js" />
+        <option value="$PROJECT_DIR$/blocks/poster-scroll.block" />
+        <option value="$PROJECT_DIR$/scripts/custom/page_home.js" />
       </list>
     </option>
   </component>
@@ -952,14 +952,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/custom/ui.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.111111">
-          <caret line="88" column="20" selection-start-line="88" selection-start-column="18" selection-end-line="88" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/collections/pages.item">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-11.25">
@@ -1036,30 +1028,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-23.333334">
           <caret line="42" column="34" selection-start-line="42" selection-start-column="34" selection-end-line="42" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/custom/page_home.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.5555553">
-          <caret line="62" column="16" selection-start-line="62" selection-start-column="16" selection-end-line="62" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blocks/poster-scroll.block">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.25">
-          <caret line="18" column="68" selection-start-line="18" selection-start-column="68" selection-end-line="18" selection-end-column="77" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blocks/nav-search-overlay.block">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.43914807">
-          <caret line="46" column="66" selection-start-line="46" selection-start-column="66" selection-end-line="46" selection-end-column="66" />
           <folding />
         </state>
       </provider>
@@ -1158,18 +1126,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blocks/poster-parallax.block">
+    <entry file="file://$PROJECT_DIR$/scripts/custom/SVGClipper.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.27383366">
-          <caret line="18" column="89" selection-start-line="18" selection-start-column="89" selection-end-line="18" selection-end-column="89" />
+        <state vertical-scroll-proportion="-3.2222223">
+          <caret line="423" column="10" selection-start-line="423" selection-start-column="10" selection-end-line="423" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/custom/SVGClipper.js">
+    <entry file="file://$PROJECT_DIR$/scripts/custom/ui.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36317396">
-          <caret line="441" column="48" selection-start-line="441" selection-start-column="48" selection-end-line="441" selection-end-column="48" />
+        <state vertical-scroll-proportion="0.1980198">
+          <caret line="267" column="0" selection-start-line="267" selection-start-column="0" selection-end-line="267" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blocks/poster-parallax.block">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.625">
+          <caret line="9" column="59" selection-start-line="9" selection-start-column="59" selection-end-line="9" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blocks/nav-search-overlay.block">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-17.416666">
+          <caret line="33" column="122" selection-start-line="33" selection-start-column="122" selection-end-line="33" selection-end-column="122" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blocks/poster-scroll.block">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.24340771">
+          <caret line="16" column="57" selection-start-line="16" selection-start-column="57" selection-end-line="16" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/custom/page_home.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.32960325">
+          <caret line="70" column="13" selection-start-line="70" selection-start-column="13" selection-end-line="70" selection-end-column="13" />
           <folding />
         </state>
       </provider>

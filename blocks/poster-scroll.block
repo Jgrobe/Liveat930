@@ -15,7 +15,7 @@
             </div><!-- .bg-layer -->
 
             <div class="layer model-layer rel prllx-custom prllx-no-disable" data-prllx=".18">
-                <div class="model-container" data-shape="{customContent.episode-shape}" style="background-image:url('{assetUrl}');">
+                <div class="model-container halftone" data-shape="{customContent.episode-shape}" style="background-image:url('{assetUrl}');">
                     <video src="{customContent.episode-hero-video}" autoplay loop></video>
                 </div><!-- .model-container.img.widescreen -->
             </div><!-- .model-layer -->
