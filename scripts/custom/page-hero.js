@@ -22,7 +22,7 @@ SQSP.functions.createPageHero = function() {
             console.log('clip this');
 
             var canvasClipper = new SVGClipper(Painter.$object.canvasWrapper, {
-                shape:'arc',
+                shape:$modelContainer.attr('data-shape'),
                 maskID: 'heroClipper',
                 //shapeScale:.45,
                 onInit:function(Clip){
