@@ -65,6 +65,7 @@ SQSP.functions.initPage = function() {
 
         new SVGClipper($modelContainer, {
             shape: $modelContainer.data('shape'),
+            maskId: ('clipshape_'+i),
             onInit:function(Clip){
                 GradientMaps.applyGradientMap(Clip.DOM.container.object, Clip.shapes[Clip.options.shape].gradientMaps.shape);
             }
