@@ -48,6 +48,22 @@
   background-blend-mode: $blendmode;
 }
 
+@mixin texturizer($mode:after, $color:rgba(0,0,0,.5), $blendmode:overlay, $scale:5%) {
+  &:#{$mode} {
+    content:'';
+    display: block;
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: $color url('assets/images/textures/halftone.png');
+    opacity: .4;
+    //background-size: $scale;
+    //mix-blend-mode: $blendmode;
+  }
+}
+
 @mixin landing {
   width: 100vw;
   height: 100vh;
@@ -78,15 +94,17 @@
     background-position: center center;
 //    background-attachment: fixed;
 
+    @include texturizer();
+
 //    &.video-bg {
-      &:after {
-        content: '';
-        display: block;
-        @extend .fill-parent;
-        background-image: url('assets/images/textures/texture-halftone-compressor-2-70k.jpg');
-//        background-size: cover;
-        mix-blend-mode: overlay;
-      }
+//      &:after {
+//        content: '';
+//        display: block;
+//        @extend .fill-parent;
+//        background-image: url('assets/images/textures/texture-halftone-compressor-2-70k.jpg');
+////        background-size: cover;
+//        mix-blend-mode: overlay;
+//      }
 //    }
   }// .landing-bg
 }// @landing
@@ -190,21 +208,5 @@
   } @else {
     visibility: hidden;
     opacity: 0;
-  }
-}
-
-@mixin texturizer($mode:after, $color:rgba(0,0,0,.5), $blendmode:overlay, $scale:5%) {
-  &:#{$mode} {
-    content:'';
-    display: block;
-    position: absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    background: $color url('assets/images/textures/halftone.png');
-    opacity: .4;
-    //background-size: $scale;
-    //mix-blend-mode: $blendmode;
   }
 }
