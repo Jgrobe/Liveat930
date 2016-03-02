@@ -7,6 +7,9 @@ SQSP.functions.createPageHero = function() {
     //if(!$canvasContainer.hasAttr('data-src')) return;
 
     SQSP.$objects.siteHero = jQuery('.episodes-landing');
+    if(!elem_exists(SQSP.$objects.siteHero)) return false;
+
+
     var $modelContainer = SQSP.$objects.siteHero.find('.landing-bg');
 
     SQSP.instances.CanvasPainter = new CanvasPainter($modelContainer, $modelContainer.find('video'), {
