@@ -1339,6 +1339,8 @@ input {
     width: 100%; }
     .episodes-previous .poster.dummy .hosted-logo {
       padding: 1.5vw 0; }
+  .poster video {
+    position: absolute; }
   .poster canvas {
     top: 50%;
     left: 50%;

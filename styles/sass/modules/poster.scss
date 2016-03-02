@@ -77,7 +77,8 @@ $posterWidth: 84vw;
     }// .hosted-logo
   }// .dummy
 
-  //video { display: none; }
+  video { position: absolute; }
+
   canvas {
     top: 50%;
     left: 50%;
