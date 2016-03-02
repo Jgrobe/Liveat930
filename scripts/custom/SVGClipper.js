@@ -10,7 +10,7 @@ var SVGClipper = function($container, options) {
         shapeScale: 1,
         assetPath : 'assets/images/shapes/'
     }, options);
-    
+
     SC.$object = {
         container : $container
     };
@@ -319,10 +319,12 @@ var SVGClipper = function($container, options) {
                         height: height,
                         ratio: width/height
                     };
-
-                    SC.$object.inlineClippingMask.attr({clipPathUnits : 'objectBoundingBox'});
                 },
                 updateMask: function() {
+
+                    if( !SC.$object.inlineClippingMask.hasAttr('clipPathUnits') ) {
+                        SC.$object.inlineClippingMask.attr({clipPathUnits : 'objectBoundingBox'});
+                    }
 
                     var domObjRelativeSize = {
                         width: SC.DOM.container.size.ratio > 1 ? 1 : (SC.DOM.container.size.width/SC.DOM.container.size.height),
@@ -373,20 +375,21 @@ var SVGClipper = function($container, options) {
             },
             path: {
                 getShapeDimensions:function() {
-                    return;
+                    SC.SHAPE.originalSize = {
+                        width: 100,
+                        height :100,
+                        ratio : 1
+                    }
                 },
                 updateMask: function() {
 
-                    if(SC.isPathApplied === true) return;// needed only once on instanciation
-                    SC.isPathApplied = true;
-
                     console.log('calc scale factor', SC.DOM.container.size, SC.SHAPE.originalSize );
-                    var pathCover = getSizeTo('contain',SC.DOM.container.size, {width:100, height:100});
-                    console.log('path scale factor', pathCover);
+                    var pathScale = getSizeTo('contain',SC.DOM.container.size, {width:100, height:100});
+                    console.log('path scale factor', SC.DOM.container.size, pathScale)//, pathTranslateX, pathTranslateY);
 
                     //var shapeURL = SC.options.assetPath + SC.SHAPE.file;
 
-                    SC.$object.inlineClippingMask.attr({transform : 'scale('+ pathCover.ratio +') translate(0,0)'});
+                    SC.$object.inlineClippingMask.attr({transform : 'scale('+ pathScale.ratio +') translate(0,0)'});
 
                     SC.SHAPE.ATTRIBUTES = {
                         d : SC.SHAPE.values
@@ -408,9 +411,12 @@ var SVGClipper = function($container, options) {
                         height: height,
                         ratio: width/height
                     };
-                    SC.$object.inlineClippingMask.attr({clipPathUnits : 'objectBoundingBox'});
                 },
                 updateMask: function() {
+                    if( !SC.$object.inlineClippingMask.hasAttr('clipPathUnits') ) {
+                        SC.$object.inlineClippingMask.attr({clipPathUnits : 'objectBoundingBox'});
+                    }// endif
+
                     SC.SHAPE.ATTRIBUTES = {
                         cx: SC.SHAPE.values.cx,
                         cy: SC.SHAPE.values.cy,
@@ -430,6 +436,8 @@ var SVGClipper = function($container, options) {
 
     SC.init = function() {
         console.log('SVGClipper', SC);
+
+        SC.$object.container.css('overflow', 'hidden');
 
         create_clipping_mask();
 
@@ -470,6 +478,10 @@ var SVGClipper = function($container, options) {
         var svgHTML = inlineOpener + '<'+ SC.SHAPE.type +' />' + inlineCloser;
 
         SC.$object.inlineClippingSVG = jQuery( svgHTML );
+        SC.$object.inlineClippingSVG.css({
+            width: 0,
+            height: 0
+        });
         SC.$object.inlineClippingMask = SC.$object.inlineClippingSVG.find('#'+SC.options.maskID);
         SC.$object.inlineClippingMaskElement = SC.$object.inlineClippingSVG.find(SC.SHAPE.type);
         SC.$object.inlineClippingSVG.insertAfter(SC.$object.container);

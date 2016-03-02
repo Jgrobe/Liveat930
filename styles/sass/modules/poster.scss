@@ -160,12 +160,16 @@ $posterWidth: 84vw;
     }// .hover-layer
 
     &.model-layer {
+      width: 100%;
       &:before {
         content: '';
         display: block;
         padding-top: 100%;
       }
-      svg {display: none;}// thats only clips/masks & gradientmaps
+      svg {
+        width: 0;
+        height: 0;
+      }// thats only clips/masks & gradientmaps
     }// .model-layer
     &.copy-layer {
       z-index: 1;
@@ -263,26 +267,11 @@ $posterWidth: 84vw;
   }// .ep-lineup
 
   .model-container {
-//    clip-path: url(#test-mask);
     position: absolute;
-    // actual
-//    top: -10%;
-//    left: -15%;
-//    width: 130%;
-    //actual
-
-    // test
     top: 0;
     left: 0;
     width: 100%;
-
-    .fill-parent {
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-    }
-//    background: rgba(255,100,100,.5);
-    //test
+    height:100%;
   }// .model-container
 
   .icon {
