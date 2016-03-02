@@ -2,8 +2,8 @@
 
     <section class="episodes-landing episode-detail">
         <div class="fill-parent mask">
-            <div class="landing-bg" style="background-image:url('{customContent.hero-fallback-image.assetUrl}');" data-type="video" data-src="{customContent.episode-hero-video}" data-shape="{customContent.episode-shape}">
-            <!--<video src="assets/videos/header-episode.mp4" loop autoplay></video>-->
+            <div class="landing-bg" style="background-image:url('{customContent.hero-fallback-image.assetUrl}');" data-shape="{customContent.episode-shape}">
+            <video src="{customContent.episode-hero-video}" muted loop autoplay></video>
         </div>
         </div><!-- .mask -->
 

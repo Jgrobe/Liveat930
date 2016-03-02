@@ -22,9 +22,9 @@
     <favorites_list name="sqsp" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.57308584">
+    <splitter split-orientation="horizontal" split-proportion="0.6723898">
       <split-first>
-        <splitter split-orientation="horizontal" split-proportion="0.4056604">
+        <splitter split-orientation="horizontal" split-proportion="0.2845304">
           <split-first>
             <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
               <file leaf-file-name="template.conf" pinned="false" current-in-tab="false">
@@ -60,8 +60,8 @@
               <file leaf-file-name="header.region" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/header.region">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.3548387">
-                      <caret line="22" column="75" selection-start-line="22" selection-start-column="75" selection-end-line="22" selection-end-column="75" />
+                    <state vertical-scroll-proportion="0.5322581">
+                      <caret line="33" column="36" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
                       <folding />
                     </state>
                   </provider>
@@ -121,11 +121,11 @@
           </split-first>
           <split-second>
             <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-              <file leaf-file-name="pages.item" pinned="false" current-in-tab="true">
+              <file leaf-file-name="pages.item" pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/collections/pages.item">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.58064514">
-                      <caret line="132" column="30" selection-start-line="132" selection-start-column="30" selection-end-line="132" selection-end-column="30" />
+                    <state vertical-scroll-proportion="-11.25">
+                      <caret line="114" column="24" selection-start-line="114" selection-start-column="24" selection-end-line="114" selection-end-column="24" />
                       <folding />
                     </state>
                   </provider>
@@ -136,6 +136,16 @@
                   <provider selected="true" editor-type-id="text-editor">
                     <state vertical-scroll-proportion="-7.5">
                       <caret line="12" column="79" selection-start-line="12" selection-start-column="79" selection-end-line="12" selection-end-column="79" />
+                      <folding />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file leaf-file-name="ui.js" pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/scripts/custom/ui.js">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state vertical-scroll-proportion="-12.111111">
+                      <caret line="88" column="20" selection-start-line="88" selection-start-column="18" selection-end-line="88" selection-end-column="20" />
                       <folding />
                     </state>
                   </provider>
@@ -161,16 +171,6 @@
                   </provider>
                 </entry>
               </file>
-              <file leaf-file-name="page_show.js" pinned="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/scripts/custom/page_show.js">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.0">
-                      <caret line="12" column="2" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
-                      <folding />
-                    </state>
-                  </provider>
-                </entry>
-              </file>
               <file leaf-file-name="page_clips.js" pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/scripts/custom/page_clips.js">
                   <provider selected="true" editor-type-id="text-editor">
@@ -191,14 +191,22 @@
                   </provider>
                 </entry>
               </file>
+              <file leaf-file-name="page-hero.js" pinned="false" current-in-tab="true">
+                <entry file="file://$PROJECT_DIR$/scripts/custom/page-hero.js">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state vertical-scroll-proportion="0.047169812">
+                      <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+                      <folding />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
               <file leaf-file-name="page_episode.js" pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/scripts/custom/page_episode.js">
                   <provider selected="true" editor-type-id="text-editor">
                     <state vertical-scroll-proportion="0.0">
-                      <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
-                      <folding>
-                        <marker date="1456848008000" expanded="true" signature="257:290" placeholder="{...}" />
-                      </folding>
+                      <caret line="17" column="2" selection-start-line="17" selection-start-column="2" selection-end-line="17" selection-end-column="2" />
+                      <folding />
                     </state>
                   </provider>
                 </entry>
@@ -296,8 +304,8 @@
           <file leaf-file-name="search-overlay.scss" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/styles/sass/modules/search-overlay.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.3548387">
-                  <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+                <state vertical-scroll-proportion="0.22580644">
+                  <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
                   <folding />
                 </state>
               </provider>
@@ -337,7 +345,6 @@
         <option value="$PROJECT_DIR$/styles/sass/modules/posters/fullTriangle.scss" />
         <option value="$PROJECT_DIR$/scripts/custom/episode-hero.js" />
         <option value="$PROJECT_DIR$/collections/episodes.list" />
-        <option value="$PROJECT_DIR$/scripts/custom/page-hero.js" />
         <option value="$PROJECT_DIR$/footer.region" />
         <option value="$PROJECT_DIR$/scripts/custom/page-gallery.js" />
         <option value="$PROJECT_DIR$/scripts/custom/page_episodes.js" />
@@ -384,6 +391,7 @@
         <option value="$PROJECT_DIR$/header.region" />
         <option value="$PROJECT_DIR$/scripts/custom/ImageGallery.js" />
         <option value="$PROJECT_DIR$/styles/sass/modules/search-overlay.scss" />
+        <option value="$PROJECT_DIR$/scripts/custom/page-hero.js" />
       </list>
     </option>
   </component>
@@ -565,8 +573,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/scripts/libs" />
       <recent name="$PROJECT_DIR$/scripts/custom" />
+      <recent name="$PROJECT_DIR$/scripts/libs" />
       <recent name="$PROJECT_DIR$/blocks" />
       <recent name="$PROJECT_DIR$/styles/sass/modules" />
       <recent name="$PROJECT_DIR$/styles/sass/pages" />
@@ -718,13 +726,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/blocks/svg-icon-play.block">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.06465517">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/images/icon-play.svg">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.063025214">
@@ -836,26 +837,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/custom/ui.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="134" column="42" selection-start-line="134" selection-start-column="42" selection-end-line="134" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/custom/page_episodes.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="6" column="63" selection-start-line="6" selection-start-column="63" selection-end-line="6" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/custom/page-hero.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="36" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
           <folding />
         </state>
       </provider>
@@ -953,7 +938,7 @@
         <state vertical-scroll-proportion="-0.0">
           <caret line="0" column="59" selection-start-line="0" selection-start-column="59" selection-end-line="0" selection-end-column="59" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -971,16 +956,6 @@
         <state vertical-scroll-proportion="-13.25">
           <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/custom/page_episode.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
-          <folding>
-            <marker date="1456848008000" expanded="true" signature="257:290" placeholder="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1074,14 +1049,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/header.region">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3548387">
-          <caret line="22" column="75" selection-start-line="22" selection-start-column="75" selection-end-line="22" selection-end-column="75" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/custom/ClipGrid.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1100,14 +1067,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/collections/pages.item">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.58064514">
-          <caret line="132" column="30" selection-start-line="132" selection-start-column="30" selection-end-line="132" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/custom/ImageGallery.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1116,10 +1075,58 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/collections/pages.item">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.25">
+          <caret line="114" column="24" selection-start-line="114" selection-start-column="24" selection-end-line="114" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/styles/sass/modules/search-overlay.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3548387">
-          <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+        <state vertical-scroll-proportion="0.22580644">
+          <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/custom/CanvasPainter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4245283">
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/header.region">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5322581">
+          <caret line="33" column="36" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/custom/page_episode.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="2" selection-start-line="17" selection-start-column="2" selection-end-line="17" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/custom/ui.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.111111">
+          <caret line="88" column="20" selection-start-line="88" selection-start-column="18" selection-end-line="88" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/custom/page-hero.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.047169812">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding />
         </state>
       </provider>

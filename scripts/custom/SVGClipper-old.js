@@ -7,10 +7,9 @@ var SVGClipper = function($container, options) {
         shape : 'star',
         maskID : 'shapeMask',
         onInit : false,
-        shapeScale: 1,
         assetPath : 'assets/images/shapes/'
     }, options);
-    
+
     SC.$object = {
         container : $container
     };
@@ -22,15 +21,15 @@ var SVGClipper = function($container, options) {
 
     SC.shapes = {
         circle: {
-            type: 'circle',
+            type: "circle",
             gradientMaps: {
                 full: '#000000, #6d5e79',
                 shape: '#9f53e0, #d6b9db'
             },
             values: {
-                cx:.5,
-                cy:.5,
-                r:.5
+                cx: 50,
+                cy: 50,
+                r: 50
             }
         },
         fullTriangle: {
@@ -97,8 +96,7 @@ var SVGClipper = function($container, options) {
                 full : '#151517, #3d444a',
                 shape: '#d2caa0, #ffffff'
             },
-            values: 'M95.4,0C82.5,0,70,2.5,58.3,7.5c-11.4,4.8-21.6,11.7-30.3,20.4c-8.8,8.8-15.6,19-20.4,30.3 C2.5,70,0,82.5,0,95.4v4.6h43.6v-4.6c0-28.6,23.2-51.8,51.8-51.8h4.6V0H95.4z',
-            file: 'arc2.svg'
+            values: 'arc2.svg'
         },
         halfCircle: {
             type: 'path',
@@ -106,8 +104,7 @@ var SVGClipper = function($container, options) {
                 full: '#361314, #3f466d',
                 shape: '#3d6cf3, #b9c9fb'
             },
-            values : 'M100,26.8C90.7,10.8,73.4,0,53.6,0C24,0,0,24,0,53.6c0,9.7,2.6,18.9,7.2,26.8L100,26.8z',
-            file : 'halfCircle.svg'
+            values : 'halfCircle.svg'
         },
         square: {
             type : 'polygon',
@@ -308,6 +305,29 @@ var SVGClipper = function($container, options) {
                         }// endfor points
                     }// endfor paths
                 },
+                //getPoints:function() {
+                //    var paths = SC.shapes[SC.options.shape].values;
+                //
+                //    for(var i=0; i<paths.length; i++) {
+                //        var points = paths[i];
+                //        for(var j=0; j < points.length; j++) {
+                //
+                //            //func({index:j,path:paths[i],point:points[j]});
+                //
+                //            if(j > 0) {
+                //                SC.SHAPE.points.inline += ' ';
+                //                SC.SHAPE.points.css += ', ';
+                //            }
+                //            SC.SHAPE.points.inline += (points[j].x * .01) + ',' + (points[j].y * .01);
+                //            SC.SHAPE.points.css += points[j].x + '% ' + points[j].y + '%';
+                //
+                //        }// endfor points
+                //    }// endfor paths
+                //},
+                //getShapeHTML: function() {
+                //    var shapeHTML = '<polygon points="'+ SC.SHAPE.points.inline +'" />';
+                //    return shapeHTML;
+                //},
                 getShapeDimensions:function() {
                     var width= 0, height=0;
                     SC.shapes.functions.polygon.computePoints(function(e){
@@ -319,8 +339,6 @@ var SVGClipper = function($container, options) {
                         height: height,
                         ratio: width/height
                     };
-
-                    SC.$object.inlineClippingMask.attr({clipPathUnits : 'objectBoundingBox'});
                 },
                 updateMask: function() {
 
@@ -380,45 +398,29 @@ var SVGClipper = function($container, options) {
                     if(SC.isPathApplied === true) return;// needed only once on instanciation
                     SC.isPathApplied = true;
 
-                    console.log('calc scale factor', SC.DOM.container.size, SC.SHAPE.originalSize );
-                    var pathCover = getSizeTo('contain',SC.DOM.container.size, {width:100, height:100});
-                    console.log('path scale factor', pathCover);
+                    var shapeURL = SC.options.assetPath + SC.SHAPE.values;
 
-                    //var shapeURL = SC.options.assetPath + SC.SHAPE.file;
-
-                    SC.$object.inlineClippingMask.attr({transform : 'scale('+ pathCover.ratio +') translate(0,0)'});
-
-                    SC.SHAPE.ATTRIBUTES = {
-                        d : SC.SHAPE.values
-                    };
+                    SC.SHAPE.ATTRIBUTES = {};
                     SC.SHAPE.CSS = {
-                        //'mask' : 'url(' + shapeURL + '#mask)',
-                        //'-webkit-mask-image' : 'url(' + shapeURL + ')'
-                        'clip-path' : 'url(#'+ SC.options.maskID +')',
-                        '-webkit-clip-path' : 'url(#'+ SC.options.maskID +')'
+                        'mask' : 'url(' + shapeURL + '#mask)',
+                        '-webkit-mask-image' : 'url(' + shapeURL + ')'
                     };
                 }
             },
             circle : {
                 getShapeDimensions:function() {
-                    var width = SC.SHAPE.values.r* 2,
-                        height = SC.SHAPE.values.r*2;
+                    var width = SC.SHAPE.values.r* 2, height = SC.SHAPE.values.r*2;
                     SC.SHAPE.originalSize = {
                         width: width,
                         height: height,
                         ratio: width/height
                     };
-                    SC.$object.inlineClippingMask.attr({clipPathUnits : 'objectBoundingBox'});
                 },
                 updateMask: function() {
-                    SC.SHAPE.ATTRIBUTES = {
-                        cx: SC.SHAPE.values.cx,
-                        cy: SC.SHAPE.values.cy,
-                        r : SC.SHAPE.values.r * SC.options.shapeScale
-                    };
+                    SC.SHAPE.ATTRIBUTES = SC.SHAPE.values;
                     SC.SHAPE.CSS = {
                         'clip-path' : 'url(#'+ SC.options.maskID +')',
-                        '-webkit-clip-path' : 'circle('+ ( (SC.SHAPE.values.r * SC.options.shapeScale*100) +'%') +' at '+ ( (SC.SHAPE.values.cx*100) +'%') +' '+ ( (SC.SHAPE.values.cy*100) +'%') +')'
+                        '-webkit-clip-path' : 'circle('+ (SC.SHAPE.values.r+'%') +' at '+ (SC.SHAPE.values.cx+'%') +' '+ (SC.SHAPE.values.cy+'%') +')'
                     };
                 }
             }
@@ -451,7 +453,7 @@ var SVGClipper = function($container, options) {
             height: SC.$object.container.height()
         };
         SC.DOM.container.size.ratio = SC.DOM.container.size.width/SC.DOM.container.size.height;
-        console.log('SC.DOM.container.size', SC.DOM.container.size);
+        //console.log('SC.DOM.container.size', SC.DOM.container.size);
     }// get_sizes()
 
     function get_shape_dimensions() {
@@ -464,17 +466,15 @@ var SVGClipper = function($container, options) {
 
         get_shape_dimensions();
 
-        var inlineOpener = '<svg><defs><clipPath id="'+ SC.options.maskID +'">';
-        var inlineCloser = '</clipPath></defs></svg>';
+        var inlineOpener = '<svg><defs><clipPath id="'+ SC.options.maskID +'" clipPathUnits="objectBoundingBox">',
+            inlineCloser = '</clipPath></defs></svg>';
 
         var svgHTML = inlineOpener + '<'+ SC.SHAPE.type +' />' + inlineCloser;
 
-        SC.$object.inlineClippingSVG = jQuery( svgHTML );
-        SC.$object.inlineClippingMask = SC.$object.inlineClippingSVG.find('#'+SC.options.maskID);
-        SC.$object.inlineClippingMaskElement = SC.$object.inlineClippingSVG.find(SC.SHAPE.type);
-        SC.$object.inlineClippingSVG.insertAfter(SC.$object.container);
+        SC.$object.inlineClippingMask = jQuery( svgHTML );
+        SC.$object.inlineClippingMaskElement = SC.$object.inlineClippingMask.find(SC.SHAPE.type);
+        SC.$object.inlineClippingMask.insertAfter(SC.$object.container);
 
-        SC.DOM.inlineClippingSVG = {object:SC.$object.inlineClippingSVG.get(0)};
         SC.DOM.inlineClippingMask = {object:SC.$object.inlineClippingMask.get(0)};
         SC.DOM.inlineClippingMaskElement = {object:SC.$object.inlineClippingMaskElement.get(0)};
 
