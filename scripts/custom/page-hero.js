@@ -28,12 +28,10 @@ SQSP.functions.createPageHero = function() {
                 onInit:function(Clip){
                     console.log('map this', Clip);
                     //        GradientMaps.applyGradientMap(Painter.DOM.baseCanvas.object, Clip.shapes[Clip.options.shape].gradientMaps.full);
-                    GradientMaps.applyGradientMap(Clip.$object.container.get(0), Clip.shapes[Clip.options.shape].gradientMaps.shape);
+                    //GradientMaps.applyGradientMap(Clip.$object.container.get(0), Clip.shapes[Clip.options.shape].gradientMaps.shape);
                 }
             });
 
-            //GradientMaps.applyGradientMap(CP.DOM.shapeCanvas.object, CP.shapes[CP.options.shape].gradientMaps.shape);
-            //GradientMaps.applyGradientMap(CP.DOM.fullCanvas.object, CP.shapes[CP.options.shape].gradientMaps.full );
         }
     });
 
