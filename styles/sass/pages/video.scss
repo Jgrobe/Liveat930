@@ -167,7 +167,7 @@ $gridGutter: 5vw;
     @include prefixed(filter, grayscale(100%));
 
     .image {
-      width: 21.66vw;
+      width:100%;
       position: relative;
       background-size: cover;
       background-position: center center;
@@ -229,6 +229,7 @@ $gridGutter: 5vw;
 //      margin: 2vw 0 4vw;
     }
     &.small {
+      width:21.66vw;
       .image {
         height: 17vw;
         &.poster {
@@ -237,8 +238,8 @@ $gridGutter: 5vw;
       }
     }
     &.medium {
+      width: 35vw;
       .image {
-        width: 35vw;
         height: 21vw;
         &.poster {
           height: auto;
@@ -246,6 +247,7 @@ $gridGutter: 5vw;
       }
     }
     &.large {
+      width:21.66vw;
       .image {
         height: 41.5vw;
         &.poster {
