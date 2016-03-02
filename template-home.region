@@ -20,8 +20,5 @@
 </div><!-- .site-content -->
 
 <div id="fieldTracker">{@|apply svg-close-cursor.block}</div><!-- #fieldTracker -->
-<div id="preloader">
-    <div class="filler"></div>
-</div>
 <squarespace:script src="custom/handleArtists.js" />
 <squarespace:script src="custom/page_home.js" />
