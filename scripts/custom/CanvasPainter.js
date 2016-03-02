@@ -1,10 +1,10 @@
 /*
-* CanvasPainter creates an <img/> oder <video/> element and paints it on a canvas to clip it with a custom shape
-*
-* Dependencies:
-* jquery-2.1.0.min.js
-* lodash.js
-* */
+ * CanvasPainter creates an <img/> oder <video/> element and paints it on a canvas to clip it with a custom shape
+ *
+ * Dependencies:
+ * jquery-2.1.0.min.js
+ * lodash.js
+ * */
 var CanvasPainter = function($container, $model, options) {
     if(typeof $container === 'undefined' || typeof $model === 'undefined') return;
     if(typeof options === 'undefined') options = {};
@@ -191,7 +191,7 @@ var CanvasPainter = function($container, $model, options) {
         ////console.log('canvas created');
 
     }// createCanvas()
-    
+
     function get_sizes() {
 
         if(typeof CP.DOM.model.size === 'undefined') return false;
@@ -203,7 +203,7 @@ var CanvasPainter = function($container, $model, options) {
         //console.log('CP.$object.container', CP.$object.container.width(), CP.DOM.model);
         CP.RATIO = getSizeToCover('cover', containerSize, CP.DOM.model.size);
         //console.log('CP RATIO VALUES', CP.RATIO);
-        
+
         // set canvas width & height inline -> canvas uses these units to draw
         CP.DOM.canvas.object.width = CP.DOM.canvas.object.height = Math.min(containerSize.width, containerSize.height) * CP.options.canvasScale;
         // set positioning in css
