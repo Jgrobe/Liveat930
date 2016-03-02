@@ -11,8 +11,8 @@ SQSP.functions.initPage = function() {
     });
 
     SQSP.instances.relatedClipsCategoriesGrid = new ClipGrid(jQuery('.related-clips-categories-gallery'), {
-        sizes : ['small', 'medium'],
-        distributeSizes : [1,1,0,0,0]
+        sizes : ['small'],
+        //distributeSizes : [1,1,0,0,0]
     });
 
 };
