@@ -16,7 +16,7 @@
 
             <div class="layer model-layer rel">
                 <div class="model-container img widescreen" data-shape="{customContent.episode-shape}"  style="background-image:url('{assetUrl}');">
-                    <video src="{customContent.episode-hero-video}" autoplay loop></video>
+                    <video src="{customContent.episode-hero-video}" loop></video>
                     <!-- video canvas is inserted here -->
                 </div><!-- .model-container.img.widescreen -->
             </div><!-- .model-layer -->
