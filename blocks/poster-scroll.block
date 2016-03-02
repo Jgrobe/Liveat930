@@ -15,9 +15,8 @@
             </div><!-- .bg-layer -->
 
             <div class="layer model-layer rel prllx-custom prllx-no-disable" data-prllx=".18">
-                <div class="model-container img widescreen" data-type="video" data-src="{customContent.episode-hero-video}" data-shape="{customContent.episode-shape}">
-                    <div class="fill-parent" style="background-image:url('{assetUrl}');"></div>
-                    <!-- /* video canvas is inserted here */ -->
+                <div class="model-container" data-shape="{customContent.episode-shape}" style="background-image:url('{assetUrl}');">
+                    <video src="{customContent.episode-hero-video}" loop></video>
                 </div><!-- .model-container.img.widescreen -->
             </div><!-- .model-layer -->
 
