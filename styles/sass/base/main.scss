@@ -226,3 +226,19 @@ input {
 }// .onlymobile
 
 .placeholder { display:none;}
+
+.bw {
+  @include prefixed(filter, grayscale(100%));
+}
+
+.halftone {
+  @include texturizer();
+}
+
+.canvas-wrapper {
+  overflow: hidden;
+  svg {
+    width: 0;
+    height: 0;
+  }
+}

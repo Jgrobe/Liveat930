@@ -26,7 +26,7 @@ SQSP.functions.createPageHero = function() {
                 maskID: 'heroClipper',
                 //shapeScale:.45,
                 onInit:function(Clip){
-                    console.log('map this', Clip.SHAPE);
+                    console.log('map this', Clip);
                     //        GradientMaps.applyGradientMap(Painter.DOM.baseCanvas.object, Clip.shapes[Clip.options.shape].gradientMaps.full);
                     GradientMaps.applyGradientMap(Clip.$object.container.get(0), Clip.shapes[Clip.options.shape].gradientMaps.shape);
                 }
