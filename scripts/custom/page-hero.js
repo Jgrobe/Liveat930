@@ -17,6 +17,8 @@ SQSP.functions.createPageHero = function() {
         canvasAttr: {'data-prllx' : '.8'},
         onCreateComplete: function(Painter) {
 
+            Painter.$object.model.css('opacity',.5);
+
             console.log('clip this');
 
             var canvasClipper = new SVGClipper(Painter.$object.canvasWrapper, {
