@@ -7,42 +7,42 @@ SQSP.functions.initPage = function() {
     SQSP.$objects.posters = jQuery('.poster');
     SQSP.instances.Posters = [];
 
-    SQSP.$objects.preloader = jQuery('#preloader');
-    if(elem_exists(SQSP.$objects.preloader)) {
-
-        SQSP.instances.Preloader = new Preloader({
-            onStart:function(e) {
-                SQSP.faders = jQuery('.static-header, .site-content');
-                SQSP.preloadTL = new TimelineMax({});
-                TweenMax.set(SQSP.faders, {autoAlpha:0});
-                TweenMax.set('body', {autoAlpha:1});
-
-                SQSP.$objects.postersContainer.css({
-                    position: 'relative',
-                    top : '100vh'
-                });
-            },
-            onProgress:function(e) {
-                //console.log('preloading', e.progress);
-                console.log(SQSP.$objects.preloader.find('.filler'),e.progress,  (e.progress.pct*100));
-                SQSP.preloadTL.to(SQSP.$objects.preloader.find('.filler'),.2,{width: (e.progress.pct*100)+'%'});
-            },
-            onComplete:function(e) {
-                console.log('preloader complete');
-                console.log('NICE REVEAL');
-                SQSP.preloadTL.add(function() {
-                    var tl = new TimelineMax({delay:.2, onUpdate:function() {
-
-                        jQuery(window).scroll();
-                    }});
-                    tl.to(SQSP.$objects.preloader,.2, {autoAlpha:0});
-                    tl.to(SQSP.faders,.3, {autoAlpha:1}, '-=.35');
-                    tl.to(SQSP.$objects.postersContainer,.75, {top:0,ease:Strong.easeOut, clearProps:'all'}, '-=.15');
-                    return tl;
-                });
-            }
-        });
-    }
+    //SQSP.$objects.preloader = jQuery('#preloader');
+    //if(elem_exists(SQSP.$objects.preloader)) {
+    //
+    //    SQSP.instances.Preloader = new Preloader({
+    //        onStart:function(e) {
+    //            SQSP.faders = jQuery('.static-header, .site-content');
+    //            SQSP.preloadTL = new TimelineMax({});
+    //            TweenMax.set(SQSP.faders, {autoAlpha:0});
+    //            TweenMax.set('body', {autoAlpha:1});
+    //
+    //            SQSP.$objects.postersContainer.css({
+    //                position: 'relative',
+    //                top : '100vh'
+    //            });
+    //        },
+    //        onProgress:function(e) {
+    //            //console.log('preloading', e.progress);
+    //            console.log(SQSP.$objects.preloader.find('.filler'),e.progress,  (e.progress.pct*100));
+    //            SQSP.preloadTL.to(SQSP.$objects.preloader.find('.filler'),.2,{width: (e.progress.pct*100)+'%'});
+    //        },
+    //        onComplete:function(e) {
+    //            console.log('preloader complete');
+    //            console.log('NICE REVEAL');
+    //            SQSP.preloadTL.add(function() {
+    //                var tl = new TimelineMax({delay:.2, onUpdate:function() {
+    //
+    //                    jQuery(window).scroll();
+    //                }});
+    //                tl.to(SQSP.$objects.preloader,.2, {autoAlpha:0});
+    //                tl.to(SQSP.faders,.3, {autoAlpha:1}, '-=.35');
+    //                tl.to(SQSP.$objects.postersContainer,.75, {top:0,ease:Strong.easeOut, clearProps:'all'}, '-=.15');
+    //                return tl;
+    //            });
+    //        }
+    //    });
+    //}
 
     // CREATE INTERACTIVE POSTERS
     SQSP.$objects.posters.each(function(i) {

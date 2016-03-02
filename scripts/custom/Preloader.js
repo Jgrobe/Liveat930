@@ -21,7 +21,8 @@ var Preloader = function( options ) {
             if(_.isFunction(functions.onComplete)) functions.onComplete(PL);
             return;
         }// endif
-        
+
+
         var loaded = 0;
         for(var i=0; i<sources.length; i++) {
             ////console.log('preload '+sources[i]);
