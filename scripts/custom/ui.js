@@ -71,7 +71,6 @@ function populate_namespaces() {
 
     SQSP.$objects.landingBG = jQuery('.landing-bg');
     SQSP.$objects.landingVideo = SQSP.$objects.landingBG.find('video').get(0);
-    SQSP.$objects.landingVideo.isPlaying = true;
 
     jQuery(window).scroll(function(e) {
         console.log('e', e, 'scrolltop', jQuery(window).scrollTop());
@@ -83,9 +82,9 @@ function populate_namespaces() {
                 top : jQuery(window).scrollTop()
             });
             if(jQuery(window).scrollTop() > SQSP.$objects.landingBG.height()) {
-                if(SQSP.$objects.landingVideo.isPlaying) SQSP.$objects.landingVideo.pause();
+                if(!SQSP.$objects.landingVideo.paused) SQSP.$objects.landingVideo.pause();
             } else {
-                if(!SQSP.$objects.landingVideo.isPlaying) SQSP.$objects.landingVideo.play();
+                if(SQSP.$objects.landingVideo.paused || SQSP.$objects.landingVideo.ended) SQSP.$objects.landingVideo.play();
             }
         }
     });
