@@ -18,8 +18,10 @@
         </div><!-- .clip-preview-container -->
 
         <div class="text-layer">
-            {item.body}
-            {@|apply module-share-this.block}
+            {.section item}
+                {body}
+                {@|apply module-share-this.block}
+            {.end}
         </div><!-- .episodes-landing-sub -->
 
     </section>
