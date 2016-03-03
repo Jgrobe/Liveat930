@@ -32,6 +32,9 @@ function printArtists(filters,artists, $container) {
 
             console.log('COMPARING: filter('+filters[f]+') >< artist('+artists[a].title+')');
 
+            if(typeof artists[a] === 'undefined') continue;
+            if(typeof artists[a].title === 'undefined') continue;
+
             if( slugify( filters[f] ) == slugify( artists[a].title ) ) {
 
                 if(artistCounter > 0) {
