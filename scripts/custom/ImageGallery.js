@@ -21,7 +21,7 @@ var ImageGallery = function($container, options) {
         labelCurrentSelector: '.gallery-current',
         labelTotalSelector: '.gallery-total',
         activeClass : 'current-item',
-        currentIndex : 0,
+        currentIndex : 0
     }, options);
 
     IG.$object = {
@@ -57,25 +57,18 @@ var ImageGallery = function($container, options) {
     //};// setup()
 
     IG.leftright = function(direction) {
+        switch(direction) {
+            case 'next' :
+                IG.options.currentIndex++;
+                if(IG.options.currentIndex >= IG.options.images.length) IG.options.currentIndex = 0;
+                break;
+            case 'prev' :
+                IG.options.currentIndex--;
+                if(IG.options.currentIndex < 0) IG.options.currentIndex = IG.options.images.length -1;
+                break;
+        }// endswitch
 
-        IG.$object.image.each(function(i){
-
-            var $thisImg = jQuery(this);
-
-            switch(direction) {
-                case 'next' :
-                    IG.options.currentIndex++;
-                    if(IG.options.currentIndex >= IG.options.images.length) IG.options.currentIndex = 0;
-                    break;
-                case 'prev' :
-                    IG.options.currentIndex--;
-                    if(IG.options.currentIndex < 0) IG.options.currentIndex = IG.options.images.length -1;
-                    break;
-            }// endswitch
-
-            IG.switchImage($thisImg, IG.options.currentIndex);
-
-        });
+        IG.switchImage(IG.options.currentIndex);
     };
 
     //IG.arrowClick = function(e) {
@@ -92,20 +85,19 @@ var ImageGallery = function($container, options) {
     //    IG.switchImage(IG.options.currentIndex);
     //};// arrowClick()
 
-    IG.switchImage = function($img, index, functions) {
+    IG.switchImage = function(index, functions) {
         if(typeof functions === 'undefined') functions = {};
         ////console.log('switchImage functions:', functions);
-        //IG.options.currentIndex = index;
+        IG.options.currentIndex = index;
 
         var tl = new TimelineMax();
-        tl.to($img, IG.options.duration, {autoAlpha:0});
+        tl.to(IG.$object.image, IG.options.duration, {autoAlpha:0});
         tl.add(function() {
-            console.log('IG.options.images[index].src', IG.options.images[index].src);
-            $img.css({
+            IG.$object.image.css({
                 'background-image' : 'url(' + IG.options.images[index].src + ')'
             });
         });
-        tl.to($img, IG.options.duration, {autoAlpha:1});
+        tl.to(IG.$object.image, IG.options.duration, {autoAlpha:1});
         tl.add(function() {
             ////console.log('switchImage complete!', functions);
             if(_.isFunction(functions.onComplete)) functions.onComplete();
