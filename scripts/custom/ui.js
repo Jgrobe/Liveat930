@@ -152,8 +152,10 @@ function windowloaded() {
     SQSP.$objects.searchFields = jQuery('.search-field');
     console.log('SQSP.$objects.searchFields', SQSP.$objects.searchFields);
     SQSP.$objects.searchFields.on('focus', function(e) {
+        console.log('--- field has focus');
         SQSP.vars.focusOnSearch = true;
     }).on('focusout', function(e) {
+        console.log('--- field has lost focus');
         SQSP.vars.focusOnSearch = false;
     });
     SQSP.$objects.window.on('keyup', function(e) {
