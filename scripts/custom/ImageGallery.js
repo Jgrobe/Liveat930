@@ -58,19 +58,27 @@ var ImageGallery = function($container, options) {
     //    return true;
     //};// setup()
 
-    IG.leftright = function(direction) {
-        switch(direction) {
-            case 'next' :
-                IG.options.currentIndex++;
-                if(IG.options.currentIndex >= IG.options.images.length) IG.options.currentIndex = 0;
-                break;
-            case 'prev' :
-                IG.options.currentIndex--;
-                if(IG.options.currentIndex < 0) IG.options.currentIndex = IG.options.images.length -1;
-                break;
-        }// endswitch
+    IG.leftright = function(direction, functions) {
+        if(typeof functions === 'undefined') functions = {};
 
-        IG.switchImage(IG.options.currentIndex);
+        IG.$object.image.each(function(){
+
+            var $thisImg = jQuery(this);
+
+            switch(direction) {
+                case 'next' :
+                    IG.options.currentIndex++;
+                    if(IG.options.currentIndex >= IG.options.images.length) IG.options.currentIndex = 0;
+                    break;
+                case 'prev' :
+                    IG.options.currentIndex--;
+                    if(IG.options.currentIndex < 0) IG.options.currentIndex = IG.options.images.length -1;
+                    break;
+            }// endswitch
+
+            IG.switchImage($thisImg, IG.options.currentIndex, functions);
+
+        });// endeach()
     };
 
     //IG.arrowClick = function(e) {
@@ -87,19 +95,20 @@ var ImageGallery = function($container, options) {
     //    IG.switchImage(IG.options.currentIndex);
     //};// arrowClick()
 
-    IG.switchImage = function(index, functions) {
+    IG.switchImage = function($img, index, functions) {
+        if(typeof $img === 'undefined' || $img === false) $img = IG.$object.image;
         if(typeof functions === 'undefined') functions = {};
         ////console.log('switchImage functions:', functions);
         IG.options.currentIndex = index;
 
         var tl = new TimelineMax();
-        tl.to(IG.$object.image, IG.options.duration, {autoAlpha:0});
+        tl.to($img, IG.options.duration, {autoAlpha:0});
         tl.add(function() {
-            IG.$object.image.css({
+            $img.css({
                 'background-image' : 'url(' + IG.options.images[index].src + ')'
             });
         });
-        tl.to(IG.$object.image, IG.options.duration, {autoAlpha:1});
+        tl.to($img, IG.options.duration, {autoAlpha:1});
         tl.add(function() {
             ////console.log('switchImage complete!', functions);
             if(_.isFunction(functions.onComplete)) functions.onComplete();
@@ -120,12 +129,19 @@ var ImageGallery = function($container, options) {
         if(typeof functions === 'undefined') functions = {};
 
         preloadImages(IG.options.images);
-        IG.switchImage(IG.options.currentIndex, {
+        IG.options.currentIndex--;
+        IG.leftright('next', {
             onComplete: function() {
                 ////console.log('gallery switchImage complete:');
                 if(_.isFunction(functions.onComplete)) functions.onComplete();
             }
         });
+        //IG.switchImage(false, IG.options.currentIndex, {
+        //    onComplete: function() {
+        //        ////console.log('gallery switchImage complete:');
+        //        if(_.isFunction(functions.onComplete)) functions.onComplete();
+        //    }
+        //});
 
         IG.$object.labelTotal.html(IG.options.images.length);
 
