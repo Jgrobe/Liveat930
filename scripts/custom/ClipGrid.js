@@ -39,6 +39,7 @@ var ClipGrid = function($container, options) {
         items : $container.find(CG.options.itemSelector),
         currentItems : ( CG.options.filter ? $container.find(CG.options.filter) : $container.find(CG.options.itemSelector) )
     };
+    CG.options.payload = parseInt(CG.options.payload);
     CG.currentCount = CG.options.payload;
 
     CG.setSizes = function($items) {

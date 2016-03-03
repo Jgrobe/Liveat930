@@ -33,6 +33,7 @@ SQSP.functions.initPage = function() {
         var $thisGrid = jQuery(this);
         SQSP.instances.clipGrids.push(new ClipGrid($thisGrid, {
             sizes : ['small'],
+            payload: $thisGrid.data('payload'),
             loadMoreCTA: $thisGrid.parents('section').find('.load-more-cta')
         }));
     });
