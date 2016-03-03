@@ -53,7 +53,9 @@ var ClipGrid = function($container, options) {
             var $thisItem = jQuery(this);
             console.log('applying item size', $thisItem,sizeCounter, CG.options.sizes[sizeCounter] );
 
-            var itemSize = CG.options.sizes[ ( CG.options.distributeSizes ? CG.options.distributeSizes[sizeCounter] : sizeCounter ) ];
+            var sizeSelector = ( CG.options.distributeSizes ? CG.options.distributeSizes[sizeCounter] : sizeCounter );
+            console.log('sizeSelector', sizeSelector);
+            var itemSize = CG.options.sizes[ sizeSelector ];
             $thisItem.removeClass(CG.options.sizes.join(' '))
             $thisItem.addClass( itemSize );
 
