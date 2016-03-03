@@ -16,7 +16,7 @@ SQSP.functions.initPage = function() {
     var $catGrid = jQuery('.related-clips-categories-gallery');
     SQSP.instances.relatedClipsCategoriesGrid = new ClipGrid($catGrid, {
         sizes : ['medium'],
-        payload : $videoGrid.data('payload'),
+        payload : $catGrid.data('payload'),
         //distributeSizes : [1,1,0,0,0]
     });
 
