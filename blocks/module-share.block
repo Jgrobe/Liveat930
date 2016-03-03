@@ -11,11 +11,15 @@
     </li>
 </ul>
 <script>
+
+    var $likecount = jQuery('.like-count'), $likeicon = jQuery('.like-icon');
     jQuery(window).load(function(){
-        var $likecount = jQuery('.like-count');
-        $likecount.each(function(){
-            console.log('---- parseint ---',jQuery(this).html(), parseInt(jQuery(this).html()));
-            jQuery(this).html(parseInt(jQuery(this).html()));
-        });
+        $likecount.each(function(){ intcount(jQuery(this)); });
     });
+    $likeicon.click(function() {
+        $likecount.each(function(){ intcount(jQuery(this)); });
+    });
+    function intcount($item){
+        $item.html(parseInt($item.html()));
+    }
 </script>
