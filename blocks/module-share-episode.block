@@ -1,5 +1,6 @@
 <div class="sharebox">
 
+    {@|share-button}
     <ul>
         <li>
             {@|like-button}
@@ -9,7 +10,6 @@
         </li>
         <li>
             <!--<a href="#" class="share"></a>-->
-            {@|share-button}
         </li>
     </ul>
     <span class="label">Share this Episode</span>
