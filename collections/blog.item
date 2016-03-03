@@ -9,5 +9,6 @@
 <section class="post-content">
     {item.body}
 </section>
-
-{item|apply module-sharebox.block}
+{.section item}
+    {@|apply module-sharebox.block}
+{.end}
