@@ -149,7 +149,8 @@ function windowloaded() {
 
     };// search onSuccess()
 
-    SQSP.$objects.searchFields  = jQuery('.search-field');
+    SQSP.$objects.searchFields = jQuery('.search-field');
+    console.log('SQSP.$objects.searchFields', SQSP.$objects.searchFields);
     SQSP.$objects.searchFields.on('focus', function(e) {
         SQSP.vars.focusOnSearch = true;
     }).on('focusout', function(e) {
@@ -253,10 +254,10 @@ function toggleSearchOverlay() {
         $dummy.remove();
 
         tl.to($navVideo,duration, {autoAlpha:0, onComplete:function(){ $navVideo.get(0).pause(); }});
-        tl.to($navColumns,duration, {height:0});
+        tl.to($navColumns,duration, {height:0, ease:Strong.easeInOut});
         tl.to($shareCol,duration, {autoAlpha:0}, '-='+(duration));
-        tl.to($navTable,duration, {height:vh+'vh'}, '-='+(duration));
-        tl.to($searchtable,duration, {height:(100-vh)+'vh'}, '-='+(duration));
+        tl.to($navTable,duration, {height:vh+'vh', ease:Strong.easeInOut}, '-='+(duration));
+        tl.to($searchtable,duration, {height:(100-vh)+'vh', ease:Strong.easeInOut}, '-='+(duration));
     } else {
         //close search
         SQSP.vars.isSearchOverlayOpen = false;
@@ -268,10 +269,10 @@ function toggleSearchOverlay() {
         $navVideo.get(0).play();
 
         tl.to($navVideo,duration, {autoAlpha:1, clearProps:'autoAlpha'});
-        tl.to($navColumns,duration, {height:navColumnsHeight, clearProps:'height'});
+        tl.to($navColumns,duration, {height:navColumnsHeight, ease:Strong.easeInOut, clearProps:'height'});
         tl.to($shareCol,duration, {autoAlpha:1, clearProps:'autoAlpha'}, '-='+(duration));
-        tl.to($navTable,duration, {height:'100vh', clearProps:'height'}, '-='+(duration));
-        tl.to($searchtable,duration, {height:0}, '-='+(duration));
+        tl.to($navTable,duration, {height:'100vh', ease:Strong.easeInOut, clearProps:'height'}, '-='+(duration));
+        tl.to($searchtable,duration, {height:0, ease:Strong.easeInOut}, '-='+(duration));
 
     }// endif
 }// toggleSearchOverlay
