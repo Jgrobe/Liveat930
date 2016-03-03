@@ -73,7 +73,7 @@ var ImageGallery = function($container, options) {
 
             IG.switchImage(IG.options.currentIndex);
 
-        };
+        });
     };
 
     //IG.arrowClick = function(e) {
