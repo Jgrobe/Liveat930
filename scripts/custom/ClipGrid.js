@@ -100,29 +100,53 @@ var ClipGrid = function($container, options) {
         // do actual filtering
         filterTL.add(function() {
 
-            CG.$object.currentItems = CG.$object.container.find( filter+':lt('+ CG.currentCount +')' );
-
-            if( _.isFunction(CG.options.filterIn) ) TweenMax.set( CG.$object.currentItems, {autoAlpha: 0} );
-            CG.setSizes( CG.$object.currentItems );
-            CG.$object.container.isotope({
-                filter: CG.currentFilter
-            });
-
-            var inTL = new TimelineMax();
-            // tween grid height
-            var newGridHeight = CG.$object.container.outerHeight();
-            inTL.fromTo(CG.$object.container, CG.options.duration, {height:oldGridHeight}, {height:newGridHeight, ease:Expo.easeInOut});
-
-            if( _.isFunction(CG.options.filterIn) ) {
-                // animate items in
-                console.log('animate items in');
-                inTL.add( CG.options.filterIn(), '-='+(CG.options.duration *.5) );
-            } else {
-                CG.isFilterInProgress = false;
-            }// endif
+            CG.addItems();
+            //CG.$object.currentItems = CG.$object.container.find( filter+':lt('+ CG.currentCount +')' );
+            //
+            //if( _.isFunction(CG.options.filterIn) ) TweenMax.set( CG.$object.currentItems, {autoAlpha: 0} );
+            //CG.setSizes( CG.$object.currentItems );
+            //CG.$object.container.isotope({
+            //    filter: CG.currentFilter
+            //});
+            //
+            //var inTL = new TimelineMax();
+            //// tween grid height
+            //var newGridHeight = CG.$object.container.outerHeight();
+            //inTL.fromTo(CG.$object.container, CG.options.duration, {height:oldGridHeight}, {height:newGridHeight, ease:Expo.easeInOut});
+            //
+            //if( _.isFunction(CG.options.filterIn) ) {
+            //    // animate items in
+            //    console.log('animate items in');
+            //    inTL.add( CG.options.filterIn(), '-='+(CG.options.duration *.5) );
+            //} else {
+            //    CG.isFilterInProgress = false;
+            //}// endif
         });
 
     };// filter()
+
+    CG.addItems = function() {
+        CG.$object.currentItems = CG.$object.container.find( filter+':lt('+ CG.currentCount +')' );
+
+        //if( _.isFunction(CG.options.filterIn) ) TweenMax.set( CG.$object.currentItems, {autoAlpha: 0} );
+        CG.setSizes( CG.$object.currentItems );
+        CG.$object.container.isotope({
+            filter: CG.currentFilter
+        });
+
+        var inTL = new TimelineMax();
+        // tween grid height
+        var newGridHeight = CG.$object.container.outerHeight();
+        inTL.fromTo(CG.$object.container, CG.options.duration, {height:oldGridHeight}, {height:newGridHeight, ease:Expo.easeInOut});
+
+        if( _.isFunction(CG.options.filterIn) ) {
+            // animate items in
+            console.log('animate items in');
+            inTL.add( CG.options.filterIn(), '-='+(CG.options.duration *.5) );
+        } else {
+            CG.isFilterInProgress = false;
+        }// endif
+    }
 
     CG.layout = function() {
 
@@ -155,8 +179,8 @@ var ClipGrid = function($container, options) {
                 e.preventDefault();
 
                 CG.currentCount += CG.options.payload;
-                CG.filter(CG.currentFilter);
-                updateCTA();
+                CG.addItems(CG.currentFilter);
+                CG.updateCTA();
 
             });
         }// endif
