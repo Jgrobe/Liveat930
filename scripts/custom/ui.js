@@ -120,6 +120,8 @@ function windowloaded() {
     SQSP.instances.SEARCH.options.onSuccess = function(query, ajaxHTML, formattedResults) {
         console.log('search done: ', formattedResults);
 
+        SQSP.$objects.searchResultsContainer.find('.result:not(.placeholder)').remove();
+
         jQuery('#num_results').html(formattedResults.length);
         jQuery('#search_query').html(query);
 
@@ -172,6 +174,11 @@ function windowloaded() {
 
 
     SQSP.$objects.burger.click(function() {
+
+        if(SQSP.vars.isSearchOverlayOpen) {
+            toggleSearchOverlay();
+            return false;
+        }
         toggleNavOverlay();
     });// click()
 
@@ -206,31 +213,64 @@ function toggleNavOverlay() {
 function toggleSearchOverlay() {
     //console.log('On search submit triggered()');
 
+    if(SQSP.vars.isSearchOverlayTransitionActive) return false;
+    SQSP.vars.isSearchOverlayTransitionActive = true;
+
+    var $navColumns = SQSP.$objects.stickyHeader.find('.nav-columns'),
+        $shareCol = SQSP.$objects.stickyHeader.find('.share-col'),
+        $navTable = SQSP.$objects.stickyHeader.find('.nav-table'),
+        $searchtable = SQSP.$objects.stickyHeader.find('.search-table');
+
     var $burger = SQSP.$objects.stickyHeader.find('.burger');
     var duration = .4;
-    var height = 'calc(' + $burger.outerHeight() + 'px + ' + $burger.css('top') + ' + ' + $burger.css('top') +')';
-    //console.log('calc height', height);
-    var $dummy = jQuery('<div id="dummy"/>');
-    $dummy.css({
-        positon: 'fixed',
-        height: height
-    });
-    jQuery('body').append($dummy);
-    var dummyHeight = $dummy.height();
-    //console.log('actual height', dummyHeight);
-    var vh = dummyHeight / jQuery(window).height() * 100;
-    //console.log('vh height', vh);
-    $dummy.remove();
 
-    var tl = new TimelineLite();
-    tl.to(SQSP.$objects.stickyHeader.find('.nav-columns'),duration, {height:0});
-    tl.to(SQSP.$objects.stickyHeader.find('.share-col'),duration, {autoAlpha:0}, '-='+(duration));
-    tl.to(SQSP.$objects.stickyHeader.find('.nav-table'),duration, {height:vh+'vh'}, '-='+(duration));
-    tl.to(SQSP.$objects.stickyHeader.find('.search-table'),duration, {height:(100-vh)+'vh'}, '-='+(duration));
-}
+    $searchtable.toggleClass('search-on');
+
+    var tl = new TimelineLite({onComplete:function() {
+        SQSP.vars.isSearchOverlayTransitionActive = false;
+    }});
+
+    if($searchtable.hasClass('search-on')) {
+        // open search
+        SQSP.vars.isSearchOverlayOpen = true;
+
+
+        var height = 'calc(' + $burger.outerHeight() + 'px + ' + $burger.css('top') + ' + ' + $burger.css('top') +')';
+        //console.log('calc height', height);
+        var $dummy = jQuery('<div id="dummy"/>');
+        $dummy.css({
+            positon: 'fixed',
+            height: height
+        });
+        jQuery('body').append($dummy);
+        var dummyHeight = $dummy.height();
+        //console.log('actual height', dummyHeight);
+        var vh = dummyHeight / jQuery(window).height() * 100;
+        //console.log('vh height', vh);
+        $dummy.remove();
+
+        tl.to($navColumns,duration, {height:0});
+        tl.to($shareCol,duration, {autoAlpha:0}, '-='+(duration));
+        tl.to($navTable,duration, {height:vh+'vh'}, '-='+(duration));
+        tl.to($searchtable,duration, {height:(100-vh)+'vh'}, '-='+(duration));
+    } else {
+        //close search
+        SQSP.vars.isSearchOverlayOpen = false;
+
+        $navColumns.height('');
+        var navColumnsHeight = $navColumns.height();
+        $navColumns.height(0);
+
+        tl.to($navColumns,duration, {height:navColumnsHeight});
+        tl.to($shareCol,duration, {autoAlpha:1}, '-='+(duration));
+        tl.to($navTable,duration, {height:100+'vh'}, '-='+(duration));
+        tl.to($searchtable,duration, {height:0}, '-='+(duration));
+
+    }// endif
+}// toggleSearchOverlay
 
 function handleStickyBurger(e) {
-        //console.log(e);
+    //console.log(e);
     SQSP.vars.OldBurgerTimeout = SQSP.vars.newBurgerTimeout;
 
     if(is_mobile()) {
@@ -240,29 +280,19 @@ function handleStickyBurger(e) {
         return false;
     }
     if(e.posY.current > e.target.options.minY.value) {
-    //    // enable burger
+        // enable burger
         if(e.target.$object.container.hasClass('notactive')) {
             e.target.$object.container.removeClass('notactive');
             toggleBurger(true);
-        }
+        }// endif
     } else {
-    //    // disable burger
+        // disable burger
         if(SQSP.$objects.stickyHeader.hasClass('on')) return false;
         if(!e.target.$object.container.hasClass('notactive')) {
             e.target.$object.container.addClass('notactive');
             toggleBurger(false);
-        }
+        }// endif
     }// endif
-
-    //SQSP.vars.newBurgerTimeout = setTimeout(function(){
-    //    if(typeof SQSP.vars.OldBurgerTimeout !== 'undefined') {
-    //        console.log('must cancel previous burger timeout', SQSP.vars.OldBurgerTimeout);
-    //        clearTimeout(SQSP.vars.OldBurgerTimeout);
-    //        TweenMax.killTweensOf(SQSP.$objects.burger);
-    //        TweenMax.killTweensOf(SQSP.$objects.burger.find('.lines'));
-    //    }
-    //    toggleBurger(!e.target.$object.container.hasClass('notactive'));//(e.posY.current > e.target.options.minY.value);
-    //}, 300);
 
 }// customOperation
 
