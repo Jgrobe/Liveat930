@@ -139,7 +139,9 @@ console.log('>>>>>>> items to filter', CG.currentCount, CG.$object.currentItems)
             filter: CG.currentFilter
         });
 
-        var inTL = new TimelineMax();
+        var inTL = new TimelineMax({onComplete:function() {
+            CG.updateCTA();
+        }});
         // tween grid height
         var newGridHeight = CG.$object.container.outerHeight();
         inTL.fromTo(CG.$object.container, CG.options.duration, {height:oldGridHeight}, {height:newGridHeight, ease:Expo.easeInOut});
@@ -160,6 +162,7 @@ console.log('>>>>>>> items to filter', CG.currentCount, CG.$object.currentItems)
     };// rearrange
 
     CG.updateCTA = function() {
+        if(!CG.options.loadMoreCTA) return false;
 
         if(CG.currentCount >= CG.$object.currentItemsAll.length) {
             TweenMax.to(CG.options.loadMoreCTA, CG.options.duration, {autoAlpha:0});
@@ -185,7 +188,6 @@ console.log('>>>>>>> items to filter', CG.currentCount, CG.$object.currentItems)
 
                 CG.currentCount += CG.options.payload;
                 CG.addItems(CG.currentFilter);
-                CG.updateCTA();
 
             });
         }// endif
