@@ -95,6 +95,12 @@ function populate_namespaces() {
 //    });
 //}
 
+function clearSearchField($field) {
+    var $search = $field.parents('.search');
+    $search.find('.search-field').val('');
+    $search.toggleClass('on');
+}
+
 function windowloaded() {
 
     // FADE IN BODY ON PAGE LOAD
@@ -110,9 +116,11 @@ function windowloaded() {
         jQuery(this).parents('.search').toggleClass('on');
     });// search click
     SQSP.$objects.staticHeader.find('.clear-icon').click(function() {
-        var $search = jQuery(this).parents('.search');
-        $search.find('.search-field').val('');
-        $search.toggleClass('on');
+        clearSearchField(jQuery(this));
+    });// search click
+    SQSP.$objects.stickyHeader.find('.clear-icon').click(function() {
+        clearSearchField(jQuery(this));
+        if(SQSP.vars.isSearchOverlayOpen) toggleSearchOverlay();
     });// search click
 
     // SEARCH FIELD FUNCTIONALITY
