@@ -154,7 +154,7 @@
 
             <squarespace:query collection="clips" category="{customContent.episode-clips-categories}">
 
-                <div class="video-gallery-videos related-clips-categories-gallery top-spaced">
+                <div class="video-gallery-videos related-clips-categories-gallery top-spaced" data-payload="4">
                     <div class="gutter-sizer"></div>
 
                     {.repeated section items}
