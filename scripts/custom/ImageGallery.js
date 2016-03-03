@@ -57,18 +57,23 @@ var ImageGallery = function($container, options) {
     //};// setup()
 
     IG.leftright = function(direction) {
-        switch(direction) {
-            case 'next' :
-                IG.options.currentIndex++;
-                if(IG.options.currentIndex >= IG.options.images.length) IG.options.currentIndex = 0;
-                break;
-            case 'prev' :
-                IG.options.currentIndex--;
-                if(IG.options.currentIndex < 0) IG.options.currentIndex = IG.options.images.length -1;
-                break;
-        }// endswitch
 
-        IG.switchImage(IG.options.currentIndex);
+        IG.$object.image.each(function(i){
+
+            switch(direction) {
+                case 'next' :
+                    IG.options.currentIndex++;
+                    if(IG.options.currentIndex >= IG.options.images.length) IG.options.currentIndex = 0;
+                    break;
+                case 'prev' :
+                    IG.options.currentIndex--;
+                    if(IG.options.currentIndex < 0) IG.options.currentIndex = IG.options.images.length -1;
+                    break;
+            }// endswitch
+
+            IG.switchImage(IG.options.currentIndex);
+
+        };
     };
 
     //IG.arrowClick = function(e) {
@@ -91,21 +96,16 @@ var ImageGallery = function($container, options) {
         IG.options.currentIndex = index;
 
         var tl = new TimelineMax();
-
-        IG.$object.image.each(function(){
-            var $thisImage = jQuery(this);
-
-            tl.to($thisImage, IG.options.duration, {autoAlpha:0});
-            tl.add(function() {
-                $thisImage.css({
-                    'background-image' : 'url(' + IG.options.images[index].src + ')'
-                });
+        tl.to(IG.$object.image, IG.options.duration, {autoAlpha:0});
+        tl.add(function() {
+            IG.$object.image.css({
+                'background-image' : 'url(' + IG.options.images[index].src + ')'
             });
-            tl.to($thisImage, IG.options.duration, {autoAlpha:1});
-            tl.add(function() {
-                ////console.log('switchImage complete!', functions);
-                if(_.isFunction(functions.onComplete)) functions.onComplete();
-            });
+        });
+        tl.to(IG.$object.image, IG.options.duration, {autoAlpha:1});
+        tl.add(function() {
+            ////console.log('switchImage complete!', functions);
+            if(_.isFunction(functions.onComplete)) functions.onComplete();
         });
 
         tl.add( update_imageCounter(), 0 );
