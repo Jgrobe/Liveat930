@@ -13,4 +13,9 @@
         </li>
     </ul>
     <span class="label">Share this Episode</span>
+
+    <script>
+        var $likecount = jQuery('.like-count');
+        $likecount.html(parseInt($likecount.html()));
+    </script>
 </div>
