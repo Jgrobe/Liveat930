@@ -108,6 +108,7 @@ var ImageGallery = function($container, options) {
         tl.add( update_imageCounter(), 0 );
         tl.add( update_imageTitle(), 0 );
         tl.add( update_imageCopy(), 0 );
+        tl.add( update_cta(), 0 );
     };// switchImage()
 
 
