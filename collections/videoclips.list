@@ -25,124 +25,20 @@
 
     <section class="video-gallery">
         <div class="rectangle"></div>
-        <div class="video-gallery-videos">
+        <div class="video-gallery-videos" data-payload="3">
 
             <div class="gutter-sizer"></div>
 
             {.repeated section items}
                 {@|apply module-clip-item.block}
             {.end}<!-- .end repeat clips -->
-            <!--<div class="video small">-->
-                <!--<div class="image" style="background-image:url('assets/images/thumb-video2.jpg');">-->
-                    <!--<?php print_cta(array(-->
-                <!--'icon' => 'images/eye',-->
-                    <!--'class' => array('negative', 'play')-->
-                    <!--)); ?>-->
-                <!--</div>-->
-                <!--<div class="flex-cols">-->
-                    <!--<div class="title">St. Paul and the broken bones</div>-->
-                <!--</div>-->
-            <!--</div>-->
-            <!--<div class="video large">-->
-                <!--<div class="image" style="background-image:url('assets/images/video-clips-thumb-big.jpg');">-->
-                    <!--<?php print_cta(array(-->
-                <!--'icon' => 'images/eye',-->
-                    <!--'class' => array('negative', 'play')-->
-                    <!--)); ?>-->
-                <!--</div>-->
-                <!--<div class="flex-cols">-->
-                    <!--<div class="title">Shakey Graves</div>-->
-                <!--</div>-->
-            <!--</div>-->
-            <!--<div class="video small">-->
-                <!--<div class="image" style="background-image:url('assets/images/thumb-video3.jpg');">-->
-                    <!--<?php print_cta(array(-->
-                <!--'icon' => 'images/eye',-->
-                    <!--'class' => array('negative', 'play')-->
-                    <!--)); ?>-->
-                <!--</div>-->
-                <!--<div class="flex-cols">-->
-                    <!--<div class="title">St. Paul and the broken bones</div>-->
-                <!--</div>-->
-            <!--</div>-->
-            <!--<div class="video small">-->
-                <!--<div class="image" style="background-image:url('assets/images/thumb-video4.jpg');">-->
-                    <!--<?php print_cta(array(-->
-                <!--'icon' => 'images/eye',-->
-                    <!--'class' => array('negative', 'play')-->
-                    <!--)); ?>-->
-                <!--</div>-->
-                <!--<div class="flex-cols">-->
-                    <!--<div class="title">St. Paul and the broken bones</div>-->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</div>-->
-        <!--<div class="video-gallery-videos righthand">-->
-            <!--<div class="video large">-->
-                <!--<div class="image" style="background-image:url('assets/images/video-clips-thumb-big.jpg');">-->
-                    <!--<?php print_cta(array(-->
-                <!--'icon' => 'images/eye',-->
-                    <!--'class' => array('negative', 'play')-->
-                    <!--)); ?>-->
-                <!--</div>-->
-                <!--<div class="flex-cols">-->
-                    <!--<div class="title">Shakey Graves</div>-->
-                <!--</div>-->
-            <!--</div>-->
-            <!--<div class="video small">-->
-                <!--<div class="image" style="background-image:url('assets/images/thumb-video1.jpg');">-->
-                    <!--<?php print_cta(array(-->
-                <!--'icon' => 'images/eye',-->
-                    <!--'class' => array('negative', 'play')-->
-                    <!--)); ?>-->
-                <!--</div>-->
-                <!--<div class="flex-cols">-->
-                    <!--<div class="title">Behind the scenes with Gogol Bordello</div>-->
-                <!--</div>-->
-            <!--</div>-->
-            <!--<div class="video small">-->
-                <!--<div class="image" style="background-image:url('assets/images/thumb-video2.jpg');">-->
-                    <!--<?php print_cta(array(-->
-                <!--'icon' => 'images/eye',-->
-                    <!--'class' => array('negative', 'play')-->
-                    <!--)); ?>-->
-                <!--</div>-->
-                <!--<div class="flex-cols">-->
-                    <!--<div class="title">St. Paul and the broken bones</div>-->
-                <!--</div>-->
-            <!--</div>-->
-            <!--<div class="video small">-->
-                <!--<div class="image" style="background-image:url('assets/images/thumb-video3.jpg');">-->
-                    <!--<?php print_cta(array(-->
-                <!--'icon' => 'images/eye',-->
-                    <!--'class' => array('negative', 'play')-->
-                    <!--)); ?>-->
-                <!--</div>-->
-                <!--<div class="flex-cols">-->
-                    <!--<div class="title">St. Paul and the broken bones</div>-->
-                <!--</div>-->
-            <!--</div>-->
-            <!--<div class="video small">-->
-                <!--<div class="image" style="background-image:url('assets/images/thumb-video4.jpg');">-->
-                    <!--<?php print_cta(array(-->
-                <!--'icon' => 'images/eye',-->
-                    <!--'class' => array('negative', 'play')-->
-                    <!--)); ?>-->
-                <!--</div>-->
-                <!--<div class="flex-cols">-->
-                    <!--<div class="title">St. Paul and the broken bones</div>-->
-                <!--</div>-->
-            <!--</div>-->
+
         </div><!-- .video-gallery-videos -->
+
         <div class="centered">
-            <div class="cta-dummy" data-label="Load more clips" data-icon="icon-load" data-class="load-clips upsized-icon">{@|apply svg-icon-load.block}</div>
-            <!--php print_cta(array(
-                'label' => 'Load more clips',
-            'icon' => 'images/icon-load',
-            'class' => array('load-clips', 'upsized-icon')
-            )); -->
-            <!--<a href="" class="cta load-more icon-refresh">load more clips</a>-->
-        </div>
+            <div class="cta-dummy" data-label="Load more clips" data-icon="icon-load" data-class="load-clips upsized-icon load-more-cta">{@|apply svg-icon-load.block}</div>
+        </div><!-- .centered -->
+
     </section><!-- .video-gallery -->
 </div><!-- .site-content -->
 <squarespace:script src="custom/page_clips.js"/>

@@ -2,11 +2,13 @@ SQSP.functions.initPage = function() {
 
     console.log('init clips overview page');
 
-    SQSP.instances.videoGrid = new ClipGrid(jQuery('.video-gallery-videos'), {
+    var $clipGrid = jQuery('.video-gallery-videos');
+    SQSP.instances.videoGrid = new ClipGrid($clipGrid, {
         itemSelector : '.video',
         //filter : '.video',
         sizes : ['small', 'large'],
         distributeSizes : [0,0,1,0,0,1,0,0,0,0],
+        loadMoreCTA: $clipGrid.parents('section').find('.load-more-cta'),
         onInit:function() {
             console.log('Grid initialized');
         }
