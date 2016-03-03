@@ -61,7 +61,7 @@
                     <h2 class="gallery-title">Leon Bridges</h2>
                 </div>
                 <div class="gallery-copy"></div>
-                <div class="cta-dummy" data-label="Visit website" data-icon="eye">{@|apply svg-icon-eye.block}</div>
+                <div class="cta-dummy" data-label="Visit website" data-icon="eye" data-attributes="target=_blank">{@|apply svg-icon-eye.block}</div>
                 <!--php print_cta(array(
                         'label' => 'Visit website',
                 'icon' => 'images/eye'
