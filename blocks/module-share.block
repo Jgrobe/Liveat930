@@ -17,7 +17,10 @@
         $likecount.each(function(){ intcount(jQuery(this)); });
     });
     $likeicon.click(function() {
-        $likecount.each(function(){ intcount(jQuery(this)); });
+        console.log('------------------ liked');
+        setTimeout(function(){
+            $likecount.each(function(){ intcount(jQuery(this)); });
+        }, 10);
     });
     function intcount($item){
         $item.html(parseInt($item.html()));
