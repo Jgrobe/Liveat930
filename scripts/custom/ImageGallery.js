@@ -100,6 +100,7 @@ var ImageGallery = function($container, options) {
         var tl = new TimelineMax();
         tl.to($img, IG.options.duration, {autoAlpha:0});
         tl.add(function() {
+            console.log('IG.options.images[index].src', IG.options.images[index].src);
             $img.css({
                 'background-image' : 'url(' + IG.options.images[index].src + ')'
             });
