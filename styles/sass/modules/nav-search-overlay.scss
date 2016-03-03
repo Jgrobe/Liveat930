@@ -13,7 +13,7 @@ $rightColMargin: 10vw;
 
   .video-container {
     @extend .fill-parent;
-    @include texturizer();
+    //@include texturizer();
   }
 
   .stagger-item { @include autoAlpha(0);}

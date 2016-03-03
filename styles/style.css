@@ -1843,16 +1843,6 @@ input {
   overflow: hidden;
   visibility: hidden;
   opacity: 0; }
-  .nav-overlay .video-container:after {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5) url("assets/images/textures/halftone.png");
-    opacity: .4; }
   .nav-overlay .stagger-item {
     visibility: hidden;
     opacity: 0; }
