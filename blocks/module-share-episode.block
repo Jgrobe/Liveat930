@@ -15,10 +15,12 @@
     <span class="label">Share this Episode</span>
 
     <script>
-        var $likecount = jQuery('.like-count');
-        $likecount.each(function(){
-            console.log(jQuery(this).html(), parseInt(jQuery(this).html()));
-            jQuery(this).html(parseInt(jQuery(this).html()));
+        jQuery(window).load(function(){
+            var $likecount = jQuery('.like-count');
+            $likecount.each(function(){
+                console.log('---- parseint ---',jQuery(this).html(), parseInt(jQuery(this).html()));
+                jQuery(this).html(parseInt(jQuery(this).html()));
+            });
         });
     </script>
 </div>
