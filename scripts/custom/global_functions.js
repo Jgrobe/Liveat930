@@ -205,7 +205,7 @@ function get_preload_sources() {
 }
 
 function slugify(input) {
-    console.log('slugify()', input);
+    //console.log('slugify()', input);
     var vowelMap = {
         'Ä':'ae',
         'ä' : 'ae',

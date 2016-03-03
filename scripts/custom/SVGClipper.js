@@ -300,9 +300,9 @@ var SVGClipper = function($container, options) {
                     };
                     //domObjRelativeSize.ratio = domObjRelativeSize.width/domObjRelativeSize.height;
 
-                    //console.log('SC.DOM.container.size', SC.DOM.container.size);
-                    //console.log('SC.SHAPE.originalSize', SC.SHAPE.originalSize);
-                    //console.log('domObjRelativeSize', domObjRelativeSize);
+                    ////console.log('SC.DOM.container.size', SC.DOM.container.size);
+                    ////console.log('SC.SHAPE.originalSize', SC.SHAPE.originalSize);
+                    ////console.log('domObjRelativeSize', domObjRelativeSize);
 
                     var shapeRelativePosition = getSizeTo('contain',domObjRelativeSize, SC.SHAPE.originalSize);
 
@@ -317,7 +317,7 @@ var SVGClipper = function($container, options) {
                             SC.SHAPE.points.css += ', ';
                         }
 
-                        //console.log('calc point x\n',
+                        ////console.log('calc point x\n',
                         //    'point x: '+ e.point.x +'\n',
                         //    'point x ratio: '+ e.point.x*shapeRelativePosition.ratio +'\n',
                         //    'relative container width: '+ domObjRelativeSize.width +'\n',
@@ -351,9 +351,9 @@ var SVGClipper = function($container, options) {
                 },
                 updateMask: function() {
 
-                    console.log('calc scale factor', SC.DOM.container.size, SC.SHAPE.originalSize );
+                    //console.log('calc scale factor', SC.DOM.container.size, SC.SHAPE.originalSize );
                     var pathScale = getSizeTo('contain',SC.DOM.container.size, {width:100, height:100});
-                    console.log('path scale factor', SC.DOM.container.size, pathScale)//, pathTranslateX, pathTranslateY);
+                    //console.log('path scale factor', SC.DOM.container.size, pathScale)//, pathTranslateX, pathTranslateY);
 
                     //var shapeURL = SC.options.assetPath + SC.SHAPE.file;
 
@@ -403,7 +403,7 @@ var SVGClipper = function($container, options) {
 
 
     SC.init = function() {
-        console.log('SVGClipper', SC);
+        //console.log('SVGClipper', SC);
 
         SC.$object.container.css('overflow', 'hidden');
 
@@ -427,7 +427,7 @@ var SVGClipper = function($container, options) {
             height: SC.$object.container.height()
         };
         SC.DOM.container.size.ratio = SC.DOM.container.size.width/SC.DOM.container.size.height;
-        console.log('SC.DOM.container.size', SC.DOM.container.size);
+        //console.log('SC.DOM.container.size', SC.DOM.container.size);
     }// get_sizes()
 
     function get_shape_dimensions() {
@@ -471,7 +471,7 @@ var SVGClipper = function($container, options) {
         SC.$object.inlineClippingMaskElement.attr(SC.SHAPE.ATTRIBUTES);
         SC.$object.container.css(SC.SHAPE.CSS);
 
-        //console.log('MASK VALUES', SC.SHAPE.points);
+        ////console.log('MASK VALUES', SC.SHAPE.points);
 
     }// update_mask()
 

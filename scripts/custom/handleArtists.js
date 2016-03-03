@@ -16,7 +16,7 @@ function loopPostersForArtists() {
         var $thisPoster = jQuery(this);
         var $artistContainer = $thisPoster.find('.ep-lineup');
         var filters = $artistContainer.data('artists').split(',');
-        console.log('filter: ', filters);
+        //console.log('filter: ', filters);
 
         printArtists(filters, _artists, $artistContainer);// _artists is declared inline by squarespace:query
     });
@@ -30,7 +30,7 @@ function printArtists(filters,artists, $container) {
         
         for(var a=0; a<artists.length; a++) {
 
-            console.log('COMPARING: filter('+filters[f]+') >< artist('+artists[a].title+')');
+            //console.log('COMPARING: filter('+filters[f]+') >< artist('+artists[a].title+')');
 
             if( slugify( filters[f] ) == slugify( artists[a].title ) ) {
 
