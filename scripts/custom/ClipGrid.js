@@ -24,7 +24,7 @@ var ClipGrid = function($container, options) {
         loadMoreCTA : false,
         filterOut : function() {
             var tl = new TimelineMax({onComplete:function(){console.log('filterOut complete', tl.duration());}});
-            console.log('stagger animate out items : ', CG.$object.currentItems);
+            //console.log('stagger animate out items : ', CG.$object.currentItems);
             tl.staggerTo(CG.$object.currentItems, CG.options.staggerDuration, {autoAlpha:0, onComplete:function(){console.log('item staggered');}}, CG.options.staggerOffset);
             return tl;
         },
@@ -55,11 +55,11 @@ var ClipGrid = function($container, options) {
 
             var sizeSelector = ( CG.options.distributeSizes ? CG.options.distributeSizes[sizeCounter] : sizeCounter );
             var itemSize = CG.options.sizes[ sizeSelector ];
-            console.log('sizeSelector', sizeSelector, 'itemSize', itemSize);
+            //console.log('sizeSelector', sizeSelector, 'itemSize', itemSize);
             $thisItem.addClass( itemSize );
 
             sizeCounter++;
-            console.log(sizeCounter +' >= ' + (CG.options.distributeSizes ? CG.options.distributeSizes.length : CG.options.sizes.length) + '?', ( sizeCounter >= (CG.options.distributeSizes ? CG.options.distributeSizes.length : CG.options.sizes.length) ));
+            //console.log(sizeCounter +' >= ' + (CG.options.distributeSizes ? CG.options.distributeSizes.length : CG.options.sizes.length) + '?', ( sizeCounter >= (CG.options.distributeSizes ? CG.options.distributeSizes.length : CG.options.sizes.length) ));
             if( sizeCounter >= (CG.options.distributeSizes ? CG.options.distributeSizes.length : CG.options.sizes.length) ) sizeCounter = 0;
 
         });// each()
@@ -95,7 +95,7 @@ var ClipGrid = function($container, options) {
 
         // animate items out
         if(_.isFunction(CG.options.filterOut)) {
-            console.log('animate items out');
+            //console.log('animate items out');
             filterTL.add( CG.options.filterOut() );// must fire fn() to return timeline!
         }// endif
 
@@ -131,7 +131,7 @@ var ClipGrid = function($container, options) {
         var oldGridHeight = CG.$object.container.outerHeight();
         CG.$object.currentItemsAll = CG.$object.container.find( filter );
         CG.$object.currentItems = CG.$object.container.find( filter+':lt('+ CG.currentCount +')' );
-console.log('>>>>>>> items to filter', CG.currentCount, CG.$object.currentItems);
+//console.log('>>>>>>> items to filter', CG.currentCount, CG.$object.currentItems);
         //if( _.isFunction(CG.options.filterIn) ) TweenMax.set( CG.$object.currentItems, {autoAlpha: 0} );
         CG.setSizes( CG.$object.currentItems );
 
@@ -148,7 +148,7 @@ console.log('>>>>>>> items to filter', CG.currentCount, CG.$object.currentItems)
 
         if( _.isFunction(CG.options.filterIn) ) {
             // animate items in
-            console.log('animate items in');
+            //console.log('animate items in');
             inTL.add( CG.options.filterIn(), '-='+(CG.options.duration *.5) );
         } else {
             CG.isFilterInProgress = false;
@@ -178,7 +178,7 @@ console.log('>>>>>>> items to filter', CG.currentCount, CG.$object.currentItems)
 
     CG.init = function() {
 
-        console.log('Init ClipGrid', CG);
+        //console.log('Init ClipGrid', CG);
 
         CG.initGrid();
 
