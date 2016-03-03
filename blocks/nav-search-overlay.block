@@ -21,7 +21,7 @@
                         <div class="quick-videos">
                             <div class="video last-episode stagger-item">
                                 <a href="/episodes/2016/2/21/episode-no-2">
-                                    <div class="img tv imgfill" style="background-image:url('assets/images/thumb1.jpg');">
+                                    <div class="img tv imgfill" style="background-image:url();">
                                         <div class="title">
                                             <span>{@|apply svg-icon-play.block}</span>
                                         </div><!-- .title -->
@@ -31,7 +31,7 @@
                             </div><!-- .video.last-episode -->
                             <div class="video teaser stagger-item">
                                 <a href="/episodes/2016/2/24/episode-no-3">
-                                    <div class="img tv imgfill" style="background-image:url('assets/images/thumb1.jpg');">
+                                    <div class="img tv imgfill" style="background-image:url();">
                                         <div class="title">Airs next friday @ 9:30 on WGWN</div>
                                     </div><!-- .img.tv -->
                                     <div class="label">EP.3 Sneak Peek</div>
@@ -44,15 +44,15 @@
 
                 <div class="columns search-columns stagger-item">
                     <div class="col col-left search-col">
-                        {@|apply nav-search-overlay.block}
+                        {@|apply search-field.block}
                     </div><!-- .search-col -->
 
                     <div class="col col-right share-col">
 
                         <div class="social-container">
-                            <a href="" class="square-btn instagram stagger-item">{@|apply svg-social-instagram.block}</a>
-                            <a href="" class="square-btn facebook stagger-item">{@|apply svg-social-facebook.block}</a>
-                            <a href="" class="square-btn twitter stagger-item">{@|apply svg-social-twitter.block}</a>
+                            <a href="https://www.instagram.com/liveat930/" target="_blank" class="square-btn instagram stagger-item">{@|apply svg-social-instagram.block}</a>
+                            <a href="https://www.facebook.com/Liveat930/" target="_blank" class="square-btn facebook stagger-item">{@|apply svg-social-facebook.block}</a>
+                            <a href="https://twitter.com/liveat930" target="_blank" class="square-btn twitter stagger-item">{@|apply svg-social-twitter.block}</a>
                             <div class="label stagger-item">Follow us for updates</div>
                         </div><!-- .social-container -->
 
