@@ -6,12 +6,16 @@ SQSP.functions.initPage = function() {
         console.log('Page Episode loaded');
     });
 
-    SQSP.instances.relatedClipsGrid = new ClipGrid(jQuery('.related-clips-gallery'), {
-        sizes : ['small']
+
+    var $relatedGrid = jQuery('.related-clips-gallery');
+    SQSP.instances.relatedClipsGrid = new ClipGrid($relatedGrid, {
+        sizes : ['small'],
+        loadMoreCTA: $relatedGrid.parents('section').find('.load-more-cta')
     });
 
-    SQSP.instances.relatedClipsCategoriesGrid = new ClipGrid(jQuery('.related-clips-categories-gallery'), {
-        sizes : ['medium'],
+    var $catGrid = jQuery('.related-clips-categories-gallery');
+    SQSP.instances.relatedClipsCategoriesGrid = new ClipGrid($catGrid, {
+        sizes : ['medium']
         //distributeSizes : [1,1,0,0,0]
     });
 
