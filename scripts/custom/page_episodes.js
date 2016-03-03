@@ -2,13 +2,14 @@ SQSP.functions.initPage = function() {
 
     console.log('INIT EPISODES PAGE');
 
-    jQuery('.poster').each(function() {
+    jQuery('.poster').each(function(i) {
         var $thisPoster = jQuery(this);
         var $thismodel =  $thisPoster.find('.model-container');
         new SVGClipper($thismodel, {
             shape: $thismodel.data('shape'),
+            maskID : ('clipshape_'+i),
             onInit:function(Clip){
-                GradientMaps.applyGradientMap(Clip.DOM.container.object, Clip.shapes[Clip.options.shape].gradientMaps.shape);
+                //GradientMaps.applyGradientMap(Clip.DOM.container.object, Clip.shapes[Clip.options.shape].gradientMaps.shape);
             }
         });
     });
