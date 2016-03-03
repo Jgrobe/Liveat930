@@ -3888,6 +3888,7 @@ a.episodes-landing-cta {
       transform: translatex(-50%) translatey(-50%); }
     .sharebox .sqs-simple-like.clicked .like-icon {
       background: black url("assets/images/icon-like.svg") center center no-repeat;
+      background-size: 40%;
       -webkit-animation: none;
       -moz-animation: none;
       -ms-animation: none;
