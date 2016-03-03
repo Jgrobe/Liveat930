@@ -234,7 +234,7 @@ function toggleSearchOverlay() {
         // open search
         SQSP.vars.isSearchOverlayOpen = true;
 
-        var dummyHeight = $burger.outerHeight() + parseFloat( $burger.css('top') ) + parseFloat( $burger.css('top');
+        var dummyHeight = $burger.outerHeight() + parseFloat( $burger.css('top') ) + parseFloat( $burger.css('top') );
         var dummyHeightPct = dummyHeight / jQuery(window).height();
         var dummyHeightVH = ( dummyHeight / dummyHeightPct * 100 ) + 'vw' ;
         console.log('dummy height calc', dummyHeight, dummyHeightPct, dummyHeightVH);
