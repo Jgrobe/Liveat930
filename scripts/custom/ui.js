@@ -69,11 +69,25 @@ function populate_namespaces() {
     // individual page init function may add to namespaces -> must fire before window load & resize
     if(_.isFunction(SQSP.functions.initPage)) SQSP.functions.initPage();
 
-    var $fixed = jQuery('.landing-bg');
-    jQuery(window).scroll(function() {
-        //if(elem_exists($fixed)) {
-        //    TweenMax.set($fixed, {top:jQuery(window).scrollTop()});
-        //}
+    SQSP.$objects.landingBG = jQuery('.landing-bg');
+    SQSP.$objects.landingVideo = SQSP.$objects.landingBG.find('video').get(0);
+    SQSP.$objects.landingVideo.isPlaying = true;
+
+    jQuery(window).scroll(function(e) {
+        console.log('e', e, 'scrolltop', jQuery(window).scrollTop());
+
+        console.log('video time', SQSP.$objects.landingVideo.currentTime);
+
+        if(elem_exists(SQSP.$objects.landingBG)) {
+            SQSP.$objects.landingBG.css({
+                top : jQuery(window).scrollTop()
+            });
+            if(jQuery(window).scrollTop() > SQSP.$objects.landingBG.height()) {
+                if(SQSP.$objects.landingVideo.isPlaying) SQSP.$objects.landingVideo.pause();
+            } else {
+                if(!SQSP.$objects.landingVideo.isPlaying) SQSP.$objects.landingVideo.play();
+            }
+        }
     });
 
     SQSP.instances.SEARCH = new AjaxSearch({
