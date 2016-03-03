@@ -3211,90 +3211,6 @@ a.episodes-landing-cta {
     line-height: 1.75em;
     margin-bottom: 2.5vh; }
 
-.sharebox {
-  margin-bottom: 20vh; }
-  .sharebox ul {
-    padding: 0;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-justify-content: center;
-    -moz-justify-content: center;
-    -ms-justify-content: center;
-    -o-justify-content: center;
-    justify-content: center;
-    margin: 0 auto; }
-    .sharebox ul li {
-      padding: 0;
-      list-style: none;
-      margin: 0 0.75vw; }
-      .sharebox ul li a {
-        display: block;
-        height: 3vw;
-        width: 3vw;
-        background-color: #000;
-        background-repeat: no-repeat;
-        background-size: 40%;
-        background-position: center center;
-        position: relative; }
-        .sharebox ul li a.like {
-          background-image: url("assets/images/icon-like.svg"); }
-        .sharebox ul li a.share {
-          background-image: url("assets/images/icon-share.svg"); }
-        .sharebox ul li a .badge {
-          height: 1vw;
-          width: 1vw;
-          border-radius: 100%;
-          background: #fff;
-          position: absolute;
-          top: 0;
-          left: 0;
-          -webkit-transform: translateX(-50%) translateY(-50%);
-          -moz-transform: translateX(-50%) translateY(-50%);
-          -ms-transform: translateX(-50%) translateY(-50%);
-          -o-transform: translateX(-50%) translateY(-50%);
-          transform: translateX(-50%) translateY(-50%);
-          font-size: 0.6vw;
-          font-weight: 500;
-          display: -webkit-box;
-          display: -moz-box;
-          display: -ms-flexbox;
-          display: -webkit-flex;
-          display: flex;
-          -webkit-justify-content: center;
-          -moz-justify-content: center;
-          -ms-justify-content: center;
-          -o-justify-content: center;
-          justify-content: center;
-          -webkit-align-items: center;
-          -moz-align-items: center;
-          -ms-align-items: center;
-          -o-align-items: center;
-          align-items: center;
-          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
-          color: #000; }
-  .sharebox span {
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 0.8vw;
-    font-weight: 700;
-    margin-top: 3vh;
-    letter-spacing: .06em; }
-  @media only screen and (max-width: 750px) {
-    .sharebox ul li a {
-      width: 38px;
-      height: 38px; }
-      .sharebox ul li a .badge {
-        font-size: 10px;
-        width: 15px;
-        height: 15px; } }
-  .sharebox span {
-    font-size: 9px; }
-
 .show-landing {
   width: 100vw;
   height: 100vh;
@@ -3889,11 +3805,11 @@ a.episodes-landing-cta {
 .vert-spacer {
   margin-top: 10.41667vw; }
 
-.sqs-simple-like {
+.sharebox .sqs-simple-like {
   position: relative;
   display: inline-block;
   text-align: left; }
-  .sqs-simple-like .like-icon {
+  .sharebox .sqs-simple-like .like-icon {
     margin: 0;
     height: 3vw;
     width: 3vw;
@@ -3906,7 +3822,7 @@ a.episodes-landing-cta {
     -ms-transition: none;
     -o-transition: none;
     transition: none; }
-  .sqs-simple-like .like-count {
+  .sharebox .sqs-simple-like .like-count {
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -3942,6 +3858,58 @@ a.episodes-landing-cta {
     -ms-transform: translatex(-50%) translatey(-50%);
     -o-transform: translatex(-50%) translatey(-50%);
     transform: translatex(-50%) translatey(-50%); }
+  .sharebox .sqs-simple-like.clicked .like-icon {
+    background: black;
+    -webkit-animation: none;
+    -moz-animation: none;
+    -ms-animation: none;
+    -o-animation: none;
+    animation: none;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    -o-transition: none;
+    transition: none; }
+@media only screen and (max-width: 750px) {
+  .sharebox .sqs-simple-like .like-icon {
+    width: 38px;
+    height: 38px; }
+  .sharebox .sqs-simple-like .like-count {
+    font-size: 10px;
+    width: 15px;
+    height: 15px; } }
+
+.sharebox {
+  margin-bottom: 20vh; }
+  .sharebox ul {
+    padding: 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    -o-justify-content: center;
+    justify-content: center;
+    margin: 0 auto; }
+    .sharebox ul li {
+      padding: 0;
+      list-style: none;
+      margin: 0 0.75vw; }
+  .sharebox .label {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 0.8vw;
+    font-weight: 700;
+    margin-top: 3vh;
+    letter-spacing: .06em; }
+  @media only screen and (max-width: 750px) {
+    .sharebox .label {
+      font-size: 9px; } }
 
 ._aligner {
   background: rgba(255, 0, 100, 0.5);
