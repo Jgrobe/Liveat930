@@ -2,7 +2,11 @@
 <section class="host-landing">
     <div class="fill-parent mask">
         <div class="landing-bg video-bg" style="background-image:url('{item.assetUrl}');">
-            <!-- canvas -->
+            {.section item}
+                {.if customContent.hero-video}
+                    <video src="{customContent.hero-video}" autoplay loop></video>
+                {.end}
+            {.end}
         </div><!-- .landing-bg -->
     </div>
     <div class="content">
