@@ -98,13 +98,13 @@ var ImageGallery = function($container, options) {
         //IG.options.currentIndex = index;
 
         var tl = new TimelineMax();
-        tl.to($thisImg, IG.options.duration, {autoAlpha:0});
+        tl.to($img, IG.options.duration, {autoAlpha:0});
         tl.add(function() {
-            $thisImg.css({
+            $img.css({
                 'background-image' : 'url(' + IG.options.images[index].src + ')'
             });
         });
-        tl.to($thisImg, IG.options.duration, {autoAlpha:1});
+        tl.to($img, IG.options.duration, {autoAlpha:1});
         tl.add(function() {
             ////console.log('switchImage complete!', functions);
             if(_.isFunction(functions.onComplete)) functions.onComplete();
