@@ -1,4 +1,6 @@
 <div class="sharebox">
+    {@|like-button}
+    {@|share-button}
     <ul>
         <li>
             <a href="#" class="like">
