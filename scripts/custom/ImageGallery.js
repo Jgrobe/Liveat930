@@ -66,6 +66,8 @@ var ImageGallery = function($container, options) {
             IG.options.currentIndex += ( direction == 'next' ? (IG.$object.image.length - 1) : -(IG.$object.image.length - 1) );
         }// endif
 
+        IG.lastDirection = direction;
+
         var $images = direction == 'next' ? IG.$object.image : IG.$object.image.reverse();
 
         $images.each(function(){
