@@ -10,4 +10,4 @@
     {item.body}
 </section>
 
-{@|apply module-sharebox.block}
+{item|apply module-sharebox.block}
