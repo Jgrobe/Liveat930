@@ -11,7 +11,7 @@
       height: 3vw;
       width: 3vw;
       border-radius: 0;
-      background: black url("assets/images/icon-like.svg") center center no-repeat;
+      background: black url("/assets/images/icon-like.svg") center center no-repeat;
       background-size: 40%;
       display: block;
       @include prefixed(transition, none);
