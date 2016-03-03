@@ -87,7 +87,6 @@ var ClipGrid = function($container, options) {
         if(filter == CG.currentFilter) filter = CG.options.itemSelector;
 
         CG.currentFilter = filter;
-        var oldGridHeight = CG.$object.container.outerHeight();
 
         var filterTL = new TimelineMax({onComplete:function(){console.log('filterTL complete')}});
 
@@ -126,6 +125,7 @@ var ClipGrid = function($container, options) {
     };// filter()
 
     CG.addItems = function(filter) {
+        var oldGridHeight = CG.$object.container.outerHeight();
         CG.$object.currentItems = CG.$object.container.find( filter+':lt('+ CG.currentCount +')' );
 
         //if( _.isFunction(CG.options.filterIn) ) TweenMax.set( CG.$object.currentItems, {autoAlpha: 0} );
