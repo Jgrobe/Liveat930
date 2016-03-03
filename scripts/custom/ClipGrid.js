@@ -152,6 +152,7 @@ var ClipGrid = function($container, options) {
 
         if(CG.options.loadMoreCTA) {
             CG.options.loadMoreCTA.click(function(e){
+                e.preventDefault();
 
                 CG.currentCount += CG.options.payload;
                 CG.filter(CG.currentFilter);
