@@ -73,20 +73,23 @@ function populate_namespaces() {
     SQSP.$objects.landingVideo = SQSP.$objects.landingBG.find('video').get(0);
 
     jQuery(window).scroll(function(e) {
-        console.log('e', e, 'scrolltop', jQuery(window).scrollTop());
-
-        console.log('video time', SQSP.$objects.landingVideo.currentTime);
+        //console.log('e', e, 'scrolltop', jQuery(window).scrollTop());
+        //
+        //console.log('video time', SQSP.$objects.landingVideo.currentTime);
 
         if(elem_exists(SQSP.$objects.landingBG)) {
             SQSP.$objects.landingBG.css({
                 top : jQuery(window).scrollTop()
             });
-            if(jQuery(window).scrollTop() > SQSP.$objects.landingBG.height()) {
-                if(!SQSP.$objects.landingVideo.paused) SQSP.$objects.landingVideo.pause();
-            } else {
-                if(SQSP.$objects.landingVideo.paused || SQSP.$objects.landingVideo.ended) SQSP.$objects.landingVideo.play();
-            }
-        }
+
+            if(elem_exists(jQuery(SQSP.$objects.landingVideo))) {
+                if(jQuery(window).scrollTop() > SQSP.$objects.landingBG.height()) {
+                    if(!SQSP.$objects.landingVideo.paused) SQSP.$objects.landingVideo.pause();
+                } else {
+                    if(SQSP.$objects.landingVideo.paused || SQSP.$objects.landingVideo.ended) SQSP.$objects.landingVideo.play();
+                }
+            }// endif landing-video exists
+        }// endif landing-bg exists
     });
 
     SQSP.instances.SEARCH = new AjaxSearch({
