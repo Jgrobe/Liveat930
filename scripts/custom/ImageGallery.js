@@ -93,7 +93,7 @@ var ImageGallery = function($container, options) {
     IG.switchImage = function(index, functions) {
         if(typeof functions === 'undefined') functions = {};
         ////console.log('switchImage functions:', functions);
-        IG.options.currentIndex = index;
+        //IG.options.currentIndex = index;
 
         var tl = new TimelineMax();
         tl.to(IG.$object.image, IG.options.duration, {autoAlpha:0});

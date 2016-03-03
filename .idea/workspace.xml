@@ -295,8 +295,8 @@
           <file leaf-file-name="ImageGallery.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/scripts/custom/ImageGallery.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.5798576">
-                  <caret line="61" column="12" selection-start-line="61" selection-start-column="12" selection-end-line="61" selection-end-column="12" />
+                <state vertical-scroll-proportion="0.1190234">
+                  <caret line="65" column="75" selection-start-line="65" selection-start-column="75" selection-end-line="65" selection-end-column="75" />
                   <folding />
                 </state>
               </provider>
@@ -1162,8 +1162,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/custom/ImageGallery.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5798576">
-          <caret line="61" column="12" selection-start-line="61" selection-start-column="12" selection-end-line="61" selection-end-column="12" />
+        <state vertical-scroll-proportion="0.1190234">
+          <caret line="65" column="75" selection-start-line="65" selection-start-column="75" selection-end-line="65" selection-end-column="75" />
           <folding />
         </state>
       </provider>
