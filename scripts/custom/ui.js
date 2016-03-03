@@ -236,7 +236,7 @@ function toggleSearchOverlay() {
 
         var dummyHeight = $burger.outerHeight() + parseFloat( $burger.css('top') ) + parseFloat( $burger.css('top') );
         var dummyHeightPct = dummyHeight / jQuery(window).height();
-        var dummyHeightVH = ( dummyHeight / dummyHeightPct * 100 ) + 'vw' ;
+        var dummyHeightVH = ( dummyHeightPct * 100 ) + 'vw' ;
         console.log('dummy height calc', dummyHeight, dummyHeightPct, dummyHeightVH);
         //console.log('calc height', height);
         var $dummy = jQuery('<div id="dummy"/>');
