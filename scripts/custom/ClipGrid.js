@@ -58,6 +58,7 @@ var ClipGrid = function($container, options) {
             $thisItem.addClass( itemSize );
 
             sizeCounter++;
+            console.log(sizeCounter +' >= ' + (CG.options.distributeSizes ? CG.options.distributeSizes.length : CG.options.sizes.length) + '?', ( sizeCounter >= (CG.options.distributeSizes ? CG.options.distributeSizes.length : CG.options.sizes.length) ));
             if( sizeCounter >= (CG.options.distributeSizes ? CG.options.distributeSizes.length : CG.options.sizes.length) ) sizeCounter = 0;
 
         });// each()

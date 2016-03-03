@@ -23,9 +23,9 @@
     <favorites_list name="sqsp" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.6682446">
+    <splitter split-orientation="horizontal" split-proportion="0.7810651">
       <split-first>
-        <splitter split-orientation="horizontal" split-proportion="0.4440611">
+        <splitter split-orientation="horizontal" split-proportion="0.3370389">
           <split-first>
             <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
               <file leaf-file-name="template.conf" pinned="false" current-in-tab="false">
@@ -143,8 +143,8 @@
               <file leaf-file-name="ClipGrid.js" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/scripts/custom/ClipGrid.js">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.30213633">
-                      <caret line="130" column="79" selection-start-line="130" selection-start-column="79" selection-end-line="130" selection-end-column="79" />
+                    <state vertical-scroll-proportion="0.5920651">
+                      <caret line="60" column="253" selection-start-line="60" selection-start-column="253" selection-end-line="60" selection-end-column="253" />
                       <folding>
                         <element signature="n#!!doc" expanded="true" />
                       </folding>
@@ -1171,8 +1171,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/custom/ClipGrid.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30213633">
-          <caret line="130" column="79" selection-start-line="130" selection-start-column="79" selection-end-line="130" selection-end-column="79" />
+        <state vertical-scroll-proportion="0.5920651">
+          <caret line="60" column="253" selection-start-line="60" selection-start-column="253" selection-end-line="60" selection-end-column="253" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
