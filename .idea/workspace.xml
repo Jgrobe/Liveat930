@@ -143,8 +143,8 @@
               <file leaf-file-name="ClipGrid.js" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/scripts/custom/ClipGrid.js">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.56154627">
-                      <caret line="58" column="62" selection-start-line="58" selection-start-column="62" selection-end-line="58" selection-end-column="62" />
+                    <state vertical-scroll-proportion="0.5257426">
+                      <caret line="142" column="27" selection-start-line="142" selection-start-column="27" selection-end-line="142" selection-end-column="27" />
                       <folding>
                         <element signature="n#!!doc" expanded="true" />
                       </folding>
@@ -1171,8 +1171,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/custom/ClipGrid.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.56154627">
-          <caret line="58" column="62" selection-start-line="58" selection-start-column="62" selection-end-line="58" selection-end-column="62" />
+        <state vertical-scroll-proportion="0.5257426">
+          <caret line="142" column="27" selection-start-line="142" selection-start-column="27" selection-end-line="142" selection-end-column="27" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>

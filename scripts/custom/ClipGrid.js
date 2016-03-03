@@ -24,13 +24,13 @@ var ClipGrid = function($container, options) {
         loadMoreCTA : false,
         filterOut : function() {
             var tl = new TimelineMax({onComplete:function(){console.log('filterOut complete', tl.duration());}});
-            console.log('stagger animate out items : ', CG.$object.currentItems);
-            tl.staggerTo(CG.$object.currentItems, CG.options.staggerDuration, {autoAlpha:0, onComplete:function(){console.log('item staggered');}}, CG.options.staggerOffset);
+            console.log('stagger animate out items : ', CG.$object.currentItemsCurrent);
+            tl.staggerTo(CG.$object.currentItemsCurrent, CG.options.staggerDuration, {autoAlpha:0, onComplete:function(){console.log('item staggered');}}, CG.options.staggerOffset);
             return tl;
         },
         filterIn : function() {
             var tl = new TimelineMax({onComplete:function(){CG.isFilterInProgress = false;}});
-            tl.staggerTo(CG.$object.currentItems, CG.options.staggerDuration, {autoAlpha:1}, CG.options.staggerOffset);
+            tl.staggerTo(CG.$object.currentItemsCurrent, CG.options.staggerDuration, {autoAlpha:1}, CG.options.staggerOffset);
             return tl;
         }
     }, options);
@@ -51,7 +51,6 @@ var ClipGrid = function($container, options) {
         $items.each(function(i) {
 
             var $thisItem = jQuery(this);
-            console.log('applying item size', $thisItem,sizeCounter, CG.options.sizes[sizeCounter] );
 
             var sizeSelector = ( CG.options.distributeSizes ? CG.options.distributeSizes[sizeCounter] : sizeCounter );
             var itemSize = CG.options.sizes[ sizeSelector ];
@@ -104,10 +103,10 @@ var ClipGrid = function($container, options) {
         filterTL.add(function() {
 
             CG.addItems(filter);
-            //CG.$object.currentItems = CG.$object.container.find( filter+':lt('+ CG.currentCount +')' );
+            //CG.$object.currentItemsCurrent = CG.$object.container.find( filter+':lt('+ CG.currentCount +')' );
             //
-            //if( _.isFunction(CG.options.filterIn) ) TweenMax.set( CG.$object.currentItems, {autoAlpha: 0} );
-            //CG.setSizes( CG.$object.currentItems );
+            //if( _.isFunction(CG.options.filterIn) ) TweenMax.set( CG.$object.currentItemsCurrent, {autoAlpha: 0} );
+            //CG.setSizes( CG.$object.currentItemsCurrent );
             //CG.$object.container.isotope({
             //    filter: CG.currentFilter
             //});
@@ -130,16 +129,19 @@ var ClipGrid = function($container, options) {
 
     CG.addItems = function(filter) {
         var oldGridHeight = CG.$object.container.outerHeight();
-        CG.$object.currentItems = CG.$object.container.find( filter+':lt('+ CG.currentCount +')' );
-console.log('>>>>>>> items to filter', CG.currentCount, CG.$object.currentItems);
-        //if( _.isFunction(CG.options.filterIn) ) TweenMax.set( CG.$object.currentItems, {autoAlpha: 0} );
-        CG.setSizes( CG.$object.currentItems );
+        CG.$object.currentItemsAll = CG.$object.container.find( filter );
+        CG.$object.currentItemsCurrent = CG.$object.container.find( filter+':lt('+ CG.currentCount +')' );
+console.log('>>>>>>> items to filter', CG.currentCount, CG.$object.currentItemsCurrent);
+        //if( _.isFunction(CG.options.filterIn) ) TweenMax.set( CG.$object.currentItemsCurrent, {autoAlpha: 0} );
+        CG.setSizes( CG.$object.currentItemsCurrent );
 
         CG.$object.container.isotope({
             filter: CG.currentFilter
         });
 
-        var inTL = new TimelineMax();
+        var inTL = new TimelineMax({onComplete:function() {
+            CG.updateCTA();
+        }});
         // tween grid height
         var newGridHeight = CG.$object.container.outerHeight();
         inTL.fromTo(CG.$object.container, CG.options.duration, {height:oldGridHeight}, {height:newGridHeight, ease:Expo.easeInOut});
@@ -160,8 +162,9 @@ console.log('>>>>>>> items to filter', CG.currentCount, CG.$object.currentItems)
     };// rearrange
 
     CG.updateCTA = function() {
+        if(!CG.options.loadMoreCTA) return false;
 
-        if(CG.currentCount >= CG.$object.currentItems.length) {
+        if(CG.currentCount >= CG.$object.currentItemsAll.length) {
             TweenMax.to(CG.options.loadMoreCTA, CG.options.duration, {autoAlpha:0});
         } else {
             TweenMax.to(CG.options.loadMoreCTA, CG.options.duration, {autoAlpha:1});
@@ -185,7 +188,6 @@ console.log('>>>>>>> items to filter', CG.currentCount, CG.$object.currentItems)
 
                 CG.currentCount += CG.options.payload;
                 CG.addItems(CG.currentFilter);
-                CG.updateCTA();
 
             });
         }// endif
