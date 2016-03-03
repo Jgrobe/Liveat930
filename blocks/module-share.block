@@ -1,13 +1,21 @@
-<div class="sharebox">
-    <ul>
-        <li>
-            <a href="#" class="like">
-                <div class="badge">3</div>
-            </a>
-        </li>
-        <li>
-            <a href="#" class="share"></a>
-        </li>
-    </ul>
-    <span class="label">Share this</span>
-</div>
+<ul>
+    <li>
+        {@|like-button}
+        <!--<a href="#" class="like">-->
+        <!--<div class="badge">3</div>-->
+        <!--</a>-->
+    </li>
+    <li>
+        {@|social-button}
+        <!--<a href="#" class="share"></a>-->
+    </li>
+</ul>
+<script>
+    jQuery(window).load(function(){
+        var $likecount = jQuery('.like-count');
+        $likecount.each(function(){
+            console.log('---- parseint ---',jQuery(this).html(), parseInt(jQuery(this).html()));
+            jQuery(this).html(parseInt(jQuery(this).html()));
+        });
+    });
+</script>

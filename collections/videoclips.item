@@ -19,9 +19,7 @@
 
         <div class="text-layer">
             {item.body}
-            {@|apply module-share.block}
-            <!--php $sharelabel = 'Share this episode'; ?>
-            <php include('modules/sharebox.php'); -->
+            {@|apply module-share-this.block}
         </div><!-- .episodes-landing-sub -->
 
     </section>

@@ -10,10 +10,4 @@
     {item.body}
 </section>
 
-<section class="sharebox">
-    <ul>
-        <li><a href="" class="like"><div class="badge">3</div></a></li>
-        <li><a href="" class="share"></a></li>
-    </ul>
-    <span>share this</span>
-</section>
+{@|apply module-sharebox.block}

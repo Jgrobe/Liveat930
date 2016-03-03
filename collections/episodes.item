@@ -15,7 +15,6 @@
         </div>
         <div class="text-layer">
             {body}
-            <!--php include('modules/sharebox.php'); -->
             {@|apply module-share-episode.block}
         </div><!-- .episodes-landing-sub -->
     </section>
