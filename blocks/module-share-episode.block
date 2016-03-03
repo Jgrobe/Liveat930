@@ -1,6 +1,5 @@
 <div class="sharebox">
 
-    {@|share-button}
     <ul>
         <li>
             {@|like-button}
@@ -9,6 +8,7 @@
             <!--</a>-->
         </li>
         <li>
+            {@|social-button}
             <!--<a href="#" class="share"></a>-->
         </li>
     </ul>
