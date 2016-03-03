@@ -219,7 +219,8 @@ function toggleSearchOverlay() {
     var $navColumns = SQSP.$objects.stickyHeader.find('.nav-columns'),
         $shareCol = SQSP.$objects.stickyHeader.find('.share-col'),
         $navTable = SQSP.$objects.stickyHeader.find('.nav-table'),
-        $searchtable = SQSP.$objects.stickyHeader.find('.search-table');
+        $searchtable = SQSP.$objects.stickyHeader.find('.search-table'),
+        $navVideo = SQSP.$objects.stickyHeader.find('video');
 
     var $burger = SQSP.$objects.stickyHeader.find('.burger');
     var duration = .4;
@@ -251,7 +252,8 @@ function toggleSearchOverlay() {
         //console.log('vh height', vh);
         $dummy.remove();
 
-        //tl.to($navColumns,duration, {height:0});
+        tl.to($navVideo,duration, {autoAlpha:0, onComplete:function(){ $navVideo.get(0).pause(); }});
+        tl.to($navColumns,duration, {height:0});
         tl.to($shareCol,duration, {autoAlpha:0}, '-='+(duration));
         tl.to($navTable,duration, {height:vh+'vh'}, '-='+(duration));
         tl.to($searchtable,duration, {height:(100-vh)+'vh'}, '-='+(duration));
@@ -259,13 +261,16 @@ function toggleSearchOverlay() {
         //close search
         SQSP.vars.isSearchOverlayOpen = false;
 
-        //$navColumns.height('auto');
-        //var navColumnsHeight = $navColumns.height();
-        //$navColumns.height(0);
-        //
-        //tl.to($navColumns,duration, {height:navColumnsHeight});
-        tl.to($shareCol,duration, {autoAlpha:1}, '-='+(duration));
-        tl.to($navTable,duration, {height:'100vh'}, '-='+(duration));
+        $navColumns.height('auto');
+        var navColumnsHeight = $navColumns.height();
+        $navColumns.height(0);
+
+        $navVideo.get(0).play();
+
+        tl.to($navVideo,duration, {autoAlpha:1, clearProps:'autoAlpha'});
+        tl.to($navColumns,duration, {height:navColumnsHeight, clearProps:'height'});
+        tl.to($shareCol,duration, {autoAlpha:1, clearProps:'autoAlpha'}, '-='+(duration));
+        tl.to($navTable,duration, {height:'100vh', clearProps:'height'}, '-='+(duration));
         tl.to($searchtable,duration, {height:0}, '-='+(duration));
 
     }// endif
