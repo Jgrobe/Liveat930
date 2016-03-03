@@ -1,0 +1,36 @@
+.sqs-simple-like {
+
+  position: relative;
+  display: inline-block;
+  text-align: left;
+
+  .like-icon {
+    margin: 0;
+    height: 3vw;
+    width: 3vw;
+    border-radius: 0;
+    background: black url("assets/images/icon-like.svg") center center no-repeat;
+    background-size: 40%;
+    display: block;
+    @include prefixed(transition, none);
+  }// .like-icon
+
+  .like-count {
+    @include flexbox();
+    @include prefixed(justify-content, center);
+    @include prefixed(align-items, center);
+    position: absolute;
+    height: 1vw;
+    width: 1vw;
+    border-radius: 100%;
+    background: #fff;
+    top: 0;
+    left: 0;
+    font-size: .6vw;
+    font-weight: 500;
+    color: black;
+    @include shadow(0 1px 3px rgba(0,0,0,.25));
+    @include transform(translatex(-50%) translatey(-50%));
+  }// .like-count
+
+}// .sqs-simple-like
