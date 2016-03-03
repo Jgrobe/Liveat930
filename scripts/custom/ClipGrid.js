@@ -128,7 +128,7 @@ var ClipGrid = function($container, options) {
     CG.addItems = function(filter) {
         var oldGridHeight = CG.$object.container.outerHeight();
         CG.$object.currentItems = CG.$object.container.find( filter+':lt('+ CG.currentCount +')' );
-
+console.log('>>>>>>> items to filter', CG.currentCount, CG.$object.currentItems);
         //if( _.isFunction(CG.options.filterIn) ) TweenMax.set( CG.$object.currentItems, {autoAlpha: 0} );
         CG.setSizes( CG.$object.currentItems );
 
