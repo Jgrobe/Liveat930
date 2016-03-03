@@ -16,6 +16,7 @@ function conform_gallery_data(gallery) {
         conformed_gallery.push({
             src: gallery[i].assetUrl,
             title : gallery[i].title,
+            href : gallery[i].clickthroughUrl,
             copy : (typeof gallery[i].body.html !== 'undefined' ? gallery[i].body.html : '')
         });
     }// endfor

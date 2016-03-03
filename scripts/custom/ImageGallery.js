@@ -20,6 +20,7 @@ var ImageGallery = function($container, options) {
         arrowSelector : '.arrow',
         labelCurrentSelector: '.gallery-current',
         labelTotalSelector: '.gallery-total',
+        ctaSelector : '.cta-container',
         activeClass : 'current-item',
         currentIndex : 0
     }, options);
@@ -31,7 +32,8 @@ var ImageGallery = function($container, options) {
         imageCopy : $container.find(IG.options.imageCopySelector),
         arrows : $container.find(IG.options.arrowSelector),
         labelCurrent: $container.find(IG.options.labelCurrentSelector),
-        labelTotal: $container.find(IG.options.labelTotalSelector)
+        labelTotal: $container.find(IG.options.labelTotalSelector),
+        cta: $container.find(IG.options.ctaSelector)
     };
     IG.is_arrows_initialized = false;
 
@@ -190,6 +192,21 @@ var ImageGallery = function($container, options) {
         });
         labelTL.to(IG.$object.labelCurrent, IG.options.duration, {autoAlpha:1});
         return labelTL;
+    }
+
+    function update_cta() {
+        if( !elem_exists(IG.$object.cta) ) return 'null'; // must be tween, timeline, fn or string b/c inserted into timeline
+        if(typeof IG.options.images[IG.options.currentIndex].href === 'undefined') return 'null';
+
+        var ctaTL = new TimelineMax();
+        //ctaTL.to(IG.$object.labelCurrent, IG.options.duration, {autoAlpha:0});
+        ctaTL.add(function() {
+            IG.$object.cta.attr({
+                href :IG.options.images[IG.options.currentIndex].href
+            });
+        });
+        //ctaTL.to(IG.$object.labelCurrent, IG.options.duration, {autoAlpha:1});
+        return ctaTL;
     }
 
 

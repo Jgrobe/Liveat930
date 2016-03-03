@@ -36,7 +36,7 @@
                 console.log('gallery data', {item.customContent.gallery|json-pretty});
             </script>
             <div class="device ipad">
-                <div class="image pattern imgfill" style="background-image:url('assets/images/pattern-logo-bg.jpg');"></div>
+                <div class="image pattern imgfill" style="background-image:url('{website.baseUrl}/assets/images/pattern-logo-bg.jpg');"></div>
                 <img src="{website.authenticUrl}/assets/images/ipad.png" class="device-image"/>
                 <div class="image device-screen">
                     <div class="fill-parent imgfill gallery-image" style=""></div>
