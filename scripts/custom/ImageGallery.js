@@ -60,6 +60,8 @@ var ImageGallery = function($container, options) {
 
         IG.$object.image.each(function(i){
 
+            var $thisImg = jQuery(this);
+
             switch(direction) {
                 case 'next' :
                     IG.options.currentIndex++;
@@ -71,7 +73,7 @@ var ImageGallery = function($container, options) {
                     break;
             }// endswitch
 
-            IG.switchImage(IG.options.currentIndex);
+            IG.switchImage($thisImg, IG.options.currentIndex);
 
         });
     };
@@ -90,19 +92,19 @@ var ImageGallery = function($container, options) {
     //    IG.switchImage(IG.options.currentIndex);
     //};// arrowClick()
 
-    IG.switchImage = function(index, functions) {
+    IG.switchImage = function($img, index, functions) {
         if(typeof functions === 'undefined') functions = {};
         ////console.log('switchImage functions:', functions);
         //IG.options.currentIndex = index;
 
         var tl = new TimelineMax();
-        tl.to(IG.$object.image, IG.options.duration, {autoAlpha:0});
+        tl.to($thisImg, IG.options.duration, {autoAlpha:0});
         tl.add(function() {
-            IG.$object.image.css({
+            $thisImg.css({
                 'background-image' : 'url(' + IG.options.images[index].src + ')'
             });
         });
-        tl.to(IG.$object.image, IG.options.duration, {autoAlpha:1});
+        tl.to($thisImg, IG.options.duration, {autoAlpha:1});
         tl.add(function() {
             ////console.log('switchImage complete!', functions);
             if(_.isFunction(functions.onComplete)) functions.onComplete();
