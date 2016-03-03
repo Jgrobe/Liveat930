@@ -100,7 +100,7 @@ var ClipGrid = function($container, options) {
         // do actual filtering
         filterTL.add(function() {
 
-            CG.addItems();
+            CG.addItems(filter);
             //CG.$object.currentItems = CG.$object.container.find( filter+':lt('+ CG.currentCount +')' );
             //
             //if( _.isFunction(CG.options.filterIn) ) TweenMax.set( CG.$object.currentItems, {autoAlpha: 0} );
@@ -125,7 +125,7 @@ var ClipGrid = function($container, options) {
 
     };// filter()
 
-    CG.addItems = function() {
+    CG.addItems = function(filter) {
         CG.$object.currentItems = CG.$object.container.find( filter+':lt('+ CG.currentCount +')' );
 
         //if( _.isFunction(CG.options.filterIn) ) TweenMax.set( CG.$object.currentItems, {autoAlpha: 0} );
@@ -146,7 +146,7 @@ var ClipGrid = function($container, options) {
         } else {
             CG.isFilterInProgress = false;
         }// endif
-    }
+    };// addItems
 
     CG.layout = function() {
 
