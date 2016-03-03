@@ -234,13 +234,12 @@ function toggleSearchOverlay() {
         // open search
         SQSP.vars.isSearchOverlayOpen = true;
 
-
-        var height = 'calc(' + $burger.outerHeight() + 'px + ' + $burger.css('top') + ' + ' + $burger.css('top') +')';
+        var dummyHeight = ( ( $burger.outerHeight() + parseFloat( $burger.css('top') ) + parseFloat( $burger.css('top') ) ) / jQuery(window).height * 100 ) + 'vw' ;
         //console.log('calc height', height);
         var $dummy = jQuery('<div id="dummy"/>');
         $dummy.css({
             positon: 'fixed',
-            height: height
+            height: dummyHeight
         });
         jQuery('body').append($dummy);
         var dummyHeight = $dummy.height();
@@ -249,7 +248,7 @@ function toggleSearchOverlay() {
         //console.log('vh height', vh);
         $dummy.remove();
 
-        tl.to($navColumns,duration, {height:0});
+        //tl.to($navColumns,duration, {height:0});
         tl.to($shareCol,duration, {autoAlpha:0}, '-='+(duration));
         tl.to($navTable,duration, {height:vh+'vh'}, '-='+(duration));
         tl.to($searchtable,duration, {height:(100-vh)+'vh'}, '-='+(duration));
@@ -257,13 +256,13 @@ function toggleSearchOverlay() {
         //close search
         SQSP.vars.isSearchOverlayOpen = false;
 
-        $navColumns.height('');
-        var navColumnsHeight = $navColumns.height();
-        $navColumns.height(0);
-
-        tl.to($navColumns,duration, {height:navColumnsHeight});
+        //$navColumns.height('auto');
+        //var navColumnsHeight = $navColumns.height();
+        //$navColumns.height(0);
+        //
+        //tl.to($navColumns,duration, {height:navColumnsHeight});
         tl.to($shareCol,duration, {autoAlpha:1}, '-='+(duration));
-        tl.to($navTable,duration, {height:100+'vh'}, '-='+(duration));
+        tl.to($navTable,duration, {height:'100vh'}, '-='+(duration));
         tl.to($searchtable,duration, {height:0}, '-='+(duration));
 
     }// endif
