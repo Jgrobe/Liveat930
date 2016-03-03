@@ -31,7 +31,8 @@ SQSP.functions.initPage = function() {
     SQSP.instances.clipGrids = [];
     jQuery('.video-gallery-videos').each(function() {
         SQSP.instances.clipGrids.push(new ClipGrid(jQuery(this), {
-            sizes : ['small']
+            sizes : ['small'],
+            loadMoreCTA: $clipGrid.parents('section').find('.load-more-cta')
         }));
     });
 };
