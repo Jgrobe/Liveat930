@@ -44,7 +44,7 @@
 
                 <div class="columns search-columns stagger-item">
                     <div class="col col-left search-col">
-                        <?php include('modules/searchfield.php'); ?>
+                        {@|apply nav-search-overlay.block}
                     </div><!-- .search-col -->
 
                     <div class="col col-right share-col">
