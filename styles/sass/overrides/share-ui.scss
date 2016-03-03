@@ -61,7 +61,7 @@
 
     &.clicked {
       .like-icon {
-        background: black;
+        background: black url("assets/images/icon-like.svg") center center no-repeat;
         @include prefixed(animation, none);
         @include prefixed(transition, none);
       }// .like-icon
