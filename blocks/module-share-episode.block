@@ -1,13 +1,14 @@
 <div class="sharebox">
-    <ul>
-        <li>
-            <a href="#" class="like">
-                <div class="badge">3</div>
-            </a>
-        </li>
-        <li>
-            <a href="#" class="share"></a>
-        </li>
-    </ul>
+    {@|social-button}
+    <!--<ul>-->
+        <!--<li>-->
+            <!--<a href="#" class="like">-->
+                <!--<div class="badge">3</div>-->
+            <!--</a>-->
+        <!--</li>-->
+        <!--<li>-->
+            <!--<a href="#" class="share"></a>-->
+        <!--</li>-->
+    <!--</ul>-->
     <span class="label">Share this Episode</span>
 </div>
