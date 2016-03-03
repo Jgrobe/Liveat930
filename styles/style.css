@@ -2987,7 +2987,8 @@ a.episodes-landing-cta {
     background-size: cover;
     background-position: center center; }
   .merch-landing h1 {
-    text-align: center; }
+    text-align: center;
+    position: relative; }
 
 .merch-landing-cta {
   position: absolute;

@@ -11,8 +11,11 @@
     <section class="show-landing">
         <div class="fill-parent mask">
             <div class="landing-bg" style="background-image:url('{item.assetUrl}');" data-type="video" data-src="{item.customContent.hero-video}">
-                <!--<video src="assets/videos/header-kanye2.mp4" autoplay loop></video>-->
-                {item.structuredContent.oembed.html}
+                {.section item}
+                    {.if customContent.hero-video}
+                        <video src="{customContent.hero-video}" autoplay loop></video>
+                    {.end}
+                {.end}
             </div>
         </div>
 
