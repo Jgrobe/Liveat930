@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6ba77c59-895c-4b6c-8ed1-52220cbb39bd" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collections/videoclips.item" afterPath="$PROJECT_DIR$/collections/videoclips.item" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/custom/ClipGrid.js" afterPath="$PROJECT_DIR$/scripts/custom/ClipGrid.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/custom/page_clip.js" afterPath="$PROJECT_DIR$/scripts/custom/page_clip.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/custom/handleArtists.js" afterPath="$PROJECT_DIR$/scripts/custom/handleArtists.js" />
     </list>
     <ignored path="sqsp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,7 +23,7 @@
     <favorites_list name="sqsp" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.68086785">
+    <splitter split-orientation="horizontal" split-proportion="0.5601578">
       <split-first>
         <splitter split-orientation="horizontal" split-proportion="0.5762319">
           <split-first>
@@ -169,8 +167,8 @@
               <file leaf-file-name="ClipGrid.js" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/scripts/custom/ClipGrid.js">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.5562201">
-                      <caret line="41" column="52" selection-start-line="41" selection-start-column="52" selection-end-line="41" selection-end-column="52" />
+                    <state vertical-scroll-proportion="0.9150718">
+                      <caret line="61" column="71" selection-start-line="61" selection-start-column="71" selection-end-line="61" selection-end-column="71" />
                       <folding>
                         <element signature="n#!!doc" expanded="true" />
                       </folding>
@@ -226,11 +224,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="page_clip.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="page_clip.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/scripts/custom/page_clip.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.034762457">
-                  <caret line="2" column="39" selection-start-line="2" selection-start-column="39" selection-end-line="2" selection-end-column="39" />
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
                   <folding />
                 </state>
               </provider>
@@ -259,8 +257,8 @@
           <file leaf-file-name="SVGClipper.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/scripts/custom/SVGClipper.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-9.0">
-                  <caret line="476" column="0" selection-start-line="476" selection-start-column="0" selection-end-line="476" selection-end-column="0" />
+                <state vertical-scroll-proportion="-9.056603">
+                  <caret line="32" column="20" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
                   <folding />
                 </state>
               </provider>
@@ -276,11 +274,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="handleArtists.js" pinned="false" current-in-tab="false">
+          <file leaf-file-name="handleArtists.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/scripts/custom/handleArtists.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="28" column="41" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
+                <state vertical-scroll-proportion="0.28736964">
+                  <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -340,7 +338,6 @@
         <option value="$PROJECT_DIR$/collections/blog.item" />
         <option value="$PROJECT_DIR$/scripts/custom/SVGClipper.js" />
         <option value="$PROJECT_DIR$/scripts/custom/global_functions.js" />
-        <option value="$PROJECT_DIR$/scripts/custom/handleArtists.js" />
         <option value="$PROJECT_DIR$/styles/sass/modules/search-overlay.scss" />
         <option value="$PROJECT_DIR$/blocks/nav-search-overlay.block" />
         <option value="$PROJECT_DIR$/scripts/custom/ui.js" />
@@ -357,6 +354,7 @@
         <option value="$PROJECT_DIR$/scripts/custom/page_clip.js" />
         <option value="$PROJECT_DIR$/collections/videoclips.item" />
         <option value="$PROJECT_DIR$/scripts/custom/ClipGrid.js" />
+        <option value="$PROJECT_DIR$/scripts/custom/handleArtists.js" />
       </list>
     </option>
   </component>
@@ -963,14 +961,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/custom/handleArtists.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="28" column="41" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/styles/sass/modules/nav-search-overlay.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-24.375">
@@ -995,14 +985,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-7.9607844">
           <caret line="60" column="5" selection-start-line="60" selection-start-column="5" selection-end-line="60" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/custom/SVGClipper.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.0">
-          <caret line="476" column="0" selection-start-line="476" selection-start-column="0" selection-end-line="476" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1179,19 +1161,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/custom/page_clip.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.034762457">
-          <caret line="2" column="39" selection-start-line="2" selection-start-column="39" selection-end-line="2" selection-end-column="39" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/custom/ClipGrid.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5562201">
-          <caret line="41" column="52" selection-start-line="41" selection-start-column="52" selection-end-line="41" selection-end-column="52" />
+        <state vertical-scroll-proportion="0.9150718">
+          <caret line="61" column="71" selection-start-line="61" selection-start-column="71" selection-end-line="61" selection-end-column="71" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/custom/SVGClipper.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.056603">
+          <caret line="32" column="20" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/custom/handleArtists.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.28736964">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
