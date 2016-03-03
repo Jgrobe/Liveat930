@@ -5,13 +5,16 @@ jQuery('.cta-dummy').each(function() {
     var ctaOpts = {};
     for(var k=0; k< ctaVars.length; k++) {
         //console.log('proofing '+ctaVars[k], 'attr '+'data-'+ctaVars[k], $this.hasAttr('data-'+ctaVars[k]));
+
+        if(!$this.hasAttr('data-'+ctaVars[k])) continue;
+
         if(ctaVars[k] == 'icon') {
             ctaOpts['icon'] = {
                 title : $this.data(ctaVars[k]),
                 html : $this.html()
             };
         } else {
-            if($this.hasAttr('data-'+ctaVars[k])) ctaOpts[ctaVars[k]] = $this.data(ctaVars[k]);
+            ctaOpts[ctaVars[k]] = $this.data(ctaVars[k]);
         }
     };
     //console.log('input cta opts');
