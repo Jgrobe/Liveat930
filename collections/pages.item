@@ -85,7 +85,7 @@
                 <h2>{item.customContent.gridTitle}</h2>
             </div>
 
-            <div class="video-gallery-videos lefthand top-spaced">
+            <div class="video-gallery-videos lefthand top-spaced" data-payload="4">
 
                 <div class="gutter-sizer"></div>
 
