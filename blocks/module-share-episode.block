@@ -17,6 +17,7 @@
     <script>
         var $likecount = jQuery('.like-count');
         $likecount.each(function(){
+            console.log(jQuery(this).html(), parseInt(jQuery(this).html()));
             jQuery(this).html(parseInt(jQuery(this).html()));
         });
     </script>
