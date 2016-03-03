@@ -145,7 +145,7 @@ function windowloaded() {
 
         TweenMax.to('body',.4, {autoAlpha:1, clearProps:'autoAlpha'});
 
-        toggleSearchOverlay();
+        if(!SQSP.vars.isSearchOverlayOpen) toggleSearchOverlay();
 
     };// search onSuccess()
 
@@ -153,7 +153,8 @@ function windowloaded() {
     console.log('SQSP.$objects.searchFields', SQSP.$objects.searchFields);
     SQSP.$objects.searchFields.on('focus', function(e) {
         console.log('--- field has focus');
-        SQSP.vars.focusOnSearch = true;
+        var $field = jQuery(this);
+        SQSP.vars.focusOnSearch = $field;
     }).on('focusout', function(e) {
         console.log('--- field has lost focus');
         SQSP.vars.focusOnSearch = false;
@@ -161,8 +162,8 @@ function windowloaded() {
     SQSP.$objects.window.on('keyup', function(e) {
         switch(e.keyCode) {
             case 13 :// enter
-                if(SQSP.vars.focusOnSearch === true) {
-                    var query = SQSP.$objects.searchFields.val();
+                if(SQSP.vars.focusOnSearch) {
+                    var query = SQSP.vars.focusOnSearch.val();
                     if(query.trim() == '') return false;
                     TweenMax.to(jQuery('body'),.3, {autoAlpha:.5});
 
