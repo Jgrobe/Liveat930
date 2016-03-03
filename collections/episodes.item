@@ -91,17 +91,17 @@
                             <div class="image next-image imgfill gallery-image" style=""></div>
                         </div><!-- .slider-images -->
 
-                        <div class="slider-ui">
-                            <div class="slider-arrows">
-                                <div class="arrow prev">{@|apply svg-arrow-cap.block}</div>
-                                <div class="arrow next">{@|apply svg-arrow-cap.block}</div>
-                            </div><!-- .slider-arrows -->
-                            <div class="slider-label">
-                                <h3>
-                                    <span class="gallery-current">2</span>/<span class="gallery-total">8</span>
-                                </h3>
-                            </div>
-                        </div><!-- .slider-ui -->
+                        <!--<div class="slider-ui">-->
+                            <!--<div class="slider-arrows">-->
+                                <!--<div class="arrow prev">{@|apply svg-arrow-cap.block}</div>-->
+                                <!--<div class="arrow next">{@|apply svg-arrow-cap.block}</div>-->
+                            <!--</div>&lt;!&ndash; .slider-arrows &ndash;&gt;-->
+                            <!--<div class="slider-label">-->
+                                <!--<h3>-->
+                                    <!--<span class="gallery-current">2</span>/<span class="gallery-total">8</span>-->
+                                <!--</h3>-->
+                            <!--</div>-->
+                        <!--</div>&lt;!&ndash; .slider-ui &ndash;&gt;-->
                     </div><!-- .slider-container -->
 
                 </section><!-- .image-slider -->
