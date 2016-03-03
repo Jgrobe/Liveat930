@@ -18,9 +18,11 @@ SQSP.functions.initPage = function() {
     $filterBtns.click(function(e) {
         if(SQSP.instances.videoGrid.isFilterInProgress) return false;// this is done in the instance automatically but needed to avoid toggleClass if still filtering
         e.preventDefault();
+        SQSP.instances.videoGrid.resetPayload();
         var $clicked = jQuery(this);
         $clicked.siblings().removeClass('current-item');
         $clicked.toggleClass('current-item');
         SQSP.instances.videoGrid.filter( ('.'+$clicked.data('filter')) );
+
     });
 };

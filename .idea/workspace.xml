@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6ba77c59-895c-4b6c-8ed1-52220cbb39bd" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/custom/ClipGrid.js" afterPath="$PROJECT_DIR$/scripts/custom/ClipGrid.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/custom/page_clips.js" afterPath="$PROJECT_DIR$/scripts/custom/page_clips.js" />
     </list>
     <ignored path="sqsp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -23,7 +23,7 @@
     <favorites_list name="sqsp" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.7810651">
+    <splitter split-orientation="horizontal" split-proportion="0.68086785">
       <split-first>
         <splitter split-orientation="horizontal" split-proportion="0.3370389">
           <split-first>
@@ -143,8 +143,8 @@
               <file leaf-file-name="ClipGrid.js" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/scripts/custom/ClipGrid.js">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.5257426">
-                      <caret line="142" column="0" selection-start-line="142" selection-start-column="0" selection-end-line="142" selection-end-column="0" />
+                    <state vertical-scroll-proportion="-1.5148515">
+                      <caret line="31" column="88" selection-start-line="31" selection-start-column="88" selection-end-line="31" selection-end-column="88" />
                       <folding>
                         <element signature="n#!!doc" expanded="true" />
                       </folding>
@@ -215,8 +215,8 @@
           <file leaf-file-name="page_clips.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/scripts/custom/page_clips.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.074257426">
-                  <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="28" />
+                <state vertical-scroll-proportion="0.2970297">
+                  <caret line="20" column="48" selection-start-line="20" selection-start-column="48" selection-end-line="20" selection-end-column="48" />
                   <folding />
                 </state>
               </provider>
@@ -340,9 +340,9 @@
         <option value="$PROJECT_DIR$/blocks/poster-parallax.block" />
         <option value="$PROJECT_DIR$/collections/episodes.list" />
         <option value="$PROJECT_DIR$/collections/episodes.item" />
-        <option value="$PROJECT_DIR$/scripts/custom/page_clips.js" />
         <option value="$PROJECT_DIR$/collections/videoclips.list" />
         <option value="$PROJECT_DIR$/scripts/custom/ClipGrid.js" />
+        <option value="$PROJECT_DIR$/scripts/custom/page_clips.js" />
       </list>
     </option>
   </component>
@@ -1161,21 +1161,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/custom/page_clips.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.074257426">
-          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/custom/ClipGrid.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5257426">
-          <caret line="142" column="0" selection-start-line="142" selection-start-column="0" selection-end-line="142" selection-end-column="0" />
+        <state vertical-scroll-proportion="-1.5148515">
+          <caret line="31" column="88" selection-start-line="31" selection-start-column="88" selection-end-line="31" selection-end-column="88" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/custom/page_clips.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2970297">
+          <caret line="20" column="48" selection-start-line="20" selection-start-column="48" selection-end-line="20" selection-end-column="48" />
+          <folding />
         </state>
       </provider>
     </entry>
