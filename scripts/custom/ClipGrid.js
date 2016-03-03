@@ -44,16 +44,17 @@ var ClipGrid = function($container, options) {
     CG.setSizes = function($items) {
 
         // remove all sizes
-        CG.$object.items.removeClass(CG.options.sizes.join(' '));
+        //CG.$object.items.removeClass(CG.options.sizes.join(' '));
 
         var sizeCounter = 0;
 
         $items.each(function(i) {
 
             var $thisItem = jQuery(this);
-            console.log('applying item size', $thisItem,CG.options.sizes[sizeCounter] );
+            console.log('applying item size', $thisItem,sizeCounter, CG.options.sizes[sizeCounter] );
 
             var itemSize = CG.options.sizes[ ( CG.options.distributeSizes ? CG.options.distributeSizes[sizeCounter] : sizeCounter ) ];
+            $thisItem.removeClass(CG.options.sizes.join(' '))
             $thisItem.addClass( itemSize );
 
             sizeCounter++;
@@ -130,6 +131,7 @@ var ClipGrid = function($container, options) {
 
         //if( _.isFunction(CG.options.filterIn) ) TweenMax.set( CG.$object.currentItems, {autoAlpha: 0} );
         CG.setSizes( CG.$object.currentItems );
+
         CG.$object.container.isotope({
             filter: CG.currentFilter
         });
