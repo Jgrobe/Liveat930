@@ -2242,7 +2242,8 @@ input {
   .search-table .result:hover, .search-table .result.hovered {
     color: white; }
     .search-table .result:hover .hover-container, .search-table .result.hovered .hover-container {
-      height: 100%; }
+      visibility: visible;
+      opacity: 1; }
     .search-table .result:hover .square-btn, .search-table .result.hovered .square-btn {
       background: white; }
 

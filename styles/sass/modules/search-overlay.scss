@@ -89,7 +89,7 @@
 
     &:hover, &.hovered {
       color: white;
-      .hover-container {height: 100%;}
+      .hover-container {@include autoAlpha(1);}
       .square-btn { background: white; }
     }
 
