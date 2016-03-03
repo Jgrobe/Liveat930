@@ -128,6 +128,8 @@ function windowloaded() {
     SQSP.instances.SEARCH.options.onSuccess = function(query, ajaxHTML, formattedResults) {
         console.log('search done: ', formattedResults);
 
+        removeDisablerDummy();
+
         SQSP.$objects.searchResultsContainer.find('.result:not(.placeholder)').remove();
 
         jQuery('#num_results').html(formattedResults.length);
@@ -173,7 +175,8 @@ function windowloaded() {
                 if(SQSP.vars.focusOnSearch) {
                     var query = SQSP.vars.focusOnSearch.val();
                     if(query.trim() == '') return false;
-                    TweenMax.to(jQuery('body'),.3, {autoAlpha:.5});
+
+                    createDisablerDummy();
 
                     if(!SQSP.$objects.stickyHeader.hasClass('on')) {
                         toggleNavOverlay();
@@ -363,3 +366,23 @@ function handleParallax() {
         }
     });
 }// handleParallax()
+
+function createDisablerDummy() {
+    if(elem_exists(jQuery('#disablerDummy'))) return false;
+
+    var $disablerDummy = jQuery('<div id="disablerDummy" class="fill-parent"/>');
+    $disablerDummy.css({
+        position: 'fixed',
+        'z-index' : 999,
+        background : 'black',
+        opacity :0
+    });
+
+    jQuery('body').append($disablerDummy);
+    TweenMax.to($disablerDummy,.3, {autoAlpha:.7});
+}
+
+function removeDisablerDummy() {
+    var $disablerDummy = jQuery('#disablerDummy');
+    TweenMax.to($disablerDummy,.4, {autoAlpha:0, onComplete:function(){$disablerDummy.remove()}});
+}
