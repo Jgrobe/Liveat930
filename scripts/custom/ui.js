@@ -38,7 +38,7 @@ function init_sqsp() {
 
     //sizeVideosOnReady();
 
-    SQSP.functions.createPageHero();
+    //SQSP.functions.createPageHero();
     SQSP.functions.createPageGallery();
 
 }// init_page()

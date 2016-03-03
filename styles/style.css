@@ -2355,16 +2355,6 @@ input {
     height: 100%;
     background-size: cover;
     background-position: center center; }
-    .episodes-landing .landing-bg:after {
-      content: '';
-      display: block;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.5) url("assets/images/textures/halftone.png");
-      opacity: .4; }
   .episodes-landing .landing-cta {
     position: absolute;
     top: 70vh;
@@ -2907,16 +2897,6 @@ a.episodes-landing-cta {
     height: 100%;
     background-size: cover;
     background-position: center center; }
-    .host-landing .landing-bg:after {
-      content: '';
-      display: block;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.5) url("assets/images/textures/halftone.png");
-      opacity: .4; }
   .host-landing:before {
     background-image: url("assets/images/the-host-title.jpg"); }
   .host-landing .content {
@@ -3016,16 +2996,6 @@ a.episodes-landing-cta {
     height: 100%;
     background-size: cover;
     background-position: center center; }
-    .merch-landing .landing-bg:after {
-      content: '';
-      display: block;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.5) url("assets/images/textures/halftone.png");
-      opacity: .4; }
   .merch-landing h1 {
     text-align: center; }
 
@@ -3185,16 +3155,6 @@ a.episodes-landing-cta {
     height: 100%;
     background-size: cover;
     background-position: center center; }
-    .post-landing .landing-bg:after {
-      content: '';
-      display: block;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.5) url("assets/images/textures/halftone.png");
-      opacity: .4; }
   .post-landing h1 {
     position: relative;
     margin: 0; }
@@ -3255,16 +3215,6 @@ a.episodes-landing-cta {
     height: 100%;
     background-size: cover;
     background-position: center center; }
-    .show-landing .landing-bg:after {
-      content: '';
-      display: block;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.5) url("assets/images/textures/halftone.png");
-      opacity: .4; }
 
 .show-content {
   margin: auto;
@@ -3416,16 +3366,6 @@ a.episodes-landing-cta {
     height: 100%;
     background-size: cover;
     background-position: center center; }
-    .video-overview-landing .landing-bg:after {
-      content: '';
-      display: block;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.5) url("assets/images/textures/halftone.png");
-      opacity: .4; }
   .video-overview-landing h1 {
     margin: 0 0 5vh 0; }
   .video-overview-landing .rectangle {
@@ -3752,16 +3692,6 @@ a.episodes-landing-cta {
     height: 100%;
     background-size: cover;
     background-position: center center; }
-    .clip-landing .landing-bg:after {
-      content: '';
-      display: block;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.5) url("assets/images/textures/halftone.png");
-      opacity: .4; }
   .clip-landing .landing-container {
     margin: auto; }
   .clip-landing .landing-head {
