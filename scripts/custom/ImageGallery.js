@@ -36,6 +36,7 @@ var ImageGallery = function($container, options) {
         cta: $container.find(IG.options.ctaSelector)
     };
     IG.is_arrows_initialized = false;
+    IG.lastDirection = 'next';
 
     //IG.setup = function(images) {
     //
@@ -61,7 +62,13 @@ var ImageGallery = function($container, options) {
     IG.leftright = function(direction, functions) {
         if(typeof functions === 'undefined') functions = {};
 
-        IG.$object.image.each(function(){
+        if(IG.lastDirection !== direction) {
+            IG.options.currentIndex += ( direction == 'next' ? (IG.$object.image.length - 1) : -(IG.$object.image.length - 1) );
+        }// endif
+
+        var $images = direction == 'next' ? IG.$object.image : IG.$object.image.reverse();
+
+        $images.each(function(){
 
             var $thisImg = jQuery(this);
 
@@ -75,6 +82,9 @@ var ImageGallery = function($container, options) {
                     if(IG.options.currentIndex < 0) IG.options.currentIndex = IG.options.images.length -1;
                     break;
             }// endswitch
+
+
+            console.log('updating image index', IG.options.currentIndex );
 
             IG.switchImage($thisImg, IG.options.currentIndex, functions);
 
@@ -130,7 +140,7 @@ var ImageGallery = function($container, options) {
 
         preloadImages(IG.options.images);
         IG.options.currentIndex--;
-        IG.leftright('next', {
+        IG.leftright(IG.lastDirection, {
             onComplete: function() {
                 ////console.log('gallery switchImage complete:');
                 if(_.isFunction(functions.onComplete)) functions.onComplete();
