@@ -21,7 +21,7 @@ var ImageGallery = function($container, options) {
         labelCurrentSelector: '.gallery-current',
         labelTotalSelector: '.gallery-total',
         activeClass : 'current-item',
-        currentIndex : 0
+        currentIndex : 0,
     }, options);
 
     IG.$object = {
@@ -91,16 +91,21 @@ var ImageGallery = function($container, options) {
         IG.options.currentIndex = index;
 
         var tl = new TimelineMax();
-        tl.to(IG.$object.image, IG.options.duration, {autoAlpha:0});
-        tl.add(function() {
-            IG.$object.image.css({
-                'background-image' : 'url(' + IG.options.images[index].src + ')'
+
+        IG.$object.image.each(function(){
+            var $thisImage = jQuery(this);
+
+            tl.to($thisImage, IG.options.duration, {autoAlpha:0});
+            tl.add(function() {
+                $thisImage.css({
+                    'background-image' : 'url(' + IG.options.images[index].src + ')'
+                });
             });
-        });
-        tl.to(IG.$object.image, IG.options.duration, {autoAlpha:1});
-        tl.add(function() {
-            ////console.log('switchImage complete!', functions);
-            if(_.isFunction(functions.onComplete)) functions.onComplete();
+            tl.to($thisImage, IG.options.duration, {autoAlpha:1});
+            tl.add(function() {
+                ////console.log('switchImage complete!', functions);
+                if(_.isFunction(functions.onComplete)) functions.onComplete();
+            });
         });
 
         tl.add( update_imageCounter(), 0 );
