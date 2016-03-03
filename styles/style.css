@@ -3805,80 +3805,6 @@ a.episodes-landing-cta {
 .vert-spacer {
   margin-top: 10.41667vw; }
 
-.sharebox .sqs-simple-like {
-  position: relative;
-  display: inline-block;
-  text-align: left; }
-  .sharebox .sqs-simple-like .like-icon {
-    margin: 0;
-    height: 3vw;
-    width: 3vw;
-    border-radius: 0;
-    background: black url("/assets/images/icon-like.svg") center center no-repeat;
-    background-size: 40%;
-    display: block;
-    -webkit-transition: none;
-    -moz-transition: none;
-    -ms-transition: none;
-    -o-transition: none;
-    transition: none; }
-  .sharebox .sqs-simple-like .like-count {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-justify-content: center;
-    -moz-justify-content: center;
-    -ms-justify-content: center;
-    -o-justify-content: center;
-    justify-content: center;
-    -webkit-align-items: center;
-    -moz-align-items: center;
-    -ms-align-items: center;
-    -o-align-items: center;
-    align-items: center;
-    position: absolute;
-    height: 1vw;
-    width: 1vw;
-    border-radius: 100%;
-    background: #fff;
-    top: 0;
-    left: 0;
-    font-size: .6vw;
-    font-weight: 500;
-    color: black;
-    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
-    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
-    -ms-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
-    -o-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
-    -webkit-transform: translatex(-50%) translatey(-50%);
-    -moz-transform: translatex(-50%) translatey(-50%);
-    -ms-transform: translatex(-50%) translatey(-50%);
-    -o-transform: translatex(-50%) translatey(-50%);
-    transform: translatex(-50%) translatey(-50%); }
-  .sharebox .sqs-simple-like.clicked .like-icon {
-    background: black;
-    -webkit-animation: none;
-    -moz-animation: none;
-    -ms-animation: none;
-    -o-animation: none;
-    animation: none;
-    -webkit-transition: none;
-    -moz-transition: none;
-    -ms-transition: none;
-    -o-transition: none;
-    transition: none; }
-@media only screen and (max-width: 750px) {
-  .sharebox .sqs-simple-like .like-icon {
-    width: 38px;
-    height: 38px; }
-  .sharebox .sqs-simple-like .like-count {
-    font-size: 10px;
-    width: 15px;
-    height: 15px; } }
-
 .sharebox {
   margin-bottom: 20vh; }
   .sharebox ul {
@@ -3907,9 +3833,92 @@ a.episodes-landing-cta {
     font-weight: 700;
     margin-top: 3vh;
     letter-spacing: .06em; }
+  .sharebox .sqs-simple-like {
+    position: relative;
+    display: inline-block;
+    text-align: left; }
+    .sharebox .sqs-simple-like .like-icon {
+      margin: 0;
+      height: 3vw;
+      width: 3vw;
+      border-radius: 0;
+      background: black url("assets/images/icon-like.svg") center center no-repeat;
+      background-size: 40%;
+      display: block;
+      -webkit-transition: none;
+      -moz-transition: none;
+      -ms-transition: none;
+      -o-transition: none;
+      transition: none; }
+    .sharebox .sqs-simple-like .like-count {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-justify-content: center;
+      -moz-justify-content: center;
+      -ms-justify-content: center;
+      -o-justify-content: center;
+      justify-content: center;
+      -webkit-align-items: center;
+      -moz-align-items: center;
+      -ms-align-items: center;
+      -o-align-items: center;
+      align-items: center;
+      position: absolute;
+      height: 1vw;
+      width: 1vw;
+      border-radius: 100%;
+      background: #fff;
+      top: 0;
+      left: 0;
+      font-size: .6vw;
+      font-weight: 500;
+      color: black;
+      -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+      -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+      -ms-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+      -o-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+      -webkit-transform: translatex(-50%) translatey(-50%);
+      -moz-transform: translatex(-50%) translatey(-50%);
+      -ms-transform: translatex(-50%) translatey(-50%);
+      -o-transform: translatex(-50%) translatey(-50%);
+      transform: translatex(-50%) translatey(-50%); }
+    .sharebox .sqs-simple-like.clicked .like-icon {
+      background: black;
+      -webkit-animation: none;
+      -moz-animation: none;
+      -ms-animation: none;
+      -o-animation: none;
+      animation: none;
+      -webkit-transition: none;
+      -moz-transition: none;
+      -ms-transition: none;
+      -o-transition: none;
+      transition: none; }
+  .sharebox .squarespace-social-buttons.button-style .ss-social-button-wrapper {
+    width: 3vw;
+    height: 3vw;
+    padding: 0;
+    border-radius: 0;
+    background: black url("assets/images/icon-share.svg") center center no-repeat;
+    background-size: 40%; }
+    .sharebox .squarespace-social-buttons.button-style .ss-social-button-wrapper .ss-social-button {
+      width: 0;
+      height: 0;
+      overflow: hidden; }
   @media only screen and (max-width: 750px) {
     .sharebox .label {
-      font-size: 9px; } }
+      font-size: 9px; }
+    .sharebox .sqs-simple-like .like-icon {
+      width: 38px;
+      height: 38px; }
+    .sharebox .sqs-simple-like .like-count {
+      font-size: 10px;
+      width: 15px;
+      height: 15px; } }
 
 ._aligner {
   background: rgba(255, 0, 100, 0.5);

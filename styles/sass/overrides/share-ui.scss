@@ -1,5 +1,29 @@
 .sharebox {
 
+  margin-bottom: 20vh;
+  ul {
+    padding: 0;
+    //    margin: 0;
+    @include flexbox();
+    @include prefixed(justify-content, center);
+    margin: 0 auto;
+    li {
+      padding: 0;
+      list-style: none;
+      margin: 0 0.75vw;
+    }
+  }
+  .label {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 0.8vw;
+    font-weight: 700;
+    margin-top: 3vh;
+    letter-spacing: .06em;
+  }
+
   .sqs-simple-like {
 
     position: relative;
@@ -11,7 +35,7 @@
       height: 3vw;
       width: 3vw;
       border-radius: 0;
-      background: black url("/assets/images/icon-like.svg") center center no-repeat;
+      background: black url("assets/images/icon-like.svg") center center no-repeat;
       background-size: 40%;
       display: block;
       @include prefixed(transition, none);
@@ -45,7 +69,36 @@
 
   }// .sqs-simple-like
 
+  .squarespace-social-buttons {
+
+    &.button-style {
+
+      .ss-social-button-wrapper {
+
+        width: 3vw;
+        height: 3vw;
+        padding: 0;
+        border-radius: 0;
+        background: black url("assets/images/icon-share.svg") center center no-repeat;
+        background-size: 40%;
+
+        .ss-social-button {
+          width: 0;
+          height: 0;
+          overflow: hidden;
+        }
+
+      }// .ss-social-button-wrapper
+    }// &.button-style
+
+  }// .squarespace-social-buttons
+
+  //------------------------------------------------------------------------
+  //------------------------------------------------------------------------
+
   @include breakpoint(mobile) {
+
+    .label { font-size: 9px;}
 
     .sqs-simple-like {
 
@@ -62,85 +115,4 @@
     }// .simple-like
 
   }// BP MOBILE
-}// .sharebox
-
-
-
-.sharebox {
-  margin-bottom: 20vh;
-  ul {
-    padding: 0;
-    //    margin: 0;
-    @include flexbox();
-    @include prefixed(justify-content, center);
-    margin: 0 auto;
-    li {
-      padding: 0;
-      list-style: none;
-      margin: 0 0.75vw;
-      //a {
-      //  display: block;
-      //  height: 3vw;
-      //  width: 3vw;
-      //  background-color: #000;
-      //  background-repeat: no-repeat;
-      //  background-size: 40%;
-      //  background-position: center center;
-      //  position: relative;
-      //  &.like {
-      //    background-image: url('assets/images/icon-like.svg');
-      //  }
-      //  &.share {
-      //    background-image: url('assets/images/icon-share.svg');
-      //  }
-      //  .badge {
-      //    height: 1vw;
-      //    width: 1vw;
-      //    border-radius: 100%;
-      //    background: #fff;
-      //    position: absolute;
-      //    top: 0;
-      //    left: 0;
-      //    @include transform(translateX(-50%) translateY(-50%));
-      //    font-size: 0.6vw;
-      //    font-weight: 500;
-      //    @include flexbox();
-      //    @include prefixed(justify-content, center);
-      //    @include prefixed(align-items, center);
-      //    box-shadow: 0 1px 3px rgba(0,0,0,0.25);
-      //    color: #000;
-      //  }
-      //}
-    }
-  }
-  .label {
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 0.8vw;
-    font-weight: 700;
-    margin-top: 3vh;
-    letter-spacing: .06em;
-  }
-
-  @include breakpoint(mobile) {
-
-    ul {
-      li {
-        //a {
-        //  width: 38px;
-        //  height: 38px;
-        //
-        //  .badge {
-        //    font-size: 10px;
-        //    width: 15px;
-        //    height:15px;
-        //  }
-        //}
-      }
-    }
-    .label { font-size: 9px;}
-  }// BP MOBILE
-
 }// .sharebox
