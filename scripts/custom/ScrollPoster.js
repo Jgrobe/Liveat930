@@ -74,7 +74,7 @@ var ScrollPoster = function($container, options) {
 
     function open_hoverstate($clicked) {
 
-        var scrollY = $clicked.parent().offset().top + $clicked.parent().height()*.5 - jQuery(window).height()*.5;
+        var scrollY = $clicked.parent().offset().top - jQuery(window).height()*.2;
         TweenMax.to(window,.2, {scrollTo:{y:scrollY}, ease:Strong.easeInOut, onComplete:function() {
             lock(jQuery('body'), '100vh');
         }});
