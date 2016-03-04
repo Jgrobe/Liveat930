@@ -3149,7 +3149,7 @@ a.episodes-landing-cta {
   .post-landing h1 {
     position: relative;
     margin: 0; }
-  .post-landing .cta-container {
+  .post-landing .sharebox {
     position: absolute;
     bottom: -3vh;
     right: 20vw; }
