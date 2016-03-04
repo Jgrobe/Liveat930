@@ -3188,14 +3188,18 @@ a.episodes-landing-cta {
     position: absolute;
     bottom: -2%; }
   .post-pagination .col {
+    position: relative;
     width: 47%;
     margin: auto; }
+    .post-pagination .col .img {
+      position: relative;
+      color: white; }
     .post-pagination .col.prev {
-      margin-left: auto; }
+      margin-left: 0; }
       .post-pagination .col.prev .cta-container {
         left: 5%; }
     .post-pagination .col.next {
-      margin-right: auto; }
+      margin-right: 0; }
       .post-pagination .col.next .cta-container {
         right: 5%; }
       .post-pagination .col.next .pagination-label {

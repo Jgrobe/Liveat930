@@ -41,11 +41,17 @@
   }
 
   .col {
+    position: relative;
     width: 47%;
     margin: auto;
 
+    .img {
+      position: relative;
+      color: white;
+    }
+
     &.prev {
-      margin-left: auto;
+      margin-left: 0;
 
       .cta-container {
         left: 5%;
@@ -53,7 +59,7 @@
     }// prev
 
     &.next {
-      margin-right: auto;
+      margin-right: 0;
 
       .cta-container {
         right: 5%;
