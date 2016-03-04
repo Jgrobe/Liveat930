@@ -1,6 +1,8 @@
 <div class="episode-summary prllx-custom" data-prllx=".08">
 
-    <div class="shape-container make-shape imgfill" data-shape="{customContent.episode-shape}" class="imgfill" style="background-image:url('{assetUrl}');"></div>
+    <div class="shape-container make-shape imgfill" data-shape="{customContent.episode-shape}" class="imgfill" style="background-image:url('{assetUrl}');">
+        <video src="{customContent.episode-poster-video}" muted style="position: absolute;"></video>
+    </div>
 
     <div class="summary-copy">
 
@@ -11,13 +13,9 @@
         <div class="lineup">
             <span>with</span>
             <p>{customContent.featured-artists}</p>
-        </div>
+        </div><!-- .lineup -->
 
         <div class="cta-dummy" data-label="Watch episode No.{customContent.episode-number}, {addedOn|date %b %G}" data-icon="eye" data-attributes="href={fullUrl}">{@|apply svg-icon-eye.block}</div>
-        <!--php print_cta(array(
-        'label' => 'Watch episode No. 5, MAR 2016',
-        'icon' => 'images/eye',
-        )); -->
 
     </div><!-- .summary-copy -->
 
