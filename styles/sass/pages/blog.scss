@@ -36,7 +36,7 @@
   margin: 0 auto $sectionMarginBottom auto;
 
   .s-headline {
-    font-size: get_relative_units(19);
+    font-size: get_relative_units(38);
     font-weight: bold;
   }
 
@@ -84,9 +84,11 @@
 
   @include breakpoint(mobile) {
 
+    width: $MOBILE_WIDTH;
+    margin-bottom: $sectionMarginBottomMobile;
+
     .flex-cols {
       display: block;
-      width: $MOBILE_WIDTH;
     }// .flex.cols
 
     .col {
