@@ -131,7 +131,7 @@ var ScrollPoster = function($container, options) {
 
     function open_hoverstate($clicked) {
 
-        jQuery(SP.$object.hoverClassApplicants).each(function(){addClass(SP.options.posterHoverClass)});
+        jQuery(SP.$object.hoverClassApplicants).each(function(){jQuery(this).addClass(SP.options.posterHoverClass)});
         //SP.$object.container.addClass(SP.options.posterHoverClass);
         $clicked.addClass(SP.options.elementHoverClass);
 
@@ -151,7 +151,7 @@ var ScrollPoster = function($container, options) {
     }// open_hoverstate
 
     function close_hoverstate() {
-        jQuery(SP.$object.hoverClassApplicants).each(function(){removeClass(SP.options.posterHoverClass)});
+        jQuery(SP.$object.hoverClassApplicants).each(function(){jQuery(this).removeClass(SP.options.posterHoverClass)});
         SP.$object.hoverTrigger.removeClass(SP.options.elementHoverClass);
         // HOVER BG IMAGE
         jQuery(SP.$object.hoverFXApplicants).each(function(i, elem) {
