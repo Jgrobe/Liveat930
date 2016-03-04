@@ -2560,8 +2560,8 @@ a.episodes-landing-cta {
     font-size: 1.73611vw;
     line-height: 1.73611vw; }
   .episodes-overview .poster .ep-lineup {
-    font-size: 3.64583vw;
-    line-height: 3.64583vw; }
+    font-size: 3.24vw;
+    line-height: 3.24vw; }
     .episodes-overview .poster .ep-lineup .divider {
       padding: 0 .75vw; }
     .episodes-overview .poster .ep-lineup .artist {
@@ -2601,8 +2601,8 @@ a.episodes-landing-cta {
     font-size: 25px;
     line-height: 25px; }
   .episodes-overview .poster .ep-lineup {
-    font-size: 52px;
-    line-height: 52px; }
+    font-size: 47px;
+    line-height: 47px; }
   .episodes-overview .poster .lineup-container:after {
     bottom: calc(~"25px / 2");
     left: 25px;
@@ -2637,8 +2637,8 @@ a.episodes-landing-cta {
     font-size: 4vw;
     line-height: 6vw; }
   .episodes-overview .poster .ep-lineup {
-    font-size: 8.5vw;
-    line-height: 8.2vw; }
+    font-size: 7vw;
+    line-height: 7vw; }
     .episodes-overview .poster .ep-lineup .artist .description {
       display: none; }
   .episodes-overview .poster .icon.logo svg {
