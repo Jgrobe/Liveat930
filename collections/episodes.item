@@ -152,7 +152,7 @@
                 <h2>Get more {customContent.episode-clips-categories}</h2>
             </div>
 
-            <squarespace:query collection="clips" category="{customContent.episode-clips-categories}">
+            <squarespace:query collection="clips" category="{customContent.episode-clips-categories}" limit="4">
 
                 <div class="video-gallery-videos related-clips-categories-gallery top-spaced" data-payload="4">
                     <div class="gutter-sizer"></div>
