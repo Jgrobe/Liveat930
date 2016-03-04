@@ -3543,20 +3543,7 @@ a.episodes-landing-cta {
         .video-gallery .video.large .image.poster {
           height: auto; }
     .video-gallery .video .flex-cols {
-      margin-top: 2vw;
-      display: -webkit-box;
-      display: -moz-box;
-      display: -ms-flexbox;
-      display: -webkit-flex;
-      display: flex;
-      -webkit-box-direction: row;
-      -moz-box-direction: row;
-      -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-      flex-direction: row;
-      -webkit-direction: row;
-      -ms-direction: row;
-      direction: row; }
+      margin-top: 2vw; }
       .video-gallery .video .flex-cols .title {
         -webkit-box-grow: 1;
         -moz-box-grow: 1;
@@ -3655,6 +3642,21 @@ a.episodes-landing-cta {
 
 .gutter-sizer {
   width: 5vw; }
+
+.flex-cols {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-direction: row;
+  -moz-box-direction: row;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-direction: row;
+  -ms-direction: row;
+  direction: row; }
 
 .clip-landing {
   width: 100vw;

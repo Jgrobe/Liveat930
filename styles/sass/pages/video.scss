@@ -258,8 +258,6 @@ $gridGutter: 5vw;
 
     .flex-cols {
       margin-top: 2vw;
-      @include flexbox();
-      @include flex-value(direction, row);
 
       .title { @include flex-value(grow, 1); }
 
@@ -407,6 +405,11 @@ $gridGutter: 5vw;
 
 .gutter-sizer {
   width: $gridGutter;
+}
+
+.flex-cols {
+  @include flexbox();
+  @include flex-value(direction, row);
 }
 
 

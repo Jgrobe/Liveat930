@@ -3,13 +3,27 @@
         <div class="landing-bg" style="background-image:url('{item.assetUrl}');"></div>
     </div>
     <h1 class="l-headline">{item.title}</h1>
-    <a href="javascript:history.back();" class="post-landing-cta icon-arrow-reverse">{item.customContent.ctaLabel}</a>
+    <!--<a href="javascript:history.back();" class="post-landing-cta icon-arrow-reverse">{item.customContent.ctaLabel}</a>-->
+    {.section item}
+        {@|apply module-share-this.block}
+    {.end}
 </section>
 
 <section class="post-content">
     {item.body}
 </section>
 
-{.section item}
-    {@|apply module-share-this.block}
-{.end}
+<section class="post-pagination">
+
+<div class="flex-cols">
+    <div class="col prev">
+        <p class="s-headline">Previous article</p>
+        <div class="img superwide">
+            <div class="fill-parent flex-cols">
+                <h3 class="s-headline post-title">Here goes the title</h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+</section>
