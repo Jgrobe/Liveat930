@@ -149,7 +149,7 @@
 
             <squarespace:query collection="clips" category="{customContent.episode-clips-categories}" limit="4">
 
-                <script>console.log('clips categories query', {@|json-pretty});</script>
+                <script>console.log('clips categories query', '{customContent.episode-clips-categories}', {@|json-pretty});</script>
 
                 <div class="video-gallery-videos related-clips-categories-gallery top-spaced" data-payload="4">
                     <div class="gutter-sizer"></div>
