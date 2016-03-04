@@ -1514,6 +1514,16 @@ input {
     left: 0;
     width: 100%;
     height: 100%; }
+    .poster .model-container:after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5) url("assets/images/textures/halftone.png");
+      opacity: .4; }
   .poster .icon.logo svg {
     width: 18.125vw;
     height: 9.84375vw; }

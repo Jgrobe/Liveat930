@@ -273,6 +273,7 @@ $posterWidth: 84vw;
     left: 0;
     width: 100%;
     height:100%;
+    @include texturizer();
   }// .model-container
 
   .icon {
