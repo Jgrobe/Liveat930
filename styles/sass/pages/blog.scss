@@ -35,9 +35,14 @@
   max-width: 900px;
   margin: 0 auto $sectionMarginBottom auto;
 
+  .s-headline {
+    font-size: get_relative_units(19);
+    font-weight: bold;
+  }
+
   .cta-container {
     position: absolute;
-    bottom: -2%;
+    bottom: -4%;
   }
 
   .col {
@@ -48,6 +53,8 @@
     .img {
       position: relative;
       color: white;
+
+      .post-title {margin: auto;}
     }
 
     &.prev {
@@ -55,6 +62,10 @@
 
       .cta-container {
         left: 5%;
+
+        svg {
+          @include transform(rotate(180deg));
+        }
       }// .cta-container
     }// prev
 
@@ -70,5 +81,18 @@
       }
     }// next
   }// .col
+
+  @include breakpoint(mobile) {
+
+    .flex-cols {
+      display: block;
+      width: $MOBILE_WIDTH;
+    }// .flex.cols
+
+    .col {
+      width: 100%;
+    }
+
+  }// BP MOBILE
 
 }// section.post-pagination

@@ -3184,9 +3184,12 @@ a.episodes-landing-cta {
   width: 80vw;
   max-width: 900px;
   margin: 0 auto 10.41667vw auto; }
+  .post-pagination .s-headline, .post-pagination .nav-overlay .menu-item, .nav-overlay .post-pagination .menu-item, .post-pagination .shortcuts .video .title, .shortcuts .video .post-pagination .title, .post-pagination .search-table .result, .search-table .post-pagination .result, .post-pagination .episode-summary .lineup span, .episode-summary .lineup .post-pagination span, .post-pagination .episode-summary .lineup p, .episode-summary .lineup .post-pagination p, .post-pagination .clip-landing .landing-head .small, .clip-landing .landing-head .post-pagination .small {
+    font-size: 0.65972vw;
+    font-weight: bold; }
   .post-pagination .cta-container {
     position: absolute;
-    bottom: -2%; }
+    bottom: -4%; }
   .post-pagination .col {
     position: relative;
     width: 47%;
@@ -3194,16 +3197,30 @@ a.episodes-landing-cta {
     .post-pagination .col .img {
       position: relative;
       color: white; }
+      .post-pagination .col .img .post-title {
+        margin: auto; }
     .post-pagination .col.prev {
       margin-left: 0; }
       .post-pagination .col.prev .cta-container {
         left: 5%; }
+        .post-pagination .col.prev .cta-container svg {
+          -webkit-transform: rotate(180deg);
+          -moz-transform: rotate(180deg);
+          -ms-transform: rotate(180deg);
+          -o-transform: rotate(180deg);
+          transform: rotate(180deg); }
     .post-pagination .col.next {
       margin-right: 0; }
       .post-pagination .col.next .cta-container {
         right: 5%; }
       .post-pagination .col.next .pagination-label {
         text-align: right; }
+  @media only screen and (max-width: 750px) {
+    .post-pagination .flex-cols {
+      display: block;
+      width: calc(~"100vw - 24px"); }
+    .post-pagination .col {
+      width: 100%; } }
 
 .show-landing {
   width: 100vw;
