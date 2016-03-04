@@ -8,6 +8,7 @@ SQSP.functions.initPage = function() {
         //filter : '.video',
         sizes : ['small', 'large'],
         distributeSizes : [0,0,1,0,0,1,0,0,0,0],
+        payload: $clipGrid.data('payload'),
         loadMoreCTA: $clipGrid.parents('section').find('.load-more-cta'),
         onInit:function() {
             console.log('Grid initialized');
