@@ -33,13 +33,12 @@ var ScrollPoster = function($container, options) {
     };
 
     SP.init = function() {
-        console.log('ScrollPoster instance', SP);
+        console.log('poster objects', SP.$object);
 
         // Apply HoverFX
-        // must not use document.on b/c must limit to this isntance's triggers
-        SP.$object.hoverTrigger.click(function(e) {
+        SP.$object.hoverTrigger.on('click', function(e) {
             e.preventDefault();
-            console.log('firing hovertrigger');
+            console.log('firing hover trigger');
             var $clicked = jQuery(this);
             if(!SP.HOVERSTAT_ACTIVE) {
                 open_hoverstate($clicked);
@@ -52,8 +51,7 @@ var ScrollPoster = function($container, options) {
         // remove HoverFX
         jQuery(document).on('click', '.posters.hover-on', function(e) {
             e.preventDefault();
-            console.log('firing unhover trigger');
-            console.log('clicked', e);
+            console.log('firing unhover trigger', e);
             if(SP.HOVERSTAT_ACTIVE) {
                 close_hoverstate();
                 SQSP.instances.FieldTracker.$object.tracker.removeClass('active');
