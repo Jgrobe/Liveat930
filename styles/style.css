@@ -3184,12 +3184,14 @@ a.episodes-landing-cta {
   width: 80vw;
   max-width: 900px;
   margin: 0 auto 10.41667vw auto; }
-  .post-pagination .s-headline, .post-pagination .nav-overlay .menu-item, .nav-overlay .post-pagination .menu-item, .post-pagination .shortcuts .video .title, .shortcuts .video .post-pagination .title, .post-pagination .search-table .result, .search-table .post-pagination .result, .post-pagination .episode-summary .lineup span, .episode-summary .lineup .post-pagination span, .post-pagination .episode-summary .lineup p, .episode-summary .lineup .post-pagination p, .post-pagination .clip-landing .landing-head .small, .clip-landing .landing-head .post-pagination .small {
-    font-size: 1.31944vw;
-    font-weight: bold; }
   .post-pagination .cta-container {
     position: absolute;
     bottom: -4%; }
+  .post-pagination .s-headline, .post-pagination .nav-overlay .menu-item, .nav-overlay .post-pagination .menu-item, .post-pagination .shortcuts .video .title, .shortcuts .video .post-pagination .title, .post-pagination .search-table .result, .search-table .post-pagination .result, .post-pagination .episode-summary .lineup span, .episode-summary .lineup .post-pagination span, .post-pagination .episode-summary .lineup p, .episode-summary .lineup .post-pagination p, .post-pagination .clip-landing .landing-head .small, .clip-landing .landing-head .post-pagination .small {
+    font-size: 1.31944vw;
+    font-weight: bold; }
+  .post-pagination .post-title {
+    margin: auto; }
   .post-pagination .col {
     position: relative;
     width: 47%;
@@ -3197,8 +3199,6 @@ a.episodes-landing-cta {
     .post-pagination .col .img {
       position: relative;
       color: white; }
-      .post-pagination .col .img .post-title {
-        margin: auto; }
     .post-pagination .col.prev {
       margin-left: 0; }
       .post-pagination .col.prev .cta-container {
@@ -3219,10 +3219,24 @@ a.episodes-landing-cta {
     .post-pagination {
       width: calc(~"100vw - 24px");
       margin-bottom: 10vH; }
+      .post-pagination .s-headline, .post-pagination .nav-overlay .menu-item, .nav-overlay .post-pagination .menu-item, .post-pagination .shortcuts .video .title, .shortcuts .video .post-pagination .title, .post-pagination .search-table .result, .search-table .post-pagination .result, .post-pagination .episode-summary .lineup span, .episode-summary .lineup .post-pagination span, .post-pagination .episode-summary .lineup p, .episode-summary .lineup .post-pagination p, .post-pagination .clip-landing .landing-head .small, .clip-landing .landing-head .post-pagination .small {
+        font-size: 24px; }
+      .post-pagination .post-title {
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        -moz-transform: translateX(-50%) translateY(-50%);
+        -ms-transform: translateX(-50%) translateY(-50%);
+        -o-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%); }
       .post-pagination .flex-cols {
         display: block; }
       .post-pagination .col {
-        width: 100%; } }
+        width: 100%; }
+        .post-pagination .col.next {
+          margin-top: 40px; } }
 
 .show-landing {
   width: 100vw;

@@ -35,15 +35,17 @@
   max-width: 900px;
   margin: 0 auto $sectionMarginBottom auto;
 
+  .cta-container {
+    position: absolute;
+    bottom: -4%;
+  }
+
   .s-headline {
     font-size: get_relative_units(38);
     font-weight: bold;
   }
 
-  .cta-container {
-    position: absolute;
-    bottom: -4%;
-  }
+  .post-title {margin: auto;}
 
   .col {
     position: relative;
@@ -53,8 +55,6 @@
     .img {
       position: relative;
       color: white;
-
-      .post-title {margin: auto;}
     }
 
     &.prev {
@@ -87,13 +87,29 @@
     width: $MOBILE_WIDTH;
     margin-bottom: $sectionMarginBottomMobile;
 
+    .s-headline {
+      font-size: 24px;
+    }
+
+    .post-title {
+      display: inline-block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      @include transform(translateX(-50%) translateY(-50%));
+    }// .post-title
+
     .flex-cols {
       display: block;
     }// .flex.cols
 
     .col {
       width: 100%;
-    }
+
+      &.next {
+        margin-top: 40px;
+      }
+    }// .col
 
   }// BP MOBILE
 
