@@ -3152,14 +3152,17 @@ a.episodes-landing-cta {
   .post-landing .sharebox {
     font-family: "Gotham A", "Gotham B";
     font-weight: 500;
+    color: black;
     position: absolute;
-    top: 97%;
+    top: 100%;
     left: 50%;
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
-    transform: translateX(-50%); }
+    -webkit-transform: translateX(-50%) translateY(5%);
+    -moz-transform: translateX(-50%) translateY(5%);
+    -ms-transform: translateX(-50%) translateY(5%);
+    -o-transform: translateX(-50%) translateY(5%);
+    transform: translateX(-50%) translateY(5%); }
+    .post-landing .sharebox .label {
+      margin-top: 10px; }
 
 .post-content {
   width: 70vw;

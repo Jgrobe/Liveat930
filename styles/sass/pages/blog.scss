@@ -14,10 +14,15 @@
   .sharebox {
     font-family: $gotham;
     font-weight: 500;
+    color: black;
     position: absolute;
-    top: 97%;
+    top: 100%;
     left: 50%;
-    @include transform(translateX(-50%));
+    @include transform(translateX(-50%) translateY(5%));
+
+    .label {
+      margin-top: 10px;
+    }
   }// .sharebox
 
 }// .post-landing
