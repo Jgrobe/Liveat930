@@ -152,9 +152,16 @@ var ScrollPoster = function($container, options) {
         SP.$object.hoverTrigger.removeClass(SP.options.elementHoverClass);
         // HOVER BG IMAGE
         jQuery(SP.$object.hoverApplicants).each(function(i, elem) {
-            jQuery(elem).removeClass(SP.options.posterHoverClass).css({
-                'background-image' : ''
-            });
+
+            var $thisApplicant = jQuery(this);
+            if(SP.options.gradientMap) {
+                GradientMaps.removeGradientMap($thisApplicant.get(0), SP.options.gradientMap);
+                console.log('gradient map' ,gradmap);
+            }
+
+            //$thisApplicant.removeClass(SP.options.posterHoverClass).css({
+            //    'background-image' : ''
+            //});
         });
         SP.HOVERSTAT_ACTIVE = false;
     }
