@@ -12,13 +12,15 @@
   }
 
   .sharebox {
+    font-family: $gotham;
+    font-weight: 500;
     position: absolute;
-    bottom: -3vh;
-    right: 20vw;
-  }// .cta-container
+    top: 97%;
+    left: 50%;
+    @include transform(translateX(-50%));
+  }// .sharebox
 
 }// .post-landing
-
 
 .post-content {
   width: 70vw;

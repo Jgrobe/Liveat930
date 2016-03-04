@@ -3150,9 +3150,16 @@ a.episodes-landing-cta {
     position: relative;
     margin: 0; }
   .post-landing .sharebox {
+    font-family: "Gotham A", "Gotham B";
+    font-weight: 500;
     position: absolute;
-    bottom: -3vh;
-    right: 20vw; }
+    top: 97%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%); }
 
 .post-content {
   width: 70vw;
