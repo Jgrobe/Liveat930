@@ -42,10 +42,15 @@ var ScrollPoster = function($container, options) {
             console.log('firing hover trigger');
             var $clicked = jQuery(this);
             if(!SP.HOVERSTAT_ACTIVE) {
-                open_hoverstate($clicked);
-                TweenMax.to(SQSP.$objects.burger,.3, {autoAlpha:0});
-                SQSP.instances.FieldTracker.update({x: e.clientX, y: e.clientY});
-                SQSP.instances.FieldTracker.$object.tracker.addClass('active');
+                var tl = new TimelineMax({onComplete:function(){SP.HOVERSTAT_ACTIVE = true;}});
+                tl.add(function() {
+                    open_hoverstate($clicked);
+                });
+                tl.to(SQSP.$objects.burger,.3, {autoAlpha:0}, 0);
+                tl.add(function() {
+                    SQSP.instances.FieldTracker.update({x: e.clientX, y: e.clientY});
+                    SQSP.instances.FieldTracker.$object.tracker.addClass('active');
+                }, 0);
             }
         });
 
@@ -54,9 +59,12 @@ var ScrollPoster = function($container, options) {
             e.preventDefault();
             console.log('firing unhover trigger', e);
             if(SP.HOVERSTAT_ACTIVE) {
-                close_hoverstate();
-                SQSP.instances.FieldTracker.$object.tracker.removeClass('active');
-                TweenMax.to(SQSP.$objects.burger,.3, {autoAlpha:1, clearProps:'autoAlpha'});
+                var tl = new TimelineMax({onComplete:function() {SP.HOVERSTAT_ACTIVE = false;}});
+                tl.add(function(){
+                    close_hoverstate();
+                    SQSP.instances.FieldTracker.$object.tracker.removeClass('active');
+                });
+                tl.to(SQSP.$objects.burger,.3, {autoAlpha:1, clearProps:'autoAlpha'}, 0);
             }// endif
         });
 
@@ -82,7 +90,6 @@ var ScrollPoster = function($container, options) {
                 GradientMaps.applyGradientMap($thisApplicant.get(0), SP.options.gradientMap);
             }
         });
-        SP.HOVERSTAT_ACTIVE = true;
     }// open_hoverstate()
 
     function close_hoverstate() {
@@ -100,7 +107,6 @@ var ScrollPoster = function($container, options) {
             //    'background-image' : ''
             //});
         });
-        SP.HOVERSTAT_ACTIVE = false;
     }// close_hoverstate()
 
 };// ScrollPoster
