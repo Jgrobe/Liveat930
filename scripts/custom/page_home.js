@@ -50,10 +50,19 @@ SQSP.functions.initPage = function() {
         var $thisPoster = jQuery(this);
         var $modelContainer = $thisPoster.find('.model-container');
 
+        var thisShape = new SVGClipper($modelContainer, {
+            shape: $modelContainer.data('shape'),
+            maskId: ('clipshape_'+i),
+            onInit:function(Clip) {
+                GradientMaps.applyGradientMap(Clip.DOM.container.object, Clip.shapes[Clip.options.shape].gradientMaps.shape);
+            }
+        });
+
         SQSP.instances.Posters.push( new ScrollPoster($thisPoster, {
             autoInit : false,
             hoverTriggerSelector : '.artist',
-            unhoverTriggerSelector : '.artist'
+            unhoverTriggerSelector : '.artist',
+            gradientMap : thisShape.SHAPE.gradientMaps.shape
             //scrollModel:new ClippedCanvas($modelContainer, {
             //    autoPlay: true,
             //    autoStop: true,
@@ -62,14 +71,6 @@ SQSP.functions.initPage = function() {
             //    shape: $modelContainer.attr('data-shape')
             //})
         }) );
-
-        new SVGClipper($modelContainer, {
-            shape: $modelContainer.data('shape'),
-            maskId: ('clipshape_'+i),
-            onInit:function(Clip) {
-                GradientMaps.applyGradientMap(Clip.DOM.container.object, Clip.shapes[Clip.options.shape].gradientMaps.shape);
-            }
-        });
 
         SQSP.instances.Posters[i].$object.hoverApplicants = [SQSP.$objects.postersContainer, SQSP.instances.Posters[i].$object.hoverLayer];
         SQSP.instances.Posters[i].init();

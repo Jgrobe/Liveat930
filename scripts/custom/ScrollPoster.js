@@ -18,7 +18,8 @@ var ScrollPoster = function($container, options) {
         unhoverTriggerSelector : '.hover-trigger',
         hoverApplicantSelector: '.hover-applicant',
         posterHoverClass: 'hover-on',
-        elementHoverClass: 'hovered'
+        elementHoverClass: 'hovered',
+        gradientMap: false
     };
     if(typeof options !== 'undefined') jQuery.extend(SP.options, options);
     SP.$object = {
@@ -136,6 +137,11 @@ var ScrollPoster = function($container, options) {
             jQuery(elem).css({
                 'background-image' : 'url('+ $clicked.attr('data-img') +')'
             }).addClass(SP.options.posterHoverClass);
+
+            if(SP.options.gradientMap) {
+                var gradmap = GradientMaps.applyGradientMap(elem, SP.options.gradientMap);
+                console.log('gradient map' ,gradmap);
+            }
         });
         SP.HOVERSTAT_ACTIVE = true;
     }// open_hoverstate
