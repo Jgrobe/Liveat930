@@ -1592,7 +1592,8 @@ input {
     visibility: hidden;
     opacity: 0; }
   .poster.hover-on .lineup-container:after {
-    background: black; }
+    visibility: hidden;
+    opacity: 0; }
   .poster.hover-on .ep-lineup .artist:hover .label {
     background: none; }
   .poster.hover-on .ep-lineup > * {

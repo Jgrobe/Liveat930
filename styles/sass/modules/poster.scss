@@ -365,7 +365,10 @@ $posterWidth: 84vw;
     .ep-subheadline {@include autoAlpha(0);}
 
     .lineup-container {
-      &:after { background: black; }
+      &:after {
+        //background: black;
+        @include autoAlpha(0);
+      }
     }
 
     .ep-lineup {
