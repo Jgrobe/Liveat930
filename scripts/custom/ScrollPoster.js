@@ -99,13 +99,13 @@ var ScrollPoster = function($container, options) {
         jQuery(SP.$object.hoverFXApplicants).each(function(i, elem) {
 
             var $thisApplicant = jQuery(this);
+            $thisApplicant.removeClass(SP.options.posterHoverClass).css({
+                'background-image' : ''
+            });
             if(SP.options.gradientMap) {
                 GradientMaps.removeGradientMap($thisApplicant.get(0), SP.options.gradientMap);
             }
 
-            //$thisApplicant.removeClass(SP.options.posterHoverClass).css({
-            //    'background-image' : ''
-            //});
         });
     }// close_hoverstate()
 
