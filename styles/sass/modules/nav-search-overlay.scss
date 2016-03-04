@@ -245,6 +245,8 @@ $rightColMargin: 10vw;
 
   .quick-videos {
     @include flex-value(grow, 1);
+
+    .imgfill.tv { position: relative;}
   }
 
   .video {
