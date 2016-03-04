@@ -54,7 +54,7 @@ SQSP.functions.initPage = function() {
             shape: $modelContainer.data('shape'),
             maskId: ('clipshape_'+i),
             onInit:function(Clip) {
-                GradientMaps.applyGradientMap(Clip.DOM.container.object, Clip.shapes[Clip.options.shape].gradientMaps.shape);
+                //GradientMaps.applyGradientMap(Clip.DOM.container.object, Clip.shapes[Clip.options.shape].gradientMaps.shape);
             }
         });
 
