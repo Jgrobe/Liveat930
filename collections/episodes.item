@@ -148,7 +148,7 @@
             </div>
 
             <squarespace:query collection="clips" category="{customContent.episode-clips-categories}" limit="4">
-
+                <h1>{customContent.episode-clips-categories}</h1>
                 <script>console.log('clips categories query', '{customContent.episode-clips-categories}', {@|json-pretty});</script>
 
                 <div class="video-gallery-videos related-clips-categories-gallery top-spaced" data-payload="4">
