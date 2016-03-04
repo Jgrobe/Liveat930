@@ -14,6 +14,7 @@
     <squarespace:script combo="true" src="libs/bowser.min.js" />
     <squarespace:script combo="true" src="libs/jquery-2.1.0.min.js" />
     <squarespace:script combo="true" src="libs/greensock/TweenMax.min.js" />
+    <squarespace:script combo="true" src="libs/greensock/ScrollToPlugin.js" />
     <squarespace:script combo="true" src="libs/fastclick.js" />
     <squarespace:script combo="true" src="libs/lodash.js" />
     <squarespace:script combo="true" src="libs/scrollMonitor.js" />
