@@ -10,14 +10,15 @@
 //    font-size: 7vw;
 //    letter-spacing: 0.5vw;
   }
-}
 
-.post-landing-cta {
-  @include cta(#000, #fff);
-  position: absolute;
-  bottom: -3vh;
-  right: 20vw;
-}
+  .cta-container {
+    position: absolute;
+    bottom: -3vh;
+    right: 20vw;
+  }// .cta-container
+
+}// .post-landing
+
 
 .post-content {
   width: 70vw;

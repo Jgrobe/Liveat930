@@ -3149,27 +3149,10 @@ a.episodes-landing-cta {
   .post-landing h1 {
     position: relative;
     margin: 0; }
-
-.post-landing-cta {
-  background-color: #000;
-  font-family: "Gotham A", "Gotham B";
-  text-transform: uppercase;
-  text-decoration: none;
-  font-weight: 500;
-  color: #fff;
-  font-size: 0.69444vw;
-  letter-spacing: 0.1em;
-  padding: 1.4vw 1.8vw 1.3vw 4vw;
-  position: absolute;
-  bottom: -3vh;
-  right: 20vw; }
-  @media only screen and (max-width: 750px) {
-    .post-landing-cta {
-      font-size: 10px;
-      line-height: 100%;
-      padding: 24px 24px 24px 64px;
-      background-size: 20px;
-      background-position-x: 23px; } }
+  .post-landing .cta-container {
+    position: absolute;
+    bottom: -3vh;
+    right: 20vw; }
 
 .post-content {
   width: 70vw;
