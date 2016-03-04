@@ -10,12 +10,6 @@
             <div class="upcoming-info prllx-custom" data-prllx=".08">
                 Check your local listing for the air date in your market.
                 <div class="cta-dummy" data-label="View Trailer" data-class="upcoming-cta prllx-custom" data-attributes="href={fullUrl},data-prllx=-0.05" data-icon="eye">{@|apply svg-icon-eye.block}</div>
-                <!-- print_cta(array(
-                    'label' => 'View Trailer',
-                'class' => array('upcoming-cta', 'prllx-custom'),
-                'icon' => 'images/eye',
-                'attributes' => array('href' => '#', 'data-prllx' => '-0.05')
-                )); -->
             </div><!-- .upcoming-info -->
         </section><!-- .upcoming -->
         {.end}
@@ -31,16 +25,6 @@
                 <form>
                     <input type="email" placeholder="Your email address" />
                     <div class="cta-dummy" data-tag="button" data-label="Put me on the list" data-icon="icon-arrow" data-class="submit-email" data-attributes="type=submit,data-prllx=-.02">{@|apply svg-icon-arrow.block}</div>
-                    <!--php print_cta(array(
-                    'label' => 'Put me on the list',
-                    'icon' => 'images/icon-arrow',
-                    'class' => array('submit-email'),
-                    'tag' => 'button',
-                    'attributes' => array(
-                    'type' => 'submit',
-                    'data-prllx' => '-.02'
-                    )
-                    )); -->
                 </form>
             </div>
         </section>
@@ -48,12 +32,6 @@
             <div class="hosted-by-logo"></div>
             <p class="hosted-by-p">Live at 9:30 is hosted by <a href="http://www.squarespace.com" class="plain-link">Squarespace</a>, the simplest way to build a beautiful website.</p>
             <div class="cta-dummy" data-label="Build your own website with squarespace" data-icon="browser" data-class="negative hosted-by-link upsized-icon prllx-custom" data-attributes="href=http://www.squarespace.com,data-prllx=-.02">{@|apply svg-icon-browser.block}</div>
-            <!--php print_cta(array(
-            'label' => 'Build your own website with squarespace',
-            'icon' => 'images/browser',
-            'class' => array('negative', 'hosted-by-link', 'upsized-icon', 'prllx-custom'),
-            'attributes' => array( 'href'=>'#', 'data-prllx' => '-.02' )
-            )); -->
         </section>
         <section class="footer-social">
             <ul>

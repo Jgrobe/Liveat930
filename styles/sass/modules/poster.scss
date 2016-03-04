@@ -214,7 +214,7 @@ $posterWidth: 84vw;
   .ep-lineup {
     text-align: justify;
     position: relative;
-    word-break: break-all;
+    //word-break: break-all;
 
     > * { @include prefixed(transition, (opacity $shortTrans, color $shortTrans)); }
 

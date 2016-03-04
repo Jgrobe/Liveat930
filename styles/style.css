@@ -1469,8 +1469,7 @@ input {
     transition: opacity 0.3s; }
   .poster .ep-lineup {
     text-align: justify;
-    position: relative;
-    word-break: break-all; }
+    position: relative; }
     .poster .ep-lineup > * {
       -webkit-transition: opacity 0.3s, color 0.3s;
       -moz-transition: opacity 0.3s, color 0.3s;
