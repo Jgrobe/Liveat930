@@ -41,6 +41,13 @@ function init_sqsp() {
     //SQSP.functions.createPageHero();
     SQSP.functions.createPageGallery();
 
+    jQuery('video.loop').each(function(){
+        var vid =jQuery(this).get(0);
+        vid.addEventListener('ended', function(){
+            vid.play();
+        });
+    });
+
 }// init_page()
 
 function populate_namespaces() {

@@ -4,7 +4,7 @@
         <div class="landing-bg video-bg" style="background-image:url('{item.assetUrl}');">
             {.section item}
                 {.if customContent.hero-video}
-                    <video src="{customContent.hero-video}" autoplay loop></video>
+                    <video src="{customContent.hero-video}" autoplay class="loop"></video>
                 {.end}
             {.end}
         </div><!-- .landing-bg -->
