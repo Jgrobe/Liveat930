@@ -330,9 +330,9 @@ $gridGutter: 5vw;
     //}// .video-gallery-videos
 
     .video {
-      width: 100%;
 
       &.small, &.medium, &.large, &:last-child {
+        width: 100%;
         float: none;
         margin: 70px auto 0 auto;
 
