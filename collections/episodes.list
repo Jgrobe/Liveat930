@@ -24,7 +24,12 @@
                     </div>
                     <div class="episodes-landing-sub prllx-stndrd">
                         <span>with</span>
-                        <p>Shakey Graves / The Arcs / Dave Chapelle / Gogol Bordello & more</p>
+                        <p id="lineup_preview" data-artists="{customContent.featured-artists}"></p>
+                        <script>
+                            var $lineupPreview = jQuery('#lineup_preview');
+                            var previewwartists = $lineupPreview.data('artists').split(',').slice(0,3).join(' / ');
+                            $lineupPreview.html(previewwartists+' & more')
+                        </script>
                     </div>
                     <div class="cta-dummy" data-icon="eye" data-label="Watch now" data-class="landing-cta prllx-custom" data-attributes="href={fullUrl},data-prllx=.04">{@|apply svg-icon-eye.block}</div>
                     <!--php print_cta(array(

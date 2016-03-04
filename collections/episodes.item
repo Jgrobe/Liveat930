@@ -42,11 +42,6 @@
                         <div class="video">
                             <div class="image current-image" style="background-image:url('{assetUrl}');">
                                 <div class="cta-dummy" data-icon="eye" data-class="negative play" data-attributes="href={fullUrl}">{@|apply svg-icon-eye.block}</div>
-                                <!--php print_cta(array(
-                        'icon' => 'images/eye',
-                                'class' => array('negative', 'play')
-                                )); -->
-                                <!--<a href="" class="play"></a>-->
                             </div>
                             <div class="flex-cols">
                                 <div class="title">{title}</div>
