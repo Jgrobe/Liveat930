@@ -134,13 +134,13 @@ var ScrollPoster = function($container, options) {
 
         jQuery(SP.$object.hoverApplicants).each(function(i, elem) {
             //console.log('--------------------------- this hover applicant', elem);
-            jQuery(elem).css({
+            var $thisApplicant = jQuery(this);
+            $thisApplicant.css({
                 'background-image' : 'url('+ $clicked.attr('data-img') +')'
             }).addClass(SP.options.posterHoverClass);
 
             if(SP.options.gradientMap) {
-                console.log('GradientMaps', GradientMaps);
-                GradientMaps.applyGradientMap(elem, SP.options.gradientMap);
+                var gradmap = GradientMaps.applyGradientMap($thisApplicant.get(0), SP.options.gradientMap);
                 console.log('gradient map' ,gradmap);
             }
         });
