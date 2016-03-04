@@ -35,7 +35,9 @@ var ScrollPoster = function($container, options) {
     SP.init = function() {
         console.log('poster objects', SP.$object);
 
-        jQuery(document).on('click', '.artist', function(e) {
+        // Apply HoverFX
+        // must not use document.on b/c must limit to this isntance's triggers
+        SP.$object.hoverTrigger.on('click', '.artist', function(e) {
             e.preventDefault();
             var $clicked = jQuery(this);
             if(!SP.HOVERSTAT_ACTIVE) {
@@ -46,6 +48,7 @@ var ScrollPoster = function($container, options) {
             }
         });
 
+        // remove HoverFX
         jQuery(document).on('click', '.posters.hover-on', function(e) {
             e.preventDefault();
             console.log('clicked', e);
