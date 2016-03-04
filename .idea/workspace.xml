@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="6ba77c59-895c-4b6c-8ed1-52220cbb39bd" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collections/episodes.item" afterPath="$PROJECT_DIR$/collections/episodes.item" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/custom/ScrollPoster.js" afterPath="$PROJECT_DIR$/scripts/custom/ScrollPoster.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/custom/page_home.js" afterPath="$PROJECT_DIR$/scripts/custom/page_home.js" />
     </list>
     <ignored path="sqsp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -241,9 +242,21 @@
           <file leaf-file-name="page_home.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/scripts/custom/page_home.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-19.444445">
-                  <caret line="65" column="62" selection-start-line="65" selection-start-column="62" selection-end-line="65" selection-end-column="62" />
+                <state vertical-scroll-proportion="-21.666666">
+                  <caret line="76" column="41" selection-start-line="76" selection-start-column="41" selection-end-line="76" selection-end-column="41" />
                   <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ScrollPoster.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/scripts/custom/ScrollPoster.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.64356434">
+                  <caret line="153" column="47" selection-start-line="153" selection-start-column="47" selection-end-line="153" selection-end-column="47" />
+                  <folding>
+                    <element signature="n#!!doc" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -254,18 +267,6 @@
                 <state vertical-scroll-proportion="-11.111111">
                   <caret line="20" column="77" selection-start-line="20" selection-start-column="75" selection-end-line="20" selection-end-column="77" />
                   <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="ScrollPoster.js" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/scripts/custom/ScrollPoster.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.5310275">
-                  <caret line="104" column="20" selection-start-line="104" selection-start-column="20" selection-end-line="104" selection-end-column="20" />
-                  <folding>
-                    <element signature="n#!!doc" expanded="true" />
-                  </folding>
                 </state>
               </provider>
             </entry>
@@ -313,8 +314,8 @@
           <file leaf-file-name="poster.scss" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/styles/sass/modules/poster.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-20.0">
-                  <caret line="32" column="42" selection-start-line="32" selection-start-column="42" selection-end-line="32" selection-end-column="42" />
+                <state vertical-scroll-proportion="-8.019608">
+                  <caret line="48" column="25" selection-start-line="48" selection-start-column="25" selection-end-line="48" selection-end-column="25" />
                   <folding />
                 </state>
               </provider>
@@ -378,9 +379,9 @@
         <option value="$PROJECT_DIR$/collections/products.list" />
         <option value="$PROJECT_DIR$/footer.region" />
         <option value="$PROJECT_DIR$/styles/sass/modules/poster.scss" />
-        <option value="$PROJECT_DIR$/scripts/custom/ScrollPoster.js" />
-        <option value="$PROJECT_DIR$/scripts/custom/page_home.js" />
         <option value="$PROJECT_DIR$/collections/episodes.item" />
+        <option value="$PROJECT_DIR$/scripts/custom/page_home.js" />
+        <option value="$PROJECT_DIR$/scripts/custom/ScrollPoster.js" />
       </list>
     </option>
   </component>
@@ -1110,14 +1111,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/styles/sass/modules/poster.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-20.0">
-          <caret line="32" column="42" selection-start-line="32" selection-start-column="42" selection-end-line="32" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/styles/sass/modules/nav-search-overlay.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-7.5">
@@ -1139,32 +1132,6 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="449" column="59" selection-start-line="449" selection-start-column="59" selection-end-line="449" selection-end-column="59" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/custom/handleArtists.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.111111">
-          <caret line="20" column="77" selection-start-line="20" selection-start-column="75" selection-end-line="20" selection-end-column="77" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/custom/page_home.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-19.444445">
-          <caret line="65" column="62" selection-start-line="65" selection-start-column="62" selection-end-line="65" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/custom/ScrollPoster.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5310275">
-          <caret line="104" column="20" selection-start-line="104" selection-start-column="20" selection-end-line="104" selection-end-column="20" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1191,6 +1158,40 @@
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#section#1;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/sass/modules/poster.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.019608">
+          <caret line="48" column="25" selection-start-line="48" selection-start-column="25" selection-end-line="48" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/custom/handleArtists.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.111111">
+          <caret line="20" column="77" selection-start-line="20" selection-start-column="75" selection-end-line="20" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/custom/page_home.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-21.666666">
+          <caret line="76" column="41" selection-start-line="76" selection-start-column="41" selection-end-line="76" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/custom/ScrollPoster.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.64356434">
+          <caret line="153" column="47" selection-start-line="153" selection-start-column="47" selection-end-line="153" selection-end-column="47" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -26,9 +26,10 @@ var ScrollPoster = function($container, options) {
         container: $container,
         hoverTrigger: $container.find(SP.options.hoverTriggerSelector),
         unhoverTrigger: $container.find(SP.options.unhoverTriggerSelector),
-        hoverApplicants: $container.find(SP.options.hoverApplicantSelector),
         copyLayer: $container.find(SP.options.copyLayerSelector),
-        hoverLayer: $container.find(SP.options.hoverLayerSelector)
+        hoverLayer: $container.find(SP.options.hoverLayerSelector),
+        hoverClassApplicants : [$container, $container.find(SP.options.hoverLayerSelector)],
+        hoverFXApplicants: $container.find(SP.options.hoverApplicantSelector)
     };
 
     SP.init = function() {
@@ -50,7 +51,7 @@ var ScrollPoster = function($container, options) {
         //        //var hoverIMG = new Image();
         //        //
         //        //hoverIMG.onload = function() {
-        //            jQuery(SP.$object.hoverApplicants).each(function(i, elem) {
+        //            jQuery(SP.$object.hoverFXApplicants).each(function(i, elem) {
         //                //console.log('--------------------------- this hover applicant', elem);
         //                jQuery(elem).css({
         //                    'background-image' : 'url('+ $hovered.attr('data-img') +')'
@@ -70,7 +71,7 @@ var ScrollPoster = function($container, options) {
         //        SP.$object.container.removeClass(SP.options.posterHoverClass);
         //        $unhovered.removeClass(SP.options.elementHoverClass);
         //        // HOVER BG IMAGE
-        //        jQuery(SP.$object.hoverApplicants).each(function(i, elem) {
+        //        jQuery(SP.$object.hoverFXApplicants).each(function(i, elem) {
         //            jQuery(elem).removeClass(SP.options.posterHoverClass).css({
         //                'background-image' : ''
         //            });
@@ -129,10 +130,12 @@ var ScrollPoster = function($container, options) {
     };// init()
 
     function open_hoverstate($clicked) {
-        SP.$object.container.addClass(SP.options.posterHoverClass);
+
+        jQuery(SP.$object.hoverClassApplicants).addClass(SP.options.posterHoverClass);
+        //SP.$object.container.addClass(SP.options.posterHoverClass);
         $clicked.addClass(SP.options.elementHoverClass);
 
-        jQuery(SP.$object.hoverApplicants).each(function(i, elem) {
+        jQuery(SP.$object.hoverFXApplicants).each(function(i, elem) {
             //console.log('--------------------------- this hover applicant', elem);
             var $thisApplicant = jQuery(this);
             $thisApplicant.css({
@@ -148,10 +151,10 @@ var ScrollPoster = function($container, options) {
     }// open_hoverstate
 
     function close_hoverstate() {
-        SP.$object.container.removeClass(SP.options.posterHoverClass);
+        jQuery(SP.$object.hoverClassApplicants).removeClass(SP.options.posterHoverClass);
         SP.$object.hoverTrigger.removeClass(SP.options.elementHoverClass);
         // HOVER BG IMAGE
-        jQuery(SP.$object.hoverApplicants).each(function(i, elem) {
+        jQuery(SP.$object.hoverFXApplicants).each(function(i, elem) {
 
             var $thisApplicant = jQuery(this);
             if(SP.options.gradientMap) {
