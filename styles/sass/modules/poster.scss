@@ -212,7 +212,7 @@ $posterWidth: 84vw;
     @include prefixed(transition, (opacity $shortTrans));
   }
   .ep-lineup {
-    text-align: justify;
+    text-align:left;// justify;
     position: relative;
     //word-break: break-all;
 
