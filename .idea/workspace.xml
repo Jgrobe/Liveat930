@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6ba77c59-895c-4b6c-8ed1-52220cbb39bd" name="Default" comment="" />
+    <list default="true" id="6ba77c59-895c-4b6c-8ed1-52220cbb39bd" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/custom/ScrollPoster.js" afterPath="$PROJECT_DIR$/scripts/custom/ScrollPoster.js" />
+    </list>
     <ignored path="sqsp.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -45,11 +48,21 @@
                   </provider>
                 </entry>
               </file>
-              <file leaf-file-name="footer.region" pinned="false" current-in-tab="true">
+              <file leaf-file-name="footer.region" pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/footer.region">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.44117647">
-                      <caret line="29" column="18" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
+                    <state vertical-scroll-proportion="-2.5">
+                      <caret line="4" column="34" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
+                      <folding />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file leaf-file-name="header.region" pinned="false" current-in-tab="true">
+                <entry file="file://$PROJECT_DIR$/header.region">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state vertical-scroll-proportion="0.18762678">
+                      <caret line="20" column="56" selection-start-line="20" selection-start-column="56" selection-end-line="20" selection-end-column="56" />
                       <folding />
                     </state>
                   </provider>
@@ -114,16 +127,6 @@
                   </provider>
                 </entry>
               </file>
-              <file leaf-file-name="sticky-nav.block" pinned="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/blocks/sticky-nav.block">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="-3.125">
-                      <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
-                      <folding />
-                    </state>
-                  </provider>
-                </entry>
-              </file>
               <file leaf-file-name="page-host.block" pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/blocks/page-host.block">
                   <provider selected="true" editor-type-id="text-editor">
@@ -166,8 +169,8 @@
               <file leaf-file-name="products.list" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/collections/products.list">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.07606491">
-                      <caret line="5" column="156" selection-start-line="5" selection-start-column="156" selection-end-line="5" selection-end-column="156" />
+                    <state vertical-scroll-proportion="0.22819473">
+                      <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
                       <folding />
                     </state>
                   </provider>
@@ -258,8 +261,8 @@
           <file leaf-file-name="ScrollPoster.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/scripts/custom/ScrollPoster.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.8089109">
-                  <caret line="136" column="30" selection-start-line="136" selection-start-column="30" selection-end-line="136" selection-end-column="30" />
+                <state vertical-scroll-proportion="0.88316834">
+                  <caret line="141" column="56" selection-start-line="141" selection-start-column="56" selection-end-line="141" selection-end-column="56" />
                   <folding>
                     <element signature="n#!!doc" expanded="true" />
                   </folding>
@@ -815,14 +818,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/header.region">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-28.125">
-          <caret line="61" column="42" selection-start-line="61" selection-start-column="8" selection-end-line="61" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/blocks/static-nav.block">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-13.125">
@@ -1107,14 +1102,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/collections/products.list">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.07606491">
-          <caret line="5" column="156" selection-start-line="5" selection-start-column="156" selection-end-line="5" selection-end-column="156" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/blocks/page-host.block">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.75">
@@ -1123,14 +1110,6 @@
             <element signature="n#style#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#section#0;n#div#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/footer.region">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44117647">
-          <caret line="29" column="18" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1182,10 +1161,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/footer.region">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.5">
+          <caret line="4" column="34" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collections/products.list">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.22819473">
+          <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/header.region">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18762678">
+          <caret line="20" column="56" selection-start-line="20" selection-start-column="56" selection-end-line="20" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/custom/ScrollPoster.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8089109">
-          <caret line="136" column="30" selection-start-line="136" selection-start-column="30" selection-end-line="136" selection-end-column="30" />
+        <state vertical-scroll-proportion="0.88316834">
+          <caret line="141" column="56" selection-start-line="141" selection-start-column="56" selection-end-line="141" selection-end-column="56" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>

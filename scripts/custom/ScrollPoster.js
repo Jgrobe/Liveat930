@@ -139,6 +139,7 @@ var ScrollPoster = function($container, options) {
             }).addClass(SP.options.posterHoverClass);
 
             if(SP.options.gradientMap) {
+                console.log('GradientMaps', GradientMaps);
                 GradientMaps.applyGradientMap(elem, SP.options.gradientMap);
                 console.log('gradient map' ,gradmap);
             }
