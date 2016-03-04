@@ -96,7 +96,7 @@ var ScrollPoster = function($container, options) {
                 close_hoverstate();
                 SQSP.instances.FieldTracker.$object.tracker.removeClass('active');
                 TweenMax.to(SQSP.$objects.burger,.3, {autoAlpha:1, clearProps:'autoAlpha'});
-            }
+            }// endif
         });
 
         //jQuery(document).on('click', function(e){
@@ -139,7 +139,7 @@ var ScrollPoster = function($container, options) {
             }).addClass(SP.options.posterHoverClass);
 
             if(SP.options.gradientMap) {
-                var gradmap = GradientMaps.applyGradientMap(elem, SP.options.gradientMap);
+                GradientMaps.applyGradientMap(elem, SP.options.gradientMap);
                 console.log('gradient map' ,gradmap);
             }
         });
