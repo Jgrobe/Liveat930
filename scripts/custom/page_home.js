@@ -72,7 +72,7 @@ SQSP.functions.initPage = function() {
             //})
         }) );
 
-        SQSP.instances.Posters[i].$object.hoverApplicants = [SQSP.$objects.postersHoverContainer, SQSP.instances.Posters[i].$object.hoverLayer];
+        SQSP.instances.Posters[i].$object.hoverApplicants = [SQSP.$objects.postersContainer, SQSP.instances.Posters[i].$object.hoverLayer];
         SQSP.instances.Posters[i].init();
 
         //var scrollBtn = new ScrollHeader(SQSP.instances.Posters[i].$object.find('.btn-play-episode'),{
