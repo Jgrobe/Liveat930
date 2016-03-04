@@ -21,7 +21,7 @@
 
     <div class="site-content">
 
-        {.if tags}
+        {.if customContent.episode-videoclips}
         <section class="video-gallery teaser no-shift">
 
             <div class="section-head">

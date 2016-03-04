@@ -31,6 +31,7 @@ var ScrollPoster = function($container, options) {
         hoverClassApplicants : [$container, $container.find(SP.options.hoverLayerSelector)],
         hoverFXApplicants: $container.find(SP.options.hoverApplicantSelector)
     };
+    SP.isHoverActive = false;
 
     SP.init = function() {
         console.log('poster objects', SP.$object);
