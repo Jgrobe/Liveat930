@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6ba77c59-895c-4b6c-8ed1-52220cbb39bd" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collections/episodes.item" afterPath="$PROJECT_DIR$/collections/episodes.item" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/custom/page_clips.js" afterPath="$PROJECT_DIR$/scripts/custom/page_clips.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template.conf" afterPath="$PROJECT_DIR$/template.conf" />
     </list>
     <ignored path="sqsp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,11 +28,11 @@
         <splitter split-orientation="horizontal" split-proportion="0.67737114">
           <split-first>
             <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-              <file leaf-file-name="template.conf" pinned="false" current-in-tab="false">
+              <file leaf-file-name="template.conf" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/template.conf">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="18.88889">
-                      <caret line="165" column="20" selection-start-line="165" selection-start-column="20" selection-end-line="165" selection-end-column="30" />
+                    <state vertical-scroll-proportion="0.33263597">
+                      <caret line="101" column="79" selection-start-line="101" selection-start-column="79" selection-end-line="101" selection-end-column="79" />
                       <folding />
                     </state>
                   </provider>
@@ -83,11 +82,11 @@
                   </provider>
                 </entry>
               </file>
-              <file leaf-file-name="episodes.item" pinned="false" current-in-tab="true">
+              <file leaf-file-name="episodes.item" pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/collections/episodes.item">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.78701824">
-                      <caret line="177" column="41" selection-start-line="177" selection-start-column="41" selection-end-line="177" selection-end-column="41" />
+                    <state vertical-scroll-proportion="-12.958333">
+                      <caret line="146" column="33" selection-start-line="146" selection-start-column="33" selection-end-line="146" selection-end-column="33" />
                       <folding>
                         <element signature="n#style#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
                         <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#section#1;n#div#0;n#!!top" expanded="true" />
@@ -338,7 +337,6 @@
         <option value="$PROJECT_DIR$/scripts/custom/SVGClipper.js" />
         <option value="$PROJECT_DIR$/scripts/custom/global_functions.js" />
         <option value="$PROJECT_DIR$/styles/sass/modules/search-overlay.scss" />
-        <option value="$PROJECT_DIR$/template.conf" />
         <option value="$PROJECT_DIR$/blocks/poster-parallax.block" />
         <option value="$PROJECT_DIR$/scripts/custom/page_show.js" />
         <option value="$PROJECT_DIR$/scripts/custom/page_episode.js" />
@@ -372,6 +370,7 @@
         <option value="$PROJECT_DIR$/collections/videoclips.list" />
         <option value="$PROJECT_DIR$/scripts/custom/page_clips.js" />
         <option value="$PROJECT_DIR$/collections/episodes.item" />
+        <option value="$PROJECT_DIR$/template.conf" />
       </list>
     </option>
   </component>
@@ -676,7 +675,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-2556" y="23" width="2556" height="1417" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10019724" sideWeight="0.879692" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32981133" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -685,7 +684,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32830188" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32830188" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21660377" sideWeight="0.49822485" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21660377" sideWeight="0.49822485" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14990138" sideWeight="0.12030799" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -968,14 +967,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/template.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="18.88889">
-          <caret line="165" column="20" selection-start-line="165" selection-start-column="20" selection-end-line="165" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/collections/pages.item">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-11.25">
@@ -1167,12 +1158,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/collections/episodes.item">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.78701824">
-          <caret line="177" column="41" selection-start-line="177" selection-start-column="41" selection-end-line="177" selection-end-column="41" />
+        <state vertical-scroll-proportion="-12.958333">
+          <caret line="146" column="33" selection-start-line="146" selection-start-column="33" selection-end-line="146" selection-end-column="33" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#section#1;n#div#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33263597">
+          <caret line="101" column="79" selection-start-line="101" selection-start-column="79" selection-end-line="101" selection-end-column="79" />
+          <folding />
         </state>
       </provider>
     </entry>
