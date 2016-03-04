@@ -247,6 +247,7 @@ $rightColMargin: 10vw;
     @include flex-value(grow, 1);
 
     .imgfill.tv {
+      overflow: hidden;
       position: relative;
       video {position: absolute;}
     }
@@ -275,7 +276,7 @@ $rightColMargin: 10vw;
       color: #000000;
 
       position: absolute;
-      top: 47%;
+      top: 50%;
       left: 5%;
       width: 90%;
       text-align: center;
