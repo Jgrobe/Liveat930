@@ -74,6 +74,7 @@ var ScrollPoster = function($container, options) {
             });
 
             if(SP.options.gradientMap) {
+                console.log('applying gradient map on ', elem, SP.options.gradientMap);
                 GradientMaps.applyGradientMap($thisApplicant.get(0), SP.options.gradientMap);
             }
         });
