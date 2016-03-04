@@ -4,7 +4,7 @@
         {.section items.0}
         <section class="upcoming">
             <div class="upcoming-headline prllx-custom" data-prllx=".04">
-                <div class="upcoming-sub">Ep <strong>No.{customContent.episode-number}</strong></div>
+                <div class="upcoming-sub">Episode <strong>No.{customContent.episode-number}</strong></div>
                 <h1>The next live at 9:30</h1>
             </div>
             <div class="upcoming-info prllx-custom" data-prllx=".08">
