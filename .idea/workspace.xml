@@ -5,7 +5,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/sass/pages/blog.scss" afterPath="$PROJECT_DIR$/styles/sass/pages/blog.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/style.css" afterPath="$PROJECT_DIR$/styles/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/style.css.map" afterPath="$PROJECT_DIR$/styles/style.css.map" />
     </list>
     <ignored path="sqsp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -299,8 +298,8 @@
           <file leaf-file-name="blog.scss" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/styles/sass/pages/blog.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.3346856">
-                  <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
+                <state vertical-scroll-proportion="0.30425963">
+                  <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
                   <folding />
                 </state>
               </provider>
@@ -1201,8 +1200,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/styles/sass/pages/blog.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3346856">
-          <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
+        <state vertical-scroll-proportion="0.30425963">
+          <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
           <folding />
         </state>
       </provider>

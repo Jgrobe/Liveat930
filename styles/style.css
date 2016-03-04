@@ -3156,11 +3156,12 @@ a.episodes-landing-cta {
     position: absolute;
     top: 100%;
     left: 50%;
-    -webkit-transform: translateX(-50%) translateY(5%);
-    -moz-transform: translateX(-50%) translateY(5%);
-    -ms-transform: translateX(-50%) translateY(5%);
-    -o-transform: translateX(-50%) translateY(5%);
-    transform: translateX(-50%) translateY(5%); }
+    margin: 0;
+    -webkit-transform: translateX(-50%) translateY(-30%);
+    -moz-transform: translateX(-50%) translateY(-30%);
+    -ms-transform: translateX(-50%) translateY(-30%);
+    -o-transform: translateX(-50%) translateY(-30%);
+    transform: translateX(-50%) translateY(-30%); }
     .post-landing .sharebox .label {
       margin-top: 10px; }
 
