@@ -62,13 +62,17 @@ var ImageGallery = function($container, options) {
     IG.leftright = function(direction, functions) {
         if(typeof functions === 'undefined') functions = {};
 
+
+        var $imagesToUse = is_mobile() ? IG.$object.image.eq(0) : IG.$object.image;
+
         if(IG.lastDirection !== direction) {
-            IG.options.currentIndex += ( direction == 'next' ? (IG.$object.image.length - 1) : -(IG.$object.image.length - 1) );
+            // equalize index in case of direction change on multiple imageContainers
+            // so it jumps over currently displayed image
+            IG.options.currentIndex += ( direction == 'next' ? ($imagesToUse.length - 1) : -($imagesToUse.length - 1) );
         }// endif
 
         IG.lastDirection = direction;
-
-        var $images = direction == 'next' ? IG.$object.image : jQuery(IG.$object.image.get().reverse());
+        var $images = direction == 'next' ? $imagesToUse : jQuery($imagesToUse.get().reverse());
 
         $images.each(function(){
 
