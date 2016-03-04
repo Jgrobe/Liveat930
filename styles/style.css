@@ -3172,13 +3172,34 @@ a.episodes-landing-cta {
       background-position-x: 23px; } }
 
 .post-content {
-  width: 80vw;
+  width: 70vw;
   max-width: 800px;
-  margin: 20vh auto;
+  margin: 10.41667vw auto;
   font-size: 1vw; }
   .post-content p {
     line-height: 1.75em;
     margin-bottom: 2.5vh; }
+
+.post-pagination {
+  width: 80vw;
+  max-width: 900px;
+  margin: 0 auto 10.41667vw auto; }
+  .post-pagination .cta-container {
+    position: absolute;
+    bottom: -2%; }
+  .post-pagination .col {
+    width: 47%;
+    margin: auto; }
+    .post-pagination .col.prev {
+      margin-left: auto; }
+      .post-pagination .col.prev .cta-container {
+        left: 5%; }
+    .post-pagination .col.next {
+      margin-right: auto; }
+      .post-pagination .col.next .cta-container {
+        right: 5%; }
+      .post-pagination .col.next .pagination-label {
+        text-align: right; }
 
 .show-landing {
   width: 100vw;

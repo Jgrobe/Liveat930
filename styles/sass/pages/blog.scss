@@ -20,12 +20,49 @@
 }
 
 .post-content {
-  width: 80vw;
+  width: 70vw;
   max-width: 800px;
-  margin: 20vh auto;
+  margin: $sectionMarginBottom auto;
   font-size: 1vw;
   p {
     line-height: 1.75em;
     margin-bottom: 2.5vh;
   }
 }
+
+.post-pagination {
+  width: 80vw;
+  max-width: 900px;
+  margin: 0 auto $sectionMarginBottom auto;
+
+  .cta-container {
+    position: absolute;
+    bottom: -2%;
+  }
+
+  .col {
+    width: 47%;
+    margin: auto;
+
+    &.prev {
+      margin-left: auto;
+
+      .cta-container {
+        left: 5%;
+      }// .cta-container
+    }// prev
+
+    &.next {
+      margin-right: auto;
+
+      .cta-container {
+        right: 5%;
+      }// .cta-container
+
+      .pagination-label {
+        text-align: right;
+      }
+    }// next
+  }// .col
+
+}// section.post-pagination
