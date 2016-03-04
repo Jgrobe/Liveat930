@@ -74,7 +74,10 @@ var ScrollPoster = function($container, options) {
 
     function open_hoverstate($clicked) {
 
-        lock(jQuery('body'), '100vh');
+        var scrollY = $clicked.parent().offset().top + $clicked.parent().height()*.5 - jQuery(window).height()*.5;
+        TweenMax.to(window,.2, {scrollTo:{y:scrollY}, ease:Strong.easeInOut, onComplete:function() {
+            lock(jQuery('body'), '100vh');
+        }});
 
         jQuery(SP.$object.hoverClassApplicants).each(function(){jQuery(this).addClass(SP.options.posterHoverClass)});
         //SP.$object.container.addClass(SP.options.posterHoverClass);
