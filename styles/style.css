@@ -2043,6 +2043,8 @@ input {
     grow: 1; }
     .shortcuts .quick-videos .imgfill.tv, .shortcuts .quick-videos .posters .tv.posters-hover-bg, .posters .shortcuts .quick-videos .tv.posters-hover-bg, .shortcuts .quick-videos .poster .layer.bg-layer .tv.half, .poster .layer.bg-layer .shortcuts .quick-videos .tv.half, .shortcuts .quick-videos .nav-overlay .tv.bg-container, .nav-overlay .shortcuts .quick-videos .tv.bg-container, .shortcuts .quick-videos .tv.clip-landing {
       position: relative; }
+      .shortcuts .quick-videos .imgfill.tv video, .shortcuts .quick-videos .posters .tv.posters-hover-bg video, .posters .shortcuts .quick-videos .tv.posters-hover-bg video, .shortcuts .quick-videos .poster .layer.bg-layer .tv.half video, .poster .layer.bg-layer .shortcuts .quick-videos .tv.half video, .shortcuts .quick-videos .nav-overlay .tv.bg-container video, .nav-overlay .shortcuts .quick-videos .tv.bg-container video, .shortcuts .quick-videos .tv.clip-landing video {
+        position: absolute; }
   .shortcuts .video {
     position: relative;
     width: 100%; }
