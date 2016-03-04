@@ -156,7 +156,6 @@ var ScrollPoster = function($container, options) {
             var $thisApplicant = jQuery(this);
             if(SP.options.gradientMap) {
                 GradientMaps.removeGradientMap($thisApplicant.get(0), SP.options.gradientMap);
-                console.log('gradient map' ,gradmap);
             }
 
             //$thisApplicant.removeClass(SP.options.posterHoverClass).css({
