@@ -25,7 +25,7 @@
 
     <section class="video-gallery">
         <div class="rectangle"></div>
-        <div class="video-gallery-videos" data-payload="3">
+        <div class="video-gallery-videos" data-payload="5">
 
             <div class="gutter-sizer"></div>
 
