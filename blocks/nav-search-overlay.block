@@ -20,10 +20,11 @@
                         <div class="quick-videos">
                             <div class="video last-episode stagger-item">
                                 <a href="/episodes/2016/2/21/episode-no-2">
-                                    <div class="img tv imgfill" style="background-image:url();">
-                                        <div class="title">
-                                            <span>{@|apply svg-icon-play.block}</span>
-                                        </div><!-- .title -->
+                                    <div class="img tv imgfill" style="background-image:url('');">
+                                        <video src="https://player.vimeo.com/external/157569044.sd.mp4?s=f8ff21f7c20844cdc6d5a187ab4644e078550fbe&profile_id=164"></video>
+                                        <!--<div class="title">-->
+                                            <!--<span>{@|apply svg-icon-play.block}</span>-->
+                                        <!--</div>&lt;!&ndash; .title &ndash;&gt;-->
                                     </div><!-- .img.tv -->
                                     <div class="label">Watch EP.2</div><!-- .label -->
                                 </a>
@@ -31,7 +32,8 @@
                             <div class="video teaser stagger-item">
                                 <a href="/episodes/2016/2/24/episode-no-3">
                                     <div class="img tv imgfill" style="background-image:url();">
-                                        <div class="title">Airs next friday @ 9:30 on WGWN</div>
+                                        <video src="https://player.vimeo.com/external/157569046.sd.mp4?s=cc05df059f14a6802b1a96e78f0a82788b6a1290&profile_id=164"></video>
+                                        <!--<div class="title">Airs next friday @ 9:30 on WGWN</div>-->
                                     </div><!-- .img.tv -->
                                     <div class="label">EP.3 Sneak Peek</div>
                                 </a>

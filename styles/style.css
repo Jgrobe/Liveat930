@@ -2044,14 +2044,8 @@ input {
   .shortcuts .video {
     position: relative;
     width: 100%; }
-    .shortcuts .video .imgfill, .shortcuts .video .posters .posters-hover-bg, .posters .shortcuts .video .posters-hover-bg, .shortcuts .video .poster .layer.bg-layer .half, .poster .layer.bg-layer .shortcuts .video .half, .shortcuts .video .nav-overlay .bg-container, .nav-overlay .shortcuts .video .bg-container, .shortcuts .video .clip-landing {
-      background-blend-mode: screen; }
-    .shortcuts .video.last-episode .imgfill, .shortcuts .video.last-episode .posters .posters-hover-bg, .posters .shortcuts .video.last-episode .posters-hover-bg, .shortcuts .video.last-episode .poster .layer.bg-layer .half, .poster .layer.bg-layer .shortcuts .video.last-episode .half, .shortcuts .video.last-episode .nav-overlay .bg-container, .nav-overlay .shortcuts .video.last-episode .bg-container, .shortcuts .video.last-episode .clip-landing {
-      background-color: cyan; }
     .shortcuts .video.teaser {
       margin-top: 3.81944vw; }
-      .shortcuts .video.teaser .imgfill, .shortcuts .video.teaser .posters .posters-hover-bg, .posters .shortcuts .video.teaser .posters-hover-bg, .shortcuts .video.teaser .poster .layer.bg-layer .half, .poster .layer.bg-layer .shortcuts .video.teaser .half, .shortcuts .video.teaser .nav-overlay .bg-container, .nav-overlay .shortcuts .video.teaser .bg-container, .shortcuts .video.teaser .clip-landing {
-        background-color: magenta; }
     .shortcuts .video .title {
       font-size: 1.38889vw;
       line-height: 1.52778vw;

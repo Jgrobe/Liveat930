@@ -251,15 +251,15 @@ $rightColMargin: 10vw;
     position: relative;
     width: 100%;
 
-    .imgfill {background-blend-mode: screen;}
-
-    &.last-episode {
-      .imgfill {background-color: cyan};
-    }
+    //.imgfill {background-blend-mode: screen;}
+    //
+    //&.last-episode {
+    //  .imgfill {background-color: cyan};
+    //}
 
     &.teaser {
       @include relative_units(margin-top, 110);
-      .imgfill {background-color: magenta};
+      //.imgfill {background-color: magenta};
     }
 
     .title {
