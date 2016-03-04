@@ -1970,13 +1970,13 @@ input {
         margin: auto; }
       .nav-overlay .social-container .square-btn.instagram svg, .nav-overlay .social-container .square-btn.instagram img {
         width: 1.04167vw;
-        height: 1.04167vw; }
+        height: 1.11111vw; }
       .nav-overlay .social-container .square-btn.facebook svg, .nav-overlay .social-container .square-btn.facebook img {
         width: 0.52083vw;
-        height: 1.04167vw; }
+        height: 1.11111vw; }
       .nav-overlay .social-container .square-btn.twitter svg, .nav-overlay .social-container .square-btn.twitter img {
         width: 1.18056vw;
-        height: 1.04167vw; }
+        height: 1.11111vw; }
   @media only screen and (max-width: 750px) {
     .nav-overlay .cell {
       width: calc(~"100vw - 24px"); }

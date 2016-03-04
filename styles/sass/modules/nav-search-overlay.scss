@@ -147,21 +147,21 @@ $rightColMargin: 10vw;
       &.instagram {
         svg, img {
           @include relative_units(width, 30);
-          @include relative_units(height, 30);
+          @include relative_units(height, 32);
         }
       }// .instagram
 
       &.facebook {
         svg, img {
           @include relative_units(width, 15);
-          @include relative_units(height, 30);
+          @include relative_units(height, 32);
         }
       }// .facebook
 
       &.twitter {
         svg, img {
           @include relative_units(width, 34);
-          @include relative_units(height, 30);
+          @include relative_units(height, 32);
         }
       }// .twitter
     }// .square-btn
