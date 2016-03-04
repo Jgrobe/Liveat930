@@ -27,7 +27,7 @@
                         <p id="lineup_preview" data-artists="{customContent.featured-artists}"></p>
                         <script>
                             var $lineupPreview = jQuery('#lineup_preview');
-                            var previewwartists = $lineupPreview.data('artists').split(',').slice(0,3).join(' / ');
+                            var previewwartists = $lineupPreview.data('artists').split(',').slice(0,4).join(' / ');
                             $lineupPreview.html(previewwartists+' & more')
                         </script>
                     </div>
