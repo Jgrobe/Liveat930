@@ -17,7 +17,6 @@ var ImageGallery = function($container, options) {
         imageSelector : '.gallery-image',
         imageTitleSelector : '.gallery-title',
         imageCopySelector : '.gallery-copy',
-        imageCopyContainerSelector: '.text-layer',
         arrowSelector : '.arrow',
         labelCurrentSelector: '.gallery-current',
         labelTotalSelector: '.gallery-total',
@@ -31,7 +30,6 @@ var ImageGallery = function($container, options) {
         image : $container.find(IG.options.imageSelector),
         imageTitle : $container.find(IG.options.imageTitleSelector),
         imageCopy : $container.find(IG.options.imageCopySelector),
-        imageCopyContainer : $container.find(IG.options.imageCopyContainerSelector),
         arrows : $container.find(IG.options.arrowSelector),
         labelCurrent: $container.find(IG.options.labelCurrentSelector),
         labelTotal: $container.find(IG.options.labelTotalSelector),
@@ -205,18 +203,14 @@ var ImageGallery = function($container, options) {
     function update_imageCopy() {
         if( !elem_exists(IG.$object.imageCopy) ) return 'null'; // must be tween, timeline, fn or string b/c inserted into timeline
         //console.log('------- update_imageCopy()');
-        var oldHeight = IG.$object.imageCopy.outerHeight();
-        var newHeight;
 
         var copyTL = new TimelineMax();
         copyTL.to(IG.$object.imageCopy, IG.options.duration, {autoAlpha:0});
 
         copyTL.add(function() {
             IG.$object.imageCopy.html(IG.options.images[IG.options.currentIndex].copy);
-            newHeight = IG.$object.imageCopy.outerHeight();
         });
-        copyTL.fromTo(IG.$object.imageCopy, IG.options.duration, {height:oldHeight}, {height:newHeight, ease:Strong.easeInOut});
-        copyTL.to(IG.$object.imageCopy, IG.options.duration, {autoAlpha:1}, '-='+(IG.options.duration *.25));
+        copyTL.to(IG.$object.imageCopy, IG.options.duration, {autoAlpha:1});
 
         return copyTL;
     }// update_imageCopy()
