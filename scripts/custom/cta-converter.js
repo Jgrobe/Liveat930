@@ -43,7 +43,7 @@ function get_cta_html(options) {
         var pairs = settings.attributes.split(',');
         for (var i = 0; i < pairs.length; i++) {
             var data = pairs[i].split('=');
-            ctaHTML += ' ' + data[0] + '="' + data[1].replace(':', '=') + '"';
+            ctaHTML += ' ' + data[0] + '="' + data[1].replace('::', '=') + '"';
         }// endfor
     }//endif
     ctaHTML += '>';
