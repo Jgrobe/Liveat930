@@ -33,6 +33,7 @@ SQSP.functions.initPage = function() {
             left:0,
             width: '100%',
             height: '100%',
+            'z-index' : '999',
             autoAlpha: 0
         });
         $overlay.append(jQuery('<video src="'+ vidURL +'"/>'));
