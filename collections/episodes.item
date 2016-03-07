@@ -158,7 +158,8 @@
 
                     <div class="video">
                         <div class="image" style="background-image:url('{assetUrl}');">
-                            <div class="cta-dummy" data-icon="icon-arrow" data-class="negative play goto" data-attributes="href={collection.fullUrl}?category={item.categories.0|url-encode}">{@|apply svg-icon-arrow.block}</div>
+                            <h1>{categories.0} | {categories.0|url-encode}</h1>
+                            <div class="cta-dummy" data-icon="icon-arrow" data-class="negative play goto" data-attributes="href={collection.fullUrl}?category={categories.0}">{@|apply svg-icon-arrow.block}</div>
                             <!--php print_cta(array(
                                     'icon' => 'images/icon-arrow',
                             'class' => array('negative', 'play', 'goto')
