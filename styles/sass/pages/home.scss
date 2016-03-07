@@ -1,10 +1,10 @@
 #fieldTracker {
   position: fixed;
   z-index: 8;
-  top: 10vw;
-  right: 10vw;
+  top: 5vw;
+  right: 15vw;
   cursor: pointer;
-  pointer-events: none;
+  //pointer-events: none;
   @include autoAlpha(0);
   //@include transform(translateX(-50%) translateY(-50%));
   @include prefixed(transition, (opacity $shortTrans, visibility $shortTrans));

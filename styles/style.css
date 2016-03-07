@@ -2299,10 +2299,9 @@ input {
 #fieldTracker {
   position: fixed;
   z-index: 8;
-  top: 10vw;
-  right: 10vw;
+  top: 5vw;
+  right: 15vw;
   cursor: pointer;
-  pointer-events: none;
   visibility: hidden;
   opacity: 0;
   -webkit-transition: opacity 0.3s, visibility 0.3s;
