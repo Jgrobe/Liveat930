@@ -3786,7 +3786,7 @@ a.episodes-landing-cta {
     display: block;
     padding-top: 58%;
     background: rgba(0, 0, 0, 0.9) url("assets/images/spinner.gif") no-repeat center;
-    background-size: 20%; }
+    background-size: 2%; }
   .clip-preview-container > * {
     position: absolute; }
   .clip-preview-container video {
