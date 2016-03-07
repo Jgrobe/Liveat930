@@ -31,10 +31,17 @@ SQSP.functions.initPage = function() {
     var clipsFilter = getUriParams('filter');
     if(clipsFilter) {
         console.log('------has clips filter', clipsFilter);
-        $filterBtns.each(function() {
-            var $thisBtn = jQuery(this);
-            if($thisBtn.data('filter') === clipsFilter) $thisBtn.click();
-            return false;
-        });
+        var filterTimer = setInterval(function() {
+            console.log('checking filterinprogress', SQSP.instances.videoGrid.isFilterInProgress);
+            if(!SQSP.instances.videoGrid.isFilterInProgress) {
+                console.log('filterprogress clear, filter');
+                $filterBtns.each(function() {
+                    var $thisBtn = jQuery(this);
+                    if($thisBtn.data('filter') === clipsFilter) $thisBtn.click();
+                    return false;
+                });
+                clearInterval(filterTimer);
+            }// endif;
+        }, 100);
     }// endif
 };// initPage()
