@@ -76,9 +76,11 @@
               <file leaf-file-name="videoclips.item" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/collections/videoclips.item">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.5046924">
-                      <caret line="102" column="0" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
-                      <folding />
+                    <state vertical-scroll-proportion="0.25026068">
+                      <caret line="16" column="117" selection-start-line="16" selection-start-column="117" selection-end-line="16" selection-end-column="117" />
+                      <folding>
+                        <element signature="n#style#0;n#section#0;n#!!top" expanded="true" />
+                      </folding>
                     </state>
                   </provider>
                 </entry>
@@ -1194,14 +1196,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blocks/module-clip-item.block">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.10649087">
-          <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/collections/videoclips.list">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.47160244">
@@ -1210,11 +1204,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/blocks/module-clip-item.block">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.10649087">
+          <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/collections/videoclips.item">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5046924">
-          <caret line="102" column="0" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="0.25026068">
+          <caret line="16" column="117" selection-start-line="16" selection-start-column="117" selection-end-line="16" selection-end-column="117" />
+          <folding>
+            <element signature="n#style#0;n#section#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
