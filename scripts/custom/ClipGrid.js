@@ -77,6 +77,7 @@ var ClipGrid = function($container, options) {
             }
         });
 
+        console.log('init grid w/filter', CG.options.filter, (CG.options.filter ? CG.options.filter : CG.options.itemSelector) );
         CG.filter( CG.options.filter ? CG.options.filter : CG.options.itemSelector );
 
         if(_.isFunction(CG.options.onIinit)) CG.options.onIinit();
