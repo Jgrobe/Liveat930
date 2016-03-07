@@ -41,8 +41,8 @@ SQSP.functions.initPage = function() {
                     if($thisBtn.data('filter') === clipsFilter) {
                         console.log('match found', $thisBtn.data('filter') );
                         $thisBtn.click();
+                        return false;
                     }
-                    return false;
                 });
                 clearInterval(filterTimer);
             }// endif;
