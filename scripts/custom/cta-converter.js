@@ -30,7 +30,8 @@ function get_cta_html(options) {
         'label': false,
         'hover': false,
         'tag': 'a',
-        'attributes': 'href=#'
+        'attributes': 'href=#',
+        'url-params' : false
     }, options);
     //console.log('cta opts', options, 'cta settings', settings);
 
@@ -43,7 +44,20 @@ function get_cta_html(options) {
         var pairs = settings.attributes.split(',');
         for (var i = 0; i < pairs.length; i++) {
             var data = pairs[i].split('=');
-            ctaHTML += ' ' + data[0] + '="' + data[1] + '"';
+            ctaHTML += ' ' + data[0] + '="' + data[1];
+
+            if(data[0] === 'href' && settings['url-params']){
+                var params = settings['url-params'].split(',');
+                ctaHTML += '?';
+                for (var u = 0; u < params.length; u++) {
+                    if(u > 0) ctaHTML += '&';
+                    ctaHTML += params[u];
+                }// endfor urlparams
+
+                console.log('cta has url params', ctaHTML);
+            }// endif url-params
+
+            ctaHTML += + '"';
         }// endfor
     }//endif
     ctaHTML += '>';
@@ -77,3 +91,7 @@ function get_cta_html(options) {
     return ctaHTML;
 
 }// get_cta_html()
+
+function parseAttributes() {
+
+}// parseAttributes()
