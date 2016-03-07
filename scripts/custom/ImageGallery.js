@@ -216,9 +216,9 @@ var ImageGallery = function($container, options) {
             newHeight = IG.$object.imageCopy.height();
             IG.$object.imageCopy.height(oldHeight);
 
+            copyTL.to(IG.$object.imageCopy, IG.options.duration, {height:newHeight, ease:Strong.easeOut});
+            copyTL.to(IG.$object.imageCopy, IG.options.duration, {autoAlpha:1});
         });
-        copyTL.to(IG.$object.imageCopy, IG.options.duration, {height:newHeight, ease:Strong.easeOut});
-        copyTL.to(IG.$object.imageCopy, IG.options.duration, {autoAlpha:1});
 
         return copyTL;
     }// update_imageCopy()
