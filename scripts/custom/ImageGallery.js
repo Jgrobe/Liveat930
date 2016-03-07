@@ -217,7 +217,7 @@ var ImageGallery = function($container, options) {
             newHeight = IG.$object.imageCopyContainer.height();
             console.log('imageCopycontainer newheight', newHeight);
         });
-        copyTL.fromTo(IG.$object.imageCopyContainer, IG.options.duration *.5, {height:oldHeight}, {height:newHeight, ease:Strong.easeInOut, clearProps:'height', onUpdate:function(){console.log('tweening height', this.target._gsTransform.height);}});
+        copyTL.fromTo(IG.$object.imageCopyContainer, IG.options.duration *.5, {height:oldHeight}, {height:newHeight, ease:Strong.easeInOut, clearProps:'height', onUpdate:function(){console.log('tweening height', IG.$object.imageCopyContainer.height());}});
         copyTL.to(IG.$object.imageCopy, IG.options.duration, {autoAlpha:1}, '-='+(IG.options.duration *.25));
 
         return copyTL;
