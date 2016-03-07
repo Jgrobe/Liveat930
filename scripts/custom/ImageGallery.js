@@ -214,6 +214,7 @@ var ImageGallery = function($container, options) {
 
         copyTL.add(function() {
             IG.$object.imageCopy.html(IG.options.images[IG.options.currentIndex].copy);
+            IG.$object.imageCopyContainer.height('auto');
             newHeight = IG.$object.imageCopyContainer.height();
             console.log('imageCopycontainer newheight', newHeight);
         });
