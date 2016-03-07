@@ -217,7 +217,7 @@ function windowloaded() {
 
         if(SQSP.vars.isSearchOverlayOpen) {
             toggleSearchOverlay();
-            return false;
+            //return false;
         }
         toggleNavOverlay();
     });// click()
