@@ -10,6 +10,7 @@ SQSP.functions.initPage = function() {
     var $relatedGrid = jQuery('.related-clips-gallery');
     SQSP.instances.relatedClipsGrid = new ClipGrid($relatedGrid, {
         sizes : ['small'],
+        payload : $relatedGrid.data('payload'),
         loadMoreCTA: $relatedGrid.parents('section').find('.load-more-cta')
     });
 

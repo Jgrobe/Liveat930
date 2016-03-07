@@ -34,7 +34,7 @@
 
                 <script>console.log('Clips Tags query ', {@|json-pretty});</script>
 
-                <div class="video-gallery-videos related-clips-gallery top-spaced">
+                <div class="video-gallery-videos related-clips-gallery top-spaced" data-payload="3">
                     <div class="gutter-sizer"></div>
 
                     {.repeated section items}
@@ -158,7 +158,7 @@
 
                     <div class="video">
                         <div class="image" style="background-image:url('{assetUrl}');">
-                            <div class="cta-dummy" data-icon="icon-arrow" data-class="negative play goto" data-attributes="href={fullUrl}">{@|apply svg-icon-arrow.block}</div>
+                            <div class="cta-dummy" data-icon="icon-arrow" data-class="negative play goto" data-attributes="href={collection.fullUrl}?category={categories.0}">{@|apply svg-icon-arrow.block}</div>
                             <!--php print_cta(array(
                                     'icon' => 'images/icon-arrow',
                             'class' => array('negative', 'play', 'goto')
