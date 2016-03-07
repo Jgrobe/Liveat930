@@ -30,24 +30,15 @@ SQSP.functions.initPage = function() {
 
     });
 
-    //var clipsFilter = getUriParams('filter');
-    //if(clipsFilter) {
-    //    console.log('------has clips filter', clipsFilter);
-    //    var filterTimer = setInterval(function() {
-    //        console.log('checking filterinprogress', SQSP.instances.videoGrid.isFilterInProgress);
-    //        if(!SQSP.instances.videoGrid.isFilterInProgress) {
-    //            console.log('filterprogress clear, filter', clipsFilter);
-    //            $filterBtns.each(function() {
-    //                var $thisBtn = jQuery(this);
-    //                console.log('this filter is', $thisBtn.data('filter') );
-    //                if($thisBtn.data('filter') === clipsFilter) {
-    //                    console.log('match found', $thisBtn.data('filter') );
-    //                    $thisBtn.click();
-    //                    return false;
-    //                }
-    //            });
-    //            clearInterval(filterTimer);
-    //        }// endif;
-    //    }, 100);
-    //}// endif
+    // set current item class on filter menu if filtered by URIParams
+    if(uriFilter) {
+        $filterBtns.each(function() {
+            var $thisBtn = jQuery(this);
+            if($thisBtn.data('filter') === uriFilter) {
+                $thisBtn.addClass('current-item');
+                return false;
+            }// endif
+        });// endeach
+    }// endif
+
 };// initPage()
