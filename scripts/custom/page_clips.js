@@ -35,6 +35,7 @@ SQSP.functions.initPage = function() {
         $filterBtns.each(function() {
             var $thisBtn = jQuery(this);
             if($thisBtn.data('filter') === uriFilter) {
+                $thisBtn.siblings().removeClass('current-item');
                 $thisBtn.addClass('current-item');
                 return false;
             }// endif

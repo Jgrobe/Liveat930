@@ -9,11 +9,16 @@
             <div class="video-overview-filter-headline s-headline">Browse & Filter</div>
             {.if categories}
                 <ul class="video-overview-filter">
+                    <li class="video-filter-item current-item" data-filter="video">
+                        <a class="clips-filter-trigger" href="">All</a>
+                    </li>
+
                     {.repeated section categories}
                         <li class="video-filter-item" data-filter="{@|slugify}">
                             <a class="clips-filter-trigger" href="?filter={@|url-encode}">{@}</a>
                         </li>
                     {.end}<!-- .end repeat categories -->
+
                 </ul>
             {.end}<!-- .end if categories -->
         </div>

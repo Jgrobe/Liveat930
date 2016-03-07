@@ -88,7 +88,7 @@ var ClipGrid = function($container, options) {
         if(CG.isFilterInProgress) return false;
         CG.isFilterInProgress = true;
 
-        if(filter == CG.currentFilter) filter = CG.options.itemSelector;
+        if(filter == CG.currentFilter) return false;// filter = CG.options.itemSelector; // commented code 'unfilters' items -> setting back to all items
 
         CG.currentFilter = filter;
 

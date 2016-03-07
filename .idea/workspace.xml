@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="6ba77c59-895c-4b6c-8ed1-52220cbb39bd" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/custom/ui.js" afterPath="$PROJECT_DIR$/scripts/custom/ui.js" />
     </list>
     <ignored path="sqsp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -211,8 +210,8 @@
           <file leaf-file-name="ui.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/scripts/custom/ui.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.37623763">
-                  <caret line="220" column="9" selection-start-line="220" selection-start-column="9" selection-end-line="220" selection-end-column="9" />
+                <state vertical-scroll-proportion="0.5116989">
+                  <caret line="246" column="27" selection-start-line="246" selection-start-column="27" selection-end-line="246" selection-end-column="27" />
                   <folding />
                 </state>
               </provider>
@@ -1207,8 +1206,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/custom/ui.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37623763">
-          <caret line="220" column="9" selection-start-line="220" selection-start-column="9" selection-end-line="220" selection-end-column="9" />
+        <state vertical-scroll-proportion="0.5116989">
+          <caret line="246" column="27" selection-start-line="246" selection-start-column="27" selection-end-line="246" selection-end-column="27" />
           <folding />
         </state>
       </provider>
