@@ -34,10 +34,14 @@ SQSP.functions.initPage = function() {
         var filterTimer = setInterval(function() {
             console.log('checking filterinprogress', SQSP.instances.videoGrid.isFilterInProgress);
             if(!SQSP.instances.videoGrid.isFilterInProgress) {
-                console.log('filterprogress clear, filter');
+                console.log('filterprogress clear, filter', clipsFilter);
                 $filterBtns.each(function() {
                     var $thisBtn = jQuery(this);
-                    if($thisBtn.data('filter') === clipsFilter) $thisBtn.click();
+                    console.log('this filter is', $thisBtn.data('filter') );
+                    if($thisBtn.data('filter') === clipsFilter) {
+                        console.log('match found', $thisBtn.data('filter') );
+                        $thisBtn.click();
+                    }
                     return false;
                 });
                 clearInterval(filterTimer);
