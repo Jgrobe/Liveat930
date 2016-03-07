@@ -3780,12 +3780,13 @@ a.episodes-landing-cta {
   -o-box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
   position: relative;
-  overflow: hidden;
-  background: rgba(0, 0, 0, 0.9) url("assets/images/spinner.gif") no-repeat center; }
+  overflow: hidden; }
   .clip-preview-container:before {
     content: '';
     display: block;
-    padding-top: 58%; }
+    padding-top: 58%;
+    background: rgba(0, 0, 0, 0.9) url("assets/images/spinner.gif") no-repeat center;
+    background-size: 20%; }
   .clip-preview-container > * {
     position: absolute; }
   .clip-preview-container video {
