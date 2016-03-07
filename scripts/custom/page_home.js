@@ -149,7 +149,7 @@ jQuery(window).load(function() {
         //SQSP.instances.Posters[i].stopVideo();
         //console.log('------------------------------- VIDEO STOPPED');
     //}, 400);
-});
+});// load()
 
 function onPosterEnterViewPort($poster) {
     $poster.find('video').get(0).play();
@@ -157,6 +157,7 @@ function onPosterEnterViewPort($poster) {
 function onPosterExitViewPort($poster) {
     $poster.find('video').get(0).pause();
 }
+
 //function onFullyEnterViewPort(instance) {
 //    //console.log('fully entered');
 //    //instance.$object.hoverLayer.addClass('active');
