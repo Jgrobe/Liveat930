@@ -5,6 +5,7 @@ SQSP.functions.initPage = function() {
     var $clipGrid = jQuery('.video-gallery-videos');
     SQSP.instances.videoGrid = new ClipGrid($clipGrid, {
         itemSelector : '.video',
+        filter : getUriParams('filter'),
         //filter : '.video',
         sizes : ['small', 'large'],
         distributeSizes : [0,0,1,0,0,1,0,0,0,0],
@@ -28,24 +29,24 @@ SQSP.functions.initPage = function() {
 
     });
 
-    var clipsFilter = getUriParams('filter');
-    if(clipsFilter) {
-        console.log('------has clips filter', clipsFilter);
-        var filterTimer = setInterval(function() {
-            console.log('checking filterinprogress', SQSP.instances.videoGrid.isFilterInProgress);
-            if(!SQSP.instances.videoGrid.isFilterInProgress) {
-                console.log('filterprogress clear, filter', clipsFilter);
-                $filterBtns.each(function() {
-                    var $thisBtn = jQuery(this);
-                    console.log('this filter is', $thisBtn.data('filter') );
-                    if($thisBtn.data('filter') === clipsFilter) {
-                        console.log('match found', $thisBtn.data('filter') );
-                        $thisBtn.click();
-                        return false;
-                    }
-                });
-                clearInterval(filterTimer);
-            }// endif;
-        }, 100);
-    }// endif
+    //var clipsFilter = getUriParams('filter');
+    //if(clipsFilter) {
+    //    console.log('------has clips filter', clipsFilter);
+    //    var filterTimer = setInterval(function() {
+    //        console.log('checking filterinprogress', SQSP.instances.videoGrid.isFilterInProgress);
+    //        if(!SQSP.instances.videoGrid.isFilterInProgress) {
+    //            console.log('filterprogress clear, filter', clipsFilter);
+    //            $filterBtns.each(function() {
+    //                var $thisBtn = jQuery(this);
+    //                console.log('this filter is', $thisBtn.data('filter') );
+    //                if($thisBtn.data('filter') === clipsFilter) {
+    //                    console.log('match found', $thisBtn.data('filter') );
+    //                    $thisBtn.click();
+    //                    return false;
+    //                }
+    //            });
+    //            clearInterval(filterTimer);
+    //        }// endif;
+    //    }, 100);
+    //}// endif
 };// initPage()
