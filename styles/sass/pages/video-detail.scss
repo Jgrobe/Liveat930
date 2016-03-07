@@ -79,6 +79,8 @@
   position: relative;
   overflow: hidden;
 
+  @include preloader();
+
   &:before {
     content: '';
     display: block;
