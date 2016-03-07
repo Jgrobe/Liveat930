@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6ba77c59-895c-4b6c-8ed1-52220cbb39bd" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blocks/module-clip-item.block" afterPath="$PROJECT_DIR$/blocks/module-clip-item.block" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collections/episodes.item" afterPath="$PROJECT_DIR$/collections/episodes.item" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collections/videoclips.item" afterPath="$PROJECT_DIR$/collections/videoclips.item" />
     </list>
     <ignored path="sqsp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -74,20 +73,20 @@
                   </provider>
                 </entry>
               </file>
-              <file leaf-file-name="videoclips.item" pinned="false" current-in-tab="false">
+              <file leaf-file-name="videoclips.item" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/collections/videoclips.item">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="-8.235294">
-                      <caret line="28" column="64" selection-start-line="28" selection-start-column="64" selection-end-line="28" selection-end-column="64" />
+                    <state vertical-scroll-proportion="0.5046924">
+                      <caret line="102" column="0" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
                       <folding />
                     </state>
                   </provider>
                 </entry>
               </file>
-              <file leaf-file-name="episodes.item" pinned="false" current-in-tab="true">
+              <file leaf-file-name="episodes.item" pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/collections/episodes.item">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.82794577">
+                    <state vertical-scroll-proportion="-15.568627">
                       <caret line="185" column="32" selection-start-line="185" selection-start-column="32" selection-end-line="185" selection-end-column="32" />
                       <folding>
                         <element signature="n#style#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
@@ -142,8 +141,8 @@
               <file leaf-file-name="videoclips.list" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/collections/videoclips.list">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.48681542">
-                      <caret line="32" column="16" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="48" />
+                    <state vertical-scroll-proportion="0.47160244">
+                      <caret line="31" column="37" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="37" />
                       <folding />
                     </state>
                   </provider>
@@ -290,7 +289,6 @@
         <option value="$PROJECT_DIR$/styles/sass/pages/blog.scss" />
         <option value="$PROJECT_DIR$/collections/blog.item" />
         <option value="$PROJECT_DIR$/styles/sass/modules/poster.scss" />
-        <option value="$PROJECT_DIR$/collections/videoclips.item" />
         <option value="$PROJECT_DIR$/blocks/episode-summary.block" />
         <option value="$PROJECT_DIR$/footer.region" />
         <option value="$PROJECT_DIR$/styles/sass/pages/episodes.scss" />
@@ -301,7 +299,6 @@
         <option value="$PROJECT_DIR$/collections/pages.item" />
         <option value="$PROJECT_DIR$/scripts/custom/page_episode.js" />
         <option value="$PROJECT_DIR$/scripts/custom/cta-converter.js" />
-        <option value="$PROJECT_DIR$/collections/videoclips.list" />
         <option value="$PROJECT_DIR$/scripts/custom/ClipGrid.js" />
         <option value="$PROJECT_DIR$/scripts/custom/page_clips.js" />
         <option value="$PROJECT_DIR$/scripts/custom/SVGClipper.js" />
@@ -310,6 +307,8 @@
         <option value="$PROJECT_DIR$/blocks/poster-scroll.block" />
         <option value="$PROJECT_DIR$/collections/episodes.item" />
         <option value="$PROJECT_DIR$/blocks/module-clip-item.block" />
+        <option value="$PROJECT_DIR$/collections/videoclips.list" />
+        <option value="$PROJECT_DIR$/collections/videoclips.item" />
       </list>
     </option>
   </component>
@@ -1020,14 +1019,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/collections/videoclips.item">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.235294">
-          <caret line="28" column="64" selection-start-line="28" selection-start-column="64" selection-end-line="28" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/footer.region">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-20.625">
@@ -1183,19 +1174,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/collections/videoclips.list">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.48681542">
-          <caret line="32" column="16" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/template.conf">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.888889">
           <caret line="126" column="23" selection-start-line="126" selection-start-column="20" selection-end-line="126" selection-end-column="23" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collections/episodes.item">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.568627">
+          <caret line="185" column="32" selection-start-line="185" selection-start-column="32" selection-end-line="185" selection-end-column="32" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#section#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#squarespace:query#0;n#section#2;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1207,15 +1202,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/collections/episodes.item">
+    <entry file="file://$PROJECT_DIR$/collections/videoclips.list">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.82794577">
-          <caret line="185" column="32" selection-start-line="185" selection-start-column="32" selection-end-line="185" selection-end-column="32" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#section#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#squarespace:query#0;n#section#2;n#div#0;n#!!top" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.47160244">
+          <caret line="31" column="37" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collections/videoclips.item">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5046924">
+          <caret line="102" column="0" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
