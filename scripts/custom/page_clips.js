@@ -21,6 +21,7 @@ SQSP.functions.initPage = function() {
         e.preventDefault();
         //SQSP.instances.videoGrid.resetPayload();
         var $clicked = jQuery(this);
+        console.log('------filterBtn clicked', $clicked.data('filter'));
         $clicked.siblings().removeClass('current-item');
         $clicked.toggleClass('current-item');
         SQSP.instances.videoGrid.filter( ('.'+$clicked.data('filter')) );
@@ -29,9 +30,11 @@ SQSP.functions.initPage = function() {
 
     var clipsFilter = getUriParams('filter');
     if(clipsFilter) {
+        console.log('------has clips filter', clipsFilter);
         $filterBtns.each(function() {
             var $thisBtn = jQuery(this);
             if($thisBtn.data('filter') === clipsFilter) $thisBtn.click();
+            return false;
         });
     }// endif
 };// initPage()
