@@ -26,4 +26,6 @@ SQSP.functions.initPage = function() {
         SQSP.instances.videoGrid.filter( ('.'+$clicked.data('filter')) );
 
     });
+
+    console.log('filter items via uri', getUriParams('filter'));
 };// initPage()
