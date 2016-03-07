@@ -399,7 +399,7 @@ function createDisablerDummy() {
     $disablerDummy.css({
         position: 'fixed',
         'z-index' : 999,
-        background : 'black',
+        background : 'rgba(0,0,0,.9) url(assets/images/spinner.gif) no-repeat center / 2%',
         opacity :0
     });
 
