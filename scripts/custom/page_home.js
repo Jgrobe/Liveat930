@@ -152,10 +152,10 @@ jQuery(window).load(function() {
 });
 
 function onPosterEnterViewPort($poster) {
-    $poster.find('video').play();
+    $poster.find('video').get(0).play();
 }
 function onPosterExitViewPort($poster) {
-    $poster.find('video').pause();
+    $poster.find('video').get(0).pause();
 }
 //function onFullyEnterViewPort(instance) {
 //    //console.log('fully entered');
