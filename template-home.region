@@ -16,9 +16,10 @@
             {.end}
         </squarespace:query>
 
+        <div id="fieldTracker">{@|apply svg-close-cursor.block}</div><!-- #fieldTracker -->
+
     </section><!-- .posters -->
 </div><!-- .site-content -->
 
-<div id="fieldTracker">{@|apply svg-close-cursor.block}</div><!-- #fieldTracker -->
 <squarespace:script src="custom/handleArtists.js" />
 <squarespace:script src="custom/page_home.js" />

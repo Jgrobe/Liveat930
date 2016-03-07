@@ -2301,20 +2301,18 @@ input {
 #fieldTracker {
   position: fixed;
   z-index: 8;
+  top: 10vw;
+  right: 10vw;
+  cursor: pointer;
   pointer-events: none;
   visibility: hidden;
   opacity: 0;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -ms-transform: translateX(-50%) translateY(-50%);
-  -o-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
   -webkit-transition: opacity 0.3s, visibility 0.3s;
   -moz-transition: opacity 0.3s, visibility 0.3s;
   -ms-transition: opacity 0.3s, visibility 0.3s;
   -o-transition: opacity 0.3s, visibility 0.3s;
   transition: opacity 0.3s, visibility 0.3s; }
-  #fieldTracker.active {
+  .hover-on #fieldTracker {
     visibility: visible;
     opacity: 1; }
   #fieldTracker svg {
@@ -3786,7 +3784,7 @@ a.episodes-landing-cta {
     display: block;
     padding-top: 58%;
     background: rgba(0, 0, 0, 0.9) url("assets/images/spinner.gif") no-repeat center;
-    background-size: 2%; }
+    background-size: 3%; }
   .clip-preview-container > * {
     position: absolute; }
   .clip-preview-container video {

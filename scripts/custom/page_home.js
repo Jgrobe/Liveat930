@@ -109,24 +109,24 @@ SQSP.functions.initPage = function() {
 
     // CREATE TRACKINGFIELDS FOR ARTIST HOVER LABEL
 
-    SQSP.instances.FieldTracker = new FieldTracker(jQuery('#fieldTracker'), {
-        fieldSelector: '.posters.hover-on',
-        functions: {
-            onStart: function(e, instance) {
-                //console.log('START CURSOR TRACKING');
-                //instance.$object.tracker.addClass('active'); // -> THIS HANDLER HAS MOVED TO .artist click()
-            },
-            onTrack: function(e, instance) {
-                //console.log(e.clientX);
-                //var rotation = e.clientX > window.innerWidth *.5 ? 0 : 180;
-                //TweenMax.set(instance.$object.tracker, { display: 'block', rotation: rotation});
-            },
-            onStop: function(e, instance) {
-                //console.log('STOP CURSOR TRACKING');
-                //instance.$object.tracker.removeClass('active');
-            }
-        }
-    });// new TrackingField()
+    //SQSP.instances.FieldTracker = new FieldTracker(jQuery('#fieldTracker'), {
+    //    fieldSelector: '.posters.hover-on',
+    //    functions: {
+    //        onStart: function(e, instance) {
+    //            //console.log('START CURSOR TRACKING');
+    //            //instance.$object.tracker.addClass('active'); // -> THIS HANDLER HAS MOVED TO .artist click()
+    //        },
+    //        onTrack: function(e, instance) {
+    //            //console.log(e.clientX);
+    //            //var rotation = e.clientX > window.innerWidth *.5 ? 0 : 180;
+    //            //TweenMax.set(instance.$object.tracker, { display: 'block', rotation: rotation});
+    //        },
+    //        onStop: function(e, instance) {
+    //            //console.log('STOP CURSOR TRACKING');
+    //            //instance.$object.tracker.removeClass('active');
+    //        }
+    //    }
+    //});// new TrackingField()
 
     //jQuery(document).on('click', function() {
     //   console.log('CLICKED!');
