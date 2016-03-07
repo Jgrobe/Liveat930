@@ -3,14 +3,14 @@
     <section class="episodes-landing episode-detail">
         <div class="fill-parent mask">
             <div class="landing-bg" style="background-image:url('{customContent.hero-fallback-image.assetUrl}');" data-shape="{customContent.episode-shape}">
-            <video src="{customContent.episode-hero-video}" class="loop" muted autoplay></video>
+            <video src="{customContent.episode-hero-video}" muted autoplay loop></video>
         </div>
         </div><!-- .mask -->
 
         <div class="episodes-landing-head">
             <h1>Episode No.{customContent.episode-number}</h1>
             <div class="small">Latest Show</div>
-            <div class="cta-dummy" data-label="Watch now" data-icon="eye" data-class="cta-play-episode">{@|apply svg-icon-eye.block}</div>
+            <div class="cta-dummy" data-label="Watch now" data-icon="eye" data-class="cta-watch-episode">{@|apply svg-icon-eye.block}</div>
             <!--<a href="#" class="cta-play-episode">Watch now</a>-->
         </div>
         <div class="text-layer">
