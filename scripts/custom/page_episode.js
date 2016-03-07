@@ -26,7 +26,7 @@ SQSP.functions.initPage = function() {
         var $clicked = jQuery(this);
         var vidURL = $clicked.data('url');
 
-        var $overlay = jQuery('<div class="video-overlay"/>');
+        var $overlay = jQuery('<div class="video-overlay" preload="none"/>');
         TweenMax.set($overlay, {
             position: 'fixed',
             top:0,
