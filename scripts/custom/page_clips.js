@@ -1,11 +1,12 @@
 SQSP.functions.initPage = function() {
 
     console.log('init clips overview page');
+    var uriFilter = getUriParams('filter')
 
     var $clipGrid = jQuery('.video-gallery-videos');
     SQSP.instances.videoGrid = new ClipGrid($clipGrid, {
         itemSelector : '.video',
-        filter : getUriParams('filter'),
+        filter : uriFilter ? ('.'+uriFilter) : false,
         //filter : '.video',
         sizes : ['small', 'large'],
         distributeSizes : [0,0,1,0,0,1,0,0,0,0],
