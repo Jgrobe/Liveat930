@@ -205,7 +205,7 @@ var ImageGallery = function($container, options) {
     function update_imageCopy() {
         if( !elem_exists(IG.$object.imageCopy) ) return 'null'; // must be tween, timeline, fn or string b/c inserted into timeline
         //console.log('------- update_imageCopy()');
-        var oldHeight = IG.$object.imageCopyContainer.height();
+        var oldHeight = IG.$object.imageCopyContainer.outerHeight();
         console.log('imageCopycontainer oldheight', oldHeight);
         var newHeight;
 
@@ -213,9 +213,9 @@ var ImageGallery = function($container, options) {
         copyTL.to(IG.$object.imageCopy, IG.options.duration, {autoAlpha:0});
 
         copyTL.add(function() {
-            IG.$object.imageCopyContainer.height('auto');
+            //IG.$object.imageCopyContainer.height('auto');
             IG.$object.imageCopy.html(IG.options.images[IG.options.currentIndex].copy);
-            newHeight = IG.$object.imageCopyContainer.height();
+            newHeight = IG.$object.imageCopyContainer.outerHeight();
             console.log('imageCopycontainer newheight', newHeight);
         });
         copyTL.fromTo(IG.$object.imageCopyContainer, IG.options.duration *.5, {height:oldHeight}, {height:newHeight, ease:Strong.easeInOut, clearProps:'height', onUpdate:function(){console.log('tweening height', IG.$object.imageCopyContainer.height());}});
