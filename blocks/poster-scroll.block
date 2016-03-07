@@ -16,7 +16,7 @@
 
             <div class="layer model-layer rel prllx-custom prllx-no-disable" data-prllx=".18">
                 <div class="model-container" data-shape="{customContent.episode-shape}" style="background-image:url('{customContent.poster-fallback-image.assetUrl}');">
-                    <video src="{customContent.episode-poster-video}" muted autoplay class="loop" preload="auto"></video>
+                    <video src="{customContent.episode-poster-video}" muted></video>
                 </div><!-- .model-container.img.widescreen -->
             </div><!-- .model-layer -->
 

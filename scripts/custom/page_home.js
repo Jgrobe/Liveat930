@@ -85,13 +85,11 @@ SQSP.functions.initPage = function() {
         var scrollTracker = scrollMonitor.create($thisPoster.get(0));
         //console.log('scrollTracker', scrollTracker);
 
-        scrollTracker.enterViewport(function(a,b,c,d) {
-            console.log('posterTracker', a,b,c,d);
-            //onEnterViewPort(SQSP.instances.Posters[i]);
+        scrollTracker.enterViewport(function() {
+            onPosterEnterViewPort($thisPoster);
         });
-        scrollTracker.exitViewport(function(a,b,c,d) {
-            console.log('posterTracker', a,b,c,d);
-            //onExitViewPort(SQSP.instances.Posters[i]);
+        scrollTracker.exitViewport(function() {
+            onPosterExitViewPort($thisPoster);
         });
         //scrollTracker.fullyEnterViewport(function() {
         //    onFullyEnterViewPort(SQSP.instances.Posters[i]);
@@ -153,8 +151,12 @@ jQuery(window).load(function() {
     //}, 400);
 });
 
-//function onEnterViewPort(instance) {}
-//function onExitViewPort(instance) {}
+function onPosterEnterViewPort($poster) {
+    $poster.find('video').play();
+}
+function onPosterExitViewPort($poster) {
+    $poster.find('video').pause();
+}
 //function onFullyEnterViewPort(instance) {
 //    //console.log('fully entered');
 //    //instance.$object.hoverLayer.addClass('active');
