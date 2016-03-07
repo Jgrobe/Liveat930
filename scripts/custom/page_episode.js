@@ -36,9 +36,12 @@ SQSP.functions.initPage = function() {
             'z-index' : '999',
             autoAlpha: 0
         });
-        $overlay.append(jQuery('<video src="'+ vidURL +'"/>'));
+        var $overlayvideo = jQuery('<video src="'+ vidURL +'" autoplay/>');
+        $overlayvideo.get(0).addEventListener('loadeddate', function() {
+            $overlay.append();
+            size_video();
+        });
         jQuery('body').append($overlay);
-        size_video();
         TweenMax.to($overlay,.4, {autoAlpha:1});
 
         $overlay.click(function() {
