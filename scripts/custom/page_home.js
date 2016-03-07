@@ -85,18 +85,20 @@ SQSP.functions.initPage = function() {
         var scrollTracker = scrollMonitor.create($thisPoster.get(0));
         //console.log('scrollTracker', scrollTracker);
 
-        scrollTracker.enterViewport(function() {
-            onEnterViewPort(SQSP.instances.Posters[i]);
+        scrollTracker.enterViewport(function(a,b,c,d) {
+            console.log('posterTracker', a,b,c,d);
+            //onEnterViewPort(SQSP.instances.Posters[i]);
         });
-        scrollTracker.exitViewport(function() {
-            onExitViewPort(SQSP.instances.Posters[i]);
+        scrollTracker.exitViewport(function(a,b,c,d) {
+            console.log('posterTracker', a,b,c,d);
+            //onExitViewPort(SQSP.instances.Posters[i]);
         });
-        scrollTracker.fullyEnterViewport(function() {
-            onFullyEnterViewPort(SQSP.instances.Posters[i]);
-        });
-        scrollTracker.partiallyExitViewport(function() {
-            onPartiallyExitViewPort(SQSP.instances.Posters[i]);
-        });
+        //scrollTracker.fullyEnterViewport(function() {
+        //    onFullyEnterViewPort(SQSP.instances.Posters[i]);
+        //});
+        //scrollTracker.partiallyExitViewport(function() {
+        //    onPartiallyExitViewPort(SQSP.instances.Posters[i]);
+        //});
 
 
         // test: using only first poster
@@ -151,13 +153,13 @@ jQuery(window).load(function() {
     //}, 400);
 });
 
-function onEnterViewPort(instance) {}
-function onExitViewPort(instance) {}
-function onFullyEnterViewPort(instance) {
-    //console.log('fully entered');
-    //instance.$object.hoverLayer.addClass('active');
-}
-function onPartiallyExitViewPort(instance) {
-    //console.log('partial exit');
-    //instance.$object.hoverLayer.removeClass('active');
-}
+//function onEnterViewPort(instance) {}
+//function onExitViewPort(instance) {}
+//function onFullyEnterViewPort(instance) {
+//    //console.log('fully entered');
+//    //instance.$object.hoverLayer.addClass('active');
+//}
+//function onPartiallyExitViewPort(instance) {
+//    //console.log('partial exit');
+//    //instance.$object.hoverLayer.removeClass('active');
+//}
