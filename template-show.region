@@ -134,4 +134,4 @@
 
 </div>
 
-<?php include('modules/upcoming.php'); ?>
+<!--php include('modules/upcoming.php'); -->
