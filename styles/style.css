@@ -1305,8 +1305,6 @@ input {
   .posters .poster {
     margin: 8vw auto 0 auto;
     max-width: 1350px; }
-  .posters.hover-on * {
-    cursor: none; }
   .posters.hover-on .posters-hover-bg {
     visibility: visible;
     opacity: 1; }

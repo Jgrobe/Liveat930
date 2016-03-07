@@ -35,7 +35,7 @@ $posterWidth: 84vw;
   }// .poster
 
   &.hover-on {
-    * {cursor: none;}
+    //* {cursor: none;}
     .posters-hover-bg {
       @include autoAlpha(1);
     }
