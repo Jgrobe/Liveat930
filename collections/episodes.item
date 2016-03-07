@@ -169,7 +169,7 @@
                             <span class="video-label">More {categories.0}</span>
                         </div>
                         <div class="flex-cols">
-                            <div class="title">{title}</div>
+                            <div class="title">{.if customContent.subtitle}{customContent.subtitle} {.end}{title}</div>
                             <div class="cta-dummy" data-tag="div" data-label="View" data-icon="eye" data-class="plain" data-hover="true">{@|apply svg-icon-eye.block}</div>
                             <!--php print_cta(array(
                                 'label' => 'View',
