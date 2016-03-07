@@ -43,20 +43,7 @@ function get_cta_html(options) {
         var pairs = settings.attributes.split(',');
         for (var i = 0; i < pairs.length; i++) {
             var data = pairs[i].split('=');
-            ctaHTML += ' ' + data[0] + '="' + data[1].replace(':', '=');
-
-            //if(data[0] === 'href' && settings['url-params']){
-            //    var params = settings['url-params'].split(',');
-            //    ctaHTML += '?';
-            //    for (var u = 0; u < params.length; u++) {
-            //        if(u > 0) ctaHTML += '&';
-            //        ctaHTML += params[u];
-            //    }// endfor urlparams
-            //
-            //    console.log('cta has url params', ctaHTML);
-            //}// endif url-params
-
-            ctaHTML += + '"';
+            ctaHTML += ' ' + data[0] + '="' + data[1].replace(':', '=') + '"';
         }// endfor
     }//endif
     ctaHTML += '>';
