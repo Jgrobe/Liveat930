@@ -1,4 +1,4 @@
-.poster.general {
+.poster.verticalRect {
 
   .layer {
     &.bg-layer {
@@ -10,28 +10,29 @@
             display: block;
             @extend .fill-parent;
             left: -2%;
-            background:  url('assets/images/textures/texture2.png') no-repeat center;
-            background-size: cover;
+            background:  url('assets/images/textures/texture-stitch.png') no-repeat center;
+            background-size:cover;
           }
         }
 
         &:last-child {
           opacity: .9;
           background:  url('assets/images/textures/1b.jpg') no-repeat center;
-          background-size: cover;
+          background-size:cover;
         }
       }
     }
 
     &.model-layer {
       position: absolute;
-      top: 9%;
-      width: 66%;
-      left: 17%;
-    }
-  }
+      top: 10%;
+      width: 45%;
+      left: 40%;
+      overflow: hidden;
 
-  .ep-headline {color: black;}
+      &:before {padding-top: 170%;}
+    }// .model-layer
+  }// .layer
 
   .artist{
     &:hover {

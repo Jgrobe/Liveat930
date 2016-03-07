@@ -1,0 +1,65 @@
+.poster.tripleRect {
+
+  .layer {
+    &.bg-layer {
+      .half {
+        &:first-child {
+          &:before {
+            content: '';
+            display: block;
+            @extend .fill-parent;
+            background:  url('assets/images/textures/1b.jpg') no-repeat center;
+            background-size: cover;
+            opacity: .13;
+          }// before
+
+          .fill-parent.imgfill {
+            left: -2%;
+            top: -2%;
+            background-image: url('assets/images/textures/texture2.png');
+            opacity: .6;
+          }
+        }// first-child
+
+        &:last-child {
+
+        }// .last-child
+      }// .half
+    }// .bg-layer
+
+    &.model-layer {
+      position: absolute;
+      top: 13%;
+      left: 18%;
+      width: 64%;
+      overflow: hidden;
+    }// .model-layer
+
+    &.copy-layer {
+      .half {
+        &:last-child{
+          &:after{ background: black; }
+        }
+      }
+    }// .copy-layer
+  }// .layer
+
+  .ep-headline { color: black;}
+  .ep-date { color: white;}
+  .ep-lineup { color: black;}
+
+  .artist{
+    &:hover {
+      .label { background: black; }
+    }
+  }// .artist
+
+  .btn-play-episode {
+    background: white;
+    color: black;
+    &:hover {
+      background: #f0f0f0;
+    }
+  }
+
+}// .poster

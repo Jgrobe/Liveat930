@@ -1,50 +1,50 @@
-.poster.general {
+.poster.pentagon {
 
   .layer {
     &.bg-layer {
       .half {
         &:first-child {
-//          background: url('assets/images/textures/texture1.jpg') no-repeat center / cover;
+          background: rgba(0,0,0,.13);
           &:before{
             content: '';
             display: block;
             @extend .fill-parent;
             left: -2%;
-            background:  url('assets/images/textures/texture2.png') no-repeat center;
-            background-size: cover;
+            top: -2%;
+            background:  url('assets/images/textures/texture-stitch.png') no-repeat center;
+            background-size:cover;
           }
         }
 
         &:last-child {
           opacity: .9;
           background:  url('assets/images/textures/1b.jpg') no-repeat center;
-          background-size: cover;
-        }
-      }
-    }
+          background-size:cover;
+        }// last-child
+      }// half
+    }// bg-layer
 
     &.model-layer {
       position: absolute;
-      top: 9%;
-      width: 66%;
-      left: 17%;
-    }
-  }
+      top: 10%;
+      width: 65%;
+      left: 32%;
 
-  .ep-headline {color: black;}
+    }// .model-layer
+  }// .layer
 
   .artist{
     &:hover {
       .label { background: black; }
-    }
-  }
+    }// hover
+  }// artist
 
   .btn-play-episode {
     background: white;
     color: black;
     &:hover {
       background: #f0f0f0;
-    }
-  }
+    }// hover
+  }// btn-play
 
 }// .poster

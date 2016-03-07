@@ -23,7 +23,7 @@ SQSP.functions.initPage = function() {
         e.preventDefault();
         //SQSP.instances.videoGrid.resetPayload();
         var $clicked = jQuery(this);
-        console.log('------filterBtn clicked', $clicked.data('filter'));
+        //console.log('------filterBtn clicked', $clicked.data('filter'));
         $clicked.siblings().removeClass('current-item');
         $clicked.toggleClass('current-item');
         SQSP.instances.videoGrid.filter( ('.'+$clicked.data('filter')) );

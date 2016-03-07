@@ -1,43 +1,54 @@
-.poster.general {
+.poster.halfCircle {
 
   .layer {
     &.bg-layer {
       .half {
         &:first-child {
 //          background: url('assets/images/textures/texture1.jpg') no-repeat center / cover;
-          &:before{
+          &:before {
             content: '';
             display: block;
             @extend .fill-parent;
             left: -2%;
             background:  url('assets/images/textures/texture2.png') no-repeat center;
             background-size: cover;
-          }
-        }
+            opacity: .6;
+          }// before
+        }// first-child
 
         &:last-child {
-          opacity: .9;
           background:  url('assets/images/textures/1b.jpg') no-repeat center;
           background-size: cover;
-        }
-      }
-    }
+          opacity: .13;
+        }// .last-child
+      }// .half
+    }// .bg-layer
 
     &.model-layer {
       position: absolute;
-      top: 9%;
-      width: 66%;
-      left: 17%;
-    }
-  }
+      top:10%;
+      width: 92%;
+      left: 4%;
+    }// .model-layer
 
-  .ep-headline {color: black;}
+    &.copy-layer {
+      .half {
+        &:last-child{
+          &:after{ background: black; }
+        }
+      }
+    }// .copy-layer
+  }// .layer
+
+  .ep-headline { color: black;}
+  .ep-date { color: white;}
+  .ep-lineup { color: black;}
 
   .artist{
     &:hover {
       .label { background: black; }
     }
-  }
+  }// .artist
 
   .btn-play-episode {
     background: white;

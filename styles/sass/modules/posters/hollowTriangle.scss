@@ -1,4 +1,4 @@
-.poster.general {
+.poster.hollowTriangle {
 
   .layer {
     &.bg-layer {
@@ -19,17 +19,17 @@
           opacity: .9;
           background:  url('assets/images/textures/1b.jpg') no-repeat center;
           background-size: cover;
-        }
-      }
-    }
+        }// last-child
+      }// .half
+    }// .bg-layer
 
     &.model-layer {
       position: absolute;
-      top: 9%;
-      width: 66%;
-      left: 17%;
-    }
-  }
+      top: 0;
+      width: 114%;
+      left: -7%;
+    }// .model-layer
+  }// .layer
 
   .ep-headline {color: black;}
 

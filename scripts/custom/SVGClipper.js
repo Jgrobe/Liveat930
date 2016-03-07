@@ -50,6 +50,7 @@ var SVGClipper = function($container, options) {
             //]
         },
         verticalRect: {
+            type : 'none',
             gradientMaps: {
                 full: '#060d26, #79515a',
                 shape: '#e08585, #f7d7d7'
@@ -119,7 +120,7 @@ var SVGClipper = function($container, options) {
             values : 'M37.9,100H0c0-13.5,2.6-26.6,7.9-38.9c5-11.9,12.2-22.6,21.4-31.8c9.2-9.2,19.9-16.4,31.8-21.4 C73.4,2.6,86.5,0,100,0v37.9C65.8,37.9,37.9,65.8,37.9,100z'
         },
         square: {
-            type : 'path',
+            type : 'none',
             gradientMaps: {
                 full: '#041341, #583332',
                 shape: '#f54848, #edb1b1'
@@ -140,7 +141,7 @@ var SVGClipper = function($container, options) {
                 full: '#081e24, #ca7d90',
                 shape : '#e68cbd, #f4dbed'
             },
-            values: 'M63.9,13.9L50,0c0,0-0.1,0-0.2,0L0,49.9c0,0,0,0.1,0,0.2l13.9,13.9c0,0,0.1,0,0.2,0l49.8-49.8 C63.9,14,63.9,14,63.9,13.9z'
+            values: 'M50,0L0 50 14.1 64 63.9 14.2 86.1 0 36.1 50 50.2 64 100 14.2 86.1 0 63.9 14.2z'
             //[
             //    [
             //        {x:.5, y:0},
@@ -224,7 +225,7 @@ var SVGClipper = function($container, options) {
                 full : '#10171f, #4d2e3d',
                 shape: '#9b1856, #f2c1d8'
             },
-            values: 'M94.9,81.2L36.1,100L0,49.8L36.5,0l58.6,19.4L94.9,81.2z'
+            values: 'M90.2,90.2L28.4,100L0,44.2L44.2,0L100,28.4L90.2,90.2z'
             //[
             //    [
             //        {x:.949, y:.812},
@@ -401,8 +402,8 @@ var SVGClipper = function($container, options) {
 
     SC.SHAPE = _.cloneDeep(SC.shapes[SC.options.shape]);
 
-
     SC.init = function() {
+        if(SC.SHAPE.type === 'none') return false;
         //console.log('SVGClipper', SC);
 
         SC.$object.container.css('overflow', 'hidden');

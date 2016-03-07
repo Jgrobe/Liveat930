@@ -1,0 +1,70 @@
+.poster.doubleSlash {
+
+  .layer {
+    &.bg-layer {
+      .half {
+        &:first-child {
+          &:before {
+            content: '';
+            display: block;
+            @extend .fill-parent;
+            //height: 95%;
+            top: -4%;
+            left: -2%;
+            background-image:  url('assets/images/textures/texture2.png');
+            background-size:cover;
+            opacity: .5;
+          }// before
+
+          .fill-parent.imgfill {
+            background-image: url('assets/images/textures/texture-paper-black.jpg');
+          }// .fill-parent
+        }// first-child
+      }// .half
+    }// .bg-layer
+
+    &.model-layer {
+      position: absolute;
+      top: 10%;
+      left: 8%;
+      width: 84%;
+      overflow: hidden;
+
+      //&:before {padding-top: 100%;}
+    }// .model-layer
+
+    &.copy-layer {
+      .half {
+        &:last-child{
+          &:after{ background: black; }
+        }
+      }
+    }// .copy-layer
+  }// .layer
+
+  .icon {
+    &.episode {
+      @include svg-content() { fill: white; }
+      .icon-label { color: white; }// .icon-label
+    }// .episode
+  }// .icon
+
+  .ep-date { color: white;}
+
+  .ep-lineup { color: black; }
+
+  .artist{
+    &:hover {
+      .label { background: white; }
+    }
+  }
+
+  .btn-play-episode {
+    background: white;
+    color: black;
+    &:hover {
+      background: #f0f0f0;
+    }
+  }
+
+}// .poster
