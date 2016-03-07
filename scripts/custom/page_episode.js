@@ -37,7 +37,7 @@ SQSP.functions.initPage = function() {
             autoAlpha: 0
         });
         var $overlayvideo = jQuery('<video src="'+ vidURL +'" autoplay/>');
-        $overlayvideo.get(0).addEventListener('loadeddate', function() {
+        $overlayvideo.get(0).addEventListener('loadeddata', function() {
             $overlay.append();
             size_video();
         });

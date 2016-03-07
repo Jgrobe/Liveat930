@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6ba77c59-895c-4b6c-8ed1-52220cbb39bd" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collections/episodes.item" afterPath="$PROJECT_DIR$/collections/episodes.item" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/custom/cta-converter.js" afterPath="$PROJECT_DIR$/scripts/custom/cta-converter.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/custom/page_episode.js" afterPath="$PROJECT_DIR$/scripts/custom/page_episode.js" />
     </list>
     <ignored path="sqsp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,7 +23,7 @@
     <favorites_list name="sqsp" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.64796144">
+    <splitter split-orientation="horizontal" split-proportion="0.58746165">
       <split-first>
         <splitter split-orientation="horizontal" split-proportion="0.5880261">
           <split-first>
@@ -157,21 +156,21 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="page_episode.js" pinned="false" current-in-tab="false">
+          <file leaf-file-name="page_episode.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/scripts/custom/page_episode.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-7.2222223">
-                  <caret line="13" column="73" selection-start-line="13" selection-start-column="70" selection-end-line="13" selection-end-column="73" />
+                <state vertical-scroll-proportion="0.7782299">
+                  <caret line="51" column="2" selection-start-line="51" selection-start-column="2" selection-end-line="51" selection-end-column="2" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="cta-converter.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="cta-converter.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/scripts/custom/cta-converter.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.6455445">
-                  <caret line="45" column="65" selection-start-line="45" selection-start-column="65" selection-end-line="45" selection-end-column="65" />
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="67" column="28" selection-start-line="67" selection-start-column="28" selection-end-line="67" selection-end-column="28" />
                   <folding />
                 </state>
               </provider>
@@ -309,9 +308,9 @@
         <option value="$PROJECT_DIR$/collections/videoclips.item" />
         <option value="$PROJECT_DIR$/scripts/custom/page_home.js" />
         <option value="$PROJECT_DIR$/collections/videoclips.list" />
-        <option value="$PROJECT_DIR$/scripts/custom/page_episode.js" />
         <option value="$PROJECT_DIR$/scripts/custom/cta-converter.js" />
         <option value="$PROJECT_DIR$/collections/episodes.item" />
+        <option value="$PROJECT_DIR$/scripts/custom/page_episode.js" />
       </list>
     </option>
   </component>
@@ -1195,22 +1194,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/custom/page_episode.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.2222223">
-          <caret line="13" column="73" selection-start-line="13" selection-start-column="70" selection-end-line="13" selection-end-column="73" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/custom/cta-converter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6455445">
-          <caret line="45" column="65" selection-start-line="45" selection-start-column="65" selection-end-line="45" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/collections/episodes.item">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.18255578">
@@ -1220,6 +1203,22 @@
             <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#section#1;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#squarespace:query#0;n#section#2;n#div#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/custom/cta-converter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="67" column="28" selection-start-line="67" selection-start-column="28" selection-end-line="67" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/custom/page_episode.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7782299">
+          <caret line="51" column="2" selection-start-line="51" selection-start-column="2" selection-end-line="51" selection-end-column="2" />
+          <folding />
         </state>
       </provider>
     </entry>
