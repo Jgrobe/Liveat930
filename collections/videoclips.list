@@ -11,7 +11,7 @@
                 <ul class="video-overview-filter">
                     {.repeated section categories}
                         <li class="video-filter-item" data-filter="{@|slugify}">
-                            <a class="clips-filter-trigger" href="?category={@|url-encode}">{@}</a>
+                            <a class="clips-filter-trigger" href="?filter={@|url-encode}">{@}</a>
                         </li>
                     {.end}<!-- .end repeat categories -->
                 </ul>

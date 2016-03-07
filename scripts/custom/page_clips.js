@@ -27,5 +27,11 @@ SQSP.functions.initPage = function() {
 
     });
 
-    console.log('filter items via uri', getUriParams('filter'));
+    var clipsFilter = getUriParams('filter');
+    if(clipsFilter) {
+        $filterBtns.each(function() {
+            var $thisBtn = jQuery(this);
+            if($thisBtn.data('filter') === clipsFilter) $thisBtn.click();
+        });
+    }// endif
 };// initPage()
