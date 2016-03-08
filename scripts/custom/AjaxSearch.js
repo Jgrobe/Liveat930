@@ -57,14 +57,16 @@ var AjaxSearch = function(options) {
 
         console.log('search()', query, AS.options.searchPath);
         
-        jQuery.ajax(AS.options.searchPath, {
-            method : 'get',
+        jQuery.get({
+            url: AS.options.searchPath,
+            //method : 'get',
             data : {q: query},
             success: function(data) {
+
+                console.log('success() raw data', data);
                 
                 AS.results = AS.extractData(data);
-
-                console.log('success()', AS.results);
+                console.log('success() extracted data', AS.results);
 
                 if(_.isFunction(AS.options.onSuccess)) AS.options.onSuccess(query, data, AS.results);
             },
