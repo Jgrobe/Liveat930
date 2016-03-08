@@ -147,8 +147,22 @@
         @include prefixed(transition, color $shortTrans);
 
         $errorColor: #FF574D;
-        &.mce_inline_error::-webkit-input-placeholder, &.mce_inline_error:-moz-placeholder, &.mce_inline_error::-moz-placeholder, &.mce_inline_error:-ms-input-placeholder {
+        &.mce_inline_error {
+          ::-webkit-input-placeholder {
             color: $errorColor;
+          }
+
+          :-moz-placeholder { /* Firefox 18- */
+            color: $errorColor;
+          }
+
+          ::-moz-placeholder {  /* Firefox 19+ */
+            color: $errorColor;
+          }
+
+          :-ms-input-placeholder {
+            color: $errorColor;
+          }
         }// .mc-inline-error
 //        padding-right: 36px;
 
