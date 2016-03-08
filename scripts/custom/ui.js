@@ -71,8 +71,8 @@ function checkVideoloop() {
         if(vid.currentTime > (vid.duration-.25)) {
             console.log('reset video time');
             vid.currentTime = 0;
+            if(!vid.playing) vid.play();
         }
-        if(vid.ended) vid.play();
     }// endfor
 
     requestAnimationFrame( checkVideoloop );
