@@ -55,7 +55,7 @@
 
 </div><!-- .page -->
 
-    <squarespace:script src="http://vjs.zencdn.net/5.8.0/video.js" />
+    <squarespace:script src="//vjs.zencdn.net/5.8.0/video.js" />
     <squarespace:script src="custom/cta-converter.js" />
     <squarespace:script src="custom/ui.js" />
 
