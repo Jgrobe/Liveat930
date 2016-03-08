@@ -20,7 +20,7 @@
     </section>
 
     {.equal?:categories.0:"upcoming"}
-        <h1>equal! {categories.0}</h1>
+        <div class="top-spaced"></div>
     {.or}
 
     <div class="site-content">
