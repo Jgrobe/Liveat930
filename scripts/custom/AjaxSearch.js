@@ -8,7 +8,7 @@ var AjaxSearch = function(options) {
     var AS = this;
     AS.options = jQuery.extend({
         autoInit : true,
-        searchPath: '/search',
+        searchPath: '/api/search/GeneralSearch',
         onSuccess : false,
         onError : false,
         resultSelector: '.search-result',
@@ -57,9 +57,8 @@ var AjaxSearch = function(options) {
 
         console.log('search()', query, AS.options.searchPath);
         
-        jQuery.get({
-            url: AS.options.searchPath,
-            //method : 'get',
+        jQuery.ajax(AS.options.searchPath, {
+            method : 'get',
             data : {q: query},
             success: function(data) {
 

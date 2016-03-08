@@ -127,9 +127,7 @@ function populate_namespaces() {
         }// endif landing-bg exists
     });
 
-    SQSP.instances.SEARCH = new AjaxSearch({
-        searchPath : location.host+'/api/search/GeneralSearch'
-    });
+    SQSP.instances.SEARCH = new AjaxSearch();
 
 }// populate_namespaces()
 
