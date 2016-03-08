@@ -798,7 +798,15 @@ input {
           -ms-transition: color 0.3s;
           -o-transition: color 0.3s;
           transition: color 0.3s; }
-          .footer-newsletter form input[type=email].mce_inline_error {
+          .footer-newsletter form input[type=email].mce_inline_error::-webkit-input-placeholder {
+            color: #FF574D; }
+          .footer-newsletter form input[type=email].mce_inline_error:-moz-placeholder {
+            /* Firefox 18- */
+            color: #FF574D; }
+          .footer-newsletter form input[type=email].mce_inline_error::-moz-placeholder {
+            /* Firefox 19+ */
+            color: #FF574D; }
+          .footer-newsletter form input[type=email].mce_inline_error:-ms-input-placeholder {
             color: #FF574D; }
         .footer-newsletter form .submit-email {
           position: static;

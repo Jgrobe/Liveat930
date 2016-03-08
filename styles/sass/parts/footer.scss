@@ -146,7 +146,24 @@
         padding: 18px;
         @include prefixed(transition, color $shortTrans);
 
-        &.mce_inline_error { color: #FF574D; }
+        &.mce_inline_error {
+          $errorColor: #FF574D;
+          &::-webkit-input-placeholder {
+            color: $errorColor;
+          }
+
+          &:-moz-placeholder { /* Firefox 18- */
+            color: $errorColor;
+          }
+
+          &::-moz-placeholder {  /* Firefox 19+ */
+            color: $errorColor;
+          }
+
+          &:-ms-input-placeholder {
+            color: $errorColor;
+          }
+        }// .mc-inline-error
 //        padding-right: 36px;
 
 //        , &[type=submit] {
