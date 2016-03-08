@@ -6,35 +6,48 @@
 var AjaxSearch = function(options) {
     if(typeof options === 'undefined') options = {};
     var AS = this;
-    AS.options = {
+    AS.options = jQuery.extend({
         autoInit : true,
         searchPath: '/search',
         onSuccess : false,
         onError : false,
-        resultSelector: '.search-result'
-    };
+        resultSelector: '.search-result',
+        exclude : {collectionDisplayName:'Artists'}
+    }, options);
 
     AS.init = function() {
     };// init()
     
     AS.extractData = function(data) {
 
-        var cachedHtml = jQuery('<div/>').html(data);
-        var extractedResults = [],
-            $results = cachedHtml.find(AS.options.resultSelector);
-        //console.log('results found', data, $results);
+        console.log('search results', data);
 
-        $results.each(function(i) {
-            var $thisResult = jQuery(this);
-            //console.log('filtering result', $thisResult, $thisResult.get(0));
+        var extractedResults = [],
+            searchItems = data.items;
+        console.log('results found', data, results);
+
+
+        for(var i=0; i<searchItems.length; i++) {
+            var thisItem = searchItems[i];
+            //console.log('filtering result', $thisItem, $thisItem.get(0));
+
+            if(AS.options.exclude) {
+                for(var attr in AS.options.exclude) {
+                    if(typeof thisItem[attr] !== 'undefined' && thisItem[attr] == AS.options.exclude[attr]) {
+                        console.log('exclude this from search: '+attr+' : '+thisItem[attr]);
+                        continue;
+                    }// endif
+                }// endfor
+            }// endif
+
             var result = {
-                img : $thisResult.find('img').data('src'),
-                title : strip_tags( $thisResult.find('.sqs-title').html() ),
-                href : $thisResult.data('url')
+                img : thisItem.imageUrl,
+                title : strip_tags( thisItem.title ),
+                href : thisItem.itemUrl
             };
 
             extractedResults.push(result);
-        });// endeach(results)
+        }// endfor
 
         return extractedResults;
 
@@ -44,19 +57,21 @@ var AjaxSearch = function(options) {
 
         //console.log('search()', query);
         
-        jQuery.ajax((AS.options.searchPath +'?q='+ query), {
+        jQuery.ajax((AS.options.searchPath, {
+            method : 'get',
+            data : {q: query},
             success: function(data) {
                 
                 AS.results = AS.extractData(data);
 
-                //console.log('success()', AS.results);
+                console.log('success()', AS.results);
 
                 if(_.isFunction(AS.options.onSuccess)) AS.options.onSuccess(query, data, AS.results);
             },
-            error : function() {
-                
+            error : function(data) {
+                console.log('ajax error', data);
             }
-        })
+        });
         
     };// search()
     
