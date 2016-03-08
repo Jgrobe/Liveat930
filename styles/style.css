@@ -4261,7 +4261,7 @@ a.episodes-landing-cta {
     height: 0;
     overflow: hidden; }
 
-#productWrapper {
+#productWrapper, #sqs-shopping-cart-wrapper {
   width: 75vw;
   max-width: 800px;
   padding-top: 10.41667vw;

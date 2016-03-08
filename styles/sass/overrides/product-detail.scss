@@ -1,4 +1,4 @@
-#productWrapper {
+#productWrapper, #sqs-shopping-cart-wrapper {
 
   width: $contentWidth;
   max-width: 800px;
@@ -26,6 +26,10 @@
   }// #product-details
 
 }// #product-summary
+
+#sqs-shopping-cart-wrapper {
+
+}
 
 .absolute-cart-box {
 
