@@ -13,7 +13,7 @@
             <div class="landing-bg" style="background-image:url('{item.assetUrl}');" data-type="video" data-src="{item.customContent.hero-video}">
                 {.section item}
                     {.if customContent.hero-video}
-                        <video src="{customContent.hero-video}" class="loop" autoplay></video>
+                        <video src="{customContent.hero-video}" class="loop" autoplay muted></video>
                     {.end}
                 {.end}
             </div>
