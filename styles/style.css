@@ -512,6 +512,10 @@ input {
           height: 1.21528vw;
           background-repeat: no-repeat;
           display: block; }
+  .collection-type-products.view-item .header .navigation {
+    color: black; }
+    .collection-type-products.view-item .header .navigation .menu-item:after {
+      background: black; }
   .homepage .header .logo {
     display: none; }
   .homepage .header .navigation {
