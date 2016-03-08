@@ -4260,6 +4260,10 @@ a.episodes-landing-cta {
     width: 0;
     height: 0;
     overflow: hidden; }
+@media only screen and (max-width: 750px) {
+  .page .ss-social-button-wrapper {
+    width: 38px;
+    height: 38px; } }
 
 #productWrapper, #sqs-shopping-cart-wrapper {
   width: 75vw;
@@ -4267,6 +4271,9 @@ a.episodes-landing-cta {
   padding-top: 10.41667vw;
   margin: 0 auto 10.41667vw auto; }
 
+#productSummary #productNav {
+  text-transform: none;
+  font-size: 12px; }
 #productSummary #productDetails .variant-option-title {
   display: none; }
 #productSummary #productDetails .sqs-add-to-cart-button {
