@@ -21,7 +21,17 @@
 }// .clip-landing
 
 .site-content.clip-detail {
-  margin-bot: $sectionMarginBottom;
+
+  .overlap-container {
+    margin-bottom:$sectionMarginBottom;
+  }
+
+  @include breakpoint(mobile) {
+
+    .overlap-container {
+      margin-bottom: $sectionMarginBottomMobile;
+    }
+  }// BP MOBILE
 }
 
 .video-gallery.video-detail-clips {
