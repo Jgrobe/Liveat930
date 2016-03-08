@@ -2697,6 +2697,9 @@ div.mce_inline_error {
   font-size: 10px;
   color: white;
   background: rgba(0, 0, 0, 0.9) url("assets/images/spinner.gif") no-repeat center; }
+  .video-js.vjs-has-started:hover .vjs-control-bar {
+    visibility: visible;
+    opacity: 1; }
   .video-js .vjs-control-bar {
     background: none;
     position: absolute;
@@ -2720,19 +2723,24 @@ div.mce_inline_error {
     -moz-justify-content: space-between;
     -ms-justify-content: space-between;
     -o-justify-content: space-between;
-    justify-content: space-between; }
+    justify-content: space-between;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
   .video-js .vjs-big-play-button {
     border: none;
     background: none;
-    width: auto;
-    height: auto;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
     top: 50%;
     left: 50%;
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -ms-transform: translateX(-50%) translateY(-50%);
-    -o-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%); }
+    margin-top: -10px;
+    margin-left: -10px; }
   .video-js .vjs-volume-menu-button, .video-js .vjs-remaining-time {
     display: none; }
   .video-js .video-js .vjs-play-progress:before {

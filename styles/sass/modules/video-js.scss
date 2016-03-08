@@ -3,6 +3,12 @@
   color: white;
   @include preloader();
 
+  &.vjs-has-started {
+    &:hover {
+      .vjs-control-bar {@include autoAlpha(1);}
+    }
+  }
+
   .vjs-control-bar {
     background: none;
     position: absolute;
@@ -12,16 +18,20 @@
     @include flexbox();
     @include flex-value(direction, row);
     @include prefixed(justify-content, space-between);
+    @include autoAlpha(0);
+    @include prefixed(transition, $shortTrans);
   }// .vjs-control-bar
 
   .vjs-big-play-button {
     border: none;
     background: none;
-    width: auto;
-    height: auto;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
     top: 50%;
     left: 50%;
-    @include transform(translateX(-50%) translateY(-50%));
+    margin-top:-10px;
+    margin-left:-10px;
   }// .vjs-big-play-button
 
   .vjs-volume-menu-button, .vjs-remaining-time {display: none;}
