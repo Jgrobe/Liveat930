@@ -18,13 +18,6 @@ function init_sqsp() {
 
         windowloaded();
 
-        jQuery('video').each(function(i,elem){
-            elem.addEventListener('loadeddata', function() {
-                //console.log('-------------------------------------- video loaded');
-                size_video();
-            })
-        });
-
     }).resize(function() {
         //console.log('WINDOW RESIZED');
         SQSP._IS_MOBILE = is_mobile();
@@ -42,14 +35,22 @@ function init_sqsp() {
     SQSP.functions.createPageGallery();
 
     //manual video loop
-    jQuery('video.loop').each(function(i){
-        console.log('must loop '+i);
-        var vid =jQuery(this).get(0);
-        vid.addEventListener('ended', function(e){
-            console.log('video loop!', vid, e);
-            e.target.play();
+
+    jQuery('video').each(function(i,elem){
+        var vid = this;
+        var $thisVid = jQuery(vid);
+
+        vid.addEventListener('loadeddata', function() {
+            //console.log('-------------------------------------- video loaded');
+            size_video();
         });
-    });// each()
+        if($thisVid.hasClass('loop')) {
+            vid.addEventListener('ended', function(e){
+                console.log('video loop!');
+                e.target.play();
+            });
+        }// endif
+    });
 
 }// init_page()
 

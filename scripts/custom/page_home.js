@@ -83,6 +83,10 @@ SQSP.functions.initPage = function() {
         //});
 
         var scrollTracker = scrollMonitor.create($thisPoster.get(0));
+
+        $thisPoster.find('video').get(0).addEventListener('loadeddata', function(){
+            scrollTracker.recalculateLocation();
+        });
         //console.log('scrollTracker', scrollTracker);
 
         scrollTracker.enterViewport(function() {
@@ -157,7 +161,6 @@ function onPosterEnterViewPort($poster) {
 function onPosterExitViewPort($poster) {
     $poster.find('video').get(0).pause();
 }
-
 //function onFullyEnterViewPort(instance) {
 //    //console.log('fully entered');
 //    //instance.$object.hoverLayer.addClass('active');
