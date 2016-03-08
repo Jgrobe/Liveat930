@@ -1,6 +1,6 @@
 .video-js {
   font-size: 10px;
-  color: $primary-foreground-color;
+  color: white;
   @include preloader();
 }// .video-js
 //
@@ -14,68 +14,31 @@
   @include flex-value(direction, row);
   @include prefixed(justify-content, space-between);
 
+
+  .vjs-default-skin .vjs-big-play-button {
+    font-size: 3em;
+
+    left: 50%;
+    top: 50%;
+    @include transform(translateX(-50%) translateY(-50%));
+  }
+
+
+  /* Slider - used for Volume bar and Progress bar */
+  .vjs-slider {
+    background-color: rgba(255, 255, 255, .2);
+
+    .vjs-volume-level, .vjs-play-progress, .vjs-slider-bar {
+      background: rgba(255, 255, 255, .8);
+    }
+
+    .vjs-load-progress {
+      background: rgba(255, 255, 255, .8);
+
+      div {
+        background: rgba(255, 255, 255, .8);
+      }
+    }
+  }
+
 }// .vjs-control-bar
-//
-//.vjs-error-display {
-//
-//}// .vjs-error-display
-//
-//.vjs-big-play-button {display: none;}// .vjs-big-play-button
-
-$primary-foreground-color: #fff; // #fff default
-$primary-background-color: transparent;  // #2B333F default
-
-.vjs-default-skin .vjs-big-play-button {
-  font-size: 3em;
-
-  left: 50%;
-  top: 50%;
-  @include transform(translateX(-50%) translateY(-50%));
-}
-
-/* The default color of control backgrounds is mostly black but with a little
-   bit of blue so it can still be seen on all-black video frames, which are common. */
-.video-js .vjs-control-bar,
-.video-js .vjs-big-play-button,
-.video-js .vjs-menu-button .vjs-menu-content {
-  /* IE8 - has no alpha support */
-  background-color: $primary-background-color;
-  /* Opacity: 1.0 = 100%, 0.0 = 0% */
-  background-color: rgba($primary-background-color, 0.7);
-}
-
-// Make a slightly lighter version of the main background
-// for the slider background.
-$slider-bg-color: lighten($primary-background-color, 33%);
-
-/* Slider - used for Volume bar and Progress bar */
-.video-js .vjs-slider {
-  background-color: $slider-bg-color;
-  background-color: rgba($slider-bg-color, 0.5);
-}
-
-/* The slider bar color is used for the progress bar and the volume bar
-   (the first two can be removed after a fix that's coming) */
-.video-js .vjs-volume-level,
-.video-js .vjs-play-progress,
-.video-js .vjs-slider-bar {
-  background: $primary-foreground-color;
-}
-
-/* The main progress bar also has a bar that shows how much has been loaded. */
-.video-js .vjs-load-progress {
-  /* For IE8 we'll lighten the color */
-  background: ligthen($slider-bg-color, 25%);
-  /* Otherwise we'll rely on stacked opacities */
-  background: rgba($slider-bg-color, 0.5);
-}
-
-/* The load progress bar also has internal divs that represent
-   smaller disconnected loaded time ranges */
-.video-js .vjs-load-progress div {
-  /* For IE8 we'll lighten the color */
-  background: ligthen($slider-bg-color, 50%);
-  /* Otherwise we'll rely on stacked opacities */
-  background: rgba($slider-bg-color, 0.75);
-}
-
