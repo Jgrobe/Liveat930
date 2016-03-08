@@ -36,24 +36,45 @@ function init_sqsp() {
 
     //manual video loop
 
-    jQuery('video').each(function(i,elem){
+    SQSP.vars.keepCheckingVideo = true;
+    SQSP.vars.loopvids = [];
+
+    jQuery('video').each(function(i,elem) {
         var vid = this;
         var $thisVid = jQuery(vid);
 
         vid.addEventListener('loadeddata', function() {
             //console.log('-------------------------------------- video loaded');
             size_video();
-            scrollMonitor.recalculateLocations();
+            scrollMonitor.recalculateLocations();// needed on homepage so first video in viewport starts playing on load
         });
         if($thisVid.hasClass('loop')) {
-            vid.addEventListener('ended', function(e){
-                console.log('video loop!');
-                e.target.play();
-            });
+            SQSP.vars.loopvids.push(vid);
+            //vid.addEventListener('ended', function(e) {
+            //    console.log('video loop!');
+            //    e.target.play();
+            //});
         }// endif
     });
 
+    checkVideoloop();
+
 }// init_page()
+
+function checkVideoloop() {
+    if(!SQSP.vars.keepCheckingVideos) return false;
+
+    for(var i=0; i<SQSP.vars.loopvids.length; i++) {
+        var vid = SQSP.vars.loopvids[i];
+        if(vid.currentTime >= (vid.duration-.25)) {
+            console.log('reset video time');
+            vid.currentTime = 0;
+        }
+        if(vid.ended) vid.play();
+    }// endfor
+
+    requestAnimationFrame( checkVideoloop );
+}// checkVideoloop()
 
 function populate_namespaces() {
 
