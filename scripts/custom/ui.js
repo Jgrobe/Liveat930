@@ -47,7 +47,7 @@ function init_sqsp() {
         var vid =jQuery(this).get(0);
         vid.addEventListener('ended', function(e){
             console.log('video loop!', vid, e);
-            vid.play();
+            e.target.play();
         });
     });// each()
 
