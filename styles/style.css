@@ -4261,7 +4261,7 @@ a.episodes-landing-cta {
     height: 0;
     overflow: hidden; }
 @media only screen and (max-width: 750px) {
-  .page .ss-social-button-wrapper {
+  .page .squarespace-social-buttons .ss-social-button-wrapper, .page .squarespace-social-buttons.button-style .ss-social-button-wrapper, .page .squarespace-social-buttons.inline-style .ss-social-button-wrapper {
     width: 38px;
     height: 38px; } }
 

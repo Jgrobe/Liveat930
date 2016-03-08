@@ -119,14 +119,14 @@
       }// .ss-social-button-wrapper
     //}// &.button-style
 
+    @include breakpoint(mobile) {
+
+      .ss-social-button-wrapper {
+        width: 38px;
+        height: 38px;
+      }// .ss-social-button-wrapper
+
+    }// BP MOBILE
+
   }// .squarespace-social-buttons
-
-  @include breakpoint(mobile) {
-
-    .ss-social-button-wrapper {
-      width: 38px;
-      height: 38px;
-    }// .ss-social-button-wrapper
-
-  }// BP MOBILE
-}
+}// .page
