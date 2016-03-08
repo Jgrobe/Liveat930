@@ -1,6 +1,6 @@
 <div class="nav-overlay search-on">
     <div id="nav-bg" class="video-container" style="background-image: url();">
-        <video src="https://player.vimeo.com/external/157569469.sd.mp4?s=cf59cce4e869e72d357ab05afcb576cd71c64fec&profile_id=164" muted class="loop"></video>
+        <video src="https://player.vimeo.com/external/157569469.sd.mp4?s=cf59cce4e869e72d357ab05afcb576cd71c64fec&profile_id=164" muted loop></video>
     </div><!-- video-container -->
 
     <div class="fill-parent">
