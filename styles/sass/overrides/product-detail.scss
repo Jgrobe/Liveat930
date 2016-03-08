@@ -46,6 +46,8 @@
 
   top: 2vw;// like .burger
   right: calc(~"4vw + 62px");// .burger margin*2 + .burger width
+  left: auto;// necessary so it won't fill screen
+  bottom: auto;// necessary so it won't fill screen
   opacity: .2;
   @include prefixed(transition, $shortTrans);
 

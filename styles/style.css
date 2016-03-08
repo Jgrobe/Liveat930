@@ -4287,6 +4287,8 @@ a.episodes-landing-cta {
 .absolute-cart-box {
   top: 2vw;
   right: calc(~"4vw + 62px");
+  left: auto;
+  bottom: auto;
   opacity: .2;
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
