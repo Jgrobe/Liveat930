@@ -3,8 +3,11 @@
   color: white;
   @include preloader();
 
-  &.vjs-has-started {
-    &:hover {
+  &:hover {
+
+    .vjs-big-play-button { background: none;}
+
+    &.vjs-has-started {
       .vjs-control-bar {@include autoAlpha(1);}
     }
   }
