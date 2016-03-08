@@ -43,6 +43,7 @@ function init_sqsp() {
         vid.addEventListener('loadeddata', function() {
             //console.log('-------------------------------------- video loaded');
             size_video();
+            scrollMonitor.recalculateLocations();
         });
         if($thisVid.hasClass('loop')) {
             vid.addEventListener('ended', function(e){

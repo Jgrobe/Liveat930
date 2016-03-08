@@ -84,10 +84,10 @@ SQSP.functions.initPage = function() {
 
         var scrollTracker = scrollMonitor.create($thisPoster.get(0));
 
-        $thisPoster.find('video').get(0).addEventListener('loadeddata', function(e) {
-            console.log('recalculate scrolltracker', e);
-            scrollTracker.recalculateLocation;
-        });
+        //$thisPoster.find('video').get(0).addEventListener('loadeddata', function(e) {
+        //    console.log('recalculate scrolltracker', e);
+        //    scrollTracker.recalculateLocation();
+        //});
         //console.log('scrollTracker', scrollTracker);
 
         scrollTracker.enterViewport(function() {
