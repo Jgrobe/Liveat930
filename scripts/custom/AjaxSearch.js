@@ -57,7 +57,7 @@ var AjaxSearch = function(options) {
 
         //console.log('search()', query);
         
-        jQuery.ajax((AS.options.searchPath, {
+        jQuery.ajax(AS.options.searchPath, {
             method : 'get',
             data : {q: query},
             success: function(data) {
