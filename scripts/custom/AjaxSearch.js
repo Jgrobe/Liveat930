@@ -14,9 +14,6 @@ var AjaxSearch = function(options) {
         resultSelector: '.search-result',
         exclude : {collectionDisplayName:'Artists'}
     }, options);
-
-    AS.init = function() {
-    };// init()
     
     AS.extractData = function(data) {
 
@@ -24,7 +21,7 @@ var AjaxSearch = function(options) {
 
         var extractedResults = [],
             searchItems = data.items;
-        console.log('results found', data, results);
+        console.log('results found', data, searchItems);
 
 
         for(var i=0; i<searchItems.length; i++) {
@@ -75,6 +72,9 @@ var AjaxSearch = function(options) {
         });
         
     };// search()
+
+    AS.init = function() {
+    };// init()
     
     if(AS.options.autoInit) AS.init();
     
