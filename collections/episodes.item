@@ -19,6 +19,9 @@
         </div><!-- .episodes-landing-sub -->
     </section>
 
+    {.equal?:categories.0:"upcoming"}
+    {.or}
+
     <div class="site-content">
 
         {.if customContent.episode-videoclips}
@@ -187,5 +190,6 @@
 
         </section><!-- .video-gallery -->
     </div>
+    {.end}<!-- .end.equal -->
 {.end}
 <squarespace:script src="custom/page_episode.js" />
