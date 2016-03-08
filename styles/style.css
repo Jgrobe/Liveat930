@@ -2693,6 +2693,9 @@ div.mce_inline_error {
   .episode-summary .cta-container {
     margin-left: 5%; }
 
+.video-js {
+  background: rgba(0, 0, 0, 0.9) url("assets/images/spinner.gif") no-repeat center; }
+
 .vjs-control-bar {
   position: absolute;
   width: 80%;
@@ -4204,7 +4207,6 @@ a.episodes-landing-cta {
     content: '';
     display: block;
     padding-top: 58%;
-    background: rgba(0, 0, 0, 0.9) url("assets/images/spinner.gif") no-repeat center;
     background-size: 3%; }
   .clip-preview-container > * {
     position: absolute; }

@@ -1,5 +1,6 @@
 .video-js {
 
+  @include preloader();
 }// .video-js
 
 .vjs-control-bar {
