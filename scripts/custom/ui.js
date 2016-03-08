@@ -72,6 +72,7 @@ function checkVideoloop() {
             console.log('reset video time');
             vid.currentTime = 0;
         }
+        if(vid.ended) vid.play();
     }// endfor
 
     requestAnimationFrame( checkVideoloop );
