@@ -9,7 +9,7 @@ SQSP.functions.initPage = function() {
             shape: $thismodel.data('shape'),
             maskID : ('clipshape_'+i),
             onInit:function(Clip){
-                //GradientMaps.applyGradientMap(Clip.DOM.container.object, Clip.shapes[Clip.options.shape].gradientMaps.shape);
+                GradientMaps.applyGradientMap(Clip.DOM.container.object, Clip.SHAPE.gradientMaps.shape);
             }
         });
     });
