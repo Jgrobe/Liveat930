@@ -2702,6 +2702,15 @@ div.mce_inline_error {
   .video-js:hover.vjs-has-started .vjs-control-bar {
     visibility: visible;
     opacity: 1; }
+  .video-js.vjs-has-started .vjs-big-play-button {
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    visibility: hidden;
+    opacity: 0; }
   .video-js .vjs-control-bar {
     background: none;
     position: absolute;
