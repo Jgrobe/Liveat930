@@ -2733,6 +2733,10 @@ div.mce_inline_error {
     -ms-transform: translateX(-50%) translateY(-50%);
     -o-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%); }
+  .video-js .vjs-volume-menu-button, .video-js .vjs-remaining-time {
+    display: none; }
+  .video-js .video-js .vjs-play-progress:before {
+    content: none; }
   .video-js .vjs-slider {
     background-color: rgba(255, 255, 255, 0.2); }
     .video-js .vjs-slider .vjs-volume-level, .video-js .vjs-slider .vjs-play-progress, .video-js .vjs-slider .vjs-slider-bar {
