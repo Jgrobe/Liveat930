@@ -12,18 +12,19 @@
     }
   }
 
-  &.vjs-has-started {
-    // to make entire video clickable, fill invisible big-button
-    .vjs-big-play-button {
-      display: block;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      margin: 0;
-      @include autoAlpha(0);
-    }
-  }
+  //&.vjs-has-started {
+  //  // to make entire video clickable, fill invisible big-button
+  //  .vjs-big-play-button {
+  //    display: block;
+  //    top: 0;
+  //    left: 0;
+  //    width: 100%;
+  //    height: 100%;
+  //    margin: 0;
+  //    @include autoAlpha(0);
+  //    &:before {content:none;}
+  //  }
+  //}
 
   .vjs-control-bar {
     background: none;
