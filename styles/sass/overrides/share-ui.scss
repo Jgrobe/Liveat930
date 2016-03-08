@@ -70,6 +70,33 @@
 
   }// .sqs-simple-like
 
+  //------------------------------------------------------------------------
+  //------------------------------------------------------------------------
+
+  @include breakpoint(mobile) {
+
+    .label { font-size: 9px;}
+
+    .sqs-simple-like {
+
+      .like-icon {
+        width: 38px;
+        height: 38px;
+      }
+
+      .like-count {
+        font-size: 10px;
+        width: 15px;
+        height:15px;
+      }
+    }// .simple-like
+
+  }// BP MOBILE
+}// .sharebox
+
+.page {
+
+
   .squarespace-social-buttons {
 
     &.button-style {
@@ -94,26 +121,9 @@
 
   }// .squarespace-social-buttons
 
-  //------------------------------------------------------------------------
-  //------------------------------------------------------------------------
-
   @include breakpoint(mobile) {
 
-    .label { font-size: 9px;}
 
-    .sqs-simple-like {
-
-      .like-icon {
-        width: 38px;
-        height: 38px;
-      }
-
-      .like-count {
-        font-size: 10px;
-        width: 15px;
-        height:15px;
-      }
-    }// .simple-like
 
   }// BP MOBILE
-}// .sharebox
+}

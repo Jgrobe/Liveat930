@@ -18,6 +18,21 @@
 @import "sass/modules/image-slider";
 @import "sass/modules/post-excerpt";
 @import "sass/modules/poster";
+
+@import "sass/modules/posters/circle";
+@import "sass/modules/posters/fullTriangle";
+@import "sass/modules/posters/verticalRect";
+@import "sass/modules/posters/deltoid";
+@import "sass/modules/posters/hollowTriangle";
+@import "sass/modules/posters/arc";
+@import "sass/modules/posters/halfCircle";
+@import "sass/modules/posters/square";
+@import "sass/modules/posters/doubleSlash";
+@import "sass/modules/posters/general";
+@import "sass/modules/posters/tripleRect";
+@import "sass/modules/posters/pentagon";
+
+
 @import "sass/modules/devices";
 @import "sass/modules/text-insert";
 @import "sass/modules/nav-search-overlay";
@@ -37,5 +52,6 @@
 @import "sass/pages/video-detail";
 
 @import "sass/overrides/share-ui";
+@import "sass/overrides/product-detail";
 
 @import "sass/dev/aligner";

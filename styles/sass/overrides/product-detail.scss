@@ -1,0 +1,22 @@
+#product-wrapper {
+
+  width: $contentWidth;
+  max-width: 800px;
+  padding-top: $sectionMarginBottom;
+  margin: 0 auto $sectionMarginBottom auto;
+
+}// #product-wrapper
+
+#product-summary {
+
+  #product-details {
+
+    .product-title {
+      @extend .m-headline;
+    }
+
+    .variant-option-title {display: none;}
+
+  }// #product-details
+
+}// #product-summary
