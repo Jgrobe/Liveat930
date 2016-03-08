@@ -3,7 +3,7 @@
     <section class="episodes-landing episode-detail">
         <div class="fill-parent mask">
             <div class="landing-bg" style="background-image:url('{customContent.hero-fallback-image.assetUrl}');" data-shape="{customContent.episode-shape}">
-            <video src="{customContent.episode-hero-video}" muted autoplay loop></video>
+            <video src="{customContent.episode-hero-video}" muted autoplay loop data-setup="{}" class="video-js fill-parent"></video>
         </div>
         </div><!-- .mask -->
 

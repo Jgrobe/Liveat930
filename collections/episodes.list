@@ -15,7 +15,7 @@
                         <video src="{customContent.episode-hero-video}" class="loop" muted autoplay></video>
                     </div><!-- landing-bg -->
                 </div><!-- .fill-parent -->
-                <!--<div class="episodes-landing-geo"></div>-->
+
                 <div class="landing-container">
 
                     <div class="episodes-landing-head prllx-stndrd">
@@ -30,15 +30,8 @@
                             var previewwartists = $lineupPreview.data('artists').split(',').slice(0,4).join(' / ');
                             $lineupPreview.html(previewwartists+' & more')
                         </script>
-                    </div>
+                    </div><!-- .episodes-landing-sub -->
                     <div class="cta-dummy" data-icon="eye" data-label="Watch now" data-class="landing-cta prllx-custom" data-attributes="href={fullUrl},data-prllx=.04">{@|apply svg-icon-eye.block}</div>
-                    <!--php print_cta(array(
-                        'icon' => 'images/eye',
-                    'label' => 'Watch now',
-                    'class' => array('landing-cta', 'prllx-custom'),
-                    'attributes' => array('href' => '#', 'data-prllx' => '.04')
-                    )); -->
-                    <!--<a class="episodes-landing-cta icon-eye" href="">Watch episode no. 5, mar 2016</a>-->
 
                 </div><!-- .landing-container -->
             </section>
@@ -58,18 +51,13 @@
             {.repeated section items}
                 {.repeated section categories}
                     {.equal?:@:"aired"}
-                        <!--div class="episodes-overview-row"-->
-                            <div class="episodes-overview-item prllxposter">
-                                {@|apply poster-parallax.block}
-                                <div class="cta-dummy" data-label="Explore" data-icon="eye" data-attributes="href={fullUrl}">{@|apply svg-icon-eye.block}</div>
-                                <!--php print_cta(array(
-                                        'label' => 'Explore',
-                                'icon' => 'images/eye',
-                                'attributes' => array('href' => '?p=episode')
-                                )); -->
-                                <div class="light"></div>
-                            </div><!-- .episodes-overview-item -->
-                        <!--/div><!-- .episodes-overview-row -->
+
+                        <div class="episodes-overview-item prllxposter">
+                            {@|apply poster-parallax.block}
+                            <div class="cta-dummy" data-label="Explore" data-icon="eye" data-attributes="href={fullUrl}">{@|apply svg-icon-eye.block}</div>
+                            <div class="light"></div>
+                        </div><!-- .episodes-overview-item -->
+
                     {.end}
                 {.end}
             {.end}<!-- .end repeated items -->

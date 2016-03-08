@@ -41,14 +41,14 @@ function init_sqsp() {
     //SQSP.functions.createPageHero();
     SQSP.functions.createPageGallery();
 
-    //// manual video loop
-    //jQuery('video.loop').each(function(){
-    //    var vid =jQuery(this).get(0);
-    //    vid.addEventListener('ended', function(e){
-    //        console.log('video loop!', e);
-    //        vid.play();
-    //    });
-    //});
+    // manual video loop
+    jQuery('video.loop').each(function(){
+        var vid =jQuery(this).get(0);
+        vid.addEventListener('ended', function(e){
+            console.log('video loop!', e);
+            vid.play();
+        });
+    });
 
 }// init_page()
 
