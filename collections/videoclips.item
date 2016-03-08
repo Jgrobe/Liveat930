@@ -78,9 +78,7 @@
                         {.end}
                     </div><!-- .video-gallery-videos -->
 
-                    <div class="centered top-spaced">
-                        <div class="cta-dummy" data-label="Load more from the same episode" data-icon="icon-load" data-class="load-clips load-from-category upsized-icon load-more-cta">{@|apply svg-icon-load.block}</div>
-                    </div>
+                    <div class="cta-dummy" data-label="Load more from the same episode" data-icon="icon-load" data-class="load-clips load-from-category upsized-icon load-more-cta">{@|apply svg-icon-load.block}</div>
 
                 </squarespace:query>
 
@@ -129,9 +127,7 @@
 
             </squarespace:query>
 
-            <div class="centered top-spaced">
-                <div class="cta-dummy" data-label="Load more from the same category" data-icon="icon-load" data-class="load-clips load-from-category upsized-icon load-more-cta">{@|apply svg-icon-load.block}</div>
-            </div>
+            <div class="cta-dummy" data-label="Load more from the same category" data-icon="icon-load" data-class="load-clips load-from-category upsized-icon load-more-cta">{@|apply svg-icon-load.block}</div>
 
         </section>
 
