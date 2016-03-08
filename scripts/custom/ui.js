@@ -36,7 +36,7 @@ function init_sqsp() {
 
     //manual video loop
 
-    SQSP.vars.keepCheckingVideo = true;
+    SQSP.vars.keepCheckingVideos = true;
     SQSP.vars.loopvids = [];
 
     jQuery('video').each(function(i,elem) {
@@ -57,6 +57,7 @@ function init_sqsp() {
         }// endif
     });
 
+    console.log('SQSP.vars.loopvids.length', SQSP.vars.loopvids.length);
     checkVideoloop();
 
 }// init_page()
