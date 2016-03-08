@@ -2,17 +2,17 @@
   @include preloader();
 }// .video-js
 //
-//.vjs-control-bar {
-//
-//  position: absolute;
-//  width: 80%;
-//  left: 10%;
-//  bottom: 5%;
-//  @include flexbox();
-//  @include flex-value(direction, row);
-//  @include prefixed(justify-content, space-between);
-//
-//}// .vjs-control-bar
+.vjs-control-bar {
+
+  position: absolute;
+  width: 80%;
+  left: 10%;
+  bottom: 5%;
+  @include flexbox();
+  @include flex-value(direction, row);
+  @include prefixed(justify-content, space-between);
+
+}// .vjs-control-bar
 //
 //.vjs-error-display {
 //

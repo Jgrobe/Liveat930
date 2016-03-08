@@ -2696,6 +2696,30 @@ div.mce_inline_error {
 .video-js {
   background: rgba(0, 0, 0, 0.9) url("assets/images/spinner.gif") no-repeat center; }
 
+.vjs-control-bar {
+  position: absolute;
+  width: 80%;
+  left: 10%;
+  bottom: 5%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-direction: row;
+  -moz-box-direction: row;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-direction: row;
+  -ms-direction: row;
+  direction: row;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  -o-justify-content: space-between;
+  justify-content: space-between; }
+
 .video-js {
   font-size: 10px;
   color: #fff; }
