@@ -512,36 +512,32 @@ input {
           height: 1.21528vw;
           background-repeat: no-repeat;
           display: block; }
-  .collection-type-products.view-item .header .navigation {
-    color: black; }
-    .collection-type-products.view-item .header .navigation .menu-item:after {
-      background: black; }
   .homepage .header .logo {
     display: none; }
-  .homepage .header .navigation {
+  .homepage .header .navigation, .collection-type-products.view-item .header .navigation {
     color: black; }
-    .homepage .header .navigation .menu-item:after {
+    .homepage .header .navigation .menu-item:after, .collection-type-products.view-item .header .navigation .menu-item:after {
       background: black; }
-    .homepage .header .navigation .search svg * {
+    .homepage .header .navigation .search svg *, .collection-type-products.view-item .header .navigation .search svg * {
       fill: black; }
-    .homepage .header .navigation .search .search-field {
+    .homepage .header .navigation .search .search-field, .collection-type-products.view-item .header .navigation .search .search-field {
       color: black;
       border-color: black; }
-      .homepage .header .navigation .search .search-field::-webkit-input-placeholder {
+      .homepage .header .navigation .search .search-field::-webkit-input-placeholder, .collection-type-products.view-item .header .navigation .search .search-field::-webkit-input-placeholder {
         /* WebKit, Blink, Edge */
         color: black;
         opacity: 1; }
-      .homepage .header .navigation .search .search-field:-moz-placeholder {
+      .homepage .header .navigation .search .search-field:-moz-placeholder, .collection-type-products.view-item .header .navigation .search .search-field:-moz-placeholder {
         /* Mozilla Firefox 4 to 18 */
         color: black; }
-      .homepage .header .navigation .search .search-field::-moz-placeholder {
+      .homepage .header .navigation .search .search-field::-moz-placeholder, .collection-type-products.view-item .header .navigation .search .search-field::-moz-placeholder {
         /* Mozilla Firefox 19+ */
         color: black;
         opacity: 1; }
-      .homepage .header .navigation .search .search-field:-ms-input-placeholder {
+      .homepage .header .navigation .search .search-field:-ms-input-placeholder, .collection-type-products.view-item .header .navigation .search .search-field:-ms-input-placeholder {
         /* Internet Explorer 10-11 */
         color: black; }
-      .homepage .header .navigation .search .search-field:placeholder-shown {
+      .homepage .header .navigation .search .search-field:placeholder-shown, .collection-type-products.view-item .header .navigation .search .search-field:placeholder-shown {
         /* Standard (https://drafts.csswg.org/selectors-4/#placeholder) */
         color: black; }
   @media only screen and (max-width: 750px) {

@@ -90,22 +90,12 @@
     }// .menu-item
   }// .navigation
 
-  .collection-type-products.view-item & {
-
-    .navigation {
-      color: black;
-      .menu-item {
-        &:after {
-          background: black;
-        }
-      }// .menu-item
-    }// .navigation
-  }// on product detail page
-
   .homepage & {
-//    padding: 4vw;
-
     .logo {display: none;}
+  }
+
+  .homepage &, .collection-type-products.view-item & {
+//    padding: 4vw;
 
     .navigation {
       color: black;
