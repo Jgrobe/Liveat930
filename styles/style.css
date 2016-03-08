@@ -763,7 +763,9 @@ input {
     .footer-newsletter form .submit-email {
       position: absolute;
       height: 100%;
-      width: auto; }
+      width: auto;
+      left: 100%;
+      top: 0; }
       .footer-newsletter form .submit-email .cta .icon, .footer-newsletter form .submit-email #productSummary #productDetails .sqs-add-to-cart-button .icon, #productSummary #productDetails .footer-newsletter form .submit-email .sqs-add-to-cart-button .icon, .footer-newsletter form .submit-email #sqs-shopping-cart-wrapper .checkout-button .icon, #sqs-shopping-cart-wrapper .footer-newsletter form .submit-email .checkout-button .icon {
         margin-right: 0; }
       .footer-newsletter form .submit-email .cta .label, .footer-newsletter form .submit-email #productSummary #productDetails .sqs-add-to-cart-button .label, #productSummary #productDetails .footer-newsletter form .submit-email .sqs-add-to-cart-button .label, .footer-newsletter form .submit-email #sqs-shopping-cart-wrapper .checkout-button .label, #sqs-shopping-cart-wrapper .footer-newsletter form .submit-email .checkout-button .label {
