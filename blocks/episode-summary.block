@@ -1,6 +1,6 @@
 <div class="episode-summary prllx-custom" data-prllx=".08">
 
-    <div class="shape-container make-shape imgfill" data-shape="{customContent.episode-shape}" class="imgfill" style="background-image:url('{customContent.poster-image.assetUrl}');">
+    <div class="shape-container make-shape imgfill" data-shape="{customContent.episode-shape}" class="imgfill" style="background-image:url('{customContent.poster-fallback-image.assetUrl}');">
         <!--<video src="{customContent.episode-poster-video}" muted style="position: absolute;"></video>-->
     </div>
 

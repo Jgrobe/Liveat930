@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ba77c59-895c-4b6c-8ed1-52220cbb39bd" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blocks/poster-parallax.block" afterPath="$PROJECT_DIR$/blocks/poster-parallax.block" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blocks/episode-summary.block" afterPath="$PROJECT_DIR$/blocks/episode-summary.block" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blocks/poster-scroll.block" afterPath="$PROJECT_DIR$/blocks/poster-scroll.block" />
     </list>
     <ignored path="sqsp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,8 +29,8 @@
           <file leaf-file-name="poster-scroll.block" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/blocks/poster-scroll.block">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-23.75">
-                  <caret line="38" column="47" selection-start-line="38" selection-start-column="47" selection-end-line="38" selection-end-column="47" />
+                <state vertical-scroll-proportion="-28.125">
+                  <caret line="45" column="45" selection-start-line="45" selection-start-column="45" selection-end-line="45" selection-end-column="45" />
                   <folding>
                     <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
                   </folding>
@@ -38,11 +38,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="episode-summary.block" pinned="false" current-in-tab="false">
+          <file leaf-file-name="episode-summary.block" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/blocks/episode-summary.block">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-13.125">
-                  <caret line="21" column="31" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="0" column="59" selection-start-line="0" selection-start-column="59" selection-end-line="0" selection-end-column="59" />
                   <folding>
                     <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
                   </folding>
@@ -60,14 +60,12 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="poster-parallax.block" pinned="false" current-in-tab="true">
+          <file leaf-file-name="poster-parallax.block" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/blocks/poster-parallax.block">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.27383366">
-                  <caret line="18" column="51" selection-start-line="18" selection-start-column="51" selection-end-line="18" selection-end-column="51" />
-                  <folding>
-                    <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-                  </folding>
+                <state vertical-scroll-proportion="-11.25">
+                  <caret line="18" column="129" selection-start-line="18" selection-start-column="83" selection-end-line="18" selection-end-column="129" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -295,9 +293,7 @@
         <option value="$PROJECT_DIR$/styles/sass/modules/video-js.scss" />
         <option value="$PROJECT_DIR$/styles/sass/pages/video-detail.scss" />
         <option value="$PROJECT_DIR$/collections/videoclips.item" />
-        <option value="$PROJECT_DIR$/blocks/poster-scroll.block" />
         <option value="$PROJECT_DIR$/scripts/custom/page_clips.js" />
-        <option value="$PROJECT_DIR$/blocks/episode-summary.block" />
         <option value="$PROJECT_DIR$/scripts/custom/page_clip.js" />
         <option value="$PROJECT_DIR$/scripts/custom/ImageGallery.js" />
         <option value="$PROJECT_DIR$/styles/sass/pages/show.scss" />
@@ -305,6 +301,8 @@
         <option value="$PROJECT_DIR$/template.conf" />
         <option value="$PROJECT_DIR$/scripts/custom/page_episodes.js" />
         <option value="$PROJECT_DIR$/blocks/poster-parallax.block" />
+        <option value="$PROJECT_DIR$/blocks/poster-scroll.block" />
+        <option value="$PROJECT_DIR$/blocks/episode-summary.block" />
       </list>
     </option>
   </component>
@@ -955,16 +953,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blocks/poster-scroll.block">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-23.75">
-          <caret line="38" column="47" selection-start-line="38" selection-start-column="47" selection-end-line="38" selection-end-column="47" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/collections/videoclips.item">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-13.803922">
@@ -972,16 +960,6 @@
           <folding>
             <element signature="n#style#0;n#section#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#section#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blocks/episode-summary.block">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.125">
-          <caret line="21" column="31" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1062,10 +1040,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/blocks/poster-parallax.block">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.27383366">
-          <caret line="18" column="51" selection-start-line="18" selection-start-column="51" selection-end-line="18" selection-end-column="51" />
+        <state vertical-scroll-proportion="-11.25">
+          <caret line="18" column="129" selection-start-line="18" selection-start-column="83" selection-end-line="18" selection-end-column="129" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blocks/poster-scroll.block">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-28.125">
+          <caret line="45" column="45" selection-start-line="45" selection-start-column="45" selection-end-line="45" selection-end-column="45" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blocks/episode-summary.block">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="59" selection-start-line="0" selection-start-column="59" selection-end-line="0" selection-end-column="59" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

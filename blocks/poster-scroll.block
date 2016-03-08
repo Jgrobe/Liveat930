@@ -15,7 +15,7 @@
             </div><!-- .bg-layer -->
 
             <div class="layer model-layer rel prllx-custom prllx-no-disable" data-prllx=".18">
-                <div class="model-container" data-shape="{customContent.episode-shape}" style="background-image:url('{customContent.poster-fallback-image.assetUrl}');">
+                <div class="model-container imgfill" data-shape="{customContent.episode-shape}" style="background-image:url('{customContent.poster-fallback-image.assetUrl}');">
                     <video src="{customContent.episode-poster-video}" muted loop data-setup="{}" class="video-js fill-parent"></video>
                 </div><!-- .model-container.img.widescreen -->
             </div><!-- .model-layer -->
