@@ -2696,32 +2696,56 @@ div.mce_inline_error {
 .video-js {
   background: rgba(0, 0, 0, 0.9) url("assets/images/spinner.gif") no-repeat center; }
 
-.vjs-control-bar {
-  position: absolute;
-  width: 80%;
-  left: 10%;
-  bottom: 5%;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-direction: row;
-  -moz-box-direction: row;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-direction: row;
-  -ms-direction: row;
-  direction: row;
-  -webkit-justify-content: space-between;
-  -moz-justify-content: space-between;
-  -ms-justify-content: space-between;
-  -o-justify-content: space-between;
-  justify-content: space-between; }
+.video-js {
+  font-size: 10px;
+  color: #fff; }
 
-.vjs-big-play-button {
-  display: none; }
+.vjs-default-skin .vjs-big-play-button {
+  font-size: 3em;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%); }
+
+/* The default color of control backgrounds is mostly black but with a little
+   bit of blue so it can still be seen on all-black video frames, which are common. */
+.video-js .vjs-control-bar,
+.video-js .vjs-big-play-button,
+.video-js .vjs-menu-button .vjs-menu-content {
+  /* IE8 - has no alpha support */
+  background-color: transparent;
+  /* Opacity: 1.0 = 100%, 0.0 = 0% */
+  background-color: rgba(0, 0, 0, 0.7); }
+
+/* Slider - used for Volume bar and Progress bar */
+.video-js .vjs-slider {
+  background-color: rgba(84, 84, 84, 0);
+  background-color: rgba(84, 84, 84, 0.5); }
+
+/* The slider bar color is used for the progress bar and the volume bar
+   (the first two can be removed after a fix that's coming) */
+.video-js .vjs-volume-level,
+.video-js .vjs-play-progress,
+.video-js .vjs-slider-bar {
+  background: #fff; }
+
+/* The main progress bar also has a bar that shows how much has been loaded. */
+.video-js .vjs-load-progress {
+  /* For IE8 we'll lighten the color */
+  background: ligthen(rgba(84, 84, 84, 0), 25%);
+  /* Otherwise we'll rely on stacked opacities */
+  background: rgba(84, 84, 84, 0.5); }
+
+/* The load progress bar also has internal divs that represent
+   smaller disconnected loaded time ranges */
+.video-js .vjs-load-progress div {
+  /* For IE8 we'll lighten the color */
+  background: ligthen(rgba(84, 84, 84, 0), 50%);
+  /* Otherwise we'll rely on stacked opacities */
+  background: rgba(84, 84, 84, 0.75); }
 
 #fieldTracker {
   position: fixed;
