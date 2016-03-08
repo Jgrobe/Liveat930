@@ -3809,7 +3809,7 @@ a.episodes-landing-cta {
       -o-transform: translateX(-50%) translateY(-50%);
       transform: translateX(-50%) translateY(-50%); }
   .history-slider .gallery-copy {
-    height: 10vw; }
+    height: 12vw; }
   @media only screen and (max-width: 750px) {
     .history-slider {
       padding-top: 10vH; }
