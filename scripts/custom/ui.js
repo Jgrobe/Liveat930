@@ -22,14 +22,7 @@ function init_sqsp() {
             elem.addEventListener('loadeddata', function() {
                 //console.log('-------------------------------------- video loaded');
                 size_video();
-            });
-            if(jQuery(this).hasClass('loop')) {
-                //var vid =jQuery(this).get(0);
-                elem.addEventListener('ended', function(e){
-                    console.log('video loop!', e);
-                    elem.play();
-                });
-            }
+            })
         });
 
     }).resize(function() {
@@ -49,6 +42,13 @@ function init_sqsp() {
     SQSP.functions.createPageGallery();
 
     // manual video loop
+    //jQuery('video.loop').each(function(){
+    //    var vid =jQuery(this).get(0);
+    //    vid.addEventListener('ended', function(e){
+    //        console.log('video loop!', e);
+    //        vid.play();
+    //    });
+    //});
 
 }// init_page()
 
