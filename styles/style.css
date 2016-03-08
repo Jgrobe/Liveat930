@@ -359,14 +359,14 @@ input {
   line-height: 2.08333vw;
   letter-spacing: .1em; }
 
-.m-headline, .episode-summary .head, #product-summary #product-details .product-title {
+.m-headline, .episode-summary .head, #productSummary #productDetails .product-title {
   font-family: "United Sans", script;
   text-transform: uppercase;
   font-size: 7.22222vw;
   line-height: 7.22222vw;
   letter-spacing: .08em; }
   @media only screen and (max-width: 750px) {
-    .m-headline, .episode-summary .head, #product-summary #product-details .product-title {
+    .m-headline, .episode-summary .head, #productSummary #productDetails .product-title {
       font-size: 48px;
       line-height: 48px; } }
 
@@ -1646,7 +1646,7 @@ input {
     .poster .l-headline, .poster .episodes-landing-head h1, .episodes-landing-head .poster h1, .poster .clip-landing .landing-head, .clip-landing .poster .landing-head {
       font-size: 10.83333vw;
       line-height: 10.83333vw; }
-    .poster .m-headline, .poster .episode-summary .head, .episode-summary .poster .head, .poster #product-summary #product-details .product-title, #product-summary #product-details .poster .product-title {
+    .poster .m-headline, .poster .episode-summary .head, .episode-summary .poster .head, .poster #productSummary #productDetails .product-title, #productSummary #productDetails .poster .product-title {
       font-size: 8.75vw;
       line-height: 8.75vw; }
     .poster .s-headline, .poster .nav-overlay .menu-item, .nav-overlay .poster .menu-item, .poster .shortcuts .video .title, .shortcuts .video .poster .title, .poster .search-table .result, .search-table .poster .result, .poster .episode-summary .lineup span, .episode-summary .lineup .poster span, .poster .episode-summary .lineup p, .episode-summary .lineup .poster p, .poster .clip-landing .landing-head .small, .clip-landing .landing-head .poster .small {
@@ -4265,13 +4265,13 @@ a.episodes-landing-cta {
     height: 0;
     overflow: hidden; }
 
-#product-wrapper {
+#productWrapper {
   width: 75vw;
   max-width: 800px;
   padding-top: 10.41667vw;
   margin: 0 auto 10.41667vw auto; }
 
-#product-summary #product-details .variant-option-title {
+#productSummary #productDetails .variant-option-title {
   display: none; }
 
 ._aligner {

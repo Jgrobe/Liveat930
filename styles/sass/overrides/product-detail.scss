@@ -1,4 +1,4 @@
-#product-wrapper {
+#productWrapper {
 
   width: $contentWidth;
   max-width: 800px;
@@ -7,9 +7,9 @@
 
 }// #product-wrapper
 
-#product-summary {
+#productSummary {
 
-  #product-details {
+  #productDetails {
 
     .product-title {
       @extend .m-headline;
