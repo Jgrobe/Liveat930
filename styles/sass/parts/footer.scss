@@ -144,6 +144,9 @@
         width: 100%;//65%;
         display: block;
         padding: 18px;
+        @include prefixed(transition, color $shortTrans);
+
+        &.mce_inline_error { color: #FF574D; }
 //        padding-right: 36px;
 
 //        , &[type=submit] {
@@ -249,7 +252,7 @@
   }// ul
 }// .footer-social
 
-.mce_inline_error { display: none !important; }
+div.mce_inline_error { display: none !important; }
 
 .mce-responses {
   .response {

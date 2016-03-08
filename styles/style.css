@@ -792,7 +792,14 @@ input {
           font-size: 10px;
           width: 100%;
           display: block;
-          padding: 18px; }
+          padding: 18px;
+          -webkit-transition: color 0.3s;
+          -moz-transition: color 0.3s;
+          -ms-transition: color 0.3s;
+          -o-transition: color 0.3s;
+          transition: color 0.3s; }
+          .footer-newsletter form input[type=email].mce_inline_error {
+            color: #FF574D; }
         .footer-newsletter form .submit-email {
           position: static;
           margin-top: 20px; }
@@ -863,7 +870,7 @@ input {
         background-image: url("assets/images/twitter.svg");
         background-size: 72%; }
 
-.mce_inline_error {
+div.mce_inline_error {
   display: none !important; }
 
 .mce-responses .response {
