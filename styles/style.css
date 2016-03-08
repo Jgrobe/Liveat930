@@ -863,6 +863,28 @@ input {
         background-image: url("assets/images/twitter.svg");
         background-size: 72%; }
 
+.mce-repsonses .response {
+  display: block;
+  position: fixed;
+  top: 50%;
+  left: 35%;
+  width: 30vw;
+  height: auto;
+  padding: 2vw;
+  border-radius: 1vw;
+  background: white;
+  color: black;
+  text-align: center;
+  font-size: 11px;
+  font-weight: normal;
+  line-height: 19px;
+  z-index: 999;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%); }
+
 .plain-link {
   text-decoration: underline; }
   .plain-link:hover {

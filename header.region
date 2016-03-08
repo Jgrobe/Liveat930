@@ -11,8 +11,6 @@
     <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/6811694/6939152/css/fonts.css" />
     <!--yxyxyx-->
 
-    <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
-
     <squarespace:script combo="true" src="libs/bowser.min.js" />
     <squarespace:script combo="true" src="libs/jquery-2.1.0.min.js" />
     <squarespace:script combo="true" src="libs/greensock/TweenMax.min.js" />
