@@ -31,7 +31,7 @@
 
     {.if item.customContent.linkedEpisode}
 
-        <squarespace:query collection="episodes" tag="item.customContent.linkedEpisode" limit="1">
+        <squarespace:query collection="episodes" tag="{item.customContent.linkedEpisode}" limit="1">
 
             {.section items.0}
 
@@ -90,9 +90,6 @@
 
 
     {.if item.categories}
-
-        <script>
-        </script>
 
         <section class="video-gallery video-detail-clips related-category-clips">
             <div class="rectangle"></div>
