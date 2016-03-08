@@ -722,9 +722,9 @@ input {
     font-size: 1.18056vw;
     line-height: 1.66667vw;
     letter-spacing: .06em; }
-  .footer .cta-container .cta.hover-cta, .footer .cta-container #productSummary #productDetails .hover-cta.sqs-add-to-cart-button, #productSummary #productDetails .footer .cta-container .hover-cta.sqs-add-to-cart-button {
+  .footer .cta-container .cta.hover-cta, .footer .cta-container #productSummary #productDetails .hover-cta.sqs-add-to-cart-button, #productSummary #productDetails .footer .cta-container .hover-cta.sqs-add-to-cart-button, .footer .cta-container #sqs-shopping-cart-wrapper .hover-cta.checkout-button, #sqs-shopping-cart-wrapper .footer .cta-container .hover-cta.checkout-button {
     background: #f0f0f0; }
-  .footer .cta-container.negative .cta.hover-cta, .footer .cta-container.negative #productSummary #productDetails .hover-cta.sqs-add-to-cart-button, #productSummary #productDetails .footer .cta-container.negative .hover-cta.sqs-add-to-cart-button {
+  .footer .cta-container.negative .cta.hover-cta, .footer .cta-container.negative #productSummary #productDetails .hover-cta.sqs-add-to-cart-button, #productSummary #productDetails .footer .cta-container.negative .hover-cta.sqs-add-to-cart-button, .footer .cta-container.negative #sqs-shopping-cart-wrapper .hover-cta.checkout-button, #sqs-shopping-cart-wrapper .footer .cta-container.negative .hover-cta.checkout-button {
     background: #191919; }
   @media only screen and (max-width: 750px) {
     .footer p {
@@ -764,11 +764,11 @@ input {
       position: absolute;
       height: 100%;
       width: auto; }
-      .footer-newsletter form .submit-email .cta .icon, .footer-newsletter form .submit-email #productSummary #productDetails .sqs-add-to-cart-button .icon, #productSummary #productDetails .footer-newsletter form .submit-email .sqs-add-to-cart-button .icon {
+      .footer-newsletter form .submit-email .cta .icon, .footer-newsletter form .submit-email #productSummary #productDetails .sqs-add-to-cart-button .icon, #productSummary #productDetails .footer-newsletter form .submit-email .sqs-add-to-cart-button .icon, .footer-newsletter form .submit-email #sqs-shopping-cart-wrapper .checkout-button .icon, #sqs-shopping-cart-wrapper .footer-newsletter form .submit-email .checkout-button .icon {
         margin-right: 0; }
-      .footer-newsletter form .submit-email .cta .label, .footer-newsletter form .submit-email #productSummary #productDetails .sqs-add-to-cart-button .label, #productSummary #productDetails .footer-newsletter form .submit-email .sqs-add-to-cart-button .label {
+      .footer-newsletter form .submit-email .cta .label, .footer-newsletter form .submit-email #productSummary #productDetails .sqs-add-to-cart-button .label, #productSummary #productDetails .footer-newsletter form .submit-email .sqs-add-to-cart-button .label, .footer-newsletter form .submit-email #sqs-shopping-cart-wrapper .checkout-button .label, #sqs-shopping-cart-wrapper .footer-newsletter form .submit-email .checkout-button .label {
         display: none; }
-      .footer-newsletter form .submit-email .cta .filler, .footer-newsletter form .submit-email #productSummary #productDetails .sqs-add-to-cart-button .filler, #productSummary #productDetails .footer-newsletter form .submit-email .sqs-add-to-cart-button .filler {
+      .footer-newsletter form .submit-email .cta .filler, .footer-newsletter form .submit-email #productSummary #productDetails .sqs-add-to-cart-button .filler, #productSummary #productDetails .footer-newsletter form .submit-email .sqs-add-to-cart-button .filler, .footer-newsletter form .submit-email #sqs-shopping-cart-wrapper .checkout-button .filler, #sqs-shopping-cart-wrapper .footer-newsletter form .submit-email .checkout-button .filler {
         padding: 1.6vw; }
   .footer-newsletter p {
     position: absolute;
@@ -794,11 +794,11 @@ input {
         .footer-newsletter form .submit-email {
           position: static;
           margin-top: 20px; }
-          .footer-newsletter form .submit-email .cta .filler, .footer-newsletter form .submit-email #productSummary #productDetails .sqs-add-to-cart-button .filler, #productSummary #productDetails .footer-newsletter form .submit-email .sqs-add-to-cart-button .filler {
+          .footer-newsletter form .submit-email .cta .filler, .footer-newsletter form .submit-email #productSummary #productDetails .sqs-add-to-cart-button .filler, #productSummary #productDetails .footer-newsletter form .submit-email .sqs-add-to-cart-button .filler, .footer-newsletter form .submit-email #sqs-shopping-cart-wrapper .checkout-button .filler, #sqs-shopping-cart-wrapper .footer-newsletter form .submit-email .checkout-button .filler {
             padding: 18px; }
-          .footer-newsletter form .submit-email .cta .icon, .footer-newsletter form .submit-email #productSummary #productDetails .sqs-add-to-cart-button .icon, #productSummary #productDetails .footer-newsletter form .submit-email .sqs-add-to-cart-button .icon {
+          .footer-newsletter form .submit-email .cta .icon, .footer-newsletter form .submit-email #productSummary #productDetails .sqs-add-to-cart-button .icon, #productSummary #productDetails .footer-newsletter form .submit-email .sqs-add-to-cart-button .icon, .footer-newsletter form .submit-email #sqs-shopping-cart-wrapper .checkout-button .icon, #sqs-shopping-cart-wrapper .footer-newsletter form .submit-email .checkout-button .icon {
             margin-right: 24px; }
-          .footer-newsletter form .submit-email .cta .label, .footer-newsletter form .submit-email #productSummary #productDetails .sqs-add-to-cart-button .label, #productSummary #productDetails .footer-newsletter form .submit-email .sqs-add-to-cart-button .label {
+          .footer-newsletter form .submit-email .cta .label, .footer-newsletter form .submit-email #productSummary #productDetails .sqs-add-to-cart-button .label, #productSummary #productDetails .footer-newsletter form .submit-email .sqs-add-to-cart-button .label, .footer-newsletter form .submit-email #sqs-shopping-cart-wrapper .checkout-button .label, #sqs-shopping-cart-wrapper .footer-newsletter form .submit-email .checkout-button .label {
             display: inline; }
       .footer-newsletter p {
         position: static;
@@ -887,7 +887,7 @@ input {
     -o-box-shadow: none;
     box-shadow: none; }
 
-.cta, #productSummary #productDetails .sqs-add-to-cart-button {
+.cta, #productSummary #productDetails .sqs-add-to-cart-button, #sqs-shopping-cart-wrapper .checkout-button {
   display: block;
   margin: auto;
   white-space: nowrap;
@@ -901,16 +901,16 @@ input {
   letter-spacing: 0.1em;
   background-color: black;
   color: white; }
-  .cta svg *, #productSummary #productDetails .sqs-add-to-cart-button svg * {
+  .cta svg *, #productSummary #productDetails .sqs-add-to-cart-button svg *, #sqs-shopping-cart-wrapper .checkout-button svg * {
     fill: white; }
-  .cta .icon, #productSummary #productDetails .sqs-add-to-cart-button .icon {
+  .cta .icon, #productSummary #productDetails .sqs-add-to-cart-button .icon, #sqs-shopping-cart-wrapper .checkout-button .icon {
     margin-right: 1.4vw; }
-  .cta svg, #productSummary #productDetails .sqs-add-to-cart-button svg, .cta img, #productSummary #productDetails .sqs-add-to-cart-button img {
+  .cta svg, #productSummary #productDetails .sqs-add-to-cart-button svg, #sqs-shopping-cart-wrapper .checkout-button svg, .cta img, #productSummary #productDetails .sqs-add-to-cart-button img, #sqs-shopping-cart-wrapper .checkout-button img {
     display: block;
     width: auto;
     height: 0.69444vw;
     overflow: visible; }
-  .cta .filler, #productSummary #productDetails .sqs-add-to-cart-button .filler {
+  .cta .filler, #productSummary #productDetails .sqs-add-to-cart-button .filler, #sqs-shopping-cart-wrapper .checkout-button .filler {
     display: -webkit-inline-box;
     display: -moz-inline-box;
     display: -ms-inline-flexbox;
@@ -925,7 +925,7 @@ input {
     -ms-direction: row;
     direction: row;
     padding: 1.4vw; }
-  .cta.hover-cta, #productSummary #productDetails .hover-cta.sqs-add-to-cart-button {
+  .cta.hover-cta, #productSummary #productDetails .hover-cta.sqs-add-to-cart-button, #sqs-shopping-cart-wrapper .hover-cta.checkout-button {
     position: absolute;
     top: 100%;
     left: 0;
@@ -933,19 +933,19 @@ input {
     height: 100%;
     background-color: white;
     color: black; }
-    .cta.hover-cta svg *, #productSummary #productDetails .hover-cta.sqs-add-to-cart-button svg * {
+    .cta.hover-cta svg *, #productSummary #productDetails .hover-cta.sqs-add-to-cart-button svg *, #sqs-shopping-cart-wrapper .hover-cta.checkout-button svg * {
       fill: black; }
-  .negative .cta, .negative #productSummary #productDetails .sqs-add-to-cart-button, #productSummary #productDetails .negative .sqs-add-to-cart-button {
+  .negative .cta, .negative #productSummary #productDetails .sqs-add-to-cart-button, #productSummary #productDetails .negative .sqs-add-to-cart-button, .negative #sqs-shopping-cart-wrapper .checkout-button, #sqs-shopping-cart-wrapper .negative .checkout-button {
     background-color: white;
     color: black; }
-    .negative .cta svg *, .negative #productSummary #productDetails .sqs-add-to-cart-button svg *, #productSummary #productDetails .negative .sqs-add-to-cart-button svg * {
+    .negative .cta svg *, .negative #productSummary #productDetails .sqs-add-to-cart-button svg *, #productSummary #productDetails .negative .sqs-add-to-cart-button svg *, .negative #sqs-shopping-cart-wrapper .checkout-button svg *, #sqs-shopping-cart-wrapper .negative .checkout-button svg * {
       fill: black; }
-    .negative .cta.hover-cta, .negative #productSummary #productDetails .hover-cta.sqs-add-to-cart-button, #productSummary #productDetails .negative .hover-cta.sqs-add-to-cart-button {
+    .negative .cta.hover-cta, .negative #productSummary #productDetails .hover-cta.sqs-add-to-cart-button, #productSummary #productDetails .negative .hover-cta.sqs-add-to-cart-button, .negative #sqs-shopping-cart-wrapper .hover-cta.checkout-button, #sqs-shopping-cart-wrapper .negative .hover-cta.checkout-button {
       background-color: black;
       color: white; }
-      .negative .cta.hover-cta svg *, .negative #productSummary #productDetails .hover-cta.sqs-add-to-cart-button svg *, #productSummary #productDetails .negative .hover-cta.sqs-add-to-cart-button svg * {
+      .negative .cta.hover-cta svg *, .negative #productSummary #productDetails .hover-cta.sqs-add-to-cart-button svg *, #productSummary #productDetails .negative .hover-cta.sqs-add-to-cart-button svg *, .negative #sqs-shopping-cart-wrapper .hover-cta.checkout-button svg *, #sqs-shopping-cart-wrapper .negative .hover-cta.checkout-button svg * {
         fill: white; }
-  .plain .cta, .plain #productSummary #productDetails .sqs-add-to-cart-button, #productSummary #productDetails .plain .sqs-add-to-cart-button {
+  .plain .cta, .plain #productSummary #productDetails .sqs-add-to-cart-button, #productSummary #productDetails .plain .sqs-add-to-cart-button, .plain #sqs-shopping-cart-wrapper .checkout-button, #sqs-shopping-cart-wrapper .plain .checkout-button {
     display: -webkit-inline-box;
     display: -moz-inline-box;
     display: -ms-inline-flexbox;
@@ -953,44 +953,44 @@ input {
     display: inline-flex;
     background: none;
     color: black; }
-    .plain .cta svg *, .plain #productSummary #productDetails .sqs-add-to-cart-button svg *, #productSummary #productDetails .plain .sqs-add-to-cart-button svg * {
+    .plain .cta svg *, .plain #productSummary #productDetails .sqs-add-to-cart-button svg *, #productSummary #productDetails .plain .sqs-add-to-cart-button svg *, .plain #sqs-shopping-cart-wrapper .checkout-button svg *, #sqs-shopping-cart-wrapper .plain .checkout-button svg * {
       fill: black; }
-    .plain .cta .filler, .plain #productSummary #productDetails .sqs-add-to-cart-button .filler, #productSummary #productDetails .plain .sqs-add-to-cart-button .filler {
+    .plain .cta .filler, .plain #productSummary #productDetails .sqs-add-to-cart-button .filler, #productSummary #productDetails .plain .sqs-add-to-cart-button .filler, .plain #sqs-shopping-cart-wrapper .checkout-button .filler, #sqs-shopping-cart-wrapper .plain .checkout-button .filler {
       padding: 0; }
-  .icon-browser .cta, .icon-browser #productSummary #productDetails .sqs-add-to-cart-button, #productSummary #productDetails .icon-browser .sqs-add-to-cart-button, .icon-icon-load .cta, .icon-icon-load #productSummary #productDetails .sqs-add-to-cart-button, #productSummary #productDetails .icon-icon-load .sqs-add-to-cart-button, .icon-icon-arrow .cta, .icon-icon-arrow #productSummary #productDetails .sqs-add-to-cart-button, #productSummary #productDetails .icon-icon-arrow .sqs-add-to-cart-button {
+  .icon-browser .cta, .icon-browser #productSummary #productDetails .sqs-add-to-cart-button, #productSummary #productDetails .icon-browser .sqs-add-to-cart-button, .icon-browser #sqs-shopping-cart-wrapper .checkout-button, #sqs-shopping-cart-wrapper .icon-browser .checkout-button, .icon-icon-load .cta, .icon-icon-load #productSummary #productDetails .sqs-add-to-cart-button, #productSummary #productDetails .icon-icon-load .sqs-add-to-cart-button, .icon-icon-load #sqs-shopping-cart-wrapper .checkout-button, #sqs-shopping-cart-wrapper .icon-icon-load .checkout-button, .icon-icon-arrow .cta, .icon-icon-arrow #productSummary #productDetails .sqs-add-to-cart-button, #productSummary #productDetails .icon-icon-arrow .sqs-add-to-cart-button, .icon-icon-arrow #sqs-shopping-cart-wrapper .checkout-button, #sqs-shopping-cart-wrapper .icon-icon-arrow .checkout-button {
     line-height: 1vw; }
-    .icon-browser .cta svg, .icon-browser #productSummary #productDetails .sqs-add-to-cart-button svg, #productSummary #productDetails .icon-browser .sqs-add-to-cart-button svg, .icon-icon-load .cta svg, .icon-icon-load #productSummary #productDetails .sqs-add-to-cart-button svg, #productSummary #productDetails .icon-icon-load .sqs-add-to-cart-button svg, .icon-icon-arrow .cta svg, .icon-icon-arrow #productSummary #productDetails .sqs-add-to-cart-button svg, #productSummary #productDetails .icon-icon-arrow .sqs-add-to-cart-button svg {
+    .icon-browser .cta svg, .icon-browser #productSummary #productDetails .sqs-add-to-cart-button svg, #productSummary #productDetails .icon-browser .sqs-add-to-cart-button svg, .icon-browser #sqs-shopping-cart-wrapper .checkout-button svg, #sqs-shopping-cart-wrapper .icon-browser .checkout-button svg, .icon-icon-load .cta svg, .icon-icon-load #productSummary #productDetails .sqs-add-to-cart-button svg, #productSummary #productDetails .icon-icon-load .sqs-add-to-cart-button svg, .icon-icon-load #sqs-shopping-cart-wrapper .checkout-button svg, #sqs-shopping-cart-wrapper .icon-icon-load .checkout-button svg, .icon-icon-arrow .cta svg, .icon-icon-arrow #productSummary #productDetails .sqs-add-to-cart-button svg, #productSummary #productDetails .icon-icon-arrow .sqs-add-to-cart-button svg, .icon-icon-arrow #sqs-shopping-cart-wrapper .checkout-button svg, #sqs-shopping-cart-wrapper .icon-icon-arrow .checkout-button svg {
       height: 1vw; }
-  .icon-icon-arrow .cta svg *, .icon-icon-arrow #productSummary #productDetails .sqs-add-to-cart-button svg *, #productSummary #productDetails .icon-icon-arrow .sqs-add-to-cart-button svg * {
+  .icon-icon-arrow .cta svg *, .icon-icon-arrow #productSummary #productDetails .sqs-add-to-cart-button svg *, #productSummary #productDetails .icon-icon-arrow .sqs-add-to-cart-button svg *, .icon-icon-arrow #sqs-shopping-cart-wrapper .checkout-button svg *, #sqs-shopping-cart-wrapper .icon-icon-arrow .checkout-button svg * {
     fill: none;
     stroke: white; }
-  .icon-icon-arrow .cta.hover-cta svg *, .icon-icon-arrow #productSummary #productDetails .hover-cta.sqs-add-to-cart-button svg *, #productSummary #productDetails .icon-icon-arrow .hover-cta.sqs-add-to-cart-button svg * {
+  .icon-icon-arrow .cta.hover-cta svg *, .icon-icon-arrow #productSummary #productDetails .hover-cta.sqs-add-to-cart-button svg *, #productSummary #productDetails .icon-icon-arrow .hover-cta.sqs-add-to-cart-button svg *, .icon-icon-arrow #sqs-shopping-cart-wrapper .hover-cta.checkout-button svg *, #sqs-shopping-cart-wrapper .icon-icon-arrow .hover-cta.checkout-button svg * {
     fill: none;
     stroke: black; }
-  .icon-icon-arrow.negative .cta svg *, .icon-icon-arrow.negative #productSummary #productDetails .sqs-add-to-cart-button svg *, #productSummary #productDetails .icon-icon-arrow.negative .sqs-add-to-cart-button svg * {
+  .icon-icon-arrow.negative .cta svg *, .icon-icon-arrow.negative #productSummary #productDetails .sqs-add-to-cart-button svg *, #productSummary #productDetails .icon-icon-arrow.negative .sqs-add-to-cart-button svg *, .icon-icon-arrow.negative #sqs-shopping-cart-wrapper .checkout-button svg *, #sqs-shopping-cart-wrapper .icon-icon-arrow.negative .checkout-button svg * {
     fill: none;
     stroke: black; }
-  .icon-icon-arrow.negative .cta.hover-cta svg *, .icon-icon-arrow.negative #productSummary #productDetails .hover-cta.sqs-add-to-cart-button svg *, #productSummary #productDetails .icon-icon-arrow.negative .hover-cta.sqs-add-to-cart-button svg * {
+  .icon-icon-arrow.negative .cta.hover-cta svg *, .icon-icon-arrow.negative #productSummary #productDetails .hover-cta.sqs-add-to-cart-button svg *, #productSummary #productDetails .icon-icon-arrow.negative .hover-cta.sqs-add-to-cart-button svg *, .icon-icon-arrow.negative #sqs-shopping-cart-wrapper .hover-cta.checkout-button svg *, #sqs-shopping-cart-wrapper .icon-icon-arrow.negative .hover-cta.checkout-button svg * {
     fill: none;
     stroke: white; }
-  .no-label .cta .icon, .no-label #productSummary #productDetails .sqs-add-to-cart-button .icon, #productSummary #productDetails .no-label .sqs-add-to-cart-button .icon {
+  .no-label .cta .icon, .no-label #productSummary #productDetails .sqs-add-to-cart-button .icon, #productSummary #productDetails .no-label .sqs-add-to-cart-button .icon, .no-label #sqs-shopping-cart-wrapper .checkout-button .icon, #sqs-shopping-cart-wrapper .no-label .checkout-button .icon {
     margin-right: 0; }
   @media only screen and (max-width: 750px) {
-    .cta, #productSummary #productDetails .sqs-add-to-cart-button {
+    .cta, #productSummary #productDetails .sqs-add-to-cart-button, #sqs-shopping-cart-wrapper .checkout-button {
       white-space: normal;
       font-size: 10px;
       line-height: 100%; }
-      .cta svg, #productSummary #productDetails .sqs-add-to-cart-button svg, .cta img, #productSummary #productDetails .sqs-add-to-cart-button img {
+      .cta svg, #productSummary #productDetails .sqs-add-to-cart-button svg, #sqs-shopping-cart-wrapper .checkout-button svg, .cta img, #productSummary #productDetails .sqs-add-to-cart-button img, #sqs-shopping-cart-wrapper .checkout-button img {
         height: 10px; }
-      .cta .icon, #productSummary #productDetails .sqs-add-to-cart-button .icon {
+      .cta .icon, #productSummary #productDetails .sqs-add-to-cart-button .icon, #sqs-shopping-cart-wrapper .checkout-button .icon {
         margin-right: 24px; }
-      .cta .filler, #productSummary #productDetails .sqs-add-to-cart-button .filler {
+      .cta .filler, #productSummary #productDetails .sqs-add-to-cart-button .filler, #sqs-shopping-cart-wrapper .checkout-button .filler {
         padding: 24px; }
-      .cta.hover-cta, #productSummary #productDetails .hover-cta.sqs-add-to-cart-button {
+      .cta.hover-cta, #productSummary #productDetails .hover-cta.sqs-add-to-cart-button, #sqs-shopping-cart-wrapper .hover-cta.checkout-button {
         display: none; }
-      .icon-browser .cta, .icon-browser #productSummary #productDetails .sqs-add-to-cart-button, #productSummary #productDetails .icon-browser .sqs-add-to-cart-button, .icon-icon-load .cta, .icon-icon-load #productSummary #productDetails .sqs-add-to-cart-button, #productSummary #productDetails .icon-icon-load .sqs-add-to-cart-button, .icon-icon-arrow .cta, .icon-icon-arrow #productSummary #productDetails .sqs-add-to-cart-button, #productSummary #productDetails .icon-icon-arrow .sqs-add-to-cart-button {
+      .icon-browser .cta, .icon-browser #productSummary #productDetails .sqs-add-to-cart-button, #productSummary #productDetails .icon-browser .sqs-add-to-cart-button, .icon-browser #sqs-shopping-cart-wrapper .checkout-button, #sqs-shopping-cart-wrapper .icon-browser .checkout-button, .icon-icon-load .cta, .icon-icon-load #productSummary #productDetails .sqs-add-to-cart-button, #productSummary #productDetails .icon-icon-load .sqs-add-to-cart-button, .icon-icon-load #sqs-shopping-cart-wrapper .checkout-button, #sqs-shopping-cart-wrapper .icon-icon-load .checkout-button, .icon-icon-arrow .cta, .icon-icon-arrow #productSummary #productDetails .sqs-add-to-cart-button, #productSummary #productDetails .icon-icon-arrow .sqs-add-to-cart-button, .icon-icon-arrow #sqs-shopping-cart-wrapper .checkout-button, #sqs-shopping-cart-wrapper .icon-icon-arrow .checkout-button {
         line-height: 13px; }
-        .icon-browser .cta svg, .icon-browser #productSummary #productDetails .sqs-add-to-cart-button svg, #productSummary #productDetails .icon-browser .sqs-add-to-cart-button svg, .icon-icon-load .cta svg, .icon-icon-load #productSummary #productDetails .sqs-add-to-cart-button svg, #productSummary #productDetails .icon-icon-load .sqs-add-to-cart-button svg, .icon-icon-arrow .cta svg, .icon-icon-arrow #productSummary #productDetails .sqs-add-to-cart-button svg, #productSummary #productDetails .icon-icon-arrow .sqs-add-to-cart-button svg {
+        .icon-browser .cta svg, .icon-browser #productSummary #productDetails .sqs-add-to-cart-button svg, #productSummary #productDetails .icon-browser .sqs-add-to-cart-button svg, .icon-browser #sqs-shopping-cart-wrapper .checkout-button svg, #sqs-shopping-cart-wrapper .icon-browser .checkout-button svg, .icon-icon-load .cta svg, .icon-icon-load #productSummary #productDetails .sqs-add-to-cart-button svg, #productSummary #productDetails .icon-icon-load .sqs-add-to-cart-button svg, .icon-icon-load #sqs-shopping-cart-wrapper .checkout-button svg, #sqs-shopping-cart-wrapper .icon-icon-load .checkout-button svg, .icon-icon-arrow .cta svg, .icon-icon-arrow #productSummary #productDetails .sqs-add-to-cart-button svg, #productSummary #productDetails .icon-icon-arrow .sqs-add-to-cart-button svg, .icon-icon-arrow #sqs-shopping-cart-wrapper .checkout-button svg, #sqs-shopping-cart-wrapper .icon-icon-arrow .checkout-button svg {
           height: 13px; } }
 
 .upcoming {
@@ -3277,7 +3277,7 @@ a.episodes-landing-cta {
       width: 100%;
       margin: 0 auto;
       padding: 40px 40px 60px 40px; }
-      .host-landing .text-layer .cta, .host-landing .text-layer #productSummary #productDetails .sqs-add-to-cart-button, #productSummary #productDetails .host-landing .text-layer .sqs-add-to-cart-button {
+      .host-landing .text-layer .cta, .host-landing .text-layer #productSummary #productDetails .sqs-add-to-cart-button, #productSummary #productDetails .host-landing .text-layer .sqs-add-to-cart-button, .host-landing .text-layer #sqs-shopping-cart-wrapper .checkout-button, #sqs-shopping-cart-wrapper .host-landing .text-layer .checkout-button {
         width: 90%;
         white-space: normal; }
       .host-landing .text-layer p {
@@ -3449,7 +3449,7 @@ a.episodes-landing-cta {
         margin: 40px 0 20px 0; }
       .merch-item .sizes {
         padding: 20px; }
-      .merch-item .cta, .merch-item #productSummary #productDetails .sqs-add-to-cart-button, #productSummary #productDetails .merch-item .sqs-add-to-cart-button {
+      .merch-item .cta, .merch-item #productSummary #productDetails .sqs-add-to-cart-button, #productSummary #productDetails .merch-item .sqs-add-to-cart-button, .merch-item #sqs-shopping-cart-wrapper .checkout-button, #sqs-shopping-cart-wrapper .merch-item .checkout-button {
         padding: 24px 64px;
         margin-top: 20px;
         display: inline-block; } }
@@ -4270,6 +4270,10 @@ a.episodes-landing-cta {
 #productSummary #productDetails .variant-option-title {
   display: none; }
 #productSummary #productDetails .sqs-add-to-cart-button {
+  padding: 3vw;
+  margin: 20px auto; }
+
+#sqs-shopping-cart-wrapper .checkout-button {
   padding: 3vw;
   margin: 20px auto; }
 

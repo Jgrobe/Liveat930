@@ -29,7 +29,13 @@
 
 #sqs-shopping-cart-wrapper {
 
-}
+  .checkout-button {
+    @extend .cta;
+    padding: 3vw;
+    margin: 20px auto;
+  }
+
+}// #sqs-shopping-cart-wrapper
 
 .absolute-cart-box {
 
