@@ -806,7 +806,7 @@ input {
           .footer-newsletter form input[type=email].mce_inline_error ::-moz-placeholder {
             /* Firefox 19+ */
             color: #FF574D; }
-          .footer-newsletter form input[type=email].mce_inline_error:-ms-input-placeholder {
+          .footer-newsletter form input[type=email].mce_inline_error :-ms-input-placeholder {
             color: #FF574D; }
         .footer-newsletter form .submit-email {
           position: static;
