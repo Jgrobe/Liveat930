@@ -29,16 +29,22 @@
 
     </section><!-- .clip-container -->
 
-    <squarespace:query collection="episodes" category="current" limit="1">
-        <script>
-        </script>
+    {.if item.customContent.linkedEpisode}
 
-        {.section items.0}
+        <squarespace:query collection="episodes" category="current" limit="1">
 
-            <section class="linked-episode">
-                {@|apply episode-summary.block}
-                <!--php include('modules/episode-summary.php');-->
-            </section>
+            {.section items.0}
+
+                <section class="linked-episode">
+                    {@|apply episode-summary.block}
+                    <!--php include('modules/episode-summary.php');-->
+                </section>
+
+            {.end}
+
+        </squarespace:query>
+
+        {.if item.customContent.linkedEpisodeClipsTags}
 
             <section class="video-gallery video-detail-clips related-episode-clips">
 
@@ -48,7 +54,7 @@
                     <h2>More from this episode</h2>
                 </div>
 
-                <squarespace:query collection="clips" tag="{tags}">
+                <squarespace:query collection="clips" tag="{item.customContent.linkedEpisodeClipsTags}">
 
                     <script>
                     </script>
@@ -82,7 +88,7 @@
 
         {.end}
 
-    </squarespace:query>
+    {.end}
 
 
     {.if item.categories}
