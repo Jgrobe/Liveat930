@@ -19,15 +19,14 @@ SQSP.functions.initPage = function() {
 
     var $filterBtns = jQuery('.video-filter-item');
     $filterBtns.click(function(e) {
-        if(SQSP.instances.videoGrid.isFilterInProgress) return false;// this is done in the instance automatically but needed to avoid toggleClass if still filtering
         e.preventDefault();
         //SQSP.instances.videoGrid.resetPayload();
         var $clicked = jQuery(this);
+        if(SQSP.instances.videoGrid.isFilterInProgress || $clicked.hasClass('current-item')) return false;// this is done in the instance automatically but needed to avoid toggleClass if still filtering
         //console.log('------filterBtn clicked', $clicked.data('filter'));
         $clicked.siblings().removeClass('current-item');
         $clicked.toggleClass('current-item');
         SQSP.instances.videoGrid.filter( ('.'+$clicked.data('filter')) );
-
     });
 
     // set current item class on filter menu if filtered by URIParams
