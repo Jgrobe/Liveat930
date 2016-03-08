@@ -200,6 +200,10 @@
     }// .slider-label
   }// .text-layer
 
+  .gallery-copy {
+    height: 10vw;
+  }
+
   @include breakpoint(mobile) {
     padding-top: $sectionMarginBottomMobile;
 
@@ -235,6 +239,10 @@
         left: 0;
       }// .slider-label
     }// .slider-ui
+
+    .gallery-copy {
+      height: auto;
+    }
 
   }// BP MOBILE
 

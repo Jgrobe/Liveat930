@@ -3808,6 +3808,8 @@ a.episodes-landing-cta {
       -ms-transform: translateX(-50%) translateY(-50%);
       -o-transform: translateX(-50%) translateY(-50%);
       transform: translateX(-50%) translateY(-50%); }
+  .history-slider .gallery-copy {
+    height: 10vw; }
   @media only screen and (max-width: 750px) {
     .history-slider {
       padding-top: 10vH; }
@@ -3841,7 +3843,9 @@ a.episodes-landing-cta {
           text-align: center;
           top: 0;
           width: 100%;
-          left: 0; } }
+          left: 0; }
+      .history-slider .gallery-copy {
+        height: auto; } }
 
 .video-overview-landing {
   width: 100vw;
