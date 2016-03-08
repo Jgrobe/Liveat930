@@ -12,10 +12,16 @@
   #productDetails {
 
     .product-title {
-      @extend .m-headline;
+      @extend .s-headline;
     }
 
     .variant-option-title {display: none;}
+
+    .sqs-add-to-cart-button {
+      @extend .cta;
+      padding: 3vw;
+      margin: 20px auto;
+    }// .sqs-add-to-cart-button
 
   }// #product-details
 

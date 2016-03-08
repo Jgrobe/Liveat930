@@ -97,9 +97,9 @@
 .page {
 
 
-  .squarespace-social-buttons {
+  .squarespace-social-buttons, .squarespace-social-buttons.button-style, .squarespace-social-buttons.inline-style {
 
-    &.button-style {
+    //&.button-style {
 
       .ss-social-button-wrapper {
 
@@ -117,7 +117,7 @@
         }
 
       }// .ss-social-button-wrapper
-    }// &.button-style
+    //}// &.button-style
 
   }// .squarespace-social-buttons
 
