@@ -2693,6 +2693,33 @@ div.mce_inline_error {
   .episode-summary .cta-container {
     margin-left: 5%; }
 
+.vjs-control-bar {
+  position: absolute;
+  width: 80%;
+  left: 10%;
+  bottom: 5%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-direction: row;
+  -moz-box-direction: row;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-direction: row;
+  -ms-direction: row;
+  direction: row;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  -o-justify-content: space-between;
+  justify-content: space-between; }
+
+.vjs-big-play-button {
+  display: none; }
+
 #fieldTracker {
   position: fixed;
   z-index: 8;
