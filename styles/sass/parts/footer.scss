@@ -146,23 +146,9 @@
         padding: 18px;
         @include prefixed(transition, color $shortTrans);
 
-        &.mce_inline_error {
-          $errorColor: #FF574D;
-          &::-webkit-input-placeholder {
+        $errorColor: #FF574D;
+        &.mce_inline_error::-webkit-input-placeholder, &.mce_inline_error:-moz-placeholder, &.mce_inline_error::-moz-placeholder, &.mce_inline_error:-ms-input-placeholder {
             color: $errorColor;
-          }
-
-          &:-moz-placeholder { /* Firefox 18- */
-            color: $errorColor;
-          }
-
-          &::-moz-placeholder {  /* Firefox 19+ */
-            color: $errorColor;
-          }
-
-          &:-ms-input-placeholder {
-            color: $errorColor;
-          }
         }// .mc-inline-error
 //        padding-right: 36px;
 
@@ -271,7 +257,7 @@
 
 div.mce_inline_error { display: none !important; }
 
-.mce-responses {
+#mce-responses {
   .response {
     display: block;
     position: fixed;
