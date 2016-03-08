@@ -28,13 +28,16 @@ var AjaxSearch = function(options) {
             var thisItem = searchItems[i];
             //console.log('filtering result', $thisItem, $thisItem.get(0));
 
+            var exclude = false;
             if(AS.options.exclude) {
                 for(var attr in AS.options.exclude) {
                     if(typeof thisItem[attr] !== 'undefined' && thisItem[attr] == AS.options.exclude[attr]) {
                         console.log('exclude this from search: '+attr+' : '+thisItem[attr]);
-                        continue;
+                        exclude = true;
                     }// endif
                 }// endfor
+
+                if(exclude) continue;
             }// endif
 
             var result = {
