@@ -8,6 +8,8 @@
 
     <link rel="icon" type="image/png" href="favicon.png">
 
+    <link rel="stylesheet" href="https://vjs.zencdn.net/5-unsafe/video-js.css" />
+
     <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/6811694/6939152/css/fonts.css" />
     <!--yxyxyx-->
 
