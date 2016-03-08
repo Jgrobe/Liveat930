@@ -63,7 +63,7 @@ function init_sqsp() {
 }// init_page()
 
 function checkVideoloop() {
-    if(!SQSP.vars.keepCheckingVideos) return false;
+    if(!SQSP.vars.keepCheckingVideos || SQSP.vars.loopvids.length <= 0) return false;
 
     for(var i=0; i<SQSP.vars.loopvids.length; i++) {
         var vid = SQSP.vars.loopvids[i];
