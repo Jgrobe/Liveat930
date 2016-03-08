@@ -863,7 +863,10 @@ input {
         background-image: url("assets/images/twitter.svg");
         background-size: 72%; }
 
-.mce-repsonses .response {
+.mce_inline_error {
+  display: none !important; }
+
+.mce-responses .response {
   display: block;
   position: fixed;
   top: 50%;

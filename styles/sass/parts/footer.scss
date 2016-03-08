@@ -249,7 +249,9 @@
   }// ul
 }// .footer-social
 
-.mce-repsonses {
+.mce_inline_error { display: none !important; }
+
+.mce-responses {
   .response {
     display: block;
     position: fixed;
@@ -267,5 +269,5 @@
     line-height: 19px;
     z-index: 999;
     @include transform(translateY(-50%));
-  }
-}
+  }// .response
+}// .mce-responses
