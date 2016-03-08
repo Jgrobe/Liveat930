@@ -26,3 +26,43 @@
   }// #product-details
 
 }// #product-summary
+
+.absolute-cart-box {
+
+  top: 2vw;// like .burger
+  right: calc(~"4vw + 62px");// .burger margin*2 + .burger width
+  opacity: .2;
+  @include prefixed(transition, $shortTrans);
+
+  &:hover {
+    opacity: 1;
+  }
+
+  .sqs-pill-shopping-cart .sqs-pill-shopping-cart-content {
+
+    height: auto;
+    width: auto;
+    min-width: auto;
+    padding: 0 10px;
+
+    .icon, .details, .subtotal {
+      margin: 0;
+      float: none;
+      position: static;
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 10px;
+    }// icon, details, subtotal
+
+    .icon {
+      background-size: 12px;
+    }
+
+    .subtotal {
+      margin-left:10px;
+    }
+
+  }// .sqs-pill-shopping-cart-content dark
+
+
+}// .absolute-cart-box

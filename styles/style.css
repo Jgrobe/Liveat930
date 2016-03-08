@@ -4273,6 +4273,34 @@ a.episodes-landing-cta {
   padding: 3vw;
   margin: 20px auto; }
 
+.absolute-cart-box {
+  top: 2vw;
+  right: calc(~"4vw + 62px");
+  opacity: .2;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s; }
+  .absolute-cart-box:hover {
+    opacity: 1; }
+  .absolute-cart-box .sqs-pill-shopping-cart .sqs-pill-shopping-cart-content {
+    height: auto;
+    width: auto;
+    min-width: auto;
+    padding: 0 10px; }
+    .absolute-cart-box .sqs-pill-shopping-cart .sqs-pill-shopping-cart-content .icon, .absolute-cart-box .sqs-pill-shopping-cart .sqs-pill-shopping-cart-content .details, .absolute-cart-box .sqs-pill-shopping-cart .sqs-pill-shopping-cart-content .subtotal {
+      margin: 0;
+      float: none;
+      position: static;
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 10px; }
+    .absolute-cart-box .sqs-pill-shopping-cart .sqs-pill-shopping-cart-content .icon {
+      background-size: 12px; }
+    .absolute-cart-box .sqs-pill-shopping-cart .sqs-pill-shopping-cart-content .subtotal {
+      margin-left: 10px; }
+
 ._aligner {
   background: rgba(255, 0, 100, 0.5);
   position: fixed;
