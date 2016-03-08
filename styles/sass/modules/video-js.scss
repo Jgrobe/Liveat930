@@ -2,43 +2,44 @@
   font-size: 10px;
   color: white;
   @include preloader();
-}// .video-js
-//
-.vjs-control-bar {
 
-  position: absolute;
-  width: 80%;
-  left: 10%;
-  bottom: 5%;
-  @include flexbox();
-  @include flex-value(direction, row);
-  @include prefixed(justify-content, space-between);
+  .vjs-control-bar {
 
-
-  .vjs-default-skin .vjs-big-play-button {
-    font-size: 3em;
-
-    left: 50%;
-    top: 50%;
-    @include transform(translateX(-50%) translateY(-50%));
-  }
+    position: absolute;
+    width: 80%;
+    left: 10%;
+    bottom: 5%;
+    @include flexbox();
+    @include flex-value(direction, row);
+    @include prefixed(justify-content, space-between);
 
 
-  /* Slider - used for Volume bar and Progress bar */
-  .vjs-slider {
-    background-color: rgba(255, 255, 255, .2);
+    .vjs-default-skin .vjs-big-play-button {
+      font-size: 3em;
 
-    .vjs-volume-level, .vjs-play-progress, .vjs-slider-bar {
-      background: rgba(255, 255, 255, .8);
+      left: 50%;
+      top: 50%;
+      @include transform(translateX(-50%) translateY(-50%));
     }
 
-    .vjs-load-progress {
-      background: rgba(255, 255, 255, .8);
 
-      div {
+    /* Slider - used for Volume bar and Progress bar */
+    .vjs-slider {
+      background-color: rgba(255, 255, 255, .2);
+
+      .vjs-volume-level, .vjs-play-progress, .vjs-slider-bar {
         background: rgba(255, 255, 255, .8);
       }
-    }
-  }
 
-}// .vjs-control-bar
+      .vjs-load-progress {
+        background: rgba(255, 255, 255, .8);
+
+        div {
+          background: rgba(255, 255, 255, .8);
+        }
+      }
+    }
+
+  }// .vjs-control-bar
+
+}// .video-js

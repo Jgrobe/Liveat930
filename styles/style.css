@@ -2697,48 +2697,47 @@ div.mce_inline_error {
   font-size: 10px;
   color: white;
   background: rgba(0, 0, 0, 0.9) url("assets/images/spinner.gif") no-repeat center; }
-
-.vjs-control-bar {
-  position: absolute;
-  width: 80%;
-  left: 10%;
-  bottom: 5%;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-direction: row;
-  -moz-box-direction: row;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-direction: row;
-  -ms-direction: row;
-  direction: row;
-  -webkit-justify-content: space-between;
-  -moz-justify-content: space-between;
-  -ms-justify-content: space-between;
-  -o-justify-content: space-between;
-  justify-content: space-between;
-  /* Slider - used for Volume bar and Progress bar */ }
-  .vjs-control-bar .vjs-default-skin .vjs-big-play-button {
-    font-size: 3em;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -ms-transform: translateX(-50%) translateY(-50%);
-    -o-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%); }
-  .vjs-control-bar .vjs-slider {
-    background-color: rgba(255, 255, 255, 0.2); }
-    .vjs-control-bar .vjs-slider .vjs-volume-level, .vjs-control-bar .vjs-slider .vjs-play-progress, .vjs-control-bar .vjs-slider .vjs-slider-bar {
-      background: rgba(255, 255, 255, 0.8); }
-    .vjs-control-bar .vjs-slider .vjs-load-progress {
-      background: rgba(255, 255, 255, 0.8); }
-      .vjs-control-bar .vjs-slider .vjs-load-progress div {
+  .video-js .vjs-control-bar {
+    position: absolute;
+    width: 80%;
+    left: 10%;
+    bottom: 5%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-direction: row;
+    -moz-box-direction: row;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-direction: row;
+    -ms-direction: row;
+    direction: row;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    -o-justify-content: space-between;
+    justify-content: space-between;
+    /* Slider - used for Volume bar and Progress bar */ }
+    .video-js .vjs-control-bar .vjs-default-skin .vjs-big-play-button {
+      font-size: 3em;
+      left: 50%;
+      top: 50%;
+      -webkit-transform: translateX(-50%) translateY(-50%);
+      -moz-transform: translateX(-50%) translateY(-50%);
+      -ms-transform: translateX(-50%) translateY(-50%);
+      -o-transform: translateX(-50%) translateY(-50%);
+      transform: translateX(-50%) translateY(-50%); }
+    .video-js .vjs-control-bar .vjs-slider {
+      background-color: rgba(255, 255, 255, 0.2); }
+      .video-js .vjs-control-bar .vjs-slider .vjs-volume-level, .video-js .vjs-control-bar .vjs-slider .vjs-play-progress, .video-js .vjs-control-bar .vjs-slider .vjs-slider-bar {
         background: rgba(255, 255, 255, 0.8); }
+      .video-js .vjs-control-bar .vjs-slider .vjs-load-progress {
+        background: rgba(255, 255, 255, 0.8); }
+        .video-js .vjs-control-bar .vjs-slider .vjs-load-progress div {
+          background: rgba(255, 255, 255, 0.8); }
 
 #fieldTracker {
   position: fixed;
