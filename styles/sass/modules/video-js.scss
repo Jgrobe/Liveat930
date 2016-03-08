@@ -1,4 +1,6 @@
 .video-js {
+  font-size: 10px;
+  color: $primary-foreground-color;
   @include preloader();
 }// .video-js
 //
@@ -22,11 +24,6 @@
 
 $primary-foreground-color: #fff; // #fff default
 $primary-background-color: transparent;  // #2B333F default
-
-.video-js {
-  font-size: 10px;
-  color: $primary-foreground-color;
-}
 
 .vjs-default-skin .vjs-big-play-button {
   font-size: 3em;
