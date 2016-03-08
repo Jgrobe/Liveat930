@@ -86,7 +86,7 @@ SQSP.functions.initPage = function() {
 
         $thisPoster.find('video').get(0).addEventListener('loadeddata', function(e) {
             console.log('recalculate scrolltracker', e);
-            scrollTracker.recalculateLocation();
+            scrollTracker.recalculateLocation;
         });
         //console.log('scrollTracker', scrollTracker);
 
