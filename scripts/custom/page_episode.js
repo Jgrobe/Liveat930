@@ -65,6 +65,8 @@ function openPlayer($overlay) {
     if(SQSP.vars.isPlayerTransitionActive) return false;
     SQSP.vars.isPlayerTransitionActive = true;
 
+    lock(jQuery('body'), '100vh');
+
     var tl = new TimelineMax({onComplete:function(){SQSP.vars.isPlayerTransitionActive=false;}});
     tl.set($overlay, {display:'block'});
     tl.add(function() {
@@ -77,6 +79,10 @@ function closePlayer($overlay) {
     if(SQSP.vars.isPlayerTransitionActive) return false;
     SQSP.vars.isPlayerTransitionActive = true;
 
-    var tl = new TimelineMax({onComplete:function(){SQSP.vars.isPlayerTransitionActive=false;}});
+    unlock(jQuery('body'));
+
+    var tl = new TimelineMax({onComplete:function(){
+        SQSP.vars.isPlayerTransitionActive=false;
+    }});
     tl.to($overlay,.8, {autoAlpha:0, clearProps:'all'});
 }// closePlayer()

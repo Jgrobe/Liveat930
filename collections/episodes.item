@@ -163,7 +163,7 @@
 
 
     <div id="episode-player" class="video-overlay">
-        <video src="{item.customContent.episode-hero-video}" data-setup="{}" controls class="video-js fill-parent"></video>
+        <video src="{item.customContent.full-episode}" data-setup="{}" controls class="video-js fill-parent"></video>
 
         <div class="close-overlay">
             <p>Close</p>
