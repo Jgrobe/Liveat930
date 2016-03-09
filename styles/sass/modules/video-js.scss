@@ -26,6 +26,10 @@
   //  }
   //}
 
+  .vjs-poster {
+    background-size: cover;
+  }
+
   .vjs-loading-spinner {
     @include preloader();
     background-size: 70%;

@@ -2718,6 +2718,8 @@ div.mce_inline_error {
   .video-js:hover.vjs-has-started .vjs-control-bar {
     visibility: visible;
     opacity: 1; }
+  .video-js .vjs-poster {
+    background-size: cover; }
   .video-js .vjs-loading-spinner {
     background: rgba(0, 0, 0, 0.9) url("assets/images/spinner.gif") no-repeat center;
     background-size: 70%;
