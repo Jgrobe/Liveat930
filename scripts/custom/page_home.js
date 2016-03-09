@@ -160,7 +160,7 @@ jQuery(window).load(function() {
 }).scroll(function() {
 
     //var heightByScroll = (SQSP.$objects.window.scrollTop() - SQSP.$objects.window.height() *.95) - Math.round(SQSP.$objects.hostedInfo.offset().top / SQSP.$objects.window.scrollTop());
-    var heightByScroll = Math.round(SQSP.$objects.hostedInfo.offset().top - (SQSP.$objects.window.scrollTop() + SQSP.$objects.window.height() *.95) );
+    var heightByScroll = SQSP.$objects.window.scrollTop() - Math.round(SQSP.$objects.hostedInfo.offset().top - (SQSP.$objects.window.scrollTop() + SQSP.$objects.window.height() *.95) );
     console.log('----- legal heightByScroll', heightByScroll);
     var calcHeight = (heightByScroll / SQSP.$objects.window.width() *100) + 'vw';
 
