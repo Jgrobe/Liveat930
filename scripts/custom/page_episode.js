@@ -56,7 +56,7 @@ SQSP.functions.initPage = function() {
 
     $overlayCloser.click(function(e) {
         e.preventDefault();
-        closePlayer();
+        closePlayer($episodePlayer);
     });// click()
 
 };
@@ -73,7 +73,7 @@ function openPlayer($overlay) {
     tl.to($overlay,.8, {autoAlpha:1});
 }// openPlayer()
 
-function closePlayer() {
+function closePlayer($overlay) {
     if(SQSP.vars.isPlayerTransitionActive) return false;
     SQSP.vars.isPlayerTransitionActive = true;
 
