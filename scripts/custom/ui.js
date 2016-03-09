@@ -42,14 +42,14 @@ function init_sqsp() {
     console.log('mofo clipitems',$clipItems);
     $clipItems.on('mouseenter', function(e) {
         console.log('.video mouseenter', e);
-        jQuery(e.target).find('.cta-container').mouseenter();
+        jQuery(e.currentTarget).find('.cta-container').mouseenter();
     });
     $clipItems.on('mouseleave', function(e) {
         console.log('.video mouseleave', e);
-        jQuery(e.target).find('.cta-container').mouseleave();
+        jQuery(e.currentTarget).find('.cta-container').mouseleave();
     });
     $clipItems.on('click', function(e) {
-        jQuery(e.target).find('.cta-container').click();
+        jQuery(e.currentTarget).find('.cta-container').click();
     });
 
     //manual video loop
