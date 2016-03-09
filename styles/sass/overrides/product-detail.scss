@@ -2,7 +2,7 @@
 
   width: $contentWidth;
   max-width: 800px;
-  padding-top: calc(~"$sectionMarginBottom * 1.5");
+  padding-top: calc(~"#{$sectionMarginBottom} * 1.5");
   margin: 0 auto $sectionMarginBottom auto;
 
   #productNav {

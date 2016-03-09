@@ -4407,7 +4407,7 @@ a.episodes-landing-cta {
 #productWrapper, #sqs-shopping-cart-wrapper {
   width: 75vw;
   max-width: 800px;
-  padding-top: calc(~"$sectionMarginBottom * 1.5");
+  padding-top: calc(~"10.41667vw * 1.5");
   margin: 0 auto 10.41667vw auto; }
   #productWrapper #productNav, #sqs-shopping-cart-wrapper #productNav {
     text-transform: none;
