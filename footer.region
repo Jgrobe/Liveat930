@@ -24,7 +24,7 @@
                 <p>Sign up for regular show updates and exclusives</p>
                 <div id="mc_embed_signup">
                     <form action="//liveat930.us12.list-manage.com/subscribe/post?u=42f67b735f5fd1f44bc1f3de2&amp;id=37502c4d9d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                        <div class="mc-field-group">
+                        <div class="input-wrapper mc-field-group">
                             <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Your email address" />
                         </div><!-- .mc-field-group -->
                         <div id="mce-responses" class="clear">

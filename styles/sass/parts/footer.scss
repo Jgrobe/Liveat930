@@ -91,6 +91,10 @@
 //      vertical-align: bottom;
 //    }
 
+    .input-wrapper {
+      overflow: hidden;
+    }
+
     input[type=email] {
       width: 15vw;
       background: white;

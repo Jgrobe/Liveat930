@@ -753,6 +753,8 @@ input {
   .footer-newsletter form {
     position: relative;
     font-size: 0; }
+    .footer-newsletter form .input-wrapper {
+      overflow: hidden; }
     .footer-newsletter form input[type=email] {
       width: 15vw;
       background: white; }
