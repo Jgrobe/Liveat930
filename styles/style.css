@@ -1602,15 +1602,13 @@ div.mce_inline_error {
     text-transform: uppercase;
     overflow: hidden;
     max-height: 15vw;
-    visibility: hidden;
     opacity: 0;
-    -webkit-transition: 0.6s;
-    -moz-transition: 0.6s;
-    -ms-transition: 0.6s;
-    -o-transition: 0.6s;
-    transition: 0.6s; }
+    -webkit-transition: opacity 0.6s;
+    -moz-transition: opacity 0.6s;
+    -ms-transition: opacity 0.6s;
+    -o-transition: opacity 0.6s;
+    transition: opacity 0.6s; }
     .poster .hosted-info.on {
-      visibility: visible;
       opacity: 1; }
   .poster .btn-play-episode {
     font-family: "United Sans", script;

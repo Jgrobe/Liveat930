@@ -332,10 +332,10 @@ $posterWidth: 84vw;
     text-transform: uppercase;
     overflow: hidden;
     max-height: 15vw;
-    @include autoAlpha(0);
-    @include prefixed(transition, $medTrans);
+    opacity:0;
+    @include prefixed(transition, (opacity $medTrans));
 
-    &.on {@include autoAlpha(1);}
+    &.on {opacity:1;}
   }
 
   .btn-play-episode {
