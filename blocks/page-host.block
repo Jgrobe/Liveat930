@@ -15,7 +15,7 @@
         <h1 class="l-headline">{item.title}</h1>
         <div class="text-layer">
             {item.body}
-            <div class="cta-dummy" data-label="Build your own website with squarespace" data-icon="browser" data-class="upsized-icon" data-attributes="href=http://www.squarespace.com">{@|apply svg-icon-browser.block}</div>
+            <div class="cta-dummy" data-label="{item.customContent.hero-cta-label}" data-icon="browser" data-class="upsized-icon" data-attributes="href=http://www.squarespace.com">{@|apply svg-icon-browser.block}</div>
             <!--php print_cta(array(
                     'label' => 'Build your own website with squarespace',
             'icon' => 'images/browser',

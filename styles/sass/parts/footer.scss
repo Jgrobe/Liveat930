@@ -36,25 +36,25 @@
     letter-spacing: .06em;
   }
 
-  .cta-container {
-    .cta {
-      &.hover-cta {
-//        color: white;
-        background: #f0f0f0;
-//        @include svg-content() {stroke: white}
-      }
-    }
-
-    &.negative {
-      .cta {
-        &.hover-cta {
-//          color: black;
-          background: #191919;
-//          @include svg-content() {fill: black;}
-        }// .hover-cta
-      }// .cta
-    }// .negative
-  }// .cta-container
+//  .cta-container {
+//    .cta {
+//      &.hover-cta {
+////        color: white;
+//        background: #f0f0f0;
+////        @include svg-content() {stroke: white}
+//      }
+//    }
+//
+//    &.negative {
+//      .cta {
+//        &.hover-cta {
+////          color: black;
+//          background: #191919;
+////          @include svg-content() {fill: black;}
+//        }// .hover-cta
+//      }// .cta
+//    }// .negative
+//  }// .cta-container
 
   @include breakpoint(mobile) {
 
@@ -78,7 +78,7 @@
   .demand {
     font-size: get_relative_units(144);
     letter-spacing: .08em;
-    margin: 0 3vw 0 0;
+    margin: 0 2vw 0 0;
   }
 
   form {

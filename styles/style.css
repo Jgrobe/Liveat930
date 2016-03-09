@@ -722,10 +722,6 @@ input {
     font-size: 1.18056vw;
     line-height: 1.66667vw;
     letter-spacing: .06em; }
-  .footer .cta-container .cta.hover-cta, .footer .cta-container #productSummary #productDetails .hover-cta.sqs-add-to-cart-button, #productSummary #productDetails .footer .cta-container .hover-cta.sqs-add-to-cart-button, .footer .cta-container #sqs-shopping-cart-wrapper .hover-cta.checkout-button, #sqs-shopping-cart-wrapper .footer .cta-container .hover-cta.checkout-button {
-    background: #f0f0f0; }
-  .footer .cta-container.negative .cta.hover-cta, .footer .cta-container.negative #productSummary #productDetails .hover-cta.sqs-add-to-cart-button, #productSummary #productDetails .footer .cta-container.negative .hover-cta.sqs-add-to-cart-button, .footer .cta-container.negative #sqs-shopping-cart-wrapper .hover-cta.checkout-button, #sqs-shopping-cart-wrapper .footer .cta-container.negative .hover-cta.checkout-button {
-    background: #191919; }
   @media only screen and (max-width: 750px) {
     .footer p {
       font-size: 13px;
@@ -753,7 +749,7 @@ input {
   .footer-newsletter .demand {
     font-size: 5vw;
     letter-spacing: .08em;
-    margin: 0 3vw 0 0; }
+    margin: 0 2vw 0 0; }
   .footer-newsletter form {
     position: relative;
     font-size: 0; }
