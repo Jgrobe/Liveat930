@@ -80,6 +80,7 @@ function closePlayer($overlay) {
     SQSP.vars.isPlayerTransitionActive = true;
 
     unlock(jQuery('body'));
+    $overlay.find('video').pause();
 
     var tl = new TimelineMax({onComplete:function(){
         SQSP.vars.isPlayerTransitionActive=false;
