@@ -158,19 +158,22 @@ jQuery(window).load(function() {
         //console.log('------------------------------- VIDEO STOPPED');
     //}, 400);
 }).scroll(function() {
+    var windowScrolltop = SQSP.$objects.window.scrollTop(),
+        objectScrolltop = SQSP.$objects.hostedInfo.offset().top;
 
-    //var heightByScroll = (SQSP.$objects.window.scrollTop() - SQSP.$objects.window.height() *.95) - Math.round(SQSP.$objects.hostedInfo.offset().top / SQSP.$objects.window.scrollTop());
-    var heightByScroll = (SQSP.$objects.window.scrollTop() - SQSP.$objects.hostedInfo.offset().top + SQSP.$objects.window.height() *.95) / SQSP.$objects.window.height() * 300;
-    console.log('-- calculation; window scrolltop',SQSP.$objects.window.scrollTop() , 'info offset top',SQSP.$objects.hostedInfo.offset().top , 'window height', SQSP.$objects.window.height());
-    console.log('----- legal heightByScroll', heightByScroll);
+    //var heightByScroll = (windowScrolltop - SQSP.$objects.window.height() *.95) - Math.round(objectScrolltop / windowScrolltop);
+    var heightByScroll = (windowScrolltop - objectScrolltop + SQSP.$objects.window.height() *.95) / SQSP.$objects.window.height() * 300;
+    //console.log('-- calculation; window scrolltop',windowScrolltop , 'info offset top',objectScrolltop , 'window height', SQSP.$objects.window.height());
+    //console.log('----- legal heightByScroll', heightByScroll);
     var vwHeight = heightByScroll / SQSP.$objects.window.width() *100;
     if(vwHeight > 10) {
         SQSP.$objects.hostedInfo.addClass('on');
     } else {
         SQSP.$objects.hostedInfo.removeClass('on');
     }
+    if(windowScrolltop > objectScrolltop) SQSP.$objects.hostedInfo.removeClass('on');
 
-    console.log('----- legal calcheihgt', vwHeight);
+    //console.log('----- legal calcheihgt', vwHeight);
     SQSP.$objects.hostedInfo.height(vwHeight + 'vw');
 });
 
