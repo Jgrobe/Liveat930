@@ -92,6 +92,20 @@ $rightColMargin: 10vw;
 
     a {
       white-space: nowrap;
+
+      &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background: black;
+        z-index: -1;
+
+        @include prefixed(transition, width $shortTrans);
+      }// before
     }
 
     .description {
@@ -108,6 +122,15 @@ $rightColMargin: 10vw;
       vertical-align: top;
       margin-top: 2.5%;
     }// .description
+
+    &:hover {
+
+      a {
+        &:before {
+          width: calc(~"100% + 1vw");
+        }
+      }
+    }
   }// .menu-item
 
   .search {

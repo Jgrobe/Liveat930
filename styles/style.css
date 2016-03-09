@@ -2331,6 +2331,21 @@ div.mce_inline_error {
     margin-bottom: 4.51389vw; }
     .nav-overlay .menu-item a {
       white-space: nowrap; }
+      .nav-overlay .menu-item a:before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background: black;
+        z-index: -1;
+        -webkit-transition: width 0.3s;
+        -moz-transition: width 0.3s;
+        -ms-transition: width 0.3s;
+        -o-transition: width 0.3s;
+        transition: width 0.3s; }
     .nav-overlay .menu-item .description {
       white-space: normal;
       font-family: "Gotham A", "Gotham B";
@@ -2342,6 +2357,8 @@ div.mce_inline_error {
       width: 20vw;
       vertical-align: top;
       margin-top: 2.5%; }
+    .nav-overlay .menu-item:hover a:before {
+      width: calc(~"100% + 1vw"); }
   .nav-overlay .search .search-icon svg {
     -webkit-transform: scaleX(-1);
     -moz-transform: scaleX(-1);
