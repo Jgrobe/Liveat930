@@ -162,7 +162,7 @@ jQuery(window).load(function() {
     var calcHeight = SQSP.$objects.hostedInfo.offset().top / SQSP.$objects.window.scrollTop();
 
     console.log('----- legal calcheihgt', calcHeight);
-    SQSPQ.$objects.hostedInfo.height(calcHeight);
+    SQSP.$objects.hostedInfo.height(calcHeight);
 });
 
 function onPosterEnterViewPort($poster) {
