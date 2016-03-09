@@ -89,9 +89,11 @@ $rightColMargin: 10vw;
     @extend .s-headline;
     letter-spacing: .1em;
     @include relative_units(margin-bottom, 130);
+    z-index: 1;
 
     a {
       white-space: nowrap;
+      position: relative;
 
       &:before {
         content: '';

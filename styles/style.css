@@ -2328,9 +2328,11 @@ div.mce_inline_error {
     line-height: 100%;
     padding-left: 3vw;
     letter-spacing: .1em;
-    margin-bottom: 4.51389vw; }
+    margin-bottom: 4.51389vw;
+    z-index: 1; }
     .nav-overlay .menu-item a {
-      white-space: nowrap; }
+      white-space: nowrap;
+      position: relative; }
       .nav-overlay .menu-item a:before {
         content: '';
         display: block;
