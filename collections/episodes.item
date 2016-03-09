@@ -160,14 +160,17 @@
 
         </section><!-- .video-gallery -->
     </div><!-- .site-content -->
+
+
+    <div id="episode-player" class="video-overlay">
+        <video src="{item.customContent.episode-hero-video}" data-setup="{}" controls class="video-js fill-parent"></video>
+
+        <div class="close-overlay">
+            <p>Close</p>
+            {@|apply svg-icon-x.block}
+        </div><!-- .close-overlay -->
+    </div><!-- #episode-player -->
+
     {.end}<!-- .end.equal -->
 {.end}
-<div id="episode-player" class="video-overlay">
-    <video src="{customContent.episode-hero-video}" data-setup="{}" controls class="video-js fill-parent"></video>
-
-    <div class="close-overlay">
-        <p>Close</p>
-        {@|apply svg-icon-x.block}
-    </div><!-- .close-overlay -->
-</div>
 <squarespace:script src="custom/page_episode.js" />

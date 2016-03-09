@@ -1,7 +1,7 @@
 .video-js {
   font-size: 10px;
   color: white;
-  @include preloader();
+  //@include preloader();
 
   &:hover {
 
@@ -25,6 +25,16 @@
   //    &:before {content:none;}
   //  }
   //}
+
+  .vjs-loading-spinner {
+    @include preloader();
+    background-size: 70%;
+    opacity: 1;
+    border: none;
+    border-radius: 0;
+
+    &:before, &:after {content:none;}
+  }
 
   .vjs-control-bar {
     background: none;

@@ -13,10 +13,12 @@
 
   .close-overlay {
 
+    cursor: pointer;
     position: absolute;
     top: 2vw;
     right: 2vw;
     color: white;
+    @include prefixed(transition, $shortTrans);
 
     $fontsize : 9px;
     $svgSize: $fontsize+4;
@@ -36,6 +38,10 @@
     }
 
     @include svg-content(){fill: white;}
+
+    &:hover {
+      opacity: .75;
+    }
 
   }// .close-overlay
 
