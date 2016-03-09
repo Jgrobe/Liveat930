@@ -1603,11 +1603,11 @@ div.mce_inline_error {
     overflow: hidden;
     max-height: 15vw;
     opacity: 0;
-    -webkit-transition: opacity 0.6s;
-    -moz-transition: opacity 0.6s;
-    -ms-transition: opacity 0.6s;
-    -o-transition: opacity 0.6s;
-    transition: opacity 0.6s; }
+    -webkit-transition: opacity 0.3s;
+    -moz-transition: opacity 0.3s;
+    -ms-transition: opacity 0.3s;
+    -o-transition: opacity 0.3s;
+    transition: opacity 0.3s; }
     .poster .hosted-info.on {
       opacity: 1; }
   .poster .btn-play-episode {

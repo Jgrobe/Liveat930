@@ -40,9 +40,9 @@
 
                 </div><!-- .half -->
 
-                <div class="half padded lineup-container prllx-custom prllx-no-disable" data-prllx=".12">
-                    <h6 class="s-headline ep-subheadline">Additional performances by:</h6>
-                    <h4 class="m-headline ep-lineup" data-artists="{customContent.featured-artists}">
+                <div class="half padded lineup-container">
+                    <!--<h6 class="s-headline ep-subheadline">Additional performances by:</h6>-->
+                    <h4 class="m-headline ep-lineup prllx-custom prllx-no-disable" data-prllx=".12" data-artists="{customContent.featured-artists}">
                         <!-- js populated -->
                     </h4>
                 </div><!-- .half -->

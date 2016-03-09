@@ -333,7 +333,7 @@ $posterWidth: 84vw;
     overflow: hidden;
     max-height: 15vw;
     opacity:0;
-    @include prefixed(transition, (opacity $medTrans));
+    @include prefixed(transition, (opacity $shortTrans));
 
     &.on {opacity:1;}
   }
