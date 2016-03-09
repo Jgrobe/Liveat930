@@ -10,7 +10,7 @@
         <div class="episodes-landing-head">
             <h1>Episode No.{customContent.episode-number}</h1>
             <div class="small">Latest Show</div>
-            <div class="cta-dummy" data-label="Watch now" data-icon="eye" data-attributes="id=cta-play-episode,data-url={customContent.episode-hero-video}">{@|apply svg-icon-eye.block}</div>
+            <div class="cta-dummy" data-label="Watch now" data-icon="eye" data-attributes="id=cta-play-episode,href=#">{@|apply svg-icon-eye.block}</div>
             <!--<a href="#" class="cta-play-episode">Watch now</a>-->
         </div>
         <div class="text-layer">
@@ -159,7 +159,15 @@
             </squarespace:query>
 
         </section><!-- .video-gallery -->
-    </div>
+    </div><!-- .site-content -->
     {.end}<!-- .end.equal -->
 {.end}
+<div id="episode-player" class="video-overlay">
+    <video src="{customContent.episode-hero-video}" data-setup="{}" controls class="video-js fill-parent"></video>
+
+    <div class="close-overlay">
+        <p>Close</p>
+        {@|apply svg-icon-x.block}
+    </div><!-- .close-overlay -->
+</div>
 <squarespace:script src="custom/page_episode.js" />

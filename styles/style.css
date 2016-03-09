@@ -2774,6 +2774,36 @@ div.mce_inline_error {
       .video-js .vjs-slider .vjs-load-progress div {
         background: rgba(255, 255, 255, 0.8); }
 
+.video-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  background: rgba(0, 0, 0, 0.8);
+  visibility: hidden;
+  opacity: 0; }
+  .video-overlay .close-overlay {
+    position: absolute;
+    top: 2vw;
+    right: 2vw;
+    color: white;
+    font-size: 9px;
+    line-height: 13px;
+    text-transform: uppercase;
+    letter-spacing: .18em; }
+    .video-overlay .close-overlay svg, .video-overlay .close-overlay p {
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 5px; }
+    .video-overlay .close-overlay svg {
+      width: 13px;
+      height: 13px; }
+    .video-overlay .close-overlay svg * {
+      fill: white; }
+
 #fieldTracker {
   position: fixed;
   z-index: 8;

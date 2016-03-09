@@ -21,33 +21,62 @@ SQSP.functions.initPage = function() {
         //distributeSizes : [1,1,0,0,0]
     });
 
-    jQuery(document).on('click', '#cta-play-episode', function(e) {
+    var $episodePlayer = jQuery('#episode-player');
+    var $overlayCloser = $episodePlayer.find('.close-overlay');
+    SQSP.vars.isPlayerTransitionActive = false;
 
-        var $clicked = jQuery(this);
-        var vidURL = $clicked.data('url');
+    jQuery('#cta-play-episode').click(function(e) {
 
-        var $overlay = jQuery('<div class="video-overlay"/>');
-        TweenMax.set($overlay, {
-            position: 'fixed',
-            top:0,
-            left:0,
-            width: '100%',
-            height: '100%',
-            'z-index' : '999',
-            background: 'rgba(0,0,0,.8)',
-            autoAlpha: 0
-        });
-        var $overlayvideo = jQuery('<video src="'+ vidURL +'" autoplay/>');
-        $overlayvideo.get(0).addEventListener('loadeddata', function() {
-            $overlay.append();
-            size_video();
-        });
-        jQuery('body').append($overlay);
-        TweenMax.to($overlay,.4, {autoAlpha:1});
+        e.preventDefault();
 
-        $overlay.click(function() {
-            TweenMax.to($overlay,.3, {autoAlpha:0, onComplete:function(){$overlay.remove();}})
-        });
+        openPlayer($episodePlayer);
+
+        //var $clicked = jQuery(this);
+        //var vidURL = $clicked.data('url');
+        //
+        //var episode =;
+        //
+        //var $overlay = jQuery('');
+        //TweenMax.set($overlay, {
+        //
+        //});
+        //var $overlayvideo = jQuery('<video src="'+ vidURL +'" autoplay/>');
+        //$overlayvideo.get(0).addEventListener('loadeddata', function() {
+        //    $overlay.append();
+        //    size_video();
+        //});
+        //jQuery('body').append($overlay);
+        //TweenMax.to($overlay,.4, {autoAlpha:1});
+        //
+        //$overlay.click(function() {
+        //    TweenMax.to($overlay,.3, {autoAlpha:0, onComplete:function(){$overlay.remove();}})
+        //});
+
+    });// click()
+
+    $overlayCloser.click(function(e) {
+        e.preventDefault();
+        closePlayer();
     });// click()
 
 };
+
+function openPlayer($overlay) {
+    if(SQSP.vars.isPlayerTransitionActive) return false;
+    SQSP.vars.isPlayerTransitionActive = true;
+
+    var tl = new TimelineMax({onComplete:function(){SQSP.vars.isPlayerTransitionActive=false;}});
+    tl.set($overlay, {display:'block'});
+    tl.add(function() {
+        size_video();
+    });
+    tl.to($overlay,.8, {autoAlpha:1});
+}// openPlayer()
+
+function closePlayer() {
+    if(SQSP.vars.isPlayerTransitionActive) return false;
+    SQSP.vars.isPlayerTransitionActive = true;
+
+    var tl = new TimelineMax({onComplete:function(){SQSP.vars.isPlayerTransitionActive=false;}});
+    tl.to($overlay,.8, {autoAlpha:0, clearProps:'all'});
+}// closePlayer()

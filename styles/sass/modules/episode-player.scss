@@ -1,0 +1,42 @@
+.video-overlay {
+
+  display: none;
+
+  position: fixed;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  z-index : 999;
+  background: rgba(0,0,0,.8);
+  @include autoAlpha(0);
+
+  .close-overlay {
+
+    position: absolute;
+    top: 2vw;
+    right: 2vw;
+    color: white;
+
+    $fontsize : 9px;
+    $svgSize: $fontsize+4;
+    font-size: $fontsize;
+    line-height: $svgSize;
+    text-transform: uppercase;
+    letter-spacing: .18em;
+
+    svg, p {
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 5px;
+    }
+    svg {
+      width: $svgSize;
+      height: $svgSize;
+    }
+
+    @include svg-content(){fill: white;}
+
+  }// .close-overlay
+
+}// .video-overlay
