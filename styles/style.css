@@ -710,7 +710,7 @@ input {
 
 .footer {
   position: relative;
-  padding: 20vh 0 15vh;
+  padding: 15vh 0;
   color: #fff;
   text-align: center;
   z-index: 1;
@@ -761,7 +761,12 @@ input {
       height: 100%;
       width: auto;
       left: 100%;
-      top: 0; }
+      top: 0;
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      -ms-box-shadow: none;
+      -o-box-shadow: none;
+      box-shadow: none; }
       .footer-newsletter form .submit-email .cta .icon, .footer-newsletter form .submit-email #productSummary #productDetails .sqs-add-to-cart-button .icon, #productSummary #productDetails .footer-newsletter form .submit-email .sqs-add-to-cart-button .icon, .footer-newsletter form .submit-email #sqs-shopping-cart-wrapper .checkout-button .icon, #sqs-shopping-cart-wrapper .footer-newsletter form .submit-email .checkout-button .icon {
         margin-right: 0; }
       .footer-newsletter form .submit-email .cta .label, .footer-newsletter form .submit-email #productSummary #productDetails .sqs-add-to-cart-button .label, #productSummary #productDetails .footer-newsletter form .submit-email .sqs-add-to-cart-button .label, .footer-newsletter form .submit-email #sqs-shopping-cart-wrapper .checkout-button .label, #sqs-shopping-cart-wrapper .footer-newsletter form .submit-email .checkout-button .label {
@@ -828,9 +833,9 @@ input {
       height: 5vw; } }
 
 .footer-hosted-by {
-  padding: 20vh 0; }
+  padding: 15vh 0 10vh 0; }
   .footer-hosted-by .hosted-by-p {
-    margin: 6vh auto 8vh; }
+    margin: 3vh auto 4vh; }
   @media only screen and (max-width: 750px) {
     .footer-hosted-by {
       padding: 0; }

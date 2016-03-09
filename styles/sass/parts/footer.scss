@@ -2,7 +2,7 @@
 
 .footer {
   position: relative;
-  padding: 20vh 0 15vh;
+  padding: 15vh 0;
   color: #fff;
   text-align: center;
   z-index: 1;
@@ -102,6 +102,7 @@
       width: auto;
       left: 100%;
       top: 0;
+      @include shadow(none);
 
       .cta {
         .icon {margin-right: 0;}
@@ -208,11 +209,11 @@
 }// .hosted-by-logo
 
 .footer-hosted-by {
-  padding: 20vh 0;
+  padding: 15vh 0 10vh 0;
 
   .hosted-by-p {
 //    width: 45vw;
-    margin: 6vh auto 8vh;
+    margin: 3vh auto 4vh;
 //    letter-spacing: 0.1vw;
 //    font-weight: 100;
 //    line-height: 1.7em;
