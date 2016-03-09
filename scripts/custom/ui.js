@@ -48,8 +48,8 @@ function init_sqsp() {
         console.log('.video mouseleave', e);
         jQuery(e.target).find('.cta-container').mouseleave();
     });
-    $clipItems.on('click', function(e) {
-        jQuery(e.target).find('.cta-container').click();
+    $clipItems.click(function(e) {
+        window.location = jQuery(this).find('.cta-container').attr('href');
     });
 
     //manual video loop
