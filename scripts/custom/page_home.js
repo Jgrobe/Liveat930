@@ -162,16 +162,16 @@ jQuery(window).load(function() {
         objectScrolltop = SQSP.$objects.hostedInfo.offset().top;
 
     //var heightByScroll = (windowScrolltop - SQSP.$objects.window.height() *.95) - Math.round(objectScrolltop / windowScrolltop);
-    var heightByScroll = (windowScrolltop - objectScrolltop + SQSP.$objects.window.height() *.95) / SQSP.$objects.window.height() * 300;
+    var heightByScroll = (windowScrolltop - objectScrolltop + window.innerHeight *.95) / window.innerHeight * 300;
     //console.log('-- calculation; window scrolltop',windowScrolltop , 'info offset top',objectScrolltop , 'window height', SQSP.$objects.window.height());
     //console.log('----- legal heightByScroll', heightByScroll);
-    var vwHeight = heightByScroll / SQSP.$objects.window.width() *100;
+    var vwHeight = heightByScroll / window.innerWidth *100;
     if(vwHeight > 10) {
         SQSP.$objects.hostedInfo.addClass('on');
     } else {
         SQSP.$objects.hostedInfo.removeClass('on');
     }
-    if(windowScrolltop > objectScrolltop) SQSP.$objects.hostedInfo.removeClass('on');
+    if((windowScrolltop + window.innerHeight*.05) > objectScrolltop) SQSP.$objects.hostedInfo.removeClass('on');
 
     //console.log('----- legal calcheihgt', vwHeight);
     SQSP.$objects.hostedInfo.height(vwHeight + 'vw');
