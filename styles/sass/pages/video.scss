@@ -165,6 +165,7 @@ $gridGutter: 5vw;
   .video {
     margin-top: 4vw;
     @include prefixed(filter, grayscale(100%));
+    @include prefixed(transition, $shortTrans);
 
     .image {
       width:100%;
@@ -262,6 +263,10 @@ $gridGutter: 5vw;
       .title { @include flex-value(grow, 1); }
 
     }// .flex-cols
+
+    &:hover {
+      @include prefixed(filter, grayscale(70%));
+    }
   }// .video
 
   .cta-container {
