@@ -173,7 +173,6 @@ $gridGutter: 5vw;
       position: relative;
       background-size: cover;
       background-position: center center;
-      @include prefixed(transition, $longTrans);
     }
 
     .cta-container {
@@ -268,10 +267,6 @@ $gridGutter: 5vw;
 
     &:hover {
       @include prefixed(filter, grayscale(70%));
-
-      .image {
-        @include transform(scale(1.05));
-      }
     }
   }// .video
 
@@ -288,7 +283,7 @@ $gridGutter: 5vw;
     left: 50%;
     white-space: nowrap;
     @include transform(translateX(-50%) translateY(-50%));
-  }
+  }// .upcoming-cta
 
   //------------------------------------------------------------
 

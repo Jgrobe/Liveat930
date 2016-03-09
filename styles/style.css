@@ -3993,12 +3993,7 @@ a.episodes-landing-cta {
       width: 100%;
       position: relative;
       background-size: cover;
-      background-position: center center;
-      -webkit-transition: 0.9s;
-      -moz-transition: 0.9s;
-      -ms-transition: 0.9s;
-      -o-transition: 0.9s;
-      transition: 0.9s; }
+      background-position: center center; }
     .video-gallery .video .cta-container.play {
       position: absolute;
       top: 100%;
@@ -4081,12 +4076,6 @@ a.episodes-landing-cta {
       -ms-filter: grayscale(70%);
       -o-filter: grayscale(70%);
       filter: grayscale(70%); }
-      .video-gallery .video:hover .image {
-        -webkit-transform: scale(1.05);
-        -moz-transform: scale(1.05);
-        -ms-transform: scale(1.05);
-        -o-transform: scale(1.05);
-        transform: scale(1.05); }
   .video-gallery .cta-container {
     position: absolute;
     top: 100%;
