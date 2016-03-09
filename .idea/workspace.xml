@@ -4,6 +4,7 @@
     <list default="true" id="6ba77c59-895c-4b6c-8ed1-52220cbb39bd" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/sass/overrides/product-detail.scss" afterPath="$PROJECT_DIR$/styles/sass/overrides/product-detail.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/style.css" afterPath="$PROJECT_DIR$/styles/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/style.css.map" afterPath="$PROJECT_DIR$/styles/style.css.map" />
     </list>
     <ignored path="sqsp.iws" />
@@ -189,8 +190,8 @@
           <file leaf-file-name="product-detail.scss" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/styles/sass/overrides/product-detail.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.49947864">
-                  <caret line="87" column="26" selection-start-line="87" selection-start-column="26" selection-end-line="87" selection-end-column="26" />
+                <state vertical-scroll-proportion="0.5776851">
+                  <caret line="123" column="4" selection-start-line="123" selection-start-column="4" selection-end-line="123" selection-end-column="4" />
                   <folding />
                 </state>
               </provider>
@@ -1071,8 +1072,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/styles/sass/overrides/product-detail.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.49947864">
-          <caret line="87" column="26" selection-start-line="87" selection-start-column="26" selection-end-line="87" selection-end-column="26" />
+        <state vertical-scroll-proportion="0.5776851">
+          <caret line="123" column="4" selection-start-line="123" selection-start-column="4" selection-end-line="123" selection-end-column="4" />
           <folding />
         </state>
       </provider>
