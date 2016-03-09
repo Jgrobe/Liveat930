@@ -109,7 +109,7 @@ SQSP.functions.initPage = function() {
         //test
 
         var $hostedInfo = $thisPoster.find('.hosted-info');
-        if( elem_exists($hostedInfo) ) SQSPQ.$objects.hostedInfo = $hostedInfo;
+        if( elem_exists($hostedInfo) ) SQSP.$objects.hostedInfo = $hostedInfo;
 
     });
 
