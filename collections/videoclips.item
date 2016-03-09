@@ -14,7 +14,7 @@
     <section class="clip-container overlap-container prllx-custom" data-prllx=".08">
 
         <div class="clip-preview-container" style="background-image:url('{item.customContent.clip-thumbnail.assetUrl}')">
-            <video controls data-setup="{}" class="video-js fill-parent" poster="{item.customContent.clip-thumbnail}">
+            <video controls data-setup="{}" class="video-js fill-parent" poster="{item.customContent.clip-thumbnail.assetUrl}">
                 <source src="{item.customContent.clip-url}" type='video/mp4'>
             </video>
             <div class="btn-play">{@|apply svg-icon-play.block}</div>
