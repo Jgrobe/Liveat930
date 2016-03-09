@@ -1593,6 +1593,15 @@ div.mce_inline_error {
       margin: auto; }
     .poster .hosted-logo svg * {
       fill: black; }
+  .poster .hosted-info {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.25vw;
+    line-height: 2.5vw;
+    text-transform: uppercase;
+    overflow: hidden;
+    height: 150px; }
   .poster .btn-play-episode {
     font-family: "United Sans", script;
     text-rendering: optimizeLegibility;

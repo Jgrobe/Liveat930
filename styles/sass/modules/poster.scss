@@ -323,6 +323,17 @@ $posterWidth: 84vw;
     @include svg-content() {fill: black;}
   }
 
+  .hosted-info {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.25vw;
+    line-height: 2.5vw;
+    text-transform: uppercase;
+    overflow: hidden;
+    height: 150px;
+  }
+
   .btn-play-episode {
     @include united();
     position: absolute;

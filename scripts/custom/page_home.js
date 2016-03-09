@@ -108,6 +108,9 @@ SQSP.functions.initPage = function() {
         //return false;
         //test
 
+        var $hostedInfo = $thisPoster.find('.hosted-info');
+        if( elem_exists($hostedInfo) ) SQSPQ.$objects.hostedInfo = $hostedInfo;
+
     });
 
 
@@ -154,7 +157,13 @@ jQuery(window).load(function() {
         //SQSP.instances.Posters[i].stopVideo();
         //console.log('------------------------------- VIDEO STOPPED');
     //}, 400);
-});// load()
+}).scroll(function() {
+
+    var calcHeight = SQSPQ.$objects.hostedInfo.offset().top / SQSP.$objects.window.scrollTop();
+
+    console.log('----- legal calcheihgt', calcHeight);
+    SQSPQ.$objects.hostedInfo.height(calcHeight);
+});
 
 function onPosterEnterViewPort($poster) {
     $poster.find('video').get(0).play();
