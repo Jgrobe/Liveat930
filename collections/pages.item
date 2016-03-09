@@ -7,7 +7,6 @@
 </script>
 {.end}
 {.equal?:item.customContent.customType:"page-show"}
-    <script>console.log('ITS THE SHOW TEMPLATE');</script>
     <section class="show-landing">
         <div class="fill-parent mask">
             <div class="landing-bg" style="background-image:url('{item.assetUrl}');" data-type="video" data-src="{item.customContent.hero-video}">
