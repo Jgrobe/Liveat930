@@ -4434,14 +4434,14 @@ a.episodes-landing-cta {
 #productSummary #productDetails .variant-option-title {
   display: none; }
 #productSummary #productDetails .sqs-add-to-cart-button {
-  padding: 1.6vw 20%;
+  padding: 1.6vw 20% !important;
   margin: 20px auto;
   display: inline-block; }
 #productSummary #productGallery #productSlideshow .slide img {
   left: 0 !important; }
 
 #sqs-shopping-cart-wrapper .checkout-button {
-  padding: 1.4vw 4vw !important;
+  padding: 1.4vw 4vw;
   margin: 20px auto; }
 
 .absolute-cart-box {

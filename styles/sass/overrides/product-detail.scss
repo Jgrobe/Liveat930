@@ -64,7 +64,7 @@
 
     .sqs-add-to-cart-button {
       @extend .cta;
-      padding: 1.6vw 20%;
+      padding: 1.6vw 20% !important;
       margin: 20px auto;
       display: inline-block;
     }// .sqs-add-to-cart-button
@@ -83,7 +83,7 @@
 
   .checkout-button {
     @extend .cta;
-    padding: 1.4vw 4vw !important;
+    padding: 1.4vw 4vw;
     margin: 20px auto;
   }// .checkout-button
 
