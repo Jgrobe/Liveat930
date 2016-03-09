@@ -1601,7 +1601,17 @@ div.mce_inline_error {
     line-height: 2.5vw;
     text-transform: uppercase;
     overflow: hidden;
-    max-height: 15vw; }
+    max-height: 15vw;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: 0.6s;
+    -moz-transition: 0.6s;
+    -ms-transition: 0.6s;
+    -o-transition: 0.6s;
+    transition: 0.6s; }
+    .poster .hosted-info.on {
+      visibility: visible;
+      opacity: 1; }
   .poster .btn-play-episode {
     font-family: "United Sans", script;
     text-rendering: optimizeLegibility;
@@ -4450,6 +4460,8 @@ a.episodes-landing-cta {
   right: 2vw;
   left: auto;
   bottom: auto;
+  background: black;
+  z-index: 1;
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
   -ms-transition: 0.3s;

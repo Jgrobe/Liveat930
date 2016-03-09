@@ -106,6 +106,8 @@
   right: 2vw;
   left: auto;// necessary so it won't fill screen
   bottom: auto;// necessary so it won't fill screen
+  background:black;
+  z-index: 1;
   @include prefixed(transition, $shortTrans);
 
   &:hover {

@@ -160,13 +160,18 @@ jQuery(window).load(function() {
 }).scroll(function() {
 
     //var heightByScroll = (SQSP.$objects.window.scrollTop() - SQSP.$objects.window.height() *.95) - Math.round(SQSP.$objects.hostedInfo.offset().top / SQSP.$objects.window.scrollTop());
-    var heightByScroll = (SQSP.$objects.window.scrollTop() - SQSP.$objects.hostedInfo.offset().top + SQSP.$objects.window.height() *.95) / SQSP.$objects.window.height() * 250;
+    var heightByScroll = (SQSP.$objects.window.scrollTop() - SQSP.$objects.hostedInfo.offset().top + SQSP.$objects.window.height() *.95) / SQSP.$objects.window.height() * 300;
     console.log('-- calculation; window scrolltop',SQSP.$objects.window.scrollTop() , 'info offset top',SQSP.$objects.hostedInfo.offset().top , 'window height', SQSP.$objects.window.height());
     console.log('----- legal heightByScroll', heightByScroll);
-    var calcHeight = (heightByScroll / SQSP.$objects.window.width() *100) + 'vw';
+    var vwHeight = heightByScroll / SQSP.$objects.window.width() *100;
+    if(vwHeight > 10) {
+        SQSP.$objects.hostedInfo.addClass('on');
+    } else {
+        SQSP.$objects.hostedInfo.removeClass('on');
+    }
 
-    console.log('----- legal calcheihgt', calcHeight);
-    SQSP.$objects.hostedInfo.height(calcHeight);
+    console.log('----- legal calcheihgt', vwHeight);
+    SQSP.$objects.hostedInfo.height(vwHeight + 'vw');
 });
 
 function onPosterEnterViewPort($poster) {
