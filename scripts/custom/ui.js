@@ -34,6 +34,9 @@ function init_sqsp() {
     //SQSP.functions.createPageHero();
     SQSP.functions.createPageGallery();
 
+    // create cta-container hoverFX
+    cta_hovers();
+
     // hovering .video must trigger its cta-container too
     var $clipItems = jQuery('.video');
     $clipItems.on('mouseenter', function(e) {
@@ -261,8 +264,6 @@ function windowloaded() {
         }
         toggleNavOverlay();
     });// click()
-
-    cta_hovers();
 
 }// windowloaded
 
