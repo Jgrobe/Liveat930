@@ -159,7 +159,8 @@ jQuery(window).load(function() {
     //}, 400);
 }).scroll(function() {
 
-    var calcHeight = (SQSP.$objects.window.scrollTop() - SQSP.$objects.window.height() *.9) - Math.round(SQSP.$objects.hostedInfo.offset().top / SQSP.$objects.window.scrollTop());
+    var heightByScroll = (SQSP.$objects.window.scrollTop() - SQSP.$objects.window.height() *.95) - Math.round(SQSP.$objects.hostedInfo.offset().top / SQSP.$objects.window.scrollTop());
+    var calcHeight = (heightByScroll / SQSP.$objects.window.width() *100) + 'vw';
 
     console.log('----- legal calcheihgt', calcHeight);
     SQSP.$objects.hostedInfo.height(calcHeight);

@@ -52,7 +52,6 @@
         </div><!-- .poster-part.content -->
 
         <div class="poster-part info">
-            <h1>{@index}</h1>
             <div class="hosted-logo">{@|apply svg-hosted-by.block}<!--php svg('images/hosted-by'); --></div>
         </div><!-- .poster-part.info -->
 
