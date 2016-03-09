@@ -3996,7 +3996,6 @@ a.episodes-landing-cta {
     height: 103%; }
   .video-gallery .video {
     margin-top: 4vw;
-    overflow: hidden;
     -webkit-filter: grayscale(100%);
     -moz-filter: grayscale(100%);
     -ms-filter: grayscale(100%);
