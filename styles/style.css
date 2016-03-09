@@ -1601,7 +1601,7 @@ div.mce_inline_error {
     line-height: 2.5vw;
     text-transform: uppercase;
     overflow: hidden;
-    height: 150px; }
+    max-height: 15vw; }
   .poster .btn-play-episode {
     font-family: "United Sans", script;
     text-rendering: optimizeLegibility;
