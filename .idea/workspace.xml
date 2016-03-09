@@ -4,6 +4,8 @@
     <list default="true" id="6ba77c59-895c-4b6c-8ed1-52220cbb39bd" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/custom/ui.js" afterPath="$PROJECT_DIR$/scripts/custom/ui.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/sass/pages/video.scss" afterPath="$PROJECT_DIR$/styles/sass/pages/video.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/style.css" afterPath="$PROJECT_DIR$/styles/style.css" />
     </list>
     <ignored path="sqsp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -70,16 +72,6 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="episodes.item" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/collections/episodes.item">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-3.125">
-                  <caret line="5" column="86" selection-start-line="5" selection-start-column="86" selection-end-line="5" selection-end-column="86" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="videoclips.item" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/collections/videoclips.item">
               <provider selected="true" editor-type-id="text-editor">
@@ -106,11 +98,21 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="static-nav.block" pinned="false" current-in-tab="true">
+          <file leaf-file-name="static-nav.block" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/blocks/static-nav.block">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.36511156">
-                  <caret line="24" column="41" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="41" />
+                <state vertical-scroll-proportion="-13.75">
+                  <caret line="22" column="17" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="module-clip-item.block" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/blocks/module-clip-item.block">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.10649087">
+                  <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
                   <folding />
                 </state>
               </provider>
@@ -166,8 +168,8 @@
           <file leaf-file-name="ui.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/scripts/custom/ui.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.48118007">
-                  <caret line="43" column="23" selection-start-line="43" selection-start-column="23" selection-end-line="43" selection-end-column="23" />
+                <state vertical-scroll-proportion="0.5116989">
+                  <caret line="45" column="53" selection-start-line="45" selection-start-column="53" selection-end-line="45" selection-end-column="53" />
                   <folding />
                 </state>
               </provider>
@@ -176,8 +178,8 @@
           <file leaf-file-name="video.scss" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/styles/sass/pages/video.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-26.875">
-                  <caret line="185" column="29" selection-start-line="185" selection-start-column="29" selection-end-line="185" selection-end-column="29" />
+                <state vertical-scroll-proportion="-15.0">
+                  <caret line="166" column="20" selection-start-line="166" selection-start-column="20" selection-end-line="166" selection-end-column="20" />
                   <folding />
                 </state>
               </provider>
@@ -670,14 +672,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blocks/module-clip-item.block">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.10649087">
-          <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/custom/cta-converter.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1049,24 +1043,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/blocks/static-nav.block">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36511156">
-          <caret line="24" column="41" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="41" />
+        <state vertical-scroll-proportion="-13.75">
+          <caret line="22" column="17" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blocks/module-clip-item.block">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.10649087">
+          <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/styles/sass/pages/video.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-26.875">
-          <caret line="185" column="29" selection-start-line="185" selection-start-column="29" selection-end-line="185" selection-end-column="29" />
+        <state vertical-scroll-proportion="-15.0">
+          <caret line="166" column="20" selection-start-line="166" selection-start-column="20" selection-end-line="166" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/custom/ui.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.48118007">
-          <caret line="43" column="23" selection-start-line="43" selection-start-column="23" selection-end-line="43" selection-end-column="23" />
+        <state vertical-scroll-proportion="0.5116989">
+          <caret line="45" column="53" selection-start-line="45" selection-start-column="53" selection-end-line="45" selection-end-column="53" />
           <folding />
         </state>
       </provider>

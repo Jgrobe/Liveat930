@@ -35,13 +35,15 @@ function init_sqsp() {
     SQSP.functions.createPageGallery();
 
     // hovering .video must trigger its cta-container too
-    jQuery(document).on('mouseenter', '.video', function(e) {
+    var $clipItems = jQuery('.video');
+    $clipItems.on('mouseenter', function(e) {
         console.log('.video mouseenter');
         jQuery(e.target).find('.cta-container').mouseenter();
-    });
-    jQuery(document).on('mouseleave', '.video', function(e) {
+    }).on('mouseleave', function(e) {
         console.log('.video mouseleave');
         jQuery(e.target).find('.cta-container').mouseleave();
+    }).on('click', function(e) {
+        jQuery(e.target).find('.cta-container').click();
     });
 
     //manual video loop

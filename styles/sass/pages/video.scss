@@ -164,6 +164,7 @@ $gridGutter: 5vw;
 
   .video {
     margin-top: 4vw;
+    cursor: pointer;
     //overflow: hidden;
     @include prefixed(filter, grayscale(100%));
     @include prefixed(transition, $shortTrans);
