@@ -45,15 +45,6 @@
 
                         {@|apply module-clip-item.block}
 
-                        <!--<div class="video">-->
-                            <!--<div class="image current-image" style="background-image:url('{assetUrl}');">-->
-                                <!--<div class="cta-dummy" data-icon="eye" data-class="negative play" data-attributes="href={fullUrl}">{@|apply svg-icon-eye.block}</div>-->
-                            <!--</div>-->
-                            <!--<div class="flex-cols">-->
-                                <!--<div class="title">{title}</div>-->
-                            <!--</div>-->
-                        <!--</div>-->
-
                     {.end}<!-- .end repeated section items -->
 
                 </div><!-- .video-gallery-videos -->
@@ -62,12 +53,6 @@
 
             <div class="centered top-spaced">
                 <div class="cta-dummy" data-label="Load more clips" data-icon="icon-load" data-class="load-clips upsized-icon load-more-cta">{@|apply svg-icon-load.block}</div>
-                <!--php print_cta(array(
-                    'label' => 'Load more clips',
-                'icon' => 'images/icon-load',
-                'class' => array('load-clips', 'upsized-icon')
-                )); -->
-                <!--<a class="episodes-landing-cta icon-refresh static" href="">Load more clips</a>-->
             </div><!-- .centered.top-spaced -->
 
         </section><!-- .video-gallery -->
@@ -97,11 +82,6 @@
                                 <div class="arrow prev">{@|apply svg-arrow-cap.block}</div>
                                 <div class="arrow next">{@|apply svg-arrow-cap.block}</div>
                             </div><!-- .slider-arrows -->
-                            <!--<div class="slider-label">-->
-                                <!--<h3>-->
-                                    <!--<span class="gallery-current">2</span>/<span class="gallery-total">8</span>-->
-                                <!--</h3>-->
-                            <!--</div>-->
                         </div><!-- .slider-ui -->
                     </div><!-- .slider-container -->
 
@@ -132,11 +112,6 @@
                                     {excerpt}
                                 </div>
                                 <div class="cta-dummy" data-icon="eye" data-label="Full story" data-attributes="href={fullUrl}">{@|apply svg-icon-eye.block}</div>
-                                <!--php print_cta(array(
-                                'label' => 'Full story',
-                                'icon' => 'images/eye'
-                                )); -->
-                                <!--<a class="episodes-landing-cta icon-eye" href="">Full story</a>-->
                             </div><!-- .text-layer -->
                         </div><!-- .excerpt-container -->
 
@@ -175,12 +150,6 @@
                         <div class="flex-cols">
                             <div class="title">{.if customContent.subtitle}{customContent.subtitle} • {.end}{title}</div>
                             <div class="cta-dummy" data-tag="div" data-label="View" data-icon="eye" data-class="plain" data-hover="true">{@|apply svg-icon-eye.block}</div>
-                            <!--php print_cta(array(
-                                'label' => 'View',
-                                'icon' => 'images/eye',
-                                'class' => array('plain'),
-                                'hover' => false
-                            )); -->
                         </div><!-- .flex-cols -->
                     </div><!-- .video -->
 
