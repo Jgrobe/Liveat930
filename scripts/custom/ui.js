@@ -193,6 +193,9 @@ function windowloaded() {
         clearSearchField(jQuery(this));
         if(SQSP.vars.isSearchOverlayOpen) toggleSearchOverlay();
     });// search click
+    SQSP.$objects.stickyHeader.find('.nav-table').click(function() {
+        if(SQSP.vars.isSearchOverlayOpen) toggleSearchOverlay();
+    });// search click
 
     // SEARCH FIELD FUNCTIONALITY
     SQSP.$objects.searchResultsContainer = jQuery('.nav-overlay .results-wrapper');
