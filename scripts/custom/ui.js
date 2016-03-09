@@ -49,20 +49,20 @@ function init_sqsp() {
             scrollMonitor.recalculateLocations();// needed on homepage so first video in viewport starts playing on load
         });
         if($thisVid.hasClass('loop')) {
-            //SQSP.vars.loopvids.push(vid);
-            vid.addEventListener('timeupdate', function(e) {
-                console.log('tracking time', e.target.currentTime, e.target.duration);
-                if(e.target.currentTime > (e.target.duration-.25)) {
-                    console.log('reset video time');
-                    e.target.currentTime = 0;
-                    if(!e.target.playing) e.target.play();
-                }
-            });
+            SQSP.vars.loopvids.push(vid);
+        //    vid.addEventListener('timeupdate', function(e) {
+        //        console.log('tracking time', e.target.currentTime, e.target.duration);
+        //        if(e.target.currentTime > (e.target.duration-.25)) {
+        //            console.log('reset video time');
+        //            e.target.currentTime = 0;
+        //            if(!e.target.playing) e.target.play();
+        //        }
+        //    });
         }// endif
     });
 
     console.log('SQSP.vars.loopvids.length', SQSP.vars.loopvids.length);
-    //checkVideoloop();
+    checkVideoloop();
 
 }// init_page()
 
@@ -71,7 +71,7 @@ function checkVideoloop() {
 
     for(var i=0; i<SQSP.vars.loopvids.length; i++) {
         var vid = SQSP.vars.loopvids[i];
-        //console.log('checking vid', vid.currentTime, vid.duration);
+        console.log('checking vid', vid.currentTime, vid.duration);
         if(vid.currentTime > (vid.duration-.25)) {
             console.log('manual loop reset video time');
             vid.currentTime = 0;
