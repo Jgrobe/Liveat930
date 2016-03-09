@@ -38,7 +38,7 @@ function init_sqsp() {
     cta_hovers();
 
     // hovering .video must trigger its cta-container too
-    var $clipItems = jQuery('.video');
+    var $clipItems = jQuery('div.video');// div is necessary b/c sqsp attaches class 'video' to html !!!!! wtf man
     console.log('mofo clipitems',$clipItems);
     $clipItems.on('mouseenter', function(e) {
         console.log('.video mouseenter', e);
