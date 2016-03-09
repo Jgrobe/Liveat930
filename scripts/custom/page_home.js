@@ -159,7 +159,9 @@ jQuery(window).load(function() {
     //}, 400);
 }).scroll(function() {
 
-    var heightByScroll = (SQSP.$objects.window.scrollTop() - SQSP.$objects.window.height() *.95) - Math.round(SQSP.$objects.hostedInfo.offset().top / SQSP.$objects.window.scrollTop());
+    //var heightByScroll = (SQSP.$objects.window.scrollTop() - SQSP.$objects.window.height() *.95) - Math.round(SQSP.$objects.hostedInfo.offset().top / SQSP.$objects.window.scrollTop());
+    var heightByScroll = Math.round( SQSP.$objects.window.scrollTop() / (SQSP.$objects.hostedInfo.offset().top + SQSP.$objects.window.height() *.95) );
+    console.log('----- legal heightByScroll', heightByScroll);
     var calcHeight = (heightByScroll / SQSP.$objects.window.width() *100) + 'vw';
 
     console.log('----- legal calcheihgt', calcHeight);
