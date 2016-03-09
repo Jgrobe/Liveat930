@@ -10,7 +10,7 @@
     font-size: 11px;
 
     .back-arrow { margin-right:5px; }
-  }
+  }// #productNav
 
 }// #product-wrapper
 
@@ -52,12 +52,12 @@
 
       .quantity-label {
         display: inline-block;
-
-        input {
-          display: block;
-          margin-top:5px;
-        }// input
       }// .quantity-label
+
+      input {
+        display: block;
+        margin-top:5px;
+      }// input
     }// .product-quantity-input
 
     .variant-option-title {display: none;}
@@ -71,15 +71,21 @@
 
   }// #product-details
 
+  #productGallery #productSlideshow .slide img {left: 0 !important;}
+
+  @include breakpoint(mobile) {
+
+  }// BP MOBILE
+
 }// #product-summary
 
 #sqs-shopping-cart-wrapper {
 
   .checkout-button {
     @extend .cta;
-    padding: 1.4vw 4vw;
+    padding: 1.4vw 4vw !important;
     margin: 20px auto;
-  }
+  }// .checkout-button
 
 }// #sqs-shopping-cart-wrapper
 
@@ -122,5 +128,8 @@
 
   }// .sqs-pill-shopping-cart-content dark
 
+  @include breakpoint(mobile) {
+
+  }// BP MOBILE
 
 }// .absolute-cart-box

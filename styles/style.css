@@ -4428,18 +4428,20 @@ a.episodes-landing-cta {
   position: relative; }
   #productSummary #productDetails .product-quantity-input .quantity-label {
     display: inline-block; }
-    #productSummary #productDetails .product-quantity-input .quantity-label input {
-      display: block;
-      margin-top: 5px; }
+  #productSummary #productDetails .product-quantity-input input {
+    display: block;
+    margin-top: 5px; }
 #productSummary #productDetails .variant-option-title {
   display: none; }
 #productSummary #productDetails .sqs-add-to-cart-button {
   padding: 1.6vw 20%;
   margin: 20px auto;
   display: inline-block; }
+#productSummary #productGallery #productSlideshow .slide img {
+  left: 0 !important; }
 
 #sqs-shopping-cart-wrapper .checkout-button {
-  padding: 1.4vw 4vw;
+  padding: 1.4vw 4vw !important;
   margin: 20px auto; }
 
 .absolute-cart-box {
