@@ -246,7 +246,7 @@ input {
   text-align: left;
   font-family: "Gotham A", "Gotham B";
   font-size: .85vw;
-  line-height: 1.1vw;
+  line-height: 1.4vw;
   letter-spacing: .04em;
   text-transform: none; }
   .text-layer h2 {
@@ -1306,6 +1306,8 @@ div.mce_inline_error {
     text-align: left; }
     .excerpt-container .excerpt-head h2 {
       width: 100%; }
+  .excerpt-container .excerpt-body {
+    line-height: 1.4vw; }
   .excerpt-container .text-layer {
     position: relative;
     -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);

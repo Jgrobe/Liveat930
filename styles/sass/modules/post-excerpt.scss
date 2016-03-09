@@ -86,6 +86,10 @@
     h2 {width: 100%;}
   }
 
+  .excerpt-body {
+    line-height: 1.4vw;
+  }
+
   .text-layer {
     position: relative;
     @include shadow(0 0 10px rgba(0,0,0,.1));
