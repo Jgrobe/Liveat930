@@ -83,19 +83,37 @@
 
 .clip-preview-container {
   width: 100%;
-  background: url('assets/images/clip.jpg') no-repeat center;
-  background-size: cover;
-  @include shadow(0 0 15px 5px rgba(0, 0, 0, 0.2));
+  //background: url('assets/images/clip.jpg') no-repeat center;
+  //background-size: cover;
+  //@include shadow(0 0 15px 5px rgba(0, 0, 0, 0.2));
   position: relative;
-  overflow: hidden;
+  //overflow: hidden;
 
+  .video-js {
+    overflow: hidden;
+    z-index:1;
+  }
 
-  &:before {
+  &:before, &:after {
     content: '';
     display: block;
+  }
+
+  &:before {
     padding-top: 58%;
     //@include preloader();
     background-size: 3%;
+  }
+
+  &:after {
+    // thats the shadow to prevent hairline borders
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    width: 96%;
+    height: 96%;
+    background: black;
+    @include shadow(0 0 20px 7px black);
   }
 
   >*{ position: absolute;}
@@ -107,7 +125,7 @@
 //    left: 50%;
 //    @include transform(translateX(-50%) translateY(-50%));
   }
-}
+}// .clip-preview-container
 
 .overlap-container {
   position: relative;

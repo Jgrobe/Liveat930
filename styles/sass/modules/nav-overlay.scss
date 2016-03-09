@@ -39,11 +39,36 @@
       margin-top: 2.5%;
     }// .description
 
+    a {
+      &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background: black;
+        z-index: -1;
+
+        @include prefixed(transition, width $shortTrans);
+      }// before
+    }// a
+
     &:last-child {
       background: none;
       margin-bottom: 0;
       line-height: 0;
     }// last-child
+
+    &:hover {
+
+      a {
+        &:before {
+          width: calc(~"100% + 1vw");
+        }
+      }
+    }
 
   }// .menu-item
   

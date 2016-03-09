@@ -4319,20 +4319,28 @@ a.episodes-landing-cta {
 
 .clip-preview-container {
   width: 100%;
-  background: url("assets/images/clip.jpg") no-repeat center;
-  background-size: cover;
-  -webkit-box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
-  -ms-box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
-  -o-box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
-  position: relative;
-  overflow: hidden; }
-  .clip-preview-container:before {
+  position: relative; }
+  .clip-preview-container .video-js {
+    overflow: hidden;
+    z-index: 1; }
+  .clip-preview-container:before, .clip-preview-container:after {
     content: '';
-    display: block;
+    display: block; }
+  .clip-preview-container:before {
     padding-top: 58%;
     background-size: 3%; }
+  .clip-preview-container:after {
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    width: 96%;
+    height: 96%;
+    background: black;
+    -webkit-box-shadow: 0 0 20px 7px black;
+    -moz-box-shadow: 0 0 20px 7px black;
+    -ms-box-shadow: 0 0 20px 7px black;
+    -o-box-shadow: 0 0 20px 7px black;
+    box-shadow: 0 0 20px 7px black; }
   .clip-preview-container > * {
     position: absolute; }
   .clip-preview-container video {
