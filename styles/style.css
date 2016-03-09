@@ -1668,9 +1668,6 @@ div.mce_inline_error {
       .poster.hover-on .ep-lineup > *.hovered .description {
         visibility: visible;
         opacity: 1; }
-  .poster.hover-on .btn-play-episode {
-    visibility: hidden;
-    opacity: 0; }
   @media only screen and (min-width: 1450px) {
     .poster .padded {
       padding: 100px;
@@ -2795,8 +2792,8 @@ div.mce_inline_error {
   .video-overlay .close-overlay {
     cursor: pointer;
     position: absolute;
-    top: 2vw;
-    right: 2vw;
+    top: 3vw;
+    right: 3vw;
     color: white;
     -webkit-transition: 0.3s;
     -moz-transition: 0.3s;

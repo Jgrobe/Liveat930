@@ -15,8 +15,8 @@
 
     cursor: pointer;
     position: absolute;
-    top: 2vw;
-    right: 2vw;
+    top: 3vw;
+    right: 3vw;
     color: white;
     @include prefixed(transition, $shortTrans);
 
