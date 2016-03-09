@@ -4460,7 +4460,7 @@ a.episodes-landing-cta {
   left: auto;
   bottom: auto;
   background: black;
-  z-index: 1;
+  z-index: 11;
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
   -ms-transition: 0.3s;
