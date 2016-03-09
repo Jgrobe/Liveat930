@@ -354,7 +354,7 @@ function handleStickyBurger(e) {
         toggleBurger(true);
         return false;
     }
-    if(e.posY.current > e.target.options.minY.value) {
+    if(e.posY.current > (e.target.options.minY.value)*1.5) {
         // enable burger
         if(e.target.$object.container.hasClass('notactive')) {
             e.target.$object.container.removeClass('notactive');
