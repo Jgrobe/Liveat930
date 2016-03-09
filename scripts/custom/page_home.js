@@ -159,7 +159,7 @@ jQuery(window).load(function() {
     //}, 400);
 }).scroll(function() {
 
-    var calcHeight = SQSPQ.$objects.hostedInfo.offset().top / SQSP.$objects.window.scrollTop();
+    var calcHeight = SQSP.$objects.hostedInfo.offset().top / SQSP.$objects.window.scrollTop();
 
     console.log('----- legal calcheihgt', calcHeight);
     SQSPQ.$objects.hostedInfo.height(calcHeight);
