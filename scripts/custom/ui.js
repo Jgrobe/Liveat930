@@ -64,6 +64,15 @@ function init_sqsp() {
     console.log('SQSP.vars.loopvids.length', SQSP.vars.loopvids.length);
     checkVideoloop();
 
+
+    jQuery(document).on('mouseenter', '.video', function() {
+        console.log('.video mouseenter');
+        jQuery(this).find('.cta-container').mouseenter();
+    });
+    jQuery(document).on('mouseleave', '.video', function() {
+        console.log('.video mouseleave');
+        jQuery(this).find('.cta-container').mouseleave();
+    });
 }// init_page()
 
 function checkVideoloop() {
