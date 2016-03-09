@@ -39,13 +39,16 @@ function init_sqsp() {
 
     // hovering .video must trigger its cta-container too
     var $clipItems = jQuery('.video');
-    $clipItems.on('mouseover', function(e) {
+    console.log('mofo clipitems',$clipItems);
+    $clipItems.on('mouseenter', function(e) {
         console.log('.video mouseenter', e);
         jQuery(e.target).find('.cta-container').mouseenter();
-    }).on('mouseout', function(e) {
+    });
+    $clipItems.on('mouseleave', function(e) {
         console.log('.video mouseleave', e);
         jQuery(e.target).find('.cta-container').mouseleave();
-    }).on('click', function(e) {
+    });
+    $clipItems.on('click', function(e) {
         jQuery(e.target).find('.cta-container').click();
     });
 
