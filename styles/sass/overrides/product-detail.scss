@@ -102,7 +102,7 @@
 .absolute-cart-box {
 
   position: absolute;
-  top: calc(2vw + 12.5px);
+  top: calc(~"2vw + 12.5px");
   right: 2vw;
   left: auto;// necessary so it won't fill screen
   bottom: auto;// necessary so it won't fill screen
