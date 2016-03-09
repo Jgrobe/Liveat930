@@ -51,8 +51,9 @@ function init_sqsp() {
         if($thisVid.hasClass('loop')) {
             //SQSP.vars.loopvids.push(vid);
             vid.addEventListener('timeupdate', function(e) {
+                console.log('tracking time', e.target.currentTime, e.target.duration);
                 if(e.target.currentTime > (e.target.duration-.25)) {
-                    //console.log('reset video time');
+                    console.log('reset video time');
                     e.target.currentTime = 0;
                     if(!e.target.playing) e.target.play();
                 }
