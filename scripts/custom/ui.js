@@ -34,6 +34,16 @@ function init_sqsp() {
     //SQSP.functions.createPageHero();
     SQSP.functions.createPageGallery();
 
+    // hovering .video must trigger its cta-container too
+    jQuery(document).on('mouseenter', '.video', function(e) {
+        console.log('.video mouseenter');
+        jQuery(e.target).find('.cta-container').mouseenter();
+    });
+    jQuery(document).on('mouseleave', '.video', function(e) {
+        console.log('.video mouseleave');
+        jQuery(e.target).find('.cta-container').mouseleave();
+    });
+
     //manual video loop
 
     SQSP.vars.keepCheckingVideos = true;
@@ -64,15 +74,6 @@ function init_sqsp() {
     console.log('SQSP.vars.loopvids.length', SQSP.vars.loopvids.length);
     checkVideoloop();
 
-
-    jQuery(document).on('mouseenter', '.video', function() {
-        console.log('.video mouseenter');
-        jQuery(this).find('.cta-container').mouseenter();
-    });
-    jQuery(document).on('mouseleave', '.video', function() {
-        console.log('.video mouseleave');
-        jQuery(this).find('.cta-container').mouseleave();
-    });
 }// init_page()
 
 function checkVideoloop() {
