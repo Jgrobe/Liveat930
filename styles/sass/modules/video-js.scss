@@ -28,6 +28,12 @@
 
   .vjs-poster {
     background-size: cover;
+    &:before {
+      content: '';
+      display: block;
+      @extend .fill-parent;
+      opacity: .55;
+    }
   }
 
   .vjs-loading-spinner {
