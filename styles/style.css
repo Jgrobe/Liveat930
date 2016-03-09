@@ -3978,6 +3978,7 @@ a.episodes-landing-cta {
     height: 103%; }
   .video-gallery .video {
     margin-top: 4vw;
+    overflow: hidden;
     -webkit-filter: grayscale(100%);
     -moz-filter: grayscale(100%);
     -ms-filter: grayscale(100%);
@@ -3992,7 +3993,12 @@ a.episodes-landing-cta {
       width: 100%;
       position: relative;
       background-size: cover;
-      background-position: center center; }
+      background-position: center center;
+      -webkit-transition: 0.9s;
+      -moz-transition: 0.9s;
+      -ms-transition: 0.9s;
+      -o-transition: 0.9s;
+      transition: 0.9s; }
     .video-gallery .video .cta-container.play {
       position: absolute;
       top: 100%;
@@ -4075,6 +4081,12 @@ a.episodes-landing-cta {
       -ms-filter: grayscale(70%);
       -o-filter: grayscale(70%);
       filter: grayscale(70%); }
+      .video-gallery .video:hover .image {
+        -webkit-transform: scale(1.05);
+        -moz-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        -o-transform: scale(1.05);
+        transform: scale(1.05); }
   .video-gallery .cta-container {
     position: absolute;
     top: 100%;
@@ -4395,17 +4407,36 @@ a.episodes-landing-cta {
 #productWrapper, #sqs-shopping-cart-wrapper {
   width: 75vw;
   max-width: 800px;
-  padding-top: 10.41667vw;
+  padding-top: calc(~"$sectionMarginBottom * 1.5");
   margin: 0 auto 10.41667vw auto; }
+  #productWrapper #productNav, #sqs-shopping-cart-wrapper #productNav {
+    text-transform: none;
+    font-size: 11px; }
+    #productWrapper #productNav .back-arrow, #sqs-shopping-cart-wrapper #productNav .back-arrow {
+      margin-right: 5px; }
 
-#productSummary #productNav {
-  text-transform: none;
-  font-size: 12px; }
+#productSummary #productDetails .product-price {
+  font-size: 1.4vw;
+  font-weight: 500; }
+  #productSummary #productDetails .product-price .sqs-money-native:before {
+    margin-right: 5px; }
+#productSummary #productDetails .product-excerpt * {
+  font-size: 1.3vw;
+  line-height: 1.9vw; }
+#productSummary #productDetails .product-quantity-input {
+  display: inline-block;
+  position: relative; }
+  #productSummary #productDetails .product-quantity-input .quantity-label {
+    display: inline-block; }
+    #productSummary #productDetails .product-quantity-input .quantity-label input {
+      display: block;
+      margin-top: 5px; }
 #productSummary #productDetails .variant-option-title {
   display: none; }
 #productSummary #productDetails .sqs-add-to-cart-button {
-  padding: 1.4vw 2vw;
-  margin: 20px auto; }
+  padding: 1.6vw 20%;
+  margin: 20px auto;
+  display: inline-block; }
 
 #sqs-shopping-cart-wrapper .checkout-button {
   padding: 1.4vw 4vw;

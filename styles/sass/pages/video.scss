@@ -164,6 +164,7 @@ $gridGutter: 5vw;
 
   .video {
     margin-top: 4vw;
+    overflow: hidden;
     @include prefixed(filter, grayscale(100%));
     @include prefixed(transition, $shortTrans);
 
@@ -172,6 +173,7 @@ $gridGutter: 5vw;
       position: relative;
       background-size: cover;
       background-position: center center;
+      @include prefixed(transition, $longTrans);
     }
 
     .cta-container {
@@ -266,6 +268,10 @@ $gridGutter: 5vw;
 
     &:hover {
       @include prefixed(filter, grayscale(70%));
+
+      .image {
+        @include transform(scale(1.05));
+      }
     }
   }// .video
 
