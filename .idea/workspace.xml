@@ -159,7 +159,7 @@
             <entry file="file://$PROJECT_DIR$/scripts/custom/page_home.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.78840286">
-                  <caret line="162" column="100" selection-start-line="162" selection-start-column="100" selection-end-line="162" selection-end-column="100" />
+                  <caret line="162" column="134" selection-start-line="162" selection-start-column="134" selection-end-line="162" selection-end-column="134" />
                   <folding />
                 </state>
               </provider>
@@ -1071,7 +1071,7 @@
     <entry file="file://$PROJECT_DIR$/scripts/custom/page_home.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.78840286">
-          <caret line="162" column="100" selection-start-line="162" selection-start-column="100" selection-end-line="162" selection-end-column="100" />
+          <caret line="162" column="134" selection-start-line="162" selection-start-column="134" selection-end-line="162" selection-end-column="134" />
           <folding />
         </state>
       </provider>
