@@ -2888,8 +2888,8 @@ div.mce_inline_error {
 #fieldTracker {
   position: fixed;
   z-index: 8;
-  top: 5vw;
-  right: calc(~"50% - 50px");
+  top: 2vw;
+  right: 2vw;
   cursor: pointer;
   visibility: hidden;
   opacity: 0;

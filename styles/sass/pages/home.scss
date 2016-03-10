@@ -3,8 +3,8 @@
 
   position: fixed;
   z-index: 8;
-  top: 5vw;
-  right: calc(~"50% - #{$size}");
+  top: 2vw;// pos like burger
+  right: 2vw;// pos like burger
   cursor: pointer;
   //pointer-events: none;
   @include autoAlpha(0);

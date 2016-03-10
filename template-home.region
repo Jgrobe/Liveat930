@@ -16,7 +16,7 @@
             {.end}
         </squarespace:query>
 
-        <div id="fieldTracker">{@|apply svg-close-cursor.block}</div><!-- #fieldTracker -->
+        <div id="fieldTracker">{@|apply svg-close-artist.block}</div><!-- #fieldTracker -->
 
     </section><!-- .posters -->
 </div><!-- .site-content -->
