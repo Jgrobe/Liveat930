@@ -77,6 +77,24 @@ $posterWidth: 84vw;
     }// .hosted-logo
   }// .dummy
 
+  .poster-pattern {
+    position: absolute;
+    width: 5%;
+    height: 40%;
+    @extend .imgfill;
+
+    &:first-child {
+      top: 20%;
+      left: -5%;
+    }// first-child
+
+    &:last-child {
+      top: 60%;
+      left: 100%;
+    }// last-child
+
+  }// .poster-pattern
+
   video { position: absolute; }
 
   canvas {

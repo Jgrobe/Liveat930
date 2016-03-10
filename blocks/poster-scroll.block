@@ -1,4 +1,8 @@
 <div class="poster {customContent.episode-shape}">
+
+    <div class="poster-pattern"></div>
+    <div class="poster-pattern"></div>
+
     <div class="poster-content">
 
         <div class="layer hover-layer"></div><!-- .hover-layer -->
