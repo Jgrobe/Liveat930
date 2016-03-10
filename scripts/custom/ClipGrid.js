@@ -145,7 +145,7 @@ var ClipGrid = function($container, options) {
         }});
         // tween grid height
         var newGridHeight = CG.$object.container.outerHeight();
-        inTL.fromTo(CG.$object.container, CG.options.duration, {height:oldGridHeight}, {height:newGridHeight, ease:Expo.easeInOut});
+        //inTL.fromTo(CG.$object.container, CG.options.duration, {height:oldGridHeight}, {height:newGridHeight, ease:Expo.easeInOut});
 
         if( _.isFunction(CG.options.filterIn) ) {
             // animate items in
