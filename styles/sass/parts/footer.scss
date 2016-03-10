@@ -2,7 +2,7 @@
 
 .footer {
   position: relative;
-  padding: get_relative_units(230) 0;//15vh 0;
+  padding: get_relative_units(460) 0;//15vh 0;
   color: #fff;
   text-align: center;
   z-index: 1;
@@ -14,8 +14,8 @@
   background-attachment: fixed;
 
   p {
-    font-size: get_relative_units(14);//34
-    line-height: get_relative_units(24);//48
+    font-size: get_relative_units(28);//34
+    line-height: get_relative_units(48);//48
     letter-spacing: .06em;
   }
 
@@ -39,7 +39,7 @@
   }
 
   .demand {
-    font-size: get_relative_units(72);// 144
+    font-size: get_relative_units(144);// 144
     letter-spacing: .08em;
     margin: 0 2vw 0 0;
   }
@@ -61,8 +61,27 @@
     input[type=email] {
       width: get_relative_units(440);//15vw;
       background: white;
-      font-size: get_relative_units(10);
+      font-size: get_relative_units(20);
       letter-spacing: .1em;
+
+      $errorColor: #FF574D;
+      &.mce_inline_error {
+        ::-webkit-input-placeholder {
+          color: $errorColor;
+        }
+
+        :-moz-placeholder { /* Firefox 18- */
+          color: $errorColor;
+        }
+
+        ::-moz-placeholder {  /* Firefox 19+ */
+          color: $errorColor;
+        }
+
+        :-ms-input-placeholder {
+          color: $errorColor;
+        }
+      }// .mc-inline-error
     }
 
     .submit-email {
@@ -110,25 +129,6 @@
         display: block;
         padding: 18px;
         @include prefixed(transition, color $shortTrans);
-
-        $errorColor: #FF574D;
-        &.mce_inline_error {
-          ::-webkit-input-placeholder {
-            color: $errorColor;
-          }
-
-          :-moz-placeholder { /* Firefox 18- */
-            color: $errorColor;
-          }
-
-          ::-moz-placeholder {  /* Firefox 19+ */
-            color: $errorColor;
-          }
-
-          :-ms-input-placeholder {
-            color: $errorColor;
-          }
-        }// .mc-inline-error
       }
       .submit-email {
         position: static;

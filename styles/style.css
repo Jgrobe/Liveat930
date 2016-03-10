@@ -710,7 +710,7 @@ input {
 
 .footer {
   position: relative;
-  padding: 7.98611vw 0;
+  padding: 15.97222vw 0;
   color: #fff;
   text-align: center;
   z-index: 1;
@@ -719,8 +719,8 @@ input {
   background-size: cover;
   background-attachment: fixed; }
   .footer p {
-    font-size: 0.48611vw;
-    line-height: 0.83333vw;
+    font-size: 0.97222vw;
+    line-height: 1.66667vw;
     letter-spacing: .06em; }
   @media only screen and (max-width: 750px) {
     .footer p {
@@ -747,7 +747,7 @@ input {
     -o-align-items: center;
     align-items: center; }
   .footer-newsletter .demand {
-    font-size: 2.5vw;
+    font-size: 5vw;
     letter-spacing: .08em;
     margin: 0 2vw 0 0; }
   .footer-newsletter form {
@@ -758,8 +758,18 @@ input {
     .footer-newsletter form input[type=email] {
       width: 15.27778vw;
       background: white;
-      font-size: 0.34722vw;
+      font-size: 0.69444vw;
       letter-spacing: .1em; }
+      .footer-newsletter form input[type=email].mce_inline_error ::-webkit-input-placeholder {
+        color: #FF574D; }
+      .footer-newsletter form input[type=email].mce_inline_error :-moz-placeholder {
+        /* Firefox 18- */
+        color: #FF574D; }
+      .footer-newsletter form input[type=email].mce_inline_error ::-moz-placeholder {
+        /* Firefox 19+ */
+        color: #FF574D; }
+      .footer-newsletter form input[type=email].mce_inline_error :-ms-input-placeholder {
+        color: #FF574D; }
     .footer-newsletter form .submit-email {
       position: absolute;
       height: 100%;
@@ -803,16 +813,6 @@ input {
           -ms-transition: color 0.3s;
           -o-transition: color 0.3s;
           transition: color 0.3s; }
-          .footer-newsletter form input[type=email].mce_inline_error ::-webkit-input-placeholder {
-            color: #FF574D; }
-          .footer-newsletter form input[type=email].mce_inline_error :-moz-placeholder {
-            /* Firefox 18- */
-            color: #FF574D; }
-          .footer-newsletter form input[type=email].mce_inline_error ::-moz-placeholder {
-            /* Firefox 19+ */
-            color: #FF574D; }
-          .footer-newsletter form input[type=email].mce_inline_error :-ms-input-placeholder {
-            color: #FF574D; }
         .footer-newsletter form .submit-email {
           position: static;
           margin-top: 20px; }
