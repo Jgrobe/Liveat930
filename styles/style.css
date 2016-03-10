@@ -839,7 +839,7 @@ input {
 .footer-hosted-by {
   padding: 10.41667vw 0 6.94444vw 0; }
   .footer-hosted-by .hosted-by-p {
-    margin: 3vh auto 4vh; }
+    margin: 1.5vh auto 8vh; }
   @media only screen and (max-width: 750px) {
     .footer-hosted-by {
       padding: 0; }
@@ -869,8 +869,8 @@ input {
     margin: 0 1vw; }
     .footer-social ul li a {
       display: block;
-      width: 42px;
-      height: 42px;
+      width: 1.38889vw;
+      height: 1.38889vw;
       background-repeat: no-repeat;
       background-position: center;
       background-size: 60%; }
