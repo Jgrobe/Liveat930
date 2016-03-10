@@ -357,9 +357,9 @@ $gridGutter: 5vw;
   @include flex-value(direction, row);
 }
 
-//.video-gallery-videos {
-//  position: relative;
-//}
+.video-gallery-videos {
+  position: relative;
+}
 
 
 //.video {
