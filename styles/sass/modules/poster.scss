@@ -368,8 +368,8 @@ $posterWidth: 84vw;
     line-height: 1.75vw;//2.5vw;
     //text-transform: uppercase;
     overflow: hidden;
-    max-height: 15vw;
-    padding-top: 3%;
+    max-height: 10vw;
+    //padding-top: 3%;
     opacity:0;
     @include prefixed(transition, (opacity $shortTrans));
 

@@ -1657,8 +1657,7 @@ div.mce_inline_error {
     font-size: .85vw;
     line-height: 1.75vw;
     overflow: hidden;
-    max-height: 15vw;
-    padding-top: 3%;
+    max-height: 10vw;
     opacity: 0;
     -webkit-transition: opacity 0.3s;
     -moz-transition: opacity 0.3s;
