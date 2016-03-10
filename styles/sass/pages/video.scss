@@ -1,4 +1,4 @@
-$gridGutter: 5vw;
+$gridGutter: 5%;
 
 .video-overview-landing {
   @include landing;
@@ -117,7 +117,7 @@ $gridGutter: 5vw;
     &.small, &.medium, &.large { margin-top: 4vw; }
 
     &.small {
-      width:21.66vw;
+      width:30%;// 21.66vw;
       .image {
         height: 17vw;
         &.poster {
@@ -126,7 +126,7 @@ $gridGutter: 5vw;
       }
     }
     &.medium {
-      width: 35vw;
+      width: 52.5%;//35vw;
       .image {
         height: 21vw;
         &.poster {
@@ -135,7 +135,7 @@ $gridGutter: 5vw;
       }
     }
     &.large {
-      width:21.66vw;
+      width:30%;//21.66vw;
       .image {
         height: 41.5vw;
         &.poster {

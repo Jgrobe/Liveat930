@@ -4085,19 +4085,19 @@ a.episodes-landing-cta {
     .video-gallery .video.small, .video-gallery .video.medium, .video-gallery .video.large {
       margin-top: 4vw; }
     .video-gallery .video.small {
-      width: 21.66vw; }
+      width: 30%; }
       .video-gallery .video.small .image {
         height: 17vw; }
         .video-gallery .video.small .image.poster {
           height: auto; }
     .video-gallery .video.medium {
-      width: 35vw; }
+      width: 52.5%; }
       .video-gallery .video.medium .image {
         height: 21vw; }
         .video-gallery .video.medium .image.poster {
           height: auto; }
     .video-gallery .video.large {
-      width: 21.66vw; }
+      width: 30%; }
       .video-gallery .video.large .image {
         height: 41.5vw; }
         .video-gallery .video.large .image.poster {
@@ -4259,7 +4259,7 @@ a.episodes-landing-cta {
   wrap: wrap; }
 
 .gutter-sizer {
-  width: 5vw; }
+  width: 5%; }
 
 .flex-cols {
   display: -webkit-box;
