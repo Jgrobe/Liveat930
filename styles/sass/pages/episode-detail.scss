@@ -1,22 +1,23 @@
 .landing.episodes-landing.episode-detail {
 
   .small {
+    font-size: get_relative_units(82);
     position: static;
     text-align: right;
     width: 100%;
   }
 
-
   .cta-container {
-    margin-left: 4vw;
     @include shadow(0 0 5vw rgba(0,0,0,.3));
+    font-size: get_relative_units(32);
+    margin: -3% 0 0 5%;
   }// .cta-play-episode
 
   .text-layer {
     //position: absolute;
-    top: 65vh;
-    left: 39vw;
-    width: 40vw;
+    //top: 65vh;
+    margin-left: 35%;
+    width: 65%;
     color: #000000;
 
 //    span {
@@ -28,7 +29,7 @@
 //      letter-spacing: 0.3vw;
 //      font-size: 2.1vw;
 //    }// p
-  }
+  }// .text-layer
 
   .sharebox {
     margin: 0;

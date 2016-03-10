@@ -3240,20 +3240,21 @@ div.mce_inline_error {
             letter-spacing: .04em; } }
 
 .landing.episodes-landing.episode-detail .small {
+  font-size: 2.84722vw;
   position: static;
   text-align: right;
   width: 100%; }
 .landing.episodes-landing.episode-detail .cta-container {
-  margin-left: 4vw;
   -webkit-box-shadow: 0 0 5vw rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0 0 5vw rgba(0, 0, 0, 0.3);
   -ms-box-shadow: 0 0 5vw rgba(0, 0, 0, 0.3);
   -o-box-shadow: 0 0 5vw rgba(0, 0, 0, 0.3);
-  box-shadow: 0 0 5vw rgba(0, 0, 0, 0.3); }
+  box-shadow: 0 0 5vw rgba(0, 0, 0, 0.3);
+  font-size: 1.11111vw;
+  margin: -3% 0 0 5%; }
 .landing.episodes-landing.episode-detail .text-layer {
-  top: 65vh;
-  left: 39vw;
-  width: 40vw;
+  margin-left: 35%;
+  width: 65%;
   color: #000000; }
 .landing.episodes-landing.episode-detail .sharebox {
   margin: 0;
