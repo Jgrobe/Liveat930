@@ -1,5 +1,11 @@
 .poster.tripleRect {
 
+  $pattern: 'assets/images/textures/texture2.png';
+
+  .poster-pattern {
+    background-image: url(#{$pattern});
+  }
+
   .layer {
     &.bg-layer {
       .half {
@@ -16,7 +22,7 @@
           .fill-parent.imgfill {
             left: -2%;
             top: -2%;
-            background-image: url('assets/images/textures/texture2.png');
+            background-image: url(#{$pattern});
             opacity: .6;
           }
         }// first-child

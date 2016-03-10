@@ -1,5 +1,11 @@
 .poster.deltoid {
 
+  $pattern: 'assets/images/textures/texture-stitch-white.png';
+
+  .poster-pattern {
+    background-image: url(#{$pattern});
+  }
+
   .layer {
     &.bg-layer {
       .half {
@@ -15,7 +21,7 @@
           }
 
           .fill-parent.imgfill {
-            background-image:  url('assets/images/textures/texture-stitch-white.png');
+            background-image:  url(#{$pattern});
             background-size:cover;
           }
         }

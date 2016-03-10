@@ -85,7 +85,7 @@ $posterWidth: 84vw;
 
   }// .poster-pattern
 
-  &:nth-child(odd) {
+  &:nth-child(even) {
     .poster-pattern {
       &.first {
         top: 20%;
@@ -99,7 +99,7 @@ $posterWidth: 84vw;
     }
   }
 
-  &:nth-child(even) {
+  &:nth-child(odd) {
     .poster-pattern {
       &.first {
         top: 20%;

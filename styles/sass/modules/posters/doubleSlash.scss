@@ -1,5 +1,11 @@
 .poster.doubleSlash {
 
+  $pattern: 'assets/images/textures/texture2.png';
+
+  .poster-pattern {
+    background-image: url(#{$pattern});
+  }
+
   .layer {
     &.bg-layer {
       .half {
@@ -11,7 +17,7 @@
             //height: 95%;
             top: -4%;
             left: -2%;
-            background-image:  url('assets/images/textures/texture2.png');
+            background-image:  url(#{$pattern});
             background-size:cover;
             opacity: .5;
           }// before
