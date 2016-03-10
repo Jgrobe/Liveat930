@@ -1,4 +1,4 @@
-<div class="video{.repeated section categories} {@|slugify}{.end}">
+<div id="{id}" class="video{.repeated section categories} {@|slugify}{.end}">
     <div class="image">
         <div class="fill-parent imgfill thumb" style="background-image:url('{assetUrl}');"></div>
         <!--<div class="fill-parent imgfill hover-thumb" style="background-image:url('{assetUrl}');"></div>-->
