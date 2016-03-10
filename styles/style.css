@@ -2889,7 +2889,7 @@ div.mce_inline_error {
   position: fixed;
   z-index: 8;
   top: 5vw;
-  right: 15vw;
+  right: calc(~"50% - 50px");
   cursor: pointer;
   visibility: hidden;
   opacity: 0;
