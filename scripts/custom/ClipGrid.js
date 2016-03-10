@@ -138,30 +138,35 @@ var ClipGrid = function($container, options) {
         CG.$object.container.isotope({
             filter: CG.currentFilter
         });
+
+        // -------- THIS IS A DIRTY FUCKIN FIX FOR ISOTOPE NEEDING A SECOND LAYOUT() IN ORDER TO SIZE THE GRID CORRECTLY
         setTimeout(function() {
             console.log('reset timeout');
             CG.layout();
+
+
+            // capture new grid height
+            var newGridHeight = CG.$object.container.height();
+            //console.log('::::addItems init', oldGridHeight, newGridHeight);
+
+            var inTL = new TimelineMax({onComplete:function() {
+                CG.updateCTA();
+                CG.isFilterInProgress = false;
+            }});
+            // tween grid height old to new
+            //inTL.fromTo(CG.$object.container, CG.options.duration, {height:oldGridHeight}, {height:newGridHeight, ease:Expo.easeInOut});
+
+            // animate items in
+            if( _.isFunction(CG.options.filterIn) ) {
+                // animate items in
+                //console.log('animate items in');
+                //inTL.add( CG.options.filterIn(CG), '-='+(CG.options.duration *.5) );
+            } else {
+                CG.isFilterInProgress = false;
+            }// endif
+
         }, 200);
 
-        // capture new grid height
-        var newGridHeight = CG.$object.container.height();
-        //console.log('::::addItems init', oldGridHeight, newGridHeight);
-
-        var inTL = new TimelineMax({onComplete:function() {
-            CG.updateCTA();
-            CG.isFilterInProgress = false;
-        }});
-        // tween grid height old to new
-        //inTL.fromTo(CG.$object.container, CG.options.duration, {height:oldGridHeight}, {height:newGridHeight, ease:Expo.easeInOut});
-
-        // animate items in
-        if( _.isFunction(CG.options.filterIn) ) {
-            // animate items in
-            //console.log('animate items in');
-            //inTL.add( CG.options.filterIn(CG), '-='+(CG.options.duration *.5) );
-        } else {
-            CG.isFilterInProgress = false;
-        }// endif
     };// addItems
 
     CG.layout = function() {
