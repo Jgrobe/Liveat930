@@ -414,21 +414,28 @@ function cta_hovers() {
     var duration = .2;
     jQuery(ctaSelector).on('mouseenter', function() {
         if(is_mobile()) return false;
-        var $hovered = jQuery(this).find('.hover-cta');
+        var $hovered = jQuery(this);
+        if(!$hovered.get(0).isHovered) return false;
+        $hovered.get(0).isHovered = true;
+
+        var $hoverlay = $hovered.find('.hover-cta');
 
         //if(SQSP.vars.ctaHoverTimer) clearTimeout(SQSP.vars.ctaHoverTimer);
 
         //SQSP.vars.ctaHoverTimer = setTimeout(function(){
-            TweenMax.to($hovered, duration, {top:0, ease:Expo.easeOut});
+            TweenMax.to($hoverlay, duration, {top:0, ease:Expo.easeOut});
         //}, 80);
     });
     jQuery(ctaSelector).on('mouseleave', function() {
         //if(SQSP.vars.ctaHoverTimer) clearTimeout(SQSP.vars.ctaHoverTimer);
         if(is_mobile()) return false;
 
-        var $unhovered = jQuery(this).find('.hover-cta');
+        var $unhovered = jQuery(this);
+        var $hoverlay = $unhovered.find('.hover-cta');
         //console.log('mouse leaving cta');
-        TweenMax.to($unhovered, duration, {width:0, ease:Expo.easeOut, clearProps:'all'});
+        TweenMax.to($hoverlay, duration, {width:0, ease:Expo.easeOut, clearProps:'all',onComplete:function() {
+            $unhovered.get(0).isHovered = false;
+        }});
     });
 }
 
