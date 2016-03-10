@@ -38,15 +38,15 @@ function init_sqsp() {
     cta_hovers();
 
     // hovering .video must trigger its cta-container too
-    var $clipItems = jQuery('div.video');// div is necessary b/c sqsp attaches class 'video' to html !!!!! wtf man
+    var $clipItems = jQuery('div.video');// div is necessary b/c sqsp attaches class 'video' to html ! wtf man
     //console.log('mofo clipitems',$clipItems);
     $clipItems.on('mouseenter', function(e) {
-        //console.log('.video mouseenter', e);
-        jQuery(e.target).find('.cta-container').mouseenter();
+        console.log('.video mouseenter', e);
+        jQuery(this).find('.cta-container').mouseenter();
     });
     $clipItems.on('mouseleave', function(e) {
-        //console.log('.video mouseleave', e);
-        jQuery(e.target).find('.cta-container').mouseleave();
+        console.log('.video mouseleave', e);
+        jQuery(this).find('.cta-container').mouseleave();
     });
     $clipItems.click(function(e) {
         window.location = jQuery(this).find('.cta-container').attr('href');
