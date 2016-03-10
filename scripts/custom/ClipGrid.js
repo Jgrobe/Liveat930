@@ -117,7 +117,7 @@ var ClipGrid = function($container, options) {
     };// filter()
 
     CG.addItems = function(filter) {
-        var oldGridHeight = CG.$object.container.outerHeight();
+        var oldGridHeight = CG.$object.container.height();
         CG.$object.currentItemsAll = CG.$object.container.find( filter );
         CG.$object.currentItems = CG.$object.container.find( filter+':lt('+ CG.currentCount +')' );
 //console.log('>>>>>>> items to filter', CG.currentCount, CG.$object.currentItems);
@@ -133,7 +133,7 @@ var ClipGrid = function($container, options) {
         }});
         // tween grid height
         CG.layout();
-        var newGridHeight = CG.$object.container.outerHeight();
+        var newGridHeight = CG.$object.container.height();
         console.log('------ grid resize', oldGridHeight, newGridHeight);
         inTL.fromTo(CG.$object.container, CG.options.duration, {height:oldGridHeight}, {height:newGridHeight, ease:Expo.easeInOut});
 
