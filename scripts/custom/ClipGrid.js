@@ -29,7 +29,7 @@ var ClipGrid = function($container, options) {
             return tl;
         },
         filterIn : function() {
-            var tl = new TimelineMax({onComplete:function(){CG.isFilterInProgress = false;}});
+            var tl = new TimelineMax();
             tl.staggerTo(CG.$object.currentItems, CG.options.staggerDuration, {autoAlpha:1}, CG.options.staggerOffset);
             return tl;
         }
@@ -72,6 +72,7 @@ var ClipGrid = function($container, options) {
             itemSelector : CG.options.itemSelector,
             transitionDuration: 0,// use custom transitions via functions defined in options
             layoutMode : 'masonry',
+            containerStyle : null,
             masonry : {
                 gutter: CG.options.gutterSizerSelector
             }
@@ -104,7 +105,7 @@ var ClipGrid = function($container, options) {
         // animate items out
         if(_.isFunction(CG.options.filterOut)) {
             //console.log('animate items out');
-            filterTL.add( CG.options.filterOut() );// must fire fn() to return timeline!
+            filterTL.add( CG.options.filterOut() );// must fire fn() to get timeline!
         }// endif
 
         // do actual filtering
@@ -118,6 +119,7 @@ var ClipGrid = function($container, options) {
 
     CG.addItems = function(filter) {
         var oldGridHeight = CG.$object.container.height();
+        CG.$object.container.height('auto');
         CG.$object.currentItemsAll = CG.$object.container.find( filter );
         CG.$object.currentItems = CG.$object.container.find( filter+':lt('+ CG.currentCount +')' );
 //console.log('>>>>>>> items to filter', CG.currentCount, CG.$object.currentItems);
@@ -130,6 +132,7 @@ var ClipGrid = function($container, options) {
 
         var inTL = new TimelineMax({onComplete:function() {
             CG.updateCTA();
+            CG.isFilterInProgress = false;
         }});
         // tween grid height
         var newGridHeight = CG.$object.container.height();
