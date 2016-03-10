@@ -1,9 +1,9 @@
 /*
-* Dependencies:
-* jQuery
-* isotope
-* lodash
-* */
+ * Dependencies:
+ * jQuery
+ * isotope
+ * lodash
+ * */
 var ClipGrid = function($container, options) {
     if(typeof $container === 'undefined') return;
     if(typeof options === 'undefined') options = {};
@@ -22,21 +22,15 @@ var ClipGrid = function($container, options) {
         staggerOffset:.08,
         payload : 3,
         loadMoreCTA : false,
-        filterOut : function(instance, functions) {
-            if(typeof functions === 'undefined') functions = {};
-            var tl = new TimelineMax({onComplete:function(){
-                if(_.isFunction(functions.onComplete)) functions.onComplete();
-                console.log('::::: filterOut complete', tl.duration());
-            }});
+        filterOut : function() {
+            var tl = new TimelineMax({onComplete:function(){console.log('filterOut complete', tl.duration());}});
             //console.log('stagger animate out items : ', CG.$object.currentItems);
-            tl.staggerTo(instance.$object.currentItems, instance.options.staggerDuration, {autoAlpha:0, onComplete:function(){
-                //console.log('item staggered');
-            }}, instance.options.staggerOffset);
+            tl.staggerTo(CG.$object.currentItems, CG.options.staggerDuration, {autoAlpha:0, onComplete:function(){console.log('item staggered');}}, CG.options.staggerOffset);
             return tl;
         },
-        filterIn : function(instance) {
-            var tl = new TimelineMax();
-            tl.staggerTo(instance.$object.currentItems, instance.options.staggerDuration, {autoAlpha:1}, instance.options.staggerOffset);
+        filterIn : function() {
+            var tl = new TimelineMax({onComplete:function(){CG.isFilterInProgress = false;}});
+            tl.staggerTo(CG.$object.currentItems, CG.options.staggerDuration, {autoAlpha:1}, CG.options.staggerOffset);
             return tl;
         }
     }, options);
@@ -78,20 +72,12 @@ var ClipGrid = function($container, options) {
             itemSelector : CG.options.itemSelector,
             transitionDuration: 0,// use custom transitions via functions defined in options
             layoutMode : 'masonry',
-            //containerStyle : null,
             masonry : {
                 gutter: CG.options.gutterSizerSelector
             }
         });
 
-        CG.$object.container.on('arrangeComplete', function(){
-            console.log('------ grid arrangeComplete', CG.$object.container.height());
-        });
-        CG.$object.container.on('layoutComplete', function(){
-            console.log('------ grid layoutComplete', CG.$object.container.height());
-        });
-
-        //console.log('init grid w/filter', CG.options.filter, (CG.options.filter ? CG.options.filter : CG.options.itemSelector) );
+        console.log('init grid w/filter', CG.options.filter, (CG.options.filter ? CG.options.filter : CG.options.itemSelector) );
         CG.filter( CG.options.filter ? CG.options.filter : CG.options.itemSelector );
 
         if(_.isFunction(CG.options.onIinit)) CG.options.onIinit();
@@ -111,7 +97,7 @@ var ClipGrid = function($container, options) {
         // animate items out
         if(_.isFunction(CG.options.filterOut)) {
             //console.log('animate items out');
-            //filterTL.add( CG.options.filterOut(CG) );// must fire fn() to get timeline!
+            filterTL.add( CG.options.filterOut() );// must fire fn() to return timeline!
         }// endif
 
         // do actual filtering
@@ -124,51 +110,31 @@ var ClipGrid = function($container, options) {
     };// filter()
 
     CG.addItems = function(filter) {
-        // capture current grid height
-        var oldGridHeight = CG.$object.container.height();
-        // filter items
+        var oldGridHeight = CG.$object.container.outerHeight();
         CG.$object.currentItemsAll = CG.$object.container.find( filter );
         CG.$object.currentItems = CG.$object.container.find( filter+':lt('+ CG.currentCount +')' );
 //console.log('>>>>>>> items to filter', CG.currentCount, CG.$object.currentItems);
         //if( _.isFunction(CG.options.filterIn) ) TweenMax.set( CG.$object.currentItems, {autoAlpha: 0} );
-        // set size classes on new items
         CG.setSizes( CG.$object.currentItems );
 
-        // let isotope layout the new items
         CG.$object.container.isotope({
             filter: CG.currentFilter
         });
 
-        // -------- THIS IS A DIRTY FUCKIN FIX FOR ISOTOPE NEEDING A SECOND LAYOUT() IN ORDER TO SIZE THE GRID CORRECTLY
-        // reset gridHeight to oldHeihgt after first layout() to prevent flickering
-        CG.$object.container.height(oldGridHeight);
-        // need a delay for second layout()
-        setTimeout(function() {
-            console.log('reset timeout');
-            CG.layout();
+        var inTL = new TimelineMax({onComplete:function() {
+            CG.updateCTA();
+        }});
+        // tween grid height
+        var newGridHeight = CG.$object.container.outerHeight();
+        inTL.fromTo(CG.$object.container, CG.options.duration, {height:oldGridHeight}, {height:newGridHeight, ease:Expo.easeInOut});
 
-            // capture new grid height
-            var newGridHeight = CG.$object.container.height();
-            //console.log('::::addItems init', oldGridHeight, newGridHeight);
-
-            var inTL = new TimelineMax({onComplete:function() {
-                CG.updateCTA();
-                CG.isFilterInProgress = false;
-            }});
-            // tween grid height old to new
-            inTL.fromTo(CG.$object.container, CG.options.duration, {height:oldGridHeight}, {height:newGridHeight, ease:Expo.easeInOut});
-
+        if( _.isFunction(CG.options.filterIn) ) {
             // animate items in
-            if( _.isFunction(CG.options.filterIn) ) {
-                // animate items in
-                //console.log('animate items in');
-                inTL.add( CG.options.filterIn(CG), '-='+(CG.options.duration *.5) );
-            } else {
-                CG.isFilterInProgress = false;
-            }// endif
-
-        }, 200);
-
+            //console.log('animate items in');
+            inTL.add( CG.options.filterIn(), '-='+(CG.options.duration *.5) );
+        } else {
+            CG.isFilterInProgress = false;
+        }// endif
     };// addItems
 
     CG.layout = function() {

@@ -111,8 +111,6 @@ $gridGutter: 5%;
     //margin-top: 4vw;
     cursor: pointer;
     //overflow: hidden;
-    @include prefixed(filter, grayscale(100%));
-    @include prefixed(transition, $shortTrans);
 
     &.small, &.medium, &.large { margin-top: 4vw; }
 
@@ -149,6 +147,12 @@ $gridGutter: 5%;
       position: relative;
       background-size: cover;
       background-position: center center;
+
+      .thumb { @include prefixed(filter, grayscale(100%)); }
+      .hover-thumb {
+        width: 0%;
+        @include prefixed(transition, $shortTrans);
+        @include prefixed(filter, grayscale(70%)); }
     }
 
     .cta-container {
@@ -205,7 +209,10 @@ $gridGutter: 5%;
     }// .flex-cols
 
     &:hover {
-      @include prefixed(filter, grayscale(70%));
+
+      .image {
+        .hover-thumb { width: 100%;}
+      }
     }
   }// .video
 

@@ -4071,17 +4071,7 @@ a.episodes-landing-cta {
     width: 94%;
     height: 103%; }
   .video-gallery .video {
-    cursor: pointer;
-    -webkit-filter: grayscale(100%);
-    -moz-filter: grayscale(100%);
-    -ms-filter: grayscale(100%);
-    -o-filter: grayscale(100%);
-    filter: grayscale(100%);
-    -webkit-transition: 0.3s;
-    -moz-transition: 0.3s;
-    -ms-transition: 0.3s;
-    -o-transition: 0.3s;
-    transition: 0.3s; }
+    cursor: pointer; }
     .video-gallery .video.small, .video-gallery .video.medium, .video-gallery .video.large {
       margin-top: 4vw; }
     .video-gallery .video.small {
@@ -4107,6 +4097,24 @@ a.episodes-landing-cta {
       position: relative;
       background-size: cover;
       background-position: center center; }
+      .video-gallery .video .image .thumb {
+        -webkit-filter: grayscale(100%);
+        -moz-filter: grayscale(100%);
+        -ms-filter: grayscale(100%);
+        -o-filter: grayscale(100%);
+        filter: grayscale(100%); }
+      .video-gallery .video .image .hover-thumb {
+        width: 0%;
+        -webkit-transition: 0.3s;
+        -moz-transition: 0.3s;
+        -ms-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s;
+        -webkit-filter: grayscale(70%);
+        -moz-filter: grayscale(70%);
+        -ms-filter: grayscale(70%);
+        -o-filter: grayscale(70%);
+        filter: grayscale(70%); }
     .video-gallery .video .cta-container.play {
       position: absolute;
       top: 100%;
@@ -4165,12 +4173,8 @@ a.episodes-landing-cta {
         -webkit-grow: 1;
         -ms-grow: 1;
         grow: 1; }
-    .video-gallery .video:hover {
-      -webkit-filter: grayscale(70%);
-      -moz-filter: grayscale(70%);
-      -ms-filter: grayscale(70%);
-      -o-filter: grayscale(70%);
-      filter: grayscale(70%); }
+    .video-gallery .video:hover .image .hover-thumb {
+      width: 100%; }
   .video-gallery .cta-container {
     position: absolute;
     top: 100%;
