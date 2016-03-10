@@ -40,7 +40,7 @@
 
         </div><!-- .video-gallery-videos -->
 
-        <div class="centered">
+        <div class="centered top-spaced">
             <div class="cta-dummy" data-label="Load more clips" data-icon="icon-load" data-class="load-clips upsized-icon load-more-cta">{@|apply svg-icon-load.block}</div>
         </div><!-- .centered -->
 

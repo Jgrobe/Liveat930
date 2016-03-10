@@ -110,9 +110,13 @@ $gridGutter: 5%;
   .video {
     //margin-top: 4vw;
     cursor: pointer;
+    display: none;// needed so invisible items take no space in grid
     //overflow: hidden;
 
-    &.small, &.medium, &.large { margin-top: 4vw; }
+    &.small, &.medium, &.large {
+      margin-top: 4vw;
+      display: block;
+    }// .small, .medium, .large
 
     &.small {
       width:30%;// 21.66vw;

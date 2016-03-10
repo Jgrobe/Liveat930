@@ -4071,9 +4071,11 @@ a.episodes-landing-cta {
     width: 94%;
     height: 103%; }
   .video-gallery .video {
-    cursor: pointer; }
+    cursor: pointer;
+    display: none; }
     .video-gallery .video.small, .video-gallery .video.medium, .video-gallery .video.large {
-      margin-top: 4vw; }
+      margin-top: 4vw;
+      display: block; }
     .video-gallery .video.small {
       width: 30%; }
       .video-gallery .video.small .image {
