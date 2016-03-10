@@ -408,15 +408,21 @@ function toggleBurger(open) {
 }// toggleBurger()
 
 function cta_hovers() {
+    SQSP.vars.ctaHoverTimer = false;
     var ctaSelector = '.cta-container';
     var duration = .2;
     jQuery(ctaSelector).on('mouseenter', function() {
         if(is_mobile()) return false;
-
         var $hovered = jQuery(this).find('.hover-cta');
-        TweenMax.to($hovered, duration, {top:0, ease:Expo.easeOut});
+
+        if(SQSP.vars.ctaHoverTimer) clearTimeout(SQSP.vars.ctaHoverTimer);
+
+        SQSP.vars.ctaHoverTimer = setTimeout(function(){
+            TweenMax.to($hovered, duration, {top:0, ease:Expo.easeOut});
+        }, 300);
     });
     jQuery(ctaSelector).on('mouseleave', function() {
+        if(SQSP.vars.ctaHoverTimer) clearTimeout(SQSP.vars.ctaHoverTimer);
         if(is_mobile()) return false;
 
         var $unhovered = jQuery(this).find('.hover-cta');
