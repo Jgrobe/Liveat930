@@ -23,12 +23,13 @@
                         <h1 class="l-headline">Episode No.{customContent.episode-number}</h1>
                     </div>
                     <div class="landing-extra prllx-stndrd">
-                        <p id="lineup_preview" data-artists="{customContent.featured-artists}"></p>
-                        <span>with</span>
+                        <p id="lineup_preview" data-artists="{customContent.featured-artists}">
+                            <span>with</span>
+                        </p>
                         <script>
                             var $lineupPreview = jQuery('#lineup_preview');
                             var previewwartists = $lineupPreview.data('artists').split(',').slice(0,4).join(' / ');
-                            $lineupPreview.html(previewwartists+' & more')
+                            $lineupPreview.append(previewwartists+' & more')
                         </script>
                     </div><!-- .episodes-landing-sub -->
 
