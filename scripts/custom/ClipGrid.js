@@ -29,7 +29,9 @@ var ClipGrid = function($container, options) {
                 console.log('::::: filterOut complete', tl.duration());
             }});
             //console.log('stagger animate out items : ', CG.$object.currentItems);
-            tl.staggerTo(instance.$object.currentItems, instance.options.staggerDuration, {autoAlpha:0, onComplete:function(){console.log('item staggered');}}, instance.options.staggerOffset);
+            tl.staggerTo(instance.$object.currentItems, instance.options.staggerDuration, {autoAlpha:0, onComplete:function(){
+                //console.log('item staggered');
+            }}, instance.options.staggerOffset);
             return tl;
         },
         filterIn : function(instance) {
@@ -89,7 +91,7 @@ var ClipGrid = function($container, options) {
             console.log('------ grid layoutComplete', CG.$object.container.height());
         });
 
-        console.log('init grid w/filter', CG.options.filter, (CG.options.filter ? CG.options.filter : CG.options.itemSelector) );
+        //console.log('init grid w/filter', CG.options.filter, (CG.options.filter ? CG.options.filter : CG.options.itemSelector) );
         CG.filter( CG.options.filter ? CG.options.filter : CG.options.itemSelector );
 
         if(_.isFunction(CG.options.onIinit)) CG.options.onIinit();
@@ -136,11 +138,14 @@ var ClipGrid = function($container, options) {
         CG.$object.container.isotope({
             filter: CG.currentFilter
         });
-        CG.$object.container.isotope();
+        setTimeOut(function() {
+            console.log('reset timeout');
+            CG.layout();
+        }, 2000);
 
         // capture new grid height
         var newGridHeight = CG.$object.container.height();
-        console.log('::::addItems init', oldGridHeight, newGridHeight);
+        //console.log('::::addItems init', oldGridHeight, newGridHeight);
 
         var inTL = new TimelineMax({onComplete:function() {
             CG.updateCTA();
