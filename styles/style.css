@@ -4276,6 +4276,9 @@ a.episodes-landing-cta {
   -ms-direction: row;
   direction: row; }
 
+.video-gallery-videos {
+  position: relative; }
+
 .clip-landing {
   width: 100vw;
   height: 100vh;

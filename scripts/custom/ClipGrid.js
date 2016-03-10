@@ -72,7 +72,7 @@ var ClipGrid = function($container, options) {
             itemSelector : CG.options.itemSelector,
             transitionDuration: 0,// use custom transitions via functions defined in options
             layoutMode : 'masonry',
-            containerStyle : null,
+            containerStyle : {position:'relative'},
             masonry : {
                 gutter: CG.options.gutterSizerSelector
             }
