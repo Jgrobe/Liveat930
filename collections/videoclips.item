@@ -1,4 +1,4 @@
-<section class="clip-landing" style="background-image:url('{item.assetUrl}');">
+<section class="clip-landing" style="background-image:url('{item.customContent.hero-img.assetUrl}');">
 
     <div class="landing-container">
         <div class="landing-head">
