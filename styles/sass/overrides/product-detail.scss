@@ -38,11 +38,13 @@
 
     .variant-select-wrapper {
       select {
-        @include prefixed(appearance, none);
         font-size: 1.2vw;
-        padding: .5vw .7vw;
+        padding: .5vw 3vw .5vw .7vw;
+        border: 1px solid #ccc;// same gray as squarespace quantity field border
+        @include prefixed(outline, none);
+        @include prefixed(appearance, none);
 
-        &:active, &:visited {outline:none;}
+        &:active, &:visited {@include prefixed(outline, none);}
       }// select
     }// .variant-select-wrapper
 
@@ -71,7 +73,11 @@
 
   }// #product-details
 
-  #productGallery #productSlideshow .slide img {left: 0 !important;}
+  #productGallery #productSlideshow .slide {
+    z-index: auto !important;
+
+    img {left: 0 !important;}
+  }// #productGallery #productSlideshow .slide
 
   @include breakpoint(mobile) {
 
