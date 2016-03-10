@@ -18,7 +18,7 @@
                 {body}
                 {@|apply module-share-episode.block}
             </div><!-- .episodes-landing-sub -->
-            <div class="cta-dummy" data-label="Play full episode" data-icon="play" data-attributes="id=cta-play-episode,href=#">{@|apply svg-icon-play.block}</div>
+            <div class="cta-dummy" data-label="{.equal?:categories.0:"upcoming"}Play trailer{.or}Play full episode{.end}" data-icon="play" data-attributes="id=cta-play-episode,href=#">{@|apply svg-icon-play.block}</div>
 
         </div><!-- .landing-container -->
 
@@ -166,8 +166,10 @@
     </div><!-- .site-content -->
 
 
+    {.end}<!-- .end.equal -->
+
     <div id="episode-player" class="video-overlay">
-        <video src="{item.customContent.full-episode}" data-setup="{}" controls class="video-js fill-parent"></video>
+        <video src="{.equal?:categories.0:"upcoming"}{customContent.upcoming-trailer}{.or}{customContent.full-episode}{.end}" data-setup="{}" controls class="video-js fill-parent"></video>
 
         <div class="close-overlay">
             <p>Close</p>
@@ -175,6 +177,5 @@
         </div><!-- .close-overlay -->
     </div><!-- #episode-player -->
 
-    {.end}<!-- .end.equal -->
 {.end}
 <squarespace:script src="custom/page_episode.js" />
