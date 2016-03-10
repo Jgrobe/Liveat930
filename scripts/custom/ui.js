@@ -41,7 +41,8 @@ function init_sqsp() {
     var $clipItems = jQuery('div.video');// div is necessary b/c sqsp attaches class 'video' to html ! wtf man
     //console.log('mofo clipitems',$clipItems);
     $clipItems.on('mouseenter', function(e) {
-        console.log('.video mouseenter', e);
+        var $hovered = jQuery(this);
+        console.log('.video mouseenter', $hovered, e);
         jQuery(e.target).find('.cta-container').mouseenter();
     });
     $clipItems.on('mouseleave', function(e) {
