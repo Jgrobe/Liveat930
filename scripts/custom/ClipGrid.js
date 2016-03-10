@@ -111,26 +111,7 @@ var ClipGrid = function($container, options) {
         filterTL.add(function() {
 
             CG.addItems(filter);
-            //CG.$object.currentItems = CG.$object.container.find( filter+':lt('+ CG.currentCount +')' );
-            //
-            //if( _.isFunction(CG.options.filterIn) ) TweenMax.set( CG.$object.currentItems, {autoAlpha: 0} );
-            //CG.setSizes( CG.$object.currentItems );
-            //CG.$object.container.isotope({
-            //    filter: CG.currentFilter
-            //});
-            //
-            //var inTL = new TimelineMax();
-            //// tween grid height
-            //var newGridHeight = CG.$object.container.outerHeight();
-            //inTL.fromTo(CG.$object.container, CG.options.duration, {height:oldGridHeight}, {height:newGridHeight, ease:Expo.easeInOut});
-            //
-            //if( _.isFunction(CG.options.filterIn) ) {
-            //    // animate items in
-            //    console.log('animate items in');
-            //    inTL.add( CG.options.filterIn(), '-='+(CG.options.duration *.5) );
-            //} else {
-            //    CG.isFilterInProgress = false;
-            //}// endif
+
         });
 
     };// filter()
@@ -148,6 +129,7 @@ var ClipGrid = function($container, options) {
         });
 
         var inTL = new TimelineMax({onComplete:function() {
+            CG.$object.container.layout();
             CG.updateCTA();
         }});
         // tween grid height
