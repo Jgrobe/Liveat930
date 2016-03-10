@@ -136,6 +136,7 @@ var ClipGrid = function($container, options) {
         CG.$object.container.isotope({
             filter: CG.currentFilter
         });
+        CG.$object.container.isotope();
 
         // capture new grid height
         var newGridHeight = CG.$object.container.height();
