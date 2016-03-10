@@ -1423,7 +1423,8 @@ div.mce_inline_error {
   .poster .poster-pattern {
     position: absolute;
     width: 5%;
-    height: 40%; }
+    height: 40%;
+    mix-blend-mode: color-burn; }
   .poster:nth-child(even) .poster-pattern.first {
     top: 20%;
     left: -5%; }

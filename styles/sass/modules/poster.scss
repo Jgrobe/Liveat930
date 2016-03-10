@@ -81,6 +81,7 @@ $posterWidth: 84vw;
     position: absolute;
     width: 5%;
     height: 40%;
+    mix-blend-mode: color-burn;
     @extend .imgfill;
 
   }// .poster-pattern
