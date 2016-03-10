@@ -14,8 +14,8 @@
   background-attachment: fixed;
 
   p {
-    font-size: get_relative_units(34);
-    line-height: get_relative_units(48);
+    font-size: get_relative_units(14);//34
+    line-height: get_relative_units(24);//48
     letter-spacing: .06em;
   }
 
@@ -39,7 +39,7 @@
   }
 
   .demand {
-    font-size: get_relative_units(144);
+    font-size: get_relative_units(72);// 144
     letter-spacing: .08em;
     margin: 0 2vw 0 0;
   }
@@ -59,8 +59,10 @@
     }// .input-wrapper
 
     input[type=email] {
-      width: 15vw;
+      width: get_relative_units(440);//15vw;
       background: white;
+      font-size: get_relative_units(10);
+      letter-spacing: .1em;
     }
 
     .submit-email {
@@ -153,8 +155,8 @@
 .hosted-by-logo {
   background: url("assets/images/hosted-by.svg") no-repeat center;
   background-size: contain;
-  width: 80%;
-  height: 2.4vw;
+  width: get_relative_units(600);//80%;
+  height: get_relative_units(55);//2.4vw;
   margin: 0 auto;
 
   @include breakpoint(mobile) {
@@ -163,7 +165,7 @@
 }// .hosted-by-logo
 
 .footer-hosted-by {
-  padding: 15vh 0 10vh 0;
+  padding: get_relative_units(300) 0 get_relative_units(200) 0;
 
   .hosted-by-p {
 //    width: 45vw;

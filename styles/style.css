@@ -719,8 +719,8 @@ input {
   background-size: cover;
   background-attachment: fixed; }
   .footer p {
-    font-size: 1.18056vw;
-    line-height: 1.66667vw;
+    font-size: 0.48611vw;
+    line-height: 0.83333vw;
     letter-spacing: .06em; }
   @media only screen and (max-width: 750px) {
     .footer p {
@@ -747,7 +747,7 @@ input {
     -o-align-items: center;
     align-items: center; }
   .footer-newsletter .demand {
-    font-size: 5vw;
+    font-size: 2.5vw;
     letter-spacing: .08em;
     margin: 0 2vw 0 0; }
   .footer-newsletter form {
@@ -756,8 +756,10 @@ input {
     .footer-newsletter form .input-wrapper {
       overflow: hidden; }
     .footer-newsletter form input[type=email] {
-      width: 15vw;
-      background: white; }
+      width: 15.27778vw;
+      background: white;
+      font-size: 0.34722vw;
+      letter-spacing: .1em; }
     .footer-newsletter form .submit-email {
       position: absolute;
       height: 100%;
@@ -827,15 +829,15 @@ input {
 .hosted-by-logo {
   background: url("assets/images/hosted-by.svg") no-repeat center;
   background-size: contain;
-  width: 80%;
-  height: 2.4vw;
+  width: 20.83333vw;
+  height: 1.90972vw;
   margin: 0 auto; }
   @media only screen and (max-width: 750px) {
     .hosted-by-logo {
       height: 5vw; } }
 
 .footer-hosted-by {
-  padding: 15vh 0 10vh 0; }
+  padding: 10.41667vw 0 6.94444vw 0; }
   .footer-hosted-by .hosted-by-p {
     margin: 3vh auto 4vh; }
   @media only screen and (max-width: 750px) {
