@@ -153,7 +153,7 @@
             <entry file="file://$PROJECT_DIR$/styles/sass/parts/header.scss">
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.31282586">
-                  <caret line="59" column="49" selection-start-line="59" selection-start-column="49" selection-end-line="59" selection-end-column="49" />
+                  <caret line="59" column="47" selection-start-line="59" selection-start-column="47" selection-end-line="59" selection-end-column="47" />
                   <folding />
                 </state>
               </provider>
@@ -1173,7 +1173,7 @@
     <entry file="file://$PROJECT_DIR$/styles/sass/parts/header.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.31282586">
-          <caret line="59" column="49" selection-start-line="59" selection-start-column="49" selection-end-line="59" selection-end-column="49" />
+          <caret line="59" column="47" selection-start-line="59" selection-start-column="47" selection-end-line="59" selection-end-column="47" />
           <folding />
         </state>
       </provider>
