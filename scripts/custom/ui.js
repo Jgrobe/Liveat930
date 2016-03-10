@@ -43,7 +43,7 @@ function init_sqsp() {
     $clipItems.on('mouseenter', function(e) {
         var $hovered = jQuery(this);
         console.log('.video mouseenter', $hovered, e);
-        jQuery(e.target).find('.cta-container').mouseenter();
+        $hovered.find('.cta-container').mouseenter();
     });
     $clipItems.on('mouseleave', function(e) {
         //console.log('.video mouseleave', e);
