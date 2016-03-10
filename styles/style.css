@@ -491,11 +491,11 @@ input {
         width: 0;
         height: 2px;
         background: white;
-        -webkit-transition: width 0.4s cubic-bezier(0.19, 1, 0.22, 1);
-        -moz-transition: width 0.4s cubic-bezier(0.19, 1, 0.22, 1);
-        -ms-transition: width 0.4s cubic-bezier(0.19, 1, 0.22, 1);
-        -o-transition: width 0.4s cubic-bezier(0.19, 1, 0.22, 1);
-        transition: width 0.4s cubic-bezier(0.19, 1, 0.22, 1); }
+        -webkit-transition: width 0.2s cubic-bezier(0.19, 1, 0.22, 1);
+        -moz-transition: width 0.2s cubic-bezier(0.19, 1, 0.22, 1);
+        -ms-transition: width 0.2s cubic-bezier(0.19, 1, 0.22, 1);
+        -o-transition: width 0.2s cubic-bezier(0.19, 1, 0.22, 1);
+        transition: width 0.2s cubic-bezier(0.19, 1, 0.22, 1); }
       .header .navigation .menu-item:last-child {
         margin-right: 0; }
         .header .navigation .menu-item:last-child:after {
@@ -2347,11 +2347,11 @@ div.mce_inline_error {
         height: 2px;
         background: white;
         z-index: -1;
-        -webkit-transition: width 0.4s cubic-bezier(0.19, 1, 0.22, 1);
-        -moz-transition: width 0.4s cubic-bezier(0.19, 1, 0.22, 1);
-        -ms-transition: width 0.4s cubic-bezier(0.19, 1, 0.22, 1);
-        -o-transition: width 0.4s cubic-bezier(0.19, 1, 0.22, 1);
-        transition: width 0.4s cubic-bezier(0.19, 1, 0.22, 1); }
+        -webkit-transition: width 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+        -moz-transition: width 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+        -ms-transition: width 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+        -o-transition: width 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+        transition: width 0.3s cubic-bezier(0.19, 1, 0.22, 1); }
     .nav-overlay .menu-item .description {
       white-space: normal;
       font-family: "Gotham A", "Gotham B";

@@ -57,7 +57,7 @@
         width: 0;
         height: 2px;
         background: white;
-        @include prefixed(transition, (width .4s $customExpoOut));
+        @include prefixed(transition, (width .2s $customExpoOut));
       }
 
       &:last-child {

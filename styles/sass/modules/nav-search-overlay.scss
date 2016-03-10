@@ -106,7 +106,7 @@ $rightColMargin: 10vw;
         background: white;
         z-index: -1;
 
-        @include prefixed(transition, (width .4s #{$customExpoOut}));
+        @include prefixed(transition, (width .3s #{$customExpoOut}));
       }// before
     }
 
