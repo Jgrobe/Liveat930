@@ -416,7 +416,7 @@ function cta_hovers() {
         if(is_mobile()) return false;
         console.log('cta hover()');
         var $hovered = jQuery(this);
-        if(!$hovered.get(0).isHovered) return false;
+        if($hovered.get(0).isHovered) return false;
         $hovered.get(0).isHovered = true;
 
         console.log('cta hover()', $hovered);
