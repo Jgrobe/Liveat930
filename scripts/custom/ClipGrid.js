@@ -111,7 +111,7 @@ var ClipGrid = function($container, options) {
         // animate items out
         if(_.isFunction(CG.options.filterOut)) {
             //console.log('animate items out');
-            filterTL.add( CG.options.filterOut(CG) );// must fire fn() to get timeline!
+            //filterTL.add( CG.options.filterOut(CG) );// must fire fn() to get timeline!
         }// endif
 
         // do actual filtering
