@@ -41,7 +41,9 @@
         font-size: 1.2vw;
         padding: .5vw 3vw .5vw .7vw;
         border: 1px solid #ccc;// same gray as squarespace quantity field border
-        background: url('assets/images/small-arrow-down.svg');
+        background: url('assets/images/small-arrow-down.svg') no-repeat;
+        background-position: 90% center;
+        background-size: 10px;
         @include prefixed(outline, none);
         @include prefixed(appearance, none);
 
