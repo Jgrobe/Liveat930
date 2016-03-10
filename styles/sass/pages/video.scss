@@ -152,11 +152,15 @@ $gridGutter: 5%;
       background-size: cover;
       background-position: center center;
 
-      .thumb { @include prefixed(filter, grayscale(100%)); }
-      .hover-thumb {
-        @include autoAlpha(0);
+      .thumb {
+        @include prefixed(filter, grayscale(100%));
         @include prefixed(transition, $shortTrans);
-        @include prefixed(filter, grayscale(70%)); }
+      }
+      //.hover-thumb {
+      //  @include autoAlpha(0);
+      //  @include prefixed(transition, $shortTrans);
+      //  @include prefixed(filter, grayscale(70%));
+      //}
     }
 
     .cta-container {
@@ -215,7 +219,7 @@ $gridGutter: 5%;
     &:hover {
 
       .image {
-        .hover-thumb { @include autoAlpha(1);}
+        .thumb { @include prefixed(filter, grayscale(70%));}
       }
     }
   }// .video
