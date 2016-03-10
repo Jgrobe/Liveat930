@@ -106,7 +106,7 @@ $rightColMargin: 10vw;
         background: white;
         z-index: -1;
 
-        @include prefixed(transition, (width .4s cubic-bezier(0.19, 1, 0.22, 1)));
+        @include prefixed(transition, (width .4s #{$customExpoOut}));
       }// before
     }
 
