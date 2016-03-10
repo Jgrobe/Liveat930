@@ -361,14 +361,15 @@ $posterWidth: 84vw;
   }
 
   .hosted-info {
-    width: 50%;
+    width: 33%;
     margin: 0 auto;
     text-align: center;
-    font-size: 1.25vw;
-    line-height: 2.5vw;
-    text-transform: uppercase;
+    font-size: .85vw;//font-size: 1.25vw; // like .text-layer
+    line-height: 1.75vw;//2.5vw;
+    //text-transform: uppercase;
     overflow: hidden;
     max-height: 15vw;
+    padding-top: 3%;
     opacity:0;
     @include prefixed(transition, (opacity $shortTrans));
 
