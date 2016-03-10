@@ -435,7 +435,7 @@ function cta_hovers() {
         if(is_mobile()) return false;
 
         var $unhovered = jQuery(this);
-        if(!$hovered.get(0).isHovered) return false;
+        if(!$unhovered.get(0).isHovered) return false;
         $unhovered.get(0).isHovered = false;
         var $hoverlay = $unhovered.find('.hover-cta');
         //console.log('mouse leaving cta');
