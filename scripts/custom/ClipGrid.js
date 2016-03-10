@@ -77,6 +77,13 @@ var ClipGrid = function($container, options) {
             }
         });
 
+        CG.$object.container.on('arrangeComplete', function(){
+            console.log('------ grid arrangeComplete', CG.$object.container.height());
+        });
+        CG.$object.container.on('layoutComplete', function(){
+            console.log('------ grid layoutComplete', CG.$object.container.height());
+        });
+
         console.log('init grid w/filter', CG.options.filter, (CG.options.filter ? CG.options.filter : CG.options.itemSelector) );
         CG.filter( CG.options.filter ? CG.options.filter : CG.options.itemSelector );
 
@@ -145,6 +152,7 @@ var ClipGrid = function($container, options) {
         }});
         // tween grid height
         var newGridHeight = CG.$object.container.outerHeight();
+        console.log('------ grid resize', oldGridHeight, newGridHeight);
         //inTL.fromTo(CG.$object.container, CG.options.duration, {height:oldGridHeight}, {height:newGridHeight, ease:Expo.easeInOut});
 
         if( _.isFunction(CG.options.filterIn) ) {

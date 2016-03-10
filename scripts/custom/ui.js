@@ -39,13 +39,13 @@ function init_sqsp() {
 
     // hovering .video must trigger its cta-container too
     var $clipItems = jQuery('div.video');// div is necessary b/c sqsp attaches class 'video' to html !!!!! wtf man
-    console.log('mofo clipitems',$clipItems);
+    //console.log('mofo clipitems',$clipItems);
     $clipItems.on('mouseenter', function(e) {
-        console.log('.video mouseenter', e);
+        //console.log('.video mouseenter', e);
         jQuery(e.target).find('.cta-container').mouseenter();
     });
     $clipItems.on('mouseleave', function(e) {
-        console.log('.video mouseleave', e);
+        //console.log('.video mouseleave', e);
         jQuery(e.target).find('.cta-container').mouseleave();
     });
     $clipItems.click(function(e) {
@@ -79,7 +79,7 @@ function init_sqsp() {
         }// endif
     });
 
-    console.log('SQSP.vars.loopvids.length', SQSP.vars.loopvids.length);
+    //console.log('SQSP.vars.loopvids.length', SQSP.vars.loopvids.length);
     checkVideoloop();
 
 }// init_page()
@@ -234,13 +234,13 @@ function windowloaded() {
     };// search onSuccess()
 
     SQSP.$objects.searchFields = jQuery('.search-field');
-    console.log('SQSP.$objects.searchFields', SQSP.$objects.searchFields);
+    //console.log('SQSP.$objects.searchFields', SQSP.$objects.searchFields);
     SQSP.$objects.searchFields.on('focus', function(e) {
-        console.log('--- field has focus');
+        //console.log('--- field has focus');
         var $field = jQuery(this);
         SQSP.vars.focusOnSearch = $field;
     }).on('focusout', function(e) {
-        console.log('--- field has lost focus');
+        //console.log('--- field has lost focus');
         SQSP.vars.focusOnSearch = false;
     });
     SQSP.$objects.window.on('keyup', function(e) {
@@ -325,7 +325,7 @@ function toggleSearchOverlay() {
         var dummyHeight = $burger.outerHeight() + parseFloat( $burger.css('top') ) + parseFloat( $burger.css('top') );
         var dummyHeightPct = dummyHeight / jQuery(window).height();
         var dummyHeightVH = ( dummyHeightPct * 100 ) + 'vw' ;
-        console.log('dummy height calc', dummyHeight, dummyHeightPct, dummyHeightVH);
+        //console.log('dummy height calc', dummyHeight, dummyHeightPct, dummyHeightVH);
         //console.log('calc height', height);
         var $dummy = jQuery('<div id="dummy"/>');
         $dummy.css({
@@ -368,7 +368,7 @@ function handleStickyBurger(e) {
     SQSP.vars.OldBurgerTimeout = SQSP.vars.newBurgerTimeout;
 
     if(is_mobile()) {
-        console.log('----- shwo burger');
+        //console.log('----- shwo burger');
         e.target.$object.container.removeClass('notactive');
         toggleBurger(true);
         return false;
