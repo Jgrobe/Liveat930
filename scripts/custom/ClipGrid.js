@@ -153,7 +153,7 @@ var ClipGrid = function($container, options) {
         if( _.isFunction(CG.options.filterIn) ) {
             // animate items in
             //console.log('animate items in');
-            inTL.add( CG.options.filterIn(CG), '-='+(CG.options.duration *.5) );
+            //inTL.add( CG.options.filterIn(CG), '-='+(CG.options.duration *.5) );
         } else {
             CG.isFilterInProgress = false;
         }// endif
