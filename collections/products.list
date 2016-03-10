@@ -1,14 +1,10 @@
 <section class="merch-landing">
     <div class="fill-parent mask">
-        <div class="landing-bg" style="background-image:url('{collection.mainImage.assetUrl}');"></div>
+        <div class="landing landing-bg" style="background-image:url('{collection.mainImage.assetUrl}');"></div>
     </div>
-    <h1 class="l-headline">{collection.navigationTitle}</h1>
-    <!--div class="cta-dummy" data-label="View my shopping cart" data-icon="icon-arrow" data-class="merch-landing-cta">{@|apply svg-icon-arrow.block}</div-->
-    <!--php print_cta(array(
-        'label' => 'View my shopping cart',
-    'icon' => 'images/icon-arrow',
-    'class' => array('merch-landing-cta')
-    )); -->
+    <div class="landing-container">
+        <h1 class="l-headline">{collection.navigationTitle}</h1>
+    </div><!-- .landing-container -->
 </section>
 
 <section class="merch-overview">

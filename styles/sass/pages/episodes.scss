@@ -1,9 +1,4 @@
-.episodes-landing {
-  @include landing;
-
-//  &:before {
-//    background-image: url('assets/images/episodes-title2.jpg');
-//  }
+.landing.episodes-landing {
 
   .landing-cta {
     position: absolute;
@@ -11,9 +6,116 @@
     left: 37vw;
   }// .landing-cta
 
+
+  .landing-head {
+    //position: absolute;
+    //top: 28vh;
+    //left: 50vw;
+    //@include transform(translateX(-50%));
+    white-space: nowrap;
+    
+    .small {
+      font-size: 2vw;
+      letter-spacing: 0.2vw;
+    }
+
+    h1 {
+      //    font-size: 10vw;
+      //    letter-spacing: 0.5vw;
+      //@extend .l-headline;
+      margin: 0 0 0 -0.5vw;
+    }
+
+  }// .episodes-landing-head()
+  
+  .landing-extra {
+    position: absolute;
+    width: 80%;
+    left: 50%;
+
+    //top: 53vh;
+    //left: 48vw;
+    //width: 35vw;
+    span {
+      font-family: $gotham;
+      font-size: 0.8vw;
+    }// p
+    p {
+      margin: 0;
+      letter-spacing: 0.3vw;
+      font-size: 2.1vw;
+    }// p
+
+  }// .landing-extra
+
+  .cta-container {
+    //@include cta(#000, #fff);
+    position: absolute;
+    width: 80%;
+    left: 45%;
+  }// .cta-container
+
   @include breakpoint(mobile) {
 
-    .landing-cta {
+    $vertSpace: 4.5vh;
+    width: 100%;
+
+    .landing-container {
+        width: 100%;
+        height:100%;
+        @include flexbox();
+        @include flex-value(direction, column);
+    }// .landing-container
+
+    .episodes-landing-head, .landing-extra, a.episodes-landing-cta {
+      position:static;
+      margin: auto;
+      @include transform(none);
+    }
+
+
+    .episodes-landing-head {
+      margin-bottom: 0;
+      text-align: center;
+
+      .small {
+        font-size: 22px;
+        letter-spacing: .1em;
+      }// .small
+
+      h1 {
+        font-size: 73px;
+        letter-spacing: .06em;
+        margin-top: $vertSpace;
+      }// h1
+    }
+
+    .landing-extra {
+      margin-top: $vertSpace;
+      margin-bottom: 0;
+      //width: 80%;
+
+      width: $MOBILE_WIDTH;
+      left: $MOBILE_MARGIN;
+      text-align: center;
+
+      span { display:none; }// p
+      p {
+        letter-spacing: 0.06vw;
+        font-size:31px;
+        line-height: 43px;
+      }// p
+    }
+
+    a.episodes-landing-cta {
+      margin-top: $vertSpace;
+    }
+
+    .cta-container {
+
+      //left: 50%;
+      //@include transform(translateX(-50%));
+
       margin: 4.5vh auto auto auto;
       position: static;
       @include transform(none);
@@ -22,133 +124,6 @@
   }// BP MOBILE
 
 }// .episodes-landing
-
-.landing-container {
-
-  @include breakpoint(mobile) {
-    width: 100%;
-    height:100%;
-    @include flexbox();
-    @include flex-value(direction, column);
-
-    $vertSpace: 4.5vh;
-
-    .episodes-landing-head, .episodes-landing-sub, a.episodes-landing-cta {
-      position:static;
-      margin: auto;
-      @include transform(none);
-    }
-
-    .episodes-landing-head {
-      margin-bottom: 0;
-      h1 {
-        margin-top: $vertSpace;
-      }
-    }
-
-    .episodes-landing-sub {
-      margin-top: $vertSpace;
-      margin-bottom: 0;
-      width: 80%;
-    }
-
-    a.episodes-landing-cta {
-      margin-top: $vertSpace;
-    }
-
-  }// BP MOBILE
-
-}// .landing-container
-
-.episodes-landing-geo {
-  border-radius: 100%;
-  width: 30vw;
-  height: 30vw;
-  position: absolute;
-  top: 40vh;
-  left: 15vw;
-  background: #89afe2;
-  mix-blend-mode: screen;
-  opacity: 0.8;
-}
-
-.episodes-landing-head {
-  position: absolute;
-  top: 28vh;
-  left: 50vw;
-  @include transform(translateX(-50%));
-  white-space: nowrap;
-  .small {
-    font-size: 2vw;
-    letter-spacing: 0.2vw;
-  }
-  h1 {
-//    font-size: 10vw;
-//    letter-spacing: 0.5vw;
-    @extend .l-headline;
-    margin: 0 0 0 -0.5vw;
-  }
-
-  @include breakpoint(mobile) {
-    width: 100%;
-    text-align: center;
-    .small {
-      font-size: 22px;
-      letter-spacing: .1em;
-    }// .small
-    h1 {
-      font-size: 73px;
-      letter-spacing: .06em;
-    }// h1
-  }// BP MOBILE
-}// .episodes-landing-head()
-
-.episodes-landing-sub {
-  position: absolute;
-  top: 53vh;
-  left: 48vw;
-  width: 35vw;
-  span {
-    font-family: $gotham;
-    font-size: 0.8vw;
-  }// p
-  p {
-    margin: 0;
-    letter-spacing: 0.3vw;
-    font-size: 2.1vw;
-  }// p
-
-  @include breakpoint(mobile) {
-    width: $MOBILE_WIDTH;
-    left: $MOBILE_MARGIN;
-    text-align: center;
-
-    span { display:none; }// p
-    p {
-      letter-spacing: 0.06vw;
-      font-size:31px;
-      line-height: 43px;
-    }// p
-  }// BP MOBILE
-}// .episodes-landing-sub
-
-a.episodes-landing-cta {
-  @include cta(#000, #fff);
-  position: absolute;
-  top: 70vh;
-  left: 37vw;
-
-  &.static {
-    position:static;
-    display: inline-block;
-  }
-
-  @include breakpoint(mobile) {
-    left: 50%;
-    @include transform(translateX(-50%));
-//    white-space: nowrap;
-  }
-}
 
 .episodes-previous {
   margin: 10vh 0;

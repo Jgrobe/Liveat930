@@ -242,3 +242,8 @@ input {
     height: 0;
   }
 }
+
+.mask {
+  overflow: hidden;
+  //    z-index: -1;
+}

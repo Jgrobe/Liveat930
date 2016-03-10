@@ -1,4 +1,4 @@
-<section class="post-landing">
+<section class="landing post-landing">
     <div class="fill-parent mask">
         <div class="landing-bg" style="background-image:url('{item.assetUrl}');"></div>
     </div>

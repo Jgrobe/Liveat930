@@ -65,48 +65,7 @@
 }
 
 @mixin landing {
-  width: 100vw;
-  height: 100vh;
-  color: #fff;
-  font-family: "United Sans", script;
-  text-rendering: optimizeLegibility;
-  font-weight: normal;
-  text-transform: uppercase;
-  position: relative;
-//  z-index: 1;
 
-  .mask {
-    overflow: hidden;
-//    z-index: -1;
-  }
-
-  .landing-bg {
-//    content: '';
-    display: block;
-    pointer-events: none;
-    position: absolute;
-//    z-index: -1;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center center;
-//    background-attachment: fixed;
-
-    //@include texturizer();
-
-//    &.video-bg {
-//      &:after {
-//        content: '';
-//        display: block;
-//        @extend .fill-parent;
-//        background-image: url('assets/images/textures/texture-halftone-compressor-2-70k.jpg');
-////        background-size: cover;
-//        mix-blend-mode: overlay;
-//      }
-//    }
-  }// .landing-bg
 }// @landing
 
 @mixin svg-content() {

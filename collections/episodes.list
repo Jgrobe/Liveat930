@@ -9,7 +9,7 @@
 {.repeated section items}
     {.repeated section categories}
         {.equal?:@:"current"}
-            <section class="episodes-landing">
+            <section class="landing episodes-landing">
                 <div class="fill-parent mask">
                     <div class="landing-bg" style="background-image:url('{customContent.hero-fallback-image.assetUrl}');" data-shape="{customContent.episode-shape}">
                         <video src="{customContent.episode-hero-video}" class="loop" muted autoplay></video>
@@ -20,7 +20,7 @@
 
                     <div class="episodes-landing-head prllx-stndrd">
                         <div class="small">Latest Show</div>
-                        <h1>Episode No.{customContent.episode-number}</h1>
+                        <h1 class="l-headline">Episode No.{customContent.episode-number}</h1>
                     </div>
                     <div class="episodes-landing-sub prllx-stndrd">
                         <span>with</span>
@@ -31,6 +31,7 @@
                             $lineupPreview.html(previewwartists+' & more')
                         </script>
                     </div><!-- .episodes-landing-sub -->
+
                     <div class="cta-dummy" data-icon="eye" data-label="Watch now" data-class="landing-cta prllx-custom" data-attributes="href={fullUrl},data-prllx=.04">{@|apply svg-icon-eye.block}</div>
 
                 </div><!-- .landing-container -->

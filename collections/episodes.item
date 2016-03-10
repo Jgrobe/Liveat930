@@ -1,6 +1,6 @@
 {.section item}
 
-    <section class="episodes-landing episode-detail">
+    <section class="landing episodes-landing episode-detail">
         <div class="fill-parent mask">
             <div class="landing-bg" style="background-image:url('{customContent.hero-fallback-image.assetUrl}');" data-shape="{customContent.episode-shape}">
             <video src="{customContent.episode-hero-video}" muted autoplay class="loop"></video>

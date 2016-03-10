@@ -1,9 +1,29 @@
-//.landing {
-//  @include flexbox();
-//
-//  .landing-container {
-//    margin: auto;
-//    position: relative;
-//  }// .landing-container
-//
-//}// .landing
+.landing {
+  @include flexbox();
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  color: #fff;
+  font-family: "United Sans", script;
+  text-rendering: optimizeLegibility;
+  font-weight: normal;
+  text-transform: uppercase;
+  //  z-index: 1;
+
+  .landing-bg {
+    display: block;
+    pointer-events: none;
+    @extend .fill-parent;
+    @extend .imgfill;
+        background-attachment: fixed;
+
+  }// .landing-bg
+
+  .landing-container {
+    margin: auto;
+    //margin-top: 40%;
+    display: inline-block;
+    position: relative;
+  }// .landing-container
+
+}// .landing

@@ -1,5 +1,5 @@
 {.section collection}
-    <section class="video-overview-landing">
+    <section class="landing video-overview-landing">
         <div class="fill-parent mask">
             <div class="landing-bg" style="background-image:url('{mainImage.assetUrl}');"></div>
         </div>

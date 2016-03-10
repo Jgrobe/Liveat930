@@ -1,5 +1,5 @@
 <script>console.log('ITS THE HOST TEMPLATE');</script>
-<section class="host-landing">
+<section class="landing host-landing">
     <div class="fill-parent mask">
         <div class="landing-bg video-bg" style="background-image:url('{item.assetUrl}');">
             {.section item}
