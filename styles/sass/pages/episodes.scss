@@ -1,12 +1,5 @@
 .landing.episodes-landing {
 
-  .landing-cta {
-    position: absolute;
-    top: 70vh;
-    left: 37vw;
-  }// .landing-cta
-
-
   .landing-head {
     //position: absolute;
     //top: 28vh;
@@ -71,7 +64,7 @@
       margin: auto;
     }// .landing-container
 
-    .episodes-landing-head, .landing-extra, a.episodes-landing-cta {
+    .episodes-landing-head, .landing-extra {
       position:static;
       margin: auto;
       @include transform(none);
@@ -111,16 +104,12 @@
       }// p
     }
 
-    a.episodes-landing-cta {
-      margin-top: $vertSpace;
-    }
-
     .cta-container {
 
       //left: 50%;
       //@include transform(translateX(-50%));
 
-      margin: 4.5vh auto auto auto;
+      margin: $vertSpace auto auto auto;
       position: static;
       @include transform(none);
     }

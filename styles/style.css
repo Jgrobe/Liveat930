@@ -2908,10 +2908,6 @@ div.mce_inline_error {
     #fieldTracker {
       display: none; } }
 
-.landing.episodes-landing .landing-cta {
-  position: absolute;
-  top: 70vh;
-  left: 37vw; }
 .landing.episodes-landing .landing-head {
   white-space: nowrap; }
   .landing.episodes-landing .landing-head .small {
@@ -2954,7 +2950,7 @@ div.mce_inline_error {
       -ms-direction: column;
       direction: column;
       margin: auto; }
-    .landing.episodes-landing .episodes-landing-head, .landing.episodes-landing .landing-extra, .landing.episodes-landing a.episodes-landing-cta {
+    .landing.episodes-landing .episodes-landing-head, .landing.episodes-landing .landing-extra {
       position: static;
       margin: auto;
       -webkit-transform: none;
@@ -2984,8 +2980,6 @@ div.mce_inline_error {
         letter-spacing: 0.06vw;
         font-size: 31px;
         line-height: 43px; }
-    .landing.episodes-landing a.episodes-landing-cta {
-      margin-top: 4.5vh; }
     .landing.episodes-landing .cta-container {
       margin: 4.5vh auto auto auto;
       position: static;
