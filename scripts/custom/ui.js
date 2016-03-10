@@ -47,7 +47,8 @@ function init_sqsp() {
     });
     $clipItems.on('mouseleave', function(e) {
         //console.log('.video mouseleave', e);
-        jQuery(e.target).find('.cta-container').mouseleave();
+        var $unhovered = jQuery(this);
+        $unhovered.find('.cta-container').mouseleave();
     });
     $clipItems.click(function(e) {
         window.location = jQuery(this).find('.cta-container').attr('href');
@@ -434,10 +435,11 @@ function cta_hovers() {
         if(is_mobile()) return false;
 
         var $unhovered = jQuery(this);
+        if(!$hovered.get(0).isHovered) return false;
+        $unhovered.get(0).isHovered = false;
         var $hoverlay = $unhovered.find('.hover-cta');
         //console.log('mouse leaving cta');
         TweenMax.to($hoverlay, duration, {width:0, ease:Expo.easeOut, clearProps:'all',onComplete:function() {
-            $unhovered.get(0).isHovered = false;
         }});
     });
 }
