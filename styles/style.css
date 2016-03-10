@@ -1766,7 +1766,7 @@ div.mce_inline_error {
   bottom: 5vw; }
 
 .poster.circle .poster-pattern {
-  background-image: ur(assets/images/textures/texture2.png); }
+  background-image: url(assets/images/textures/texture2.png); }
 .poster.circle .layer.bg-layer .half:first-child:before {
   content: '';
   display: block;
@@ -1816,7 +1816,7 @@ div.mce_inline_error {
   color: black; }
 
 .poster.circle .poster-pattern {
-  background-image: ur(assets/images/textures/texture2.png); }
+  background-image: url(assets/images/textures/texture2.png); }
 .poster.circle .layer.bg-layer .half:first-child:before {
   content: '';
   display: block;
