@@ -4308,8 +4308,19 @@ a.episodes-landing-cta {
     height: 100%;
     background-size: cover;
     background-position: center center; }
+  .clip-landing:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: .7; }
   .clip-landing .landing-container {
-    margin: auto; }
+    margin: auto;
+    position: relative; }
   .clip-landing .landing-head {
     max-width: 85vw;
     text-align: center; }
@@ -4522,6 +4533,7 @@ a.episodes-landing-cta {
   font-size: 1.3vw;
   line-height: 1.9vw; }
 #productSummary #productDetails .variant-select-wrapper select {
+  cursor: pointer;
   font-size: 1.2vw;
   padding: .5vw 3vw .5vw .7vw;
   border: 1px solid #ccc;
