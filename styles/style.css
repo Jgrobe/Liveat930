@@ -4071,7 +4071,6 @@ a.episodes-landing-cta {
     width: 94%;
     height: 103%; }
   .video-gallery .video {
-    margin-top: 4vw;
     cursor: pointer;
     -webkit-filter: grayscale(100%);
     -moz-filter: grayscale(100%);
@@ -4083,6 +4082,26 @@ a.episodes-landing-cta {
     -ms-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s; }
+    .video-gallery .video.small, .video-gallery .video.medium, .video-gallery .video.large {
+      margin-top: 4vw; }
+    .video-gallery .video.small {
+      width: 21.66vw; }
+      .video-gallery .video.small .image {
+        height: 17vw; }
+        .video-gallery .video.small .image.poster {
+          height: auto; }
+    .video-gallery .video.medium {
+      width: 35vw; }
+      .video-gallery .video.medium .image {
+        height: 21vw; }
+        .video-gallery .video.medium .image.poster {
+          height: auto; }
+    .video-gallery .video.large {
+      width: 21.66vw; }
+      .video-gallery .video.large .image {
+        height: 41.5vw; }
+        .video-gallery .video.large .image.poster {
+          height: auto; }
     .video-gallery .video .image {
       width: 100%;
       position: relative;
@@ -4135,24 +4154,6 @@ a.episodes-landing-cta {
       transform: translateY(-50%); }
     .video-gallery .video .title {
       position: relative; }
-    .video-gallery .video.small {
-      width: 21.66vw; }
-      .video-gallery .video.small .image {
-        height: 17vw; }
-        .video-gallery .video.small .image.poster {
-          height: auto; }
-    .video-gallery .video.medium {
-      width: 35vw; }
-      .video-gallery .video.medium .image {
-        height: 21vw; }
-        .video-gallery .video.medium .image.poster {
-          height: auto; }
-    .video-gallery .video.large {
-      width: 21.66vw; }
-      .video-gallery .video.large .image {
-        height: 41.5vw; }
-        .video-gallery .video.large .image.poster {
-          height: auto; }
     .video-gallery .video .flex-cols {
       margin-top: 2vw; }
       .video-gallery .video .flex-cols .title {

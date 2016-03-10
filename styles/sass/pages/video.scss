@@ -107,67 +107,42 @@ $gridGutter: 5vw;
     height: 103%;
   }
 
-//  .video-gallery-videos {
-////    overflow: hidden;
-//
-//    &:after {
-//      content: '';
-//      display: block;
-//      clear:both;
-//    }
-//
-//    &.lefthand {
-//      .video {
-////        &.small, &.medium, &.large {
-////        }
-//
-//        &.small {
-//          float: left;
-//          margin-right: 5vw;
-//        }
-//        &.medium {
-//          float: left;
-//          margin-right: 5vw;
-//          &:nth-child(2n) {
-//            margin-right: 0;
-//          }
-//        }
-//        &.large {
-//          float: right;
-//        }
-//        &:last-child { margin-right: 0; }
-//
-//      }
-//    }
-//    &.righthand {
-//      .video {
-////        &.small, &.medium, &.large {
-////        }
-//        &.small {
-//          float: right;
-//          margin-left: 5vw;
-//        }
-//        &.medium {
-//          float: right;
-//          margin-left: 5vw;
-//          &:nth-child(2n+1) {
-//            margin-left: 0;
-//          }
-//        }
-//        &.large {
-//          float: left;
-//        }
-//        &:last-child { margin-left: 0; }
-//      }
-//    }
-//  }
-
   .video {
-    margin-top: 4vw;
+    //margin-top: 4vw;
     cursor: pointer;
     //overflow: hidden;
     @include prefixed(filter, grayscale(100%));
     @include prefixed(transition, $shortTrans);
+
+    &.small, &.medium, &.large { margin-top: 4vw; }
+
+    &.small {
+      width:21.66vw;
+      .image {
+        height: 17vw;
+        &.poster {
+          height: auto;
+        }
+      }
+    }
+    &.medium {
+      width: 35vw;
+      .image {
+        height: 21vw;
+        &.poster {
+          height: auto;
+        }
+      }
+    }
+    &.large {
+      width:21.66vw;
+      .image {
+        height: 41.5vw;
+        &.poster {
+          height: auto;
+        }
+      }
+    }
 
     .image {
       width:100%;
@@ -183,16 +158,6 @@ $gridGutter: 5vw;
         top: 100%;
         left: 50%;
         @include transform(translateX(-50%) translateY(-70%));
-        //.filler {padding: 1.6vw 1.5vw;}
-        //      bottom: -1vw;
-        //      height: 4vw;
-        //      width: 4vw;
-        //      background-color: #fff;
-        //      background-image: url('assets/images/icon-play.svg');
-        //      background-size: 20%;
-        //      background-position: center center;
-        //      background-repeat: no-repeat;
-        //box-shadow: 0 1px 4px rgba(0,0,0,0.25);
 
         &.goto {
           @include flexbox();
@@ -230,33 +195,6 @@ $gridGutter: 5vw;
     .title {
       position: relative;
 //      margin: 2vw 0 4vw;
-    }
-    &.small {
-      width:21.66vw;
-      .image {
-        height: 17vw;
-        &.poster {
-          height: auto;
-        }
-      }
-    }
-    &.medium {
-      width: 35vw;
-      .image {
-        height: 21vw;
-        &.poster {
-          height: auto;
-        }
-      }
-    }
-    &.large {
-      width:21.66vw;
-      .image {
-        height: 41.5vw;
-        &.poster {
-          height: auto;
-        }
-      }
     }
 
     .flex-cols {
