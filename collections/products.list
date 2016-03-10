@@ -1,6 +1,6 @@
-<section class="merch-landing">
+<section class="landing merch-landing">
     <div class="fill-parent mask">
-        <div class="landing landing-bg" style="background-image:url('{collection.mainImage.assetUrl}');"></div>
+        <div class="landing-bg" style="background-image:url('{collection.mainImage.assetUrl}');"></div>
     </div>
     <div class="landing-container">
         <h1 class="l-headline">{collection.navigationTitle}</h1>
