@@ -18,7 +18,7 @@
 
                 <div class="landing-container">
 
-                    <div class="episodes-landing-head prllx-stndrd">
+                    <div class="landing-head prllx-stndrd">
                         <div class="small">Latest Show</div>
                         <h1 class="l-headline">Episode No.{customContent.episode-number}</h1>
                     </div>

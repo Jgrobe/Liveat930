@@ -2911,6 +2911,9 @@ div.mce_inline_error {
 .landing.episodes-landing .landing-head {
   white-space: nowrap; }
   .landing.episodes-landing .landing-head .small {
+    position: absolute;
+    left: 0;
+    bottom: 100%;
     font-size: 2vw;
     letter-spacing: 0.2vw; }
   .landing.episodes-landing .landing-head h1 {
@@ -3236,43 +3239,32 @@ div.mce_inline_error {
             font-size: 23px;
             letter-spacing: .04em; } }
 
-.episodes-landing.episode-detail .small {
-  position: absolute;
+.landing.episodes-landing.episode-detail .small {
+  position: static;
   text-align: right;
   width: 100%; }
-.episodes-landing.episode-detail .episodes-landing-geo {
-  width: 40vw;
-  height: 40vw;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -ms-transform: translateX(-50%) translateY(-50%);
-  -o-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%); }
-.episodes-landing .cta-play-episode {
+.landing.episodes-landing.episode-detail .cta-container {
   margin-left: 4vw;
   -webkit-box-shadow: 0 0 5vw rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0 0 5vw rgba(0, 0, 0, 0.3);
   -ms-box-shadow: 0 0 5vw rgba(0, 0, 0, 0.3);
   -o-box-shadow: 0 0 5vw rgba(0, 0, 0, 0.3);
   box-shadow: 0 0 5vw rgba(0, 0, 0, 0.3); }
-.episodes-landing .text-layer {
-  position: absolute;
+.landing.episodes-landing.episode-detail .text-layer {
   top: 65vh;
   left: 39vw;
   width: 40vw;
   color: #000000; }
-.episodes-landing .sharebox {
+.landing.episodes-landing.episode-detail .sharebox {
   margin: 0;
   position: absolute;
   top: 100%;
   transform: translateY(-2.25vw); }
-  .episodes-landing .sharebox .label {
+  .landing.episodes-landing.episode-detail .sharebox .label {
     color: white;
     margin-top: 1.25vw; }
 @media only screen and (max-width: 750px) {
-  .episodes-landing.episode-detail {
+  .landing.episodes-landing.episode-detail.episode-detail {
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -3288,7 +3280,7 @@ div.mce_inline_error {
     direction: column;
     padding: 0 12px;
     margin: 0 auto; }
-    .episodes-landing.episode-detail .episodes-landing-head {
+    .landing.episodes-landing.episode-detail.episode-detail .episodes-landing-head {
       position: static;
       width: 100%;
       margin: auto 0 0 0;
@@ -3299,11 +3291,11 @@ div.mce_inline_error {
       -ms-transform: none;
       -o-transform: none;
       transform: none; }
-      .episodes-landing.episode-detail .episodes-landing-head h1 {
+      .landing.episodes-landing.episode-detail.episode-detail .episodes-landing-head h1 {
         text-align: center; }
-      .episodes-landing.episode-detail .episodes-landing-head .small {
+      .landing.episodes-landing.episode-detail.episode-detail .episodes-landing-head .small {
         display: none; }
-    .episodes-landing.episode-detail .text-layer {
+    .landing.episodes-landing.episode-detail.episode-detail .text-layer {
       position: relative;
       top: 0;
       left: 0;
@@ -3313,7 +3305,7 @@ div.mce_inline_error {
       line-height: 26px;
       letter-spacing: .02em;
       padding: 8vh 40px; }
-    .episodes-landing.episode-detail .cta-play-episode {
+    .landing.episodes-landing.episode-detail.episode-detail .cta-play-episode {
       margin: 0 auto;
       font-size: 11px;
       padding: 0 35px 0 105px;
@@ -3324,19 +3316,19 @@ div.mce_inline_error {
       -ms-transform: translateY(50%);
       -o-transform: translateY(50%);
       transform: translateY(50%); }
-      .episodes-landing.episode-detail .cta-play-episode:before {
+      .landing.episodes-landing.episode-detail.episode-detail .cta-play-episode:before {
         width: 70px;
         height: 70px; }
-    .episodes-landing.episode-detail .episodes-landing-geo {
+    .landing.episodes-landing.episode-detail.episode-detail .episodes-landing-geo {
       width: 110vw;
       height: 110vw; }
-    .episodes-landing.episode-detail .sharebox {
+    .landing.episodes-landing.episode-detail.episode-detail .sharebox {
       -webkit-transform: translateY(-19px);
       -moz-transform: translateY(-19px);
       -ms-transform: translateY(-19px);
       -o-transform: translateY(-19px);
       transform: translateY(-19px); }
-      .episodes-landing.episode-detail .sharebox .label {
+      .landing.episodes-landing.episode-detail.episode-detail .sharebox .label {
         font-size: 10px;
         line-height: 100%; } }
 

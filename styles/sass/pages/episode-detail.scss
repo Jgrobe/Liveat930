@@ -1,28 +1,19 @@
-.episodes-landing {
+.landing.episodes-landing.episode-detail {
 
-  &.episode-detail {
-    .small {
-      position: absolute;
-      text-align: right;
-      width: 100%;
-    }
+  .small {
+    position: static;
+    text-align: right;
+    width: 100%;
+  }
 
-    .episodes-landing-geo {
-      width: 40vw;
-      height: 40vw;
-      top: 50%;
-      left: 50%;
-      @include transform(translateX(-50%) translateY(-50%));
-    }// .episode-landing-geo
-  }// .episode-detail
 
-  .cta-play-episode {
+  .cta-container {
     margin-left: 4vw;
     @include shadow(0 0 5vw rgba(0,0,0,.3));
   }// .cta-play-episode
 
   .text-layer {
-    position: absolute;
+    //position: absolute;
     top: 65vh;
     left: 39vw;
     width: 40vw;

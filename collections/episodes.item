@@ -7,16 +7,21 @@
         </div>
         </div><!-- .mask -->
 
-        <div class="episodes-landing-head">
-            <h1>Episode No.{customContent.episode-number}</h1>
-            <div class="small">Latest Show</div>
-            <div class="cta-dummy" data-label="Watch now" data-icon="eye" data-attributes="id=cta-play-episode,href=#">{@|apply svg-icon-eye.block}</div>
-            <!--<a href="#" class="cta-play-episode">Watch now</a>-->
-        </div>
-        <div class="text-layer">
-            {body}
-            {@|apply module-share-episode.block}
-        </div><!-- .episodes-landing-sub -->
+        <div class="landing-container">
+
+            <div class="landing-head">
+                <h1>Episode No.{customContent.episode-number}</h1>
+                <div class="small">{addedOn|date %m %Y}</div>
+                <div class="cta-dummy" data-label="Watch now" data-icon="eye" data-attributes="id=cta-play-episode,href=#">{@|apply svg-icon-eye.block}</div>
+                <!--<a href="#" class="cta-play-episode">Watch now</a>-->
+            </div>
+            <div class="text-layer">
+                {body}
+                {@|apply module-share-episode.block}
+            </div><!-- .episodes-landing-sub -->
+
+        </div><!-- .landing-container -->
+
     </section>
 
     {.equal?:categories.0:"upcoming"}
