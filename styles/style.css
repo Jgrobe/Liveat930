@@ -4106,7 +4106,8 @@ a.episodes-landing-cta {
         -o-filter: grayscale(100%);
         filter: grayscale(100%); }
       .video-gallery .video .image .hover-thumb {
-        width: 0%;
+        visibility: hidden;
+        opacity: 0;
         -webkit-transition: 0.3s;
         -moz-transition: 0.3s;
         -ms-transition: 0.3s;
@@ -4176,7 +4177,8 @@ a.episodes-landing-cta {
         -ms-grow: 1;
         grow: 1; }
     .video-gallery .video:hover .image .hover-thumb {
-      width: 100%; }
+      visibility: visible;
+      opacity: 1; }
   .video-gallery .cta-container {
     position: absolute;
     top: 100%;
