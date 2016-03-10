@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="6ba77c59-895c-4b6c-8ed1-52220cbb39bd" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/small-arrow-down.svg" afterPath="$PROJECT_DIR$/assets/images/small-arrow-down.svg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/sass/overrides/product-detail.scss" afterPath="$PROJECT_DIR$/styles/sass/overrides/product-detail.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/style.css" afterPath="$PROJECT_DIR$/styles/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/style.css.map" afterPath="$PROJECT_DIR$/styles/style.css.map" />
     </list>
     <ignored path="sqsp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -225,21 +226,21 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="product-detail.scss" pinned="false" current-in-tab="false">
+          <file leaf-file-name="product-detail.scss" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/styles/sass/overrides/product-detail.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-7.0588236">
-                  <caret line="45" column="30" selection-start-line="45" selection-start-column="30" selection-end-line="45" selection-end-column="30" />
+                <state vertical-scroll-proportion="0.35974973">
+                  <caret line="44" column="36" selection-start-line="44" selection-start-column="36" selection-end-line="44" selection-end-column="36" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="small-arrow-down.svg" pinned="false" current-in-tab="true">
+          <file leaf-file-name="small-arrow-down.svg" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/assets/images/small-arrow-down.svg">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.015212982">
-                  <caret line="1" column="25" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
+                <state vertical-scroll-proportion="-1.25">
+                  <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
                   <folding />
                 </state>
               </provider>
@@ -304,8 +305,8 @@
         <option value="$PROJECT_DIR$/collections/videoclips.item" />
         <option value="$PROJECT_DIR$/template.conf" />
         <option value="$PROJECT_DIR$/collections/episodes.item" />
-        <option value="$PROJECT_DIR$/styles/sass/overrides/product-detail.scss" />
         <option value="$PROJECT_DIR$/assets/images/small-arrow-down.svg" />
+        <option value="$PROJECT_DIR$/styles/sass/overrides/product-detail.scss" />
       </list>
     </option>
   </component>
@@ -1140,18 +1141,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/styles/sass/overrides/product-detail.scss">
+    <entry file="file://$PROJECT_DIR$/assets/images/small-arrow-down.svg">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.0588236">
-          <caret line="45" column="30" selection-start-line="45" selection-start-column="30" selection-end-line="45" selection-end-column="30" />
+        <state vertical-scroll-proportion="-1.25">
+          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/images/small-arrow-down.svg">
+    <entry file="file://$PROJECT_DIR$/styles/sass/overrides/product-detail.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.015212982">
-          <caret line="1" column="25" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
+        <state vertical-scroll-proportion="0.35974973">
+          <caret line="44" column="36" selection-start-line="44" selection-start-column="36" selection-end-line="44" selection-end-column="36" />
           <folding />
         </state>
       </provider>
