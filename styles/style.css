@@ -489,7 +489,7 @@ input {
         left: 0;
         bottom: 0;
         width: 0;
-        height: 1px;
+        height: 2px;
         background: white;
         -webkit-transition: width 0.3s;
         -moz-transition: width 0.3s;
