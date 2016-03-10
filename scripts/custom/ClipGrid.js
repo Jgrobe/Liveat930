@@ -141,7 +141,7 @@ var ClipGrid = function($container, options) {
         setTimeout(function() {
             console.log('reset timeout');
             CG.layout();
-        }, 100);
+        }, 200);
 
         // capture new grid height
         var newGridHeight = CG.$object.container.height();
