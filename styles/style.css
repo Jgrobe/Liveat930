@@ -3096,7 +3096,7 @@ div.mce_inline_error {
     top: 3px;
     font-size: 17px; }
   .episodes-overview .poster .ep-headline {
-    margin-top: 30px;
+    margin-top: 20px;
     font-size: 80px;
     line-height: 80px; }
   .episodes-overview .poster .ep-date {
@@ -3107,7 +3107,8 @@ div.mce_inline_error {
     line-height: 25px; }
   .episodes-overview .poster .ep-lineup {
     font-size: 47px;
-    line-height: 47px; }
+    line-height: 47px;
+    padding-top: 0; }
   .episodes-overview .poster .lineup-container:after {
     bottom: calc(~"25px / 2");
     left: 25px;
