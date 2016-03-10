@@ -99,14 +99,14 @@ $rightColMargin: 10vw;
         content: '';
         display: block;
         position: absolute;
-        top: 50%;
+        top: 115%;
         left: 0;
         width: 0;
-        height: 100%;
-        background: black;
+        height: 2px;
+        background: white;
         z-index: -1;
 
-        @include prefixed(transition, width $shortTrans);
+        @include prefixed(transition, (width .4s cubic-bezier(0.19, 1, 0.22, 1)));
       }// before
     }
 
@@ -129,7 +129,7 @@ $rightColMargin: 10vw;
 
       a {
         &:before {
-          width: calc(~"100% + 1vw");
+          width:100%;
         }
       }
     }
