@@ -129,13 +129,13 @@ var ClipGrid = function($container, options) {
         });
 
         var inTL = new TimelineMax({onComplete:function() {
-            CG.$object.container.isotope();
             CG.updateCTA();
         }});
         // tween grid height
+        CG.layout();
         var newGridHeight = CG.$object.container.outerHeight();
         console.log('------ grid resize', oldGridHeight, newGridHeight);
-        //inTL.fromTo(CG.$object.container, CG.options.duration, {height:oldGridHeight}, {height:newGridHeight, ease:Expo.easeInOut});
+        inTL.fromTo(CG.$object.container, CG.options.duration, {height:oldGridHeight}, {height:newGridHeight, ease:Expo.easeInOut});
 
         if( _.isFunction(CG.options.filterIn) ) {
             // animate items in
