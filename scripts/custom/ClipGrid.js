@@ -154,13 +154,13 @@ var ClipGrid = function($container, options) {
                 CG.isFilterInProgress = false;
             }});
             // tween grid height old to new
-            //inTL.fromTo(CG.$object.container, CG.options.duration, {height:oldGridHeight}, {height:newGridHeight, ease:Expo.easeInOut});
+            inTL.fromTo(CG.$object.container, CG.options.duration, {height:oldGridHeight}, {height:newGridHeight, ease:Expo.easeInOut});
 
             // animate items in
             if( _.isFunction(CG.options.filterIn) ) {
                 // animate items in
                 //console.log('animate items in');
-                //inTL.add( CG.options.filterIn(CG), '-='+(CG.options.duration *.5) );
+                inTL.add( CG.options.filterIn(CG), '-='+(CG.options.duration *.5) );
             } else {
                 CG.isFilterInProgress = false;
             }// endif
