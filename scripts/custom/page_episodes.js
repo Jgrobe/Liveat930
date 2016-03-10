@@ -18,6 +18,7 @@ SQSP.functions.initPage = function() {
     SQSP.$objects.postersItems = jQuery('.prllxposter');
     SQSP.instances.ParallaxPosters = [];
 
+    var layerOffset = 5;
     // CREATE INTERACTIVE POSTERS
     SQSP.$objects.postersItems.each(function(i) {
 
@@ -29,9 +30,9 @@ SQSP.functions.initPage = function() {
                 container: 13,
                 layers: [
                     0,  // hover-layer
-                    10, // bg-layer
-                    14, // model-layer
-                    18  // copy-layer
+                    layerOffset, // bg-layer
+                    layerOffset*1.4, // model-layer
+                    layerOffset*1.8  // copy-layer
                 ]
             }
         }) );
