@@ -3826,6 +3826,16 @@ div.mce_inline_error {
       .history-slider .gallery-copy {
         height: auto; } }
 
+.video-overview-landing:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: .7; }
 .video-overview-landing h1 {
   margin: 0 0 5vh 0; }
 .video-overview-landing .rectangle {
