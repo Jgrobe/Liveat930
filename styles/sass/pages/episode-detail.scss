@@ -5,9 +5,13 @@
     position: relative;
   }
 
+  .landing-head {
+    position: relative;
+  }
+
   .small {
-    font-size: get_relative_units(82);
-    line-height: 2vw;
+    font-size: get_relative_units(65);
+    line-height: get_relative_units(57);
     top: 100%;
     right: 0;
     text-align: right;
