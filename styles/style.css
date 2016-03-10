@@ -1424,10 +1424,10 @@ div.mce_inline_error {
     position: absolute;
     width: 5%;
     height: 40%; }
-    .poster .poster-pattern:first-child {
+    .poster .poster-pattern.first {
       top: 20%;
       left: -5%; }
-    .poster .poster-pattern:last-child {
+    .poster .poster-pattern.second {
       top: 60%;
       left: 100%; }
   .poster video {

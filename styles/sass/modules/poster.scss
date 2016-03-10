@@ -83,12 +83,12 @@ $posterWidth: 84vw;
     height: 40%;
     @extend .imgfill;
 
-    &:first-child {
+    &.first {
       top: 20%;
       left: -5%;
     }// first-child
 
-    &:last-child {
+    &.second {
       top: 60%;
       left: 100%;
     }// last-child
