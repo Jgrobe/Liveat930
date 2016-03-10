@@ -82,6 +82,7 @@
         &:before, &:after {
           background: black;
           width: 80%;
+          overflow: visible;
         }
 
         &:first-child {

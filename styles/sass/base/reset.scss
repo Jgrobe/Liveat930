@@ -93,14 +93,14 @@ input, button {
   }
 }
 
-input[type=submit], button, { cursor: pointer; }
+input[type=submit], button { cursor: pointer; }
 
 video {
   position: relative;
 
-//  @include breakpoint(mobile) {
-//    display: none !important;
-//  }
+  @include breakpoint(mobile) {
+    display: none;
+  }
 }
 
 //canvas {

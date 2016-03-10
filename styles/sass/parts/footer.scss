@@ -170,6 +170,7 @@
   .hosted-by-p {
 //    width: 45vw;
     margin: 1.5vh auto 8vh;
+    width: 35%;
 //    letter-spacing: 0.1vw;
 //    font-weight: 100;
 //    line-height: 1.7em;
@@ -185,7 +186,10 @@
   @include breakpoint(mobile) {
     padding: 0;
 
-    .hosted-by-p {margin-bottom: 0;}
+    .hosted-by-p {
+      margin-bottom: 0;
+      width: 65%;
+    }
 
     .hosted-by-link {
       display: inline-block;

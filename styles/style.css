@@ -90,6 +90,9 @@ input[type=submit], button {
 
 video {
   position: relative; }
+  @media only screen and (max-width: 750px) {
+    video {
+      display: none; } }
 
 svg {
   display: block; }
@@ -602,7 +605,8 @@ input {
     background: white; }
     .sticky-header.on .burger .line:before, .sticky-header.on .burger .line:after {
       background: black;
-      width: 80%; }
+      width: 80%;
+      overflow: visible; }
     .sticky-header.on .burger .line:first-child {
       -webkit-transform: translateX(25%) translateY(80%) rotate(45deg);
       -moz-transform: translateX(25%) translateY(80%) rotate(45deg);
@@ -839,12 +843,14 @@ input {
 .footer-hosted-by {
   padding: 10.41667vw 0 6.94444vw 0; }
   .footer-hosted-by .hosted-by-p {
-    margin: 1.5vh auto 8vh; }
+    margin: 1.5vh auto 8vh;
+    width: 35%; }
   @media only screen and (max-width: 750px) {
     .footer-hosted-by {
       padding: 0; }
       .footer-hosted-by .hosted-by-p {
-        margin-bottom: 0; }
+        margin-bottom: 0;
+        width: 65%; }
       .footer-hosted-by .hosted-by-link {
         display: inline-block;
         max-width: 90%;
