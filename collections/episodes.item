@@ -33,7 +33,7 @@
                 <p><b>Video clips from this episode</b></p>
             </div>
 
-            <squarespace:query collection="clips" tag="{customContent.episode-videoclips}" limit="3">
+            <squarespace:query collection="clips" tag="{customContent.episode-videoclips}">
                 <!--{.repeated section tags}{@},{.end}-->
 
                 <script>console.log('Clips Tags query ', {@|json-pretty});</script>
