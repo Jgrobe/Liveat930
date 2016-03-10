@@ -83,17 +83,35 @@ $posterWidth: 84vw;
     height: 40%;
     @extend .imgfill;
 
-    &.first {
-      top: 20%;
-      left: -5%;
-    }// first-child
-
-    &.second {
-      top: 60%;
-      left: 100%;
-    }// last-child
-
   }// .poster-pattern
+
+  &:nth-child(odd) {
+    .poster-pattern {
+      &.first {
+        top: 20%;
+        left: -5%;
+      }// first-child
+
+      &.second {
+        top: 60%;
+        left: 100%;
+      }// last-child
+    }
+  }
+
+  &:nth-child(even) {
+    .poster-pattern {
+      &.first {
+        top: 20%;
+        left: 100%;
+      }// first-child
+
+      &.second {
+        top: 60%;
+        left: -5%;
+      }// last-child
+    }
+  }
 
   video { position: absolute; }
 
