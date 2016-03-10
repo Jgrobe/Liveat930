@@ -3239,21 +3239,30 @@ div.mce_inline_error {
             font-size: 23px;
             letter-spacing: .04em; } }
 
+.landing.episodes-landing.episode-detail .landing-container {
+  width: 52vw; }
 .landing.episodes-landing.episode-detail .small {
   font-size: 2.84722vw;
   position: static;
-  text-align: right;
-  width: 100%; }
+  text-align: right; }
 .landing.episodes-landing.episode-detail .cta-container {
+  margin: -3% 0 0 5%;
   -webkit-box-shadow: 0 0 5vw rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0 0 5vw rgba(0, 0, 0, 0.3);
   -ms-box-shadow: 0 0 5vw rgba(0, 0, 0, 0.3);
   -o-box-shadow: 0 0 5vw rgba(0, 0, 0, 0.3);
-  box-shadow: 0 0 5vw rgba(0, 0, 0, 0.3);
-  font-size: 1.11111vw;
-  margin: -3% 0 0 5%; }
+  box-shadow: 0 0 5vw rgba(0, 0, 0, 0.3); }
+  .landing.episodes-landing.episode-detail .cta-container .cta, .landing.episodes-landing.episode-detail .cta-container #productSummary #productDetails .sqs-add-to-cart-button, #productSummary #productDetails .landing.episodes-landing.episode-detail .cta-container .sqs-add-to-cart-button, .landing.episodes-landing.episode-detail .cta-container #sqs-shopping-cart-wrapper .checkout-button, #sqs-shopping-cart-wrapper .landing.episodes-landing.episode-detail .cta-container .checkout-button {
+    font-size: 2.29167vw;
+    line-height: 2.29167vw; }
+  .landing.episodes-landing.episode-detail .cta-container .filler {
+    padding: 4.86111vw; }
+  .landing.episodes-landing.episode-detail .cta-container svg {
+    width: 2.29167vw;
+    height: 2.29167vw; }
 .landing.episodes-landing.episode-detail .text-layer {
-  margin-left: 35%;
+  position: absolute;
+  left: 15%;
   width: 65%;
   color: #000000; }
 .landing.episodes-landing.episode-detail .sharebox {
