@@ -232,7 +232,18 @@
   }// ul
 }// .footer-social
 
-div.mce_inline_error { display: none !important; }
+div.mce_inline_error {
+  padding: 5px 10px;
+  background-color: #EC4747;
+  font-weight: bold;
+  //z-index: -1;
+  color: #fff;
+  position: absolute;
+  font-size: 10px;
+  width: 100%;
+  bottom: 100%;
+  left: 0;
+}
 
 #mce-responses {
   .response {
