@@ -10,8 +10,8 @@
   }
 
   .small {
-    font-size: get_relative_units(40);
-    line-height: get_relative_units(35);
+    font-size: get_relative_units(82);
+    line-height: 2vw;
     top: 100%;
     right: 0;
     text-align: right;
@@ -22,7 +22,7 @@
     margin: 0 0 0 5%;
     @include shadow(0 0 5vw rgba(0,0,0,.3));
 
-    $size: get_relative_units(32);
+    $size: get_relative_units(25);
     .cta {
       font-size: $size;
       line-height: $size;
