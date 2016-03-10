@@ -140,10 +140,12 @@ var ClipGrid = function($container, options) {
         });
 
         // -------- THIS IS A DIRTY FUCKIN FIX FOR ISOTOPE NEEDING A SECOND LAYOUT() IN ORDER TO SIZE THE GRID CORRECTLY
+        // reset gridHeight to oldHeihgt after first layout() to prevent flickering
+        CG.$object.container.height(oldGridHeight);
+        // need a delay for second layout()
         setTimeout(function() {
             console.log('reset timeout');
             CG.layout();
-
 
             // capture new grid height
             var newGridHeight = CG.$object.container.height();
