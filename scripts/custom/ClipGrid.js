@@ -138,7 +138,7 @@ var ClipGrid = function($container, options) {
         CG.$object.container.isotope({
             filter: CG.currentFilter
         });
-        setTimeOut(function() {
+        setTimeout(function() {
             console.log('reset timeout');
             CG.layout();
         }, 2000);
