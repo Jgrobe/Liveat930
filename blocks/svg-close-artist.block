@@ -1,5 +1,5 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 66 66" style="enable-background:new 0 0 66 66;" xml:space="preserve">
-<path d="M62,0H4H0v4v58v4h4h58h4v-4V4V0H62z M62,62H4V4h58V62z"/>
 <path id="Rectangle_1_copy_4" d="M44.3,18.9l2.8,2.8L21.7,47.1l-2.8-2.8L44.3,18.9z"/>
+<rect x="31" y="15" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -13.669 33)" width="4" height="36"/>
 </svg>

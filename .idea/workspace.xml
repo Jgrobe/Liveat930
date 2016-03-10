@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ba77c59-895c-4b6c-8ed1-52220cbb39bd" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blocks/svg-close-artist.block" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/sass/pages/home.scss" afterPath="$PROJECT_DIR$/styles/sass/pages/home.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/style.css" afterPath="$PROJECT_DIR$/styles/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template-home.region" afterPath="$PROJECT_DIR$/template-home.region" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blocks/svg-close-artist.block" afterPath="$PROJECT_DIR$/blocks/svg-close-artist.block" />
     </list>
     <ignored path="sqsp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -101,21 +98,21 @@
                   </provider>
                 </entry>
               </file>
-              <file leaf-file-name="template-home.region" pinned="false" current-in-tab="true">
+              <file leaf-file-name="template-home.region" pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/template-home.region">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.27383366">
-                      <caret line="18" column="56" selection-start-line="18" selection-start-column="56" selection-end-line="18" selection-end-column="56" />
+                    <state vertical-scroll-proportion="-11.25">
+                      <caret line="18" column="57" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
                       <folding />
                     </state>
                   </provider>
                 </entry>
               </file>
-              <file leaf-file-name="svg-close-artist.block" pinned="false" current-in-tab="false">
+              <file leaf-file-name="svg-close-artist.block" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/blocks/svg-close-artist.block">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="-2.5">
-                      <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+                    <state vertical-scroll-proportion="0.045638945">
+                      <caret line="3" column="75" selection-start-line="3" selection-start-column="75" selection-end-line="3" selection-end-column="75" />
                       <folding />
                     </state>
                   </provider>
@@ -264,8 +261,8 @@
         <option value="$PROJECT_DIR$/collections/episodes.item" />
         <option value="$PROJECT_DIR$/styles/sass/pages/episode-detail.scss" />
         <option value="$PROJECT_DIR$/styles/sass/pages/home.scss" />
-        <option value="$PROJECT_DIR$/blocks/svg-close-artist.block" />
         <option value="$PROJECT_DIR$/template-home.region" />
+        <option value="$PROJECT_DIR$/blocks/svg-close-artist.block" />
       </list>
     </option>
   </component>
@@ -1096,18 +1093,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blocks/svg-close-artist.block">
+    <entry file="file://$PROJECT_DIR$/template-home.region">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.5">
-          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+        <state vertical-scroll-proportion="-11.25">
+          <caret line="18" column="57" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/template-home.region">
+    <entry file="file://$PROJECT_DIR$/blocks/svg-close-artist.block">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.27383366">
-          <caret line="18" column="56" selection-start-line="18" selection-start-column="56" selection-end-line="18" selection-end-column="56" />
+        <state vertical-scroll-proportion="0.045638945">
+          <caret line="3" column="75" selection-start-line="3" selection-start-column="75" selection-end-line="3" selection-end-column="75" />
           <folding />
         </state>
       </provider>
