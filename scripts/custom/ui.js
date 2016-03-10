@@ -135,9 +135,9 @@ function populate_namespaces() {
         //console.log('video time', SQSP.$objects.landingVideo.currentTime);
 
         if(elem_exists(SQSP.$objects.landingBG)) {
-            SQSP.$objects.landingBG.css({
-                top : jQuery(window).scrollTop()
-            });
+            //SQSP.$objects.landingBG.css({
+            //    top : jQuery(window).scrollTop()
+            //});
 
             if(elem_exists(jQuery(SQSP.$objects.landingVideo))) {
                 if(jQuery(window).scrollTop() > SQSP.$objects.landingBG.height()) {
@@ -373,7 +373,7 @@ function handleStickyBurger(e) {
         toggleBurger(true);
         return false;
     }
-    if(e.posY.current > (e.target.options.minY.value)*1.5) {
+    if(e.posY.current > (e.target.options.minY.value)*2.5) {
         // enable burger
         if(e.target.$object.container.hasClass('notactive')) {
             e.target.$object.container.removeClass('notactive');
