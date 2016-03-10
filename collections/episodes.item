@@ -18,7 +18,7 @@
                 {body}
                 {@|apply module-share-episode.block}
             </div><!-- .episodes-landing-sub -->
-            <div class="cta-dummy" data-label="Watch now" data-icon="play" data-attributes="id=cta-play-episode,href=#">{@|apply svg-icon-play.block}</div>
+            <div class="cta-dummy" data-label="Play full episode" data-icon="play" data-attributes="id=cta-play-episode,href=#">{@|apply svg-icon-play.block}</div>
 
         </div><!-- .landing-container -->
 

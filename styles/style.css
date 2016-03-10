@@ -3240,14 +3240,17 @@ div.mce_inline_error {
             letter-spacing: .04em; } }
 
 .landing.episodes-landing.episode-detail .landing-container {
-  width: 52vw; }
+  width: 52vw;
+  position: relative; }
 .landing.episodes-landing.episode-detail .small {
   font-size: 2.84722vw;
-  position: static;
+  line-height: 2vw;
+  top: 100%;
+  right: 0;
   text-align: right; }
 .landing.episodes-landing.episode-detail .cta-container {
   position: relative;
-  margin: -3% 0 0 5%;
+  margin: 0 0 0 5%;
   -webkit-box-shadow: 0 0 5vw rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0 0 5vw rgba(0, 0, 0, 0.3);
   -ms-box-shadow: 0 0 5vw rgba(0, 0, 0, 0.3);

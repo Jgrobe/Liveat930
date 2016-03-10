@@ -2,18 +2,20 @@
 
   .landing-container {
     width: 52vw;
+    position: relative;
   }
 
   .small {
     font-size: get_relative_units(82);
-    position: static;
+    line-height: 2vw;
+    top: 100%;
+    right: 0;
     text-align: right;
-    //width: 100%;
   }
 
   .cta-container {
     position: relative;
-    margin: -3% 0 0 5%;
+    margin: 0 0 0 5%;
     @include shadow(0 0 5vw rgba(0,0,0,.3));
 
     $size: get_relative_units(32);
