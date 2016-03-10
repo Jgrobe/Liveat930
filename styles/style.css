@@ -4518,6 +4518,16 @@ a.episodes-landing-cta {
 #productSummary #productDetails .product-excerpt * {
   font-size: 1.3vw;
   line-height: 1.9vw; }
+#productSummary #productDetails .variant-select-wrapper select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  font-size: 1.2vw;
+  padding: .5vw .7vw; }
+  #productSummary #productDetails .variant-select-wrapper select:active, #productSummary #productDetails .variant-select-wrapper select:visited {
+    outline: none; }
 #productSummary #productDetails .product-quantity-input {
   display: inline-block;
   position: relative; }

@@ -36,15 +36,15 @@
       }// *
     }// .product-excerpt
 
-    //.variant-select-wrapper {
-    //  select {
-    //    @include prefixed(appearance, none);
-    //    font-size: 1.2vw;
-    //    padding: .5vw .7vw;
-    //
-    //    &:active, &:visited {outline:none;}
-    //  }// select
-    //}// .variant-select-wrapper
+    .variant-select-wrapper {
+      select {
+        @include prefixed(appearance, none);
+        font-size: 1.2vw;
+        padding: .5vw .7vw;
+
+        &:active, &:visited {outline:none;}
+      }// select
+    }// .variant-select-wrapper
 
     .product-quantity-input {
       display: inline-block;
