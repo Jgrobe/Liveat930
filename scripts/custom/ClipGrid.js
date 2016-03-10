@@ -129,7 +129,7 @@ var ClipGrid = function($container, options) {
         });
 
         var inTL = new TimelineMax({onComplete:function() {
-            CG.$object.container.layout();
+            CG.$object.container.isotope();
             CG.updateCTA();
         }});
         // tween grid height
