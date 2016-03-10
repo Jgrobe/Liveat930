@@ -3109,6 +3109,8 @@ div.mce_inline_error {
     font-size: 47px;
     line-height: 47px;
     padding-top: 0; }
+    .episodes-overview .poster .ep-lineup .divider {
+      padding: 0px 11px; }
   .episodes-overview .poster .lineup-container:after {
     bottom: calc(~"25px / 2");
     left: 25px;
