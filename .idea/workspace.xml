@@ -3,18 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6ba77c59-895c-4b6c-8ed1-52220cbb39bd" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/sass/modules/poster.scss" afterPath="$PROJECT_DIR$/styles/sass/modules/poster.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/sass/modules/posters/deltoid.scss" afterPath="$PROJECT_DIR$/styles/sass/modules/posters/deltoid.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/sass/modules/posters/doubleSlash.scss" afterPath="$PROJECT_DIR$/styles/sass/modules/posters/doubleSlash.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/sass/modules/posters/general.scss" afterPath="$PROJECT_DIR$/styles/sass/modules/posters/general.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/sass/modules/posters/halfCircle.scss" afterPath="$PROJECT_DIR$/styles/sass/modules/posters/halfCircle.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/sass/modules/posters/hollowTriangle.scss" afterPath="$PROJECT_DIR$/styles/sass/modules/posters/hollowTriangle.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/sass/modules/posters/pentagon.scss" afterPath="$PROJECT_DIR$/styles/sass/modules/posters/pentagon.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/sass/modules/posters/square.scss" afterPath="$PROJECT_DIR$/styles/sass/modules/posters/square.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/sass/modules/posters/tripleRect.scss" afterPath="$PROJECT_DIR$/styles/sass/modules/posters/tripleRect.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/sass/modules/posters/verticalRect.scss" afterPath="$PROJECT_DIR$/styles/sass/modules/posters/verticalRect.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/style.css" afterPath="$PROJECT_DIR$/styles/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/style.css.map" afterPath="$PROJECT_DIR$/styles/style.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blocks/poster-scroll.block" afterPath="$PROJECT_DIR$/blocks/poster-scroll.block" />
     </list>
     <ignored path="sqsp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -42,8 +31,8 @@
               <file leaf-file-name="poster-scroll.block" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/blocks/poster-scroll.block">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.035349566">
-                      <caret line="3" column="66" selection-start-line="3" selection-start-column="66" selection-end-line="3" selection-end-column="66" />
+                    <state vertical-scroll-proportion="0.045638945">
+                      <caret line="3" column="67" selection-start-line="3" selection-start-column="67" selection-end-line="3" selection-end-column="67" />
                       <folding>
                         <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#div#2;n#div#0;n#!!top" expanded="true" />
                       </folding>
@@ -170,7 +159,7 @@
               <file leaf-file-name="poster.scss" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/styles/sass/modules/poster.scss">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.5168892">
+                    <state vertical-scroll-proportion="0.6673428">
                       <caret line="101" column="17" selection-start-line="101" selection-start-column="17" selection-end-line="101" selection-end-column="17" />
                       <folding />
                     </state>
@@ -238,7 +227,7 @@
           <file leaf-file-name="verticalRect.scss" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/styles/sass/modules/posters/verticalRect.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.058915947">
+                <state vertical-scroll-proportion="0.07606491">
                   <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
                   <folding />
                 </state>
@@ -355,7 +344,6 @@
         <option value="$PROJECT_DIR$/styles/sass/modules/posters/circle.scss" />
         <option value="$PROJECT_DIR$/scripts/custom/page_home.js" />
         <option value="$PROJECT_DIR$/styles/sass/modules/posters/fullTriangle.scss" />
-        <option value="$PROJECT_DIR$/blocks/poster-scroll.block" />
         <option value="$PROJECT_DIR$/styles/sass/modules/poster.scss" />
         <option value="$PROJECT_DIR$/styles/sass/modules/posters/deltoid.scss" />
         <option value="$PROJECT_DIR$/styles/sass/modules/posters/doubleSlash.scss" />
@@ -366,6 +354,7 @@
         <option value="$PROJECT_DIR$/styles/sass/modules/posters/square.scss" />
         <option value="$PROJECT_DIR$/styles/sass/modules/posters/tripleRect.scss" />
         <option value="$PROJECT_DIR$/styles/sass/modules/posters/verticalRect.scss" />
+        <option value="$PROJECT_DIR$/blocks/poster-scroll.block" />
       </list>
     </option>
   </component>
@@ -743,15 +732,15 @@
     <frame x="-2556" y="23" width="2556" height="1417" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10019724" sideWeight="0.874717" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10019724" sideWeight="0.87283236" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32981133" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32754716" sideWeight="0.5013807" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32754716" sideWeight="0.49861932" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32830188" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32830188" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21660377" sideWeight="0.49822485" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10019724" sideWeight="0.12528302" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21660377" sideWeight="0.49822485" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10019724" sideWeight="0.12716763" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -1111,19 +1100,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blocks/poster-scroll.block">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.035349566">
-          <caret line="3" column="66" selection-start-line="3" selection-start-column="66" selection-end-line="3" selection-end-column="66" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#div#2;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/styles/sass/modules/poster.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5168892">
+        <state vertical-scroll-proportion="0.6673428">
           <caret line="101" column="17" selection-start-line="101" selection-start-column="17" selection-end-line="101" selection-end-column="17" />
           <folding />
         </state>
@@ -1203,9 +1182,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/styles/sass/modules/posters/verticalRect.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.058915947">
+        <state vertical-scroll-proportion="0.07606491">
           <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blocks/poster-scroll.block">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.045638945">
+          <caret line="3" column="67" selection-start-line="3" selection-start-column="67" selection-end-line="3" selection-end-column="67" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#div#2;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
