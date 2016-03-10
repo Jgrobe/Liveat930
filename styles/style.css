@@ -3246,6 +3246,7 @@ div.mce_inline_error {
   position: static;
   text-align: right; }
 .landing.episodes-landing.episode-detail .cta-container {
+  position: relative;
   margin: -3% 0 0 5%;
   -webkit-box-shadow: 0 0 5vw rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0 0 5vw rgba(0, 0, 0, 0.3);
@@ -3253,17 +3254,17 @@ div.mce_inline_error {
   -o-box-shadow: 0 0 5vw rgba(0, 0, 0, 0.3);
   box-shadow: 0 0 5vw rgba(0, 0, 0, 0.3); }
   .landing.episodes-landing.episode-detail .cta-container .cta, .landing.episodes-landing.episode-detail .cta-container #productSummary #productDetails .sqs-add-to-cart-button, #productSummary #productDetails .landing.episodes-landing.episode-detail .cta-container .sqs-add-to-cart-button, .landing.episodes-landing.episode-detail .cta-container #sqs-shopping-cart-wrapper .checkout-button, #sqs-shopping-cart-wrapper .landing.episodes-landing.episode-detail .cta-container .checkout-button {
-    font-size: 2.29167vw;
-    line-height: 2.29167vw; }
+    font-size: 1.11111vw;
+    line-height: 1.11111vw; }
   .landing.episodes-landing.episode-detail .cta-container .filler {
-    padding: 4.86111vw; }
+    padding: 2.43056vw; }
   .landing.episodes-landing.episode-detail .cta-container svg {
-    width: 2.29167vw;
-    height: 2.29167vw; }
+    width: 1.11111vw;
+    height: 1.11111vw; }
 .landing.episodes-landing.episode-detail .text-layer {
   position: absolute;
-  left: 15%;
-  width: 65%;
+  left: 25%;
+  width: 80%;
   color: #000000; }
 .landing.episodes-landing.episode-detail .sharebox {
   margin: 0;

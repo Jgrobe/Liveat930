@@ -12,13 +12,13 @@
             <div class="landing-head">
                 <h1 class="l-headline">Episode No.{customContent.episode-number}</h1>
                 <div class="small">{addedOn|date %B %Y}</div>
-                <div class="cta-dummy" data-label="Watch now" data-icon="play" data-attributes="id=cta-play-episode,href=#">{@|apply svg-icon-play.block}</div>
                 <!--<a href="#" class="cta-play-episode">Watch now</a>-->
-            </div>
+            </div><!-- .landing-head -->
             <div class="text-layer">
                 {body}
                 {@|apply module-share-episode.block}
             </div><!-- .episodes-landing-sub -->
+            <div class="cta-dummy" data-label="Watch now" data-icon="play" data-attributes="id=cta-play-episode,href=#">{@|apply svg-icon-play.block}</div>
 
         </div><!-- .landing-container -->
 
