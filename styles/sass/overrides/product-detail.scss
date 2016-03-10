@@ -133,6 +133,7 @@
     padding: 0 10px;
     border:none;
     border-radius: 0;
+    background:none;
     @include shadow(none);
 
     .icon, .details, .subtotal {

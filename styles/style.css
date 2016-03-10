@@ -1069,6 +1069,7 @@ div.mce_inline_error {
     background-attachment: fixed; }
   .landing .landing-container {
     margin: auto;
+    margin-top: 35vh;
     display: inline-block;
     position: relative; }
 
@@ -2924,21 +2925,21 @@ div.mce_inline_error {
   left: 50%; }
   .landing.episodes-landing .landing-extra span {
     font-family: "Gotham A", "Gotham B";
-    font-size: 0.8vw; }
+    font-size: .8vw;
+    letter-spacing: .1em;
+    position: absolute;
+    right: 102%; }
   .landing.episodes-landing .landing-extra p {
     margin: 0;
     letter-spacing: 0.3vw;
     font-size: 2.1vw; }
 .landing.episodes-landing .cta-container {
-  position: absolute;
-  width: 80%;
-  left: 45%; }
+  display: inline-block;
+  margin: 15% auto auto 10%; }
 @media only screen and (max-width: 750px) {
   .landing.episodes-landing {
     width: 100%; }
     .landing.episodes-landing .landing-container {
-      width: 100%;
-      height: 100%;
       display: -webkit-box;
       display: -moz-box;
       display: -ms-flexbox;
@@ -2951,7 +2952,8 @@ div.mce_inline_error {
       flex-direction: column;
       -webkit-direction: column;
       -ms-direction: column;
-      direction: column; }
+      direction: column;
+      margin: auto; }
     .landing.episodes-landing .episodes-landing-head, .landing.episodes-landing .landing-extra, .landing.episodes-landing a.episodes-landing-cta {
       position: static;
       margin: auto;
@@ -4439,6 +4441,7 @@ div.mce_inline_error {
     padding: 0 10px;
     border: none;
     border-radius: 0;
+    background: none;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     -ms-box-shadow: none;
