@@ -27,7 +27,6 @@
     width: 0;//$logoW;
     height: $logoH;
     overflow: hidden;
-//    @include prefixed(transition, width $shortTrans);
     @include prefixed(transition, none);
 
     .inner {
@@ -37,7 +36,6 @@
 
     .line, .line:nth-child(2) {
       width: 0;
-//      @include prefixed(transition, none);
     }
 
     .line:nth-child(2) {
@@ -45,16 +43,7 @@
         content: '';
         left: -$logoW;
       }
-    }
-
-//    &.notactive {
-//      top: calc(#{-$logoH} - #{$logoOffset});
-//      width: 0;
-//    }
-
-//    .line:nth-child(2) {
-//      top: #{$logoH/2}
-//    }
+    }// .line
 
     &:hover {
       .line:nth-child(2) {
@@ -66,7 +55,6 @@
   }// .burger
 
   &.on {
-//    .logo {background-image:url('assets/images/logo-small-white.svg');}
 
     .logo {
       @include svg-content() {
@@ -86,9 +74,7 @@
         }
 
         &:first-child {
-//          top:50%;
-//          left:50%;
-//          @include transform(translateX(-50%) translateY(-50%) rotate(45deg));
+//          top:50%; transform(translateX(-50%) translateY(-50%) rotate(45deg));
           @include transform(translateX(25%) translateY(80%) rotate(45deg));
         }
         &:nth-child(2) {

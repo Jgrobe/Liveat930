@@ -8,7 +8,10 @@
 </squarespace:query>
 <div class="site-content">
     <section class="posters scroll-posters">
-        <div class="posters-hover-bg"></div>
+
+        <div class="fill-parent">
+            <div class="posters-hover-bg"></div>
+        </div>
 
         <squarespace:query collection="episodes" limit="99" category="aired">
             {.repeated section items}
