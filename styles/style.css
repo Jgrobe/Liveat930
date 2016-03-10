@@ -2928,10 +2928,11 @@ div.mce_inline_error {
   .landing.episodes-landing .landing-extra p {
     margin: 0;
     letter-spacing: 0.3vw;
-    font-size: 2.1vw; }
+    font-size: 2.1vw;
+    line-height: 2.1vw; }
 .landing.episodes-landing .cta-container {
   display: inline-block;
-  margin: 15% auto auto 10%; }
+  margin: 13% auto auto 10%; }
 @media only screen and (max-width: 750px) {
   .landing.episodes-landing {
     width: 100%; }

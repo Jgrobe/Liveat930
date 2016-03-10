@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="6ba77c59-895c-4b6c-8ed1-52220cbb39bd" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collections/episodes.list" afterPath="$PROJECT_DIR$/collections/episodes.list" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/sass/pages/episodes.scss" afterPath="$PROJECT_DIR$/styles/sass/pages/episodes.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/style.css" afterPath="$PROJECT_DIR$/styles/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/style.css.map" afterPath="$PROJECT_DIR$/styles/style.css.map" />
     </list>
     <ignored path="sqsp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -155,8 +157,8 @@
           <file leaf-file-name="episodes.scss" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/styles/sass/pages/episodes.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.33263817">
-                  <caret line="66" column="42" selection-start-line="66" selection-start-column="42" selection-end-line="66" selection-end-column="42" />
+                <state vertical-scroll-proportion="0.53180397">
+                  <caret line="51" column="14" selection-start-line="51" selection-start-column="14" selection-end-line="51" selection-end-column="14" />
                   <folding />
                 </state>
               </provider>
@@ -221,8 +223,8 @@
         <option value="$PROJECT_DIR$/collections/products.list" />
         <option value="$PROJECT_DIR$/styles/sass/overrides/product-detail.scss" />
         <option value="$PROJECT_DIR$/styles/sass/modules/landing.scss" />
-        <option value="$PROJECT_DIR$/styles/sass/pages/episodes.scss" />
         <option value="$PROJECT_DIR$/collections/episodes.list" />
+        <option value="$PROJECT_DIR$/styles/sass/pages/episodes.scss" />
       </list>
     </option>
   </component>
@@ -1084,14 +1086,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/styles/sass/pages/episodes.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33263817">
-          <caret line="66" column="42" selection-start-line="66" selection-start-column="42" selection-end-line="66" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/collections/episodes.list">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4848801">
@@ -1100,6 +1094,14 @@
             <element signature="n#style#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#section#0;n#squarespace:query#0;n#div#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/sass/pages/episodes.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.53180397">
+          <caret line="51" column="14" selection-start-line="51" selection-start-column="14" selection-end-line="51" selection-end-column="14" />
+          <folding />
         </state>
       </provider>
     </entry>
