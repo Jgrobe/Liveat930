@@ -4519,7 +4519,7 @@ input {
   #productSummary #productGallery #productSlideshow .slide img {
     left: 0 !important; }
 @media only screen and (max-width: 750px) {
-  #productSummary #productDetails .product-title {
+  #productSummary .product-title {
     font-size: 30px;
     width: 80%;
     margin: auto;
@@ -4528,7 +4528,8 @@ input {
     font-size: 23px; }
   #productSummary #productDetails .product-excerpt * {
     font-size: 15px;
-    line-height: 20px; }
+    line-height: 20px;
+    width: 80%; }
   #productSummary #productDetails .variant-select-wrapper select {
     font-size: 15px;
     padding: 15px 40px 15px 15px; }

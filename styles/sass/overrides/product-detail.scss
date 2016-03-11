@@ -105,14 +105,21 @@
 
   @include breakpoint(mobile) {
 
+    .product-title {
+      font-size: 30px;
+      width: 80%;
+      margin: auto;
+      text-align: left;
+    }
+
     #productDetails {
 
-      .product-title {
-        font-size: 30px;
-        width: 80%;
-        margin: auto;
-        text-align: left;
-      }// .product-title
+      //.product-title {
+      //  font-size: 30px;
+      //  width: 80%;
+      //  margin: auto;
+      //  text-align: left;
+      //}// .product-title
 
       .product-price {
         font-size: 23px;
@@ -122,6 +129,7 @@
         * {
           font-size: 15px;
           line-height: 20px;
+          width: 80%;
         }// *
       }// .product-excerpt
 
