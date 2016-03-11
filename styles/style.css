@@ -2257,7 +2257,7 @@ input {
     .device.ipad {
       width: 90%;
       margin: 0 auto; }
-      .device.ipad .device-screen .image {
+      .device.ipad .device-screen {
         display: block; } }
 
 .text-insert-container {

@@ -91,9 +91,7 @@
 //      }
 
       .device-screen {
-        .image {
-          display: block;// need to override display none on excerpt-image mobile
-        }
+        display: block;// need to override display none on excerpt-image mobile
       }// .device-screen
     }// .ipad
 
