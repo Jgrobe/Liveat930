@@ -169,6 +169,7 @@ var ImageGallery = function($container, options) {
         });
 
         IG.$object.container.swipe({
+            allowPageScroll:"auto",
             swipe:function(e, direction) {
                 switch(direction) {
                     case 'left' :
