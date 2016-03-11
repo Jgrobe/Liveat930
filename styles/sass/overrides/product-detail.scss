@@ -96,6 +96,10 @@
 
     #productGallery {
       margin-top:20px;
+
+      #productSlideshow .slide {
+        img {left: auto;}
+      }
     }
 
   }// BP MOBILE

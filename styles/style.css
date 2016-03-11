@@ -4513,7 +4513,9 @@ input {
     left: 0 !important; }
 @media only screen and (max-width: 750px) {
   #productSummary #productGallery {
-    margin-top: 20px; } }
+    margin-top: 20px; }
+    #productSummary #productGallery #productSlideshow .slide img {
+      left: auto; } }
 
 #sqs-shopping-cart-wrapper .cart-container .item-desc a {
   font-weight: 500; }
