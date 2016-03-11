@@ -139,7 +139,7 @@
                     </div><!-- .video -->
                 </squarespace:query>
 
-                <squarespace:query collection="episodes" category="aired" limit="1">
+                <squarespace:query collection="episodes" category="current" limit="1">
                     <script>
                         console.log('episodes query', {@|json-pretty});
                     </script>
