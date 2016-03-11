@@ -16,7 +16,6 @@
     @extend .fill-parent;
     @extend .imgfill;
         background-attachment: fixed;
-
   }// .landing-bg
 
   .landing-container {
@@ -26,7 +25,7 @@
     position: relative;
   }// .landing-container
 
-  @include breakpoint(mobile){
+  @include breakpoint(mobile) {
 
     height:auto;
     min-height: 100vh;
