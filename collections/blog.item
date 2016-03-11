@@ -1,7 +1,7 @@
 <section class="landing post-landing">
     <div class="fill-parent mask">
         <div class="landing-bg" style="background-image:url('{item.customContent.hero-image}');">
-            <video src="{imte.customContent.hero-video}" muted autoplay class="loop"></video>
+            <video src="{item.customContent.hero-video}" muted autoplay class="loop"></video>
         </div>
     </div>
     <h1 class="l-headline">{item.title}</h1>
