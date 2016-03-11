@@ -2258,7 +2258,9 @@ input {
       width: 90%;
       margin: 0 auto; }
       .device.ipad .device-screen {
-        display: block; } }
+        display: block;
+        right: 8.5%;
+        top: 6%; } }
 
 .text-insert-container {
   position: relative;
