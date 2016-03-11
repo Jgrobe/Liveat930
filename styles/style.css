@@ -3863,7 +3863,12 @@ input {
         -o-transform: none;
         transform: none; }
         .history-slider .slider-ui .slider-arrows {
-          position: static;
+          position: relative;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          z-index: 1;
           -webkit-transform: none;
           -moz-transform: none;
           -ms-transform: none;
