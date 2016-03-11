@@ -65,7 +65,7 @@
         {.if customContent}{.section customContent}
 
             {.if episode-gallery}
-                <section class="image-slider gallery-container">
+                <section class="image-slider gallery-container episode-gallery">
 
                     <script>
                         console.log('gallery data???', {@|json-pretty});

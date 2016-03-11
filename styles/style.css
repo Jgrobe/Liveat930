@@ -3438,6 +3438,17 @@ input {
     background: white url("assets/images/icon-play.svg") no-repeat center center;
     background-size: 13%; }
 
+@media only screen and (max-width: 750px) {
+  .image-slider.episode-gallery .slider-ui {
+    position: relative;
+    -webkit-transform: translateY(-10%);
+    -moz-transform: translateY(-10%);
+    -ms-transform: translateY(-10%);
+    -o-transform: translateY(-10%);
+    transform: translateY(-10%); }
+    .image-slider.episode-gallery .slider-ui .slider-arrows {
+      position: static; } }
+
 .host-landing {
   display: -webkit-box;
   display: -moz-box;

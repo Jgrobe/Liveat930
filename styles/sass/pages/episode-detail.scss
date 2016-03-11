@@ -162,3 +162,21 @@
   }// before
 
 }// .play-episode
+
+.image-slider.episode-gallery {
+
+  @include breakpoint(mobile) {
+
+    .slider-ui {
+      position: relative;
+
+      @include transform(translateY(-10%));
+
+      .slider-arrows {
+        position: static;
+      }// .slider-arrow
+    }// .slider-ui
+
+  }// BP MOBILE
+
+}// .episode-gallery
