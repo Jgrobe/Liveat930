@@ -105,6 +105,20 @@
     .cta-container {
       margin: 0 0 auto auto;
       @include transform(translateY(50%));
+
+      $size: get_relative_units(11);
+      .cta {
+        font-size: $size;
+        line-height: $size;
+      }
+      .filler {
+        padding: get_relative_units(55);
+      }
+
+      svg {
+        width: $size;
+        height: $size;
+      }
     }// .cta-container
 
     .sharebox {

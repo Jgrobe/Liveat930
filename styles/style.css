@@ -3376,6 +3376,14 @@ input {
     -ms-transform: translateY(50%);
     -o-transform: translateY(50%);
     transform: translateY(50%); }
+    .landing.episodes-landing .cta-container .cta, .landing.episodes-landing .cta-container #productSummary #productDetails .sqs-add-to-cart-button, #productSummary #productDetails .landing.episodes-landing .cta-container .sqs-add-to-cart-button, .landing.episodes-landing .cta-container #sqs-shopping-cart-wrapper .checkout-button, #sqs-shopping-cart-wrapper .landing.episodes-landing .cta-container .checkout-button {
+      font-size: 0.38194vw;
+      line-height: 0.38194vw; }
+    .landing.episodes-landing .cta-container .filler {
+      padding: 1.90972vw; }
+    .landing.episodes-landing .cta-container svg {
+      width: 0.38194vw;
+      height: 0.38194vw; }
   .landing.episodes-landing .sharebox {
     -webkit-transform: translateY(-19px);
     -moz-transform: translateY(-19px);
