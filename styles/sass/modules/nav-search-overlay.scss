@@ -38,7 +38,7 @@ $rightColMargin: 10vw;
   .table {
     position: relative;
     height: 100%;
-    @include flex-value(direction, column);
+    //@include flex-value(direction, column);
   }
 
   .cell {

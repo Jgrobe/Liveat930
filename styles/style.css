@@ -2362,15 +2362,7 @@ input {
     height: 0; }
   .nav-overlay .table {
     position: relative;
-    height: 100%;
-    -webkit-box-direction: column;
-    -moz-box-direction: column;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-direction: column;
-    -ms-direction: column;
-    direction: column; }
+    height: 100%; }
   .nav-overlay .cell {
     display: -webkit-box;
     display: -moz-box;
