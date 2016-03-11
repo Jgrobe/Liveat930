@@ -17,7 +17,7 @@
             <video controls data-setup="{}" class="video-js fill-parent" poster="{item.customContent.clip-thumbnail.assetUrl}">
                 <source src="{item.customContent.clip-url}" type='video/mp4'>
             </video>
-            <div class="btn-play">{@|apply svg-icon-play.block}</div>
+            <!--<div class="btn-play">{@|apply svg-icon-play.block}</div>-->
         </div><!-- .clip-preview-container -->
 
         <div class="text-layer">
