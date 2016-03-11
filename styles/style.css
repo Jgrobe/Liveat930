@@ -4100,13 +4100,12 @@ input {
         -o-filter: grayscale(100%);
         filter: grayscale(100%); }
       .video-gallery .video .image .hover-thumb {
-        visibility: hidden;
         opacity: 0;
-        -webkit-transition: opacity 0.3s, visibility 0.3s;
-        -moz-transition: opacity 0.3s, visibility 0.3s;
-        -ms-transition: opacity 0.3s, visibility 0.3s;
-        -o-transition: opacity 0.3s, visibility 0.3s;
-        transition: opacity 0.3s, visibility 0.3s;
+        -webkit-transition: opacity 0.3s;
+        -moz-transition: opacity 0.3s;
+        -ms-transition: opacity 0.3s;
+        -o-transition: opacity 0.3s;
+        transition: opacity 0.3s;
         -webkit-filter: grayscale(70%);
         -moz-filter: grayscale(70%);
         -ms-filter: grayscale(70%);
@@ -4171,7 +4170,6 @@ input {
         -ms-grow: 1;
         grow: 1; }
     .video-gallery .video:hover .image .hover-thumb {
-      visibility: visible;
       opacity: 1; }
   .video-gallery .cta-container {
     position: absolute;
