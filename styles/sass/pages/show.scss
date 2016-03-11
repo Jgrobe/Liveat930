@@ -55,54 +55,12 @@
     height: get_relative_units(480);
   }
 
-//  .featuring {
-//    @include relative_units(font-size, 82);
-//    @include relative_units(line-height, 86);
-//    letter-spacing: .08em;
-//    @include relative_units(margin-top, 125);
-//    @include relative_units(margin-bottom, 125);
-//    @extend .medium;
-//    margin-left: 42%;
-//    width: 50%;
-//    text-align: left;
-//    position: relative;
-//
-//    .label {
-//      font-family: $gotham;
-//      @include relative_units(font-size, 20);
-//      letter-spacing: .1em;
-//      position: absolute;
-//      left: 0;
-//      top: 0;
-//      @include transform(translateX(-120%));
-//    }
-//
-//  }
-//
-//  .episodes-landing-geo {
-//    background-color: #4B90EE;
-//    background-blend-mode: screen;
-//    background-position: 14% 60%;
-//    mix-blend-mode: normal;
-//    opacity: 1;
-//    top: 7vw;
-//    left: -5vw;
-//    @include relative_units(width, 950);
-//    @include relative_units(height, 950);
-//  }// .episodes-landing-geo
-//
-//  .watch-latest-cta {
-//    position: relative;
-//    @include cta(white, black);
-//    display: inline-block;
-//    margin-left: 25%;
-//  }// .watch-latest-cta
-
   @include breakpoint(mobile) {
     width: $MOBILE_WIDTH;
-//    padding: 70px 30px;
 
-//    .episodes-landing-geo { display: none; }
+    h1 {
+      .show-landing-subline {font-size: 15px;}
+    }
 
     .show-landing-info {
       width: 100%;
@@ -111,19 +69,7 @@
       line-height: 22px;
     }
 
-//    .show-landing-hardfacts {font-size: 19px;}
-
     .rectangle { height: 35vw; }
-
-//    .featuring {
-//      letter-spacing: 0.06vw;
-//      font-size: 31px;
-//      line-height: 43px;
-//      margin: 20px auto;
-//      text-align: center;
-//      width: 100%;
-//      .label {display: none;}
-//    }
 
     .lefted {
       text-align: center;

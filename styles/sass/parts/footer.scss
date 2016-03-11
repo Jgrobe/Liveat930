@@ -200,6 +200,7 @@
   margin: 0 auto;
 
   @include breakpoint(mobile) {
+    width: 60vw;
     height: 5vw;
   }
 }// .hosted-by-logo
@@ -270,4 +271,32 @@
       }// a
     }// li
   }// ul
+
+  @include breakpoint(mobile) {
+
+    ul {
+      li {
+        a {
+          $size:30px;
+
+          width: $size;
+          height: $size;
+          //background-repeat: no-repeat;
+          //background-position: center;
+          //background-size: 60%;
+          //&.instagram { background-image: url('assets/images/instagram.svg'); }
+          //&.facebook {
+          //  background-image: url('assets/images/facebook.svg');
+          //  background-size: 36%;
+          //}
+          //&.twitter {
+          //  background-image: url('assets/images/twitter.svg');
+          //  background-size: 72%;
+          //}
+
+        }// a
+      }// li
+    }// ul
+
+  }// BP MOBILE
 }// .footer-social
