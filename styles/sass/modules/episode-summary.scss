@@ -50,4 +50,16 @@
     margin-left: 5%;
   }
 
+  @include breakpoint(mobile) {
+
+    .summary-copy {
+      position: absolute;
+      width: 80%;
+      left: 20%;
+      top: 50%;
+      @include transform(translateY(-50%));
+    }// .summary-copy
+
+  }// BP MOBILE
+
 }// .episode-summary

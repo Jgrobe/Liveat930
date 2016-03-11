@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="6ba77c59-895c-4b6c-8ed1-52220cbb39bd" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blocks/episode-summary.block" afterPath="$PROJECT_DIR$/blocks/episode-summary.block" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/sass/modules/episode-summary.scss" afterPath="$PROJECT_DIR$/styles/sass/modules/episode-summary.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/sass/pages/video-detail.scss" afterPath="$PROJECT_DIR$/styles/sass/pages/video-detail.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/sass/pages/video.scss" afterPath="$PROJECT_DIR$/styles/sass/pages/video.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/style.css" afterPath="$PROJECT_DIR$/styles/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/style.css.map" afterPath="$PROJECT_DIR$/styles/style.css.map" />
@@ -40,6 +43,18 @@
               </provider>
             </entry>
           </file>
+          <file leaf-file-name="episode-summary.block" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/blocks/episode-summary.block">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.035349566">
+                  <caret line="3" column="48" selection-start-line="3" selection-start-column="48" selection-end-line="3" selection-end-column="48" />
+                  <folding>
+                    <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
           <file leaf-file-name="template.conf" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/template.conf">
               <provider selected="true" editor-type-id="text-editor">
@@ -50,24 +65,26 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="blog.item" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/collections/blog.item">
+          <file leaf-file-name="episodes.item" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/collections/episodes.item">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-0.0">
-                  <caret line="0" column="24" selection-start-line="0" selection-start-column="24" selection-end-line="0" selection-end-column="24" />
-                  <folding />
+                <state vertical-scroll-proportion="-2.3529413">
+                  <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+                  <folding>
+                    <element signature="n#style#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#squarespace:query#0;n#section#2;n#div#1;n#!!top" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="episodes.item" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/collections/episodes.item">
+          <file leaf-file-name="videoclips.item" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/collections/videoclips.item">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.33251232">
-                  <caret line="67" column="78" selection-start-line="67" selection-start-column="78" selection-end-line="67" selection-end-column="78" />
+                <state vertical-scroll-proportion="-7.352941">
+                  <caret line="25" column="35" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="35" />
                   <folding>
-                    <element signature="n#style#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#squarespace:query#0;n#section#2;n#div#1;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#section#0;n#!!top" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -81,18 +98,6 @@
                   <folding>
                     <element signature="n#style#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#section#0;n#squarespace:query#0;n#div#0;n#!!top" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="products.list" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/collections/products.list">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-9.375">
-                  <caret line="15" column="60" selection-start-line="15" selection-start-column="60" selection-end-line="15" selection-end-column="60" />
-                  <folding>
-                    <element signature="n#style#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -162,15 +167,12 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="video.scss" pinned="false" current-in-tab="true">
+          <file leaf-file-name="video.scss" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/styles/sass/pages/video.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.7318236">
-                  <caret line="131" column="13" selection-start-line="111" selection-start-column="31" selection-end-line="131" selection-end-column="13" />
-                  <folding>
-                    <marker date="1457696950000" expanded="true" signature="2207:2758" placeholder="{...}" />
-                    <marker date="1457696950000" expanded="true" signature="2497:2748" placeholder="{...}" />
-                  </folding>
+                <state vertical-scroll-proportion="-21.625">
+                  <caret line="305" column="6" selection-start-line="305" selection-start-column="6" selection-end-line="305" selection-end-column="6" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -205,16 +207,6 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="footer.scss" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/styles/sass/parts/footer.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-5.5882354">
-                  <caret line="41" column="27" selection-start-line="41" selection-start-column="27" selection-end-line="41" selection-end-column="27" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="episode-detail.scss" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/styles/sass/pages/episode-detail.scss">
               <provider selected="true" editor-type-id="text-editor">
@@ -238,8 +230,18 @@
           <file leaf-file-name="video-detail.scss" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/styles/sass/pages/video-detail.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-5.2941175">
-                  <caret line="49" column="1" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="1" />
+                <state vertical-scroll-proportion="-7.372549">
+                  <caret line="120" column="23" selection-start-line="120" selection-start-column="22" selection-end-line="120" selection-end-column="23" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="episode-summary.scss" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/styles/sass/modules/episode-summary.scss">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.41241163">
+                  <caret line="35" column="13" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
                   <folding />
                 </state>
               </provider>
@@ -255,9 +257,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/styles/style.scss" />
-        <option value="$PROJECT_DIR$/styles/sass/pages/video-detail.scss" />
-        <option value="$PROJECT_DIR$/scripts/custom/page_episodes.js" />
         <option value="$PROJECT_DIR$/styles/sass/base/_vars.scss" />
         <option value="$PROJECT_DIR$/styles/sass/parts/header.scss" />
         <option value="$PROJECT_DIR$/styles/sass/base/reset.scss" />
@@ -306,6 +305,9 @@
         <option value="$PROJECT_DIR$/styles/sass/pages/merch.scss" />
         <option value="$PROJECT_DIR$/styles/sass/overrides/product-detail.scss" />
         <option value="$PROJECT_DIR$/styles/sass/pages/video.scss" />
+        <option value="$PROJECT_DIR$/styles/sass/pages/video-detail.scss" />
+        <option value="$PROJECT_DIR$/styles/sass/modules/episode-summary.scss" />
+        <option value="$PROJECT_DIR$/blocks/episode-summary.block" />
       </list>
     </option>
   </component>
@@ -683,15 +685,15 @@
     <frame x="-2556" y="23" width="2556" height="1417" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10019724" sideWeight="0.87205386" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10019724" sideWeight="0.874717" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32981133" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32754716" sideWeight="0.5013807" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32754716" sideWeight="0.49861932" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32754716" sideWeight="0.49861932" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32830188" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32830188" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21660377" sideWeight="0.49822485" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10019724" sideWeight="0.12794612" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10019724" sideWeight="0.12528302" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -721,30 +723,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/scripts/custom/page_episodes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17381229">
-          <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/styles/sass/base/mixins.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12514898">
-          <caret line="66" column="16" selection-start-line="66" selection-start-column="16" selection-end-line="68" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/styles/sass/modules/landing.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.5">
-          <caret line="28" column="12" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/collections/products.list">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-9.375">
@@ -949,16 +927,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/collections/videoclips.item">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="24" selection-start-line="0" selection-start-column="24" selection-end-line="0" selection-end-column="24" />
-          <folding>
-            <element signature="n#style#0;n#section#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/collections/videoclips.list">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.17205422">
@@ -1078,29 +1046,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/collections/episodes.item">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33251232">
-          <caret line="67" column="78" selection-start-line="67" selection-start-column="78" selection-end-line="67" selection-end-column="78" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#squarespace:query#0;n#section#2;n#div#1;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/styles/sass/ui/cta.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-14.137255">
           <caret line="116" column="5" selection-start-line="116" selection-start-column="5" selection-end-line="116" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/styles/sass/pages/video-detail.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.2941175">
-          <caret line="49" column="1" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="1" />
           <folding />
         </state>
       </provider>
@@ -1139,11 +1088,63 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/styles/sass/pages/video.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7318236">
-          <caret line="131" column="13" selection-start-line="111" selection-start-column="31" selection-end-line="131" selection-end-column="13" />
+        <state vertical-scroll-proportion="-21.625">
+          <caret line="305" column="6" selection-start-line="305" selection-start-column="6" selection-end-line="305" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/sass/pages/video-detail.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.372549">
+          <caret line="120" column="23" selection-start-line="120" selection-start-column="22" selection-end-line="120" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collections/episodes.item">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.3529413">
+          <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
           <folding>
-            <marker date="1457696950000" expanded="true" signature="2207:2758" placeholder="{...}" />
-            <marker date="1457696950000" expanded="true" signature="2497:2748" placeholder="{...}" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#squarespace:query#0;n#section#2;n#div#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collections/blog.item">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="24" selection-start-line="0" selection-start-column="24" selection-end-line="0" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collections/videoclips.item">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.352941">
+          <caret line="25" column="35" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="35" />
+          <folding>
+            <element signature="n#style#0;n#section#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/sass/modules/episode-summary.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.41241163">
+          <caret line="35" column="13" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blocks/episode-summary.block">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.035349566">
+          <caret line="3" column="48" selection-start-line="3" selection-start-column="48" selection-end-line="3" selection-end-column="48" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

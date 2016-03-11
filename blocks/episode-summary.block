@@ -1,7 +1,7 @@
 <div class="episode-summary prllx-custom" data-prllx=".08">
 
-    <div class="shape-container make-shape imgfill" data-shape="{customContent.episode-shape}" class="imgfill" style="background-image:url('{customContent.poster-fallback-image.assetUrl}');">
-        <!--<video src="{customContent.episode-poster-video}" muted style="position: absolute;"></video>-->
+    <div class="shape-container make-shape" data-shape="{customContent.episode-shape}">
+        <div class="fill-parent imgfill" style="background-image:url('{customContent.poster-fallback-image.assetUrl}');"></div>
     </div>
 
     <div class="summary-copy">

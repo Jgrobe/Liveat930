@@ -291,7 +291,7 @@ $gridGutter: 5%;
   //------------------------------------------------------------
 
   @include breakpoint(mobile) {
-    padding-bottom: 50px;
+    padding-bottom: 100px;
     width: $MOBILE_WIDTH;
     margin-bottom: 20vh;//$sectionMarginBottomMobile;
 

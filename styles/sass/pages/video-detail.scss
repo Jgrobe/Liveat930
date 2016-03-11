@@ -15,11 +15,6 @@
     opacity: .7;
   }// before
 
-  .landing-container {
-    margin: auto;
-    position: relative;
-  }
-
   .landing-head {
     @extend .l-headline;
     max-width: 85vw;
@@ -30,6 +25,22 @@
       padding-right: 10%;
     }// .small
   }// .landing-head
+
+  @include breakpoint(mobile) {
+
+    .landing-head {
+
+      .landing-head {
+        .small {
+          @extend .s-headline;
+          text-align: center;
+          padding:0;
+          margin-top: 5vh;
+        }// .small
+      }// .landing-head
+    }// .landing-head
+
+  }// BP MOBILE
 
 }// .clip-landing
 
@@ -91,8 +102,19 @@
       position: absolute;
       top: 98%;
     }
-  }
-}
+  }// .text-layer
+
+  @include breakpoint(mobile) {
+    width: $MOBILE_WIDTH;
+
+    .text-layer {
+      width: 90%;
+      margin: auto;
+    }// .text-layer
+
+  }// BP MOBILE
+
+}// .clip-container
 
 .clip-preview-container {
   width: 100%;
