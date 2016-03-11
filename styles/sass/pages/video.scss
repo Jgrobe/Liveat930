@@ -205,9 +205,8 @@ $gridGutter: 5%;
         @include prefixed(filter, grayscale(100%));
       }
       .hover-thumb {
-        opacity: 0;
-        @include prefixed(transition, opacity $shortTrans);
-        @include prefixed(filter, grayscale(70%));
+        @include autoAlpha(0);
+        @include prefixed(transition, $shortTrans);
       }
     }
 
@@ -267,8 +266,7 @@ $gridGutter: 5%;
     &:hover {
 
       .image {
-        //.thumb { @include prefixed(filter, grayscale(70%));}
-        .hover-thumb { opacity: 1; }
+        .hover-thumb { @include autoAlpha(.3); }
       }
     }
   }// .video
