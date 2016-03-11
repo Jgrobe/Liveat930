@@ -4299,7 +4299,7 @@ input {
     margin-bottom: 10vH; }
   .site-content.clip-detail .video-gallery {
     margin-top: 10vH; }
-    .site-content.clip-detail .video-gallery:nth-child(2) {
+    .site-content.clip-detail .video-gallery.twin {
       margin-top: 0;
       padding-top: 10vH; }
     .site-content.clip-detail .video-gallery .cta-container {

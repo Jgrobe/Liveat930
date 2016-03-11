@@ -91,7 +91,7 @@
 
     {.if item.categories}
 
-        <section class="video-gallery video-detail-clips related-category-clips">
+        <section class="video-gallery video-detail-clips related-category-clips{.if item.customContent.linkedEpisodeClipsTags} twin{.end}">
             <div class="rectangle"></div>
 
             <div class="section-head">

@@ -59,7 +59,7 @@
 
       margin-top: $sectionMarginBottomMobile;
 
-      &:nth-child(2) {
+      &.twin {
         margin-top: 0;
         padding-top: $sectionMarginBottomMobile;
       }
