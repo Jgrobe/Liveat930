@@ -329,7 +329,16 @@
     .episodes-overview-row {display: block;}
     .episodes-overview-item {
       width: 100%;
-      .cta-container { display: none; }
+      .cta-container {
+        //display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        @include transform(none);
+        opacity: 0;
+      }
 
       &:nth-child(2) { margin-left: 0;}
     }

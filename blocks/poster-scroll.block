@@ -67,7 +67,7 @@
 
     </div><!-- .fill-parent --><!-- .poster-content -->
 
-    <!--<div class="cta-dummy" data-label="Play episode" data-class="btn-play-episode prllx-custom prllx-no-disable" data-attributes="data-prllx=-.65,href={fullUrl}"></div>-->
-    <a class="btn-play-episode prllx-custom prllx-no-disable" data-prllx="-.65" href="{fullUrl}">Play Episode</a>
+    <div class="cta-dummy" data-label="Play episode" data-class="btn-play-episode prllx-custom prllx-no-disable" data-attributes="data-prllx=-.65,href={fullUrl}"></div>
+    <!--<a class="btn-play-episode prllx-custom prllx-no-disable" data-prllx="-.65" href="{fullUrl}">Play Episode</a>-->
 
 </div><!-- .poster -->
