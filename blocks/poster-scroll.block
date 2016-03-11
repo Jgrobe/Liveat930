@@ -1,7 +1,7 @@
 <div class="poster {customContent.episode-shape}">
 
-    <div class="poster-pattern first prllx-custom" data-prllx=".1"></div>
-    <div class="poster-pattern second prllx-custom" data-prllx=".18"></div>
+    <div class="poster-pattern first prllx-custom" data-prllx=".16"></div>
+    <div class="poster-pattern second prllx-custom" data-prllx=".3"></div>
 
     <div class="poster-content">
 
