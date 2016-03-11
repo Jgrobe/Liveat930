@@ -4522,7 +4522,8 @@ input {
   #productSummary #productDetails .product-title {
     font-size: 30px;
     width: 80%;
-    margin: auto; }
+    margin: auto;
+    text-align: left; }
   #productSummary #productDetails .product-price {
     font-size: 23px; }
   #productSummary #productDetails .product-excerpt * {
