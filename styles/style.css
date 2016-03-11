@@ -3287,18 +3287,18 @@ input {
             font-size: 23px;
             letter-spacing: .04em; } }
 
-.landing.episodes-landing.episode-detail .landing-container {
+.landing.episodes-landing .landing-container {
   width: 52vw;
   position: relative; }
-.landing.episodes-landing.episode-detail .landing-head {
+.landing.episodes-landing .landing-head {
   position: relative; }
-.landing.episodes-landing.episode-detail .small {
+.landing.episodes-landing .small {
   font-size: 2.84722vw;
   line-height: 2vw;
   top: 100%;
   right: 0;
   text-align: right; }
-.landing.episodes-landing.episode-detail .cta-container {
+.landing.episodes-landing .cta-container {
   position: relative;
   z-index: 1;
   margin: 0 0 0 5%;
@@ -3307,30 +3307,30 @@ input {
   -ms-box-shadow: 0 0 5vw rgba(0, 0, 0, 0.3);
   -o-box-shadow: 0 0 5vw rgba(0, 0, 0, 0.3);
   box-shadow: 0 0 5vw rgba(0, 0, 0, 0.3); }
-  .landing.episodes-landing.episode-detail .cta-container .cta, .landing.episodes-landing.episode-detail .cta-container #productSummary #productDetails .sqs-add-to-cart-button, #productSummary #productDetails .landing.episodes-landing.episode-detail .cta-container .sqs-add-to-cart-button, .landing.episodes-landing.episode-detail .cta-container #sqs-shopping-cart-wrapper .checkout-button, #sqs-shopping-cart-wrapper .landing.episodes-landing.episode-detail .cta-container .checkout-button {
+  .landing.episodes-landing .cta-container .cta, .landing.episodes-landing .cta-container #productSummary #productDetails .sqs-add-to-cart-button, #productSummary #productDetails .landing.episodes-landing .cta-container .sqs-add-to-cart-button, .landing.episodes-landing .cta-container #sqs-shopping-cart-wrapper .checkout-button, #sqs-shopping-cart-wrapper .landing.episodes-landing .cta-container .checkout-button {
     font-size: 0.86806vw;
     line-height: 0.86806vw; }
-  .landing.episodes-landing.episode-detail .cta-container .filler {
+  .landing.episodes-landing .cta-container .filler {
     padding: 1.80556vw 1.90972vw; }
-  .landing.episodes-landing.episode-detail .cta-container svg {
+  .landing.episodes-landing .cta-container svg {
     width: 0.86806vw;
     height: 0.86806vw; }
-.landing.episodes-landing.episode-detail .text-layer {
+.landing.episodes-landing .text-layer {
   position: absolute;
   top: 90%;
   left: 25%;
   width: 80%;
   color: #000000; }
-.landing.episodes-landing.episode-detail .sharebox {
+.landing.episodes-landing .sharebox {
   margin: 0;
   position: absolute;
   top: 100%;
   transform: translateY(-2.25vw); }
-  .landing.episodes-landing.episode-detail .sharebox .label {
+  .landing.episodes-landing .sharebox .label {
     color: white;
     margin-top: 1.25vw; }
 @media only screen and (max-width: 750px) {
-  .landing.episodes-landing.episode-detail {
+  .landing.episodes-landing .landing-container {
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -3346,45 +3346,45 @@ input {
     direction: column;
     padding: 0 12px;
     width: 100%; }
-    .landing.episodes-landing.episode-detail .landing-head {
-      position: static;
-      width: 100%;
-      margin: auto 0 0 0;
-      text-align: center;
-      white-space: normal;
-      -webkit-transform: none;
-      -moz-transform: none;
-      -ms-transform: none;
-      -o-transform: none;
-      transform: none; }
-      .landing.episodes-landing.episode-detail .landing-head .small {
-        display: none; }
-    .landing.episodes-landing.episode-detail .text-layer {
-      position: relative;
-      top: 0;
-      left: 0;
-      width: 100%;
-      margin: 0 auto auto auto;
-      font-size: 15px;
-      line-height: 26px;
-      letter-spacing: .02em;
-      padding: 8vh 40px; }
-    .landing.episodes-landing.episode-detail .cta-container {
-      margin: 0 0 auto auto;
-      -webkit-transform: translateY(50%);
-      -moz-transform: translateY(50%);
-      -ms-transform: translateY(50%);
-      -o-transform: translateY(50%);
-      transform: translateY(50%); }
-    .landing.episodes-landing.episode-detail .sharebox {
-      -webkit-transform: translateY(-19px);
-      -moz-transform: translateY(-19px);
-      -ms-transform: translateY(-19px);
-      -o-transform: translateY(-19px);
-      transform: translateY(-19px); }
-      .landing.episodes-landing.episode-detail .sharebox .label {
-        font-size: 10px;
-        line-height: 100%; } }
+  .landing.episodes-landing .landing-head {
+    position: static;
+    width: 100%;
+    margin: auto 0 0 0;
+    text-align: center;
+    white-space: normal;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    transform: none; }
+    .landing.episodes-landing .landing-head .small {
+      display: none; }
+  .landing.episodes-landing .text-layer {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0 auto auto auto;
+    font-size: 15px;
+    line-height: 26px;
+    letter-spacing: .02em;
+    padding: 8vh 40px; }
+  .landing.episodes-landing .cta-container {
+    margin: 0 0 auto auto;
+    -webkit-transform: translateY(50%);
+    -moz-transform: translateY(50%);
+    -ms-transform: translateY(50%);
+    -o-transform: translateY(50%);
+    transform: translateY(50%); }
+  .landing.episodes-landing .sharebox {
+    -webkit-transform: translateY(-19px);
+    -moz-transform: translateY(-19px);
+    -ms-transform: translateY(-19px);
+    -o-transform: translateY(-19px);
+    transform: translateY(-19px); }
+    .landing.episodes-landing .sharebox .label {
+      font-size: 10px;
+      line-height: 100%; } }
 
 .cta-play-episode {
   font-family: "Gotham A", "Gotham B";

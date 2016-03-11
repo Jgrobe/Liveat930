@@ -1,4 +1,4 @@
-.landing.episodes-landing.episode-detail {
+.landing.episodes-landing {
 
   .landing-container {
     width: 52vw;
@@ -70,10 +70,12 @@
 
   @include breakpoint(mobile) {
 
-    @include flexbox();
-    @include flex-value(direction, column);
-    padding: 0 $MOBILE_MARGIN;
-    width: 100%;
+    .landing-container {
+      @include flexbox();
+      @include flex-value(direction, column);
+      padding: 0 $MOBILE_MARGIN;
+      width: 100%;
+    }
 
     .landing-head {
       position: static;
@@ -89,7 +91,7 @@
     }
 
     .text-layer {
-      position: relative;// necessary for .sharebox positioning
+      position: relative;
       top:0;
       left:0;
       width: 100%;
