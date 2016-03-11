@@ -94,12 +94,47 @@ $gridGutter: 5%;
   }// .video-overview-filter
 
   @include breakpoint(mobile) {
-    .video-overview-filter {
-//      display: block;
 
-      li { font-size: 12px; }
+    .video-overview-filter {
+      display: block;
+      text-align: center;
+      line-height: 5vh;
+
+      .video-filter-item {
+        font-size: 12px;
+        display: block;
+        &:after {
+          content: none;
+        }
+
+      }// li
+
+      //.clips-filter-trigger {
+      //  display: inline-block;
+      //  position: relative;
+      //  letter-spacing: 0.1vw;
+      //  text-decoration: none;
+      //  color: #fff;
+      //  margin-right: 1.25vw;
+      //  //border-bottom: 1px solid #fff;
+      //  padding-bottom: 0.25vw;
+      //
+      //  &:after {
+      //    content: '';
+      //    display: block;
+      //    top: 100%;
+      //    left: 0;
+      //    width: 0;
+      //    height: 1px;
+      //    background:white;
+      //    @include prefixed(transition, (width $shortTrans));
+      //  }
+      //}// a
+
     }// .video-overview-filter
+
   }// BP MOBILE
+
 }// .video-overview-landing
 
 .video-gallery {

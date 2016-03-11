@@ -4008,8 +4008,15 @@ input {
       -o-transition: width 0.3s;
       transition: width 0.3s; }
 @media only screen and (max-width: 750px) {
-  .video-overview-landing .video-overview-filter li {
-    font-size: 12px; } }
+  .video-overview-landing .video-overview-filter {
+    display: block;
+    text-align: center;
+    line-height: 5vh; }
+    .video-overview-landing .video-overview-filter .video-filter-item {
+      font-size: 12px;
+      display: block; }
+      .video-overview-landing .video-overview-filter .video-filter-item:after {
+        content: none; } }
 
 .video-gallery {
   margin: -10vh auto 10.41667vw auto;
