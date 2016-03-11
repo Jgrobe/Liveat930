@@ -46,7 +46,7 @@
                     <div class="fill-parent imgfill gallery-image" style=""></div>
                 </div>
 
-                <div class="slider-ui">
+                <div class="slider-ui onlynomobile">
                     <div class="slider-arrows">
                         <div class="arrow prev">{@|apply svg-arrow-cap.block}</div>
                         <div class="arrow next">{@|apply svg-arrow-cap.block}</div>
@@ -59,6 +59,18 @@
                 </div><!-- .slider-ui -->
 
             </div><!-- .ipad -->
+
+            <div class="slider-ui onlymobile">
+                <div class="slider-arrows">
+                    <div class="arrow prev">{@|apply svg-arrow-cap.block}</div>
+                    <div class="arrow next">{@|apply svg-arrow-cap.block}</div>
+                </div><!-- .slider-arrows -->
+                <div class="slider-label">
+                    <h3>
+                        <span class="gallery-current"></span>/<span class="gallery-total"></span>
+                    </h3>
+                </div>
+            </div><!-- .slider-ui -->
 
             <div class="text-layer">
                 <div class="section-head excerpt-head">
