@@ -106,19 +106,19 @@
       margin: 0 0 auto auto;
       @include transform(translateY(50%));
 
-      $size: get_relative_units(11);
+      $size: 11px;
       .cta {
         font-size: $size;
         line-height: $size;
-      }
+      }// .cta
       .filler {
-        padding: get_relative_units(55);
-      }
+        padding: 55px;
+      }// .filler
 
       svg {
         width: $size;
         height: $size;
-      }
+      }// svg
     }// .cta-container
 
     .sharebox {
