@@ -401,10 +401,6 @@ $posterWidth: 84vw;
       padding: get_relative_units(40) get_relative_units(70);
     }
 
-    &:hover {
-      background: #2F2F2F;
-    }// hover
-
     &.scrolling {
       position: fixed;
     }
