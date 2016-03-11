@@ -2771,6 +2771,16 @@ input {
       opacity: 1; }
     .search-table .result:hover .square-btn, .search-table .result.hovered .square-btn {
       background: white; }
+@media only screen and (max-width: 750px) {
+  .search-table .part.results .result-sized {
+    padding: 40px 12px; }
+  .search-table .result {
+    font-size: 30px; }
+    .search-table .result .result-title {
+      font-size: 18px; }
+  .search-table .square-btn svg {
+    width: 19px;
+    height: 12px; } }
 
 .result-sized {
   width: 88.54167vw;
