@@ -4298,7 +4298,12 @@ input {
   .site-content.clip-detail .overlap-container {
     margin-bottom: 10vH; }
   .site-content.clip-detail .video-gallery {
-    margin-top: 10vH; } }
+    margin-top: 10vH; }
+    .site-content.clip-detail .video-gallery:nth-child(2) {
+      margin-top: 0;
+      padding-top: 10vH; }
+    .site-content.clip-detail .video-gallery .cta-container {
+      width: 80%; } }
 
 .video-gallery.video-detail-clips {
   margin: 0 auto;

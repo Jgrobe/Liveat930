@@ -59,6 +59,11 @@
 
       margin-top: $sectionMarginBottomMobile;
 
+      &:nth-child(2) {
+        margin-top: 0;
+        padding-top: $sectionMarginBottomMobile;
+      }
+
       .cta-container {
         width: 80%;
       }
