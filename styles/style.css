@@ -4170,13 +4170,9 @@ input {
             padding-top: 70%; }
       .video-gallery .video .image.poster:before {
         padding-top: 135%; }
-      .video-gallery .video .play {
-        bottom: -10px;
-        height: 65px;
-        width: 65px; }
-        .video-gallery .video .play.goto svg {
-          width: 16px;
-          height: 11px; }
+      .video-gallery .video .play.goto svg {
+        width: 16px;
+        height: 11px; }
       .video-gallery .video .title {
         font-size: 19px;
         line-height: 21px;
