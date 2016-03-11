@@ -26,4 +26,11 @@
     position: relative;
   }// .landing-container
 
+  @include breakpoint(mobile){
+
+    height:auto;
+    min-height: 100vh;
+
+  }// BP MOBILE
+
 }// .landing

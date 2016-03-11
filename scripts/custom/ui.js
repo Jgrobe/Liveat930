@@ -285,6 +285,7 @@ function toggleNavOverlay() {
     if(SQSP.$objects.stickyHeader.hasClass('on')) {
         // open overlay
         tl.add(function() {
+            if(is_mobile()) return false;
             SQSP.$objects.stickyHeader.find('video').get(0).play();
         });
         tl.to($overlay, .2, {autoAlpha:1});

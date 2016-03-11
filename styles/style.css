@@ -1078,6 +1078,10 @@ input {
     margin-top: 28vh;
     display: inline-block;
     position: relative; }
+  @media only screen and (max-width: 750px) {
+    .landing {
+      height: auto;
+      min-height: 100vh; } }
 
 .upcoming {
   text-transform: uppercase;
