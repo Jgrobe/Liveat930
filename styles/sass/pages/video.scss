@@ -327,18 +327,22 @@ $gridGutter: 5%;
         }
       }// image
 
-      .play {
-        //bottom: -10px;
-        //height: 65px;
-        //width: 65px;
 
-        &.goto {
-          svg {
-            width: 16px;
-            height: 11px;
-          }// svg
-        }// .goto
-      }// .play
+      .cta-container {
+
+        &.play {
+          //bottom: -10px;
+          //height: 65px;
+          //width: 65px;
+
+          &.goto {
+            svg {
+              width: 16px;
+              height: 11px;
+            }// svg
+          }// .goto
+        }// .play
+      }// .cta-container
 
       .title {
 //        margin: 30px $MOBILE_MARGIN;

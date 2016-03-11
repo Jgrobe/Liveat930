@@ -4170,7 +4170,7 @@ input {
             padding-top: 70%; }
       .video-gallery .video .image.poster:before {
         padding-top: 135%; }
-      .video-gallery .video .play.goto svg {
+      .video-gallery .video .cta-container.play.goto svg {
         width: 16px;
         height: 11px; }
       .video-gallery .video .title {
