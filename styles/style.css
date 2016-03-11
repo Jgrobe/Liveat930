@@ -1081,7 +1081,9 @@ input {
   @media only screen and (max-width: 750px) {
     .landing {
       height: auto;
-      min-height: 100vh; } }
+      min-height: 100vh; }
+      .landing .landing-bg {
+        background-attachment: scroll; } }
 
 .upcoming {
   text-transform: uppercase;
