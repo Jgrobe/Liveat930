@@ -203,7 +203,8 @@ $gridGutter: 5%;
 
       .thumb {
         @include prefixed(filter, grayscale(100%));
-        @include prefixed(transition, $shortTrans);
+        //@include prefixed(transition, $shortTrans);
+        @include superprefixed(transition, filter $shortTrans);
       }
       //.hover-thumb {
       //  @include autoAlpha(0);
