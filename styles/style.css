@@ -3459,7 +3459,9 @@ input {
     .host-landing .content {
       width: calc(~"100vw - 24px"); }
     .host-landing .hosted-by-logo {
-      margin: 0 auto; }
+      margin: 0 auto;
+      width: 60vw;
+      height: 5vw; }
     .host-landing h1 {
       margin: 15px auto;
       font-size: 48px;
@@ -3468,9 +3470,8 @@ input {
       width: 100%;
       margin: 0 auto;
       padding: 40px 40px 60px 40px; }
-      .host-landing .text-layer .cta, .host-landing .text-layer #productSummary #productDetails .sqs-add-to-cart-button, #productSummary #productDetails .host-landing .text-layer .sqs-add-to-cart-button, .host-landing .text-layer #sqs-shopping-cart-wrapper .checkout-button, #sqs-shopping-cart-wrapper .host-landing .text-layer .checkout-button {
-        width: 90%;
-        white-space: normal; }
+      .host-landing .text-layer .cta-container {
+        width: 90%; }
       .host-landing .text-layer p {
         font-size: 14px;
         line-height: 21px; } }

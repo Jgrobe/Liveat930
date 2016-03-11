@@ -55,6 +55,8 @@
 
     .hosted-by-logo {
       margin: 0 auto;
+      width: 60vw;
+      height: 5vw;
     }
 
     h1 {
@@ -68,9 +70,8 @@
       margin: 0 auto;
       padding: 40px 40px 60px 40px;
 
-      .cta {
+      .cta-container {
         width:90%;
-        white-space: normal;
       }
 
       p {
