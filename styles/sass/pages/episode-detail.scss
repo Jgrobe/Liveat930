@@ -19,6 +19,7 @@
 
   .cta-container {
     position: relative;
+    z-index: 1;
     margin: 0 0 0 5%;
     @include shadow(0 0 5vw rgba(0,0,0,.3));
 
@@ -69,65 +70,65 @@
 
   @include breakpoint(mobile) {
 
-    &.episode-detail {
-      @include flexbox();
-      @include flex-value(direction, column);
-      padding: 0 $MOBILE_MARGIN;
-      margin: 0 auto;
+    @include flexbox();
+    @include flex-value(direction, column);
+    padding: 0 $MOBILE_MARGIN;
+    width: 100%;
 
-      .episodes-landing-head {
-        position: static;
-        width: 100%;
-        margin: auto 0 0 0;
-        text-align: right;
-        white-space: normal;
-        @include transform(none);
+    .landing-head {
+      position: static;
+      width: 100%;
+      margin: auto 0 0 0;
+      text-align: center;
+      white-space: normal;
+      @include transform(none);
 
-        h1 {text-align: center;}
+      //h1 {text-align: center;}
 
-        .small {display: none;}
-      }
-      .text-layer {
-        position: relative;// necessary for .sharebox positioning
-        top:0;
-        left:0;
-        width: 100%;
-        margin: 0 auto auto auto;
-        font-size: 15px;
-        line-height: 26px;
-        letter-spacing: .02em;
-        padding: 8vh 40px;
-      }
+      .small {display: none;}
+    }
 
-      .cta-play-episode {
-        margin: 0 auto;
-        font-size: 11px;
-        padding: 0 35px 0 105px;
-        line-height: 70px;
-        z-index: 1;
-        @include transform(translateY(50%));
+    .text-layer {
+      position: relative;// necessary for .sharebox positioning
+      top:0;
+      left:0;
+      width: 100%;
+      margin: 0 auto auto auto;
+      font-size: 15px;
+      line-height: 26px;
+      letter-spacing: .02em;
+      padding: 8vh 40px;
+    }
 
-        &:before {
-          width: 70px;
-          height: 70px;
-        }
-      }// .cta-play-episode
+    .cta-container {
+      margin: 0 0 auto auto;
+      @include transform(translateY(50%));
+    //  font-size: 11px;
+    //  padding: 0 35px 0 105px;
+    //  line-height: 70px;
+    //  z-index: 1;
+    //  @include transform(translateY(50%));
+    //
+    //  &:before {
+    //    width: 70px;
+    //    height: 70px;
+    //  }
+    }// .cta-container
 
-      .episodes-landing-geo {
-        width: 110vw;
-        height: 110vw;
-      }// .episodes-landing-geo
+    .episodes-landing-geo {
+      width: 110vw;
+      height: 110vw;
+    }// .episodes-landing-geo
 
-      .sharebox {
-        @include transform(translateY(-19px));
+    .sharebox {
+      @include transform(translateY(-19px));
 
-        .label {
-          font-size: 10px;
-          line-height: 100%;
+      .label {
+        font-size: 10px;
+        line-height: 100%;
 //          letter-spacing: .06em;
-        }
       }
-    }// .episode-detail
+    }
 
   }// BP MOBILE
 }// .episodes-landing
