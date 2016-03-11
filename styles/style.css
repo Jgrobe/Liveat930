@@ -2840,16 +2840,15 @@ input {
         width: 80%;
         margin: auto; }
       .episode-summary .summary-copy {
-        position: absolute;
+        position: static;
         width: 80%;
-        left: 20%;
-        top: 50%;
+        margin: auto;
         text-align: center;
-        -webkit-transform: translateY(-50%);
-        -moz-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-        -o-transform: translateY(-50%);
-        transform: translateY(-50%); }
+        -webkit-transform: nonone;
+        -moz-transform: nonone;
+        -ms-transform: nonone;
+        -o-transform: nonone;
+        transform: nonone; }
         .episode-summary .summary-copy .small {
           display: none; }
       .episode-summary .lineup {
@@ -4301,8 +4300,8 @@ input {
     margin-top: 10vH; }
     .site-content.clip-detail .video-gallery.twin {
       margin-top: 0;
-      padding-top: 10vH; }
-    .site-content.clip-detail .video-gallery .cta-container {
+      padding-top: 20vh; }
+    .site-content.clip-detail .video-gallery .load-more-cta {
       width: 80%; } }
 
 .video-gallery.video-detail-clips {
@@ -4317,7 +4316,7 @@ input {
   margin-top: 10.41667vw; }
   @media only screen and (max-width: 750px) {
     .linked-episode {
-      margin-top: 10vH; } }
+      margin-top: 20vh; } }
 
 .clip-container {
   width: 75vw;

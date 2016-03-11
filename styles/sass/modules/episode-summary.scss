@@ -61,12 +61,11 @@
     }// .shape-container
 
     .summary-copy {
-      position: absolute;
+      position: static;
       width: 80%;
-      left: 20%;
-      top: 50%;
+      margin:auto;
       text-align: center;
-      @include transform(translateY(-50%));
+      @include transform(nonone);
 
       .small {display:none;}
     }// .summary-copy

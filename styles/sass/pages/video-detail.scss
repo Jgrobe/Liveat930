@@ -61,10 +61,10 @@
 
       &.twin {
         margin-top: 0;
-        padding-top: $sectionMarginBottomMobile;
+        padding-top: 20vh;
       }
 
-      .cta-container {
+      .load-more-cta {
         width: 80%;
       }
 
@@ -103,7 +103,7 @@
   margin-top: $sectionMarginBottom;
 
   @include breakpoint(mobile) {
-    margin-top: $sectionMarginBottomMobile;
+    margin-top: 20vh;
   }// BP MOBILE
 }// .linked-episode
 
