@@ -1608,10 +1608,10 @@ input {
         opacity: 0;
         display: block;
         position: absolute;
-        max-width: 90%;
-        left: 5%;
-        font-size: 2.77778vw;
-        line-height: 2.77778vw;
+        max-width: 80%;
+        left: 0%;
+        font-size: 2vw;
+        line-height: 2.7vw;
         letter-spacing: .04em;
         word-break: normal;
         text-align: left; }
@@ -1680,7 +1680,12 @@ input {
     position: absolute;
     right: -2%;
     top: 35%;
-    z-index: 1; }
+    z-index: 1;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -ms-box-shadow: none;
+    -o-box-shadow: none;
+    box-shadow: none; }
     .poster .btn-play-episode .cta, .poster .btn-play-episode #productSummary #productDetails .sqs-add-to-cart-button, #productSummary #productDetails .poster .btn-play-episode .sqs-add-to-cart-button, .poster .btn-play-episode #sqs-shopping-cart-wrapper .checkout-button, #sqs-shopping-cart-wrapper .poster .btn-play-episode .checkout-button {
       font-size: 2.56944vw;
       line-height: 100%;

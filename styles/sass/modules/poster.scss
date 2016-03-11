@@ -291,11 +291,11 @@ $posterWidth: 84vw;
         @include autoAlpha(0);
         display: block;
         position: absolute;
-        max-width: 90%;
-        left: 5%;
+        max-width: 80%;
+        left: 0%;
 
-        font-size: get_relative_units(80);
-        line-height: get_relative_units(80);
+        font-size: 2vw;//get_relative_units(80);
+        line-height: 2.7vw;//get_relative_units(80);
         letter-spacing: .04em;
         word-break: normal;
         text-align: left;
@@ -387,6 +387,7 @@ $posterWidth: 84vw;
     //background: black;
     //color: white;
     z-index: 1;
+    @include shadow(none);
     //@include prefixed(transition, (background $shortTrans, opacity $shortTrans, visibility $shortTrans));
 
     .cta {
