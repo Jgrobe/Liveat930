@@ -24,7 +24,7 @@
     left: 20%;
     top: 50%;
     @include transform(translateY(-50%));
-  }
+  }// .summary-copy
 
   .head {
     @extend .m-headline;
@@ -52,13 +52,32 @@
 
   @include breakpoint(mobile) {
 
+    width:$MOBILE_WIDTH;
+
+    .shape-container {
+      position: static;
+      width: 80%;
+      margin: auto;
+    }// .shape-container
+
     .summary-copy {
       position: absolute;
       width: 80%;
       left: 20%;
       top: 50%;
+      text-align: center;
       @include transform(translateY(-50%));
+
+      .small {display:none;}
     }// .summary-copy
+
+    .lineup {
+      padding: 0;
+    }
+
+    .cta-container {
+      margin: 0;
+    }
 
   }// BP MOBILE
 

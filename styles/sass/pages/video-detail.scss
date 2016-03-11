@@ -32,7 +32,6 @@
 
       .landing-head {
         .small {
-          @extend .s-headline;
           text-align: center;
           padding:0;
           margin-top: 5vh;
@@ -55,6 +54,16 @@
     .overlap-container {
       margin-bottom: $sectionMarginBottomMobile;
     }
+
+    .video-gallery {
+
+      margin-top: $sectionMarginBottomMobile;
+
+      .cta-container {
+        width: 80%;
+      }
+
+    }// .video-gallery
   }// BP MOBILE
 }// .site-content
 
@@ -87,7 +96,11 @@
 
 .linked-episode {
   margin-top: $sectionMarginBottom;
-}
+
+  @include breakpoint(mobile) {
+    margin-top: $sectionMarginBottomMobile;
+  }// BP MOBILE
+}// .linked-episode
 
 .clip-container {
   width: $contentWidth;
