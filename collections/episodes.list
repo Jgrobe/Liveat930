@@ -9,6 +9,7 @@
 {.repeated section items}
     {.repeated section categories}
         {.equal?:@:"current"}
+<script>console.log('----- hero content', {customContent|json-pretty});</script>
             <section class="landing episodes-landing">
                 <div class="fill-parent mask">
                     <div class="landing-bg" style="background-image:url('{customContent.hero-fallback-image.assetUrl}');" data-shape="{customContent.episode-shape}">
