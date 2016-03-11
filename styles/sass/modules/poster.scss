@@ -358,7 +358,7 @@ $posterWidth: 84vw;
       margin: auto;
     }
     @include svg-content() {fill: black;}
-  }
+  }// .hosted-logo
 
   .hosted-info {
     width: 33%;
@@ -548,6 +548,17 @@ $posterWidth: 84vw;
       font-size: get_relative_units(104);
       line-height: get_relative_units(104);
     }// .s-headline
+
+    .hosted-logo {
+      width: 40%;
+    }
+
+    .hosted-info {
+      display: none;
+      font-size: 8px;
+      width: 85%;
+      line-height: 10px;
+    }// .hosted-info
 
   }// BP MOBILE
 

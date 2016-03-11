@@ -758,7 +758,7 @@ input {
   @media only screen and (max-width: 750px) {
     .footer p {
       font-size: 13px;
-      line-height: 15px;
+      line-height: 20px;
       max-width: 85%; } }
 
 .footer-newsletter {
@@ -1776,7 +1776,14 @@ input {
       line-height: 8.75vw; }
     .poster .s-headline, .poster .nav-overlay .menu-item, .nav-overlay .poster .menu-item, .poster .shortcuts .video .title, .shortcuts .video .poster .title, .poster .search-table .result, .search-table .poster .result, .poster .episode-summary .lineup span, .episode-summary .lineup .poster span, .poster .episode-summary .lineup p, .episode-summary .lineup .poster p, .poster .clip-landing .landing-head .small, .clip-landing .landing-head .poster .small, .poster #productSummary #productDetails .product-title, #productSummary #productDetails .poster .product-title {
       font-size: 3.61111vw;
-      line-height: 3.61111vw; } }
+      line-height: 3.61111vw; }
+    .poster .hosted-logo {
+      width: 40%; }
+    .poster .hosted-info {
+      display: none;
+      font-size: 8px;
+      width: 85%;
+      line-height: 10px; } }
 
 .poster-container {
   position: absolute;
