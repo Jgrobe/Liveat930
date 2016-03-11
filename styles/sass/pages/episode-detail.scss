@@ -103,22 +103,7 @@
     .cta-container {
       margin: 0 0 auto auto;
       @include transform(translateY(50%));
-    //  font-size: 11px;
-    //  padding: 0 35px 0 105px;
-    //  line-height: 70px;
-    //  z-index: 1;
-    //  @include transform(translateY(50%));
-    //
-    //  &:before {
-    //    width: 70px;
-    //    height: 70px;
-    //  }
     }// .cta-container
-
-    .episodes-landing-geo {
-      width: 110vw;
-      height: 110vw;
-    }// .episodes-landing-geo
 
     .sharebox {
       @include transform(translateY(-19px));
@@ -128,7 +113,7 @@
         line-height: 100%;
 //          letter-spacing: .06em;
       }
-    }
+    }// .sharebox
 
   }// BP MOBILE
 }// .episodes-landing
