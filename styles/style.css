@@ -3654,10 +3654,8 @@ input {
         margin: 40px 0 20px 0; }
       .merch-item .sizes {
         padding: 20px; }
-      .merch-item .cta, .merch-item #productSummary #productDetails .sqs-add-to-cart-button, #productSummary #productDetails .merch-item .sqs-add-to-cart-button, .merch-item #sqs-shopping-cart-wrapper .checkout-button, #sqs-shopping-cart-wrapper .merch-item .checkout-button {
-        padding: 24px 64px;
-        margin-top: 20px;
-        display: inline-block; } }
+      .merch-item .cta-container .filler {
+        padding: 20px 10vw; } }
 
 .post-landing {
   height: 80vh;
