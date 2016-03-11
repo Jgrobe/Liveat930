@@ -17,6 +17,15 @@
     width: $MOBILE_WIDTH;
     max-width: none;
     padding-top: 100px;
+    text-align: center;
+    margin-bottom: $sectionMarginBottomMobile;
+
+    #productNav {
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: left;
+    }
 
   }// BREAKPOINT MOBILE
 
@@ -89,18 +98,64 @@
   #productGallery #productSlideshow .slide {
     z-index: auto !important;
 
-    img {left: 0 !important;}
+    img {left: 0 !important;} // need to override sqsp js
   }// #productGallery #productSlideshow .slide
 
+  // -------------------------- BP MOBILE
+
   @include breakpoint(mobile) {
+
+    #productDetails {
+
+      .product-title {
+        font-size: 30px;
+        width: 80%;
+        margin: auto;
+      }// .product-title
+
+      .product-price {
+        font-size: 23px;
+      }// .product-price
+
+      .product-excerpt {
+        * {
+          font-size: 15px;
+          line-height: 20px;
+        }// *
+      }// .product-excerpt
+
+      .variant-select-wrapper {
+        select {
+          font-size: 15px;
+          padding: 15px 40px 15px 15px;
+        }// select
+      }// .variant-select-wrapper
+
+      .product-quantity-input {
+
+        input {
+          font-size: 15px;
+        }// input
+      }// .product-quantity-input
+
+      .variant-option-title {display: none;}
+
+      .sqs-add-to-cart-button {
+        padding: 6% 20% !important;
+      }// .sqs-add-to-cart-button
+
+    }// #product-details
 
     #productGallery {
       margin-top:20px;
 
       #productSlideshow .slide {
-        img {left: auto;}
-      }
-    }
+        img {
+          left: 50% !Important;// need to override !important needed to override sqsp js
+          transform: translateX(-50%);
+        }
+      }// #productSlideshow
+    }// #productGallery
 
   }// BP MOBILE
 
