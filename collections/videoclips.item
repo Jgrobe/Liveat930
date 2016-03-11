@@ -44,47 +44,43 @@
 
         </squarespace:query>
 
-        {.if item.customContent.linkedEpisodeClipsTags}
+        <section class="video-gallery video-detail-clips related-episode-clips">
 
-            <section class="video-gallery video-detail-clips related-episode-clips">
+            <div class="rectangle"></div>
 
-                <div class="rectangle"></div>
+            <div class="section-head">
+                <h2>More from this episode</h2>
+            </div>
 
-                <div class="section-head">
-                    <h2>More from this episode</h2>
-                </div>
+            <squarespace:query collection="clips" tag="{item.customContent.linkedEpisode}">
 
-                <squarespace:query collection="clips" tag="{item.customContent.linkedEpisodeClipsTags}">
+                <script>
+                </script>
 
-                    <script>
-                    </script>
+                <div class="video-gallery-videos" data-payload="3">
+                    <div class="gutter-sizer"></div>
 
-                    <div class="video-gallery-videos" data-payload="3">
-                        <div class="gutter-sizer"></div>
+                    {.repeated section items}
 
-                        {.repeated section items}
+                        {@|apply module-clip-item.block}
+                    <!--<div class="video small">-->
+                        <!--<div class="image current-image" style="background-image:url('{customContent.clip-thumbnail}');">-->
 
-                            {@|apply module-clip-item.block}
-                        <!--<div class="video small">-->
-                            <!--<div class="image current-image" style="background-image:url('{customContent.clip-thumbnail}');">-->
+                            <!--<div class="cta-dummy" data-icon="eye" data-class="negative play">{@|apply svg-icon-eye.block}</div>-->
 
-                                <!--<div class="cta-dummy" data-icon="eye" data-class="negative play">{@|apply svg-icon-eye.block}</div>-->
-
-                            <!--</div>-->
-                            <!--<div class="flex-cols">-->
-                                <!--<div class="title">{title}</div>-->
-                            <!--</div>-->
                         <!--</div>-->
-                        {.end}
-                    </div><!-- .video-gallery-videos -->
+                        <!--<div class="flex-cols">-->
+                            <!--<div class="title">{title}</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    {.end}
+                </div><!-- .video-gallery-videos -->
 
-                    <div class="cta-dummy" data-label="Load more from the same episode" data-icon="icon-load" data-class="load-clips load-from-category upsized-icon load-more-cta">{@|apply svg-icon-load.block}</div>
+                <div class="cta-dummy" data-label="Load more from the same episode" data-icon="icon-load" data-class="load-clips load-from-category upsized-icon load-more-cta">{@|apply svg-icon-load.block}</div>
 
-                </squarespace:query>
+            </squarespace:query>
 
-            </section>
-
-        {.end}
+        </section>
 
     {.end}
 
