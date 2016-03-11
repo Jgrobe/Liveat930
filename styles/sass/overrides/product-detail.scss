@@ -12,6 +12,14 @@
     .back-arrow { margin-right:5px; }
   }// #productNav
 
+  @include breakpoint(mobile) {
+
+    width: $MOBILE_WIDTH;
+    max-width: none;
+    padding-top: 100px;
+
+  }// BREAKPOINT MOBILE
+
 }// #product-wrapper
 
 #productSummary {
@@ -85,6 +93,10 @@
   }// #productGallery #productSlideshow .slide
 
   @include breakpoint(mobile) {
+
+    #productGallery {
+      margin-top:20px;
+    }
 
   }// BP MOBILE
 

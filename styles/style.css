@@ -4454,6 +4454,11 @@ input {
     font-size: 11px; }
     #productWrapper #productNav .back-arrow, #sqs-shopping-cart-wrapper #productNav .back-arrow {
       margin-right: 5px; }
+  @media only screen and (max-width: 750px) {
+    #productWrapper, #sqs-shopping-cart-wrapper {
+      width: calc(~"100vw - 24px");
+      max-width: none;
+      padding-top: 100px; } }
 
 #productSummary #productDetails .product-price {
   font-size: 1.4vw;
@@ -4506,6 +4511,9 @@ input {
   z-index: auto !important; }
   #productSummary #productGallery #productSlideshow .slide img {
     left: 0 !important; }
+@media only screen and (max-width: 750px) {
+  #productSummary #productGallery {
+    margin-top: 20px; } }
 
 #sqs-shopping-cart-wrapper .cart-container .item-desc a {
   font-weight: 500; }
