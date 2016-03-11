@@ -6,7 +6,7 @@ SQSP.functions.initPage = function() {
     jQuery('.make-shape').each(function(i) {
         var $this = jQuery(this);
 
-        SQSP.instances.shapes.push(new SVGClipper($this, {
+        SQSP.instances.shapes.push(new SVGClipper($this.find('.imgfill'), {
             shape: $this.attr('data-shape'),
             maskID: ('clip_'+i),
             assetPath: location.origin + '/assets/images/shapes/',
