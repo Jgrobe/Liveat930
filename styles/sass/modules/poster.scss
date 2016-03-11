@@ -381,7 +381,6 @@ $posterWidth: 84vw;
   }
 
   .btn-play-episode {// .cta-container
-    @include united();
     position: absolute;
     right: -2%;
     top: 35%;
@@ -396,6 +395,8 @@ $posterWidth: 84vw;
     }
 
     .filler {
+      display: block;
+      @include united();
       padding: get_relative_units(40) get_relative_units(70);
     }
 
