@@ -64,6 +64,7 @@ var ImageGallery = function($container, options) {
 
 
         var $imagesToUse = is_mobile() ? IG.$object.image.eq(0) : IG.$object.image;
+        console.log('galleryy images to use', $imagesToUse, IG.$object.image);
 
         if(IG.lastDirection !== direction) {
             // equalize index in case of direction change on multiple imageContainers
