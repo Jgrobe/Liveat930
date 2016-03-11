@@ -2532,19 +2532,19 @@ input {
         white-space: normal; }
       .nav-overlay .menu-item .description {
         display: none; }
-    .nav-overlay .search {
+    .nav-overlay .columns.search-columns .search-col .search {
       position: static; }
-      .nav-overlay .search .search-icon {
+      .nav-overlay .columns.search-columns .search-col .search .search-icon {
         margin: 0 35px 0 0; }
-        .nav-overlay .search .search-icon svg {
+        .nav-overlay .columns.search-columns .search-col .search .search-icon svg {
           width: 32px;
           height: 32px; }
-      .nav-overlay .search .searchfield-container {
+      .nav-overlay .columns.search-columns .search-col .search .searchfield-container {
         width: calc(~"80% - 67px"); }
-      .nav-overlay .search .search-field {
+      .nav-overlay .columns.search-columns .search-col .search .search-field {
         font-size: 16px;
         letter-spacing: .02em; }
-      .nav-overlay .search .clear-icon svg {
+      .nav-overlay .columns.search-columns .search-col .search .clear-icon svg {
         width: 10px;
         height: 10px; } }
 

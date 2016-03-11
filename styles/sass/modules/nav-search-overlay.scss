@@ -223,34 +223,43 @@ $rightColMargin: 10vw;
 
     }// .menu-item
 
-    .search {
-      $iconsize: 32px;
-      $iconMargin: 35px;
-      position: static;
+    .columns {
 
-      .search-icon {
-        margin: 0 $iconMargin 0 0;
-        svg {
-          width: $iconsize;
-          height: $iconsize;
-        }// svg
-      }// .search-icon
+      &.search-columns {
+        .search-col {
+          .search {
 
-      .searchfield-container {width: calc(~"80% - #{$iconsize+$iconMargin}");}
+            $iconsize: 32px;
+            $iconMargin: 35px;
+            position: static;
 
-      .search-field {
-        font-size: 16px;
-        letter-spacing: .02em;
-      }// .search-field
+            .search-icon {
+              margin: 0 $iconMargin 0 0;
+              svg {
+                width: $iconsize;
+                height: $iconsize;
+              }// svg
+            }// .search-icon
 
-      .clear-icon {
-        svg {
-          width: 10px;
-          height: 10px;
-        }// svg
-      }// .clear-icon
+            .searchfield-container {width: calc(~"80% - #{$iconsize+$iconMargin}");}
 
-    }// .search
+            .search-field {
+              font-size: 16px;
+              letter-spacing: .02em;
+            }// .search-field
+
+            .clear-icon {
+              svg {
+                width: 10px;
+                height: 10px;
+              }// svg
+            }// .clear-icon
+
+          }// .search
+        }// .search-col
+      }// .search-columns
+    }// .columns
+
 
   }// BP MOBILE
 
