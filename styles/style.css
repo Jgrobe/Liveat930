@@ -1683,6 +1683,7 @@ input {
     z-index: 1; }
     .poster .btn-play-episode .cta, .poster .btn-play-episode #productSummary #productDetails .sqs-add-to-cart-button, #productSummary #productDetails .poster .btn-play-episode .sqs-add-to-cart-button, .poster .btn-play-episode #sqs-shopping-cart-wrapper .checkout-button, #sqs-shopping-cart-wrapper .poster .btn-play-episode .checkout-button {
       font-size: 2.56944vw;
+      line-height: 100%;
       letter-spacing: .1em; }
     .poster .btn-play-episode .filler {
       display: block;

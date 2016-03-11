@@ -411,7 +411,8 @@ function toggleBurger(open) {
 }// toggleBurger()
 
 function cta_hovers() {
-    //SQSP.vars.ctaHoverTimer = false;
+    SQSP.vars.ctaHoverTimer = false;
+
     var ctaSelector = '.cta-container';
     var duration = .2;
     jQuery(ctaSelector).on('mouseenter', function() {
@@ -425,14 +426,14 @@ function cta_hovers() {
 
         var $hoverlay = $hovered.find('.hover-cta');
 
-        //if(SQSP.vars.ctaHoverTimer) clearTimeout(SQSP.vars.ctaHoverTimer);
+        if(SQSP.vars.ctaHoverTimer) clearTimeout(SQSP.vars.ctaHoverTimer);
 
-        //SQSP.vars.ctaHoverTimer = setTimeout(function(){
+        SQSP.vars.ctaHoverTimer = setTimeout(function(){
             TweenMax.to($hoverlay, duration, {top:0, ease:Expo.easeOut});
-        //}, 80);
+        }, 80);
     });
     jQuery(ctaSelector).on('mouseleave', function() {
-        //if(SQSP.vars.ctaHoverTimer) clearTimeout(SQSP.vars.ctaHoverTimer);
+        if(SQSP.vars.ctaHoverTimer) clearTimeout(SQSP.vars.ctaHoverTimer);
         if(is_mobile()) return false;
 
         var $unhovered = jQuery(this);
