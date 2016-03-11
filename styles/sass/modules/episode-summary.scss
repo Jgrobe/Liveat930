@@ -65,7 +65,7 @@
       width: 80%;
       margin:auto;
       text-align: center;
-      @include transform(nonone);
+      @include transform(none);
 
       .small {display:none;}
     }// .summary-copy
