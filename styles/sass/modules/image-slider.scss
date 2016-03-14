@@ -7,7 +7,7 @@ $uiSizeMobile: 80px;
 
   .slider-ui {
     width: 50%;
-  }
+  }// .slider-ui
 
   @include breakpoint(mobile) {
 
@@ -123,6 +123,25 @@ $imgMargin: 5.5vw;
     letter-spacing: .1em;
     color: white;
     text-shadow: 0 3px 5px rgba(0,0,0,0.1);
+
+
+    h3 {
+      position: relative;
+    }
+
+    .gallery-current, .gallery-total {
+      position: absolute;
+    }
+
+    .gallery-current {
+      right: 101%;
+      text-align: right;
+    }
+    .gallery-total {
+      left: 101%;
+      text-align: left;
+    }// .gallery-total
+
   }// .slider-label
 
   @include breakpoint(mobile) {
@@ -151,6 +170,11 @@ $imgMargin: 5.5vw;
       font-size: $uiSizeMobile;
       line-height: $uiSizeMobile;
       @include transform(translateX(-50%));
+
+      .gallery-current, .gallery-total {
+        position: static;
+      }
+
     }// .slider-label
   }// BP MOBILE
 
