@@ -42,7 +42,7 @@
         <section class="footer-hosted-by">
             <div class="hosted-by-logo"></div>
             <p class="hosted-by-p">Live at 9:30 is hosted by <a href="http://www.squarespace.com" class="plain-link">Squarespace</a>, the simplest way to build a beautiful website.</p>
-            <div class="cta-dummy" data-label="Build your own website with squarespace" data-icon="browser" data-class="negative hosted-by-link upsized-icon prllx-custom" data-attributes="href=http://www.squarespace.com,data-prllx=-.02">{@|apply svg-icon-browser.block}</div>
+            <div class="cta-dummy" data-label="Build your own website with squarespace" data-icon="browser" data-class="negative hosted-by-link upsized-icon prllx-custom" data-attributes="href=http://www.squarespace.com,target=_blank,data-prllx=-.02">{@|apply svg-icon-browser.block}</div>
         </section>
         <section class="footer-social">
             <ul>
