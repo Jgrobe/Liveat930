@@ -118,7 +118,7 @@ console.log('----------home initPage');
         //    }
         //});
 
-        var scrollTracker = scrollMonitor.create($thisPoster.get(0));
+        var scrollTracker = scrollMonitor.create($thisPoster.find('video').get(0));
 
         //$thisPoster.find('video').get(0).addEventListener('loadeddata', function(e) {
         //    console.log('recalculate scrolltracker', e);
