@@ -3534,7 +3534,7 @@ input {
   .landing.host-landing .text-layer {
     position: relative;
     width: 37%;
-    margin-left: 42%; }
+    margin: 1vw auto auto 38%; }
     .landing.host-landing .text-layer .cta-container {
       position: absolute;
       top: 100%;
@@ -3834,7 +3834,7 @@ input {
   background: white;
   color: black;
   width: 40%;
-  margin: 2vw auto auto 38%;
+  margin: 1vw auto auto 38%;
   font-family: "Gotham A", "Gotham B";
   font-size: 0.97222vw;
   line-height: 1.73611vw;
