@@ -68,7 +68,7 @@
                 </div>
             </div><!-- .slider-ui -->
 
-            <div class="text-layer">
+            <div class="text-layer prllx-custom" data-prllx=".12">
                 <div class="section-head excerpt-head">
                     <h2 class="gallery-title">Leon Bridges</h2>
                 </div>
@@ -81,7 +81,7 @@
 
     <section class="host-become text-insert-container">
         <div class="rectangle"></div>
-        <div class="main text-layer">
+        <div class="main text-layer prllx-custom" data-prllx=".12">
             <div class="logo blend-logo">
                 {@|apply svg-logo-squarespace.block}
                 <!--php svg('images/logo-squarespace'); -->
