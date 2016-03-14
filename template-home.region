@@ -24,5 +24,9 @@
     </section><!-- .posters -->
 </div><!-- .site-content -->
 
+<div id="preloader">
+    <div class="filler"></div>
+</div><!-- #preloader -->
+
 <squarespace:script src="custom/handleArtists.js" />
 <squarespace:script src="custom/page_home.js" />
