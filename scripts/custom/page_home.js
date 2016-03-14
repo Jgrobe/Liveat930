@@ -116,16 +116,25 @@ SQSP.functions.initPage = function() {
             console.log('info clicked');
             if(!is_mobile()) return false;
             console.log('info clicked on mobile');
-            SQSP.$objects.hostedInfo.height('auto');
-            var h = SQSP.$objects.hostedInfo.height() + parseFloat(SQSP.$objects.hostedInfo.siblings('.hosted-logo').css('padding-bottom'));
-            console.log('actual info height', h);
-            SQSP.$objects.hostedInfo.height(0);
-            SQSP.$objects.hostedInfo.css({display:'block'});
+
             var tl = new TimelineMax({onComplete:function(){console.log('info height reveal done');}});
-            tl.to(SQSP.$objects.hostedInfo,.3, {height:h, ease:Strong.easeOut});
-            tl.add(function(){
-                SQSP.$objects.hostedInfo.addClass('on');
-            }, '-=.2');
+
+            if(SQSP.$objects.hostedInfo.hasClass('on')) {
+                // close info
+                SQSP.$objects.hostedInfo.removeClass('on');
+                tl.to(SQSP.$objects.hostedInfo,.3, {height:0, ease:Strong.easeOut, clearProps:'all'});
+            } else {
+                // open info
+                SQSP.$objects.hostedInfo.height('auto');
+                var h = SQSP.$objects.hostedInfo.height() + parseFloat(SQSP.$objects.hostedInfo.siblings('.hosted-logo').css('padding-bottom'));
+                console.log('actual info height', h);
+                SQSP.$objects.hostedInfo.height(0);
+                SQSP.$objects.hostedInfo.css({display:'block'});
+                tl.to(SQSP.$objects.hostedInfo,.3, {height:h, ease:Strong.easeOut});
+                tl.add(function(){
+                    SQSP.$objects.hostedInfo.addClass('on');
+                }, '-=.2');
+            }
         });
 
     });
