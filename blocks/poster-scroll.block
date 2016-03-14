@@ -55,7 +55,7 @@
 
         </div><!-- .poster-part.content -->
 
-        <div class="poster-part info">
+        <div class="poster-part info{.equal?:@index:1} has-info{.end}">
             <div class="hosted-logo">{@|apply svg-hosted-by.block}<!--php svg('images/hosted-by'); --></div>
 
             {.equal?:@index:1}

@@ -111,6 +111,19 @@ SQSP.functions.initPage = function() {
         var $hostedInfo = $thisPoster.find('.hosted-info');
         if( elem_exists($hostedInfo) ) SQSP.$objects.hostedInfo = $hostedInfo;
 
+        // reveal hosted-info on mobile no tap
+        SQSP.$objects.hostedInfo.parent().click(function(){
+            if(!is_mobile()) return false;
+            SQSP.$objects.hostedInfo.height('auto');
+            var h = SQSP.$objects.hostedInfo.height();
+            SQSP.$objects.hostedInfo.height(0);
+            var tl = new TimelineMax();
+            tl.to(SQSP.$objects.hostedInfo,.3, {height:h, ease:Strong.easeOut});
+            tl.add(function(){
+                SQSP.$objects.hostedInfo.addClass('on'),
+            }, '-=.2');
+        })
+
     });
 
 
@@ -145,7 +158,7 @@ SQSP.functions.initPage = function() {
     //        SQSP.instances.Posters[0].options.scrollModel.playVideo();
     //    }
     //});
-};
+};// init_page()
 
 jQuery(window).load(function() {
     for(var i=0; i<SQSP.instances.Posters.length; i++) {
