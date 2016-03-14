@@ -38,6 +38,7 @@ var ScrollPoster = function($container, options) {
 
         // Apply HoverFX
         SP.$object.hoverTrigger.on('click', function(e) {
+            if(is_mobile()) return false;
             e.preventDefault();
             console.log('firing hover trigger');
             var $clicked = jQuery(this);
