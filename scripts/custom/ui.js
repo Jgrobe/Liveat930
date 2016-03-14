@@ -67,6 +67,10 @@ function init_sqsp() {
             console.log('-------------------------------------- video loaded');
             size_video();
             scrollMonitor.recalculateLocations();// needed on homepage so first video in viewport starts playing on load
+            $thisVid.css({
+                opacity:1,
+                visibility: 'visible'
+            });
         });
         if($thisVid.hasClass('loop')) {
             SQSP.vars.loopvids.push(vid);
