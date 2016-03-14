@@ -126,10 +126,12 @@ console.log('----------home initPage');
         //});
         //console.log('scrollTracker', scrollTracker);
 
-        scrollTracker.enterViewport(function() {
+        scrollTracker.enterViewport(function(e) {
+            console.log('--------------- poster enteredVP', e);
             onPosterEnterViewPort($thisPoster);
         });
-        scrollTracker.exitViewport(function() {
+        scrollTracker.exitViewport(function(e) {
+            console.log('--------------- poster exitVP', e);
             onPosterExitViewPort($thisPoster);
         });
         //scrollTracker.fullyEnterViewport(function() {
