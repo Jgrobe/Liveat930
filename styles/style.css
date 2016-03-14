@@ -1083,7 +1083,7 @@ input {
     top: 36%;
     left: 25vw;
     width: 50vw;
-    height: 16.5vh;
+    height: 12vw;
     background: black;
     mix-blend-mode: multiply;
     opacity: 0.45; }
@@ -3942,7 +3942,7 @@ input {
       .history-slider .gallery-copy {
         height: auto; } }
 
-.video-overview-landing .fill-parent:after, .video-overview-landing #disablerDummy:after, .video-overview-landing .landing .landing-bg:after, .landing .video-overview-landing .landing-bg:after, .video-overview-landing .slider-ui:after, .video-overview-landing .poster .poster-content:after, .poster .video-overview-landing .poster-content:after, .video-overview-landing .poster .layer.bg-layer:after, .poster .video-overview-landing .layer.bg-layer:after, .video-overview-landing .poster .layer.copy-layer:after, .poster .video-overview-landing .layer.copy-layer:after, .video-overview-landing .nav-overlay .video-container:after, .nav-overlay .video-overview-landing .video-container:after, .video-overview-landing #preloader .filler:after, #preloader .video-overview-landing .filler:after {
+.landing.video-overview-landing .fill-parent:after, .landing.video-overview-landing #disablerDummy:after, .landing.video-overview-landing .landing-bg:after, .landing.video-overview-landing .slider-ui:after, .landing.video-overview-landing .poster .poster-content:after, .poster .landing.video-overview-landing .poster-content:after, .landing.video-overview-landing .poster .layer.bg-layer:after, .poster .landing.video-overview-landing .layer.bg-layer:after, .landing.video-overview-landing .poster .layer.copy-layer:after, .poster .landing.video-overview-landing .layer.copy-layer:after, .landing.video-overview-landing .nav-overlay .video-container:after, .nav-overlay .landing.video-overview-landing .video-container:after, .landing.video-overview-landing #preloader .filler:after, #preloader .landing.video-overview-landing .filler:after {
   content: '';
   display: block;
   position: absolute;
@@ -3952,10 +3952,10 @@ input {
   height: 100%;
   background: black;
   opacity: .7; }
-.video-overview-landing .landing-container {
+.landing.video-overview-landing .landing-container {
   text-align: center; }
-.video-overview-landing h1 {
-  margin: 0 0 5vh 0; }
+.landing.video-overview-landing h1 {
+  margin: 0 0 3vh 0; }
 
 .video-overview-filter {
   margin: 3vh 0 0 0;
