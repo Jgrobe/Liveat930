@@ -290,7 +290,6 @@ function windowloaded() {
 }// windowloaded
 
 function toggleNavOverlay() {
-    jQuery(window).scroll();// use to toggle burger
 
     SQSP.$objects.stickyHeader.toggleClass('on');
     var $overlay = SQSP.$objects.stickyHeader.find('.nav-overlay');
@@ -300,6 +299,7 @@ function toggleNavOverlay() {
     var tl = new TimelineMax();
     if(SQSP.$objects.stickyHeader.hasClass('on')) {
         // open overlay
+        toggleBurger(true);
         lock(jQuery('body'), '100vh');
         tl.add(function() {
             if(is_mobile()) return false;
@@ -309,6 +309,7 @@ function toggleNavOverlay() {
         tl.staggerTo($items,.2, {autoAlpha:1},.04, '-=.075');
     } else {
         // close overlay
+        jQuery(window).scroll();// use to toggle burger
         tl.staggerTo($items,.2, {autoAlpha:0, clearProps:'all'},-.04);
         tl.to($overlay,.2, {autoAlpha:0, clearProps:'all'}, '-=.3');
         tl.add(function() {
