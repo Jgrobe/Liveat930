@@ -1,35 +1,41 @@
-.show-landing {
-  @include landing();
-  @include flexbox();
+.landing.show-landing {
+  //@include landing();
+  //@include flexbox();
 //  margin-bottom: $sectionMarginBottom;
 
-  @include breakpoint(mobile) {
-//    margin-bottom: $sectionMarginBottomMobile;
-  }// BP MOBILE
-}// .show-landing
+  .landing-container {
+    margin: auto;
+    text-align: center;
 
-.show-content {
-  margin: auto;
-  text-align: center;
+    h1, .show-landing-info {
+      position: relative;
+    }// .show-landing-info
 
-  h1, .show-landing-info {
-    position: relative;
-  }
+    h1 {
+      display: inline-block;
+      text-align: left;
 
-  h1 {
-    display: inline-block;
-    text-align: left;
-//    font-size: 9.75vw;
-//    letter-spacing: .06em;
-//    text-transform: uppercase;
+      .small {
+        font-size: 1.875vw;
+        line-height: 100%;
+        letter-spacing: .1em;
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+      }// .small
+    }// h1
 
-    .show-landing-subline, {
-      font-size: 1.875vw;
-      line-height: 100%;
-      letter-spacing: .1em;
-      display: block;
-    }
-  }// h1
+    //.rectangle {
+    //  position: absolute;
+    //  background: rgba(0,0,0,.4);
+    //  top: 18%;
+    //  left: 12%;
+    //  width: 76%;
+    //  height: get_relative_units(480);
+    //}
+
+  }// .landing-container
 
   .show-landing-info {
     text-align: left;
@@ -37,7 +43,7 @@
     background: white;
     color: black;
     width: 40%;
-    margin: 5% auto 0 40%;
+    margin: 2vw auto auto 50%;
 
     font-family: $gotham;
     @include relative_units(font-size, 28);
@@ -46,39 +52,33 @@
     text-transform: none;
   }// .show-landing-info
 
-  .rectangle {
-    position: absolute;
-    background: rgba(0,0,0,.4);
-    top: 18%;
-    left: 12%;
-    width: 76%;
-    height: get_relative_units(480);
-  }
-
   @include breakpoint(mobile) {
-    width: $MOBILE_WIDTH;
 
-    h1 {
-      .show-landing-subline {font-size: 15px;}
-    }
+    .landing-container {
 
-    .show-landing-info {
-      width: 100%;
-      margin: 40px auto;
-      font-size: 14px;
-      line-height: 22px;
-    }
+      width: $MOBILE_WIDTH;
 
-    .rectangle { height: 35vw; }
+      h1 {
+        .show-landing-subline {font-size: 15px;}
+      }// h1
 
-    .lefted {
-      text-align: center;
-      .watch-latest-cta {margin: auto;}
-    }
+      .show-landing-info {
+        width: 100%;
+        margin: 40px auto;
+        font-size: 14px;
+        line-height: 22px;
+      }// .show-landing-info
+
+      //.rectangle { height: 35vw; }
+
+      //.lefted {
+      //  text-align: center;
+      //  .watch-latest-cta {margin: auto;}
+      //}
+    }// .landing-container
 
   }// BP MOBILE
-
-}// .show-content
+}// .show-landing
 
 .history-slider {
   padding: $sectionMarginBottom 0 0 0;

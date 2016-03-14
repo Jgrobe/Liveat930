@@ -18,23 +18,17 @@
             </div>
         </div>
 
-        <div class="show-content">
+        <div class="rectangle"></div>
 
-            <div class="rel">
-
-                <div class="rectangle"></div>
-
-                <h1 class="l-headline">
-                    <span class="show-landing-subline">{website.siteTitle}</span>
-                    {item.title}
-                </h1>
-                <div class="show-landing-info">
-                    {item.body}
-                </div><!-- .show-landing-info -->
-
-            </div><!-- .rel -->
-
-        </div><!-- .show-content -->
+        <div class="landing-container">
+            <h1 class="l-headline">
+                <span class="small">{website.siteTitle}</span>
+                {item.title}
+            </h1>
+            <div class="show-landing-info">
+                {item.body}
+            </div><!-- .show-landing-info -->
+        </div><!-- .landing-container -->
     </section>
 
     <div class="site-content">

@@ -3816,61 +3816,44 @@ input {
         .post-pagination .col.next {
           margin-top: 40px; } }
 
-.show-landing {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex; }
-
-.show-content {
+.landing.show-landing .landing-container {
   margin: auto;
   text-align: center; }
-  .show-content h1, .show-content .show-landing-info {
+  .landing.show-landing .landing-container h1, .landing.show-landing .landing-container .show-landing-info {
     position: relative; }
-  .show-content h1 {
+  .landing.show-landing .landing-container h1 {
     display: inline-block;
     text-align: left; }
-    .show-content h1 .show-landing-subline {
+    .landing.show-landing .landing-container h1 .small {
       font-size: 1.875vw;
       line-height: 100%;
       letter-spacing: .1em;
-      display: block; }
-  .show-content .show-landing-info {
-    text-align: left;
-    padding: 5.20833vw;
-    background: white;
-    color: black;
-    width: 40%;
-    margin: 5% auto 0 40%;
-    font-family: "Gotham A", "Gotham B";
-    font-size: 0.97222vw;
-    line-height: 1.73611vw;
-    letter-spacing: .04em;
-    text-transform: none; }
-  .show-content .rectangle {
-    position: absolute;
-    background: rgba(0, 0, 0, 0.4);
-    top: 18%;
-    left: 12%;
-    width: 76%;
-    height: 16.66667vw; }
-  @media only screen and (max-width: 750px) {
-    .show-content {
-      width: calc(~"100vw - 24px"); }
-      .show-content h1 .show-landing-subline {
-        font-size: 15px; }
-      .show-content .show-landing-info {
-        width: 100%;
-        margin: 40px auto;
-        font-size: 14px;
-        line-height: 22px; }
-      .show-content .rectangle {
-        height: 35vw; }
-      .show-content .lefted {
-        text-align: center; }
-        .show-content .lefted .watch-latest-cta {
-          margin: auto; } }
+      display: block;
+      position: absolute;
+      left: 0;
+      bottom: 0; }
+.landing.show-landing .show-landing-info {
+  text-align: left;
+  padding: 5.20833vw;
+  background: white;
+  color: black;
+  width: 40%;
+  margin: 2vw auto auto 50%;
+  font-family: "Gotham A", "Gotham B";
+  font-size: 0.97222vw;
+  line-height: 1.73611vw;
+  letter-spacing: .04em;
+  text-transform: none; }
+@media only screen and (max-width: 750px) {
+  .landing.show-landing .landing-container {
+    width: calc(~"100vw - 24px"); }
+    .landing.show-landing .landing-container h1 .show-landing-subline {
+      font-size: 15px; }
+    .landing.show-landing .landing-container .show-landing-info {
+      width: 100%;
+      margin: 40px auto;
+      font-size: 14px;
+      line-height: 22px; } }
 
 .history-slider {
   padding: 10.41667vw 0 0 0;
