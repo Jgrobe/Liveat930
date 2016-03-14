@@ -1775,12 +1775,18 @@ input {
       font-size: 3.61111vw;
       line-height: 3.61111vw; }
     .poster .hosted-logo {
-      width: 40%; }
+      width: 40%;
+      margin: auto; }
+      .poster .hosted-logo svg {
+        width: 100%;
+        height: 2.5vw; }
     .poster .hosted-info {
       display: none;
       font-size: 8px;
       width: 85%;
-      line-height: 10px; } }
+      line-height: 10px; }
+    .poster .btn-play-episode .cta, .poster .btn-play-episode #productSummary #productDetails .sqs-add-to-cart-button, #productSummary #productDetails .poster .btn-play-episode .sqs-add-to-cart-button, .poster .btn-play-episode #sqs-shopping-cart-wrapper .checkout-button, #sqs-shopping-cart-wrapper .poster .btn-play-episode .checkout-button {
+      font-size: 4vw; } }
 
 .poster-container {
   position: absolute;

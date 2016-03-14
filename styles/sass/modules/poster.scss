@@ -376,10 +376,6 @@ $posterWidth: 84vw;
     &.on {opacity:1;}
   }
 
-  .cta-container {
-
-  }
-
   .btn-play-episode {// .cta-container
     position: absolute;
     right: -2%;
@@ -548,7 +544,13 @@ $posterWidth: 84vw;
 
     .hosted-logo {
       width: 40%;
-    }
+      margin: auto;
+
+      svg {
+        width: 100%;
+        height: 2.5vw;
+      }// svg
+    }// .hoste
 
     .hosted-info {
       display: none;
@@ -556,6 +558,14 @@ $posterWidth: 84vw;
       width: 85%;
       line-height: 10px;
     }// .hosted-info
+
+    .btn-play-episode {// .cta-container
+
+      .cta {
+        font-size: 4vw;
+      }// .cta
+
+    }// .btn-play-episode
 
   }// BP MOBILE
 
