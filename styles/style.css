@@ -348,14 +348,14 @@ input {
 .mask {
   overflow: hidden; }
 
-.l-headline, .clip-landing .landing-head {
+.l-headline {
   font-family: "United Sans", script;
   text-transform: uppercase;
   font-size: 10.83333vw;
   line-height: 10.83333vw;
   letter-spacing: .06em; }
   @media only screen and (max-width: 750px) {
-    .l-headline, .clip-landing .landing-head {
+    .l-headline {
       font-size: 73px;
       line-height: 73px; } }
 
@@ -1083,6 +1083,10 @@ input {
     display: block;
     pointer-events: none;
     background-attachment: fixed; }
+  .landing h1 .small {
+    font-size: 2vw;
+    line-height: 100%;
+    letter-spacing: .1em; }
   .landing .landing-container {
     margin: auto;
     margin-top: 28vh;
@@ -1780,7 +1784,7 @@ input {
       width: calc(~"100% - 200px");
       height: 0.2vw; } }
   @media only screen and (max-width: 750px) {
-    .poster .l-headline, .poster .clip-landing .landing-head, .clip-landing .poster .landing-head {
+    .poster .l-headline {
       font-size: 10.83333vw;
       line-height: 10.83333vw; }
     .poster .m-headline, .poster .episode-summary .head, .episode-summary .poster .head {
@@ -3812,9 +3816,6 @@ input {
     display: inline-block;
     text-align: left; }
     .landing.show-landing .landing-container h1 .small {
-      font-size: 1.875vw;
-      line-height: 100%;
-      letter-spacing: .1em;
       display: block;
       position: absolute;
       left: 0;

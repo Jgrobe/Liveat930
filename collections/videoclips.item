@@ -2,7 +2,7 @@
 
     <div class="landing-container">
         <div class="landing-head">
-            <h1>{item.title}</h1>
+            <h1 class="l-headline">{item.title}</h1>
             <div class="small">{item.customContent.subtitle}</div>
         </div><!-- .landing-head -->
     </div><!-- .landing-container -->
