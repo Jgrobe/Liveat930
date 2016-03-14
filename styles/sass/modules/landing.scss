@@ -10,6 +10,17 @@
   text-transform: uppercase;
   //  z-index: 1;
 
+  .rectangle {// on page clips overview, the show, the host
+    position: absolute;
+    top: 40%;
+    left: 25vw;
+    width: 50vw;
+    height: 10.5vh;
+    background: black;
+    mix-blend-mode: multiply;
+    opacity: 0.45;
+  }// .rectangle
+
   .landing-bg {
     display: block;
     pointer-events: none;

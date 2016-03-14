@@ -17,125 +17,110 @@ $gridGutter: 5%;
     }// before
   }
 
+  .landing-container { text-align: center; }
+
   h1 {
     margin: 0 0 5vh 0;
   }
-  .rectangle {
-    position: absolute;
-    top: 37.5vh;
-    left: 25vw;
-    height: 15vh;
-    width: 50vw;
-    background: #000;
-    mix-blend-mode: multiply;
-    opacity: 0.45;
-  }
-  .content {
-    position: absolute;
-    height: 90vh;
-    width: 100vw;
-    @include flexbox();
-    @include flex-value(direction, column);
-    @include prefixed(justify-content, center);
-    @include prefixed(align-items, center);
-  }
-  .video-overview-filter-headline {
-    @include united;
-//    font-size: 3vw;
-//    letter-spacing: 0.25vw;
-  }
-  .video-overview-filter {
-    margin: 3vh 0 0 0;
+  //.rectangle {
+  //  position: absolute;
+  //  top: 37.5vh;
+  //  left: 25vw;
+  //  height: 15vh;
+  //  width: 50vw;
+  //  background: #000;
+  //  mix-blend-mode: multiply;
+  //  opacity: 0.45;
+  //}
+  //.content {
+  //  position: absolute;
+  //  height: 90vh;
+  //  width: 100vw;
+  //  @include flexbox();
+  //  @include flex-value(direction, column);
+  //  @include prefixed(justify-content, center);
+  //  @include prefixed(align-items, center);
+  //}
+//  .video-overview-filter-headline {
+//    @include united;
+////    font-size: 3vw;
+////    letter-spacing: 0.25vw;
+//  }
+
+
+}// .video-overview-landing
+
+
+.video-overview-filter {
+
+
+  margin: 3vh 0 0 0;
+  padding: 0;
+  @include flexbox();
+  @include prefixed(align-items, center);
+
+  .video-filter-item {
+    list-style: none;
     padding: 0;
-    @include flexbox();
-    @include prefixed(align-items, center);
+    margin-right: 1.25vw;
+    font-size: 0.75vw;
+    font-family: $gotham;
+    font-weight: 500;
+    &:after {
+      content: '/';
+    }
+    &:last-child:after {
+      margin-right: 0;
+      content: none;
+    }
 
-    .video-filter-item {
-      list-style: none;
-      padding: 0;
-      margin-right: 1.25vw;
-      font-size: 0.75vw;
-      font-family: $gotham;
-      font-weight: 500;
-      &:after {
-        content: '/';
-      }
-      &:last-child:after {
-        content: none;
-      }
+    &.current-item {
+      .clips-filter-trigger:after { width: 100%; }
+    }
+  }// li
 
-      &.current-item {
-        .clips-filter-trigger:after { width: 100%; }
-      }
-    }// li
+  .clips-filter-trigger {// a
+    display: inline-block;
+    position: relative;
+    letter-spacing: 0.1vw;
+    text-decoration: none;
+    color: #fff;
+    margin-right: 1.25vw;
+    //border-bottom: 1px solid #fff;
+    padding-bottom: 0.25vw;
 
-    .clips-filter-trigger {
-      display: inline-block;
-      position: relative;
-      letter-spacing: 0.1vw;
-      text-decoration: none;
-      color: #fff;
-      margin-right: 1.25vw;
-      //border-bottom: 1px solid #fff;
-      padding-bottom: 0.25vw;
+    &:after {
+      content: '';
+      display: block;
+      top: 100%;
+      left: 0;
+      width: 0;
+      height: 1px;
+      background:white;
+      @include prefixed(transition, (width $shortTrans));
+    }
 
-      &:after {
-        content: '';
-        display: block;
-        top: 100%;
-        left: 0;
-        width: 0;
-        height: 1px;
-        background:white;
-        @include prefixed(transition, (width $shortTrans));
-      }
-    }// a
-
-  }// .video-overview-filter
+    &:last-child {margin-right: 0;}
+  }// a
 
   @include breakpoint(mobile) {
 
-    .video-overview-filter {
+    display: block;
+    text-align: center;
+    line-height: 5vh;
+
+    .video-filter-item {
+      font-size: 12px;
       display: block;
-      text-align: center;
-      line-height: 5vh;
+      &:after {
+        content: none;
+      }
 
-      .video-filter-item {
-        font-size: 12px;
-        display: block;
-        &:after {
-          content: none;
-        }
-
-      }// li
-
-      //.clips-filter-trigger {
-      //  display: inline-block;
-      //  position: relative;
-      //  letter-spacing: 0.1vw;
-      //  text-decoration: none;
-      //  color: #fff;
-      //  margin-right: 1.25vw;
-      //  //border-bottom: 1px solid #fff;
-      //  padding-bottom: 0.25vw;
-      //
-      //  &:after {
-      //    content: '';
-      //    display: block;
-      //    top: 100%;
-      //    left: 0;
-      //    width: 0;
-      //    height: 1px;
-      //    background:white;
-      //    @include prefixed(transition, (width $shortTrans));
-      //  }
-      //}// a
-
-    }// .video-overview-filter
+    }// li
 
   }// BP MOBILE
 
-}// .video-overview-landing
+}// .video-overview-filter
 
 .video-gallery {
   margin: -10vh auto $sectionMarginBottom auto;

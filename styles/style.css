@@ -1070,6 +1070,15 @@ input {
   text-rendering: optimizeLegibility;
   font-weight: normal;
   text-transform: uppercase; }
+  .landing .rectangle {
+    position: absolute;
+    top: 40%;
+    left: 25vw;
+    width: 50vw;
+    height: 10.5vh;
+    background: black;
+    mix-blend-mode: multiply;
+    opacity: 0.45; }
   .landing .landing-bg {
     display: block;
     pointer-events: none;
@@ -3964,50 +3973,12 @@ input {
   height: 100%;
   background: black;
   opacity: .7; }
+.video-overview-landing .landing-container {
+  text-align: center; }
 .video-overview-landing h1 {
   margin: 0 0 5vh 0; }
-.video-overview-landing .rectangle {
-  position: absolute;
-  top: 37.5vh;
-  left: 25vw;
-  height: 15vh;
-  width: 50vw;
-  background: #000;
-  mix-blend-mode: multiply;
-  opacity: 0.45; }
-.video-overview-landing .content {
-  position: absolute;
-  height: 90vh;
-  width: 100vw;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-direction: column;
-  -moz-box-direction: column;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-direction: column;
-  -ms-direction: column;
-  direction: column;
-  -webkit-justify-content: center;
-  -moz-justify-content: center;
-  -ms-justify-content: center;
-  -o-justify-content: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -moz-align-items: center;
-  -ms-align-items: center;
-  -o-align-items: center;
-  align-items: center; }
-.video-overview-landing .video-overview-filter-headline {
-  font-family: "United Sans", script;
-  text-rendering: optimizeLegibility;
-  font-weight: normal;
-  text-transform: uppercase; }
-.video-overview-landing .video-overview-filter {
+
+.video-overview-filter {
   margin: 3vh 0 0 0;
   padding: 0;
   display: -webkit-box;
@@ -4020,20 +3991,21 @@ input {
   -ms-align-items: center;
   -o-align-items: center;
   align-items: center; }
-  .video-overview-landing .video-overview-filter .video-filter-item {
+  .video-overview-filter .video-filter-item {
     list-style: none;
     padding: 0;
     margin-right: 1.25vw;
     font-size: 0.75vw;
     font-family: "Gotham A", "Gotham B";
     font-weight: 500; }
-    .video-overview-landing .video-overview-filter .video-filter-item:after {
+    .video-overview-filter .video-filter-item:after {
       content: '/'; }
-    .video-overview-landing .video-overview-filter .video-filter-item:last-child:after {
+    .video-overview-filter .video-filter-item:last-child:after {
+      margin-right: 0;
       content: none; }
-    .video-overview-landing .video-overview-filter .video-filter-item.current-item .clips-filter-trigger:after {
+    .video-overview-filter .video-filter-item.current-item .clips-filter-trigger:after {
       width: 100%; }
-  .video-overview-landing .video-overview-filter .clips-filter-trigger {
+  .video-overview-filter .clips-filter-trigger {
     display: inline-block;
     position: relative;
     letter-spacing: 0.1vw;
@@ -4041,7 +4013,7 @@ input {
     color: #fff;
     margin-right: 1.25vw;
     padding-bottom: 0.25vw; }
-    .video-overview-landing .video-overview-filter .clips-filter-trigger:after {
+    .video-overview-filter .clips-filter-trigger:after {
       content: '';
       display: block;
       top: 100%;
@@ -4054,16 +4026,18 @@ input {
       -ms-transition: width 0.3s;
       -o-transition: width 0.3s;
       transition: width 0.3s; }
-@media only screen and (max-width: 750px) {
-  .video-overview-landing .video-overview-filter {
-    display: block;
-    text-align: center;
-    line-height: 5vh; }
-    .video-overview-landing .video-overview-filter .video-filter-item {
-      font-size: 12px;
-      display: block; }
-      .video-overview-landing .video-overview-filter .video-filter-item:after {
-        content: none; } }
+    .video-overview-filter .clips-filter-trigger:last-child {
+      margin-right: 0; }
+  @media only screen and (max-width: 750px) {
+    .video-overview-filter {
+      display: block;
+      text-align: center;
+      line-height: 5vh; }
+      .video-overview-filter .video-filter-item {
+        font-size: 12px;
+        display: block; }
+        .video-overview-filter .video-filter-item:after {
+          content: none; } }
 
 .video-gallery {
   margin: -10vh auto 10.41667vw auto;
