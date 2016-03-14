@@ -66,6 +66,7 @@ var Preloader = function( options ) {
             if($this.hasAttr('style')) {
                 var style = $this.get(0).currentStyle || window.getComputedStyle($this.get(0), false);
                 var src = style.backgroundImage.slice(4, -1).replace(/"/g, "");
+                if(src === '') src = '#';
                 srcs.push(src);
             }
         });
