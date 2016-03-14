@@ -299,8 +299,8 @@ function toggleNavOverlay() {
     var tl = new TimelineMax();
     if(SQSP.$objects.stickyHeader.hasClass('on')) {
         // open overlay
-        toggleBurger(true);
-        lock(jQuery('body'), '100vh');
+        //toggleBurger(true);
+        //lock(jQuery('body'), '100vh');
         tl.add(function() {
             if(is_mobile()) return false;
             SQSP.$objects.stickyHeader.find('video').get(0).play();
@@ -313,8 +313,8 @@ function toggleNavOverlay() {
         tl.to($overlay,.2, {autoAlpha:0, clearProps:'all'}, '-=.3');
         tl.add(function() {
             SQSP.$objects.stickyHeader.find('video').get(0).pause();
-            jQuery(window).scroll();// use to toggle burger
-            unlock(jQuery('body'));
+            //jQuery(window).scroll();// use to toggle burger
+            //unlock(jQuery('body'));
         });
     }// endif;
 }
