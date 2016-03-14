@@ -338,7 +338,7 @@ function toggleSearchOverlay() {
         jQuery('body').append($dummy);
         var dummyHeight = $dummy.height();
         //console.log('actual height', dummyHeight);
-        var vh = dummyHeight / jQuery(window).height() * 100;
+        var vh = (dummyHeight / jQuery(window).height() * 100).toFixed(2);
         var tweenHeight = vh+'vh';
         console.log('---------- open searchoverlay -> navTable vh height', vh, tweenHeight);
         $dummy.remove();
