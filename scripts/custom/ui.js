@@ -346,7 +346,7 @@ function toggleSearchOverlay() {
         tl.to($navVideo, duration, {autoAlpha:0, onComplete:function(){ $navVideo.get(0).pause(); }});
         tl.to($navColumns, duration, {height:0, ease:Strong.easeInOut});
         tl.to($shareCol, duration, {autoAlpha:0}, '-='+(duration));
-        tl.to($navTable, duration, {height:vh+'vh', ease:Strong.easeInOut, onUpdate:function(){
+        tl.fromTo($navTable, duration, {height:'100vh'}, {height:vh+'vh', ease:Strong.easeInOut, onUpdate:function(){
             console.log('--- --- tweening navTable height', this, $navTable.height());
         }}, '-='+(duration));
         tl.to($searchtable,duration, {height:(100-vh)+'vh', ease:Strong.easeInOut, onUpdate:function(){
