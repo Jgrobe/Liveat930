@@ -120,7 +120,7 @@ SQSP.functions.initPage = function() {
             var tl = new TimelineMax();
             tl.to(SQSP.$objects.hostedInfo,.3, {height:h, ease:Strong.easeOut});
             tl.add(function(){
-                SQSP.$objects.hostedInfo.addClass('on'),
+                SQSP.$objects.hostedInfo.addClass('on');
             }, '-=.2');
         });
 
