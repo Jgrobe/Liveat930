@@ -4,17 +4,17 @@ $gridGutter: 5%;
   //@include landing;
 
   .fill-parent {
-    &:after {
-      content: '';
-      display: block;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: black;
-      opacity: .7;
-    }// before
+    //&:after {
+    //  content: '';
+    //  display: block;
+    //  position: absolute;
+    //  top: 0;
+    //  left: 0;
+    //  width: 100%;
+    //  height: 100%;
+    //  background: black;
+    //  opacity: .7;
+    //}// before
   }
 
   .landing-container { text-align: center; }
