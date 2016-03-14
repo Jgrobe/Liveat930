@@ -2367,7 +2367,15 @@ input {
     visibility: hidden;
     opacity: 0; }
   .nav-overlay .search-table {
-    height: 0; }
+    height: 0;
+    -webkit-box-direction: column;
+    -moz-box-direction: column;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-direction: column;
+    -ms-direction: column;
+    direction: column; }
   .nav-overlay .table {
     position: relative;
     height: 100%; }

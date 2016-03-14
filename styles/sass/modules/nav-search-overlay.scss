@@ -31,7 +31,10 @@ $rightColMargin: 10vw;
 //    }
 //  }// .search-on
 
-  .search-table {height:0;}
+  .search-table {
+    height:0;
+    @include flex-value(direction, column);
+  }
 
   .bg-container {@extend .imgfill;}
 
