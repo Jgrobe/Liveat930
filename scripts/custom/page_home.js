@@ -122,7 +122,7 @@ SQSP.functions.initPage = function() {
             tl.add(function(){
                 SQSP.$objects.hostedInfo.addClass('on'),
             }, '-=.2');
-        })
+        });
 
     });
 
