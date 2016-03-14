@@ -82,7 +82,7 @@ function init_sqsp() {
     });
 
     //console.log('SQSP.vars.loopvids.length', SQSP.vars.loopvids.length);
-    //checkVideoloop();
+    checkVideoloop();
 
 }// init_page()
 
