@@ -309,11 +309,11 @@ function toggleNavOverlay() {
         tl.staggerTo($items,.2, {autoAlpha:1},.04, '-=.075');
     } else {
         // close overlay
-        jQuery(window).scroll();// use to toggle burger
         tl.staggerTo($items,.2, {autoAlpha:0, clearProps:'all'},-.04);
         tl.to($overlay,.2, {autoAlpha:0, clearProps:'all'}, '-=.3');
         tl.add(function() {
             SQSP.$objects.stickyHeader.find('video').get(0).pause();
+            jQuery(window).scroll();// use to toggle burger
             unlock(jQuery('body'));
         });
     }// endif;
