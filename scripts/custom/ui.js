@@ -343,10 +343,10 @@ function toggleSearchOverlay() {
         console.log('---------- open searchoverlay -> navTable vh height', vh, tweenHeight);
         $dummy.remove();
 
-        tl.to($navVideo,duration, {autoAlpha:0, onComplete:function(){ $navVideo.get(0).pause(); }});
-        tl.to($navColumns,duration, {height:0, ease:Strong.easeInOut});
-        tl.to($shareCol,duration, {autoAlpha:0}, '-='+(duration));
-        tl.to($navTable,duration, {height:tweenHeight, ease:Strong.easeInOut, onUpdate:function(){
+        tl.to($navVideo, duration, {autoAlpha:0, onComplete:function(){ $navVideo.get(0).pause(); }});
+        tl.to($navColumns, duration, {height:0, ease:Strong.easeInOut});
+        tl.to($shareCol, duration, {autoAlpha:0}, '-='+(duration));
+        tl.to($navTable, duration, {height:vh, ease:Strong.easeInOut, onUpdate:function(){
             console.log('--- --- tweening navTable height', $navTable.height());
         }}, '-='+(duration));
         tl.to($searchtable,duration, {height:(100-vh)+'vh', ease:Strong.easeInOut}, '-='+(duration));
