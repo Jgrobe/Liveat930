@@ -117,7 +117,7 @@ SQSP.functions.initPage = function() {
             if(!is_mobile()) return false;
             console.log('info clicked on mobile');
             SQSP.$objects.hostedInfo.height('auto');
-            var h = SQSP.$objects.hostedInfo.height();
+            var h = SQSP.$objects.hostedInfo.height() + parseFloat(SQSP.$objects.hostedInfo.sibling('.hosted-logo').css('padding-bottom'));
             console.log('actual info height', h);
             SQSP.$objects.hostedInfo.height(0);
             SQSP.$objects.hostedInfo.css({display:'block'});
