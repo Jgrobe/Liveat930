@@ -79,7 +79,7 @@
 
 .video-gallery.video-detail-clips {
   margin: 0 auto;
-  padding-top: $sectionMarginBottom;
+  padding-top: 4vw;
 
 //  .load-from-episode {
 //    position: relative;
@@ -94,6 +94,9 @@
   }// .related-episode-clips
 
   &.related-category-clips {
+    &.twin {
+      padding-top: $sectionMarginBottom;
+    }
 //    margin-top:0;
 //    margin-bottom:0
   }// .related-category-clips

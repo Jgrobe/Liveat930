@@ -4287,9 +4287,11 @@ input {
 
 .video-gallery.video-detail-clips {
   margin: 0 auto;
-  padding-top: 10.41667vw; }
+  padding-top: 4vw; }
   .video-gallery.video-detail-clips.related-episode-clips .cta-container {
     z-index: 1; }
+  .video-gallery.video-detail-clips.related-category-clips.twin {
+    padding-top: 10.41667vw; }
   .video-gallery.video-detail-clips .section-head {
     position: relative; }
 
