@@ -6,18 +6,19 @@
     //left: 50vw;
     //@include transform(translateX(-50%));
     white-space: nowrap;
-    
-    .small {
-      position: absolute;
-      left: 0;
-      bottom: 100%;
-    }
+
 
     h1 {
       //    font-size: 10vw;
       //    letter-spacing: 0.5vw;
       //@extend .l-headline;
       margin: 0 0 0 -0.5vw;
+
+      .small {
+        position: absolute;
+        left: 0;
+        bottom: 100%;
+      }
     }
 
   }// .episodes-landing-head()
