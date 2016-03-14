@@ -34,6 +34,8 @@
 
         <section class="host-create history-slider post-excerpt">
 
+            <div class="rectangle"></div>
+
             <div class="section-head">
                 <h2>{item.customContent.galleryTitle}</h2>
                 <p>{item.customContent.gallerySubtitle}</p>
