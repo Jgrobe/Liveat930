@@ -246,9 +246,11 @@ jQuery(window).load(function() {
 });
 
 function onPosterEnterViewPort($poster) {
+    console.log('video entered VP');
     $poster.find('video').get(0).play();
 }
 function onPosterExitViewPort($poster) {
+    console.log('video exited VP');
     $poster.find('video').get(0).pause();
 }
 //function onFullyEnterViewPort(instance) {

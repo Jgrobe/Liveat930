@@ -345,7 +345,7 @@ function toggleSearchOverlay() {
         // open search
         SQSP.vars.isSearchOverlayOpen = true;
 
-        var dummyHeight = $burger.outerHeight() + (parseFloat( $burger.css('top') ) *2);
+        var dummyHeight = $burger.outerHeight() + ( parseFloat( $burger.css('top') ) *2 );
         var dummyHeightPct = dummyHeight / jQuery(window).height();
         var dummyHeightVH = ( dummyHeightPct * 100 ) + 'vw' ;
         //console.log('dummy height calc', dummyHeight, dummyHeightPct, dummyHeightVH);
@@ -360,17 +360,17 @@ function toggleSearchOverlay() {
         //console.log('actual height', dummyHeight);
         var vh = dummyHeight / jQuery(window).height() * 100;
         var tweenHeight = vh+'vh';
-        console.log('---------- open searchoverlay -> navTable vh height', vh, tweenHeight);
+        //console.log('---------- open searchoverlay -> navTable vh height', vh, tweenHeight);
         $dummy.remove();
 
         tl.to($navVideo, duration, {autoAlpha:0, onComplete:function(){ $navVideo.get(0).pause(); }});
         tl.to($navColumns, duration, {height:0, ease:Strong.easeInOut});
         tl.to($shareCol, duration, {autoAlpha:0}, '-='+(duration));
         tl.fromTo($navTable, duration, {height:'100vh'}, {height:vh+'vh', ease:Strong.easeInOut, onUpdate:function(){
-            console.log('--- --- tweening navTable height', this, $navTable.height());
+            //console.log('--- --- tweening navTable height', this, $navTable.height());
         }}, '-='+(duration));
         tl.to($searchtable,duration, {height:(100-vh)+'vh', ease:Strong.easeInOut, onUpdate:function(){
-            console.log('--- --- tweening searchTable height', $searchtable.height());
+            //console.log('--- --- tweening searchTable height', $searchtable.height());
         }}, '-='+(duration));
     } else {
         //close search
