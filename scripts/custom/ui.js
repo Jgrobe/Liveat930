@@ -104,6 +104,25 @@ function checkVideoloop() {
 
 function populate_namespaces() {
 
+    SQSP.instances.Preloader = new Preloader({
+        autoInit:false,// init after individual initPage so preloader fns can be hooked
+        onComplete:function(e) {
+            var $clipables = jQuery('.onloadclip');
+            var duration = .35;
+            var tl = new TimelineMax();
+            tl.to(jQuery('body'),(duration*1.5), {autoAlpha:1, onComplete:function() {
+                jQuery('body').removeClass('hidden');
+            }});
+            //$clipables.each(function(i) {
+            //    var $this = jQuery(this);
+            //
+            //    tl.to($this, duration, )
+            //});// endeach()
+
+            return tl;
+        }
+    });
+
     SQSP.$objects.window = jQuery(window);
     SQSP.$objects.document = jQuery(document);
     SQSP.$objects.staticHeader = jQuery('.static-header');
@@ -127,6 +146,9 @@ function populate_namespaces() {
     // individual page init function may require namespaces -> must fire after namespaces are populated
     // individual page init function may add to namespaces -> must fire before window load & resize
     if(_.isFunction(SQSP.functions.initPage)) SQSP.functions.initPage();
+
+    // initPage could have served preloader onStart, onProgress, onComplete -> init preloader
+    SQSP.instances.Preloader.init();
 
     SQSP.$objects.landingBG = jQuery('.landing-bg');
     SQSP.$objects.landingVideo = SQSP.$objects.landingBG.find('video').get(0);
@@ -175,14 +197,6 @@ function clearSearchField($field) {
 }
 
 function windowloaded() {
-
-    // FADE IN BODY ON PAGE LOAD
-    if(!elem_exists(jQuery('#preloader'))) {
-        //console.log('PLAIN REVEAL');
-        TweenMax.to(jQuery('body'),.5, {autoAlpha:1, onComplete:function() {
-            jQuery('body').removeClass('hidden');
-        }});
-    }// endif
 
     // SEARCH FIELD ENABLE/DISABLE
     SQSP.$objects.staticHeader.find('.search-icon').click(function() {

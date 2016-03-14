@@ -6,6 +6,7 @@
 var Preloader = function( options ) {
     var PL = this;
     PL.options = {
+        autoInit: true,
         assetSelector : 'img, .img, .imgfill',
         onStart : false,
         onProgress: false,
@@ -45,16 +46,16 @@ var Preloader = function( options ) {
         }// endfor
     };// preload()
 
-    init();
-    
-    function init() {
+    PL.init = function () {
         PL.assets = get_preload_sources();
         PL.preload(PL.assets,{
             onStart: PL.options.onStart,
             onProgress : PL.options.onProgress,
             onComplete: PL.options.onComplete
         });
-    }// init()
+    };// init()
+
+    if(PL.options.autoInit) PL.init();
 
     function get_preload_sources() {
         var srcs = [];
