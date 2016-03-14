@@ -4004,7 +4004,7 @@ input {
 .landing.video-overview-landing .video-overview-filter-headline {
   position: relative; }
 
-.site-content.clips-overview .gallery {
+.site-content.clips-overview .video-gallery {
   margin-top: -10vh; }
 
 .video-overview-filter {
@@ -4075,8 +4075,6 @@ input {
   width: 75vw;
   position: relative;
   padding: 0 0 8vw 0; }
-  .video-gallery.no-shift {
-    margin-top: 10vH; }
   .video-gallery .rectangle {
     background: #fff;
     position: absolute;
