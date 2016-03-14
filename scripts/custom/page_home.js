@@ -115,15 +115,16 @@ SQSP.functions.initPage = function() {
         SQSP.$objects.hostedInfo.parent().click(function(){
             console.log('info clicked');
             if(!is_mobile()) return false;
-            console.log('info clicked on mobile');
 
             var tl = new TimelineMax({onComplete:function(){console.log('info height reveal done');}});
 
             if(SQSP.$objects.hostedInfo.hasClass('on')) {
+                console.log('info clicked close');
                 // close info
                 SQSP.$objects.hostedInfo.removeClass('on');
                 tl.to(SQSP.$objects.hostedInfo,.3, {height:0, ease:Strong.easeOut, clearProps:'all'});
             } else {
+                console.log('info clicked open');
                 // open info
                 SQSP.$objects.hostedInfo.height('auto');
                 var h = SQSP.$objects.hostedInfo.height() + parseFloat(SQSP.$objects.hostedInfo.siblings('.hosted-logo').css('padding-bottom'));
