@@ -19,11 +19,11 @@
 
                 <div class="landing-container">
 
-                    <div class="landing-head prllx-stndrd">
+                    <div class="landing-head prllx-custom" data-prllx=".12">
                         <div class="small">Latest Show</div>
                         <h1 class="l-headline">Episode No.{customContent.episode-number}</h1>
                     </div>
-                    <div class="landing-extra prllx-stndrd">
+                    <div class="landing-extra prllx-custom" data-prllx=".08">
                         <p id="lineup_preview" data-artists="{customContent.featured-artists}">
                             <span>with</span>
                         </p>
