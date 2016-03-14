@@ -23,7 +23,7 @@
                                     <div class="img tv imgfill" style="background-image:url('');">
                                         <video src="https://player.vimeo.com/external/157569044.sd.mp4?s=f8ff21f7c20844cdc6d5a187ab4644e078550fbe&profile_id=164"></video>
                                         <div class="title">
-                                            <span>{@|apply svg-icon-play.block}</span>
+                                            <!--<span>{@|apply svg-icon-play.block}</span>-->
                                         </div><!-- .title -->
                                     </div><!-- .img.tv -->
                                     <div class="label">Watch EP.2</div><!-- .label -->
