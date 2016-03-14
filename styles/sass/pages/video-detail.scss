@@ -50,9 +50,9 @@
 
 .site-content.clip-detail {
 
-  .overlap-container {
-    margin-bottom:$sectionMarginBottom;
-  }
+  //.overlap-container {
+  //  margin-bottom:$sectionMarginBottom;
+  //}
 
   @include breakpoint(mobile) {
 
@@ -105,7 +105,7 @@
 }// section.video-gallery
 
 .linked-episode {
-  margin-top: $sectionMarginBottom;
+  margin: #{$sectionMarginBottom / 2} auto;
 
   @include breakpoint(mobile) {
     margin-top: 20vh;
