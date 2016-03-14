@@ -9,19 +9,13 @@
             {.end}
         </div><!-- .landing-bg -->
     </div>
-    <div class="content">
-        <div class="rectangle"></div>
+    <div class="rectangle"></div>
+    <div class="landing-container">
         <div class="hosted-by-logo"></div>
         <h1 class="l-headline">{item.title}</h1>
         <div class="text-layer">
             {item.body}
             <div class="cta-dummy" data-label="{item.customContent.hero-cta-label}" data-icon="browser" data-class="upsized-icon" data-attributes="href=http://www.squarespace.com">{@|apply svg-icon-browser.block}</div>
-            <!--php print_cta(array(
-                    'label' => 'Build your own website with squarespace',
-            'icon' => 'images/browser',
-            'class' => array('upsized-icon')
-            )); -->
-            <!-- .cta-container -->
         </div>
     </div>
 </section>
@@ -78,11 +72,6 @@
                 </div>
                 <div class="gallery-copy"></div>
                 <div class="cta-dummy" data-label="Visit website" data-icon="eye" data-attributes="target=_blank">{@|apply svg-icon-eye.block}</div>
-                <!--php print_cta(array(
-                        'label' => 'Visit website',
-                'icon' => 'images/eye'
-                )); -->
-                <!--<a class="episodes-landing-cta icon-eye" href="">Visit Website</a>-->
             </div><!-- .text-layer -->
         </div><!-- .excerpt-container -->
 
@@ -101,12 +90,6 @@
                 <!--h2>{item.customContent.infoblockCTALabel}</h2-->
             </div><!-- .section-head -->
             <div class="cta-dummy" data-label="Build your own website with squarespace" data-icon="browser" data-attributes="href=http://www.squarespace.com">{@|apply svg-icon-browser.block}</div>
-            <!--php print_cta(array(
-                    'label' => 'Build your own website with squarespace',
-            'icon' => 'images/browser',
-            'class' => array('upsized-icon', 'negative')
-            )); -->
-            <!--<a href="" class="cta icon-browser">Build your own website with squarespace</a>-->
         </div><!-- .text-layer -->
     </section>
 

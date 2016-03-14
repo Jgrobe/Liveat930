@@ -3514,20 +3514,10 @@ input {
   text-align: center; }
   .host-landing:before {
     background-image: url("assets/images/the-host-title.jpg"); }
-  .host-landing .content {
-    margin: auto; }
-  .host-landing .rectangle {
-    position: absolute;
-    top: 40%;
-    left: 20vw;
-    height: 15vh;
-    width: 60vw;
-    background: #000;
-    mix-blend-mode: multiply;
-    opacity: 0.45; }
   .host-landing .hosted-by-logo {
-    margin-left: 23%;
-    position: relative; }
+    position: absolute;
+    left: 23%;
+    bottom: 100%; }
   .host-landing h1 {
     position: relative;
     margin: 0 0 5vh 0; }

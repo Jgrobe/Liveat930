@@ -6,25 +6,26 @@
   &:before {
     background-image: url('assets/images/the-host-title.jpg');
   }
-
-  .content {
-    margin: auto;
-  }// .content
-
-  .rectangle {
-    position: absolute;
-    top: 40%;
-    left: 20vw;
-    height: 15vh;
-    width: 60vw;
-    background: #000;
-    mix-blend-mode: multiply;
-    opacity: 0.45;
-  }// .rectangle
+  //
+  //.content {
+  //  margin: auto;
+  //}// .content
+  //
+  //.rectangle {
+  //  position: absolute;
+  //  top: 40%;
+  //  left: 20vw;
+  //  height: 15vh;
+  //  width: 60vw;
+  //  background: #000;
+  //  mix-blend-mode: multiply;
+  //  opacity: 0.45;
+  //}// .rectangle
 
   .hosted-by-logo {
-    margin-left: 23%;
-    position: relative;
+    position: absolute;
+    left: 23%;
+    bottom: 100%;
   }
 
   h1 {
