@@ -464,7 +464,10 @@ function cta_hovers() {
         if(SQSP.vars.ctaHoverTimer) clearTimeout(SQSP.vars.ctaHoverTimer);
 
         SQSP.vars.ctaHoverTimer = setTimeout(function(){
-            TweenMax.to($hoverlay, duration, {top:0, ease:Expo.easeOut});
+            console.log('--------- HOVER TIMEOUT EXECUTED???');
+            TweenMax.to($hoverlay, duration, {top:0, ease:Expo.easeOut, onComplete:function(){
+                console.log('--------- HOVER TWEEN EXECUTED???');
+            }});
         }, 150);
     });
     jQuery(ctaSelector).on('mouseleave', function() {
