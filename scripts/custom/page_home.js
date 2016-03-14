@@ -1,5 +1,5 @@
 SQSP.functions.initPage = function() {
-
+console.log('home initPage');
 
     SQSP.$objects.postersContainer = jQuery('.posters');
     SQSP.$objects.postersHoverContainer = SQSP.$objects.postersContainer.find('.posters-hover-bg');
