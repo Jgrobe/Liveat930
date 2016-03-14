@@ -338,7 +338,7 @@ function toggleSearchOverlay() {
         jQuery('body').append($dummy);
         var dummyHeight = $dummy.height();
         //console.log('actual height', dummyHeight);
-        var vh = (dummyHeight / jQuery(window).height() * 100).toFixed(2);
+        var vh = dummyHeight / jQuery(window).height() * 100;
         var tweenHeight = vh+'vh';
         console.log('---------- open searchoverlay -> navTable vh height', vh, tweenHeight);
         $dummy.remove();
@@ -347,7 +347,7 @@ function toggleSearchOverlay() {
         tl.to($navColumns, duration, {height:0, ease:Strong.easeInOut});
         tl.to($shareCol, duration, {autoAlpha:0}, '-='+(duration));
         tl.to($navTable, duration, {height:(100-100+vh)+'vh', ease:Strong.easeInOut, onUpdate:function(){
-            console.log('--- --- tweening navTable height', $navTable.height());
+            console.log('--- --- tweening navTable height', this, $navTable.height());
         }}, '-='+(duration));
         tl.to($searchtable,duration, {height:(100-vh)+'vh', ease:Strong.easeInOut, onUpdate:function(){
             console.log('--- --- tweening searchTable height', $searchtable.height());
