@@ -118,8 +118,7 @@ console.log('----------home initPage');
         //    }
         //});
 
-        var $thisVideo = $thisPoster.find('video');
-        var scrollTracker = scrollMonitor.create($thisVideo.get(0));
+        var scrollTracker = scrollMonitor.create($thisPoster.get(0));
 
         //$thisPoster.find('video').get(0).addEventListener('loadeddata', function(e) {
         //    console.log('recalculate scrolltracker', e);
@@ -127,12 +126,11 @@ console.log('----------home initPage');
         //});
         //console.log('scrollTracker', scrollTracker);
 
-        scrollTracker.enterViewport(function(e) {
-            //console.log('enterviewport', e);
-            $thisVideo.get(0).play();
+        scrollTracker.enterViewport(function() {
+            onPosterEnterViewPort($thisPoster);
         });
         scrollTracker.exitViewport(function() {
-            $thisVideo.get(0).pause();
+            onPosterExitViewPort($thisPoster);
         });
         //scrollTracker.fullyEnterViewport(function() {
         //    onFullyEnterViewPort(SQSP.instances.Posters[i]);
@@ -247,13 +245,13 @@ jQuery(window).load(function() {
     SQSP.$objects.hostedInfo.height(vwHeight + 'vw');
 });
 
-function onPosterEnterViewPort(video) {
+function onPosterEnterViewPort($poster) {
     console.log('video entered VP');
-    video.play();
+    $poster.find('video').get(0).play();
 }
-function onPosterExitViewPort(video) {
+function onPosterExitViewPort($poster) {
     console.log('video exited VP');
-    video.pause();
+    $poster.find('video').get(0).pause();
 }
 //function onFullyEnterViewPort(instance) {
 //    //console.log('fully entered');
