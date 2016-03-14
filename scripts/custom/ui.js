@@ -332,6 +332,7 @@ function toggleSearchOverlay() {
         $navVideo = SQSP.$objects.stickyHeader.find('video');
 
     var $burger = SQSP.$objects.stickyHeader.find('.burger');
+    console.log('burger', $burger.outerHeight(), $burger.height(), $burger.css('top'));
     var duration = .4;
 
     $searchtable.toggleClass('search-on');
@@ -344,7 +345,7 @@ function toggleSearchOverlay() {
         // open search
         SQSP.vars.isSearchOverlayOpen = true;
 
-        var dummyHeight = $burger.outerHeight() + parseFloat( $burger.css('top') ) + parseFloat( $burger.css('top') );
+        var dummyHeight = $burger.outerHeight() + (parseFloat( $burger.css('top') ) *2);
         var dummyHeightPct = dummyHeight / jQuery(window).height();
         var dummyHeightVH = ( dummyHeightPct * 100 ) + 'vw' ;
         //console.log('dummy height calc', dummyHeight, dummyHeightPct, dummyHeightVH);
