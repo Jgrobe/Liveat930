@@ -1,0 +1,8 @@
+#disablerDummy {
+  position: fixed;
+  z-index: 999;
+  background: rgba(0, 0, 0, 0.9) url(assets/images/spinner.gif) no-repeat center;
+  background-size: 2%;
+  opacity: 0; }
+
+/*# sourceMappingURL=disablerDummy.css.map */

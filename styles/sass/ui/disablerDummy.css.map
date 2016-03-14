@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,cAAe;EACb,QAAQ,EAAE,KAAK;EACf,OAAO,EAAC,GAAG;EACX,UAAU,EAAE,kEAA8D;EAC1E,eAAe,EAAE,EAAE;EACnB,OAAO,EAAE,CAAC",
+"sources": ["disablerDummy.scss"],
+"names": [],
+"file": "disablerDummy.css"
+}

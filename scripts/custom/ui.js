@@ -463,13 +463,13 @@ function handleParallax() {
 function createDisablerDummy() {
     if(elem_exists(jQuery('#disablerDummy'))) return false;
 
-    var $disablerDummy = jQuery('<div id="disablerDummy" class="fill-parent"/>');
-    $disablerDummy.css({
-        position: 'fixed',
-        'z-index' : 999,
-        background : 'rgba(0,0,0,.9) url(assets/images/spinner.gif) no-repeat center / 2%',
-        opacity :0
-    });
+    var $disablerDummy = jQuery('<div id="disablerDummy"/>');
+    //$disablerDummy.css({
+    //    position: 'fixed',
+    //    'z-index' : 999,
+    //    background : 'rgba(0,0,0,.9) url(assets/images/spinner.gif) no-repeat center / 2%',
+    //    opacity :0
+    //});
 
     jQuery('body').append($disablerDummy);
     TweenMax.to($disablerDummy,.3, {autoAlpha:.7});
