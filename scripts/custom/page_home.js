@@ -228,7 +228,7 @@ jQuery(window).load(function() {
         //console.log('------------------------------- VIDEO STOPPED');
     //}, 400);
 }).scroll(function() {
-    var windowScrolltop = SQSP.$objects.window.scrollTop(),
+    var windowScrolltop = jQuery(window).scrollTop(),
         objectScrolltop = SQSP.$objects.hostedInfo.offset().top;
 
     //var heightByScroll = (windowScrolltop - SQSP.$objects.window.height() *.95) - Math.round(objectScrolltop / windowScrolltop);
