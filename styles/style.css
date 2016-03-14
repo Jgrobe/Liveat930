@@ -3857,6 +3857,10 @@ input {
       font-size: 14px;
       line-height: 22px; } }
 
+.site-content.the-show .video-gallery {
+  padding: 0;
+  margin-top: 15vw; }
+
 .history-slider {
   padding: 10.41667vw 0 0 0;
   position: relative;

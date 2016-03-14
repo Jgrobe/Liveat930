@@ -30,7 +30,7 @@
         </div><!-- .landing-container -->
     </section>
 
-    <div class="site-content">
+    <div class="site-content the-show">
 
         <section class="host-create history-slider post-excerpt">
 
@@ -74,13 +74,13 @@
         </section><!-- .post-excerpt -->
 
 
-        <section class="video-gallery teaser no-shift">
+        <section class="video-gallery teaser">
 
             <div class="section-head">
                 <h2>{item.customContent.gridTitle}</h2>
             </div>
 
-            <div class="video-gallery-videos lefthand top-spaced" data-payload="4">
+            <div class="video-gallery-videos lefthand" data-payload="4">
 
                 <div class="gutter-sizer"></div>
 
