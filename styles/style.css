@@ -3148,7 +3148,10 @@ input {
       transform: none; } }
 
 .episodes-previous {
-  margin: 10vh 0; }
+  margin: 10.41667vw 0; }
+  @media only screen and (max-width: 750px) {
+    .episodes-previous {
+      margin: 10vH 0; } }
 
 .episodes-overview.posters {
   display: -webkit-box;

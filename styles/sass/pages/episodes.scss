@@ -118,7 +118,11 @@
 }// .episodes-landing
 
 .episodes-previous {
-  margin: 10vh 0;
+  margin: $sectionMarginBottom 0;
+
+  @include breakpoint(mobile) {
+    margin: $sectionMarginBottomMobile 0;
+  }
 }
 
 .episodes-overview {
