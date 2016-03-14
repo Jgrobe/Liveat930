@@ -53,6 +53,11 @@ $gridGutter: 5%;
 
 }// .video-overview-landing
 
+.site-content.clips-overview {
+
+  .gallery {margin-top: -10vh;}
+}
+
 
 .video-overview-filter {
   position: relative;
@@ -129,14 +134,10 @@ $gridGutter: 5%;
 }// .video-overview-filter
 
 .video-gallery {
-  margin: -10vh auto $sectionMarginBottom auto;
+  margin: $sectionMarginBottom auto;
   width: $contentWidth;
   position: relative;
   padding: 0 0 8vw 0;
-
-  &.no-shift {
-    margin-top: 10vH;
-  }
 
   .rectangle {
     background: #fff;

@@ -31,7 +31,7 @@
     <div class="site-content episode-detail">
 
         {.if customContent.episode-videoclips}
-        <section class="video-gallery teaser no-shift">
+        <section class="video-gallery teaser">
 
             <div class="section-head">
                 <h2>Watch and share</h2>
@@ -125,7 +125,7 @@
 
         {.end}{.end}<!-- .end if customContent -->
 
-        <section class="video-gallery related-categories teaser no-shift">
+        <section class="video-gallery related-categories teaser">
 
             <div class="section-head">
                 <h2>Get more</h2>
