@@ -76,8 +76,8 @@
                     <div class="slider-container top-spaced">
                         <div class="slider-images">
                             <div class="image current-image imgfill gallery-image" style=""></div>
-                            <div class="image pattern imgfill prllx-custom" data-prllx=".1" style="background-image:url('{website.baseUrl}/assets/images/pattern-logo-bg.jpg');"></div>
-                            <div class="image next-image imgfill gallery-image prllx-custom" data-prllx=".18" style=""></div>
+                            <div class="image pattern imgfill prllx-custom" data-prllx=".06" style="background-image:url('{website.baseUrl}/assets/images/pattern-logo-bg.jpg');"></div>
+                            <div class="image next-image imgfill gallery-image prllx-custom" data-prllx=".1" style=""></div>
                         </div><!-- .slider-images -->
 
                         <div class="slider-ui">
