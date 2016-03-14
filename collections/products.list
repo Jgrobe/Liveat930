@@ -2,7 +2,7 @@
     <div class="fill-parent mask">
         <div class="landing-bg" style="background-image:url('{collection.mainImage.assetUrl}');"></div>
     </div>
-    <div class="landing-container">
+    <div class="landing-container prllx-custom" data-prllx=".12">
         <h1 class="l-headline">{collection.navigationTitle}</h1>
     </div><!-- .landing-container -->
 </section>
