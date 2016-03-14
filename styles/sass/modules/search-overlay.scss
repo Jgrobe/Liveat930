@@ -6,7 +6,7 @@
       padding: 3vw 0;
       @include relative_units(padding-left, 550, vw, 2880);
       background: black;
-    }
+    }// .search-bar
 
     &.info {
       @include relative_units(font-size, 28);
@@ -16,7 +16,7 @@
       color: #adadad;
       box-sizing: content-box;
       .result-sized { @include relative_units(padding-left, 130);}
-    }
+    }// .info
 
     &.results {
       overflow: scroll;
@@ -184,7 +184,7 @@
 .result-sized {
   @include relative_units(width, 2550);
   margin: 0 auto;
-}
+}// .result-sized
 
 .fixed-nav {
   position:fixed;
@@ -192,4 +192,4 @@
   left: 0;
   width: 100%;
   z-index:99;
-}
+}// .fixed-nav
