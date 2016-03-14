@@ -318,6 +318,7 @@ function toggleNavOverlay() {
 
 function toggleSearchOverlay() {
     //console.log('On search submit triggered()');
+    toggleBurger(true);
 
     if(SQSP.vars.isSearchOverlayTransitionActive) return false;
     SQSP.vars.isSearchOverlayTransitionActive = true;
