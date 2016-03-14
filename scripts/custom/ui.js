@@ -454,6 +454,7 @@ function cta_hovers() {
         console.log('cta hover()');
         var $hovered = jQuery(this);
         if($hovered.get(0).isHovered) return false;
+        console.log('--------- HOVER EXECUTED???');
         $hovered.get(0).isHovered = true;
 
         console.log('cta hover()', $hovered);
