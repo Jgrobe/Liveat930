@@ -1094,8 +1094,7 @@ input {
     transform: translateX(-50%); }
   .landing .landing-bg {
     display: block;
-    pointer-events: none;
-    background-attachment: fixed; }
+    pointer-events: none; }
   .landing h1 {
     position: relative; }
   .landing .small {
