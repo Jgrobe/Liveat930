@@ -290,6 +290,8 @@ function windowloaded() {
 }// windowloaded
 
 function toggleNavOverlay() {
+    jQuery(window).scroll();// use to toggle burger
+
     SQSP.$objects.stickyHeader.toggleClass('on');
     var $overlay = SQSP.$objects.stickyHeader.find('.nav-overlay');
     var $items = SQSP.$objects.stickyHeader.find('.stagger-item');
@@ -318,7 +320,6 @@ function toggleNavOverlay() {
 
 function toggleSearchOverlay() {
     //console.log('On search submit triggered()');
-    jQuery(window).scroll();// use to toggle burger
 
     if(SQSP.vars.isSearchOverlayTransitionActive) return false;
     SQSP.vars.isSearchOverlayTransitionActive = true;
