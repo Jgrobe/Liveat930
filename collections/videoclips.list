@@ -3,25 +3,27 @@
         <div class="fill-parent mask">
             <div class="landing-bg" style="background-image:url('{mainImage.assetUrl}');"></div>
         </div>
-        
+
         <div class="landing-container">
-            <div class="rectangle"></div>
-            <h1 class="l-headline">{title}</h1>
-            <div class="video-overview-filter-headline s-headline">Browse & Filter</div>
-            {.if categories}
+            <div class="rectangle prllx-custom" data-prllx=".075"></div>
+            <h1 class="l-headline prllx-custom" data-prllx=".18">{title}</h1>
+            <div class="prllx-custom" data-prllx=".18">
+                <div class="video-overview-filter-headline s-headline">Browse & Filter</div>
+                {.if categories}
                 <ul class="video-overview-filter">
                     <li class="video-filter-item current-item" data-filter="video">
                         <a class="clips-filter-trigger" href="">All</a>
                     </li>
 
                     {.repeated section categories}
-                        <li class="video-filter-item" data-filter="{@|slugify}">
-                            <a class="clips-filter-trigger" href="?filter={@|url-encode}">{@}</a>
-                        </li>
+                    <li class="video-filter-item" data-filter="{@|slugify}">
+                        <a class="clips-filter-trigger" href="?filter={@|url-encode}">{@}</a>
+                    </li>
                     {.end}<!-- .end repeat categories -->
 
                 </ul>
-            {.end}<!-- .end if categories -->
+                {.end}<!-- .end if categories -->
+            </div><!--  div -->
         </div>
     </section>
 
