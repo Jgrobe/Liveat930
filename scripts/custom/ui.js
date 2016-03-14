@@ -318,7 +318,7 @@ function toggleNavOverlay() {
 
 function toggleSearchOverlay() {
     //console.log('On search submit triggered()');
-    toggleBurger(true);
+    jQuery(window).scroll();// use to toggle burger
 
     if(SQSP.vars.isSearchOverlayTransitionActive) return false;
     SQSP.vars.isSearchOverlayTransitionActive = true;
