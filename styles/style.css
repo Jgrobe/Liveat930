@@ -201,9 +201,9 @@ input {
   height: 100%; }
 
 .top-spaced {
-  margin-top: 10vH; }
+  margin-top: 5vH; }
   .top-spaced.double-spaced {
-    margin-top: 20vH; }
+    margin-top: 10vH; }
   @media only screen and (max-width: 750px) {
     .top-spaced {
       margin-top: 40px; }

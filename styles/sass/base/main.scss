@@ -99,8 +99,8 @@ input {
 }
 
 .top-spaced {
-  margin-top: 10vH;
-  &.double-spaced { margin-top: 20vH; }
+  margin-top: 5vH;
+  &.double-spaced { margin-top: 10vH; }
 
   @include breakpoint(mobile) {
     margin-top: 40px;
