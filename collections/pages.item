@@ -56,7 +56,7 @@
                     </div>
                 </div><!-- .slider-ui -->
 
-                <div class="text-layer">
+                <div class="text-layer prllx-custom" data-prllx=".12">
                     <div class="section-head excerpt-head">
                         <h2 class="gallery-title"></h2>
                     </div>
