@@ -1100,7 +1100,8 @@ input {
       .landing .landing-bg {
         background-attachment: scroll; }
       .landing .landing-container {
-        width: calc(~"100vw - 24px"); }
+        width: calc(~"100vw - 24px");
+        margin-top: auto; }
       .landing h1 .small {
         font-size: 22px;
         letter-spacing: .1em; } }
