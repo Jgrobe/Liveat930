@@ -42,6 +42,7 @@ var Preloader = function( options ) {
                     if(_.isFunction(functions.onComplete)) functions.onComplete(PL);
                 }// endif
             };
+            console.log('---------  PRELOADER TRYNA PRELOAD DAT SAUCE', sources[i]);
             img.src = sources[i];
         }// endfor
     };// preload()
