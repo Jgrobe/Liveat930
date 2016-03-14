@@ -43,7 +43,7 @@ function init_sqsp() {
     $clipItems.on('mouseenter', function(e) {
         var $hovered = jQuery(this);
         console.log('.video mouseenter', $hovered, e);
-        $hovered.find('.cta-container').trigger('mouseenter');
+        $hovered.find('.cta-container').mouseenter();
     });
     $clipItems.on('mouseleave', function(e) {
         //console.log('.video mouseleave', e);
@@ -465,7 +465,9 @@ function cta_hovers() {
 
         SQSP.vars.ctaHoverTimer = setTimeout(function(){
             console.log('--------- HOVER TIMEOUT EXECUTED???');
-            TweenMax.to($hoverlay, duration, {top:0, ease:Expo.easeOut, onComplete:function(){
+            TweenMax.to($hoverlay, duration, {top:0, ease:Expo.easeOut, onUpdate:function(){
+                console.log('tweening cta', this.vars);
+            }, onComplete:function(){
                 console.log('--------- HOVER TWEEN EXECUTED???');
             }});
         }, 150);
