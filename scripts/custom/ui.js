@@ -200,7 +200,12 @@ function windowloaded() {
 
     // SEARCH FIELD ENABLE/DISABLE
     SQSP.$objects.staticHeader.find('.search-icon').click(function() {
-        jQuery(this).parents('.search').toggleClass('on');
+        var $clicked = jQuery(this);
+        var $search = $clicked.parents('.search');
+        $search.toggleClass('on');
+        if($search.hasClass('on')) {
+            $search.find('input').focus();
+        }// endif
     });// search click
     SQSP.$objects.staticHeader.find('.clear-icon').click(function() {
         clearSearchField(jQuery(this));

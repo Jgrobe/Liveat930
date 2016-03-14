@@ -3,13 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="6ba77c59-895c-4b6c-8ed1-52220cbb39bd" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/sass/modules/posters/circle.scss" afterPath="$PROJECT_DIR$/styles/sass/modules/posters/circle.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/sass/modules/posters/deltoid.scss" afterPath="$PROJECT_DIR$/styles/sass/modules/posters/deltoid.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/sass/modules/posters/general.scss" afterPath="$PROJECT_DIR$/styles/sass/modules/posters/general.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/sass/modules/posters/hollowTriangle.scss" afterPath="$PROJECT_DIR$/styles/sass/modules/posters/hollowTriangle.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/sass/modules/posters/pentagon.scss" afterPath="$PROJECT_DIR$/styles/sass/modules/posters/pentagon.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/sass/modules/posters/verticalRect.scss" afterPath="$PROJECT_DIR$/styles/sass/modules/posters/verticalRect.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/style.css" afterPath="$PROJECT_DIR$/styles/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/custom/ui.js" afterPath="$PROJECT_DIR$/scripts/custom/ui.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/style.css.map" afterPath="$PROJECT_DIR$/styles/style.css.map" />
     </list>
     <ignored path="sqsp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -110,21 +105,21 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="ui.js" pinned="false" current-in-tab="false">
+          <file leaf-file-name="ui.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/scripts/custom/ui.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-13.222222">
-                  <caret line="81" column="7" selection-start-line="81" selection-start-column="7" selection-end-line="81" selection-end-column="7" />
+                <state vertical-scroll-proportion="0.2966507">
+                  <caret line="206" column="42" selection-start-line="206" selection-start-column="42" selection-end-line="206" selection-end-column="42" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="page-host.block" pinned="false" current-in-tab="true">
+          <file leaf-file-name="page-host.block" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/blocks/page-host.block">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.9433498">
-                  <caret line="72" column="63" selection-start-line="72" selection-start-column="63" selection-end-line="72" selection-end-column="63" />
+                <state vertical-scroll-proportion="-13.54902">
+                  <caret line="67" column="22" selection-start-line="67" selection-start-column="22" selection-end-line="67" selection-end-column="22" />
                   <folding>
                     <element signature="n#style#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
                   </folding>
@@ -232,8 +227,8 @@
           <file leaf-file-name="verticalRect.scss" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/styles/sass/modules/posters/verticalRect.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.34922528">
-                  <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
+                <state vertical-scroll-proportion="0.4112038">
+                  <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
                   <folding />
                 </state>
               </provider>
@@ -289,7 +284,6 @@
         <option value="$PROJECT_DIR$/styles/sass/pages/episodes.scss" />
         <option value="$PROJECT_DIR$/collections/episodes.list" />
         <option value="$PROJECT_DIR$/blocks/poster-scroll.block" />
-        <option value="$PROJECT_DIR$/scripts/custom/ui.js" />
         <option value="$PROJECT_DIR$/collections/episodes.item" />
         <option value="$PROJECT_DIR$/collections/videoclips.list" />
         <option value="$PROJECT_DIR$/styles/sass/modules/landing.scss" />
@@ -310,6 +304,7 @@
         <option value="$PROJECT_DIR$/styles/sass/modules/posters/hollowTriangle.scss" />
         <option value="$PROJECT_DIR$/styles/sass/modules/posters/pentagon.scss" />
         <option value="$PROJECT_DIR$/styles/sass/modules/posters/verticalRect.scss" />
+        <option value="$PROJECT_DIR$/scripts/custom/ui.js" />
       </list>
     </option>
   </component>
@@ -968,14 +963,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/custom/ui.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.222222">
-          <caret line="81" column="7" selection-start-line="81" selection-start-column="7" selection-end-line="81" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/collections/episodes.item">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-8.75">
@@ -1097,16 +1084,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blocks/page-host.block">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9433498">
-          <caret line="72" column="63" selection-start-line="72" selection-start-column="63" selection-end-line="72" selection-end-column="63" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/styles/sass/pages/host.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.4313726">
@@ -1173,8 +1150,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/styles/sass/modules/posters/verticalRect.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34922528">
-          <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
+        <state vertical-scroll-proportion="0.4112038">
+          <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blocks/page-host.block">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.54902">
+          <caret line="67" column="22" selection-start-line="67" selection-start-column="22" selection-end-line="67" selection-end-column="22" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/custom/ui.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2966507">
+          <caret line="206" column="42" selection-start-line="206" selection-start-column="42" selection-end-line="206" selection-end-column="42" />
           <folding />
         </state>
       </provider>
