@@ -465,7 +465,7 @@ function cta_hovers() {
 
         SQSP.vars.ctaHoverTimer = setTimeout(function(){
             console.log('--------- HOVER TIMEOUT EXECUTED???');
-            TweenMax.fromTo($hoverlay, duration, {top:'100%'}, {top:0, ease:Expo.easeOut, onUpdate:function(){
+            TweenMax.to($hoverlay, duration, {top:0, ease:Expo.easeOut, onUpdate:function(){
                 console.log('tweening cta', this);
             }, onComplete:function(){
                 console.log('--------- HOVER TWEEN EXECUTED???');
@@ -478,10 +478,10 @@ function cta_hovers() {
 
         var $unhovered = jQuery(this);
         if(!$unhovered.get(0).isHovered) return false;
+        $unhovered.get(0).isHovered = false;
         var $hoverlay = $unhovered.find('.hover-cta');
         //console.log('mouse leaving cta');
         TweenMax.to($hoverlay, duration, {width:0, ease:Expo.easeOut, clearProps:'all',onComplete:function() {
-            $unhovered.get(0).isHovered = false;
         }});
     });
 }
