@@ -69,9 +69,15 @@ $gridGutter: 5%;
     &:after {
       content: '/';
     }
-    &:last-child:after {
+
+    &:last-child{
       margin-right: 0;
-      content: none;
+      &:after {
+        content: none;
+      }
+      .clips-filter-trigger {
+        margin-right: 0;
+      }
     }
 
     &.current-item {
@@ -99,8 +105,6 @@ $gridGutter: 5%;
       background:white;
       @include prefixed(transition, (width $shortTrans));
     }
-
-    &:last-child {margin-right: 0;}
   }// a
 
   @include breakpoint(mobile) {
