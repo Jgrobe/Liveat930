@@ -64,7 +64,7 @@ function init_sqsp() {
         var $thisVid = jQuery(vid);
 
         vid.addEventListener('loadeddata', function() {
-            //console.log('-------------------------------------- video loaded');
+            console.log('-------------------------------------- video loaded');
             size_video();
             scrollMonitor.recalculateLocations();// needed on homepage so first video in viewport starts playing on load
         });
