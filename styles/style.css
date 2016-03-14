@@ -3571,13 +3571,14 @@ input {
         font-size: 14px;
         line-height: 21px; } }
 
-.site-content.the-host
+.site-content.the-host {
+  margin-top: 10.41667vw; }
+
 .host-create .section-head p {
   font-weight: bold;
   width: 39vw;
   text-align: left; }
 @media only screen and (max-width: 750px) {
-  .site-content.the-host
   .host-create .section-head p {
     margin-top: 20px;
     width: 100%;
