@@ -128,11 +128,11 @@ console.log('----------home initPage');
         //console.log('scrollTracker', scrollTracker);
 
         scrollTracker.enterViewport(function(e) {
-            console.log('enterviewport', e);
-            onPosterEnterViewPort($thisVideo.get(0));
+            //console.log('enterviewport', e);
+            $thisVideo.get(0).play();
         });
         scrollTracker.exitViewport(function() {
-            onPosterExitViewPort($thisVideo.get(0));
+            $thisVideo.get(0).pause();
         });
         //scrollTracker.fullyEnterViewport(function() {
         //    onFullyEnterViewPort(SQSP.instances.Posters[i]);
