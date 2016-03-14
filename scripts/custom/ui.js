@@ -349,7 +349,9 @@ function toggleSearchOverlay() {
         tl.to($navTable, duration, {height:(vh)+'vh', ease:Strong.easeInOut, onUpdate:function(){
             console.log('--- --- tweening navTable height', $navTable.height());
         }}, '-='+(duration));
-        tl.to($searchtable,duration, {height:(100-vh)+'vh', ease:Strong.easeInOut}, '-='+(duration));
+        tl.to($searchtable,duration, {height:(100-vh)+'vh', ease:Strong.easeInOut, onUpdate:function(){
+            console.log('--- --- tweening searchTable height', $searchtable.height());
+        }}, '-='+(duration));
     } else {
         //close search
         SQSP.vars.isSearchOverlayOpen = false;
