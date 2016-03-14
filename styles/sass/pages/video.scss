@@ -3,7 +3,7 @@ $gridGutter: 5%;
 .landing.video-overview-landing {
   //@include landing;
 
-  .fill-parent {
+  .landing-bg {
     &:after {
       content: '';
       display: block;
