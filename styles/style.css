@@ -1069,7 +1069,8 @@ input {
   font-family: "United Sans", script;
   text-rendering: optimizeLegibility;
   font-weight: normal;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  background: black; }
   .landing .rectangle {
     position: absolute;
     top: 36%;
@@ -3035,9 +3036,7 @@ input {
   .landing.episodes-landing .landing-head .small {
     position: absolute;
     left: 0;
-    bottom: 100%;
-    font-size: 2vw;
-    letter-spacing: 0.2vw; }
+    bottom: 100%; }
   .landing.episodes-landing .landing-head h1 {
     margin: 0 0 0 -0.5vw; }
 .landing.episodes-landing .landing-extra {
