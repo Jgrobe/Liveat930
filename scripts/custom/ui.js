@@ -95,9 +95,9 @@ function checkVideoloop() {
 
     for(var i=0; i<SQSP.vars.loopvids.length; i++) {
         var vid = SQSP.vars.loopvids[i];
-        console.log('checking vid', vid.currentTime, vid.duration);
+        //console.log('checking vid', vid.currentTime, vid.duration);
         if(vid.currentTime > (vid.duration-.25)) {
-            console.log('manual loop reset video time');
+            //console.log('manual loop reset video time');
             vid.currentTime = 0;
             if(!vid.playing) vid.play();
         }
