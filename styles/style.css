@@ -3816,19 +3816,21 @@ input {
         .post-pagination .col.next {
           margin-top: 40px; } }
 
-.landing.show-landing .landing-container h1, .landing.show-landing .landing-container .show-landing-info {
-  position: relative; }
-.landing.show-landing .landing-container h1 {
-  display: inline-block;
-  text-align: left; }
-  .landing.show-landing .landing-container h1 .small {
-    font-size: 1.875vw;
-    line-height: 100%;
-    letter-spacing: .1em;
-    display: block;
-    position: absolute;
-    left: 0;
-    bottom: 0; }
+.landing.show-landing .landing-container {
+  text-align: center; }
+  .landing.show-landing .landing-container h1, .landing.show-landing .landing-container .show-landing-info {
+    position: relative; }
+  .landing.show-landing .landing-container h1 {
+    display: inline-block;
+    text-align: left; }
+    .landing.show-landing .landing-container h1 .small {
+      font-size: 1.875vw;
+      line-height: 100%;
+      letter-spacing: .1em;
+      display: block;
+      position: absolute;
+      left: 0;
+      bottom: 100%; }
 .landing.show-landing .show-landing-info {
   text-align: left;
   padding: 5.20833vw;
