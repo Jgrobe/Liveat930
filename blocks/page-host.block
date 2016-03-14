@@ -22,9 +22,9 @@
     </div>
 </section>
 
-<div class="site-content">
+<div class="site-content the-host">
 
-    <section class="host-create device-slider post-excerpt top-spaced">
+    <section class="host-create device-slider post-excerpt">
 
         <div class="section-head">
             <h2>{item.customContent.galleryTitle}</h2>
