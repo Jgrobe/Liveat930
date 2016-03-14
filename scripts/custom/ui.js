@@ -284,6 +284,7 @@ function toggleNavOverlay() {
     var tl = new TimelineMax();
     if(SQSP.$objects.stickyHeader.hasClass('on')) {
         // open overlay
+        lock(jQuery('body'), '100vh');
         tl.add(function() {
             if(is_mobile()) return false;
             SQSP.$objects.stickyHeader.find('video').get(0).play();
@@ -296,6 +297,7 @@ function toggleNavOverlay() {
         tl.to($overlay,.2, {autoAlpha:0, clearProps:'all'}, '-=.3');
         tl.add(function() {
             SQSP.$objects.stickyHeader.find('video').get(0).pause();
+            unlock(jQuery('body'));
         });
     }// endif;
 }
