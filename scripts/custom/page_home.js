@@ -113,11 +113,14 @@ SQSP.functions.initPage = function() {
 
         // reveal hosted-info on mobile no tap
         SQSP.$objects.hostedInfo.parent().click(function(){
+            console.log('info clicked');
             if(!is_mobile()) return false;
+            console.log('info clicked on mobile');
             SQSP.$objects.hostedInfo.height('auto');
             var h = SQSP.$objects.hostedInfo.height();
+            console.log('actual info height', h);
             SQSP.$objects.hostedInfo.height(0);
-            var tl = new TimelineMax();
+            var tl = new TimelineMax({onComplete:function(){console.log('info height reveal done');}});
             tl.to(SQSP.$objects.hostedInfo,.3, {height:h, ease:Strong.easeOut});
             tl.add(function(){
                 SQSP.$objects.hostedInfo.addClass('on');
