@@ -4,7 +4,7 @@
             <div class="landing-bg" style="background-image:url('{mainImage.assetUrl}');"></div>
         </div>
         <div class="rectangle"></div>
-        <div class="content">
+        <div class="landing-container">
             <h1 class="l-headline">{title}</h1>
             <div class="video-overview-filter-headline s-headline">Browse & Filter</div>
             {.if categories}
