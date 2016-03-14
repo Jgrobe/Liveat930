@@ -333,7 +333,7 @@ function toggleSearchOverlay() {
         var $dummy = jQuery('<div id="dummy"/>');
         $dummy.css({
             positon: 'fixed',
-            height: dummyHeight
+            height: dummyHeightVH
         });
         jQuery('body').append($dummy);
         var dummyHeight = $dummy.height();
