@@ -1,6 +1,6 @@
-.host-landing {
-  @include landing;
-  @include flexbox();
+.landing.host-landing {
+  //@include landing;
+  //@include flexbox();
   text-align: center;
 
   &:before {

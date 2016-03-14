@@ -1093,7 +1093,12 @@ input {
       height: auto;
       min-height: 100vh; }
       .landing .landing-bg {
-        background-attachment: scroll; } }
+        background-attachment: scroll; }
+      .landing .landing-container {
+        width: calc(~"100vw - 24px"); }
+      .landing h1 .small {
+        font-size: 22px;
+        letter-spacing: .1em; } }
 
 .upcoming {
   text-transform: uppercase;
@@ -3051,7 +3056,8 @@ input {
   margin: 13% auto auto 10%; }
 @media only screen and (max-width: 750px) {
   .landing.episodes-landing {
-    width: 100%; }
+    width: 100%;
+    text-align: center; }
     .landing.episodes-landing .landing-container {
       display: -webkit-box;
       display: -moz-box;
@@ -3078,9 +3084,6 @@ input {
     .landing.episodes-landing .episodes-landing-head {
       margin-bottom: 0;
       text-align: center; }
-      .landing.episodes-landing .episodes-landing-head .small {
-        font-size: 22px;
-        letter-spacing: .1em; }
       .landing.episodes-landing .episodes-landing-head h1 {
         font-size: 73px;
         letter-spacing: .06em;
@@ -3505,27 +3508,22 @@ input {
     .image-slider.episode-gallery .slider-ui .slider-arrows {
       position: static; } }
 
-.host-landing {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
+.landing.host-landing {
   text-align: center; }
-  .host-landing:before {
+  .landing.host-landing:before {
     background-image: url("assets/images/the-host-title.jpg"); }
-  .host-landing .hosted-by-logo {
+  .landing.host-landing .hosted-by-logo {
     position: absolute;
     left: 23%;
     bottom: 100%; }
-  .host-landing h1 {
+  .landing.host-landing h1 {
     position: relative;
     margin: 0 0 5vh 0; }
-  .host-landing .text-layer {
+  .landing.host-landing .text-layer {
     position: relative;
     width: 37%;
     margin-left: 42%; }
-    .host-landing .text-layer .cta-container {
+    .landing.host-landing .text-layer .cta-container {
       position: absolute;
       top: 100%;
       left: 50%;
@@ -3535,23 +3533,23 @@ input {
       -o-transform: translateX(-50%) translateY(-50%);
       transform: translateX(-50%) translateY(-50%); }
   @media only screen and (max-width: 750px) {
-    .host-landing .content {
+    .landing.host-landing .content {
       width: calc(~"100vw - 24px"); }
-    .host-landing .hosted-by-logo {
+    .landing.host-landing .hosted-by-logo {
       margin: 0 auto;
       width: 60vw;
       height: 5vw; }
-    .host-landing h1 {
+    .landing.host-landing h1 {
       margin: 15px auto;
       font-size: 48px;
       font-size: 13vw; }
-    .host-landing .text-layer {
+    .landing.host-landing .text-layer {
       width: 100%;
       margin: 0 auto;
       padding: 40px 40px 60px 40px; }
-      .host-landing .text-layer .cta-container {
+      .landing.host-landing .text-layer .cta-container {
         width: 90%; }
-      .host-landing .text-layer p {
+      .landing.host-landing .text-layer p {
         font-size: 14px;
         line-height: 21px; } }
 

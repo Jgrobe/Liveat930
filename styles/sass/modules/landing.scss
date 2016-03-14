@@ -42,8 +42,19 @@
     min-height: 100vh;
 
     .landing-bg {
-      background-attachment: scroll;
+      background-attachment: scroll;;
     }// .landing-bg
+
+    .landing-container {
+      width: $MOBILE_WIDTH;
+    }
+
+    h1 {
+      .small {
+        font-size: 22px;
+        letter-spacing: .1em;
+      }// .small
+    }
 
   }// BP MOBILE
 

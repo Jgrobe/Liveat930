@@ -59,6 +59,7 @@
 
     $vertSpace: 4.5vh;
     width: 100%;
+    text-align: center;
 
     .landing-container {
         //width: 100%;
@@ -78,11 +79,6 @@
     .episodes-landing-head {
       margin-bottom: 0;
       text-align: center;
-
-      .small {
-        font-size: 22px;
-        letter-spacing: .1em;
-      }// .small
 
       h1 {
         font-size: 73px;
