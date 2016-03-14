@@ -311,6 +311,7 @@ function toggleNavOverlay() {
         //toggleBurger(true);
         //lock(jQuery('body'), '100vh');
         tl.add(function() {
+            $overlay.css({display:'block'});
             if(is_mobile()) return false;
             SQSP.$objects.stickyHeader.find('video').get(0).play();
         });
@@ -322,6 +323,7 @@ function toggleNavOverlay() {
         tl.to($overlay,.2, {autoAlpha:0, clearProps:'all'}, '-=.3');
         tl.add(function() {
             SQSP.$objects.stickyHeader.find('video').get(0).pause();
+            $overlay.css({display:''});
             //jQuery(window).scroll();// use to toggle burger
             //unlock(jQuery('body'));
         });

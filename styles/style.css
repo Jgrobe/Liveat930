@@ -2408,6 +2408,7 @@ input {
           padding: 0; } }
 
 .nav-overlay {
+  display: none;
   color: #ffffff;
   position: fixed;
   width: 100vw;
