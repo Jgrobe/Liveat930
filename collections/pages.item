@@ -19,12 +19,12 @@
         </div>
 
         <div class="landing-container">
-            <div class="rectangle"></div>
-            <h1 class="l-headline">
+            <div class="rectangle prllx-custom" data-prllx=".075"></div>
+            <h1 class="l-headline prllx-custom" data-prllx=".18">
                 <span class="small">{website.siteTitle}</span>
                 {item.title}
             </h1>
-            <div class="show-landing-info">
+            <div class="show-landing-info prllx-custom" data-prllx=".12">
                 {item.body}
             </div><!-- .show-landing-info -->
         </div><!-- .landing-container -->
