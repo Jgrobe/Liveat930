@@ -114,9 +114,14 @@ console.log('----------home initPage');
         // reveal hosted-info on mobile no tap
         SQSP.$objects.hostedInfo.parent().click(function(){
             console.log('info clicked');
-            if(!is_mobile()) return false;
+            var $clicked = jQuery(this);
+            if(!is_mobile() || $clicked.get(0).isTransitionActive) return false;
+            $clicked.get(0).isTransitionActive = true;
 
-            var tl = new TimelineMax({onComplete:function(){console.log('info height reveal done');}});
+            var tl = new TimelineMax({onComplete:function(){
+                console.log('info height reveal done');
+                $clicked.get(0).isTransitionActive = false;
+            }});
 
             if(SQSP.$objects.hostedInfo.hasClass('on')) {
                 console.log('info clicked close');
