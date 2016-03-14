@@ -31,17 +31,20 @@ $rightColMargin: 10vw;
 //    }
 //  }// .search-on
 
-  .search-table {
-    height:0;
-    @include flex-value(direction, column);
-  }
-
   .bg-container {@extend .imgfill;}
 
   .table {
     position: relative;
     height: 100%;
-    //@include flex-value(direction, column);
+
+    &.nav-table {
+      height:100vh;
+    }
+
+    &.search-table {
+      height:0;
+      @include flex-value(direction, column);
+    }
   }
 
   .cell {
