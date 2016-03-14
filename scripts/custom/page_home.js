@@ -120,6 +120,7 @@ SQSP.functions.initPage = function() {
             var h = SQSP.$objects.hostedInfo.height();
             console.log('actual info height', h);
             SQSP.$objects.hostedInfo.height(0);
+            SQSP.$objects.hostedInfo.css({display:'block'});
             var tl = new TimelineMax({onComplete:function(){console.log('info height reveal done');}});
             tl.to(SQSP.$objects.hostedInfo,.3, {height:h, ease:Strong.easeOut});
             tl.add(function(){
