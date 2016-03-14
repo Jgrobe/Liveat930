@@ -163,6 +163,17 @@
 
 }// .play-episode
 
+.site-content.episode-detail {
+
+  .video-gallery {
+
+    &.related-categories {
+      margin-bottom:  4vw;
+    }
+  }// .video-gallery
+
+}// .site-content
+
 .image-slider.episode-gallery {
 
   @include breakpoint(mobile) {

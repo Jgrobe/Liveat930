@@ -28,7 +28,7 @@
         <div class="top-spaced"></div>
     {.or}
 
-    <div class="site-content">
+    <div class="site-content episode-detail">
 
         {.if customContent.episode-videoclips}
         <section class="video-gallery teaser no-shift">
@@ -125,7 +125,7 @@
 
         {.end}{.end}<!-- .end if customContent -->
 
-        <section class="video-gallery teaser no-shift">
+        <section class="video-gallery related-categories teaser no-shift">
 
             <div class="section-head">
                 <h2>Get more</h2>

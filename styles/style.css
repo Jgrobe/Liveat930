@@ -3516,6 +3516,9 @@ input {
     background: white url("assets/images/icon-play.svg") no-repeat center center;
     background-size: 13%; }
 
+.site-content.episode-detail .video-gallery.related-categories {
+  margin-bottom: 4vw; }
+
 @media only screen and (max-width: 750px) {
   .image-slider.episode-gallery .slider-ui {
     position: relative;
