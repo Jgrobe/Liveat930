@@ -18,9 +18,8 @@
             </div>
         </div>
 
-        <div class="rectangle"></div>
-
         <div class="landing-container">
+            <div class="rectangle"></div>
             <h1 class="l-headline">
                 <span class="small">{website.siteTitle}</span>
                 {item.title}

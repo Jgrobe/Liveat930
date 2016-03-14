@@ -1080,21 +1080,28 @@ input {
   background: black; }
   .landing .rectangle {
     position: absolute;
-    top: 36%;
-    left: 25vw;
+    top: 5vw;
+    left: 50%;
     width: 50vw;
-    height: 12vw;
+    height: 10vw;
     background: black;
     mix-blend-mode: multiply;
-    opacity: 0.45; }
+    opacity: 0.45;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%); }
   .landing .landing-bg {
     display: block;
     pointer-events: none;
     background-attachment: fixed; }
-  .landing h1 .small {
-    font-size: 2vw;
-    line-height: 100%;
-    letter-spacing: .1em; }
+  .landing h1 {
+    position: relative; }
+    .landing h1 .small {
+      font-size: 2vw;
+      line-height: 100%;
+      letter-spacing: .1em; }
   .landing .landing-container {
     margin: auto;
     margin-top: 28vh;

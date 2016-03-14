@@ -3,8 +3,9 @@
         <div class="fill-parent mask">
             <div class="landing-bg" style="background-image:url('{mainImage.assetUrl}');"></div>
         </div>
-        <div class="rectangle"></div>
+        
         <div class="landing-container">
+            <div class="rectangle"></div>
             <h1 class="l-headline">{title}</h1>
             <div class="video-overview-filter-headline s-headline">Browse & Filter</div>
             {.if categories}

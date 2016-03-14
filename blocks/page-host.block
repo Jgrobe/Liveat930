@@ -9,8 +9,8 @@
             {.end}
         </div><!-- .landing-bg -->
     </div>
-    <div class="rectangle"></div>
     <div class="landing-container">
+        <div class="rectangle"></div>
         <div class="hosted-by-logo"></div>
         <h1 class="l-headline">{item.title}</h1>
         <div class="text-layer">
