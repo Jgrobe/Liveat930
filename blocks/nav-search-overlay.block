@@ -20,7 +20,7 @@
                         <div class="quick-videos">
                             <div class="video last-episode stagger-item episode-data-dummy" data-filter="categories=current">
                                 <a class="data-fill" data-attr="fullUrl=href">
-                                    <div class="img tv imgfill" data-attr="customContent.hero-fallback-image=data-bgimgurl" style="background-image:url('');">
+                                    <div class="img tv imgfill data-fill" data-attr="customContent.hero-fallback-image=data-bgimgurl" style="background-image:url('');">
                                         <!--<video src="https://player.vimeo.com/external/157569044.sd.mp4?s=f8ff21f7c20844cdc6d5a187ab4644e078550fbe&profile_id=164"></video>-->
                                         <div class="title">
                                             <!--<span>{@|apply svg-icon-play.block}</span>-->
