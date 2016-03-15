@@ -143,7 +143,7 @@ function populate_namespaces() {
 
                     console.log('updateing polygon', polygonPoints.y3);
                     $polygon.attr({
-                        polygonPoints : polygonPoints.x1 +' '+ polygonPoints.y1 +', '+ polygonPoints.x2 +' '+ polygonPoints.y2 +', '+ polygonPoints.x3 +' '+ polygonPoints.y3 +', '+ polygonPoints.x4 +' '+ polygonPoints.y4
+                        points : polygonPoints.x1 +' '+ polygonPoints.y1 +', '+ polygonPoints.x2 +' '+ polygonPoints.y2 +', '+ polygonPoints.x3 +' '+ polygonPoints.y3 +', '+ polygonPoints.x4 +' '+ polygonPoints.y4
                     });
                     $this.css({
                         'overflow' : 'hidden',
