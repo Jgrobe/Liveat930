@@ -41,6 +41,7 @@ function get_value_from_path(path, object) {
         if(typeof object[path[0]] !== 'undefined') {
             var newObject  = object[path[0]],
                 newPath = path.shift();
+            console.log('must go deeper?', newObject, newPath);
             if(newPath.length <= 0) {
                 // we're at the end of the path -> return the value
                 value = object[path[0]];
