@@ -142,7 +142,7 @@ function populate_namespaces() {
                     $clipSVG = jQuery(clipHTML),
                     maskID = 'mask_'+ i,
                     polygonPoints = _.cloneDeep( initPoints[ Math.floor(Math.random()*initPoints.length) ] );
-                console.log('chosen polygon initPoints');
+                console.log('chosen polygon initPoints', polygonPoints.label);
 
                 $clipSVG.find('#mask').attr({id : maskID });
                 $clipSVG.insertAfter($this);
