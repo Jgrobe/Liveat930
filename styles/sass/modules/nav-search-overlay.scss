@@ -169,22 +169,23 @@ $rightColMargin: 10vw;
     }
 
     .cta-container {
+      $size : get_relative_units(97);
       display: inline-block;
-      @include relative_units(width, 97);
-      @include relative_units(height, 97);
-      //margin: 0;
-      //padding: 0;
+      width:$size;
+      height:$size;
 
       .cta {
+        height: 100%;
+
         .filler {
           @include flexbox(inline);
+          width:$size;
+          height:$size;
           padding: 0;
           position: absolute;
           top:0;
           left: 0;
-          width: 100%;
-          height:100%;
-        }
+        }// .filler
 
         .icon {margin: auto;}
       }// .cta

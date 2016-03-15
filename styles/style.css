@@ -2555,20 +2555,22 @@ input {
       display: inline-block;
       width: 3.36806vw;
       height: 3.36806vw; }
-      .nav-overlay .social-container .cta-container .cta .filler, .nav-overlay .social-container .cta-container #productSummary #productDetails .sqs-add-to-cart-button .filler, #productSummary #productDetails .nav-overlay .social-container .cta-container .sqs-add-to-cart-button .filler, .nav-overlay .social-container .cta-container #sqs-shopping-cart-wrapper .checkout-button .filler, #sqs-shopping-cart-wrapper .nav-overlay .social-container .cta-container .checkout-button .filler {
-        display: -webkit-inline-box;
-        display: -moz-inline-box;
-        display: -ms-inline-flexbox;
-        display: -webkit-inline-flex;
-        display: inline-flex;
-        padding: 0;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
+      .nav-overlay .social-container .cta-container .cta, .nav-overlay .social-container .cta-container #productSummary #productDetails .sqs-add-to-cart-button, #productSummary #productDetails .nav-overlay .social-container .cta-container .sqs-add-to-cart-button, .nav-overlay .social-container .cta-container #sqs-shopping-cart-wrapper .checkout-button, #sqs-shopping-cart-wrapper .nav-overlay .social-container .cta-container .checkout-button {
         height: 100%; }
-      .nav-overlay .social-container .cta-container .cta .icon, .nav-overlay .social-container .cta-container #productSummary #productDetails .sqs-add-to-cart-button .icon, #productSummary #productDetails .nav-overlay .social-container .cta-container .sqs-add-to-cart-button .icon, .nav-overlay .social-container .cta-container #sqs-shopping-cart-wrapper .checkout-button .icon, #sqs-shopping-cart-wrapper .nav-overlay .social-container .cta-container .checkout-button .icon {
-        margin: auto; }
+        .nav-overlay .social-container .cta-container .cta .filler, .nav-overlay .social-container .cta-container #productSummary #productDetails .sqs-add-to-cart-button .filler, #productSummary #productDetails .nav-overlay .social-container .cta-container .sqs-add-to-cart-button .filler, .nav-overlay .social-container .cta-container #sqs-shopping-cart-wrapper .checkout-button .filler, #sqs-shopping-cart-wrapper .nav-overlay .social-container .cta-container .checkout-button .filler {
+          display: -webkit-inline-box;
+          display: -moz-inline-box;
+          display: -ms-inline-flexbox;
+          display: -webkit-inline-flex;
+          display: inline-flex;
+          width: 3.36806vw;
+          height: 3.36806vw;
+          padding: 0;
+          position: absolute;
+          top: 0;
+          left: 0; }
+        .nav-overlay .social-container .cta-container .cta .icon, .nav-overlay .social-container .cta-container #productSummary #productDetails .sqs-add-to-cart-button .icon, #productSummary #productDetails .nav-overlay .social-container .cta-container .sqs-add-to-cart-button .icon, .nav-overlay .social-container .cta-container #sqs-shopping-cart-wrapper .checkout-button .icon, #sqs-shopping-cart-wrapper .nav-overlay .social-container .cta-container .checkout-button .icon {
+          margin: auto; }
       .nav-overlay .social-container .cta-container svg, .nav-overlay .social-container .cta-container img {
         margin: auto; }
       .nav-overlay .social-container .cta-container.instagram svg, .nav-overlay .social-container .cta-container.instagram img {
