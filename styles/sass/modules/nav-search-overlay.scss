@@ -316,12 +316,20 @@ $rightColMargin: 10vw;
 
     &:last-child {margin-bottom: 0;}
 
-    .fill-parent.imgfill {
-      @include superprefixed(transition, transform $medTrans);
+    .img {
+      position: relative;
+      overflow: hidden;
+
+      .fill-parent.imgfill {
+        @include superprefixed(transition, transform $longTrans);
+      }
     }
 
     &:hover {
-      .fill-parent.imgfill {@include transform(scale(1.05));}
+
+      .img {
+        .fill-parent.imgfill {@include transform(scale(1.05));}
+      }
     }
 
     //.imgfill {background-blend-mode: screen;}
