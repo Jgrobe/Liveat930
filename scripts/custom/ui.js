@@ -163,7 +163,7 @@ function populate_namespaces() {
                         'clip-path' : 'url(#' + maskID + ')',
                         '-webkit-clip-path' : 'url(#' + maskID + ')'
                     });
-                }});
+                }}, '+=1');
             });// endeach()
 
             return tl;
