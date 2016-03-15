@@ -76,7 +76,7 @@ SQSP.functions.initPage = function() {
             }
         };// preloaderFns
 
-        //jQuery.extend(SQSP.instances.Preloader.options, preloaderFns);
+        jQuery.extend(SQSP.instances.Preloader.options, preloaderFns);
 
     }// endif #preloader exists
 
