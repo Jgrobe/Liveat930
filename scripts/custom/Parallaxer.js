@@ -74,7 +74,7 @@ var Parallaxer = function ($elems, options) {
 
             var y = ( elemScrollTop - windowScrollTop - (window.innerHeight *.5) ) * amount;
 
-            if($this.hasClass('prllx-scroll-depend')) y *= windowScrollTop*0.01;
+            if($this.hasClass('prllx-scroll-depend')) y *= windowScrollTop/amount;// dirty fix for landing parallaxers starting at 0 - relative to window scrolltop
             //console.log($this.offset().top, jQuery(window).scrollTop(), jQuery(window).height(), y);
             //console.log('prllx y',y);
             TweenMax.to($this,.2, {y:y});
