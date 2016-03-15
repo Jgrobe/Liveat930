@@ -77,7 +77,3 @@ function get_cta_html(options) {
     return ctaHTML;
 
 }// get_cta_html()
-
-function parseAttributes() {
-
-}// parseAttributes()

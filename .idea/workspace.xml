@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ba77c59-895c-4b6c-8ed1-52220cbb39bd" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/custom/episodesHandler.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blocks/nav-search-overlay.block" afterPath="$PROJECT_DIR$/blocks/nav-search-overlay.block" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/scripts/custom/episodesHandler.js" afterPath="$PROJECT_DIR$/scripts/custom/episodesDataHandler.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/footer.region" afterPath="$PROJECT_DIR$/footer.region" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/custom/cta-converter.js" afterPath="$PROJECT_DIR$/scripts/custom/cta-converter.js" />
     </list>
     <ignored path="sqsp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -42,30 +42,18 @@
           <file leaf-file-name="footer.region" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/footer.region">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-6.875">
-                  <caret line="11" column="154" selection-start-line="11" selection-start-column="154" selection-end-line="11" selection-end-column="154" />
+                <state vertical-scroll-proportion="-21.208334">
+                  <caret line="48" column="58" selection-start-line="48" selection-start-column="58" selection-end-line="48" selection-end-column="58" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="videoclips.item" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/collections/videoclips.item">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-10.0">
-                  <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-                  <folding>
-                    <element signature="n#style#0;n#div#0;n#section#0;n#!!top" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="header.region" pinned="false" current-in-tab="false">
+          <file leaf-file-name="header.region" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/header.region">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-22.333334">
-                  <caret line="55" column="94" selection-start-line="55" selection-start-column="94" selection-end-line="55" selection-end-column="94" />
+                <state vertical-scroll-proportion="0.37067938">
+                  <caret line="40" column="53" selection-start-line="40" selection-start-column="53" selection-end-line="40" selection-end-column="53" />
                   <folding />
                 </state>
               </provider>
@@ -103,11 +91,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="nav-search-overlay.block" pinned="false" current-in-tab="true">
+          <file leaf-file-name="nav-search-overlay.block" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/blocks/nav-search-overlay.block">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.34410843">
-                  <caret line="22" column="124" selection-start-line="22" selection-start-column="124" selection-end-line="22" selection-end-column="124" />
+                <state vertical-scroll-proportion="-0.29411766">
+                  <caret line="1" column="78" selection-start-line="1" selection-start-column="78" selection-end-line="1" selection-end-column="78" />
                   <folding>
                     <element signature="n#style#0;n#div#0;n#a#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
                   </folding>
@@ -128,8 +116,18 @@
           <file leaf-file-name="ui.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/scripts/custom/ui.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-7.5185184">
-                  <caret line="295" column="27" selection-start-line="295" selection-start-column="27" selection-end-line="295" selection-end-column="27" />
+                <state vertical-scroll-proportion="-4.259259">
+                  <caret line="451" column="31" selection-start-line="451" selection-start-column="28" selection-end-line="451" selection-end-column="31" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="cta-converter.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/scripts/custom/cta-converter.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="40" column="19" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="19" />
                   <folding />
                 </state>
               </provider>
@@ -159,11 +157,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="episodesHandler.js" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/scripts/custom/episodesHandler.js">
+          <file leaf-file-name="episodesDataHandler.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/scripts/custom/episodesDataHandler.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.074257426">
-                  <caret line="5" column="56" selection-start-line="5" selection-start-column="56" selection-end-line="5" selection-end-column="56" />
+                <state vertical-scroll-proportion="0.13904983">
+                  <caret line="8" column="73" selection-start-line="8" selection-start-column="73" selection-end-line="8" selection-end-column="73" />
                   <folding />
                 </state>
               </provider>
@@ -249,8 +247,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/styles/sass/pages/merch.scss" />
-        <option value="$PROJECT_DIR$/styles/sass/overrides/product-detail.scss" />
         <option value="$PROJECT_DIR$/styles/sass/modules/episode-summary.scss" />
         <option value="$PROJECT_DIR$/styles/sass/parts/footer.scss" />
         <option value="$PROJECT_DIR$/scripts/custom/SVGClipper.js" />
@@ -277,7 +273,6 @@
         <option value="$PROJECT_DIR$/styles/sass/pages/show.scss" />
         <option value="$PROJECT_DIR$/collections/pages.item" />
         <option value="$PROJECT_DIR$/styles/sass/pages/host.scss" />
-        <option value="$PROJECT_DIR$/footer.region" />
         <option value="$PROJECT_DIR$/blocks/page-host.block" />
         <option value="$PROJECT_DIR$/styles/sass/modules/posters/circle.scss" />
         <option value="$PROJECT_DIR$/styles/sass/modules/posters/deltoid.scss" />
@@ -297,9 +292,12 @@
         <option value="$PROJECT_DIR$/scripts/custom/ui.js" />
         <option value="$PROJECT_DIR$/collections/blog.item" />
         <option value="$PROJECT_DIR$/styles/sass/modules/nav-search-overlay.scss" />
-        <option value="$PROJECT_DIR$/header.region" />
         <option value="$PROJECT_DIR$/scripts/custom/episodesHandler.js" />
         <option value="$PROJECT_DIR$/blocks/nav-search-overlay.block" />
+        <option value="$PROJECT_DIR$/scripts/custom/cta-converter.js" />
+        <option value="$PROJECT_DIR$/footer.region" />
+        <option value="$PROJECT_DIR$/header.region" />
+        <option value="$PROJECT_DIR$/scripts/custom/episodesDataHandler.js" />
       </list>
     </option>
   </component>
@@ -698,11 +696,11 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10019724" sideWeight="0.87205386" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32981133" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32754716" sideWeight="0.5013807" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32754716" sideWeight="0.49861932" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32754716" sideWeight="0.49861932" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32830188" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32830188" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21660377" sideWeight="0.49822485" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21660377" sideWeight="0.49822485" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.10019724" sideWeight="0.12794612" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -760,14 +758,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/scripts/custom/page_clips.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="35" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/blocks/episode-summary.block">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-13.125">
@@ -1006,7 +996,7 @@
         <state vertical-scroll-proportion="-13.54902">
           <caret line="67" column="22" selection-start-line="67" selection-start-column="22" selection-end-line="67" selection-end-column="22" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1016,7 +1006,7 @@
         <state vertical-scroll-proportion="-10.0">
           <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#section#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#section#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1109,14 +1099,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/custom/ui.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.5185184">
-          <caret line="295" column="27" selection-start-line="295" selection-start-column="27" selection-end-line="295" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/collections/blog.item">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-11.25">
@@ -1127,34 +1109,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/footer.region">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.875">
-          <caret line="11" column="154" selection-start-line="11" selection-start-column="154" selection-end-line="11" selection-end-column="154" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/header.region">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-22.333334">
-          <caret line="55" column="94" selection-start-line="55" selection-start-column="94" selection-end-line="55" selection-end-column="94" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/styles/sass/modules/nav-search-overlay.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-14.75">
           <caret line="172" column="28" selection-start-line="172" selection-start-column="28" selection-end-line="172" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/custom/episodesHandler.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.074257426">
-          <caret line="5" column="56" selection-start-line="5" selection-start-column="56" selection-end-line="5" selection-end-column="56" />
           <folding />
         </state>
       </provider>
@@ -1179,11 +1137,51 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/blocks/nav-search-overlay.block">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34410843">
-          <caret line="22" column="124" selection-start-line="22" selection-start-column="124" selection-end-line="22" selection-end-column="124" />
+        <state vertical-scroll-proportion="-0.29411766">
+          <caret line="1" column="78" selection-start-line="1" selection-start-column="78" selection-end-line="1" selection-end-column="78" />
           <folding>
             <element signature="n#style#0;n#div#0;n#a#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/custom/ui.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.259259">
+          <caret line="451" column="31" selection-start-line="451" selection-start-column="28" selection-end-line="451" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/custom/cta-converter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="40" column="19" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/footer.region">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-21.208334">
+          <caret line="48" column="58" selection-start-line="48" selection-start-column="58" selection-end-line="48" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/header.region">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.37067938">
+          <caret line="40" column="53" selection-start-line="40" selection-start-column="53" selection-end-line="40" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/custom/episodesDataHandler.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.13904983">
+          <caret line="8" column="73" selection-start-line="8" selection-start-column="73" selection-end-line="8" selection-end-column="73" />
+          <folding />
         </state>
       </provider>
     </entry>
