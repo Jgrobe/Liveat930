@@ -61,10 +61,10 @@ function get_episode($dummy, episodes) {
 
     for(var i=0; i<episodes.length; i++) {
         var episode = episodes[i];
-        if(typeof ep[attr] === 'undefined') continue;
+        if(typeof episode[attr] === 'undefined') continue;
 
-        for(var j=0; j<ep[attr].length; j++) {
-            if(ep[attr] === val) filtermatch = true;
+        for(var j=0; j<episode[attr].length; j++) {
+            if(episode[attr] === val) filtermatch = true;
         }// endfor
 
         if(filtermatch) break;
