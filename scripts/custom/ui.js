@@ -123,7 +123,7 @@ function populate_namespaces() {
 
             SQSP.$objects.preloaderClipables.each(function(i) {
                 var $this = jQuery(this);
-                var origSize = {width: $this.css('width'), height:$this.css('height')};
+                var origSize = {width: $this.width(), height:$this.height()};
                 console.log('--- preload origsize', origSize);
                 var $clipWrapper = jQuery('<div class="clip-wrapper" style="position:relative;overflow:hidden;" />');
                 $this.wrap($clipWrapper);
@@ -135,7 +135,7 @@ function populate_namespaces() {
                 }, onComplete:function($elem){
                     //$elem.css({position:''});
                     //$elem.unwrap();
-                }, onCompleteParams:[$this]}, '+=.3');
+                }, onCompleteParams:[$this]}, '-='+(duration *.3));
             });// endeach()
 
             return tl;
