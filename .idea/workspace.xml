@@ -83,11 +83,9 @@
           <file leaf-file-name="ui.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/scripts/custom/ui.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.409901">
-                  <caret line="133" column="42" selection-start-line="133" selection-start-column="42" selection-end-line="133" selection-end-column="42" />
-                  <folding>
-                    <marker date="1458056574000" expanded="true" signature="4539:4573" placeholder="..." />
-                  </folding>
+                <state vertical-scroll-proportion="0.51386136">
+                  <caret line="140" column="51" selection-start-line="140" selection-start-column="51" selection-end-line="140" selection-end-column="51" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -1150,11 +1148,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/custom/ui.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.409901">
-          <caret line="133" column="42" selection-start-line="133" selection-start-column="42" selection-end-line="133" selection-end-column="42" />
-          <folding>
-            <marker date="1458056574000" expanded="true" signature="4539:4573" placeholder="..." />
-          </folding>
+        <state vertical-scroll-proportion="0.51386136">
+          <caret line="140" column="51" selection-start-line="140" selection-start-column="51" selection-end-line="140" selection-end-column="51" />
+          <folding />
         </state>
       </provider>
     </entry>
