@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ba77c59-895c-4b6c-8ed1-52220cbb39bd" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/style.css" afterPath="$PROJECT_DIR$/styles/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/style.css.map" afterPath="$PROJECT_DIR$/styles/style.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blocks/nav-search-overlay.block" afterPath="$PROJECT_DIR$/blocks/nav-search-overlay.block" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/sass/modules/nav-search-overlay.scss" afterPath="$PROJECT_DIR$/styles/sass/modules/nav-search-overlay.scss" />
     </list>
     <ignored path="sqsp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -95,8 +96,8 @@
           <file leaf-file-name="nav-search-overlay.block" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/blocks/nav-search-overlay.block">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.548488">
-                  <caret line="55" column="191" selection-start-line="55" selection-start-column="191" selection-end-line="55" selection-end-column="191" />
+                <state vertical-scroll-proportion="0.5172054">
+                  <caret line="53" column="175" selection-start-line="53" selection-start-column="175" selection-end-line="53" selection-end-column="175" />
                   <folding>
                     <element signature="n#style#0;n#div#0;n#a#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
                   </folding>
@@ -163,8 +164,8 @@
           <file leaf-file-name="nav-search-overlay.scss" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/styles/sass/modules/nav-search-overlay.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.5872211">
-                  <caret line="187" column="8" selection-start-line="187" selection-start-column="8" selection-end-line="187" selection-end-column="8" />
+                <state vertical-scroll-proportion="0.6024341">
+                  <caret line="188" column="28" selection-start-line="188" selection-start-column="28" selection-end-line="188" selection-end-column="28" />
                   <folding />
                 </state>
               </provider>
@@ -1156,8 +1157,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/blocks/nav-search-overlay.block">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.548488">
-          <caret line="55" column="191" selection-start-line="55" selection-start-column="191" selection-end-line="55" selection-end-column="191" />
+        <state vertical-scroll-proportion="0.5172054">
+          <caret line="53" column="175" selection-start-line="53" selection-start-column="175" selection-end-line="53" selection-end-column="175" />
           <folding>
             <element signature="n#style#0;n#div#0;n#a#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
           </folding>
@@ -1166,8 +1167,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/styles/sass/modules/nav-search-overlay.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5872211">
-          <caret line="187" column="8" selection-start-line="187" selection-start-column="8" selection-end-line="187" selection-end-column="8" />
+        <state vertical-scroll-proportion="0.6024341">
+          <caret line="188" column="28" selection-start-line="188" selection-start-column="28" selection-end-line="188" selection-end-column="28" />
           <folding />
         </state>
       </provider>

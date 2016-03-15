@@ -2567,6 +2567,8 @@ input {
         left: 0;
         width: 100%;
         height: 100%; }
+      .nav-overlay .social-container .cta-container .cta .icon, .nav-overlay .social-container .cta-container #productSummary #productDetails .sqs-add-to-cart-button .icon, #productSummary #productDetails .nav-overlay .social-container .cta-container .sqs-add-to-cart-button .icon, .nav-overlay .social-container .cta-container #sqs-shopping-cart-wrapper .checkout-button .icon, #sqs-shopping-cart-wrapper .nav-overlay .social-container .cta-container .checkout-button .icon {
+        margin: auto; }
       .nav-overlay .social-container .cta-container svg, .nav-overlay .social-container .cta-container img {
         margin: auto; }
       .nav-overlay .social-container .cta-container.instagram svg, .nav-overlay .social-container .cta-container.instagram img {
