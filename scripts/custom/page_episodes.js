@@ -27,7 +27,7 @@ SQSP.functions.initPage = function() {
         SQSP.instances.ParallaxPosters.push( new ParallaxPoster($thisPoster, {
             amount:5,
             offsets: {
-                container: 13,
+                container: 6,
                 layers: [
                     0,  // hover-layer
                     layerOffset, // bg-layer
