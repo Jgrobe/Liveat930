@@ -120,7 +120,7 @@ function populate_namespaces() {
         },
         onComplete:function(e) {
 
-            var clipHTML = '<svg style="width:0;height:0;"><defs><clipPath id="mask" clipPathUnits="objectBoundingBox"><polygon polygonPoints="0 0, 1 0, 1 0, 0 0"></polygon></clipPath></defs></svg>';
+            var clipHTML = '<svg style="width:0;height:0;"><defs><clipPath id="mask" clipPathUnits="objectBoundingBox"><polygon points="0 0, 1 0, 1 0, 0 0"></polygon></clipPath></defs></svg>';
             var duration = 1.85;
             var tl = new TimelineMax();
             tl.to(jQuery('body'),(duration*1.5), {autoAlpha:1, onComplete:function() {
