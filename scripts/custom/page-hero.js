@@ -17,14 +17,14 @@ SQSP.functions.createPageHero = function() {
         canvasAttr: {'data-prllx' : '.8'},
         onCreateComplete: function(Painter) {
 
-            console.log('clip this');
+            //console.log('clip this');
 
             var canvasClipper = new SVGClipper(Painter.$object.canvasWrapper, {
                 shape:$modelContainer.attr('data-shape'),
                 maskID: 'heroClipper',
                 //shapeScale:.45,
                 onInit:function(Clip){
-                    console.log('map this', Clip);
+                    //console.log('map this', Clip);
                     //GradientMaps.applyGradientMap(Painter.DOM.baseCanvas.object, Clip.shapes[Clip.options.shape].gradientMaps.full);
                     //GradientMaps.applyGradientMap(Clip.$object.container.get(0), Clip.shapes[Clip.options.shape].gradientMaps.shape);
                 }

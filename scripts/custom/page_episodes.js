@@ -1,6 +1,6 @@
 SQSP.functions.initPage = function() {
 
-    console.log('INIT EPISODES PAGE');
+    //console.log('INIT EPISODES PAGE');
 
     jQuery('.poster').each(function(i) {
         var $thisPoster = jQuery(this);

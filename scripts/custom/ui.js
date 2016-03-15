@@ -42,7 +42,7 @@ function init_sqsp() {
     //console.log('mofo clipitems',$clipItems);
     $clipItems.on('mouseenter', function(e) {
         var $hovered = jQuery(this);
-        console.log('.video mouseenter', $hovered, e);
+        //console.log('.video mouseenter', $hovered, e);
         $hovered.find('.cta-container:not(.plain)').mouseenter();
     });
     $clipItems.on('mouseleave', function(e) {
@@ -64,7 +64,7 @@ function init_sqsp() {
         var $thisVid = jQuery(vid);
 
         vid.addEventListener('loadeddata', function() {
-            console.log('-------------------------------------- video loaded');
+            //console.log('-------------------------------------- video loaded');
             size_video();
             scrollMonitor.recalculateLocations();// needed on homepage so first video in viewport starts playing on load
             $thisVid.css({
@@ -225,7 +225,7 @@ function windowloaded() {
     // SEARCH FIELD FUNCTIONALITY
     SQSP.$objects.searchResultsContainer = jQuery('.nav-overlay .results-wrapper');
     SQSP.instances.SEARCH.options.onSuccess = function(query, ajaxHTML, formattedResults) {
-        console.log('search done: ', formattedResults);
+        //console.log('search done: ', formattedResults);
 
         removeDisablerDummy();
 
@@ -343,7 +343,7 @@ function toggleSearchOverlay() {
         $navVideo = SQSP.$objects.stickyHeader.find('video');
 
     var $burger = SQSP.$objects.stickyHeader.find('.burger');
-    console.log('burger', $burger.outerHeight(), $burger.height(), $burger.css('top'));
+    //console.log('burger', $burger.outerHeight(), $burger.height(), $burger.css('top'));
     var duration = .4;
 
     $searchtable.toggleClass('search-on');
@@ -453,24 +453,24 @@ function cta_hovers() {
     var duration = .2;
     jQuery(ctaSelector).on('mouseenter', function() {
         if(is_mobile()) return false;
-        console.log('cta hover()');
+        //console.log('cta hover()');
         var $hovered = jQuery(this);
         if($hovered.get(0).isHovered) return false;
-        console.log('--------- HOVER EXECUTED???');
+        //console.log('--------- HOVER EXECUTED???');
         $hovered.get(0).isHovered = true;
 
-        console.log('cta hover()', $hovered);
+        //console.log('cta hover()', $hovered);
 
         var $hoverlay = $hovered.find('.hover-cta');
 
         if(SQSP.vars.ctaHoverTimer) clearTimeout(SQSP.vars.ctaHoverTimer);
 
         SQSP.vars.ctaHoverTimer = setTimeout(function(){
-            console.log('--------- HOVER TIMEOUT EXECUTED???');
+            //console.log('--------- HOVER TIMEOUT EXECUTED???');
             TweenMax.to($hoverlay, duration, {top:0, ease:Expo.easeOut, onUpdate:function(){
-                console.log('tweening cta', this);
+                //console.log('tweening cta', this);
             }, onComplete:function(){
-                console.log('--------- HOVER TWEEN EXECUTED???');
+                //console.log('--------- HOVER TWEEN EXECUTED???');
             }});
         }, 150);
     });

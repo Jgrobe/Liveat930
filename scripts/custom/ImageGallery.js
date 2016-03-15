@@ -64,7 +64,7 @@ var ImageGallery = function($container, options) {
 
 
         var $imagesToUse = is_mobile() ? IG.$object.image.eq(0) : IG.$object.image;
-        console.log('galleryy images to use', $imagesToUse, IG.$object.image);
+        //console.log('galleryy images to use', $imagesToUse, IG.$object.image);
 
         if(IG.lastDirection !== direction) {
             // equalize index in case of direction change on multiple imageContainers
@@ -91,7 +91,7 @@ var ImageGallery = function($container, options) {
             }// endswitch
 
 
-            console.log('updating image index', IG.options.currentIndex );
+            //console.log('updating image index', IG.options.currentIndex );
 
             IG.switchImage($thisImg, IG.options.currentIndex, functions);
 
@@ -141,7 +141,7 @@ var ImageGallery = function($container, options) {
     // INIT
 
     IG.init = function(functions) {
-        console.log('Image Gallery init()', IG);
+        //console.log('Image Gallery init()', IG);
 
         if(typeof functions === 'undefined') functions = {};
 

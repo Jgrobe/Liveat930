@@ -42,7 +42,7 @@ var Preloader = function( options ) {
                     if(_.isFunction(functions.onComplete)) functions.onComplete(PL);
                 }// endif
             };
-            console.log('---------  PRELOADER TRYNA PRELOAD DAT SAUCE', sources[i]);
+            //console.log('---------  PRELOADER TRYNA PRELOAD DAT SAUCE', sources[i]);
             img.src = sources[i];
         }// endfor
     };// preload()
@@ -66,7 +66,7 @@ var Preloader = function( options ) {
             if($this.hasAttr('style')) {
                 var style = $this.get(0).currentStyle || window.getComputedStyle($this.get(0), false);
                 var src = style.backgroundImage.slice(4, -1).replace(/"/g, "");
-                if(src === '') src = '#';
+                if(src === '') src = '#';// dirty fix b/c firefox won't fire any load event in line 31 if src is empty -> would keep preloader from finishing
                 srcs.push(src);
             }
         });

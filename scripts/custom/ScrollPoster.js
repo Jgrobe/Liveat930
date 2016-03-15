@@ -34,13 +34,13 @@ var ScrollPoster = function($container, options) {
     SP.isHoverActive = false;
 
     SP.init = function() {
-        console.log('poster objects', SP.$object);
+        //console.log('poster objects', SP.$object);
 
         // Apply HoverFX
         SP.$object.hoverTrigger.on('click', function(e) {
             if(is_mobile()) return false;
             e.preventDefault();
-            console.log('firing hover trigger');
+            //console.log('firing hover trigger');
             var $clicked = jQuery(this);
             if(!SP.HOVERSTAT_ACTIVE) {
                 var tl = new TimelineMax({onComplete:function(){SP.HOVERSTAT_ACTIVE = true;}});
@@ -58,7 +58,7 @@ var ScrollPoster = function($container, options) {
         // remove HoverFX
         jQuery(document).on('click', '.posters.hover-on', function(e) {
             e.preventDefault();
-            console.log('firing unhover trigger', e);
+            //console.log('firing unhover trigger', e);
             if(SP.HOVERSTAT_ACTIVE) {
                 var tl = new TimelineMax({onComplete:function() {SP.HOVERSTAT_ACTIVE = false;}});
                 tl.add(function(){
@@ -92,7 +92,7 @@ var ScrollPoster = function($container, options) {
             });
 
             if(SP.options.gradientMap) {
-                console.log('applying gradient map on ', elem, SP.options.gradientMap);
+                //console.log('applying gradient map on ', elem, SP.options.gradientMap);
                 GradientMaps.applyGradientMap($thisApplicant.get(0), SP.options.gradientMap);
             }
         });

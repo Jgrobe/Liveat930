@@ -1,6 +1,6 @@
 SQSP.functions.initPage = function() {
 
-    console.log('init clips overview page');
+    //console.log('init clips overview page');
     var uriFilter = getUriParams('filter')
 
     var $clipGrid = jQuery('.video-gallery-videos');
@@ -13,7 +13,7 @@ SQSP.functions.initPage = function() {
         payload: $clipGrid.data('payload'),
         loadMoreCTA: $clipGrid.parents('section').find('.load-more-cta'),
         onInit:function() {
-            console.log('Grid initialized');
+            //console.log('Grid initialized');
         }
     });
 

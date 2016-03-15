@@ -16,7 +16,7 @@ function loopPostersForArtists() {
         var $thisPoster = jQuery(this);
         var $artistContainer = $thisPoster.find('.ep-lineup');
         var filters = $artistContainer.data('artists').split(',');
-        console.log('filter: ', filters);
+        //console.log('filter: ', filters);
 
         printArtists(filters, _artists, $artistContainer);// _artists is declared inline by squarespace:query
     });
