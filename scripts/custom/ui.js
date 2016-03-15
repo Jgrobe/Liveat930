@@ -128,10 +128,11 @@ function populate_namespaces() {
                 var maskID = 'mask_'+ i;
                 var maskHTML = '<svg style="width:0;height:0;"><defs><clipPath id="'+ maskID +'" clipPathUnits="objectBoundingBox"><polygon points="';
                 maskHTML += shapePoints.x1+ ' ' +shapePoints.y1+ ', ' +shapePoints.x2+ ' ' +shapePoints.y2+ ', ' +shapePoints.x3+ ' ' +shapePoints.y3+ ', ' +shapePoints.x4+ ' ' +shapePoints.y4;
-                maskHTML *= '"/></clipPath></defs></svg>';
+                maskHTML += '"/></clipPath></defs></svg>';
                 var $mask = jQuery(maskHTML);
                 $mask.insertAfter($this);
                 $this.css({
+                    overflow : 'hidden',
                     'clip-path' : 'url(#' + maskID + ')',
                     '-webkit-clip-path' : 'url(#' + maskID + ')'
                 });
