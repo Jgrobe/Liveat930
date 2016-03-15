@@ -7,7 +7,7 @@ function episodesDataHandler() {
     $episodeDataDummies.each(function(i){
         var $thisDummy = jQuery(this);
         $thisDummy.removeClass('episode-data-dummy');
-        console.log('thats a data-dummy with dat data', $thisDummy.data());
+        //console.log('thats a data-dummy with dat data', $thisDummy.data());
 
         var requiredEpisode = get_episode($thisDummy, _episodes);
 
@@ -100,7 +100,7 @@ function get_episode($dummy, episodes) {
         }
     }// endfor
 
-    console.log('episode found', episode);
+    //console.log('episode found', episode);
 
     return episode;
 }

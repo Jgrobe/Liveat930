@@ -137,7 +137,7 @@ function populate_namespaces() {
                 $this.css({
                     position:'absolute'
                 });
-                console.log();
+                console.log('the clipwrapper', $clipWrapper);
                 tl.to($clipWrapper, duration, {width:origSize.width, height:origSize.height, ease:Strong.easeOut,onUpdate:function(){
                     //console.log();8
                 }, onComplete:function($elem){
