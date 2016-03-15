@@ -125,12 +125,13 @@ function populate_namespaces() {
                 var $this = jQuery(this);
                 var origSize = {width: $this.width(), height:$this.height()};
                 console.log('--- preload origsize', origSize);
-                var $clipWrapper = jQuery('<div class="clip-wrapper" style="position:relative;overflow:hidden;" />');
+                var wrapperID = 'clip-wrapper_'+ i;
+                var $clipWrapper = jQuery('<div id="'+ wrapperID +'" style="position:relative;overflow:hidden;" />');
                 $this.wrap($clipWrapper);
                 $this.css({
                     position:'absolute'
                 });
-                tl.fromTo($clipWrapper, duration, {width:0, height:0}, {width:origSize.width, height:origSize.height, ease:Strong.easeOut,onUpdate:function(){
+                tl.fromTo(jQuery(wrapperID), duration, {width:0, height:0}, {width:origSize.width, height:origSize.height, ease:Strong.easeOut,onUpdate:function(){
                     //console.log();
                 }, onComplete:function($elem){
                     //$elem.css({position:''});
