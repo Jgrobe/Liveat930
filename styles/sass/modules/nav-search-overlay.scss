@@ -312,18 +312,15 @@ $rightColMargin: 10vw;
   .video {
     position: relative;
     width: 100%;
+    margin-bottom: get_relative_units(110);
+
+    &:last-child {margin-bottom: 0;}
 
     //.imgfill {background-blend-mode: screen;}
     //
     //&.last-episode {
     //  .imgfill {background-color: cyan};
     //}
-
-    &.teaser {
-      margin-bottom: get_relative_units(110);
-
-      &:last-child {margin-bottom: 0;}
-    }
 
     .title {
       @extend .s-headline;

@@ -2653,11 +2653,10 @@ input {
         position: absolute; }
   .shortcuts .video {
     position: relative;
-    width: 100%; }
-    .shortcuts .video.teaser {
-      margin-bottom: 3.81944vw; }
-      .shortcuts .video.teaser:last-child {
-        margin-bottom: 0; }
+    width: 100%;
+    margin-bottom: 3.81944vw; }
+    .shortcuts .video:last-child {
+      margin-bottom: 0; }
     .shortcuts .video .title {
       font-size: 1.38889vw;
       line-height: 1.52778vw;
