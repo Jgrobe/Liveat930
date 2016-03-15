@@ -45,6 +45,7 @@ SQSP.functions.initPage = function() {
 
         var preloaderFns = {
             onStart: function(e) {
+                TweenMax.to(jQuery('.page'),.3, {autoAlpha:1});
                 SQSP.faders = jQuery('.static-header, .site-content');
                 SQSP.preloadTL = new TimelineMax({});
                 TweenMax.set(SQSP.faders, {autoAlpha:0});
