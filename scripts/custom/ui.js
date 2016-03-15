@@ -111,7 +111,7 @@ function populate_namespaces() {
     SQSP.instances.Preloader = new Preloader({
         autoInit:false,// init after individual initPage so preloader fns can be hooked
         onStart:function(){
-            TweenMax.set(jQuery('body'), {autoAlpha:0});
+            TweenMax.set(jQuery('.page'), {autoAlpha:0});
             SQSP.$objects.preloaderClipables = jQuery('.onloadclip');
 
             //SQSP.$objects.preloaderClipables.each(function(i){
@@ -124,8 +124,8 @@ function populate_namespaces() {
             var clipHTML = '<svg style="width:0;height:0;"><defs><clipPath id="mask" clipPathUnits="objectBoundingBox"><polygon points="0 0, 1 0, 1 0, 0 0"></polygon></clipPath></defs></svg>';
             var duration = .75;
             var tl = new TimelineMax();
-            tl.to(jQuery('body'),(duration*1.5), {autoAlpha:1, onComplete:function() {
-                jQuery('body').removeClass('hidden');
+            tl.to(jQuery('.page'),(duration*1.5), {autoAlpha:1, onComplete:function() {
+                //jQuery('body').removeClass('hidden');
             }});
 
             SQSP.$objects.preloaderClipables.each(function(i) {
@@ -138,6 +138,7 @@ function populate_namespaces() {
                 $clipSVG.find('#mask').attr({id : maskID });
                 $clipSVG.insertAfter($this);
                 var $polygon = $clipSVG.find('polygon');
+                updateCSS($this, maskID, polygonPoints);
 
 
                 tl.to(polygonPoints, duration, {y3:1, y4:1, onUpdate:function(){
@@ -146,13 +147,7 @@ function populate_namespaces() {
                     $polygon.attr({
                         points : polygonPoints.x1 +' '+ polygonPoints.y1 +', '+ polygonPoints.x2 +' '+ polygonPoints.y2 +', '+ polygonPoints.x3 +' '+ polygonPoints.y3 +', '+ polygonPoints.x4 +' '+ polygonPoints.y4
                     });
-                    $this.css({
-                        'overflow' : 'hidden',
-                        'clip-path' : 'url(#'+ maskID +')',
-                        '-webkit-clip-path' : 'polygon('+ (polygonPoints.x1*100) +'% '+ (polygonPoints.y1*100) +'%, '+ (polygonPoints.x2*100) +'% '+ (polygonPoints.y2*100) +'%, '+ (polygonPoints.x3*100) +'% '+ (polygonPoints.y3*100) +'%, '+ (polygonPoints.x4*100) +'% '+ (polygonPoints.y4*100) + '%)'
-                        //'-webkit-clip-path' : 'url(#'+ maskID +')'
-                        //'-webkit-clip-path' : 'polygon(% %, % %, % %, %, %)'
-                    });
+                    updateCSS($this, maskID, polygonPoints);
                 }, onComplete:function($elem, $svg){
                     $elem.css({
                         'overflow' : '',
@@ -185,6 +180,16 @@ function populate_namespaces() {
             });// endeach()
 
             return tl;
+
+            function updateCSS($elem, maskID, polygonPoints) {
+                $elem.css({
+                    'overflow' : 'hidden',
+                    'clip-path' : 'url(#'+ maskID +')',
+                    '-webkit-clip-path' : 'polygon('+ (polygonPoints.x1*100) +'% '+ (polygonPoints.y1*100) +'%, '+ (polygonPoints.x2*100) +'% '+ (polygonPoints.y2*100) +'%, '+ (polygonPoints.x3*100) +'% '+ (polygonPoints.y3*100) +'%, '+ (polygonPoints.x4*100) +'% '+ (polygonPoints.y4*100) + '%)'
+                    //'-webkit-clip-path' : 'url(#'+ maskID +')'
+                    //'-webkit-clip-path' : 'polygon(% %, % %, % %, %, %)'
+                });
+            }
         }// onComplete()
     });
 
