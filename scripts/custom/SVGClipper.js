@@ -22,16 +22,18 @@ var SVGClipper = function($container, options) {
 
     SC.shapes = {
         circle: {
-            type: 'circle',
+            //type: 'circle',
+            type: 'path',
             gradientMaps: {
                 full: '#000000, #6d5e79',
                 shape: '#9f53e0, #d6b9db'
             },
-            values: {
-                cx:.5,
-                cy:.5,
-                r:.5
-            }
+            //values: {
+            //    cx:.5,
+            //    cy:.5,
+            //    r:.5
+            //}
+            values : 'M-0.5,0a0.5,0.5 0 1,0 1,0a0.5,0.5 0 1,0 -1,0'
         },
         fullTriangle: {
             type : 'path',
