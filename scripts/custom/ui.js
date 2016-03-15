@@ -111,6 +111,7 @@ function populate_namespaces() {
     SQSP.instances.Preloader = new Preloader({
         autoInit:false,// init after individual initPage so preloader fns can be hooked
         onStart:function(){
+            TweenMax.set(jQuery('body'), {autoAlpha:0});
             SQSP.$objects.preloaderClipables = jQuery('.onloadclip');
 
             //SQSP.$objects.preloaderClipables.each(function(i){
