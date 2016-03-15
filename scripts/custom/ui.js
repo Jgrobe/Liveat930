@@ -118,7 +118,7 @@ function populate_namespaces() {
             SQSP.$objects.preloaderClipables.each(function(i) {
                 var $this = jQuery(this);
                 var maskID = 'mask_'+ i;
-                var $mask = jQuery('<svg style="width:0;height:0;"><defs><clipPath id="'+ maskID +'"><polygon points="0 0, .5 0, 1 1, 0 1"/></clipPath></defs></svg>');
+                var $mask = jQuery('<svg style="width:0;height:0;"><defs><clipPath id="'+ maskID +'" clipPathUnits="objectBoundingBox"><polygon points="0 0, .5 0, 1 1, 0 1"/></clipPath></defs></svg>');
                 $mask.insertAfter($this);
                 $this.css({
                     'clip-path' : 'url(#' + maskID + ')',
