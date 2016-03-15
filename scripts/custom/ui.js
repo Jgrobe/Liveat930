@@ -139,6 +139,7 @@ function populate_namespaces() {
 
                 $this.get(0).shapePoints = shapePoints;
                 $this.get(0).maskID = maskID;
+
             });// endeach()
 
         },// onStart()
@@ -153,7 +154,8 @@ function populate_namespaces() {
             SQSP.$objects.preloaderClipables.each(function(i) {
                 var $this = jQuery(this);
                 var shapePoints = $this.get(0).shapePoints;
-                var $thisMask = jQuery($this.get(0).maskID).find('polygon');
+                var maskID = $this.get(0).maskID;
+                var $thisMask = jQuery(maskID).find('polygon');
                 tl.to(shapePoints, duration, {x1:0,y1:0,x2:1,y2:0,x3:1,y3:1,x4:0,y4:1, ease:Strong.easeOut, onUpdate:function(){
                     console.log('tweening cliplable mask', shapePoints.x1, shapePoints.x3);
                     $thisMask.attr({
