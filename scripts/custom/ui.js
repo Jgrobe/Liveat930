@@ -123,10 +123,10 @@ function populate_namespaces() {
         onComplete:function(e) {
 
             var initPoints = [
-                {x1:0, y1:0, x2:1, y2:0, x3:1, y3:0, x4:0, y4:0},// top bottom
-                {x1:0, y1:0, x2:0, y2:0, x3:0, y3:1, x4:0, y4:1},// left right
-                {x1:1, y1:0, x2:1, y2:0, x3:1, y3:1, x4:1, y4:1},// right left
-                {x1:0, y1:1, x2:1, y2:1, x3:1, y3:1, x4:0, y4:1}// bottom top
+                {x1:0, y1:0, x2:1, y2:0, x3:1, y3:0, x4:0, y4:0, label:'top bottom'},//
+                {x1:0, y1:0, x2:0, y2:0, x3:0, y3:1, x4:0, y4:1, label:'left right'},//
+                {x1:1, y1:0, x2:1, y2:0, x3:1, y3:1, x4:1, y4:1, label:'right left'},//
+                {x1:0, y1:1, x2:1, y2:1, x3:1, y3:1, x4:0, y4:1, label:'bottom top'}//
             ];
 
             var clipHTML = '<svg style="width:0;height:0;"><defs><clipPath id="mask" clipPathUnits="objectBoundingBox"><polygon points=""></polygon></clipPath></defs></svg>';
@@ -142,6 +142,7 @@ function populate_namespaces() {
                     $clipSVG = jQuery(clipHTML),
                     maskID = 'mask_'+ i,
                     polygonPoints = _.cloneDeep( initPoints[ Math.floor(Math.random()*initPoints.length) ] );
+                console.log('chosen polygon initPoints');
 
                 $clipSVG.find('#mask').attr({id : maskID });
                 $clipSVG.insertAfter($this);
