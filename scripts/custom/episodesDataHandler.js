@@ -34,23 +34,17 @@ function fill_episode_data($elem, episode) {
 }// fill_episode_data()
 
 function get_value_from_path(path, object) {
-    var value = false;
-    console.log('traversing path', path);
+    var value = object[path[0]];
+    console.log('start traversing path', path, object);
+    console.log('current value', value);
 
-    //for(var i=0; i<path.length; i++) {
-        if(typeof object[path[0]] !== 'undefined') {
-            var newObject  = object[path[0]],
-                newPath = path.shift();
-            console.log('must go deeper?', newObject, newPath);
-            if(newPath.length <= 0) {
-                // we're at the end of the path -> return the value
-                value = object[path[0]];
-            } else {
-                // there's still way to go -> keep traversing
-                value = get_value_from_path(newPath, newObject);
-            }
-        }// endif
-    //}// endfor
+    if(path.length > 0) {
+        console.log('go deeper in path');
+        var newObject  = value,
+            newPath = path.shift();
+        console.log('new path', newPath, path);
+        value = get_value_from_path(newPath, newObject);
+    }// endif
 
     return value;
 }// get_value_from_path()
