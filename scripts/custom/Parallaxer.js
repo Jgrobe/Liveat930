@@ -60,13 +60,14 @@ var Parallaxer = function ($elems, options) {
             return false;
         }// endif;
 
-        var elemScrollTop = $this.offset().top;
         var windowScrollTop = jQuery(window).scrollTop();
 
         P.$object.elems.each(function(i) {
             var $this = jQuery(this);
             if(!$this.hasClass(P.options.enabledClass)) return true;
-//console.log('parallaxing elem no. '+i);
+
+            var elemScrollTop = $this.offset().top;
+
             var amount = P.options.customAmount ? P.options.customAmount({
                 $elem: $this
             }) : P.options.amount;
