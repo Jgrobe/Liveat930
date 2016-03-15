@@ -133,8 +133,8 @@ function populate_namespaces() {
                 $mask.insertAfter($this);
                 $this.css({
                     overflow : 'hidden',
-                    'clip-path' : 'url(#' + maskID + ')',
-                    '-webkit-clip-path' : 'url(#' + maskID + ')'
+                //    'clip-path' : 'url(#' + maskID + ')',
+                //    '-webkit-clip-path' : 'url(#' + maskID + ')'
                 });
 
                 $this.get(0).shapePoints = shapePoints;
@@ -154,12 +154,16 @@ function populate_namespaces() {
                 var $this = jQuery(this);
                 var shapePoints = $this.get(0).shapePoints;
                 var $thisMask = jQuery($this.get(0).maskID).find('polygon');
-                //tl.to(shapePoints, duration, {x1:0,y1:0,x2:1,y2:0,x3:1,y3:1,x4:0,y4:1, ease:Strong.easeOut, onUpdate:function(){
-                //    console.log('tweening cliplable mask', shapePoints.x1, shapePoints.x3);
-                //    $thisMask.attr({
-                //        points : shapePoints.x1+ ' ' +shapePoints.y1+ ', ' +shapePoints.x2+ ' ' +shapePoints.y2+ ', ' +shapePoints.x3+ ' ' +shapePoints.y3+ ', ' +shapePoints.x4+ ' ' +shapePoints.y4
-                //    })
-                //}});
+                tl.to(shapePoints, duration, {x1:0,y1:0,x2:1,y2:0,x3:1,y3:1,x4:0,y4:1, ease:Strong.easeOut, onUpdate:function(){
+                    console.log('tweening cliplable mask', shapePoints.x1, shapePoints.x3);
+                    $thisMask.attr({
+                        points : shapePoints.x1+ ' ' +shapePoints.y1+ ', ' +shapePoints.x2+ ' ' +shapePoints.y2+ ', ' +shapePoints.x3+ ' ' +shapePoints.y3+ ', ' +shapePoints.x4+ ' ' +shapePoints.y4
+                    });
+                    $this.css({
+                        'clip-path' : 'url(#' + maskID + ')',
+                        '-webkit-clip-path' : 'url(#' + maskID + ')'
+                    });
+                }});
             });// endeach()
 
             return tl;
