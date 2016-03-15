@@ -400,7 +400,9 @@ function toggleSearchOverlay() {
         tl.to($navColumns,duration, {height:navColumnsHeight, ease:Strong.easeInOut, clearProps:'height'});
         tl.to($shareCol,duration, {autoAlpha:1, clearProps:'autoAlpha'}, '-='+(duration));
         tl.to($navTable,duration, {height:'100vh', ease:Strong.easeInOut, clearProps:'height'}, '-='+(duration));
-        tl.to($searchtable,duration, {height:0, ease:Strong.easeInOut}, '-='+(duration));
+        tl.to($searchtable,duration, {height:0, ease:Strong.easeInOut, onComplete:function(){
+            jQuery(window).scroll();// used to hide burger if scrolltop 0
+        }}, '-='+(duration));
 
     }// endif
 }// toggleSearchOverlay
