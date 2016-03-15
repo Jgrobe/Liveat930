@@ -147,7 +147,7 @@ function populate_namespaces() {
                     $clipable.css({
                         'overflow' : 'hidden',
                         'clip-path' : 'url('+ maskID +')',
-                        '-webkit-clip-path' : (points.x1*100) +'%,'+ (points.y1*100) +'% '+ (points.x2*100) +'%,'+ (points.y2*100) +'% '+ (points.x3*100) +'%,'+ (points.y3*100) +'% '+ (points.x4*100) +'%, '+ (points.y4*100) + '%'
+                        '-webkit-clip-path' : 'polygon('+ (points.x1*100) +'% '+ (points.y1*100) +'%, '+ (points.x2*100) +'% '+ (points.y2*100) +'%, '+ (points.x3*100) +'% '+ (points.y3*100) +'%, '+ (points.x4*100) +'%, '+ (points.y4*100) + '%)'
                     });
                 }, onUpdateParams:[$clipSVG.find('polygon'), $this, polygonPoints, maskID]});
 
