@@ -64,7 +64,7 @@ function init_sqsp() {
         var $thisVid = jQuery(vid);
 
         vid.addEventListener('loadeddata', function() {
-            //console.log('-------------------------------------- video loaded');
+            console.log('-------------------------------------- video loaded -> size em');
             size_video();
             scrollMonitor.recalculateLocations();// needed on homepage so first video in viewport starts playing on load
             $thisVid.css({
@@ -312,6 +312,7 @@ function toggleNavOverlay() {
         //lock(jQuery('body'), '100vh');
         tl.add(function() {
             $overlay.css({display:'block'});
+            size_video();
             if(is_mobile()) return false;
             SQSP.$objects.stickyHeader.find('video').get(0).play();
         });
