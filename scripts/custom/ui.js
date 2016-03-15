@@ -300,6 +300,8 @@ function windowloaded() {
 
 function toggleNavOverlay() {
 
+    if(!SQSP.vars.isBurgerOn) {toggleBurger(true);}
+
     SQSP.$objects.stickyHeader.toggleClass('on');
     var $overlay = SQSP.$objects.stickyHeader.find('.nav-overlay');
     var $items = SQSP.$objects.stickyHeader.find('.stagger-item');
@@ -433,15 +435,19 @@ function handleStickyBurger(e) {
 function toggleBurger(open) {
     TweenMax.killTweensOf(SQSP.$objects.burger);
     TweenMax.killTweensOf(SQSP.$objects.burger.find('.lines'));
-    var tl = new TimelineMax();
+    var tl = new TimelineMax({onComplete:function(){
+
+    }});
     var duration = .2;
     var $lines = SQSP.$objects.burger.find('.line');
     if(open) {
         //console.log('Open Burger');
+        SQSP.vars.isBurgerOn = true;
         tl.to(SQSP.$objects.burger, duration, {width:SQSP.$objects.homeLink.width(), ease:Strong.easeOut });
         tl.staggerTo($lines, duration, {width: '100%', ease:Strong.easeOut }, .08, '-='+(duration *.2));
     } else {
         //console.log('Close Burger');
+        SQSP.vars.isBurgerOn = false;
         tl.staggerTo($lines, duration *.7, {width: 0, ease:Strong.easeOut }, -.08);
         tl.to(SQSP.$objects.burger, duration *.7, {width:0, ease:Strong.easeOut }, '-='+(duration *.4));
     }// endif
