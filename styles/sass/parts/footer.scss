@@ -60,8 +60,10 @@
 
   @include breakpoint(mobile) {
 
+    padding: 19vw 6vw;
+
     p {
-      font-size: 13px;
+      font-size: 3.1vw;//13px;
       line-height: 20px;
       max-width: 85%;
     }
@@ -150,7 +152,7 @@
   }
 
   @include breakpoint(mobile) {
-    margin-bottom: 15vh;
+    margin-bottom: 6vh;
 
     .footer-newsletter-row { display: block;}
 
@@ -229,13 +231,14 @@
 
     .hosted-by-p {
       margin-bottom: 0;
+      margin-top: 10px;
       width: 65%;
     }
 
     .hosted-by-link {
       display: inline-block;
       max-width: 90%;
-      margin: 15vh auto;
+      margin: 6vh auto;
     }
   }// BP MOBILE
 }// .footer-hosted-by
