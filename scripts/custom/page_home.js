@@ -49,12 +49,12 @@ SQSP.functions.initPage = function() {
                 SQSP.faders = jQuery('.static-header, .site-content');
                 SQSP.preloadTL = new TimelineMax({});
                 TweenMax.set(SQSP.faders, {autoAlpha:0});
-                TweenMax.set('body', {autoAlpha:1});
 
-                SQSP.$objects.postersContainer.css({
-                    position: 'relative',
-                    top : '100vh'
+                SQSP.vars.$preloaderSpacer = jQuery('<div/>');
+                SQSP.vars.$preloaderSpacer.css({
+                    height : '100vh'
                 });
+                SQSP.vars.$preloaderSpacer.insertBefore(SQSP.$objects.postersContainer);
             },
             onProgress:function(e) {
                 //console.log('preloading', e.progress);
@@ -66,12 +66,13 @@ SQSP.functions.initPage = function() {
                 //console.log('NICE REVEAL');
                 SQSP.preloadTL.add(function() {
                     var tl = new TimelineMax({delay:.2, onUpdate:function() {
-
                         jQuery(window).scroll();
+                    }, onComplete:function(){
+                        SQSP.vars.$preloaderSpacer.remove();
                     }});
                     tl.to(SQSP.$objects.preloader,.2, {autoAlpha:0});
                     tl.to(SQSP.faders,.3, {autoAlpha:1}, '-=.35');
-                    tl.to(SQSP.$objects.postersContainer,.75, {top:0,ease:Strong.easeOut, clearProps:'all'}, '-=.15');
+                    tl.to(SQSP.vars.$preloaderSpacer,.75, {height:0,ease:Strong.easeOut}, '-=.15');
                     return tl;
                 });
             }
