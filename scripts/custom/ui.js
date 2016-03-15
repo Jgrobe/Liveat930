@@ -115,7 +115,7 @@ function populate_namespaces() {
         },
         onComplete:function(e) {
 
-            var duration = .35;
+            var duration = .5;
             var tl = new TimelineMax();
             tl.to(jQuery('body'),(duration*1.5), {autoAlpha:1, onComplete:function() {
                 jQuery('body').removeClass('hidden');
@@ -135,14 +135,20 @@ function populate_namespaces() {
                     height:(i%2===0 ? 0 : origSize.height )
                 });
                 $this.css({
-                    position:'absolute'
+                    position:'absolute',
+                    top:0,
+                    left:0
                 });
                 console.log('the clipwrapper', $clipWrapper);
                 tl.to($clipWrapper, duration, {width:origSize.width, height:origSize.height, ease:Strong.easeOut,onUpdate:function(){
                     //console.log();8
                 }, onComplete:function($elem){
-                    //$elem.css({position:''});
-                    //$elem.unwrap();
+                    $elem.css({
+                        position:'',
+                        top:'',
+                        left:''
+                    });
+                    $elem.unwrap();
                 }, onCompleteParams:[$this]}, '-='+(duration *.3));
             });// endeach()
 
