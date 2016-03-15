@@ -37,7 +37,7 @@ function get_value_from_path(path, object) {
     var value = false;
     console.log('traversing path', path);
 
-    for(var i=0; i<path.length; i++) {
+    //for(var i=0; i<path.length; i++) {
         if(typeof object[path[0]] !== 'undefined') {
             var newObject  = object[path[0]],
                 newPath = path.shift();
@@ -50,7 +50,7 @@ function get_value_from_path(path, object) {
                 value = get_value_from_path(newPath, newObject);
             }
         }// endif
-    }// endfor
+    //}// endfor
 
     return value;
 }// get_value_from_path()
