@@ -32,9 +32,11 @@ function fill_episode_data($elem, episode) {
 
         $elem.attr(attr, value);
 
-        if(i >= attrs.length-1) $elem.removeAttr('data-attr');
+        if(i >= attrs.length-1) {
+            $elem.removeAttr('data-attr');
+            followUpDataConverter($elem);
+        }
 
-        followUpDataConverter($elem);
     }// endfor
 
 }// fill_episode_data()
