@@ -20,18 +20,16 @@
                         <div class="quick-videos">
                             <div class="video last-episode stagger-item episode-data-dummy" data-filter="categories=current">
                                 <a class="data-fill" data-attr="fullUrl=href">
-                                    <div class="img tv imgfill data-fill" data-attr="customContent.hero-fallback-image.assetUrl=data-bgimgurl">
-                                        <div class="title">
-                                            <!--<span>{@|apply svg-icon-play.block}</span>-->
-                                        </div><!-- .title -->
+                                    <div class="img tv">
+                                        <div class="fill-parent imgfill data-fill" data-attr="customContent.hero-fallback-image.assetUrl=data-bgimgurl"></div>
                                     </div><!-- .img.tv -->
                                     <div class="label">Watch EP.<span class="data-fill" data-attr="customContent.episode-number=data-html"></span></div><!-- .label -->
                                 </a>
                             </div><!-- .video.last-episode -->
                             <div class="video teaser stagger-item episode-data-dummy" data-filter="categories=upcoming">
                                 <a class="data-fill" data-attr="fullUrl=href">
-                                    <div class="img tv imgfill data-fill" data-attr="customContent.hero-fallback-image.assetUrl=data-bgimgurl">
-                                        <!--<div class="title">Airs next friday @ 9:30 on WGWN</div>-->
+                                    <div class="img tv">
+                                        <div class="fill-parent imgfill data-fill" data-attr="customContent.hero-fallback-image.assetUrl=data-bgimgurl"></div>
                                     </div><!-- .img.tv -->
                                     <div class="label">EP.<span class="data-fill" data-attr="customContent.episode-number=data-html"></span> Sneak Peek</div>
                                 </a>

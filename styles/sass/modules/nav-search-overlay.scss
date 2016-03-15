@@ -316,32 +316,40 @@ $rightColMargin: 10vw;
 
     &:last-child {margin-bottom: 0;}
 
+    .fill-parent.imgfill {
+      @include superprefixed(transition, transform $medTrans);
+    }
+
+    &:hover {
+      .fill-parent.imgfill {@include transform(scale(1.05));}
+    }
+
     //.imgfill {background-blend-mode: screen;}
     //
     //&.last-episode {
     //  .imgfill {background-color: cyan};
     //}
 
-    .title {
-      @extend .s-headline;
-      @include relative_units(font-size, 40);
-      @include relative_units(line-height, 44);
-      letter-spacing: .06em;
-      color: #000000;
-
-      position: absolute;
-      top: 50%;
-      left: 5%;
-      width: 90%;
-      text-align: center;
-      @include transform(translateY(-50%));
-
-      svg {
-        display: inline-block;
-        @include relative_units(width, 40);
-        @include relative_units(height, 55);
-      }
-    }// .title
+    //.title {
+    //  @extend .s-headline;
+    //  @include relative_units(font-size, 40);
+    //  @include relative_units(line-height, 44);
+    //  letter-spacing: .06em;
+    //  color: #000000;
+    //
+    //  position: absolute;
+    //  top: 50%;
+    //  left: 5%;
+    //  width: 90%;
+    //  text-align: center;
+    //  @include transform(translateY(-50%));
+    //
+    //  svg {
+    //    display: inline-block;
+    //    @include relative_units(width, 40);
+    //    @include relative_units(height, 55);
+    //  }
+    //}// .title
   }
 
 }// .shortcuts
