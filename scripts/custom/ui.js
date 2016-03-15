@@ -114,16 +114,30 @@ function populate_namespaces() {
 
 
             SQSP.$objects.preloaderClipables = jQuery('.onloadclip');
+            SQSP.vars.preloaderClipablesShapePoints = [
+                {x1:0,y1:0,x2:1,y2:0,x3:1,y3:0,x4:0,y4:0},// top bottom
+                {x1:0,y1:0,x2:0,y2:0,x3:0,y3:1,x4:0,y4:1},// left right
+                {x1:0,y1:1,x2:1,y2:1,x3:1,y3:1,x4:0,y4:1},// bottom top
+                {x1:1,y1:0,x2:1,y2:0,x3:1,y3:1,x4:1,y4:1},// right left
+            ];
 
             SQSP.$objects.preloaderClipables.each(function(i) {
                 var $this = jQuery(this);
+                var shapePoints = SQSP.vars.preloaderClipablesShapePoints[ Math.floor( Math.random()*SQSP.vars.preloaderClipablesShapePoints.length ) ];
+
                 var maskID = 'mask_'+ i;
-                var $mask = jQuery('<svg style="width:0;height:0;"><defs><clipPath id="'+ maskID +'" clipPathUnits="objectBoundingBox"><polygon points="0 0, .5 0, 1 1, 0 1"/></clipPath></defs></svg>');
+                var maskHTML = '<svg style="width:0;height:0;"><defs><clipPath id="'+ maskID +'" clipPathUnits="objectBoundingBox"><polygon points="';
+                maskHTML += shapePoints.x1+ ' ' +shapePoints.y1+ ', ' +shapePoints.x2+ ' ' +shapePoints.y2+ ', ' +shapePoints.x3+ ' ' +shapePoints.y3+ ', ' +shapePoints.x4+ ' ' +shapePoints.y4;
+                maskHTML *= '"/></clipPath></defs></svg>';
+                var $mask = jQuery(maskHTML);
                 $mask.insertAfter($this);
                 $this.css({
                     'clip-path' : 'url(#' + maskID + ')',
                     '-webkit-clip-path' : 'url(#' + maskID + ')'
                 });
+
+                $this.get(0).shapePoints = shapePoints;
+                $this.get(0).maskID = maskID;
             });// endeach()
 
         },// onStart()
@@ -137,7 +151,13 @@ function populate_namespaces() {
 
             SQSP.$objects.preloaderClipables.each(function(i) {
                 var $this = jQuery(this);
-                tl.to($this, duration, {});
+                var shapePoints = $this.get(0).shapePoints;
+                var $thisMask = jQuery($this.get(0).maskID).find('polygon');
+                tl.to(shapePoints, duration, {x1:0,y1:0,x2:1,y2:0,x3:1,y3:1,x4:0,y4:1, ease:Strong.easeOut, onUpdate:function(){
+                    $thisMask.attr({
+                        points : shapePoints.x1+ ' ' +shapePoints.y1+ ', ' +shapePoints.x2+ ' ' +shapePoints.y2+ ', ' +shapePoints.x3+ ' ' +shapePoints.y3+ ', ' +shapePoints.x4+ ' ' +shapePoints.y4
+                    })
+                }});
             });// endeach()
 
             return tl;
