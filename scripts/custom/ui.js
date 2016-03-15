@@ -133,8 +133,8 @@ function populate_namespaces() {
                 tl.to($clipWrapper, duration, {width:origSize.width, height:origSize.height, ease:Strong.easeOut,onUpdate:function(){
                     //console.log();
                 }, onComplete:function($elem){
-                    $elem.css({position:''});
-                    $elem.unwrap();
+                    //$elem.css({position:''});
+                    //$elem.unwrap();
                 }, onCompleteParams:[$this]}, '+=.3');
             });// endeach()
 
