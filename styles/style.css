@@ -2884,7 +2884,7 @@ input {
   .episode-summary .shape-container {
     position: relative;
     width: 50%;
-    left: -5%;
+    left: 0;
     overflow: hidden; }
     .episode-summary .shape-container:before {
       content: '';
