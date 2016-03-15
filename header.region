@@ -53,7 +53,7 @@
     </script>
 
     <squarespace:query collection="episodes">
-        <script>var _episodes={@|json-pretty};console.log('all da episode data');</script>
+        <script>var _episodes={items|json-pretty};console.log('all da episode data', _episodes);</script>
     </squarespace:query>
 
 </head>

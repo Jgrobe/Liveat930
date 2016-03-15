@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="6ba77c59-895c-4b6c-8ed1-52220cbb39bd" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/sass/modules/nav-search-overlay.scss" afterPath="$PROJECT_DIR$/styles/sass/modules/nav-search-overlay.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/style.css" afterPath="$PROJECT_DIR$/styles/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/style.css.map" afterPath="$PROJECT_DIR$/styles/style.css.map" />
     </list>
     <ignored path="sqsp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -62,6 +59,16 @@
               </provider>
             </entry>
           </file>
+          <file leaf-file-name="header.region" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/header.region">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.6044625">
+                  <caret line="55" column="29" selection-start-line="55" selection-start-column="20" selection-end-line="55" selection-end-column="29" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
           <file leaf-file-name="navigation.block" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/blocks/navigation.block">
               <provider selected="true" editor-type-id="text-editor">
@@ -94,11 +101,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="nav-search-overlay.block" pinned="false" current-in-tab="true">
+          <file leaf-file-name="nav-search-overlay.block" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/blocks/nav-search-overlay.block">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.5172054">
-                  <caret line="53" column="175" selection-start-line="53" selection-start-column="175" selection-end-line="53" selection-end-column="175" />
+                <state vertical-scroll-proportion="-11.176471">
+                  <caret line="38" column="36" selection-start-line="38" selection-start-column="36" selection-end-line="38" selection-end-column="36" />
                   <folding>
                     <element signature="n#style#0;n#div#0;n#a#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
                   </folding>
@@ -122,18 +129,6 @@
                 <state vertical-scroll-proportion="-7.5185184">
                   <caret line="295" column="27" selection-start-line="295" selection-start-column="27" selection-end-line="295" selection-end-column="27" />
                   <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="page-host.block" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/blocks/page-host.block">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-13.54902">
-                  <caret line="67" column="22" selection-start-line="67" selection-start-column="22" selection-end-line="67" selection-end-column="22" />
-                  <folding>
-                    <element signature="n#style#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
-                  </folding>
                 </state>
               </provider>
             </entry>
@@ -252,7 +247,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/styles/sass/modules/devices.scss" />
         <option value="$PROJECT_DIR$/scripts/custom/ImageGallery.js" />
         <option value="$PROJECT_DIR$/styles/sass/pages/merch.scss" />
         <option value="$PROJECT_DIR$/styles/sass/overrides/product-detail.scss" />
@@ -303,6 +297,7 @@
         <option value="$PROJECT_DIR$/collections/blog.item" />
         <option value="$PROJECT_DIR$/blocks/nav-search-overlay.block" />
         <option value="$PROJECT_DIR$/styles/sass/modules/nav-search-overlay.scss" />
+        <option value="$PROJECT_DIR$/header.region" />
       </list>
     </option>
   </component>
@@ -678,7 +673,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-2556" y="23" width="2556" height="1417" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10019724" sideWeight="0.87205386" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32981133" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -687,7 +682,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32830188" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32830188" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21660377" sideWeight="0.49822485" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21660377" sideWeight="0.49822485" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.10019724" sideWeight="0.12794612" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -745,16 +740,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/blocks/module-clip-thumg.block">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.625">
-          <caret line="1" column="95" selection-start-line="1" selection-start-column="95" selection-end-line="1" selection-end-column="95" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/custom/SVGClipper.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1156,20 +1141,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/styles/sass/modules/nav-search-overlay.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5872211">
+          <caret line="187" column="19" selection-start-line="187" selection-start-column="19" selection-end-line="187" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/blocks/nav-search-overlay.block">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5172054">
-          <caret line="53" column="175" selection-start-line="53" selection-start-column="175" selection-end-line="53" selection-end-column="175" />
+        <state vertical-scroll-proportion="-11.176471">
+          <caret line="38" column="36" selection-start-line="38" selection-start-column="36" selection-end-line="38" selection-end-column="36" />
           <folding>
             <element signature="n#style#0;n#div#0;n#a#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/styles/sass/modules/nav-search-overlay.scss">
+    <entry file="file://$PROJECT_DIR$/header.region">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5872211">
-          <caret line="187" column="19" selection-start-line="187" selection-start-column="19" selection-end-line="187" selection-end-column="19" />
+        <state vertical-scroll-proportion="0.6044625">
+          <caret line="55" column="29" selection-start-line="55" selection-start-column="20" selection-end-line="55" selection-end-column="29" />
           <folding />
         </state>
       </provider>
