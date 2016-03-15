@@ -18,7 +18,7 @@
                     <div class="col col-right shortcuts">
 
                         <div class="quick-videos">
-                            <div class="video last-episode stagger-item episode-data-dummy" data-filter="categories=yippie">
+                            <div class="video last-episode stagger-item episode-data-dummy" data-filter="categories=current">
                                 <a class="data-fill" data-attr="fullUrl=href">
                                     <div class="img tv imgfill data-fill" data-attr="customContent.hero-fallback-image.assetUrl=data-bgimgurl">
                                         <div class="title">

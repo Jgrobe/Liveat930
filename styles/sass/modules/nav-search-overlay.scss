@@ -320,8 +320,9 @@ $rightColMargin: 10vw;
     //}
 
     &.teaser {
-      @include relative_units(margin-top, 110);
-      //.imgfill {background-color: magenta};
+      margin-bottom: get_relative_units(110);
+
+      &:last-child {margin-bottom: 0;}
     }
 
     .title {
