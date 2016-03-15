@@ -132,7 +132,7 @@ function populate_namespaces() {
             var clipHTML = '<svg style="width:0;height:0;"><defs><clipPath id="mask" clipPathUnits="objectBoundingBox"><polygon points=""></polygon></clipPath></defs></svg>';
             var duration = .4;
             var tl = new TimelineMax();
-            tl.to(jQuery('.page'),(duration*1.5), {autoAlpha:1, onComplete:function() {
+            tl.to(jQuery('.page'),duration, {autoAlpha:1, onComplete:function() {
                 //jQuery('body').removeClass('hidden');
             }});
 
@@ -165,7 +165,7 @@ function populate_namespaces() {
                         '-webkit-clip-path' : ''
                     });
                     $svg.remove();
-                }, onCompleteParams:[$this, $clipSVG]}, '-='+(duration *.2));
+                }, onCompleteParams:[$this, $clipSVG]}, '-='+(duration *.3));
 
 
                 //var origSize = {width: $this.width(), height:$this.height()};
