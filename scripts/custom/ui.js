@@ -111,7 +111,13 @@ function populate_namespaces() {
     SQSP.instances.Preloader = new Preloader({
         autoInit:false,// init after individual initPage so preloader fns can be hooked
         onStart:function(){
+            var clipHTML = '<svg style="width:0;height:0;"><defs><clipPath id="mask" clipPathUnits="objectBoundingBox"><polygon points="0 0, 1 0, 1 0, 0 0"></polygon></clipPath></defs></svg>';
             SQSP.$objects.preloaderClipables = jQuery('.onloadclip');
+
+            //SQSP.$objects.preloaderClipables.each(function(i){
+            //    var $this = jQuery(this);
+            //
+            //});
         },
         onComplete:function(e) {
 
@@ -122,26 +128,49 @@ function populate_namespaces() {
             }});
 
             SQSP.$objects.preloaderClipables.each(function(i) {
-                var $this = jQuery(this);
-                var origSize = {width: $this.width(), height:$this.height()};
-                console.log('--- preload origsize', origSize);
-                var wrapperID = 'clip-wrapper_'+ i;
-                $this.children().css({position:'absolute'}).wrap('<div id="'+ wrapperID +'" />');
-                var $clipWrapper = jQuery('#'+wrapperID);
-                $clipWrapper.css({
-                    position:'relative',
-                    overflow:'hidden',
-                    width:(i%2===0 ? origSize.width : 0),
-                    height:(i%2===0 ? 0 : origSize.height )
-                });
-                console.log('the clipwrapper', $clipWrapper);
-                tl.to($clipWrapper, duration, {width:origSize.width, height:origSize.height, ease:Strong.easeOut,onUpdate:function(){
-                    //console.log();8
-                }, onComplete:function($clipWrapper){
-                    $clipWrapper.children().css({
-                        position:''
-                    }).unwrap();
-                }, onCompleteParams:[$this]}, '-='+(duration *.3));
+
+                var $this = jQuery(this),
+                    $clipSVG = jQuery(clipHTML),
+                    maskID = 'mask_'+ i,
+                    polygonPoints = {x1:0,y1:0,x2:1,y2:0,x3:1,y3:0,x4:0,y4:0};
+
+                $clipSVG.find('#mask').attr({id : maskID });
+                $clipSVG.insertAfter($this);
+
+
+                tl.to(polygonPoints, duration, {y3:1, y4:1, onUpdate:function($polygon, $clipable, points, maskID){
+
+                    console.log('updateing polygon', points.y2);
+                    $polygon.attr({
+                        points : points.x1 +' '+ points.y1 +', '+ points.x2 +' '+ points.y2 +', '+ points.x3 +' '+ points.y3 +', '+ points.x4 +' '+ points.y4
+                    });
+                    $clipable.css({
+                        'overflow' : 'hidden',
+                        'clip-path' : 'url('+ maskID +')',
+                        '-webkit-clip-path' : (points.x1*100) +'%,'+ (points.y1*100) +'% '+ (points.x2*100) +'%,'+ (points.y2*100) +'% '+ (points.x3*100) +'%,'+ (points.y3*100) +'% '+ (points.x4*100) +'%, '+ (points.y4*100) + '%'
+                    });
+                }, onUpdateParams:[$clipSVG.find('polygon'), $this, polygonPoints, maskID]});
+
+
+                //var origSize = {width: $this.width(), height:$this.height()};
+                //console.log('--- preload origsize', origSize);
+                //var wrapperID = 'clip-wrapper_'+ i;
+                //$this.children().css({position:'absolute'}).wrap('<div id="'+ wrapperID +'" />');
+                //var $clipWrapper = jQuery('#'+wrapperID);
+                //$clipWrapper.css({
+                //    position:'relative',
+                //    overflow:'hidden',
+                //    width:(i%2===0 ? origSize.width : 0),
+                //    height:(i%2===0 ? 0 : origSize.height )
+                //});
+                //console.log('the clipwrapper', $clipWrapper);
+                //tl.to($clipWrapper, duration, {width:origSize.width, height:origSize.height, ease:Strong.easeOut,onUpdate:function(){
+                //    //console.log();8
+                //}, onComplete:function($clipWrapper){
+                //    $clipWrapper.children().css({
+                //        position:''
+                //    }).unwrap();
+                //}, onCompleteParams:[$this]}, '-='+(duration *.3));
             });// endeach()
 
             return tl;
