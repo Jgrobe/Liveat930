@@ -75,7 +75,7 @@ var Parallaxer = function ($elems, options) {
             var y = ( elemScrollTop - windowScrollTop - (window.innerHeight *.5) ) * amount;
 
             if($this.hasClass('prllx-scroll-depend')) {
-                var setzero = y - (windowScrollTop*amount);
+                var setzero = y - (-windowScrollTop*amount);
                 y -= setzero;
             }// dirty fix for landing parallaxers starting at 0 - relative to window scrolltop
             //console.log($this.offset().top, jQuery(window).scrollTop(), jQuery(window).height(), y);
