@@ -110,6 +110,9 @@ function populate_namespaces() {
 
     SQSP.instances.Preloader = new Preloader({
         autoInit:false,// init after individual initPage so preloader fns can be hooked
+        onStart:function(){
+            SQSP.$objects.preloaderClipables = jQuery('.onloadclip');
+        },
         onComplete:function(e) {
 
             var duration = .35;
