@@ -2,7 +2,7 @@
 
 .footer {
   position: relative;
-  padding: get_relative_units(230) 0;//15vh 0;
+  padding: 6vw;//get_relative_units(230) 0;//15vh 0;
   color: #fff;
   text-align: center;
   z-index: 1;
@@ -14,7 +14,7 @@
   background-attachment: fixed;
 
   p {
-    font-size: get_relative_units(28);//34
+    font-size: 9vw;//get_relative_units(28);//34
     line-height: get_relative_units(48);//48
     letter-spacing: .06em;
   }
@@ -144,7 +144,7 @@
 
   p {
     position: absolute;
-    top: 140%;
+    top: 100%;//140%;
     left: 10%;
     width: 80%;
   }
@@ -206,11 +206,11 @@
 }// .hosted-by-logo
 
 .footer-hosted-by {
-  padding: get_relative_units(300) 0 get_relative_units(200) 0;
+  padding: 6vw 0 4vw 0;
 
   .hosted-by-p {
 //    width: 45vw;
-    margin: 1.5vh auto 8vh;
+    margin: 0 auto 8vh;
     width: 35%;
 //    letter-spacing: 0.1vw;
 //    font-weight: 100;

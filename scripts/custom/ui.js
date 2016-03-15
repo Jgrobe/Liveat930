@@ -117,10 +117,11 @@ function populate_namespaces() {
             tl.to(jQuery('body'),(duration*1.5), {autoAlpha:1, onComplete:function() {
                 jQuery('body').removeClass('hidden');
             }});
+
             //$clipables.each(function(i) {
             //    var $this = jQuery(this);
             //
-            //    tl.to($this, duration, )
+            //    tl.to($this, duration, {});
             //});// endeach()
 
             return tl;
