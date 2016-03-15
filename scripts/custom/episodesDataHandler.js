@@ -38,7 +38,7 @@ function get_value_from_path(path, object) {
     console.log('start traversing path', path, object);
     console.log('current value', value);
 
-    if(path.length > 0) {
+    if(path.length > 1) {
         console.log('go deeper in path');
         var newObject  = value,
             newPath = path.shift();
@@ -55,10 +55,11 @@ function get_episode($dummy, episodes) {
     var episode, filtermatch = false;
 
     for(var i=0; i<episodes.length; i++) {
-        var episode = episodes[i];
+        episode = episodes[i];
         if(typeof episode[attr] === 'undefined') continue;
 
         for(var j=0; j<episode[attr].length; j++) {
+            console.log('comparing categories', episode[attr], val, episode[attr] === val );
             if(episode[attr] === val) filtermatch = true;
         }// endfor
 
