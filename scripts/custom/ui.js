@@ -131,8 +131,8 @@ function populate_namespaces() {
                 $clipWrapper.css({
                     position:'relative',
                     overflow:'hidden',
-                    width:0,
-                    height:0
+                    width:(i%2===0 ? origSize.width : 0),
+                    height:(i%2===0 ? 0 : origSize.height )
                 });
                 $this.css({
                     position:'absolute'
