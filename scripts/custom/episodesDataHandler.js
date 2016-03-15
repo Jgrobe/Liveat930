@@ -12,7 +12,7 @@ function episodesDataHandler() {
 
         $thisDummy.find('.data-fill').each(function(i){
             var $thisFill = jQuery(this);
-            fill_episode_data($thisFill, episode);
+            fill_episode_data($thisFill, requiredEpisode);
         });
     });
 
