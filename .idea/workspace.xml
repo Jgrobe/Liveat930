@@ -4,9 +4,6 @@
     <list default="true" id="6ba77c59-895c-4b6c-8ed1-52220cbb39bd" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/custom/ui.js" afterPath="$PROJECT_DIR$/scripts/custom/ui.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/sass/base/reset.scss" afterPath="$PROJECT_DIR$/styles/sass/base/reset.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/style.css" afterPath="$PROJECT_DIR$/styles/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/style.css.map" afterPath="$PROJECT_DIR$/styles/style.css.map" />
     </list>
     <ignored path="sqsp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -86,14 +83,9 @@
           <file leaf-file-name="ui.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/scripts/custom/ui.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.57326734">
-                  <caret line="147" column="46" selection-start-line="147" selection-start-column="46" selection-end-line="147" selection-end-column="46" />
-                  <folding>
-                    <marker date="1458060186000" expanded="true" signature="3858:3875" placeholder="..." />
-                    <marker date="1458060186000" expanded="true" signature="3876:3994" placeholder="..." />
-                    <marker date="1458060186000" expanded="true" signature="3876:4001" placeholder="..." />
-                    <marker date="1458060186000" expanded="true" signature="3882:3994" placeholder="..." />
-                  </folding>
+                <state vertical-scroll-proportion="0.2019802">
+                  <caret line="122" column="192" selection-start-line="122" selection-start-column="192" selection-end-line="122" selection-end-column="192" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -1166,14 +1158,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/custom/ui.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.57326734">
-          <caret line="147" column="46" selection-start-line="147" selection-start-column="46" selection-end-line="147" selection-end-column="46" />
-          <folding>
-            <marker date="1458060186000" expanded="true" signature="3858:3875" placeholder="..." />
-            <marker date="1458060186000" expanded="true" signature="3876:3994" placeholder="..." />
-            <marker date="1458060186000" expanded="true" signature="3876:4001" placeholder="..." />
-            <marker date="1458060186000" expanded="true" signature="3882:3994" placeholder="..." />
-          </folding>
+        <state vertical-scroll-proportion="0.2019802">
+          <caret line="122" column="192" selection-start-line="122" selection-start-column="192" selection-end-line="122" selection-end-column="192" />
+          <folding />
         </state>
       </provider>
     </entry>
