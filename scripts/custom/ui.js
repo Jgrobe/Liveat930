@@ -140,7 +140,7 @@ function populate_namespaces() {
 
                 tl.to(polygonPoints, duration, {y3:1, y4:1, onUpdate:function($polygon, $clipable, points, maskID){
 
-                    console.log('updateing polygon', points.y2);
+                    console.log('updateing polygon', points);
                     $polygon.attr({
                         points : points.x1 +' '+ points.y1 +', '+ points.x2 +' '+ points.y2 +', '+ points.x3 +' '+ points.y3 +', '+ points.x4 +' '+ points.y4
                     });
