@@ -127,7 +127,7 @@ function populate_namespaces() {
                 console.log('--- preload origsize', origSize);
                 var wrapperID = 'clip-wrapper_'+ i;
                 $this.wrap('<div id="'+ wrapperID +'" />');
-                var $clipWrapper = jQuery(wrapperID);
+                var $clipWrapper = jQuery('#'+wrapperID);
                 $clipWrapper.css({
                     position:'relative',
                     overflow:'hidden',
