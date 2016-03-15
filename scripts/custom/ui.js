@@ -117,7 +117,7 @@ function populate_namespaces() {
             SQSP.$objects.preloaderClipables.each(function(i) {
                 var $this = jQuery(this);
                 new SVGClipper($this, {
-                    shape:'circle',
+                    shape:'fullMask',
                     maskID: ('clipable_'+i)
                 });
             });// endeach()
