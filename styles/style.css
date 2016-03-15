@@ -34,10 +34,12 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block; }
 
+body, html {
+  background: black; }
+
 body {
   line-height: 1;
   -webkit-font-smoothing: antialiased; }
-  background:black
   body:after {
     content: 'desktop';
     display: none; }
@@ -112,11 +114,11 @@ svg {
 body {
   margin: 0;
   padding: 0;
-  font-family: "Gotham A", "Gotham B";
-  visibility: hidden;
-  opacity: 0; }
+  font-family: "Gotham A", "Gotham B"; }
 
 .page {
+  visibility: hidden;
+  opacity: 0;
   background: url("assets/images/paper-texture.jpg"); }
 
 .site-content, .upcoming {

@@ -28,10 +28,12 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
 }
+body, html {
+  background:black;
+}
 body {
   line-height: 1;
   -webkit-font-smoothing: antialiased;
-  background:black;
 
   &:after {
     content: 'desktop';
