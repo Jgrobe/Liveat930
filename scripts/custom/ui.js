@@ -126,7 +126,7 @@ function populate_namespaces() {
                 var origSize = {width: $this.width(), height:$this.height()};
                 console.log('--- preload origsize', origSize);
                 var wrapperID = 'clip-wrapper_'+ i;
-                $this.wrap('<div id="'+ wrapperID +'" />');
+                $this.children().css({position:'absolute'}).wrap('<div id="'+ wrapperID +'" />');
                 var $clipWrapper = jQuery('#'+wrapperID);
                 $clipWrapper.css({
                     position:'relative',
@@ -134,21 +134,13 @@ function populate_namespaces() {
                     width:(i%2===0 ? origSize.width : 0),
                     height:(i%2===0 ? 0 : origSize.height )
                 });
-                $this.css({
-                    position:'absolute',
-                    top:0,
-                    left:0
-                });
                 console.log('the clipwrapper', $clipWrapper);
                 tl.to($clipWrapper, duration, {width:origSize.width, height:origSize.height, ease:Strong.easeOut,onUpdate:function(){
                     //console.log();8
-                }, onComplete:function($elem){
-                    $elem.css({
-                        position:'',
-                        top:'',
-                        left:''
-                    });
-                    $elem.unwrap();
+                }, onComplete:function($clipWrapper){
+                    $clipWrapper.children().css({
+                        position:''
+                    }).unwrap();
                 }, onCompleteParams:[$this]}, '-='+(duration *.3));
             });// endeach()
 
