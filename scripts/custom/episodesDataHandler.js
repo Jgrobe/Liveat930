@@ -28,7 +28,7 @@ function fill_episode_data($elem, episode) {
 
         var value = get_value_from_path(dataPath, episode);
 
-        console.log('attr-value pair constructed', attr, value);
+        //console.log('attr-value pair constructed', attr, value);
 
         $elem.attr(attr, value);
 
@@ -58,16 +58,16 @@ function followUpDataConverter($elem) {
     }// endfor
 }// followUpDataConverter()
 
-function get_value_from_path(path, object) {
-    console.log('start traversing path', path, object);
+function get_value_from_path(path, object) {// iteration through episode data tree
+    //console.log('start traversing path', path, object);
     var value = object[path[0]];
-    console.log('current value', value);
+    //console.log('current value', value);
 
     if(path.length > 1) {
-        var newObject  = value;
+        //var newObject  = value;
         path.shift();
-        console.log('new path', path);
-        value = get_value_from_path(path, newObject);
+        //console.log('new path', path);
+        value = get_value_from_path(path, value);
     }// endif
 
     return value;
@@ -83,8 +83,9 @@ function get_episode($dummy, episodes) {
         if(typeof episode[attr] === 'undefined') continue;
 
         for(var j=0; j<episode[attr].length; j++) {
-            console.log('comparing categories', episode[attr], val, episode[attr] === val );
-            if(episode[attr] === val) filtermatch = true;
+            var cat = episode[attr][j];
+            console.log('comparing categories', cat, val, episode[attr] === val );
+            if(cat === val) filtermatch = true;
         }// endfor
 
         if(filtermatch) break;
@@ -103,7 +104,7 @@ function camelCase(input, divider) {
         return v;
     });
     output = output.join();
-    console.log('------camelCased', input, output);
+    //console.log('------camelCased', input, output);
 
     return output;
 }// camelCase
