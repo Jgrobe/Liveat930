@@ -127,7 +127,7 @@ function populate_namespaces() {
                 var $clipWrapper = jQuery('<div class="clip-wrapper" style="position:relative;overflow:hidden;" />');
                 $this.wrap($clipWrapper);
                 $this.css({
-                    position:absolute
+                    position:'absolute'
                 });
                 tl.to($this, duration, {width:origSize.width, height:origSize.height, ease:Strong.easeOut, onComplete:function($elem){
                     $elem.unwrap();
