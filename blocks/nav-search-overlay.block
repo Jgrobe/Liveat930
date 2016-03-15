@@ -51,7 +51,7 @@
                     <div class="col col-right share-col">
 
                         <div class="social-container">
-                            <div class="cta-dummy" data-attributes="href=https://www.instagram.com/liveat930/,target=_blank" data-class="square-btn instagram stagger-item">{@|apply svg-social-instagram.block}</div>
+                            <div class="cta-dummy" data-attributes="href=https://www.instagram.com/liveat930/,target=_blank" data-class="square-btn instagram stagger-item" data-icon="social-instagram">{@|apply svg-social-instagram.block}</div>
                             <a href="https://www.facebook.com/Liveat930/" target="_blank" class="square-btn facebook stagger-item">{@|apply svg-social-facebook.block}</a>
                             <a href="https://twitter.com/liveat930" target="_blank" class="square-btn twitter stagger-item">{@|apply svg-social-twitter.block}</a>
                             <div class="label stagger-item">Follow us for updates</div>
