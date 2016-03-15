@@ -23,7 +23,6 @@ var SVGClipper = function($container, options) {
     SC.shapes = {
         circle: {
             type: 'circle',
-            //type: 'path',
             gradientMaps: {
                 full: '#000000, #6d5e79',
                 shape: '#9f53e0, #d6b9db'
@@ -33,7 +32,6 @@ var SVGClipper = function($container, options) {
                 cy:.5,
                 r:.5
             }
-            //values : 'M-0.5,0a0.5,0.5 0 1,0 1,0a0.5,0.5 0 1,0 -1,0'
         },
         fullTriangle: {
             type : 'path',
@@ -238,17 +236,6 @@ var SVGClipper = function($container, options) {
             //        {x:.949, y:.812}
             //    ]
             //]
-        },
-        fullMask: {
-            type: 'polygon',
-            values: [
-                [
-                    {x:0, y:0},
-                    {x:1, y:0},
-                    {x:1, y:.1},
-                    {x:0, y:1}
-                ]
-            ]
         },
         star: {
             type : 'polygon',

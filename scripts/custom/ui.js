@@ -112,14 +112,18 @@ function populate_namespaces() {
         autoInit:false,// init after individual initPage so preloader fns can be hooked
         onStart:function(e){
 
+
             SQSP.$objects.preloaderClipables = jQuery('.onloadclip');
 
             SQSP.$objects.preloaderClipables.each(function(i) {
                 var $this = jQuery(this);
-                new SVGClipper($this, {
-                    shape:'fullMask',
-                    maskID: ('clipable_'+i)
+                var maskID = 'mask_'+ i;
+                var $mask = jQuery('<svg style="width:0;height:0;"><defs><clipPath id="'+ maskID +'"><polygon points="0 0, .5 0, 1 1, 0 1"/></clipPath></defs></svg>');
+                $this.css({
+                    'clip-path' : 'url(#' + maskID + ')',
+                    '-webkit-clip-path' : 'url(#' + maskID + ')'
                 });
+                $mask.insertAfter($this);
             });// endeach()
 
         },// onStart()
