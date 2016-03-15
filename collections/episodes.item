@@ -9,13 +9,13 @@
 
         <div class="landing-container">
 
-            <div class="landing-head prllx-custom" data-prllx=".18">
+            <div class="landing-head prllx-custom prllx-scroll-depend" data-prllx=".18">
                 <h1 class="l-headline">Episode No.{customContent.episode-number}</h1>
                 <div class="small">{addedOn|date %B %Y}</div>
                 <!--<a href="#" class="cta-play-episode">Watch now</a>-->
             </div><!-- .landing-head -->
-            <div class="cta-dummy" data-label="{.equal?:categories.0:"upcoming"}Play trailer{.or}Play full episode{.end}" data-icon="play" data-class="prllx-custom" data-attributes="id=cta-play-episode,href=#,data-prllx=.075">{@|apply svg-icon-play.block}</div>
-            <div class="text-layer prllx-custom" data-prllx=".12">
+            <div class="cta-dummy" data-label="{.equal?:categories.0:"upcoming"}Play trailer{.or}Play full episode{.end}" data-icon="play" data-class="prllx-custom prllx-scroll-depend" data-attributes="id=cta-play-episode,href=#,data-prllx=.075">{@|apply svg-icon-play.block}</div>
+            <div class="text-layer prllx-custom prllx-scroll-depend" data-prllx=".12">
                 {body}
                 {@|apply module-share-episode.block}
             </div><!-- .episodes-landing-sub -->

@@ -59,6 +59,10 @@ var Parallaxer = function ($elems, options) {
             TweenMax.set(P.$object.elems, {clearProps:'y'});
             return false;
         }// endif;
+
+        var elemScrollTop = $this.offset().top;
+        var windowScrollTop = jQuery(window).scrollTop();
+
         P.$object.elems.each(function(i) {
             var $this = jQuery(this);
             if(!$this.hasClass(P.options.enabledClass)) return true;
@@ -66,7 +70,10 @@ var Parallaxer = function ($elems, options) {
             var amount = P.options.customAmount ? P.options.customAmount({
                 $elem: $this
             }) : P.options.amount;
-            var y = ( $this.offset().top - jQuery(window).scrollTop() - jQuery(window).height() *.5 ) * amount;
+
+            var y = ( elemScrollTop - windowScrollTop - (window.innerHeight *.5) ) * amount;
+
+            if($this.hasClass('prllx-scroll-depend')) y *= -windowScrollTop;
             //console.log($this.offset().top, jQuery(window).scrollTop(), jQuery(window).height(), y);
             //console.log('prllx y',y);
             TweenMax.to($this,.2, {y:y});
