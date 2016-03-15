@@ -147,7 +147,7 @@ function populate_namespaces() {
                     });
                     $this.css({
                         'overflow' : 'hidden',
-                        'clip-path' : 'url('+ maskID +')',
+                        'clip-path' : 'url(#'+ maskID +')',
                         '-webkit-clip-path' : 'polygon('+ (polygonPoints.x1*100) +'% '+ (polygonPoints.y1*100) +'%, '+ (polygonPoints.x2*100) +'% '+ (polygonPoints.y2*100) +'%, '+ (polygonPoints.x3*100) +'% '+ (polygonPoints.y3*100) +'%, '+ (polygonPoints.x4*100) +'% '+ (polygonPoints.y4*100) + '%)'
                         //'-webkit-clip-path' : 'polygon(% %, % %, % %, %, %)'
                     });
