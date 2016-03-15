@@ -11,10 +11,16 @@ function episodesDataHandler() {
 
         var requiredEpisode = get_episode($thisDummy, _episodes);
 
-        $thisDummy.find('.data-fill').each(function(i){
-            var $thisFill = jQuery(this);
-            fill_episode_data($thisFill, requiredEpisode);
-        });
+        if(!requiredEpisode) {
+            $thisDummy.css({display:'none'});
+        } else {
+
+            $thisDummy.find('.data-fill').each(function(i){
+                var $thisFill = jQuery(this);
+                fill_episode_data($thisFill, requiredEpisode);
+            });
+        }
+
     });
 
 }// episodesHandler
@@ -76,19 +82,22 @@ function get_value_from_path(path, object) {// iteration through episode data tr
 function get_episode($dummy, episodes) {
     var filter = $dummy.data('filter').split('=');
     var attr = filter[0], val = filter[1];
-    var episode, filtermatch = false;
+    var episode = false, filtermatch = false;
 
     for(var i=0; i<episodes.length; i++) {
-        episode = episodes[i];
-        if(typeof episode[attr] === 'undefined') continue;
+        var thisEp = episodes[i];
+        if(typeof thisEp[attr] === 'undefined') continue;
 
-        for(var j=0; j<episode[attr].length; j++) {
-            var cat = episode[attr][j];
-            console.log('comparing categories', cat, val, episode[attr] === val );
+        for(var j=0; j<thisEp[attr].length; j++) {
+            var cat = thisEp[attr][j];
+            //console.log('comparing categories', cat, val, thisEp[attr] === val );
             if(cat === val) filtermatch = true;
         }// endfor
 
-        if(filtermatch) break;
+        if(filtermatch) {
+            episode = thisEp;
+            break;
+        }
     }// endfor
 
     console.log('episode found', episode);

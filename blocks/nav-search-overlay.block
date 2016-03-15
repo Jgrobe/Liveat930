@@ -21,7 +21,6 @@
                             <div class="video last-episode stagger-item episode-data-dummy" data-filter="categories=current">
                                 <a class="data-fill" data-attr="fullUrl=href">
                                     <div class="img tv imgfill data-fill" data-attr="customContent.hero-fallback-image.assetUrl=data-bgimgurl">
-                                        <!--<video src="https://player.vimeo.com/external/157569044.sd.mp4?s=f8ff21f7c20844cdc6d5a187ab4644e078550fbe&profile_id=164"></video>-->
                                         <div class="title">
                                             <!--<span>{@|apply svg-icon-play.block}</span>-->
                                         </div><!-- .title -->
@@ -32,7 +31,6 @@
                             <div class="video teaser stagger-item episode-data-dummy" data-filter="categories=upcoming">
                                 <a class="data-fill" data-attr="fullUrl=href">
                                     <div class="img tv imgfill data-fill" data-attr="customContent.hero-fallback-image.assetUrl=data-bgimgurl">
-                                        <video src="https://player.vimeo.com/external/157569046.sd.mp4?s=cc05df059f14a6802b1a96e78f0a82788b6a1290&profile_id=164"></video>
                                         <!--<div class="title">Airs next friday @ 9:30 on WGWN</div>-->
                                     </div><!-- .img.tv -->
                                     <div class="label">EP.<span class="data-fill" data-attr="customContent.episode-number=data-html"></span> Sneak Peek</div>
