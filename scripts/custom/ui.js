@@ -124,12 +124,15 @@ function populate_namespaces() {
             SQSP.$objects.preloaderClipables.each(function(i) {
                 var $this = jQuery(this);
                 var origSize = {width: $this.css('width'), height:$this.css('height')};
+                console.log('--- preload origsize', origSize);
                 var $clipWrapper = jQuery('<div class="clip-wrapper" style="position:relative;overflow:hidden;" />');
                 $this.wrap($clipWrapper);
                 $this.css({
                     position:'absolute'
                 });
-                tl.to($this, duration, {width:origSize.width, height:origSize.height, ease:Strong.easeOut, onComplete:function($elem){
+                tl.to($this, duration, {width:origSize.width, height:origSize.height, ease:Strong.easeOut,onUpdate:function(){
+                    console.log();
+                }, onComplete:function($elem){
                     $elem.unwrap();
                 }, onCompleteParams:[$this]}, '+=.3');
             });// endeach()
