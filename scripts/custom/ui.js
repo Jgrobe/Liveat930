@@ -110,25 +110,33 @@ function populate_namespaces() {
 
     SQSP.instances.Preloader = new Preloader({
         autoInit:false,// init after individual initPage so preloader fns can be hooked
+        onStart:function(e){
+
+            SQSP.$objects.preloaderClipables = jQuery('.onloadclip');
+
+            SQSP.$objects.preloaderClipables.each(function(i) {
+                var $this = jQuery(this);
+                new SVGClipper($this, {
+                    shape:'circle'
+                });
+            });// endeach()
+
+        },// onStart()
         onComplete:function(e) {
-            var $clipables = jQuery('.onloadclip');
+
             var duration = .35;
             var tl = new TimelineMax();
             tl.to(jQuery('body'),(duration*1.5), {autoAlpha:1, onComplete:function() {
                 jQuery('body').removeClass('hidden');
             }});
 
-            $clipables.each(function(i) {
+            SQSP.$objects.preloaderClipables.each(function(i) {
                 var $this = jQuery(this);
-                new SVGClipper($this, {
-                    shape:'circle'
-                });
-
                 tl.to($this, duration, {});
             });// endeach()
 
             return tl;
-        }
+        }// onComplete()
     });
 
     SQSP.$objects.window = jQuery(window);

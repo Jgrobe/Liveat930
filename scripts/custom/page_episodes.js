@@ -37,6 +37,6 @@ SQSP.functions.initPage = function() {
             }
         }) );
 
-    });
+    });// endeach() posterItems
 
-};
+};// initPage
