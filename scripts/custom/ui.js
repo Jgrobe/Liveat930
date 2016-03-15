@@ -115,7 +115,7 @@ function populate_namespaces() {
         },
         onComplete:function(e) {
 
-            var duration = .5;
+            var duration = 1.85;
             var tl = new TimelineMax();
             tl.to(jQuery('body'),(duration*1.5), {autoAlpha:1, onComplete:function() {
                 jQuery('body').removeClass('hidden');
