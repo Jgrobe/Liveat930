@@ -6,7 +6,7 @@
             {.end}
         </div>
     </div>
-    <h1 class="l-headline">{item.title}</h1>
+    <h1 class="l-headline prllx-custom prllx-scroll-depend" data-prllx=".12">{item.title}</h1>
     <!--<a href="javascript:history.back();" class="post-landing-cta icon-arrow-reverse">{item.customContent.ctaLabel}</a>-->
     {.section item}
         {@|apply module-share-this.block}

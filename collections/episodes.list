@@ -19,11 +19,11 @@
 
                 <div class="landing-container">
 
-                    <div class="landing-head prllx-custom" data-prllx=".18">
+                    <div class="landing-head prllx-custom prllx-scroll-depend" data-prllx=".18">
                         <div class="small">Latest Show</div>
                         <h1 class="l-headline">Episode No.{customContent.episode-number}</h1>
                     </div>
-                    <div class="landing-extra prllx-custom" data-prllx=".12">
+                    <div class="landing-extra prllx-custom prllx-scroll-depend" data-prllx=".12">
                         <p id="lineup_preview" data-artists="{customContent.featured-artists}">
                             <span>with</span>
                         </p>
@@ -34,7 +34,7 @@
                         </script>
                     </div><!-- .episodes-landing-sub -->
 
-                    <div class="cta-dummy" data-icon="eye" data-label="Watch episode no. {customContent.episode-number}, {addedOn|date %b %Y}" data-class="prllx-custom" data-attributes="href={fullUrl},data-prllx=.075">{@|apply svg-icon-eye.block}</div>
+                    <div class="cta-dummy" data-icon="eye" data-label="Watch episode no. {customContent.episode-number}, {addedOn|date %b %Y}" data-class="prllx-custom prllx-scroll-depend" data-attributes="href={fullUrl},data-prllx=.075">{@|apply svg-icon-eye.block}</div>
 
                 </div><!-- .landing-container -->
             </section>

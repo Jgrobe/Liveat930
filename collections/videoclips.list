@@ -5,9 +5,9 @@
         </div>
 
         <div class="landing-container">
-            <div class="rectangle prllx-custom" data-prllx=".075"></div>
-            <h1 class="l-headline prllx-custom" data-prllx=".18">{title}</h1>
-            <div class="prllx-custom" data-prllx=".18">
+            <div class="rectangle prllx-custom prllx-scroll-depend" data-prllx=".075"></div>
+            <h1 class="l-headline prllx-custom prllx-scroll-depend" data-prllx=".18">{title}</h1>
+            <div class="prllx-custom prllx-scroll-depend" data-prllx=".18">
                 <div class="video-overview-filter-headline s-headline">Browse & Filter</div>
                 {.if categories}
                 <ul class="video-overview-filter">
