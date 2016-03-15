@@ -120,7 +120,7 @@ function populate_namespaces() {
         },
         onComplete:function(e) {
 
-            var clipHTML = '<svg style="width:0;height:0;"><defs><clipPath id="mask" clipPathUnits="objectBoundingBox"><polygon points="0 0, 1 0, 1 0, 0 0"></polygon></clipPath></defs></svg>';
+            var clipHTML = '<svg style="width:0;height:0;"><defs><clipPath id="mask" clipPathUnits="objectBoundingBox"><polygon polygonPoints="0 0, 1 0, 1 0, 0 0"></polygon></clipPath></defs></svg>';
             var duration = 1.85;
             var tl = new TimelineMax();
             tl.to(jQuery('body'),(duration*1.5), {autoAlpha:1, onComplete:function() {
@@ -136,20 +136,21 @@ function populate_namespaces() {
 
                 $clipSVG.find('#mask').attr({id : maskID });
                 $clipSVG.insertAfter($this);
+                var $polygon = $clipSVG.find('polygon');
 
 
-                tl.to(polygonPoints, duration, {y3:1, y4:1, onUpdate:function($polygon, $clipable, points, maskID){
+                tl.to(polygonPoints, duration, {y3:1, y4:1, onUpdate:function(){
 
-                    console.log('updateing polygon', points);
+                    console.log('updateing polygon', polygonPoints.y3);
                     $polygon.attr({
-                        points : points.x1 +' '+ points.y1 +', '+ points.x2 +' '+ points.y2 +', '+ points.x3 +' '+ points.y3 +', '+ points.x4 +' '+ points.y4
+                        polygonPoints : polygonPoints.x1 +' '+ polygonPoints.y1 +', '+ polygonPoints.x2 +' '+ polygonPoints.y2 +', '+ polygonPoints.x3 +' '+ polygonPoints.y3 +', '+ polygonPoints.x4 +' '+ polygonPoints.y4
                     });
-                    $clipable.css({
+                    $this.css({
                         'overflow' : 'hidden',
                         'clip-path' : 'url('+ maskID +')',
-                        '-webkit-clip-path' : 'polygon('+ (points.x1*100) +'% '+ (points.y1*100) +'%, '+ (points.x2*100) +'% '+ (points.y2*100) +'%, '+ (points.x3*100) +'% '+ (points.y3*100) +'%, '+ (points.x4*100) +'%, '+ (points.y4*100) + '%)'
+                        '-webkit-clip-path' : 'polygon('+ (polygonPoints.x1*100) +'% '+ (polygonPoints.y1*100) +'%, '+ (polygonPoints.x2*100) +'% '+ (polygonPoints.y2*100) +'%, '+ (polygonPoints.x3*100) +'% '+ (polygonPoints.y3*100) +'%, '+ (polygonPoints.x4*100) +'%, '+ (polygonPoints.y4*100) + '%)'
                     });
-                }, onUpdateParams:[$clipSVG.find('polygon'), $this, polygonPoints, maskID]});
+                }});
 
 
                 //var origSize = {width: $this.width(), height:$this.height()};
