@@ -30,8 +30,30 @@ function fill_episode_data($elem, episode) {
         console.log('attr-value pair constructed', attr, value);
 
         $elem.attr(attr, value);
+
+        if(i >= attrs.length-1) $elem.removeAttr('data-attr');
+
+        followUpDataConverter($elem);
     }// endfor
+
 }// fill_episode_data()
+
+function followUpDataConverter($elem) {
+    var data = $elem.data();
+
+    for(var attr in data) {
+        switch(attr) {
+            case 'html' :
+                $elem.html(data[attr]);
+                break;
+            case 'bgimgurl' :
+                $elem.css({
+                    'background-image' : 'url(\'' + data[attr] + '\')'
+                });
+                break;
+        }// endswitch
+    }// endfor
+}// followUpDataConverter()
 
 function get_value_from_path(path, object) {
     console.log('start traversing path', path, object);
