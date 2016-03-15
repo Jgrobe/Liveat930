@@ -51,9 +51,9 @@
                     <div class="col col-right share-col">
 
                         <div class="social-container">
-                            <div class="cta-dummy" data-attributes="href=https://www.instagram.com/liveat930/,target=_blank" data-class="square-btn instagram stagger-item negative" data-icon="social-instagram">{@|apply svg-social-instagram.block}</div>
-                            <a href="https://www.facebook.com/Liveat930/" target="_blank" class="square-btn facebook stagger-item">{@|apply svg-social-facebook.block}</a>
-                            <a href="https://twitter.com/liveat930" target="_blank" class="square-btn twitter stagger-item">{@|apply svg-social-twitter.block}</a>
+                            <div class="cta-dummy" data-attributes="href=https://www.instagram.com/liveat930/,target=_blank" data-class="instagram stagger-item negative" data-icon="social-instagram">{@|apply svg-social-instagram.block}</div>
+                            <div class="cta-dummy" data-attributes="href=https://www.facebook.com/Liveat930/,target=_blank" data-class="square-btn facebook stagger-item" data-icon="social-facebook">{@|apply svg-social-facebook.block}</div>
+                            <div class="cta-dummy" data-attributes="href=https://twitterdiv.com/liveat930,target=_blank" data-class="square-btn twitter stagger-item" data-icon="social-twitter">{@|apply svg-social-twitter.block}</div>
                             <div class="label stagger-item">Follow us for updates</div>
                         </div><!-- .social-container -->
 
