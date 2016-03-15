@@ -130,7 +130,7 @@ function populate_namespaces() {
                 $this.css({
                     position:'absolute'
                 });
-                tl.to($clipWrapper, duration, {width:origSize.width, height:origSize.height, ease:Strong.easeOut,onUpdate:function(){
+                tl.fromTo($clipWrapper, duration, {width:0, height:0}, {width:origSize.width, height:origSize.height, ease:Strong.easeOut,onUpdate:function(){
                     //console.log();
                 }, onComplete:function($elem){
                     //$elem.css({position:''});
