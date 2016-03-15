@@ -118,11 +118,14 @@ function populate_namespaces() {
                 jQuery('body').removeClass('hidden');
             }});
 
-            //$clipables.each(function(i) {
-            //    var $this = jQuery(this);
-            //
-            //    tl.to($this, duration, {});
-            //});// endeach()
+            $clipables.each(function(i) {
+                var $this = jQuery(this);
+                new SVGClipper($this, {
+                    shape:'circle'
+                });
+
+                tl.to($this, duration, {});
+            });// endeach()
 
             return tl;
         }
