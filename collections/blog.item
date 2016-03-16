@@ -2,7 +2,7 @@
     <div class="fill-parent mask">
         <div class="landing-bg" style="background-image:url('{item.customContent.hero-image}');">
             {.if item.customContent.hero-video}
-                <video src="{item.customContent.hero-video}" muted autoplay class="loop"></video>
+                <video data-src="{item.customContent.hero-video}" muted autoplay class="loop"></video>
             {.end}
         </div>
     </div>

@@ -83,7 +83,7 @@ function init_sqsp() {
         //    });
         }// endif
 
-        vid.src = $thisVid.data('src');
+        if($thisVid.hasAttr('data-src')) vid.src = $thisVid.data('src');
 
     });// endeach()
 
