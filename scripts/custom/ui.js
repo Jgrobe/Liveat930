@@ -62,7 +62,6 @@ function init_sqsp() {
     jQuery('video').each(function(i,elem) {
         var vid = this;
         var $thisVid = jQuery(vid);
-        TweenMax.set(vid,{autoAlpha:0});
 
         vid.addEventListener('loadeddata', function(e) {
             console.log('-------------------------------------- video loaded -> size em');
@@ -83,7 +82,10 @@ function init_sqsp() {
         //    });
         }// endif
 
-        if($thisVid.hasAttr('data-src')) vid.src = $thisVid.data('src');
+        if($thisVid.hasAttr('data-src')) {// is no video.js instance
+            TweenMax.set(vid,{autoAlpha:0});
+            vid.src = $thisVid.data('src');
+        }
 
     });// endeach()
 
