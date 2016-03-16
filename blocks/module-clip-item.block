@@ -1,10 +1,10 @@
-<div id="{id}" class="video{.repeated section categories} {@|slugify}{.end}">
+<a id="{id}" href="{fullUrl}" class="video{.repeated section categories} {@|slugify}{.end} switch">
     <div class="image">
         {@|apply module-clip-thumb.block}
         <!--<div class="fill-parent imgfill hover-thumb" style="background-image:url('{assetUrl}');"></div>-->
-        <div class="cta-dummy" data-icon="eye" data-class="negative play switch" data-attributes="href={fullUrl}">{@|apply svg-icon-eye.block}</div>
+        <div class="cta-dummy" data-tag="div" data-icon="eye" data-class="negative play">{@|apply svg-icon-eye.block}</div>
     </div>
     <div class="flex-cols">
         <div class="title">{.if customContent.subtitle}{customContent.subtitle} • {.end}{title}</div>
     </div><!-- .flex-cols -->
-</div><!-- .video -->
+</a><!-- .video -->

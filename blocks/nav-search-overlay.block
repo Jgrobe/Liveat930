@@ -19,7 +19,7 @@
 
                         <div class="quick-videos">
                             <div class="video last-episode stagger-item episode-data-dummy" data-filter="categories=current">
-                                <a class="data-fill" data-attr="fullUrl=href">
+                                <a class="data-fill switch" data-attr="fullUrl=href">
                                     <div class="img tv">
                                         <div class="fill-parent imgfill data-fill" data-attr="assetUrl=data-bgimgurl"></div>
                                     </div><!-- .img.tv -->
@@ -27,7 +27,7 @@
                                 </a>
                             </div><!-- .video.last-episode -->
                             <div class="video teaser stagger-item episode-data-dummy" data-filter="categories=upcoming">
-                                <a class="data-fill" data-attr="fullUrl=href">
+                                <a class="data-fill switch" data-attr="fullUrl=href">
                                     <div class="img tv">
                                         <div class="fill-parent imgfill data-fill" data-attr="assetUrl=data-bgimgurl"></div>
                                     </div><!-- .img.tv -->

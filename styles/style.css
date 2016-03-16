@@ -4172,6 +4172,7 @@ input {
     width: 94%;
     height: 103%; }
   .video-gallery .video {
+    display: inline-block;
     cursor: pointer;
     display: none; }
     .video-gallery .video.small, .video-gallery .video.medium, .video-gallery .video.large {
