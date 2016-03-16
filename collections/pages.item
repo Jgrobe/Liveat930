@@ -89,7 +89,7 @@
                 <squarespace:query collection="products" limit="1">
                     <div class="video">
                         <div class="image">
-                            {.section items.0}{@|apply module-clip-thumg.block}{.end}
+                            {.section items.0}{@|apply module-clip-thumb.block}{.end}
                             <div class="cta-dummy" data-icon="icon-arrow" data-class="negative play goto" data-attributes="href={collection.fullUrl}">{@|apply svg-icon-arrow.block}</div>
                             <!--php print_cta(array(
                             'icon' => 'images/icon-arrow',
@@ -106,7 +106,7 @@
                 <squarespace:query collection="blog" limit="1">
                     <div class="video">
                         <div class="image">
-                            {.section items.0}{@|apply module-clip-thumg.block}{.end}
+                            {.section items.0}{@|apply module-clip-thumb.block}{.end}
                             <div class="cta-dummy" data-icon="icon-arrow" data-class="negative play goto" data-attributes="href={.section items.0}{fullUrl}{.end}">{@|apply svg-icon-arrow.block}</div>
                             <!--php print_cta(array(
                             'icon' => 'images/icon-arrow',
@@ -123,7 +123,7 @@
                 <squarespace:query collection="clips" limit="1">
                     <div class="video">
                         <div class="image">
-                            {.section items.0}{@|apply module-clip-thumg.block}{.end}
+                            {.section items.0}{@|apply module-clip-thumb.block}{.end}
                             <div class="cta-dummy" data-icon="icon-arrow" data-class="negative play goto" data-attributes="href={collection.fullUrl}">{@|apply svg-icon-arrow.block}</div>
                             <!--php print_cta(array(
                             'icon' => 'images/icon-arrow',

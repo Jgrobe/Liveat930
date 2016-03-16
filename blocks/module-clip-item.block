@@ -1,6 +1,6 @@
 <div id="{id}" class="video{.repeated section categories} {@|slugify}{.end}">
     <div class="image">
-        {@|apply module-clip-thumg.block}
+        {@|apply module-clip-thumb.block}
         <!--<div class="fill-parent imgfill hover-thumb" style="background-image:url('{assetUrl}');"></div>-->
         <div class="cta-dummy" data-icon="eye" data-class="negative play" data-attributes="href={fullUrl}">{@|apply svg-icon-eye.block}</div>
     </div>
