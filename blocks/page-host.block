@@ -18,7 +18,7 @@
         </div>
         <div class="text-layer prllx-custom prllx-scroll-depend onloadclip" data-prllx=".12">
             {item.body}
-            <div class="cta-dummy" data-label="{item.customContent.hero-cta-label}" data-icon="browser" data-class="upsized-icon" data-attributes="href={item.customContent.hero-cta-url},target=_blank">{@|apply svg-icon-browser.block}</div>
+            <div class="cta-dummy" data-label="{item.customContent.hero-cta-label}" data-icon="browser" data-class="upsized-icon onloadclip" data-attributes="href={item.customContent.hero-cta-url},target=_blank">{@|apply svg-icon-browser.block}</div>
         </div>
     </div>
 </section>
