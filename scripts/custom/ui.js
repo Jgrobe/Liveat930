@@ -61,17 +61,16 @@ function init_sqsp() {
 
     jQuery('video').each(function(i,elem) {
         var vid = this;
-        //var $thisVid = jQuery(vid);
-
-        TweenMax.set(vid, {autoAlpha:0});
-    });
+        var $thisVid = jQuery(vid);
+        TweenMax.set(vid,{autoAlpha:0});
 
         vid.addEventListener('loadeddata', function(e) {
             console.log('-------------------------------------- video loaded -> size em');
             size_video();
             scrollMonitor.recalculateLocations();// needed on homepage so first video in viewport starts playing on load
-            TweenMax.to(e.target,.35, {autoAlpha:1});
+            TweenMax.to(e.target,.35,{autoAlpha:1});
         });
+
         if($thisVid.hasClass('loop')) {
             SQSP.vars.loopvids.push(vid);
         //    vid.addEventListener('timeupdate', function(e) {
@@ -83,7 +82,8 @@ function init_sqsp() {
         //        }
         //    });
         }// endif
-    });
+
+    });// endeach()
 
     //console.log('SQSP.vars.loopvids.length', SQSP.vars.loopvids.length);
     checkVideoloop();
