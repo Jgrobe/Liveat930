@@ -15,7 +15,7 @@
                 <div class="small onloadclip">{addedOn|date %B %Y}</div>
                 <!--<a href="#" class="cta-play-episode">Watch now</a>-->
             </div><!-- .landing-head -->
-            <div class="cta-dummy" data-label="{.equal?:categories.0:"upcoming"}Play trailer{.or}Play full episode{.end}" data-icon="play" data-class="prllx-custom prllx-scroll-depend onloadclip" data-attributes="id=cta-play-episode,href=#,data-prllx=.075">{@|apply svg-icon-play.block}</div>
+            <div class="cta-dummy" data-label="{.if customContent.isFullEpisode}Play full episode{.or}Play trailer{.end}" data-icon="play" data-class="prllx-custom prllx-scroll-depend onloadclip" data-attributes="id=cta-play-episode,href=#,data-prllx=.075">{@|apply svg-icon-play.block}</div>
             <div class="text-layer prllx-custom prllx-scroll-depend onloadclip" data-prllx=".12">
                 {body}
                 {@|apply module-share-episode.block}
@@ -170,7 +170,7 @@
     {.end}<!-- .end.equal -->
 
     <div id="episode-player" class="video-overlay">
-        <video id="full_episode_video" src="{.equal?:categories.0:"upcoming"}{customContent.upcoming-trailer}{.or}{customContent.full-episode}{.end}" data-setup="{}" controls class="video-js fill-parent"></video>
+        <video id="full_episode_video" src="{.if customContent.isFullEpisode}{customContent.full-episode}{.or}{customContent.upcoming-trailer}{.end}" data-setup="{}" controls class="video-js fill-parent"></video>
 
         <div class="close-overlay">
             <p>Close</p>
