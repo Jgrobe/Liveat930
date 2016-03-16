@@ -101,8 +101,8 @@ input[type=submit], button { cursor: pointer; }
 
 video {
   position: relative;
-  @include autoAlpha(0);
-  @include prefixed(transition, (opacity $shortTrans, visibility $shortTrans));
+  //@include autoAlpha(0);
+  //@include prefixed(transition, (opacity $shortTrans, visibility $shortTrans));
 
   @include breakpoint(mobile) {
     display: none;

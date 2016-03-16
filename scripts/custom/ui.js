@@ -61,16 +61,16 @@ function init_sqsp() {
 
     jQuery('video').each(function(i,elem) {
         var vid = this;
-        var $thisVid = jQuery(vid);
+        //var $thisVid = jQuery(vid);
 
-        vid.addEventListener('loadeddata', function() {
+        TweenMax.set(vid, {autoAlpha:0});
+    });
+
+        vid.addEventListener('loadeddata', function(e) {
             console.log('-------------------------------------- video loaded -> size em');
             size_video();
             scrollMonitor.recalculateLocations();// needed on homepage so first video in viewport starts playing on load
-            $thisVid.css({
-                opacity:1,
-                visibility: 'visible'
-            });
+            TweenMax.to(e.target,.35, {autoAlpha:1});
         });
         if($thisVid.hasClass('loop')) {
             SQSP.vars.loopvids.push(vid);

@@ -93,14 +93,7 @@ input[type=submit], button {
   cursor: pointer; }
 
 video {
-  position: relative;
-  visibility: hidden;
-  opacity: 0;
-  -webkit-transition: opacity 0.3s, visibility 0.3s;
-  -moz-transition: opacity 0.3s, visibility 0.3s;
-  -ms-transition: opacity 0.3s, visibility 0.3s;
-  -o-transition: opacity 0.3s, visibility 0.3s;
-  transition: opacity 0.3s, visibility 0.3s; }
+  position: relative; }
   @media only screen and (max-width: 750px) {
     video {
       display: none; } }
