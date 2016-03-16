@@ -149,7 +149,6 @@ $gridGutter: 5%;
   }
 
   .video {
-    display:inline-block;
     //margin-top: 4vw;
     cursor: pointer;
     display: none;// needed so invisible items take no space in grid
@@ -420,8 +419,10 @@ $gridGutter: 5%;
   position: relative;
 }
 
-
-//.video {
+.video {
+  &.video-item {
+    display:inline-block;
+  }
 //
 //  &:before {
 //    content: '';
@@ -462,4 +463,4 @@ $gridGutter: 5%;
 //      @include transform(none);
 //    }
 //  }
-//}// .video
+}// .video

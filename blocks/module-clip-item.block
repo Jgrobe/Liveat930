@@ -1,4 +1,4 @@
-<a id="{id}" href="{fullUrl}" class="video{.repeated section categories} {@|slugify}{.end} switch">
+<a id="{id}" href="{fullUrl}" class="video video-item{.repeated section categories} {@|slugify}{.end} switch">
     <div class="image">
         {@|apply module-clip-thumb.block}
         <!--<div class="fill-parent imgfill hover-thumb" style="background-image:url('{assetUrl}');"></div>-->
