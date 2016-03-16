@@ -62,7 +62,7 @@ SQSP.functions.initPage = function() {
 };// initPage
 
 jQuery(window).load(function(){
-    console.log('VJS?', Video('full_episode_video'));
+    console.log('VJS?', _V_('full_episode_video'));
 });
 
 function openPlayer($overlay) {
