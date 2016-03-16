@@ -110,15 +110,9 @@ function populate_namespaces() {
 
     SQSP.instances.Preloader = new Preloader({
         autoInit:false,// init after individual initPage so preloader fns can be hooked
-        onStart:function(){
+        onStart:function() {
             TweenMax.set(jQuery('.page'), {autoAlpha:0});
             SQSP.$objects.preloaderClipables = jQuery('.onloadclip');
-
-
-            SQSP.$objects.preloaderClipables.each(function(i){
-                var $this = jQuery(this);
-
-            });
         },
         onComplete:function(e) {
 
@@ -167,26 +161,6 @@ function populate_namespaces() {
                     $svg.remove();
                 }, onCompleteParams:[$this, $clipSVG]}, '-='+(duration *.3));
 
-
-                //var origSize = {width: $this.width(), height:$this.height()};
-                //console.log('--- preload origsize', origSize);
-                //var wrapperID = 'clip-wrapper_'+ i;
-                //$this.children().css({position:'absolute'}).wrap('<div id="'+ wrapperID +'" />');
-                //var $clipWrapper = jQuery('#'+wrapperID);
-                //$clipWrapper.css({
-                //    position:'relative',
-                //    overflow:'hidden',
-                //    width:(i%2===0 ? origSize.width : 0),
-                //    height:(i%2===0 ? 0 : origSize.height )
-                //});
-                //console.log('the clipwrapper', $clipWrapper);
-                //tl.to($clipWrapper, duration, {width:origSize.width, height:origSize.height, ease:Strong.easeOut,onUpdate:function(){
-                //    //console.log();8
-                //}, onComplete:function($clipWrapper){
-                //    $clipWrapper.children().css({
-                //        position:''
-                //    }).unwrap();
-                //}, onCompleteParams:[$this]}, '-='+(duration *.3));
             });// endeach()
 
             return tl;
@@ -199,14 +173,14 @@ function populate_namespaces() {
                     //'-webkit-clip-path' : 'url(#'+ maskID +')'
                     //'-webkit-clip-path' : 'polygon(% %, % %, % %, %, %)'
                 });
-            }
+            }// updateCSS()
 
             function get_points_string(points) {
                 return {
                     inline : points.x1 +' '+ points.y1 +', '+ points.x2 +' '+ points.y2 +', '+ points.x3 +' '+ points.y3 +', '+ points.x4 +' '+ points.y4,
                     css : 'polygon('+ (points.x1*100) +'% '+ (points.y1*100) +'%, '+ (points.x2*100) +'% '+ (points.y2*100) +'%, '+ (points.x3*100) +'% '+ (points.y3*100) +'%, '+ (points.x4*100) +'% '+ (points.y4*100) + '%)'
                 }
-            }
+            }// get_points_string()
         }// onComplete()
     });
 

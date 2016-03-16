@@ -169,7 +169,7 @@
     {.end}<!-- .end.equal -->
 
     <div id="episode-player" class="video-overlay">
-        <video id="episode_video" src="{.equal?:categories.0:"upcoming"}{customContent.upcoming-trailer}{.or}{customContent.full-episode}{.end}" data-setup="{}" controls class="video-js fill-parent"></video>
+        <video id="full_episode_video" src="{.equal?:categories.0:"upcoming"}{customContent.upcoming-trailer}{.or}{customContent.full-episode}{.end}" data-setup="{}" controls class="video-js fill-parent"></video>
 
         <div class="close-overlay">
             <p>Close</p>

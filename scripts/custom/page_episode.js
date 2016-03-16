@@ -59,7 +59,11 @@ SQSP.functions.initPage = function() {
         closePlayer($episodePlayer);
     });// click()
 
-};
+};// initPage
+
+jQuery(window).load(function(){
+    console.log('VJS?', Video('full_episode_video'));
+});
 
 function openPlayer($overlay) {
     if(SQSP.vars.isPlayerTransitionActive) return false;
