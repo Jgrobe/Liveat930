@@ -67,7 +67,11 @@ function openPlayer($overlay) {
 
     lock(jQuery('body'), '100vh');
 
-    var tl = new TimelineMax({onComplete:function(){SQSP.vars.isPlayerTransitionActive=false;}});
+    var tl = new TimelineMax({onComplete:function(){
+        SQSP.vars.isPlayerTransitionActive=false;
+        // play episode automatically
+        Video('episode_video').play();
+    }});
     tl.set($overlay, {display:'block'});
     tl.add(function() {
         size_video();
@@ -80,7 +84,7 @@ function closePlayer($overlay) {
     SQSP.vars.isPlayerTransitionActive = true;
 
     unlock(jQuery('body'));
-    $overlay.find('video').get(0).pause();
+    Video('episode_video').pause();
 
     var tl = new TimelineMax({onComplete:function(){
         SQSP.vars.isPlayerTransitionActive=false;

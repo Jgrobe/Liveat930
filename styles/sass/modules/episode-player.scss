@@ -21,7 +21,7 @@
     @include prefixed(transition, $shortTrans);
 
     $fontsize : 9px;
-    $svgSize: $fontsize+4;
+    $svgSize: 20px;
 
     font-size: $fontsize;
     line-height: $svgSize;
