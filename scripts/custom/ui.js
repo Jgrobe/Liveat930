@@ -67,7 +67,7 @@ function init_sqsp() {
         vid.addEventListener('loadeddata', function(e) {
             console.log('-------------------------------------- video loaded -> size em');
             size_video();
-            //scrollMonitor.recalculateLocations();// needed on homepage so first video in viewport starts playing on load
+            scrollMonitor.recalculateLocations();// needed on homepage so first video in viewport starts playing on load
             TweenMax.to(e.target,.35,{autoAlpha:1, onComplete:function(){console.log('video faded in  ->  play',jQuery(this.target).attr('src'));}});
         });
 
