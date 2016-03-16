@@ -28,7 +28,7 @@
                     {.end}
                 {.end}
             </ul><!-- .sizes -->
-            <div class="cta-dummy" data-label="Buy now!" data-class="cta-buy" data-attributes="href={fullUrl}"></div>
+            <div class="cta-dummy" data-label="Buy now!" data-class="cta-buy switch" data-attributes="href={fullUrl}"></div>
         </div><!-- .merch-item -->
     {.end}
 </section>

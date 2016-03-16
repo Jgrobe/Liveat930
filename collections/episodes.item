@@ -115,7 +115,7 @@
                                 <div class="excerpt-body">
                                     {excerpt}
                                 </div>
-                                <div class="cta-dummy" data-icon="eye" data-label="Full story" data-attributes="href={fullUrl}">{@|apply svg-icon-eye.block}</div>
+                                <div class="cta-dummy" data-icon="eye" data-label="Full story" data-class="switch" data-attributes="href={fullUrl}">{@|apply svg-icon-eye.block}</div>
                             </div><!-- .text-layer -->
                         </div><!-- .excerpt-container -->
 
@@ -145,7 +145,7 @@
                         <div class="image">
                             {@|apply module-clip-thumb.block}
 
-                            <div class="cta-dummy" data-icon="icon-arrow" data-class="negative play goto" data-attributes="href={collection.fullUrl}?filter::{categories.0|slugify}">{@|apply svg-icon-arrow.block}</div>
+                            <div class="cta-dummy" data-icon="icon-arrow" data-class="negative play goto switch" data-attributes="href={collection.fullUrl}?filter::{categories.0|slugify}">{@|apply svg-icon-arrow.block}</div>
                             <!--php print_cta(array(
                                     'icon' => 'images/icon-arrow',
                             'class' => array('negative', 'play', 'goto')

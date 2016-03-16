@@ -92,6 +92,14 @@ function init_sqsp() {
     //console.log('SQSP.vars.loopvids.length', SQSP.vars.loopvids.length);
     checkVideoloop();
 
+    jQuery(document).on('click', '.switch', function(e){
+        e.preventDefault();
+        var $clicked = jQuery(this);
+        TweenMax.to(jQuery('.page'),.5,{autoAlpha:0, onComplete:function(){
+            window.location = $clicked.attr('href');
+        }});
+    });
+
 }// init_page()
 
 function checkVideoloop() {

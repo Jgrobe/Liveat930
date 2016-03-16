@@ -39,7 +39,7 @@
                         </script>
                     </div><!-- .episodes-landing-sub -->
 
-                    <div class="cta-dummy" data-icon="eye" data-label="Watch episode no. {customContent.episode-number}, {addedOn|date %b %Y}" data-class="prllx-custom prllx-scroll-depend" data-attributes="href={fullUrl},data-prllx=.075">{@|apply svg-icon-eye.block}</div>
+                    <div class="cta-dummy" data-icon="eye" data-label="Watch episode no. {customContent.episode-number}, {addedOn|date %b %Y}" data-class="prllx-custom prllx-scroll-depend switch" data-attributes="href={fullUrl},data-prllx=.075">{@|apply svg-icon-eye.block}</div>
 
                 </div><!-- .landing-container -->
             </section>
@@ -62,7 +62,7 @@
 
                         <div class="episodes-overview-item prllxposter">
                             {@|apply poster-parallax.block}
-                            <div class="cta-dummy" data-label="Explore" data-icon="eye" data-attributes="href={fullUrl}">{@|apply svg-icon-eye.block}</div>
+                            <div class="cta-dummy" data-label="Explore" data-icon="eye" data-class="switch" data-attributes="href={fullUrl}">{@|apply svg-icon-eye.block}</div>
                             <div class="light"></div>
                         </div><!-- .episodes-overview-item -->
 
@@ -82,7 +82,7 @@
             <ul>
                 {.repeated section items}
                 <li>
-                    <a href="{fullUrl}" class="img tv prllx-custom" data-prllx=".086" style="background-image:url('{customContent.upcoming-thumbnail.assetUrl}');">
+                    <a href="{fullUrl}" class="img tv prllx-custom switch" data-prllx=".086" style="background-image:url('{customContent.upcoming-thumbnail.assetUrl}');">
                         <div class="inside prllx-lo-stndrd">
                             <span>Ep.{customContent.episode-number}</span><strong>{addedOn|date %b %Y}</strong>
                         </div>
