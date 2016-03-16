@@ -1,6 +1,8 @@
 <section class="landing clip-landing">
 
-    <div class="fill-parent imgfill" style="background-image:url('{item.customContent.hero-img.assetUrl}');"></div>
+    <div class="fill-parent imgfill">
+        <div class="fill-parent imgfill" style="background-image:url('{item.customContent.hero-img.assetUrl}');"></div>
+    </div>
 
     <div class="landing-container">
         <!--<div class="landing-head">-->

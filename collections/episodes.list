@@ -12,7 +12,8 @@
 <script>console.log('----- hero content', {customContent|json-pretty});</script>
             <section class="landing episodes-landing">
                 <div class="fill-parent mask">
-                    <div class="landing-bg" style="background-image:url('{customContent.hero-fallback-image.assetUrl}');" data-shape="{customContent.episode-shape}">
+                    <div class="landing-bg" data-shape="{customContent.episode-shape}">
+                        <div class="fill-parent imgfill onlymobile" style="background-image:url('{customContent.hero-fallback-image.assetUrl}');"></div>
                         <video data-src="{customContent.episode-hero-video}" class="loop" muted autoplay></video>
                     </div><!-- landing-bg -->
                 </div><!-- .fill-parent -->

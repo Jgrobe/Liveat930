@@ -1,6 +1,8 @@
 <section class="landing merch-landing">
     <div class="fill-parent mask">
-        <div class="landing-bg" style="background-image:url('{collection.mainImage.assetUrl}');"></div>
+        <div class="landing-bg">
+            <div class="fill-parent imgfill" style="background-image:url('{collection.mainImage.assetUrl}');"></div>
+        </div>
     </div>
     <div class="landing-container prllx-custom prllx-scroll-depend" data-prllx=".12">
         <h1 class="l-headline">{collection.navigationTitle}</h1>
