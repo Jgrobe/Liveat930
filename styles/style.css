@@ -4679,6 +4679,17 @@ input {
       margin-left: 7px; }
       .absolute-cart-box .sqs-pill-shopping-cart .sqs-pill-shopping-cart-content .subtotal .price {
         font-size: 10px; }
+  @media only screen and (max-width: 750px) {
+    .absolute-cart-box {
+      top: 12px;
+      right: 50%;
+      -webkit-transform: translateX(50%);
+      -moz-transform: translateX(50%);
+      -ms-transform: translateX(50%);
+      -o-transform: translateX(50%);
+      transform: translateX(50%); }
+      .absolute-cart-box .sqs-pill-shopping-cart {
+        position: static; } }
 
 ._aligner {
   background: rgba(255, 0, 100, 0.5);
