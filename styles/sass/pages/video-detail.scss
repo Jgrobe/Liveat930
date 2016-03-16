@@ -191,8 +191,9 @@
 .overlap-container {
   position: relative;
   margin-top: -15vw;
+  z-index: 1;
 //  margin-bottom: -10vw;
-}
+}// .overlap-container
 
 .vert-spacer {
   margin-top: $sectionMarginBottom;

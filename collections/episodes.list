@@ -13,8 +13,10 @@
             <section class="landing episodes-landing">
                 <div class="fill-parent mask">
                     <div class="landing-bg" data-shape="{customContent.episode-shape}">
-                        <div class="fill-parent imgfill onlymobile" style="background-image:url('{customContent.hero-fallback-image.assetUrl}');"></div>
-                        <video data-src="{customContent.episode-hero-video}" class="loop" muted autoplay></video>
+                        <div class="fill-parent imgfill{.if customContent.episode-hero-video} onlymobile{.end}" style="background-image:url('{customContent.hero-fallback-image.assetUrl}');"></div>
+                        {.if customContent.episode-hero-video}
+                            <video data-src="{customContent.episode-hero-video}" class="loop" muted autoplay></video>
+                        {.end}
                     </div><!-- landing-bg -->
                 </div><!-- .fill-parent -->
 

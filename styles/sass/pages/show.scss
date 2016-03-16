@@ -207,8 +207,33 @@
 
     .gallery-copy {
       height: auto;
-    }
+    }// .gallery-copy
 
   }// BP MOBILE
 
 }// .history-slider
+
+.sponsors {// section.sponsors
+  margin: 0 auto $sectionMarginBottom auto;
+  width: $contentWidth;
+
+  .logos-container {
+    margin-top: 5vw;
+    @include flexbox();
+    @include flex-value(direction, row);
+    @include flex-value(wrap, wrap);
+    @include prefixed(justify-content, center);
+
+  }// .logos-container
+
+  .sponsor {
+    width: 20%;
+    margin: 2.5%;
+
+    .sponsor-logo {// img
+      width: 100%;
+    }// .sponsor-logo
+
+  }// .sponsor
+
+}// .sponsors

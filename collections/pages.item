@@ -10,7 +10,7 @@
     <section class="landing show-landing">
         <div class="fill-parent mask">
             <div class="landing-bg" data-type="video" data-src="{item.customContent.hero-video}">
-                <div class="fill-parent imgfill onlymobile" style="background-image:url('{item.customContent.hero-image.assetUrl}');"></div>
+                <div class="fill-parent imgfill{.if item.customContent.hero-video} onlymobile{.end}" style="background-image:url('{item.customContent.hero-image.assetUrl}');"></div>
                 {.section item}
                     {.if customContent.hero-video}
                         <video data-src="{customContent.hero-video}" class="loop" autoplay muted></video>
@@ -170,6 +170,26 @@
             </div><!-- .video-gallery-videos -->
 
         </section><!-- .video-gallery -->
+
+        {.section item.customContent}{.if sponsors}
+
+            <section class="sponsors">
+
+                <div class="section-head">
+                    <h2>{sponsors-headline}</h2>
+                </div>
+
+                <div class="logos-container">
+                {.repeated section sponsors}
+                    <div class="sponsor">
+                        <img class="sponsor-logo" src="{assetUrl}">
+                    </div>
+                {.end}
+                </div><!-- .logos-container -->
+
+            </section><!-- .sponsors -->
+
+        {.end}{.end}
 
     </div>
 

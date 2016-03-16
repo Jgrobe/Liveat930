@@ -2,7 +2,7 @@
 <section class="landing host-landing">
     <div class="fill-parent mask">
         <div class="landing-bg video-bg">
-            <div class="fill-parent imgfill onlymobile" style="background-image:url('{item.customContent.hero-image.assetUrl}');"></div>
+            <div class="fill-parent imgfill{.if item.customContent.hero-video} onlymobile{.end}" style="background-image:url('{item.customContent.hero-image.assetUrl}');"></div>
             {.section item}
                 {.if customContent.hero-video}
                     <video data-src="{customContent.hero-video}" autoplay class="loop"></video>
