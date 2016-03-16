@@ -4656,7 +4656,7 @@ input {
   .absolute-cart-box .sqs-pill-shopping-cart .sqs-pill-shopping-cart-content {
     height: auto;
     width: auto;
-    min-width: auto;
+    min-width: 0;
     padding: 0 10px;
     border: none;
     border-radius: 0;
