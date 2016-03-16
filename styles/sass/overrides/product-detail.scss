@@ -241,6 +241,14 @@
 
   @include breakpoint(mobile) {
 
+    top: $MOBILE_MARGIN;
+    right: 50%;
+    @include transform(translateX(50%));
+
+    .sqs-pill-shopping-cart {// override sqsp styles
+      position: static;
+    }
+
   }// BP MOBILE
 
 }// .absolute-cart-box
