@@ -6,9 +6,9 @@
 
     <div class="landing-container">
         <!--<div class="landing-head">-->
-            <h1 class="l-headline prllx-custom prllx-scroll-depend" data-prllx=".12">
+            <h1 class="l-headline prllx-custom prllx-scroll-depend onloadclip" data-prllx=".12">
                 {item.title}
-                <div class="small">{item.customContent.subtitle}</div>
+                <div class="small onloadclip">{item.customContent.subtitle}</div>
             </h1>
         <!--</div>&lt;!&ndash; .landing-head &ndash;&gt;-->
     </div><!-- .landing-container -->

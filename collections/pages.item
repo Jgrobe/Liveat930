@@ -20,12 +20,12 @@
         </div>
 
         <div class="landing-container">
-            <div class="rectangle prllx-custom prllx-scroll-depend" data-prllx=".075"></div>
-            <h1 class="l-headline prllx-custom prllx-scroll-depend" data-prllx=".18">
-                <span class="small">{website.siteTitle}</span>
+            <div class="rectangle prllx-custom prllx-scroll-depend onloadclip" data-prllx=".075"></div>
+            <h1 class="l-headline prllx-custom prllx-scroll-depend onloadclip" data-prllx=".18">
+                <span class="small onloadclip">{website.siteTitle}</span>
                 {item.title}
             </h1>
-            <div class="show-landing-info prllx-custom prllx-scroll-depend" data-prllx=".12">
+            <div class="show-landing-info prllx-custom prllx-scroll-depend onloadclip" data-prllx=".12">
                 {item.body}
             </div><!-- .show-landing-info -->
         </div><!-- .landing-container -->

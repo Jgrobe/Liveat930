@@ -5,7 +5,7 @@
         </div>
     </div>
     <div class="landing-container prllx-custom prllx-scroll-depend" data-prllx=".12">
-        <h1 class="l-headline">{collection.navigationTitle}</h1>
+        <h1 class="l-headline onloadclip">{collection.navigationTitle}</h1>
     </div><!-- .landing-container -->
 </section>
 

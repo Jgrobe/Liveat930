@@ -8,7 +8,7 @@
         </div>
     </div>
     <div class="landing-container">
-        <h1 class="l-headline prllx-custom prllx-scroll-depend" data-prllx=".12">{item.title}</h1>
+        <h1 class="l-headline prllx-custom prllx-scroll-depend onloadclip" data-prllx=".12">{item.title}</h1>
     </div>
     <!--<a href="javascript:history.back();" class="post-landing-cta icon-arrow-reverse">{item.customContent.ctaLabel}</a>-->
     {.section item}

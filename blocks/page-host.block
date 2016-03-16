@@ -11,12 +11,12 @@
         </div><!-- .landing-bg -->
     </div>
     <div class="landing-container">
-        <div class="rectangle prllx-custom prllx-scroll-depend" data-prllx=".075"></div>
+        <div class="rectangle prllx-custom prllx-scroll-depend onloadclip" data-prllx=".075"></div>
         <div class="prllx-custom prllx-scroll-depend" data-prllx=".18">
-            <div class="hosted-by-logo"></div>
-            <h1 class="l-headline">{item.title}</h1>
+            <div class="hosted-by-logo onloadclip"></div>
+            <h1 class="l-headline onloadclip">{item.title}</h1>
         </div>
-        <div class="text-layer prllx-custom prllx-scroll-depend" data-prllx=".12">
+        <div class="text-layer prllx-custom prllx-scroll-depend onloadclip" data-prllx=".12">
             {item.body}
             <div class="cta-dummy" data-label="{item.customContent.hero-cta-label}" data-icon="browser" data-class="upsized-icon" data-attributes="href=http://www.squarespace.com,target=_blank">{@|apply svg-icon-browser.block}</div>
         </div>
