@@ -43,7 +43,12 @@
     line-height: 1.75em;
     margin-bottom: 2.5vh;
   }
-}
+
+  @include breakpoint(mobile) {
+    margin-top: 100px;
+  }
+
+}// .post-content
 
 .post-pagination {
   width: 80vw;
@@ -72,7 +77,7 @@
       color: white;
     }
 
-    &.prev {
+    &.prev-post {
       margin-left: 0;
 
       .cta-container {
@@ -84,7 +89,7 @@
       }// .cta-container
     }// prev
 
-    &.next {
+    &.next-post {
       margin-right: 0;
 
       .cta-container {
@@ -93,7 +98,7 @@
 
       .pagination-label {
         text-align: right;
-      }
+      }// .pagination-label
     }// next
   }// .col
 
@@ -104,7 +109,7 @@
 
     .s-headline {
       font-size: 24px;
-    }
+    }// .s-headline
 
     .post-title {
       display: inline-block;
@@ -121,7 +126,17 @@
     .col {
       width: 100%;
 
-      &.next {
+      .img {
+        text-align: center;
+      }
+
+      .cta-container {
+        bottom: auto;
+        top: 100%;
+        @include transform(translateY(-50%));
+      }// .cta-container
+
+      &.next-post {
         margin-top: 40px;
       }
     }// .col

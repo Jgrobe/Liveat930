@@ -25,7 +25,7 @@
         <div class="flex-cols">
 
             {.if prevItem}{.section prevItem}
-            <div class="col prev">
+            <div class="col prev-post">
                 <p class="pagination-label s-headline">Previous article</p>
                 <div class="img anamorph imgfill" style="background-image:url('{assetUrl}');">
                     <div class="fill-parent flex-cols">
@@ -34,11 +34,11 @@
                 </div>
 
                 <div class="cta-dummy" data-icon="icon-arrow" data-class="negative" data-attributes="href={fullUrl}">{@|apply svg-icon-arrow.block}</div>
-            </div>
+            </div><!-- .prev-post -->
             {.end}{.end}
 
             {.if nextItem}{.section nextItem}
-            <div class="col next">
+            <div class="col next-post">
                 <p class="pagination-label s-headline">Next article</p>
                 <div class="img anamorph imgfill" style="background-image:url('{assetUrl}');">
                     <div class="fill-parent flex-cols">
@@ -47,7 +47,7 @@
                 </div>
 
                 <div class="cta-dummy" data-icon="icon-arrow" data-class="negative" data-attributes="href={fullUrl}">{@|apply svg-icon-arrow.block}</div>
-            </div><!-- col.next
+            </div><!-- col.next-post -->
             {.end}{.end}
 
         </div><!-- .flex-cols -->

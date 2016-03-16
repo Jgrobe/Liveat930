@@ -3808,6 +3808,9 @@ input {
   .post-content p {
     line-height: 1.75em;
     margin-bottom: 2.5vh; }
+  @media only screen and (max-width: 750px) {
+    .post-content {
+      margin-top: 100px; } }
 
 .post-pagination {
   width: 80vw;
@@ -3828,21 +3831,21 @@ input {
     .post-pagination .col .img {
       position: relative;
       color: white; }
-    .post-pagination .col.prev {
+    .post-pagination .col.prev-post {
       margin-left: 0; }
-      .post-pagination .col.prev .cta-container {
+      .post-pagination .col.prev-post .cta-container {
         left: 5%; }
-        .post-pagination .col.prev .cta-container svg {
+        .post-pagination .col.prev-post .cta-container svg {
           -webkit-transform: rotate(180deg);
           -moz-transform: rotate(180deg);
           -ms-transform: rotate(180deg);
           -o-transform: rotate(180deg);
           transform: rotate(180deg); }
-    .post-pagination .col.next {
+    .post-pagination .col.next-post {
       margin-right: 0; }
-      .post-pagination .col.next .cta-container {
+      .post-pagination .col.next-post .cta-container {
         right: 5%; }
-      .post-pagination .col.next .pagination-label {
+      .post-pagination .col.next-post .pagination-label {
         text-align: right; }
   @media only screen and (max-width: 750px) {
     .post-pagination {
@@ -3864,7 +3867,17 @@ input {
         display: block; }
       .post-pagination .col {
         width: 100%; }
-        .post-pagination .col.next {
+        .post-pagination .col .img {
+          text-align: center; }
+        .post-pagination .col .cta-container {
+          bottom: auto;
+          top: 100%;
+          -webkit-transform: translateY(-50%);
+          -moz-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+          -o-transform: translateY(-50%);
+          transform: translateY(-50%); }
+        .post-pagination .col.next-post {
           margin-top: 40px; } }
 
 .landing.show-landing .landing-container {
