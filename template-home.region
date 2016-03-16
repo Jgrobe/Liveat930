@@ -25,7 +25,11 @@
 </div><!-- .site-content -->
 
 <div id="preloader">
-    <div class="filler"></div>
+
+    <div class="logo-container">{@|apply svg-logo-small-dark.block}</div>
+    <div class="loading-bar">
+        <div class="filler"></div>
+    </div>
 </div><!-- #preloader -->
 
 <squarespace:script src="custom/handleArtists.js" />
