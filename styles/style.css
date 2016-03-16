@@ -768,7 +768,7 @@ input {
     line-height: 19px; }
   @media only screen and (max-width: 750px) {
     .footer {
-      padding: 19vw 6vw; }
+      padding: 17vw 6vw; }
       .footer p {
         font-size: 3.1vw;
         line-height: 20px;
@@ -848,7 +848,8 @@ input {
         margin: 0 auto; }
       .footer-newsletter form {
         width: auto;
-        display: inline-block; }
+        display: inline-block;
+        margin-left: -54px; }
         .footer-newsletter form input[type=email] {
           font-size: 10px;
           width: 100%;
@@ -859,15 +860,8 @@ input {
           -ms-transition: color 0.3s;
           -o-transition: color 0.3s;
           transition: color 0.3s; }
-        .footer-newsletter form .submit-email {
-          position: static;
-          margin-top: 20px; }
-          .footer-newsletter form .submit-email .cta .filler, .footer-newsletter form .submit-email #productSummary #productDetails .sqs-add-to-cart-button .filler, #productSummary #productDetails .footer-newsletter form .submit-email .sqs-add-to-cart-button .filler, .footer-newsletter form .submit-email #sqs-shopping-cart-wrapper .checkout-button .filler, #sqs-shopping-cart-wrapper .footer-newsletter form .submit-email .checkout-button .filler {
-            padding: 18px; }
-          .footer-newsletter form .submit-email .cta .icon, .footer-newsletter form .submit-email #productSummary #productDetails .sqs-add-to-cart-button .icon, #productSummary #productDetails .footer-newsletter form .submit-email .sqs-add-to-cart-button .icon, .footer-newsletter form .submit-email #sqs-shopping-cart-wrapper .checkout-button .icon, #sqs-shopping-cart-wrapper .footer-newsletter form .submit-email .checkout-button .icon {
-            margin-right: 24px; }
-          .footer-newsletter form .submit-email .cta .label, .footer-newsletter form .submit-email #productSummary #productDetails .sqs-add-to-cart-button .label, #productSummary #productDetails .footer-newsletter form .submit-email .sqs-add-to-cart-button .label, .footer-newsletter form .submit-email #sqs-shopping-cart-wrapper .checkout-button .label, #sqs-shopping-cart-wrapper .footer-newsletter form .submit-email .checkout-button .label {
-            display: inline; }
+        .footer-newsletter form .submit-email .cta .filler, .footer-newsletter form .submit-email #productSummary #productDetails .sqs-add-to-cart-button .filler, #productSummary #productDetails .footer-newsletter form .submit-email .sqs-add-to-cart-button .filler, .footer-newsletter form .submit-email #sqs-shopping-cart-wrapper .checkout-button .filler, #sqs-shopping-cart-wrapper .footer-newsletter form .submit-email .checkout-button .filler {
+          padding: 18px; }
       .footer-newsletter p {
         position: static;
         margin: 2vw auto 10vw auto; } }

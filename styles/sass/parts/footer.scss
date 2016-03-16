@@ -60,7 +60,7 @@
 
   @include breakpoint(mobile) {
 
-    padding: 19vw 6vw;
+    padding: 17vw 6vw;
 
     p {
       font-size: 3.1vw;//13px;
@@ -125,7 +125,7 @@
       }// .mc-inline-error
     }
 
-    .submit-email {
+    .submit-email {// cta-container
       position: absolute;
       height: 100%;
       width: auto;
@@ -164,6 +164,7 @@
     form {
       width: auto;
       display: inline-block;
+      margin-left: -54px;// cta-container width
 
       input[type=email] {
         font-size: 10px;
@@ -173,13 +174,13 @@
         @include prefixed(transition, color $shortTrans);
       }
       .submit-email {
-        position: static;
-        margin-top: 20px;
+        //position: static;
+        //margin-top: 20px;
 
         .cta {
           .filler {padding: 18px;}
-          .icon {margin-right: $ctaPaddMobile;}
-          .label { display: inline; }
+          //.icon {margin-right: $ctaPaddMobile;}
+          //.label { display: inline; }
         }
 
       }
