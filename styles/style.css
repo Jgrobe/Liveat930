@@ -3796,6 +3796,9 @@ input {
     transform: translateX(-50%) translateY(-30%); }
     .post-landing .sharebox .label {
       margin-top: 10px; }
+  @media only screen and (max-width: 750px) {
+    .post-landing {
+      text-align: center; } }
 
 .post-content {
   width: 70vw;
@@ -4681,6 +4684,7 @@ input {
         font-size: 10px; }
   @media only screen and (max-width: 750px) {
     .absolute-cart-box {
+      position: fixed;
       top: 12px;
       right: 50%;
       -webkit-transform: translateX(50%);

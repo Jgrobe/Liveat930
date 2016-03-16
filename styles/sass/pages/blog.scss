@@ -26,6 +26,12 @@
     }
   }// .sharebox
 
+  @include breakpoint(mobile) {
+
+    text-align: center;
+
+  }// BP MOBILE
+
 }// .post-landing
 
 .post-content {

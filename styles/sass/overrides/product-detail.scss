@@ -241,6 +241,7 @@
 
   @include breakpoint(mobile) {
 
+    position: fixed;
     top: $MOBILE_MARGIN;
     right: 50%;
     @include transform(translateX(50%));
