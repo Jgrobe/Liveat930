@@ -4024,7 +4024,7 @@ input {
   margin: 0 auto 10.41667vw auto;
   width: 75vw; }
   .sponsors .logos-container {
-    margin-top: 5vw;
+    margin-top: 2vw;
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -4045,17 +4045,36 @@ input {
     flex-wrap: wrap;
     -webkit-wrap: wrap;
     -ms-wrap: wrap;
-    wrap: wrap;
-    -webkit-justify-content: center;
-    -moz-justify-content: center;
-    -ms-justify-content: center;
-    -o-justify-content: center;
-    justify-content: center; }
+    wrap: wrap; }
   .sponsors .sponsor {
-    width: 20%;
-    margin: 2.5%; }
+    margin: 2.5%;
+    -webkit-align-self: center;
+    -moz-align-self: center;
+    -ms-align-self: center;
+    -o-align-self: center;
+    align-self: center; }
     .sponsors .sponsor .sponsor-logo {
+      height: 7vw;
+      width: auto; }
+  @media only screen and (max-width: 750px) {
+    .sponsors {
       width: 100%; }
+      .sponsors .section-head {
+        margin: auto; }
+      .sponsors .logos-container {
+        margin-top: 5vw;
+        display: block;
+        text-align: center;
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        -ms-column-count: 2;
+        -o-column-count: 2;
+        column-count: 2; }
+      .sponsors .sponsor {
+        margin: 5%;
+        display: block; }
+        .sponsors .sponsor .sponsor-logo {
+          height: 20vw; } }
 
 .landing.video-overview-landing .landing-bg:after {
   content: '';
