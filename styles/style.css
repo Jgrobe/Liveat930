@@ -2884,7 +2884,7 @@ input {
     background: rgba(0, 0, 0, 0.1); }
     #preloader .loading-bar .filler {
       width: 0;
-      background: rgba(0, 0, 0, 0.2); }
+      background: #161616; }
 
 .episode-summary {
   position: relative;
