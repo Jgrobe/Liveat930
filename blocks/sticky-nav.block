@@ -4,12 +4,12 @@
 
     <div class="menu-item stagger-item{.section active} current-item{.end}">
         {.section collection}
-        <a href="{fullUrl}">
+        <a href="{fullUrl}" class="switch">
             {navigationTitle}
         </a>
         {.end}
         {.section externalLink}
-        <a href="{url}"{.section newWindow} target="_blank"{.end}>
+        <a href="{url}"{.section newWindow} target="_blank"{.end} class="switch">
             {title}
         </a>
         {.end}

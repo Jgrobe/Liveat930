@@ -72,7 +72,7 @@
                 <div class="results-wrapper">
 
                     <div class="result placeholder">
-                        <a href="" class="result-link">
+                        <a href="" class="result-link switch">
                             <div class="hover-container imgfill" style=""></div>
                             <div class="result-sized">
                                 <h3>
