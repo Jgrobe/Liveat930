@@ -83,6 +83,8 @@ function init_sqsp() {
         //    });
         }// endif
 
+        vid.src = $thisVid.data('src');
+
     });// endeach()
 
     //console.log('SQSP.vars.loopvids.length', SQSP.vars.loopvids.length);
