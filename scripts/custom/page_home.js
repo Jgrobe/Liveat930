@@ -64,7 +64,7 @@ SQSP.functions.initPage = function() {
             onComplete:function(e) {
                 //console.log('preloader complete');
                 //console.log('NICE REVEAL');
-                return false; // temp to work w/preloader
+                //return false; // temp to work w/preloader
 
                 SQSP.preloadTL.add(function() {
                     var tl = new TimelineMax({delay:.2, onUpdate:function() {
