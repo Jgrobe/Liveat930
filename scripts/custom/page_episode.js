@@ -61,10 +61,6 @@ SQSP.functions.initPage = function() {
 
 };// initPage
 
-jQuery(window).load(function(){
-    console.log('VJS?', _V_('full_episode_video'));
-});
-
 function openPlayer($overlay) {
     if(SQSP.vars.isPlayerTransitionActive) return false;
     SQSP.vars.isPlayerTransitionActive = true;
@@ -74,7 +70,7 @@ function openPlayer($overlay) {
     var tl = new TimelineMax({onComplete:function(){
         SQSP.vars.isPlayerTransitionActive=false;
         // play episode automatically
-        Video('episode_video').play();
+        $overlay.find('video').get(0).play();
     }});
     tl.set($overlay, {display:'block'});
     tl.add(function() {
@@ -88,7 +84,7 @@ function closePlayer($overlay) {
     SQSP.vars.isPlayerTransitionActive = true;
 
     unlock(jQuery('body'));
-    Video('episode_video').pause();
+    $overlay.find('video').get(0).pause();
 
     var tl = new TimelineMax({onComplete:function(){
         SQSP.vars.isPlayerTransitionActive=false;
