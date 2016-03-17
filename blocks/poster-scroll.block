@@ -22,7 +22,7 @@
                 <div class="model-container imgfill" data-shape="{customContent.episode-shape}" data-img="{customContent.poster-fallback-image.assetUrl}">
 
                     <svg class="clip-svg fill-parent">
-                        <image class="svg-image" xlink:href="" />
+                        <image class="svg-image" xlink:href="{customContent.poster-fallback-image.assetUrl}" />
                     </svg>
 
                     <!--[if !(IE)]><!-->
