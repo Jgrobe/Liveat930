@@ -3,6 +3,11 @@
   color: white;
   //@include preloader();
 
+  &.fill-parent {// needed to override default video-js dimensions classes
+    width: 100%;
+    height:100%;
+  }
+
   &:hover {
 
     .vjs-big-play-button { background: none;}

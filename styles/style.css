@@ -2947,6 +2947,9 @@ input {
 .video-js {
   font-size: 10px;
   color: white; }
+  .video-js.fill-parent, .video-js#disablerDummy, .landing .video-js.landing-bg, .video-js.slider-ui, .poster .video-js.poster-content, .poster .video-js.layer.bg-layer, .poster .video-js.layer.copy-layer, .poster.circle .layer.bg-layer .video-js.half:first-child:before, .poster.fullTriangle .layer.bg-layer .video-js.half:first-child:before, .poster.verticalRect .layer.bg-layer .video-js.half:first-child:before, .poster.deltoid .layer.bg-layer .video-js.half:first-child:before, .poster.hollowTriangle .layer.bg-layer .video-js.half:first-child:before, .poster.arc .layer.bg-layer .video-js.half:first-child:before, .poster.halfCircle .layer.bg-layer .video-js.half:first-child:before, .poster.square .layer.bg-layer .video-js.half:first-child:before, .poster.doubleSlash .layer.bg-layer .video-js.half:first-child:before, .poster.general .layer.bg-layer .video-js.half:first-child:before, .poster.tripleRect .layer.bg-layer .video-js.half:first-child:before, .poster.pentagon .layer.bg-layer .video-js.half:first-child:before, .nav-overlay .video-js.video-container, #preloader .loading-bar .video-js.filler {
+    width: 100%;
+    height: 100%; }
   .video-js:hover .vjs-big-play-button {
     background: none; }
   .video-js:hover.vjs-has-started .vjs-control-bar {
