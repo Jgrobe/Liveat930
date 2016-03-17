@@ -26,7 +26,7 @@
                     </svg>
 
                     <!--[if !(IE)]><!-->
-                    <video data-src="{customContent.episode-poster-video}" muted class="loop"{.equal?:@index:1} autoplay{.end} style="opacity: 0;"></video>
+                    <video data-src="{customContent.episode-poster-video}" muted class="loop"{.equal?:@index:1} autoplay{.end}></video>
                     <!--<![endif]-->
                 </div><!-- .model-container.img.widescreen -->
             </div><!-- .model-layer -->
