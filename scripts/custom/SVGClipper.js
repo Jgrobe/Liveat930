@@ -125,7 +125,7 @@ var SVGClipper = function($container, options) {
         //    values : 'M37.9,100H0c0-13.5,2.6-26.6,7.9-38.9c5-11.9,12.2-22.6,21.4-31.8c9.2-9.2,19.9-16.4,31.8-21.4 C73.4,2.6,86.5,0,100,0v37.9C65.8,37.9,37.9,65.8,37.9,100z'
         //},
         square: {
-            type : 'none',
+            type : 'path',
             gradientMaps: {
                 full: '#041341, #583332',
                 shape: '#f54848, #edb1b1'
