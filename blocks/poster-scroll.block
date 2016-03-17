@@ -22,7 +22,7 @@
                 <div class="model-container imgfill" data-shape="{customContent.episode-shape}" data-img="{customContent.poster-fallback-image.assetUrl}">
 
                     <span class="no-msie">
-                        <div class="fill-parent imgfill" style="background-image('{customContent.poster-fallback-image.assetUrl}');"></div>
+                        <div class="fill-parent imgfill" style="background-image:('{customContent.poster-fallback-image.assetUrl}');"></div>
                     </span>
 
                     <span class="msie">
