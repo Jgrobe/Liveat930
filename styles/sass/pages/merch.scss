@@ -2,8 +2,8 @@
   @include landing;
   height: 80vh;
   @include flexbox();
-  @include prefixed(justify-content, center);
-  @include prefixed(align-items, center);
+  //@include prefixed(justify-content, center);
+  //@include prefixed(align-items, center);
 
   h1 {
     text-align: center;
