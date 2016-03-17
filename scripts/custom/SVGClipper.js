@@ -411,6 +411,8 @@ var SVGClipper = function($container, options) {
         if(SC.SHAPE.type === 'none') return false;
         //console.log('SVGClipper', SC);
 
+        if (is_IE()) SC.$object.container.find('video').remove();
+
         SC.$object.container.css('overflow', 'hidden');
 
         SC.DOM.img = new Image();
@@ -529,5 +531,9 @@ var SVGClipper = function($container, options) {
             top:offsetY
         };
     }// getSizeToCover()
+
+    function is_IE() {
+        return (navigator.userAgent.indexOf('MSIE') !== -1 || navigator.appVersion.indexOf('Trident/') > 0);
+    }// is_IE()
 
 };// SVGClipper()
