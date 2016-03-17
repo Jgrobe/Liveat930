@@ -55,7 +55,7 @@ var SVGClipper = function($container, options) {
             //]
         },
         verticalRect: {
-            type : 'none',
+            type : 'path',
             gradientMaps: {
                 full: '#060d26, #79515a',
                 shape: '#e08585, #f7d7d7'
