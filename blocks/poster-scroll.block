@@ -20,11 +20,20 @@
 
             <div class="layer model-layer rel prllx-custom prllx-no-disable" data-prllx=".18">
                 <div class="model-container imgfill" data-shape="{customContent.episode-shape}" data-img="{customContent.poster-fallback-image.assetUrl}">
-                    <svg class="clip-svg fill-parent">
-                        <image class="svg-image" xlink:href="{customContent.poster-fallback-image.assetUrl}" />
-                    </svg>
 
-                    <video data-src="{customContent.episode-poster-video}" muted class="loop"{.equal?:@index:1} autoplay{.end}></video>
+                    <span class="no-msie">
+                        <div class="fill-parent imgfill" style="background-image('{customContent.poster-fallback-image.assetUrl}');"></div>
+                    </span>
+
+                    <span class="msie">
+                        <svg class="clip-svg fill-parent">
+                            <image class="svg-image" xlink:href="{customContent.poster-fallback-image.assetUrl}" />
+                        </svg>
+                    </span>
+
+                    <div class="no-msie">
+                        <video data-src="{customContent.episode-poster-video}" muted class="loop"{.equal?:@index:1} autoplay{.end}></video>
+                    </div>
 
                 </div><!-- .model-container.img.widescreen -->
             </div><!-- .model-layer -->

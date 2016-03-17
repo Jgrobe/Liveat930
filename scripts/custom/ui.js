@@ -3,6 +3,8 @@ init_sqsp();
 function init_sqsp() {
     //console.log('----------------------- init sqsp');
 
+    browser_processing();
+
     populate_namespaces();
 
     // set window listeners
@@ -598,4 +600,23 @@ function createDisablerDummy() {
 function removeDisablerDummy() {
     var $disablerDummy = jQuery('#disablerDummy');
     TweenMax.to($disablerDummy,.4, {autoAlpha:0, onComplete:function(){$disablerDummy.remove()}});
+}
+
+function browser_processing() {
+    var $nomsie = jQuery('.no-msie'),
+        $msie = jQuery('.msie');
+
+    if(bowser.msie) {
+        $nomsie.remove();
+        $msie.each(function(){
+            var $this = jQuery(this);
+            $this.children.unwrap();
+        });
+    } else {
+        $msie.remove();
+        $nomsie.each(function(){
+            var $this = jQuery(this);
+            $this.children.unwrap();
+        });
+    }
 }
