@@ -492,6 +492,8 @@ var SVGClipper = function($container, options) {
     }// update_mask()
 
     function getSizeTo(mode, parent, child) {
+        console.log('getsizeTo parent', parent.width, parent.height);
+        console.log('getsizeTo child', child.width, child.height);
 
         var scaleFactor;
         switch(mode) {
