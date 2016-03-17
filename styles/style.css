@@ -2563,14 +2563,19 @@ input {
       letter-spacing: .1em;
       text-transform: uppercase; }
     .nav-overlay .social-container .cta-container .cta .filler, .nav-overlay .social-container .cta-container #productSummary #productDetails .sqs-add-to-cart-button .filler, #productSummary #productDetails .nav-overlay .social-container .cta-container .sqs-add-to-cart-button .filler, .nav-overlay .social-container .cta-container #sqs-shopping-cart-wrapper .checkout-button .filler, #sqs-shopping-cart-wrapper .nav-overlay .social-container .cta-container .checkout-button .filler {
+      width: 3.36806vw;
+      height: 3.36806vw;
+      padding: 0;
       display: -webkit-box;
       display: -moz-box;
       display: -ms-flexbox;
       display: -webkit-flex;
       display: flex;
-      width: 3.36806vw;
-      height: 3.36806vw;
-      padding: 0; }
+      -webkit-align-items: center;
+      -moz-align-items: center;
+      -ms-align-items: center;
+      -o-align-items: center;
+      align-items: center; }
     .nav-overlay .social-container .cta-container .cta .icon, .nav-overlay .social-container .cta-container #productSummary #productDetails .sqs-add-to-cart-button .icon, #productSummary #productDetails .nav-overlay .social-container .cta-container .sqs-add-to-cart-button .icon, .nav-overlay .social-container .cta-container #sqs-shopping-cart-wrapper .checkout-button .icon, #sqs-shopping-cart-wrapper .nav-overlay .social-container .cta-container .checkout-button .icon {
       margin: auto; }
     .nav-overlay .social-container .cta-container svg, .nav-overlay .social-container .cta-container img {

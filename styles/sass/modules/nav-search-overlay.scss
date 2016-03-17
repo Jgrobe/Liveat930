@@ -175,10 +175,11 @@ $rightColMargin: 10vw;
       .cta {
 
         .filler {
-          @include flexbox();
           width:$size;
           height:$size;
           padding: 0;
+          @include flexbox();
+          @include prefixed(align-items, center);
         }// .filler
 
         .icon {margin: auto;}
