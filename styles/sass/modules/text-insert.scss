@@ -4,6 +4,16 @@
   padding-top: $shift;
   margin-bottom: 20vh;
 
+  .is-ie & {
+    &:after {
+      content: '';
+      display: block;
+      @extend .fill-parent;
+      background: black;
+      opacity: .75;
+    }
+  }
+
   .rectangle {
     background: white;
     position: absolute;

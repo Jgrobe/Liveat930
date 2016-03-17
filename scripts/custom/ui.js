@@ -604,15 +604,18 @@ function removeDisablerDummy() {
 
 function browser_processing() {
     var $nomsie = jQuery('.no-msie'),
-        $msie = jQuery('.msie');
+        $msie = jQuery('.msie'),
+        $html = jQuery('html');
 
     if(bowser.msie) {
+        $html.addClass('is-ie');
         $nomsie.remove();
         $msie.each(function(){
             var $this = jQuery(this);
             $this.children().unwrap();
         });
     } else {
+        $html.addClass('is-no-ie');
         $msie.remove();
         $nomsie.each(function(){
             var $this = jQuery(this);
