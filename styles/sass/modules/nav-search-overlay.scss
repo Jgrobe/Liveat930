@@ -40,6 +40,7 @@ $rightColMargin: 10vw;
 
     &.nav-table {
       height:100vh;
+      @include prefixed(align-items, center);
     }
 
     &.search-table {
@@ -170,21 +171,14 @@ $rightColMargin: 10vw;
 
     .cta-container {
       $size : get_relative_units(97);
-      display: inline-block;
-      width:$size;
-      height:$size;
 
       .cta {
-        height: 100%;
 
         .filler {
-          @include flexbox(inline);
+          @include flexbox();
           width:$size;
           height:$size;
           padding: 0;
-          position: absolute;
-          top:0;
-          left: 0;
         }// .filler
 
         .icon {margin: auto;}
