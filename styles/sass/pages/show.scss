@@ -121,7 +121,7 @@
 
     .image {
       width: 100%;
-      right: -12.5vw;
+      right: -33.33%;//-12.5vw; // horizontal vws are problematic in ie 10 -> so have to use % where possible
     }
   }// .slider-images
 
