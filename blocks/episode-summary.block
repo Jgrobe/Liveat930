@@ -2,9 +2,9 @@
 
     <div class="shape-container make-shape" data-shape="{customContent.episode-shape}" data-img="{customContent.poster-fallback-image.assetUrl}">
         <!--<div class="fill-parent imgfill gradmap" style="background-image:url('');"></div>-->
-        {.section customContent.poster-fallback-image}
-            {@|apply ie-shape-svg.block}
-        {.end}
+        <svg class="clip-svg fill-parent">
+            <image class="svg-image" xlink:href="{customContent.poster-fallback-image.assetUrl}" />
+        </svg>
     </div>
 
     <div class="summary-copy">
