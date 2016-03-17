@@ -7,17 +7,12 @@ var SVGClipper = function($container, options) {
         shape : 'star',
         maskID : 'shapeMask',
         onInit : false,
-        imgSrc: $container.attr('data-img'),
         shapeScale: 1,
-        assetPath : 'assets/images/shapes/',
-        svgSelector : '.clip-svg',
-        svgImageSelector : '.svg-image'
+        assetPath : 'assets/images/shapes/'
     }, options);
 
     SC.$object = {
-        container : $container,
-        inlineClippingSVG : $container.find(SC.options.svgSelector),
-        svgImage : $container.find(SC.options.svgImageSelector)
+        container : $container
     };
     SC.DOM = {
         container : {
@@ -413,13 +408,7 @@ var SVGClipper = function($container, options) {
 
         SC.$object.container.css('overflow', 'hidden');
 
-        SC.DOM.img = new Image();
-        SC.DOM.img.onload = function(){
-
-            create_clipping_mask();
-
-        };// image onload
-        SC.DOM.img.src = SC.options.imgSrc;
+        create_clipping_mask();
 
         jQuery(window).load(function(){
             jQuery(window).resize();
@@ -452,23 +441,19 @@ var SVGClipper = function($container, options) {
 
         get_shape_dimensions();
 
-        var inlineOpener = '<defs><clipPath id="'+ SC.options.maskID +'">';
-        var inlineCloser = '</clipPath></defs>';
+        var inlineOpener = '<svg><defs><clipPath id="'+ SC.options.maskID +'">';
+        var inlineCloser = '</clipPath></defs></svg>';
 
-        var $svgContentsHTML = jQuery( inlineOpener + '<'+ SC.SHAPE.type +' />' + inlineCloser );
+        var svgHTML = inlineOpener + '<'+ SC.SHAPE.type +' />' + inlineCloser;
 
-        SC.$object.svgImage.css({
-            'clip-path' : 'url(#'+ SC.options.maskID +')',
-            '-webkit-clip-path' : 'url(#'+ SC.options.maskID +')'
+        SC.$object.inlineClippingSVG = jQuery( svgHTML );
+        SC.$object.inlineClippingSVG.css({
+            width: 0,
+            height: 0
         });
-        SC.$object.inlineClippingSVG.append($svgContentsHTML);
-        //SC.$object.inlineClippingSVG.css({
-        //    width: 0,
-        //    height: 0
-        //});
         SC.$object.inlineClippingMask = SC.$object.inlineClippingSVG.find('#'+SC.options.maskID);
         SC.$object.inlineClippingMaskElement = SC.$object.inlineClippingSVG.find(SC.SHAPE.type);
-        //SC.$object.inlineClippingSVG.insertAfter(SC.$object.container);
+        SC.$object.inlineClippingSVG.insertAfter(SC.$object.container);
 
         SC.DOM.inlineClippingSVG = {object:SC.$object.inlineClippingSVG.get(0)};
         SC.DOM.inlineClippingMask = {object:SC.$object.inlineClippingMask.get(0)};
@@ -487,23 +472,11 @@ var SVGClipper = function($container, options) {
         SC.$object.inlineClippingMaskElement.attr(SC.SHAPE.ATTRIBUTES);
         SC.$object.container.css(SC.SHAPE.CSS);
 
-        console.log('parent', SC.$object.container.get(0));
-        console.log('cild',SC.DOM.img);
-
-        var svgImageSize = getSizeTo('cover', {width:SC.$object.container.width(),height:SC.$object.container.height()}, SC.DOM.img);
-        console.log('------------ get svg image size', svgImageSize);
-        SC.$object.svgImage.attr({
-            width:svgImageSize.width,
-            height:svgImageSize.height
-        });
-
         ////console.log('MASK VALUES', SC.SHAPE.points);
 
     }// update_mask()
 
     function getSizeTo(mode, parent, child) {
-        console.log('getsizeTo parent', parent.width, parent.height);
-        console.log('getsizeTo child', child.width, child.height);
 
         var scaleFactor;
         switch(mode) {
