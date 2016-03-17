@@ -17,9 +17,9 @@
             <div class="layer model-layer rel">
                 <div class="model-container img widescreen" data-shape="{customContent.episode-shape}" data-img="{customContent.poster-fallback-image.assetUrl}">
                     <!--<div class="fill-parent imgfill"  style="background-image:url('{customContent.poster-fallback-image.assetUrl}');"></div>-->
-                    <svg class="clip-svg fill-parent">
-                        <image class="svg-image" xlink:href="{customContent.poster-fallback-image.assetUrl}" />
-                    </svg>
+                    {.section customContent.poster-fallback-image}
+                        {@|apply ie-shape-svg.block}
+                    {.end}
                 </div><!-- .model-container.img.widescreen -->
             </div><!-- .model-layer -->
 
