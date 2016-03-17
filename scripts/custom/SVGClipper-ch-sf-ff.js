@@ -7,17 +7,12 @@ var SVGClipper = function($container, options) {
         shape : 'star',
         maskID : 'shapeMask',
         onInit : false,
-        imgSrc: $container.attr('data-img'),
         shapeScale: 1,
-        assetPath : 'assets/images/shapes/',
-        ieSVGSelector : '.clip-svg',
-        ieImageSelector : '.svg-image'
+        assetPath : 'assets/images/shapes/'
     }, options);
 
     SC.$object = {
-        container : $container,
-        ieSVG : $container.find(SC.options.svgSelector),
-        ieImage : $container.find(SC.options.ieImageSelector)
+        container : $container
     };
     SC.DOM = {
         container : {
@@ -413,13 +408,7 @@ var SVGClipper = function($container, options) {
 
         SC.$object.container.css('overflow', 'hidden');
 
-        SC.DOM.img = new Image();
-        SC.DOM.img.onload = function(){
-
-            create_clipping_mask();
-
-        };// image onload
-        SC.DOM.img.src = SC.options.imgSrc;
+        create_clipping_mask();
 
         jQuery(window).load(function(){
             jQuery(window).resize();
@@ -462,15 +451,9 @@ var SVGClipper = function($container, options) {
             width: 0,
             height: 0
         });
-
-        SC.$object.ieImage.css({
-            'clip-path' : 'url(#'+ SC.options.maskID +')',
-            '-webkitclip-path' : 'url(#'+ SC.options.maskID +')'
-        });
-        
         SC.$object.inlineClippingMask = SC.$object.inlineClippingSVG.find('#'+SC.options.maskID);
         SC.$object.inlineClippingMaskElement = SC.$object.inlineClippingSVG.find(SC.SHAPE.type);
-        //SC.$object.inlineClippingSVG.insertAfter(SC.$object.container);
+        SC.$object.inlineClippingSVG.insertAfter(SC.$object.container);
 
         SC.DOM.inlineClippingSVG = {object:SC.$object.inlineClippingSVG.get(0)};
         SC.DOM.inlineClippingMask = {object:SC.$object.inlineClippingMask.get(0)};
@@ -489,23 +472,11 @@ var SVGClipper = function($container, options) {
         SC.$object.inlineClippingMaskElement.attr(SC.SHAPE.ATTRIBUTES);
         SC.$object.container.css(SC.SHAPE.CSS);
 
-        console.log('parent', SC.$object.container.get(0));
-        console.log('cild',SC.DOM.img);
-
-        var ieImageSize = getSizeTo('cover', {width:SC.$object.container.width(),height:SC.$object.container.height()}, SC.DOM.img);
-        console.log('------------ get svg image size', ieImageSize);
-        SC.$object.ieImage.attr({
-            width:ieImageSize.width,
-            height:ieImageSize.height
-        });
-
         ////console.log('MASK VALUES', SC.SHAPE.points);
 
     }// update_mask()
 
     function getSizeTo(mode, parent, child) {
-        console.log('getsizeTo parent', parent.width, parent.height);
-        console.log('getsizeTo child', child.width, child.height);
 
         var scaleFactor;
         switch(mode) {
