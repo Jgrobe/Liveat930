@@ -6,6 +6,7 @@ var SVGClipper = function($container, options) {
         autoInit : true,
         shape : 'star',
         maskID : 'shapeMask',
+        img: $container.hasAttr('data-src') ? $container.attr('data-src') : false,
         onInit : false,
         shapeScale: 1,
         assetPath : 'assets/images/shapes/'
@@ -447,10 +448,22 @@ var SVGClipper = function($container, options) {
         var svgHTML = inlineOpener + '<'+ SC.SHAPE.type +' />' + inlineCloser;
 
         SC.$object.inlineClippingSVG = jQuery( svgHTML );
-        SC.$object.inlineClippingSVG.css({
-            width: 0,
-            height: 0
-        });
+
+        if(SC.options.img) {
+            SC.$object.image = jQuery('<image xlink:href="'+ SC.options.img +'"/>');
+            SC.$object.image.css({
+                'clip-path' : 'url(#'+ SC.options.maskID +')',
+                '-webkit-clip-path' : 'url(#'+ SC.options.maskID +')'
+            });
+            SC.$object.inlineClippingSVG.prepend(SC.$object.image);
+        } else {
+            // image is used as $container background-image so <svg> must not be visible
+            SC.$object.inlineClippingSVG.css({
+                width: 0,
+                height: 0
+            });
+        }// endif
+
         SC.$object.inlineClippingMask = SC.$object.inlineClippingSVG.find('#'+SC.options.maskID);
         SC.$object.inlineClippingMaskElement = SC.$object.inlineClippingSVG.find(SC.SHAPE.type);
         SC.$object.inlineClippingSVG.insertAfter(SC.$object.container);
@@ -471,6 +484,14 @@ var SVGClipper = function($container, options) {
 
         SC.$object.inlineClippingMaskElement.attr(SC.SHAPE.ATTRIBUTES);
         SC.$object.container.css(SC.SHAPE.CSS);
+
+        if(SC.options.img) {
+            var imageSize = getSizeTo('contain', SC.$object.container, SC.$object.image);
+            SC.$object.image.css({
+                width: imageSize.width,
+                height: imageSize.height
+            });
+        }// endif
 
         ////console.log('MASK VALUES', SC.SHAPE.points);
 
