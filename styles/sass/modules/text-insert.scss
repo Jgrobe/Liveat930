@@ -4,16 +4,6 @@
   padding-top: $shift;
   margin-bottom: 20vh;
 
-  .is-ie & {
-    &:after {
-      content: '';
-      display: block;
-      @extend .fill-parent;
-      background: black;
-      opacity: .75;
-    }
-  }
-
   .rectangle {
     background: white;
     position: absolute;
@@ -31,6 +21,16 @@
     width: 87.5vw;
     color: white;
     @include halftone();
+
+    .is-ie & {
+      &:after {
+        content: '';
+        display: block;
+        @extend .fill-parent;
+        background: black;
+        opacity: .75;
+      }
+    }
 
     .section-head {
       padding: 0;
