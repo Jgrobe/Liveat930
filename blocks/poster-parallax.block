@@ -17,7 +17,7 @@
             <div class="layer model-layer rel">
                 <div class="model-container img widescreen" data-shape="{customContent.episode-shape}" data-img="{customContent.poster-fallback-image.assetUrl}">
 
-                    {@|apply shape.block}
+                    {@|apply shape-video.block}
 
                 </div><!-- .model-container.img.widescreen -->
             </div><!-- .model-layer -->

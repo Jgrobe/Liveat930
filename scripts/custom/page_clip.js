@@ -9,7 +9,6 @@ SQSP.functions.initPage = function() {
         SQSP.instances.shapes.push(new SVGClipper($this, {
             shape: $this.attr('data-shape'),
             maskID: ('clip_'+i),
-            assetPath: location.origin + '/assets/images/shapes/',
             onInit:function(Clip){
                 //console.log('svgclipper oninit',Clip);
                 //GradientMaps.applyGradientMap(Painter.DOM.baseCanvas.object, Clip.shapes[Clip.options.shape].gradientMaps.full);
