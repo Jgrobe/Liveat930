@@ -465,7 +465,7 @@ var SVGClipper = function($container, options) {
 
         SC.$object.ieImage.css({
             'clip-path' : 'url(#'+ SC.options.maskID +')',
-            '-webkitclip-path' : 'url(#'+ SC.options.maskID +')'
+            '-webkit-clip-path' : 'url(#'+ SC.options.maskID +')'
         });
         
         SC.$object.inlineClippingMask = SC.$object.inlineClippingSVG.find('#'+SC.options.maskID);
