@@ -457,7 +457,7 @@ var SVGClipper = function($container, options) {
         //});
         SC.$object.inlineClippingMask = SC.$object.inlineClippingSVG.find('#'+SC.options.maskID);
         SC.$object.inlineClippingMaskElement = SC.$object.inlineClippingSVG.find(SC.SHAPE.type);
-        SC.$object.inlineClippingSVG.insertAfter(SC.$object.container);
+        //SC.$object.inlineClippingSVG.insertAfter(SC.$object.container);
 
         SC.DOM.inlineClippingSVG = {object:SC.$object.inlineClippingSVG.get(0)};
         SC.DOM.inlineClippingMask = {object:SC.$object.inlineClippingMask.get(0)};
@@ -477,6 +477,7 @@ var SVGClipper = function($container, options) {
         SC.$object.container.css(SC.SHAPE.CSS);
 
         var svgImageSize = getSizeTo('contain', SC.$object.svgImage, SC.$object.container);
+        console.log('------------ get svg image size', svgImageSize);
         SC.$object.svgImage.attr({
             width:svgImageSize.width,
             height:svgImageSize.height
