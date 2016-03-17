@@ -7,6 +7,7 @@ var SVGClipper = function($container, options) {
         shape : 'star',
         maskID : 'shapeMask',
         onInit : false,
+        imgSrc: $container.attr('data-img'),
         shapeScale: 1,
         assetPath : 'assets/images/shapes/',
         svgSelector : '.clip-svg',
@@ -412,7 +413,13 @@ var SVGClipper = function($container, options) {
 
         SC.$object.container.css('overflow', 'hidden');
 
-        create_clipping_mask();
+        SC.DOM.img = new Image();
+        SC.DOM.img.onload = function(){
+
+            create_clipping_mask();
+
+        };// image onload
+        SC.DOM.img.src = SC.options.imgSrc;
 
         jQuery(window).load(function(){
             jQuery(window).resize();
@@ -480,7 +487,7 @@ var SVGClipper = function($container, options) {
         SC.$object.inlineClippingMaskElement.attr(SC.SHAPE.ATTRIBUTES);
         SC.$object.container.css(SC.SHAPE.CSS);
 
-        var svgImageSize = getSizeTo('contain', SC.$object.container.get(0), SC.$object.inlineClippingSVG.get(0));
+        var svgImageSize = getSizeTo('contain', SC.$object.container.get(0), SC.DOM.img);
         console.log('------------ get svg image size', svgImageSize);
         SC.$object.svgImage.attr({
             width:svgImageSize.width,
