@@ -1581,9 +1581,6 @@ input {
       content: '';
       display: block;
       padding-top: 100%; }
-    .poster .layer.model-layer svg {
-      width: 0;
-      height: 0; }
   .poster .layer.copy-layer {
     z-index: 1;
     color: white; }

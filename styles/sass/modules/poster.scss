@@ -204,10 +204,11 @@ $posterWidth: 84vw;
         display: block;
         padding-top: 100%;
       }
-      svg {
-        width: 0;
-        height: 0;
-      }// thats only clips/masks & gradientmaps
+      //svg {
+      //  width: 0;
+      //  height: 0;
+      //}// thats only clips/masks & gradientmaps
+
     }// .model-layer
     &.copy-layer {
       z-index: 1;
