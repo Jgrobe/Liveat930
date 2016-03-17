@@ -490,7 +490,7 @@ var SVGClipper = function($container, options) {
         console.log('parent', SC.$object.container.get(0));
         console.log('cild',SC.DOM.img);
 
-        var svgImageSize = getSizeTo('contain', {width:SC.$object.container.width(),height:SC.$object.container.height()}, SC.DOM.img);
+        var svgImageSize = getSizeTo('cover', {width:SC.$object.container.width(),height:SC.$object.container.height()}, SC.DOM.img);
         console.log('------------ get svg image size', svgImageSize);
         SC.$object.svgImage.attr({
             width:svgImageSize.width,
