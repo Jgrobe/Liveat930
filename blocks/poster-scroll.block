@@ -19,7 +19,7 @@
             </div><!-- .bg-layer -->
 
             <div class="layer model-layer rel prllx-custom prllx-no-disable" data-prllx=".18">
-                <div class="model-container imgfill" data-shape="{customContent.episode-shape}" data-img="{customContent.poster-fallback-image.assetUrl}">
+                <div class="model-container imgfill" data-shape="{customContent.episode-shape}" data-img="{customContent.poster-fallback-image.assetUrl}" style="background-image:url('{customContent.poster-fallback-image.assetUrl}');">
                     <svg class="clip-svg fill-parent">
                         <image class="svg-image" xlink:href="{customContent.poster-fallback-image.assetUrl}" />
                     </svg>
