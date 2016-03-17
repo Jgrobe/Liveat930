@@ -1,7 +1,10 @@
 <div class="episode-summary prllx-custom" data-prllx=".08">
 
-    <div class="shape-container make-shape" data-shape="{customContent.episode-shape}">
-        <div class="fill-parent imgfill gradmap" style="background-image:url('{customContent.poster-fallback-image.assetUrl}');"></div>
+    <div class="shape-container make-shape" data-shape="{customContent.episode-shape}" data-img="{customContent.poster-fallback-image.assetUrl}">
+        <!--<div class="fill-parent imgfill gradmap" style="background-image:url('');"></div>-->
+        {.section customContent.poster-fallback-image}
+            {@|apply ie-shape-svg.block}
+        {.end}
     </div>
 
     <div class="summary-copy">

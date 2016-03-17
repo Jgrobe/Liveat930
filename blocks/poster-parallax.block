@@ -15,8 +15,11 @@
             </div>
 
             <div class="layer model-layer rel">
-                <div class="model-container img widescreen" data-shape="{customContent.episode-shape}">
-                    <div class="fill-parent imgfill"  style="background-image:url('{customContent.poster-fallback-image.assetUrl}');"></div>
+                <div class="model-container img widescreen" data-shape="{customContent.episode-shape}" data-img="{customContent.poster-fallback-image.assetUrl}">
+                    <!--<div class="fill-parent imgfill"  style="background-image:url('{customContent.poster-fallback-image.assetUrl}');"></div>-->
+                    {.section customContent.poster-fallback-image}
+                        {@|apply ie-shape-svg.block}
+                    {.end}
                     <!--<video src="{customContent.episode-poster-video}" muted></video>-->
                     <!-- video canvas is inserted here -->
                 </div><!-- .model-container.img.widescreen -->
