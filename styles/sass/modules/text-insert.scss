@@ -23,7 +23,7 @@
     @include halftone();
 
     .is-ie & {
-      &:after {
+      &:before {
         content: '';
         display: block;
         @extend .fill-parent;
