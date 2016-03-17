@@ -45,6 +45,7 @@
     margin-top: 28vh;
     display: inline-block;
     position: relative;
+    max-width: 100%;
   }// .landing-container
 
   @include breakpoint(mobile) {

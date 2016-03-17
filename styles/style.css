@@ -1109,7 +1109,8 @@ input {
     margin: auto;
     margin-top: 28vh;
     display: inline-block;
-    position: relative; }
+    position: relative;
+    max-width: 100%; }
   @media only screen and (max-width: 750px) {
     .landing {
       height: auto;
@@ -3939,18 +3940,25 @@ input {
 
 .history-slider {
   padding: 10.41667vw 0 0 0;
-  position: relative; }
+  position: relative;
+  width: 100%; }
   .history-slider .rectangle {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 75%;
     height: 75%;
     background: white;
     z-index: -1; }
+  .history-slider .section-head {
+    max-width: 70%;
+    margin: auto; }
   .history-slider .excerpt-head {
     padding: 0; }
   .history-slider .excerpt-container {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
     padding: 0; }
   .history-slider .slider-images {
     height: 37.5vw; }

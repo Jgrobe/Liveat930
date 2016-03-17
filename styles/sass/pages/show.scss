@@ -88,15 +88,21 @@
 .history-slider {
   padding: $sectionMarginBottom 0 0 0;
   position: relative;
+  width: 100%;
 
   .rectangle {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 75%;
     height: 75%;
     background: white;
     z-index: -1;
+  }
+
+  .section-head {
+    max-width: 70%;
+    margin: auto;
   }
 
   .excerpt-head {
@@ -104,6 +110,9 @@
   }
 
   .excerpt-container {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
     padding: 0;
   }
 
