@@ -967,6 +967,7 @@ input {
   .cta svg *, #productSummary #productDetails .sqs-add-to-cart-button svg *, #sqs-shopping-cart-wrapper .checkout-button svg * {
     fill: white; }
   .cta .icon, #productSummary #productDetails .sqs-add-to-cart-button .icon, #sqs-shopping-cart-wrapper .checkout-button .icon {
+    display: inline-block;
     margin-right: 1.4vw; }
   .cta svg, #productSummary #productDetails .sqs-add-to-cart-button svg, #sqs-shopping-cart-wrapper .checkout-button svg, .cta img, #productSummary #productDetails .sqs-add-to-cart-button img, #sqs-shopping-cart-wrapper .checkout-button img {
     display: block;
@@ -2353,7 +2354,7 @@ input {
       content: '';
       display: block;
       background: black;
-      opacity: .75; }
+      opacity: .7; }
     .text-insert-container .text-layer .section-head {
       padding: 0;
       text-align: left;
