@@ -3470,6 +3470,7 @@ input {
     width: 0.86806vw;
     height: 0.86806vw; }
 .landing.episodes-landing.episode-detail .text-layer {
+  position: relative;
   margin-top: -3%;
   margin-left: 25%;
   width: 80%;
