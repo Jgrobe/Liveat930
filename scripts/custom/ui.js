@@ -610,13 +610,13 @@ function browser_processing() {
         $nomsie.remove();
         $msie.each(function(){
             var $this = jQuery(this);
-            $this.children.unwrap();
+            $this.children().unwrap();
         });
     } else {
         $msie.remove();
         $nomsie.each(function(){
             var $this = jQuery(this);
-            $this.children.unwrap();
+            $this.children().unwrap();
         });
     }
 }
