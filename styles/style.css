@@ -4052,9 +4052,14 @@ input {
     flex-wrap: wrap;
     -webkit-wrap: wrap;
     -ms-wrap: wrap;
-    wrap: wrap; }
+    wrap: wrap;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    -o-justify-content: center;
+    justify-content: center; }
   .sponsors .sponsor {
-    margin: 2.5%;
+    margin: 0 2.5% 2.5% 2.5%;
     -webkit-align-self: center;
     -moz-align-self: center;
     -ms-align-self: center;
@@ -4078,7 +4083,7 @@ input {
         -o-column-count: 2;
         column-count: 2; }
       .sponsors .sponsor {
-        margin: 5%;
+        margin: 0 12% 12% 12%;
         display: block; }
         .sponsors .sponsor .sponsor-logo {
           height: 20vw; } }

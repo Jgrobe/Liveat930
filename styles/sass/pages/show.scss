@@ -222,11 +222,13 @@
     @include flexbox();
     @include flex-value(direction, row);
     @include flex-value(wrap, wrap);
+    @include prefixed(justify-content, center);
 
   }// .logos-container
 
   .sponsor {
-    margin: 2.5%;
+    $margin: 2.5%;
+    margin: 0 $margin $margin $margin;
     @include prefixed(align-self, center); // why not align-items:center on container? bc margin would prevent .sponsor from vertical centering
 
     .sponsor-logo {// img
@@ -249,7 +251,8 @@
     }// .logos-container
 
     .sponsor {
-      margin: 5%;
+      $margin: 12%;
+      margin: 0 $margin $margin $margin;
       display: block;
 
       .sponsor-logo {// img
