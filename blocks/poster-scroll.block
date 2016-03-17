@@ -19,10 +19,15 @@
             </div><!-- .bg-layer -->
 
             <div class="layer model-layer rel prllx-custom prllx-no-disable" data-prllx=".18">
-                <div class="model-container imgfill" data-shape="{customContent.episode-shape}" data-src="{customContent.poster-fallback-image.assetUrl}">
-                    <!--[if !IE]>
+                <div class="model-container imgfill" data-shape="{customContent.episode-shape}">
+
+                    <svg class="clip-svg fill-parent">
+                        <image class="svg-image" xlink:href="{customContent.poster-fallback-image.assetUrl}" />
+                    </svg>
+
+                    <!--[if !(IE)]><!-->
                     <video data-src="{customContent.episode-poster-video}" muted class="loop"{.equal?:@index:1} autoplay{.end}></video>
-                    <![endif]-->
+                    <!--<![endif]-->
                 </div><!-- .model-container.img.widescreen -->
             </div><!-- .model-layer -->
 
