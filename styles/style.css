@@ -970,8 +970,8 @@ input {
     margin-right: 1.4vw; }
   .cta svg, #productSummary #productDetails .sqs-add-to-cart-button svg, #sqs-shopping-cart-wrapper .checkout-button svg, .cta img, #productSummary #productDetails .sqs-add-to-cart-button img, #sqs-shopping-cart-wrapper .checkout-button img {
     display: block;
-    width: auto;
-    height: 0.69444vw;
+    width: 1vw;
+    height: .7vw;
     overflow: visible; }
   .cta .filler, #productSummary #productDetails .sqs-add-to-cart-button .filler, #sqs-shopping-cart-wrapper .checkout-button .filler {
     display: -webkit-inline-box;
@@ -1023,6 +1023,7 @@ input {
   .icon-browser .cta, .icon-browser #productSummary #productDetails .sqs-add-to-cart-button, #productSummary #productDetails .icon-browser .sqs-add-to-cart-button, .icon-browser #sqs-shopping-cart-wrapper .checkout-button, #sqs-shopping-cart-wrapper .icon-browser .checkout-button, .icon-icon-load .cta, .icon-icon-load #productSummary #productDetails .sqs-add-to-cart-button, #productSummary #productDetails .icon-icon-load .sqs-add-to-cart-button, .icon-icon-load #sqs-shopping-cart-wrapper .checkout-button, #sqs-shopping-cart-wrapper .icon-icon-load .checkout-button, .icon-icon-arrow .cta, .icon-icon-arrow #productSummary #productDetails .sqs-add-to-cart-button, #productSummary #productDetails .icon-icon-arrow .sqs-add-to-cart-button, .icon-icon-arrow #sqs-shopping-cart-wrapper .checkout-button, #sqs-shopping-cart-wrapper .icon-icon-arrow .checkout-button {
     line-height: 1vw; }
     .icon-browser .cta svg, .icon-browser #productSummary #productDetails .sqs-add-to-cart-button svg, #productSummary #productDetails .icon-browser .sqs-add-to-cart-button svg, .icon-browser #sqs-shopping-cart-wrapper .checkout-button svg, #sqs-shopping-cart-wrapper .icon-browser .checkout-button svg, .icon-icon-load .cta svg, .icon-icon-load #productSummary #productDetails .sqs-add-to-cart-button svg, #productSummary #productDetails .icon-icon-load .sqs-add-to-cart-button svg, .icon-icon-load #sqs-shopping-cart-wrapper .checkout-button svg, #sqs-shopping-cart-wrapper .icon-icon-load .checkout-button svg, .icon-icon-arrow .cta svg, .icon-icon-arrow #productSummary #productDetails .sqs-add-to-cart-button svg, #productSummary #productDetails .icon-icon-arrow .sqs-add-to-cart-button svg, .icon-icon-arrow #sqs-shopping-cart-wrapper .checkout-button svg, #sqs-shopping-cart-wrapper .icon-icon-arrow .checkout-button svg {
+      width: 1.43vw;
       height: 1vw; }
   .icon-icon-arrow .cta svg *, .icon-icon-arrow #productSummary #productDetails .sqs-add-to-cart-button svg *, #productSummary #productDetails .icon-icon-arrow .sqs-add-to-cart-button svg *, .icon-icon-arrow #sqs-shopping-cart-wrapper .checkout-button svg *, #sqs-shopping-cart-wrapper .icon-icon-arrow .checkout-button svg * {
     fill: none;
@@ -1044,6 +1045,7 @@ input {
       font-size: 10px;
       line-height: 100%; }
       .cta svg, #productSummary #productDetails .sqs-add-to-cart-button svg, #sqs-shopping-cart-wrapper .checkout-button svg, .cta img, #productSummary #productDetails .sqs-add-to-cart-button img, #sqs-shopping-cart-wrapper .checkout-button img {
+        width: 14px;
         height: 10px; }
       .cta .icon, #productSummary #productDetails .sqs-add-to-cart-button .icon, #sqs-shopping-cart-wrapper .checkout-button .icon {
         margin-right: 24px; }
@@ -1054,6 +1056,7 @@ input {
       .icon-browser .cta, .icon-browser #productSummary #productDetails .sqs-add-to-cart-button, #productSummary #productDetails .icon-browser .sqs-add-to-cart-button, .icon-browser #sqs-shopping-cart-wrapper .checkout-button, #sqs-shopping-cart-wrapper .icon-browser .checkout-button, .icon-icon-load .cta, .icon-icon-load #productSummary #productDetails .sqs-add-to-cart-button, #productSummary #productDetails .icon-icon-load .sqs-add-to-cart-button, .icon-icon-load #sqs-shopping-cart-wrapper .checkout-button, #sqs-shopping-cart-wrapper .icon-icon-load .checkout-button, .icon-icon-arrow .cta, .icon-icon-arrow #productSummary #productDetails .sqs-add-to-cart-button, #productSummary #productDetails .icon-icon-arrow .sqs-add-to-cart-button, .icon-icon-arrow #sqs-shopping-cart-wrapper .checkout-button, #sqs-shopping-cart-wrapper .icon-icon-arrow .checkout-button {
         line-height: 13px; }
         .icon-browser .cta svg, .icon-browser #productSummary #productDetails .sqs-add-to-cart-button svg, #productSummary #productDetails .icon-browser .sqs-add-to-cart-button svg, .icon-browser #sqs-shopping-cart-wrapper .checkout-button svg, #sqs-shopping-cart-wrapper .icon-browser .checkout-button svg, .icon-icon-load .cta svg, .icon-icon-load #productSummary #productDetails .sqs-add-to-cart-button svg, #productSummary #productDetails .icon-icon-load .sqs-add-to-cart-button svg, .icon-icon-load #sqs-shopping-cart-wrapper .checkout-button svg, #sqs-shopping-cart-wrapper .icon-icon-load .checkout-button svg, .icon-icon-arrow .cta svg, .icon-icon-arrow #productSummary #productDetails .sqs-add-to-cart-button svg, #productSummary #productDetails .icon-icon-arrow .sqs-add-to-cart-button svg, .icon-icon-arrow #sqs-shopping-cart-wrapper .checkout-button svg, #sqs-shopping-cart-wrapper .icon-icon-arrow .checkout-button svg {
+          width: 19px;
           height: 13px; } }
 
 #disablerDummy {
@@ -1790,8 +1793,8 @@ input {
       font-size: 41px; }
     .poster .ep-headline {
       margin-top: 65px;
-      font-size: 200px;
-      line-height: 200px; }
+      font-size: 165px;
+      line-height: 165px; }
     .poster .ep-date {
       font-size: 105px;
       line-height: 105px; }

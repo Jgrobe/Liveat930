@@ -33,8 +33,8 @@
 
   svg, img {
     display: block;
-    width: auto;
-    height: get_relative_units(20);
+    width: 1vw;
+    height: .7vw;
     overflow: visible;
   }// svg
 
@@ -79,7 +79,10 @@
   }// .plain
 
   .icon-browser &, .icon-icon-load &, .icon-icon-arrow & {
-    svg { height: 1vw;}
+    svg {
+      width: 1.43vw;
+      height: 1vw;
+    }
     line-height: 1vw;
   }
 
@@ -123,6 +126,7 @@
     line-height: 100%;
 
     svg, img {
+      width: 14px;
       height: 10px;//get_relative_units(45);
     }// svg
 
@@ -137,7 +141,10 @@
     &.hover-cta { display: none; }
 
     .icon-browser &, .icon-icon-load &, .icon-icon-arrow & {
-      svg { height: 13px;}
+      svg {
+        width: 19px;
+        height: 13px;
+      }
       line-height: 13px;
     }// .load-clips
 
