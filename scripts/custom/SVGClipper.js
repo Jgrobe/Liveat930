@@ -59,7 +59,8 @@ var SVGClipper = function($container, options) {
             gradientMaps: {
                 full: '#060d26, #79515a',
                 shape: '#e08585, #f7d7d7'
-            }
+            },
+            values : 'M0,0L100 0 100 100 0 100z'
         },
         deltoid: {
             type : 'path',
@@ -491,11 +492,11 @@ var SVGClipper = function($container, options) {
         SC.$object.inlineClippingMaskElement.attr(SC.SHAPE.ATTRIBUTES);
         SC.$object.container.css(SC.SHAPE.CSS);
 
-        console.log('parent', SC.$object.container.get(0));
-        console.log('cild',SC.DOM.img);
+        //console.log('parent', SC.$object.container.get(0));
+        //console.log('cild',SC.DOM.img);
 
         var ieImageSize = getSizeTo('cover', {width:SC.$object.container.width(),height:SC.$object.container.height()}, SC.DOM.img);
-        console.log('------------ get svg image size', ieImageSize);
+        //console.log('------------ get svg image size', ieImageSize);
         SC.$object.ieImage.attr({
             width:ieImageSize.width,
             height:ieImageSize.height
@@ -506,8 +507,8 @@ var SVGClipper = function($container, options) {
     }// update_mask()
 
     function getSizeTo(mode, parent, child) {
-        console.log('getsizeTo parent', parent.width, parent.height);
-        console.log('getsizeTo child', child.width, child.height);
+        //console.log('getsizeTo parent', parent.width, parent.height);
+        //console.log('getsizeTo child', child.width, child.height);
 
         var scaleFactor;
         switch(mode) {
@@ -533,6 +534,7 @@ var SVGClipper = function($container, options) {
     }// getSizeToCover()
 
     function is_IE() {
+        console.log('-------- OMG THIS IS SPARTA --------');
         return (navigator.userAgent.indexOf('MSIE') !== -1 || navigator.appVersion.indexOf('Trident/') > 0);
     }// is_IE()
 
