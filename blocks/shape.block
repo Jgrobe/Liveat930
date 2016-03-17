@@ -4,8 +4,6 @@
 
 <span class="msie">
     <svg class="clip-svg fill-parent">
-        <image class="svg-image">
-            <div class="fill-parent imgfill" style="background-image:url('{customContent.poster-fallback-image.assetUrl}')"></div>
-        </image>
+        <image class="svg-image" xlink:href="{customContent.poster-fallback-image.assetUrl}" />
     </svg>
 </span>
