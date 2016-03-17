@@ -450,6 +450,10 @@ var SVGClipper = function($container, options) {
 
         var $svgContentsHTML = jQuery( inlineOpener + '<'+ SC.SHAPE.type +' />' + inlineCloser );
 
+        SC.$object.svgImage.css({
+            'clip-path' : 'url(#'+ SC.options.maskID +')',
+            '-webkit-clip-path' : 'url(#'+ SC.options.maskID +')'
+        });
         SC.$object.inlineClippingSVG.append($svgContentsHTML);
         //SC.$object.inlineClippingSVG.css({
         //    width: 0,
@@ -476,7 +480,7 @@ var SVGClipper = function($container, options) {
         SC.$object.inlineClippingMaskElement.attr(SC.SHAPE.ATTRIBUTES);
         SC.$object.container.css(SC.SHAPE.CSS);
 
-        var svgImageSize = getSizeTo('contain', SC.$object.svgImage, SC.$object.container);
+        var svgImageSize = getSizeTo('contain', {width:SC.$object.container.width(), height:SC.$object.container.height()}, {width:SC.$object.svgImage.width(),height:SC.$object.svgImage.height()});
         console.log('------------ get svg image size', svgImageSize);
         SC.$object.svgImage.attr({
             width:svgImageSize.width,
