@@ -1,10 +1,9 @@
 <div class="episode-summary prllx-custom" data-prllx=".08">
 
     <div class="shape-container make-shape" data-shape="{customContent.episode-shape}" data-img="{customContent.poster-fallback-image.assetUrl}">
-        <!--<div class="fill-parent imgfill gradmap" style="background-image:url('');"></div>-->
-        <svg class="clip-svg fill-parent">
-            <image class="svg-image" xlink:href="{customContent.poster-fallback-image.assetUrl}" />
-        </svg>
+
+        {@|apply shape.block}
+
     </div>
 
     <div class="summary-copy">
