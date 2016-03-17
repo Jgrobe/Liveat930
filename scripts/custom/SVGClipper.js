@@ -60,7 +60,7 @@ var SVGClipper = function($container, options) {
                 full: '#060d26, #79515a',
                 shape: '#e08585, #f7d7d7'
             },
-            values : 'M0,0L100 0 100 100 0 100z'
+            values : 'M0,0L100 0 100 170 0 170z'
         },
         deltoid: {
             type : 'path',
