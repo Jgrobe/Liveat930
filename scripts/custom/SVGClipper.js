@@ -487,6 +487,9 @@ var SVGClipper = function($container, options) {
         SC.$object.inlineClippingMaskElement.attr(SC.SHAPE.ATTRIBUTES);
         SC.$object.container.css(SC.SHAPE.CSS);
 
+        console.log('parent', SC.$object.container.get(0));
+        console.log('cild',SC.DOM.img);
+
         var svgImageSize = getSizeTo('contain', SC.$object.container.get(0), SC.DOM.img);
         console.log('------------ get svg image size', svgImageSize);
         SC.$object.svgImage.attr({
