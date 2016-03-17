@@ -4660,9 +4660,8 @@ input {
 #productSummary #productDetails .variant-select-wrapper select {
   cursor: pointer;
   font-size: 1.2vw;
-  padding: .5vw 3vw .5vw .7vw;
+  padding: .5vw .7vw;
   border: 1px solid #ccc;
-  background-image: url("assets/images/small-arrow-down.svg");
   background-repeat: no-repeat;
   background-position: 90% center;
   background-size: 10px;
@@ -4676,6 +4675,9 @@ input {
   -ms-appearance: none;
   -o-appearance: none;
   appearance: none; }
+  .is-no-ie #productSummary #productDetails .variant-select-wrapper select {
+    padding-right: 3vw;
+    background-image: url("assets/images/small-arrow-down.svg"); }
   #productSummary #productDetails .variant-select-wrapper select:active, #productSummary #productDetails .variant-select-wrapper select:visited {
     -webkit-outline: none;
     -moz-outline: none;
