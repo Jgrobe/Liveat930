@@ -6,6 +6,10 @@
   &:before {
     background-image: url('assets/images/the-host-title.jpg');
   }
+
+  .landing-container {
+    width: 100%;
+  }
   //
   //.content {
   //  margin: auto;
@@ -51,7 +55,9 @@
 
   @include breakpoint(mobile) {
 
-    .content {width: $MOBILE_WIDTH;}
+    .landing-container {
+      width: $MOBILE_WIDTH;
+    }
 
     .hosted-by-logo {
       margin: 0 auto;

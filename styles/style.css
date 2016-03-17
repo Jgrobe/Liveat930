@@ -1086,7 +1086,7 @@ input {
     position: absolute;
     top: 5vw;
     left: 50%;
-    width: 50vw;
+    width: 50%;
     height: 10vw;
     background: black;
     mix-blend-mode: multiply;
@@ -2344,8 +2344,8 @@ input {
   .text-insert-container .text-layer {
     position: relative;
     padding: 7.8vw 0 7.8vw 0;
-    margin-left: 12.5vw;
-    width: 87.5vw;
+    margin-left: 12.5%;
+    width: 87.5%;
     color: white;
     background: rgba(0, 0, 0, 0.55) url("assets/images/halftone.jpg") no-repeat center;
     background-size: cover;
@@ -3586,6 +3586,8 @@ input {
   text-align: center; }
   .landing.host-landing:before {
     background-image: url("assets/images/the-host-title.jpg"); }
+  .landing.host-landing .landing-container {
+    width: 100%; }
   .landing.host-landing .hosted-by-logo {
     position: absolute;
     left: 23%;
@@ -3606,7 +3608,7 @@ input {
       -o-transform: translateX(-50%) translateY(-50%);
       transform: translateX(-50%) translateY(-50%); }
   @media only screen and (max-width: 750px) {
-    .landing.host-landing .content {
+    .landing.host-landing .landing-container {
       width: calc(~"100vw - 24px"); }
     .landing.host-landing .hosted-by-logo {
       margin: 0 auto;
