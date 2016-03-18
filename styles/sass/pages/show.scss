@@ -178,7 +178,10 @@
     padding-top: $sectionMarginBottomMobile;
     overflow: hidden;
 
-    > * {width: 100%;}
+    .section-head, .excerpt-container {
+      width: 100%;
+      max-width: 100%;
+    }
 
     .rectangle {
       width: 80%;

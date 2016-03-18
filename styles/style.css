@@ -4004,8 +4004,9 @@ input {
       width: calc(~"100vw - 24px");
       padding-top: 10vH;
       overflow: hidden; }
-      .history-slider > * {
-        width: 100%; }
+      .history-slider .section-head, .history-slider .excerpt-container {
+        width: 100%;
+        max-width: 100%; }
       .history-slider .rectangle {
         width: 80%;
         left: 10%; }
