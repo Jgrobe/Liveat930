@@ -4001,7 +4001,14 @@ input {
     height: 12vw; }
   @media only screen and (max-width: 750px) {
     .history-slider {
-      padding-top: 10vH; }
+      width: calc(~"100vw - 24px");
+      padding-top: 10vH;
+      overflow: hidden; }
+      .history-slider > * {
+        width: 100%; }
+      .history-slider .rectangle {
+        width: 80%;
+        left: 10%; }
       .history-slider .text-layer {
         position: static; }
       .history-slider .slider-images {

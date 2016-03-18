@@ -174,7 +174,16 @@
   }
 
   @include breakpoint(mobile) {
+    width: $MOBILE_WIDTH;
     padding-top: $sectionMarginBottomMobile;
+    overflow: hidden;
+
+    > * {width: 100%;}
+
+    .rectangle {
+      width: 80%;
+      left: 10%;
+    }
 
     .text-layer { position: static; }
 
