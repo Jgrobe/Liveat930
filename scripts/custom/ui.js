@@ -7,6 +7,8 @@ function init_sqsp() {
 
     populate_namespaces();
 
+    format_lineup_preview();
+
     // set window listeners
     SQSP.$objects.window.load(function() {
         //console.log('WINDOW LOADED');
@@ -622,4 +624,10 @@ function browser_processing() {
             $this.children().unwrap();
         });
     }
+}
+
+function format_lineup_preview() {
+    var $lineupPreview = jQuery('.lineup_preview');
+    var previewwartists = $lineupPreview.data('artists').split(',').slice(0,4).join(' / ');
+    $lineupPreview.append(previewwartists+' & more');
 }
