@@ -14,7 +14,7 @@
         </div>
         <div class="lineup">
             <span>with</span>
-            <p class="lineup_preview">{customContent.featured-artists}</p>
+            <p class="lineup_preview" data-artists="{customContent.featured-artists}"></p>
         </div><!-- .lineup -->
 
         <div class="cta-dummy" data-label="Watch episode No.{customContent.episode-number}, {addedOn|date %b %G}" data-class="switch" data-icon="eye" data-attributes="href={fullUrl}">{@|apply svg-icon-eye.block}</div>
