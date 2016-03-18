@@ -74,17 +74,25 @@
       @include transform(none);
     }
 
-
-    .episodes-landing-head {
-      margin-bottom: 0;
-      text-align: center;
+    .landing-head {
+      white-space: normal;
+    }
+    //
+    //.episodes-landing-head {
+    //  margin-bottom: 0;
+    //  text-align: center;
 
       h1 {
         font-size: 73px;
         letter-spacing: .06em;
         margin-top: $vertSpace;
+
+        .small {
+          left: 50%;
+          @include transform(translateX(-50%));
+        }
       }// h1
-    }
+    //}
 
     .landing-extra {
       margin-top: $vertSpace;

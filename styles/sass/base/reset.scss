@@ -106,6 +106,10 @@ video {
 
   @include breakpoint(mobile) {
     display: none;
+
+    .video-js & {
+      display: block;
+    }
   }
 }
 

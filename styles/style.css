@@ -96,7 +96,9 @@ video {
   position: relative; }
   @media only screen and (max-width: 750px) {
     video {
-      display: none; } }
+      display: none; }
+      .video-js video {
+        display: block; } }
 
 svg {
   display: block; }
@@ -2932,7 +2934,6 @@ input {
     .episode-summary {
       width: calc(~"100vw - 24px"); }
       .episode-summary .shape-container {
-        position: static;
         width: 80%;
         margin: auto; }
       .episode-summary .summary-copy {
@@ -3151,13 +3152,19 @@ input {
       -ms-transform: none;
       -o-transform: none;
       transform: none; }
-    .landing.episodes-landing .episodes-landing-head {
-      margin-bottom: 0;
-      text-align: center; }
-      .landing.episodes-landing .episodes-landing-head h1 {
-        font-size: 73px;
-        letter-spacing: .06em;
-        margin-top: 4.5vh; }
+    .landing.episodes-landing .landing-head {
+      white-space: normal; }
+    .landing.episodes-landing h1 {
+      font-size: 73px;
+      letter-spacing: .06em;
+      margin-top: 4.5vh; }
+      .landing.episodes-landing h1 .small {
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+        transform: translateX(-50%); }
     .landing.episodes-landing .landing-extra {
       margin-top: 4.5vh;
       margin-bottom: 0;
