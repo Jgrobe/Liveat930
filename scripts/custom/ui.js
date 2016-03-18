@@ -628,6 +628,9 @@ function browser_processing() {
 
 function format_lineup_preview() {
     var $lineupPreview = jQuery('.lineup_preview');
-    var previewwartists = $lineupPreview.data('artists').split(',').slice(0,4).join(' / ');
-    $lineupPreview.append(previewwartists+' & more');
+    $lineupPreview.each(function(){
+        var $thisLineup = jQuery(this);
+        var previewwartists = $thisLineup.data('artists').split(',').slice(0,4).join(' / ');
+        $thisLineup.append(previewwartists+' & more');
+    });
 }
