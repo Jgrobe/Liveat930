@@ -1133,15 +1133,20 @@ input {
   text-align: center; }
   .homepage .upcoming {
     margin-top: 10.41667vw-10; }
+  .upcoming .upcoming-image {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: 30%; }
   .upcoming .upcoming-cta {
     position: absolute;
     top: 87%;
-    right: -3vw;
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-    transform: translateY(-50%); }
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -o-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%); }
     .upcoming .upcoming-cta .filler {
       padding-right: 3vw;
       padding-left: 3vw; }
@@ -1151,6 +1156,12 @@ input {
       margin-bottom: 10vH; }
       .homepage .upcoming {
         margin-top: 10vH; }
+      .upcoming .upcoming-image {
+        position: static;
+        top: 0;
+        left: 0;
+        width: calc(~"100vw - 24px");
+        margin: 5% auto -10% auto; }
       .upcoming .upcoming-sub {
         margin: auto;
         width: 80%; }
@@ -1179,14 +1190,16 @@ input {
 .upcoming-info {
   font-size: 1vw;
   letter-spacing: 0.05vw;
-  padding: 5vw 4vw;
+  padding: 4vw;
   text-align: center;
   line-height: 1.6em;
   background: #fff;
   box-shadow: 0 3px 30px rgba(0, 0, 0, 0.15);
   position: relative;
   width: 30%;
-  margin: -2.5vw auto 0 35%; }
+  margin: -2.5vw auto 0 53%;
+  top: 3.75vw;
+  font-weight: 500; }
   @media only screen and (max-width: 750px) {
     .upcoming-info {
       width: 80%;

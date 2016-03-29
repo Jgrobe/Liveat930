@@ -1,16 +1,23 @@
 
     <squarespace:query collection="episodes" category="upcoming" limit="1">
-        <script>console.log('upcoming query', {@|json-pretty}); </script>
+        <!--<script>console.log('upcoming query', {@|json-pretty}); </script>-->
         {.section items.0}
         <section class="upcoming">
             <div class="upcoming-headline prllx-custom" data-prllx=".04">
                 <div class="upcoming-sub">Episode <strong>No.{customContent.episode-number}</strong></div>
                 <h1>The next live at 9:30</h1>
             </div>
+
+            <div class="upcoming-image img widescreen imgfill" style="background-image:url('{assetUrl}');">
+                <div class="cta-dummy" data-label="View Trailer" data-class="upcoming-cta onlynomobile prllx-custom" data-attributes="href={fullUrl},data-prllx=-0.05" data-icon="eye">{@|apply svg-icon-eye.block}</div>
+            </div><!-- .upcoming-image -->
+
             <div class="upcoming-info prllx-custom" data-prllx=".08">
                 Check your local listing for the air date in your market.
-                <div class="cta-dummy" data-label="View Trailer" data-class="upcoming-cta prllx-custom" data-attributes="href={fullUrl},data-prllx=-0.05" data-icon="eye">{@|apply svg-icon-eye.block}</div>
+
+                <div class="cta-dummy" data-label="View Trailer" data-class="upcoming-cta onlymobile prllx-custom" data-attributes="href={fullUrl},data-prllx=-0.05" data-icon="eye">{@|apply svg-icon-eye.block}</div>
             </div><!-- .upcoming-info -->
+
         </section><!-- .upcoming -->
         {.end}
 
