@@ -876,8 +876,8 @@ input {
 .footer-hosted-by {
   padding: 6vw 0 4vw 0; }
   .footer-hosted-by .hosted-by-p {
-    margin: 0 auto 8vh;
-    width: 35%; }
+    margin: 2.5vw auto 3.5vw;
+    width: 50%; }
   @media only screen and (max-width: 750px) {
     .footer-hosted-by {
       padding: 0; }
