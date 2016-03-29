@@ -3,7 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="6ba77c59-895c-4b6c-8ed1-52220cbb39bd" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/sass/pages/video.scss" afterPath="$PROJECT_DIR$/styles/sass/pages/video.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/footer.region" afterPath="$PROJECT_DIR$/footer.region" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/sass/parts/footer.scss" afterPath="$PROJECT_DIR$/styles/sass/parts/footer.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/style.css" afterPath="$PROJECT_DIR$/styles/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/style.css.map" afterPath="$PROJECT_DIR$/styles/style.css.map" />
     </list>
     <ignored path="sqsp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,11 +39,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="footer.region" pinned="false" current-in-tab="false">
+          <file leaf-file-name="footer.region" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/footer.region">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-14.375">
-                  <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+                <state vertical-scroll-proportion="0.55461293">
+                  <caret line="50" column="97" selection-start-line="50" selection-start-column="97" selection-end-line="50" selection-end-column="97" />
                   <folding>
                     <element signature="n#style#0;n#div#1;n#section#0;n#squarespace:query#0;n#!!top" expanded="true" />
                   </folding>
@@ -80,10 +83,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="pages.item" pinned="false" current-in-tab="true">
+          <file leaf-file-name="pages.item" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/collections/pages.item">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.34123713">
+                <state vertical-scroll-proportion="-13.791667">
                   <caret line="90" column="36" selection-start-line="90" selection-start-column="36" selection-end-line="90" selection-end-column="36" />
                   <folding />
                 </state>
@@ -169,14 +172,24 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="video.scss" pinned="false" current-in-tab="true">
+          <file leaf-file-name="video.scss" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/styles/sass/pages/video.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.27319586">
-                  <caret line="424" column="5" selection-start-line="422" selection-start-column="18" selection-end-line="424" selection-end-column="5" />
+                <state vertical-scroll-proportion="-16.791666">
+                  <caret line="413" column="21" selection-start-line="413" selection-start-column="21" selection-end-line="413" selection-end-column="21" />
                   <folding>
                     <marker date="1459244233000" expanded="true" signature="7962:7997" placeholder="{...}" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="footer.scss" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/styles/sass/parts/footer.scss">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.5113402">
+                  <caret line="158" column="45" selection-start-line="158" selection-start-column="45" selection-end-line="158" selection-end-column="45" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -196,16 +209,6 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0">
                   <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="merch.scss" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/styles/sass/pages/merch.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -255,7 +258,6 @@
         <option value="$PROJECT_DIR$/styles/sass/modules/episode-player.scss" />
         <option value="$PROJECT_DIR$/scripts/custom/page_episode.js" />
         <option value="$PROJECT_DIR$/template-home.region" />
-        <option value="$PROJECT_DIR$/styles/sass/parts/footer.scss" />
         <option value="$PROJECT_DIR$/styles/sass/ui/links.scss" />
         <option value="$PROJECT_DIR$/styles/sass/pages/video-detail.scss" />
         <option value="$PROJECT_DIR$/collections/videoclips.item" />
@@ -299,9 +301,10 @@
         <option value="$PROJECT_DIR$/styles/sass/base/reset.scss" />
         <option value="$PROJECT_DIR$/styles/sass/modules/episode-summary.scss" />
         <option value="$PROJECT_DIR$/styles/sass/pages/show.scss" />
-        <option value="$PROJECT_DIR$/footer.region" />
         <option value="$PROJECT_DIR$/styles/sass/modules/upcoming.scss" />
         <option value="$PROJECT_DIR$/styles/sass/pages/video.scss" />
+        <option value="$PROJECT_DIR$/styles/sass/parts/footer.scss" />
+        <option value="$PROJECT_DIR$/footer.region" />
       </list>
     </option>
   </component>
@@ -753,13 +756,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/blocks/folder-navigation.block">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.29472595">
-          <caret line="19" column="12" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/blocks/navigation.block">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.09307136">
@@ -1103,16 +1099,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/footer.region">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.375">
-          <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#section#0;n#squarespace:query#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/blocks/module-clip-item.block">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.625">
@@ -1133,7 +1119,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/collections/pages.item">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34123713">
+        <state vertical-scroll-proportion="-13.791667">
           <caret line="90" column="36" selection-start-line="90" selection-start-column="36" selection-end-line="90" selection-end-column="36" />
           <folding />
         </state>
@@ -1141,10 +1127,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/styles/sass/pages/video.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.27319586">
-          <caret line="424" column="5" selection-start-line="422" selection-start-column="18" selection-end-line="424" selection-end-column="5" />
+        <state vertical-scroll-proportion="-16.791666">
+          <caret line="413" column="21" selection-start-line="413" selection-start-column="21" selection-end-line="413" selection-end-column="21" />
           <folding>
             <marker date="1459244233000" expanded="true" signature="7962:7997" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/sass/parts/footer.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5113402">
+          <caret line="158" column="45" selection-start-line="158" selection-start-column="45" selection-end-line="158" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/footer.region">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.55461293">
+          <caret line="50" column="97" selection-start-line="50" selection-start-column="97" selection-end-line="50" selection-end-column="97" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#section#0;n#squarespace:query#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

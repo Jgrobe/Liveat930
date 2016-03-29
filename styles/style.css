@@ -832,7 +832,8 @@ input {
     position: absolute;
     top: 100%;
     left: 10%;
-    width: 80%; }
+    width: 80%;
+    color: #888888; }
   @media only screen and (max-width: 750px) {
     .footer-newsletter {
       margin-bottom: 6vh; }
