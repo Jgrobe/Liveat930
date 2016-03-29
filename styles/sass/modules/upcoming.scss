@@ -18,6 +18,9 @@
   }// .upcoming-image
 
   .upcoming-cta {
+
+    &.onlymobile {display: none;}
+
     position: absolute;
     top: 87%;// b/c prllx -> 100% if no prllx
     left: 50%;
@@ -62,6 +65,7 @@
     }
 
     .upcoming-cta {
+      &.onlymobile {display: block;}
 
       top: 100%;
       right: -3vw;

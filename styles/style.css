@@ -1147,6 +1147,8 @@ input {
     -ms-transform: translateX(-50%) translateY(-50%);
     -o-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%); }
+    .upcoming .upcoming-cta.onlymobile {
+      display: none; }
     .upcoming .upcoming-cta .filler {
       padding-right: 3vw;
       padding-left: 3vw; }
@@ -1174,6 +1176,8 @@ input {
       .upcoming .upcoming-cta {
         top: 100%;
         right: -3vw; }
+        .upcoming .upcoming-cta.onlymobile {
+          display: none; }
         .upcoming .upcoming-cta .filler {
           padding: 24px; } }
 
