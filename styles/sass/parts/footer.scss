@@ -164,7 +164,7 @@
     }// .demand
 
     form {
-      width: auto;
+      width: 60%;//auto;
       display: inline-block;
       margin-left: -54px;// cta-container width
 
@@ -235,9 +235,10 @@
     padding: 0;
 
     .hosted-by-p {
-      margin-bottom: 0;
-      margin-top: 10px;
-      width: 65%;
+      //margin-bottom: 0;
+      //margin-top: 10px;
+      margin: 30px auto 0 auto;
+      width: 100%;//65%;
     }
 
     .hosted-by-link {

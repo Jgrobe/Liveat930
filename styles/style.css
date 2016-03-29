@@ -843,7 +843,7 @@ input {
         font-size: 11vw;
         margin: 0 auto; }
       .footer-newsletter form {
-        width: auto;
+        width: 60%;
         display: inline-block;
         margin-left: -54px; }
         .footer-newsletter form input[type=email] {
@@ -882,9 +882,8 @@ input {
     .footer-hosted-by {
       padding: 0; }
       .footer-hosted-by .hosted-by-p {
-        margin-bottom: 0;
-        margin-top: 10px;
-        width: 65%; }
+        margin: 30px auto 0 auto;
+        width: 100%; }
       .footer-hosted-by .hosted-by-link {
         display: inline-block;
         max-width: 90%;
