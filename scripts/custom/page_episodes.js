@@ -20,23 +20,23 @@ SQSP.functions.initPage = function() {
 
     var layerOffset = 2;
     // CREATE INTERACTIVE POSTERS
-    SQSP.$objects.postersItems.each(function(i) {
-
-        var $thisPoster = jQuery(this);
-
-        SQSP.instances.ParallaxPosters.push( new ParallaxPoster($thisPoster, {
-            amount:5,
-            offsets: {
-                container: 5,
-                layers: [
-                    0,  // hover-layer
-                    layerOffset, // bg-layer
-                    layerOffset*1.4, // model-layer
-                    layerOffset*1.8  // copy-layer
-                ]
-            }
-        }) );
-
-    });// endeach() posterItems
+    //SQSP.$objects.postersItems.each(function(i) {
+    //
+    //    var $thisPoster = jQuery(this);
+    //
+    //    SQSP.instances.ParallaxPosters.push( new ParallaxPoster($thisPoster, {
+    //        amount:5,
+    //        offsets: {
+    //            container: 5,
+    //            layers: [
+    //                0,  // hover-layer
+    //                layerOffset, // bg-layer
+    //                layerOffset*1.4, // model-layer
+    //                layerOffset*1.8  // copy-layer
+    //            ]
+    //        }
+    //    }) );
+    //
+    //});// endeach() posterItems
 
 };// initPage
