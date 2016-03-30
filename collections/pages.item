@@ -1,8 +1,8 @@
 {.section item.customContent}
 <script>
     var _gallery = false;
-    {.if gallery}
-        _gallery = {gallery|json};
+    {.if show-gallery}
+        _gallery = {show-gallery|json};
     {.end}
 </script>
 {.end}
