@@ -4,6 +4,9 @@
     {.if show-gallery}
         _gallery = {show-gallery|json};
     {.end}
+    {.if gallery}
+        _gallery = {gallery|json};
+    {.end}
 </script>
 {.end}
 {.equal?:item.customContent.customType:"page-show"}
