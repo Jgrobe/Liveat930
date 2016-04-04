@@ -190,6 +190,7 @@ var ImageGallery = function($container, options) {
 
     function update_imageTitle() {
         ////console.log('update_imageTitle()', IG.options.images[IG.options.currentIndex].title);
+        console.log('update_imageTitle', 'images', IG.options.images, 'index', IG.options.currentIndex);
         if(!elem_exists(IG.$object.imageTitle) || typeof IG.options.images[IG.options.currentIndex].title === 'undefined') return 'null'; // must be tween, timeline, fn or string b/c inserted into timeline
 
         var labelTL = new TimelineMax();
