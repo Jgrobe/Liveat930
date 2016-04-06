@@ -169,7 +169,9 @@
                 <div class="logos-container">
                 {.repeated section sponsors}
                     <div class="sponsor">
-                        <img class="sponsor-logo" src="{assetUrl}">
+                        <a{.if customContent.clickthroughUrl}href="{customContent.clickthroughUrl}" target="_blank"{.end}>
+                            <img class="sponsor-logo" src="{assetUrl}">
+                        </a>
                     </div>
                 {.end}
                 </div><!-- .logos-container -->
