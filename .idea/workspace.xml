@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6ba77c59-895c-4b6c-8ed1-52220cbb39bd" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collections/pages.item" afterPath="$PROJECT_DIR$/collections/pages.item" />
     </list>
     <ignored path="sqsp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -113,7 +114,7 @@
             <entry file="file://$PROJECT_DIR$/collections/pages.item">
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.632107">
-                  <caret line="171" column="115" selection-start-line="171" selection-start-column="115" selection-end-line="171" selection-end-column="115" />
+                  <caret line="171" column="54" selection-start-line="171" selection-start-column="54" selection-end-line="171" selection-end-column="54" />
                   <folding />
                 </state>
               </provider>
@@ -996,7 +997,7 @@
     <entry file="file://$PROJECT_DIR$/collections/pages.item">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.632107">
-          <caret line="171" column="115" selection-start-line="171" selection-start-column="115" selection-end-line="171" selection-end-column="115" />
+          <caret line="171" column="54" selection-start-line="171" selection-start-column="54" selection-end-line="171" selection-end-column="54" />
           <folding />
         </state>
       </provider>
