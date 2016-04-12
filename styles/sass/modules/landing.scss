@@ -19,7 +19,7 @@
     height: 10vw;
     background: black;
     mix-blend-mode: multiply;
-    opacity: 0.20;
+    opacity: 0.45;
     @include transform(translateX(-50%));
   }// .rectangle
 
@@ -54,7 +54,7 @@
     min-height: 100vh;
 
     .landing-bg {
-      background-attachment: scroll;;
+      background-attachment: scroll;
     }// .landing-bg
 
     .landing-container {
