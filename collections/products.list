@@ -14,7 +14,10 @@
         <div class="merch-item">
             <div class="image img vertical rel" style="background-image:url('');">
                 <!--<img src="{assetUrl}" alt="">-->
-                <div class="fill-parent" style="background-image:url('{assetUrl}');"></div>
+                <div class="merch-img">
+                    <div class="imgfill" style="background-image:url('{assetUrl}');"></div>
+                </div>
+
                 <div class="title">Live at 9:30 {title}</div>
                 {.section variants.0}
                     <div class="price">$ <span class="amount">{price}</span></div>

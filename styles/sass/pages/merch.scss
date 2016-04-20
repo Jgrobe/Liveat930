@@ -62,11 +62,6 @@
     }
   }
 
-  .merch-img {
-    width: 100%;
-    height:auto;
-  }
-
   .title, .price {
     @include united;
     position: absolute;
@@ -138,3 +133,19 @@
 
   }// BP MOBILE
 }// .merch-item
+
+.merch-img {
+  @extend .fill-parent;
+  background: white;
+
+  $frame: 2vw;
+
+  .imgfill {
+    background-size: contain;
+    position: absolute;
+    top:$frame;
+    right:$frame;
+    bottom:$frame;
+    left:$frame;
+  }
+}

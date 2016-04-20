@@ -93,7 +93,11 @@
                 <squarespace:query collection="products" limit="1">
                     <a class="video video-item merch-tile switch" href="{collection.fullUrl}">
                         <div class="image contain-img">
-                            {.section items.0}{@|apply module-clip-thumb.block}{.end}
+                            <div class="merch-img">
+                                <div class="imgfill">
+                                    {.section items.0}{@|apply module-clip-thumb.block}{.end}
+                                </div>
+                            </div>
                             <div class="cta-dummy" data-tag="div" data-icon="icon-arrow" data-class="negative play goto">{@|apply svg-icon-arrow.block}</div>
                             <span class="video-label get-label"></span>
                         </div>
