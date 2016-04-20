@@ -50,17 +50,23 @@
   width: calc(~"50% - 4vw");
   position: relative;
   text-align: center;
-  .image {
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
+  //.image {
+  //  background-size: contain;
+  //  background-position: center center;
+  //  background-repeat: no-repeat;
+  //  width: 100%;
+  //  &:before {
+  //    content: '';
+  //    display: block;
+  //    padding-top: 120.5%;
+  //  }
+  //}
+
+  .merch-img {
     width: 100%;
-    &:before {
-      content: '';
-      display: block;
-      padding-top: 120.5%;
-    }
+    height:auto;
   }
+
   .title, .price {
     @include united;
     position: absolute;
