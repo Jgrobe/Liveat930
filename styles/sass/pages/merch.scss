@@ -50,6 +50,10 @@
   width: calc(~"50% - 4vw");
   position: relative;
   text-align: center;
+  margin-top: 50px;
+
+  &:first-child, &:nth-child(2) {margin-top:0;}
+
   .image {
     background-size: contain;
     background-position: center center;
@@ -106,8 +110,10 @@
 
   @include breakpoint(mobile) {
 
+
     width: 100%;
     margin-top: 100px;
+    &:first-child, &:nth-child(2) {margin-top:100px;}
 
     .title, .price {
       font-size: 19px;

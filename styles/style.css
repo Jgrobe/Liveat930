@@ -3720,7 +3720,10 @@ input {
 .merch-item {
   width: calc(~"50% - 4vw");
   position: relative;
-  text-align: center; }
+  text-align: center;
+  margin-top: 50px; }
+  .merch-item:first-child, .merch-item:nth-child(2) {
+    margin-top: 0; }
   .merch-item .image {
     background-size: contain;
     background-position: center center;
@@ -3783,6 +3786,8 @@ input {
     .merch-item {
       width: 100%;
       margin-top: 100px; }
+      .merch-item:first-child, .merch-item:nth-child(2) {
+        margin-top: 100px; }
       .merch-item .title, .merch-item .price {
         font-size: 19px;
         letter-spacing: .06em; }
