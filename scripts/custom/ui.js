@@ -129,8 +129,13 @@ function populate_namespaces() {
         onStart:function() {
             TweenMax.set(jQuery('.page'), {autoAlpha:0});
             SQSP.$objects.preloaderClipables = jQuery('.onloadclip');
+            console.log('--- start preloading');
+        },
+        onProgress:function(e){
+            console.log('--- still preloading... ', e.progress.pct);
         },
         onComplete:function(e) {
+            console.log('--- preloading complete');
 
             var initPoints = [
                 {x1:0, y1:0, x2:1, y2:0, x3:1, y3:0, x4:0, y4:0, label:'top bottom'},//
@@ -142,7 +147,10 @@ function populate_namespaces() {
             var clipHTML = '<svg style="width:0;height:0;"><defs><clipPath id="mask" clipPathUnits="objectBoundingBox"><polygon points=""></polygon></clipPath></defs></svg>';
             var duration = .4;
             var tl = new TimelineMax();
-            tl.to(jQuery('.page'),duration, {autoAlpha:1, onComplete:function() {
+            tl.to(jQuery('.page'),duration, {autoAlpha:1, onUpdate:function(){
+                console.log('tweening page into visibilty', this.target.style.opacity);
+            }, onComplete:function() {
+                console.log('--- page should now be visible');
                 //jQuery('body').removeClass('hidden');
             }});
 
