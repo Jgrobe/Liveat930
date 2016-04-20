@@ -80,6 +80,7 @@ SQSP.functions.initPage = function() {
             }
         };// preloaderFns
 
+        // override Preloader default functions in ui.js
         jQuery.extend(SQSP.instances.Preloader.options, preloaderFns);
 
     }// endif #preloader exists

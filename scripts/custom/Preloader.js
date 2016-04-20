@@ -10,16 +10,29 @@ var Preloader = function( options ) {
         assetSelector : 'img, .img, .imgfill',
         onStart : false,
         onProgress: false,
-        onComplete: false
+        onComplete: false,
+        preloadTimer: 5
     };
     if(typeof options !== 'undefined') jQuery.extend(PL.options, options);
+    PL.isPageLoaded = false;
 
     PL.preload = function(sources, functions) {
         if(typeof functions === 'undefined') functions = {};
+
+        if(PL.options.preloadTimer) {
+            // use the timer to trigger complete in case progress doesnt reach 100 or takes too long
+            PL.preloadTimer = setTimeout(function(){
+
+                if(PL.isPageLoaded) return false;
+                console.log('------ preload timer trigger complete');
+                PL.onComplete();
+
+            }, (1000 * PL.options.preloadTimer));
+        }// endif preloadTimer
         if(_.isFunction(functions.onStart)) functions.onStart(PL);
 
         if(sources.length <= 0) {
-            if(_.isFunction(functions.onComplete)) functions.onComplete(PL);
+            PL.onComplete();
             return;
         }// endif
 
@@ -39,13 +52,24 @@ var Preloader = function( options ) {
 
                 if(loaded >= sources.length) {
                     ////console.log('all imgs loaded');
-                    if(_.isFunction(functions.onComplete)) functions.onComplete(PL);
+                    PL.onComplete();
                 }// endif
             };
             //console.log('---------  PRELOADER TRYNA PRELOAD DAT SAUCE', sources[i]);
             img.src = sources[i];
         }// endfor
     };// preload()
+
+    PL.onComplete = function(){
+        // preventOnComplete from firing twice
+        if(PL.isPageLoaded) return false;
+        PL.isPageLoaded = true;
+        clearTimeout(PL.preloadTimer);
+
+        console.log('------ preloading complete');
+
+        if(_.isFunction(PL.options.onComplete)) PL.options.onComplete(PL);
+    };// onComplete()
 
     PL.init = function () {
         PL.assets = get_preload_sources();
