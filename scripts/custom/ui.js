@@ -147,11 +147,12 @@ function populate_namespaces() {
             var clipHTML = '<svg style="width:0;height:0;"><defs><clipPath id="mask" clipPathUnits="objectBoundingBox"><polygon points=""></polygon></clipPath></defs></svg>';
             var duration = .4;
             var tl = new TimelineMax();
-            tl.to(jQuery('.page'),duration, {autoAlpha:1, onUpdate:function(){
-                console.log('tweening page into visibilty', this.target.style.opacity);
+            var $page = jQuery('.page')
+            tl.to($page,duration, {autoAlpha:1, onUpdate:function(){
+                console.log('tweening page into visibilty');
             }, onComplete:function() {
                 console.log('--- page should now be visible');
-                //jQuery('body').removeClass('hidden');
+                $page.addClass('on');
             }});
 
             SQSP.$objects.preloaderClipables.each(function(i) {
@@ -187,6 +188,7 @@ function populate_namespaces() {
 
             });// endeach()
 
+            console.log('--- preloader return tl');
             return tl;
 
             function updateCSS($elem, maskID, polygonPoints) {

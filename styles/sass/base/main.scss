@@ -11,6 +11,10 @@ body {
 .page {
   @include autoAlpha(0);
   background: url('assets/images/paper-texture.jpg');
+
+  &.on {
+    @include autoAlpha(1);
+  }
 }
 
 .site-content, .upcoming {
