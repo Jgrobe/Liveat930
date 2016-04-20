@@ -127,6 +127,15 @@ function populate_namespaces() {
     SQSP.instances.Preloader = new Preloader({
         autoInit:false,// init after individual initPage so preloader fns can be hooked
         onStart:function() {
+            SQSP.vars.isPageLoaded = false;
+            // use the timer to trigger complete in case progress doesnt reach 100
+            SQSP.vars.loadTimer = setTimeout(function(){
+
+                console.log('--- preload timer trigger complete');
+                if(SQSP.vars.isPageLoaded) return false;
+                SQSP.instances.Preloader.options.onComplete(SQSP.instances.Preloader);
+
+            }, (1000 * 5));
             TweenMax.set(jQuery('.page'), {autoAlpha:0});
             SQSP.$objects.preloaderClipables = jQuery('.onloadclip');
             console.log('--- start preloading');
@@ -136,6 +145,9 @@ function populate_namespaces() {
         },
         onComplete:function(e) {
             console.log('--- preloading complete');
+
+            if(SQSP.vars.isPageLoaded) return false;
+            SQSP.vars.isPageLoaded = true;
 
             var initPoints = [
                 {x1:0, y1:0, x2:1, y2:0, x3:1, y3:0, x4:0, y4:0, label:'top bottom'},//
