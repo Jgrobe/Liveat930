@@ -9,7 +9,7 @@
     <div class="summary-copy">
 
         <div class="head">
-            <div class="small">Watch full episode</div>
+            <div class="small">Watch show</div>
             <h3 class="m-headline">Episode No.{customContent.episode-number}</h3>
         </div>
         <div class="lineup">
@@ -17,7 +17,7 @@
             <p class="lineup_preview" data-artists="{customContent.featured-artists}"></p>
         </div><!-- .lineup -->
 
-        <div class="cta-dummy" data-label="Watch episode No.{customContent.episode-number}, {addedOn|date %b %G}" data-class="switch" data-icon="eye" data-attributes="href={fullUrl}">{@|apply svg-icon-eye.block}</div>
+        <div class="cta-dummy" data-label="{.if customContent.isFullEpisode}Watch episode No.{customContent.episode-number}{.or}Play trailer{.end}" data-class="switch" data-icon="eye" data-attributes="href={fullUrl}">{@|apply svg-icon-eye.block}</div>
 
     </div><!-- .summary-copy -->
 

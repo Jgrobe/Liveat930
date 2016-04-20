@@ -219,6 +219,8 @@ input {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover; }
+  .contain-img .imgfill, .contain-img .landing .landing-bg, .landing .contain-img .landing-bg, .contain-img .posters .posters-hover-bg, .posters .contain-img .posters-hover-bg, .contain-img .poster .poster-pattern, .poster .contain-img .poster-pattern, .contain-img .poster .layer.bg-layer .half, .poster .layer.bg-layer .contain-img .half, .contain-img .nav-overlay .bg-container, .nav-overlay .contain-img .bg-container, .contain-img .landing.clip-landing {
+    background-size: contain; }
 
 .img {
   width: 100%; }

@@ -112,6 +112,8 @@ input {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+
+  .contain-img & { background-size: contain; }
 }// .imgfill
 
 .img {

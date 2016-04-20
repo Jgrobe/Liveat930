@@ -25,7 +25,7 @@
                     <div class="landing-head prllx-custom prllx-scroll-depend" data-prllx=".18">
                         <h1 class="l-headline onloadclip">
                             Episode No.{customContent.episode-number}
-                            <div class="small onloadclip">Latest Show</div>
+                            <div class="small onloadclip">Featured Show</div>
                         </h1>
                     </div>
                     <div class="landing-extra prllx-custom prllx-scroll-depend onloadclip" data-prllx=".12">
@@ -34,7 +34,7 @@
                         </p>
                     </div><!-- .episodes-landing-sub -->
 
-                    <div class="cta-dummy" data-icon="eye" data-label="Watch episode no. {customContent.episode-number}, {addedOn|date %b %Y}" data-class="prllx-custom prllx-scroll-depend switch" data-attributes="href={fullUrl},data-prllx=.075">{@|apply svg-icon-eye.block}</div>
+                    <div class="cta-dummy" data-icon="eye" data-label="{.if customContent.isFullEpisode}Watch episode no. {customContent.episode-number}, {addedOn|date %b %Y}{customContent.episode-number}{.or}Play trailer{.end}" data-class="prllx-custom prllx-scroll-depend switch" data-attributes="href={fullUrl},data-prllx=.075">{@|apply svg-icon-eye.block}</div>
 
                 </div><!-- .landing-container -->
             </section>
@@ -46,7 +46,7 @@
 
     <section class="episodes-previous">
         <div class="section-head prllx-custom" data-prllx="-.04">
-            <h2>Past Shows</h2>
+            <h2>All Shows</h2>
             <p>See the performances</p>
         </div><!-- .section-head -->
         <div class="episodes-overview posters">
