@@ -141,6 +141,7 @@
   $frame: 2vw;
 
   .merch-imgfill {
+    @extend .imgfill;
     background-size: contain;
     position: absolute;
     top:$frame;

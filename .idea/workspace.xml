@@ -4,7 +4,6 @@
     <list default="true" id="6ba77c59-895c-4b6c-8ed1-52220cbb39bd" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/sass/pages/merch.scss" afterPath="$PROJECT_DIR$/styles/sass/pages/merch.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/style.css" afterPath="$PROJECT_DIR$/styles/style.css" />
     </list>
     <ignored path="sqsp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -186,7 +185,7 @@
             <entry file="file://$PROJECT_DIR$/styles/sass/pages/merch.scss">
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.59415585">
-                  <caret line="143" column="4" selection-start-line="143" selection-start-column="4" selection-end-line="143" selection-end-column="4" />
+                  <caret line="143" column="21" selection-start-line="143" selection-start-column="21" selection-end-line="143" selection-end-column="21" />
                   <folding />
                 </state>
               </provider>
@@ -1035,7 +1034,7 @@
     <entry file="file://$PROJECT_DIR$/styles/sass/pages/merch.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.59415585">
-          <caret line="143" column="4" selection-start-line="143" selection-start-column="4" selection-end-line="143" selection-end-column="4" />
+          <caret line="143" column="21" selection-start-line="143" selection-start-column="21" selection-end-line="143" selection-end-column="21" />
           <folding />
         </state>
       </provider>
