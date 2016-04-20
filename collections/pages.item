@@ -94,7 +94,7 @@
                     <a class="video video-item merch-tile switch" href="{collection.fullUrl}">
                         <div class="image contain-img">
                             <div class="merch-img">
-                                <div class="imgfill">
+                                <div class="merch-imgfill">
                                     {.section items.0}{@|apply module-clip-thumb.block}{.end}
                                 </div>
                             </div>

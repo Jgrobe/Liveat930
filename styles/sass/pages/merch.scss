@@ -148,4 +148,16 @@
     bottom:$frame;
     left:$frame;
   }
-}
+
+  @include breakpoint(mobile) {
+
+    $frame: 10vw;
+
+    .merch-imgfill {
+      top:$frame;
+      right:$frame;
+      bottom:$frame;
+      left:$frame;
+    }
+  }// BP MOBILE
+}// .merch-img

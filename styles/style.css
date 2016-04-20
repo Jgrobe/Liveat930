@@ -3806,6 +3806,12 @@ input {
     right: 2vw;
     bottom: 2vw;
     left: 2vw; }
+  @media only screen and (max-width: 750px) {
+    .merch-img .merch-imgfill {
+      top: 10vw;
+      right: 10vw;
+      bottom: 10vw;
+      left: 10vw; } }
 
 .post-landing {
   height: 80vh;
