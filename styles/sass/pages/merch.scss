@@ -50,17 +50,17 @@
   width: calc(~"50% - 4vw");
   position: relative;
   text-align: center;
-  //.image {
-  //  background-size: contain;
-  //  background-position: center center;
-  //  background-repeat: no-repeat;
-  //  width: 100%;
-  //  &:before {
-  //    content: '';
-  //    display: block;
-  //    padding-top: 120.5%;
-  //  }
-  //}
+  .image {
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    &:before {
+      content: '';
+      display: block;
+      padding-top: 120.5%;
+    }
+  }
 
   .merch-img {
     width: 100%;
@@ -101,7 +101,7 @@
   .cta-container {
 //    @include cta(#000, #fff);
 
-    margin-top: 4vh;
+    margin-top: 2vw;//4vh;
     display: inline-block;
 
     .filler {

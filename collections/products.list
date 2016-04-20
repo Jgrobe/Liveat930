@@ -12,8 +12,9 @@
 <section class="merch-overview">
     {.repeated section items}
         <div class="merch-item">
-            <div class="rel" style="background-image:url('');">
-                <img src="{assetUrl}" class="merch-img">
+            <div class="image img vertical rel" style="background-image:url('');">
+                <!--<img src="{assetUrl}" alt="">-->
+                <div class="fill-parent" style="background-image:url('{assetUrl}');"></div>
                 <div class="title">Live at 9:30 {title}</div>
                 {.section variants.0}
                     <div class="price">$ <span class="amount">{price}</span></div>

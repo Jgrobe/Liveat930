@@ -3721,6 +3721,15 @@ input {
   width: calc(~"50% - 4vw");
   position: relative;
   text-align: center; }
+  .merch-item .image {
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%; }
+    .merch-item .image:before {
+      content: '';
+      display: block;
+      padding-top: 120.5%; }
   .merch-item .merch-img {
     width: 100%;
     height: auto; }
@@ -3769,7 +3778,7 @@ input {
       padding: 0 1vw;
       list-style: none; }
   .merch-item .cta-container {
-    margin-top: 4vh;
+    margin-top: 2vw;
     display: inline-block; }
     .merch-item .cta-container .filler {
       padding: 1.4vw 5.5vw; }

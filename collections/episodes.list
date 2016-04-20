@@ -9,6 +9,7 @@
 {.repeated section items}
     {.repeated section categories}
         {.equal?:@:"current"}
+            {.equal?:@index:1}
 <script>console.log('----- hero content', {customContent|json-pretty});</script>
             <section class="landing episodes-landing">
                 <div class="fill-parent mask">
@@ -38,6 +39,7 @@
 
                 </div><!-- .landing-container -->
             </section>
+            {.end}
         {.end}
     {.end}
 {.end}
