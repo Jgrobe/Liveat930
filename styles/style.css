@@ -3799,7 +3799,7 @@ input {
 
 .merch-img {
   background: white; }
-  .merch-img .imgfill, .merch-img .landing .landing-bg, .landing .merch-img .landing-bg, .merch-img .posters .posters-hover-bg, .posters .merch-img .posters-hover-bg, .merch-img .poster .poster-pattern, .poster .merch-img .poster-pattern, .merch-img .poster .layer.bg-layer .half, .poster .layer.bg-layer .merch-img .half, .merch-img .nav-overlay .bg-container, .nav-overlay .merch-img .bg-container, .merch-img .landing.clip-landing {
+  .merch-img .merch-imgfill {
     background-size: contain;
     position: absolute;
     top: 2vw;
