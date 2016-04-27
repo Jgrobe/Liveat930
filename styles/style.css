@@ -3624,7 +3624,8 @@ input {
     left: 23%;
     bottom: 100%; }
   .landing.host-landing h1 {
-    position: relative; }
+    position: relative;
+    font-size: 8.83333vw; }
   .landing.host-landing .text-layer {
     position: relative;
     width: 37%;
