@@ -207,19 +207,28 @@ var ImageGallery = function($container, options) {
         if( !elem_exists(IG.$object.imageCopy) ) return 'null'; // must be tween, timeline, fn or string b/c inserted into timeline
         //console.log('------- update_imageCopy()');
 
-        //var oldHeight = IG.$object.imageCopy.height();
-        //var newHeight;
+        // >> used for dynamic box heightening
+        var oldHeight = IG.$object.imageCopy.height();
+        var newHeight;
+        // << used for dynamic box heightening
 
         var copyTL = new TimelineMax();
         copyTL.to(IG.$object.imageCopy, IG.options.duration, {autoAlpha:0});
 
         copyTL.add(function() {
-            //IG.$object.imageCopy.height('auto');
-            IG.$object.imageCopy.html(IG.options.images[IG.options.currentIndex].copy);
-            //newHeight = IG.$object.imageCopy.height();
-            //IG.$object.imageCopy.height(oldHeight);
+            // >> used for dynamic box heightening
+            IG.$object.imageCopy.height('auto');
+            // <<
 
-            //copyTL.to(IG.$object.imageCopy, IG.options.duration, {height:newHeight, ease:Strong.easeOut});
+            IG.$object.imageCopy.html(IG.options.images[IG.options.currentIndex].copy);
+
+            // >> used for dynamic box heightening
+            newHeight = IG.$object.imageCopy.height();
+            IG.$object.imageCopy.height(oldHeight);
+
+            copyTL.to(IG.$object.imageCopy, IG.options.duration, {height:newHeight, ease:Strong.easeOut});
+            // <<
+
             copyTL.to(IG.$object.imageCopy, IG.options.duration, {autoAlpha:1});
         });
 
