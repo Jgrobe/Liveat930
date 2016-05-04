@@ -15,7 +15,9 @@
 
         <squarespace:query collection="episodes" limit="99" category="aired">
             {.repeated section items}
-                {@|apply poster-scroll.block}
+                {.if customContent.isPosterLandingpage}
+                    {@|apply poster-scroll.block}
+                {.end}
             {.end}
         </squarespace:query>
 
