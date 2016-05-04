@@ -42,8 +42,6 @@
             <squarespace:query collection="clips" tag="{customContent.episode-videoclips}">
                 <!--{.repeated section tags}{@},{.end}-->
 
-                <script>console.log('Clips Tags query ', {@|json-pretty});</script>
-
                 <div class="video-gallery-videos related-clips-gallery top-spaced" data-payload="3">
                     <div class="gutter-sizer"></div>
 
@@ -69,7 +67,6 @@
                 <section class="image-slider gallery-container episode-gallery">
 
                     <script>
-                        console.log('gallery data???', {@|json-pretty});
                         var _gallery = {episode-gallery|json};
                     </script>
 
@@ -94,9 +91,6 @@
 
             {.if episode-blogpost}
                 <squarespace:query collection="blog" limit="1" tag="{episode-blogpost}">
-                    <script>
-                        console.log('thats the blog query', {@|json-pretty});
-                    </script>
                     {.section items.0}
                     <section class="post-excerpt">
 
@@ -133,8 +127,6 @@
             </div>
 
             <squarespace:query collection="clips" category="{customContent.episode-clips-categories}" limit="4">
-
-                <script>console.log('clips categories query', {@|json-pretty});</script>
 
                 <div class="video-gallery-videos related-clips-categories-gallery top-spaced" data-payload="4">
                     <div class="gutter-sizer"></div>

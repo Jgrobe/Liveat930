@@ -1,4 +1,3 @@
-<script>console.log('ITS THE HOST TEMPLATE');</script>
 <section class="landing host-landing">
     <div class="fill-parent mask">
         <div class="landing-bg video-bg">

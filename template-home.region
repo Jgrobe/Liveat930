@@ -1,7 +1,6 @@
 <squarespace:query collection="artists">
     <script>
         var _artists = {items|json};
-        console.log('_artists', _artists);
         var _artistsReady = true;
         jQuery(document).trigger('artistsReady', _artists);
     </script>

@@ -107,7 +107,7 @@
                     </a><!-- .video -->
                 </squarespace:query>
 
-                <squarespace:query collection="blog" limit="1">
+                <squarespace:query collection="blog" limit="1" tag="{item.customContent.griditemBlogTags}">
                     <a class="video video-item switch" href="{.section items.0}{fullUrl}{.end}">
                         <div class="image">
                             {.section items.0}{@|apply module-clip-thumb.block}{.end}
@@ -120,7 +120,7 @@
                     </a><!-- .video -->
                 </squarespace:query>
 
-                <squarespace:query collection="clips" limit="1">
+                <squarespace:query collection="clips" limit="1" tag="{item.customContent.griditemClipsTags}">
                     <a class="video video-item switch" href="{collection.fullUrl}">
                         <div class="image">
                             {.section items.0}{@|apply module-clip-thumb.block}{.end}
@@ -133,10 +133,7 @@
                     </a><!-- .video -->
                 </squarespace:query>
 
-                <squarespace:query collection="episodes" category="current" limit="1">
-                    <script>
-                        console.log('episodes query', {@|json-pretty});
-                    </script>
+                <squarespace:query collection="episodes" category="current" limit="1" tag="{item.customContent.griditemEpisodesTags}">
                         <a class="video video-item switch" href="{collection.fullUrl}">
                             <div class="image">
                                 {.section items.0}{@|apply module-clip-thumb.block}{.end}

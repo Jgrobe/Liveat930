@@ -17,7 +17,6 @@
         $likecount.each(function(){ intcount(jQuery(this)); });
     });
     $likeicon.click(function() {
-        console.log('------------------ liked');
         setTimeout(function(){
             $likecount.each(function(){ intcount(jQuery(this)); });
         }, 10);

@@ -47,13 +47,13 @@
     {squarespace-headers}
 
     <script>
-        jQuery.ajax(location.href+'?format=json-pretty', {success:function(e){
+        /*jQuery.ajax(location.href+'?format=json-pretty', {success:function(e){
             console.log('SITE', e );
-        }});
+        }});*/
     </script>
 
     <squarespace:query collection="episodes">
-        <script>var _episodes={items|json-pretty};console.log('all da episode data', _episodes);</script>
+        <script>var _episodes={items|json-pretty};</script>
     </squarespace:query>
 
 </head>
