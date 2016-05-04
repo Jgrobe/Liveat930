@@ -9,6 +9,7 @@
     width: 80%;
     text-align: center;
     margin: auto;
+
 //    font-size: 7vw;
 //    letter-spacing: 0.5vw;
   }
@@ -48,6 +49,11 @@
 
   @include breakpoint(mobile) {
     margin-top: 100px;
+
+    .clip-container {
+      margin-top: 0;
+      width: 100%;
+    }
   }
 
 }// .post-content

@@ -3841,7 +3841,9 @@ input {
   align-items: center; }
   .post-landing h1 {
     position: relative;
-    margin: 0; }
+    width: 80%;
+    text-align: center;
+    margin: auto; }
   .post-landing .sharebox {
     font-family: "Gotham A", "Gotham B";
     font-weight: 500;
@@ -3871,7 +3873,10 @@ input {
     margin-bottom: 2.5vh; }
   @media only screen and (max-width: 750px) {
     .post-content {
-      margin-top: 100px; } }
+      margin-top: 100px; }
+      .post-content .clip-container {
+        margin-top: 0;
+        width: 100%; } }
 
 .post-pagination {
   width: 80vw;
