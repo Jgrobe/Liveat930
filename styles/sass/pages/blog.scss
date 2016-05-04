@@ -47,12 +47,15 @@
     margin-bottom: 2.5vh;
   }
 
+  .clip-container {
+    width: 100%;
+  }
+
   @include breakpoint(mobile) {
     margin-top: 100px;
 
-    .clip-container {
+    .overlap-container {
       margin-top: 0;
-      width: 100%;
     }
   }
 

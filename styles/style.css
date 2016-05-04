@@ -3871,12 +3871,13 @@ input {
   .post-content p {
     line-height: 1.75em;
     margin-bottom: 2.5vh; }
+  .post-content .clip-container {
+    width: 100%; }
   @media only screen and (max-width: 750px) {
     .post-content {
       margin-top: 100px; }
-      .post-content .clip-container {
-        margin-top: 0;
-        width: 100%; } }
+      .post-content .overlap-container {
+        margin-top: 0; } }
 
 .post-pagination {
   width: 80vw;
