@@ -6,7 +6,9 @@
   @include prefixed(align-items, center);
   h1 {
     position: relative;
-    margin: 0;
+    width: 80%;
+    text-align: center;
+    margin: auto;
 //    font-size: 7vw;
 //    letter-spacing: 0.5vw;
   }

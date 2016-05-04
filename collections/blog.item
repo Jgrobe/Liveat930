@@ -17,7 +17,24 @@
 </section>
 
 <section class="post-content">
+
+    {.if item.customContent.contentVideo}
+
+        <section class="clip-container overlap-container prllx-custom" data-prllx=".08">
+
+            <div class="clip-preview-container" style="background-image:url('{item.customContent.contentVideoThumbnail.assetUrl}')">
+                <video controls data-setup="{}" class="video-js fill-parent" poster="{item.customContent.contentVideoThumbnail.assetUrl}">
+                    <source src="{item.customContent.contentVideo}" type='video/mp4'>
+                </video>
+                <!--<div class="btn-play">{@|apply svg-icon-play.block}</div>-->
+            </div><!-- .clip-preview-container -->
+
+        </section><!-- .clip-container -->
+
+    {.end}
+
     {item.body}
+
 </section>
 
 {.if pagination}{.section pagination}
