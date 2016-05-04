@@ -431,7 +431,7 @@ var SVGClipper = function($container, options) {
 
 
     SC.init = function() {
-        console.log('SVGClipper', SC);
+        //console.log('SVGClipper', SC);
 
         create_clipping_mask();
 

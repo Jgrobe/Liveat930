@@ -534,7 +534,7 @@ var SVGClipper = function($container, options) {
     }// getSizeToCover()
 
     function is_IE() {
-        console.log('-------- OMG THIS IS SPARTA --------');
+        //console.log('-------- OMG THIS IS SPARTA --------');
         return (navigator.userAgent.indexOf('MSIE') !== -1 || navigator.appVersion.indexOf('Trident/') > 0);
     }// is_IE()
 

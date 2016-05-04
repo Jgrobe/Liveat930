@@ -326,14 +326,14 @@ var ClippedCanvas = function($container, options) {
         CC.PLAY = true;
 
         drawClippingShape();
-        console.log(
-            'shape size on video',
-            {width:(CC.SHAPE.relativeSize.width / CC.RATIO),
-                height:(CC.SHAPE.relativeSize.height / CC.RATIO)},'\n',
-            'shape size on canvas',
-            CC.SHAPE.relativeSize,'\n',
-            CC.RATIO
-        );
+        //console.log(
+        //    'shape size on video',
+        //    {width:(CC.SHAPE.relativeSize.width / CC.RATIO),
+        //        height:(CC.SHAPE.relativeSize.height / CC.RATIO)},'\n',
+        //    'shape size on canvas',
+        //    CC.SHAPE.relativeSize,'\n',
+        //    CC.RATIO
+        //);
         CC.drawVideo();
     };
 
@@ -623,7 +623,7 @@ CC.RATIO = cover.ratio;
     function init() {
 
 
-        console.log('ClippedCanvas', CC);
+        //console.log('ClippedCanvas', CC);
 
         createCanvas();
 

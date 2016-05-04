@@ -24,7 +24,7 @@ var Preloader = function( options ) {
             PL.preloadTimer = setTimeout(function(){
 
                 if(PL.isPageLoaded) return false;
-                console.log('------ preload timer trigger complete');
+                //console.log('------ preload timer trigger complete');
                 PL.onComplete();
 
             }, (1000 * PL.options.preloadTimer));
@@ -66,7 +66,7 @@ var Preloader = function( options ) {
         PL.isPageLoaded = true;
         clearTimeout(PL.preloadTimer);
 
-        console.log('------ preloading complete');
+        //console.log('------ preloading complete');
 
         if(_.isFunction(PL.options.onComplete)) PL.options.onComplete(PL);
     };// onComplete()

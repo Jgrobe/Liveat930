@@ -340,7 +340,7 @@ var ClippedCanvas = function($container, options) {
                     };
 
                     if(!CC.options.canvasMask) {
-                        console.log('apply css mask',shapeCSS, CC.$object.shapeCanvas);
+                        //console.log('apply css mask',shapeCSS, CC.$object.shapeCanvas);
                         CC.$object.shapeCanvas.css({
                             '-webkit-clip-path' : shapeCSS,
                             'clip-path' : shapeCSS
@@ -405,19 +405,19 @@ var ClippedCanvas = function($container, options) {
         CC.PLAY = true;
 
         drawClippingShape();
-        console.log(
-            'model size',
-            CC.DOM.model.size,'\n',
-            'start clip x',
-            ( (CC.RATIO.width - CC.DOM.shapeCanvas.object.width) *.5 ) / CC.RATIO.ratio,'\n',
-            'start clip y',
-            ( (CC.RATIO.height - CC.DOM.shapeCanvas.object.height ) *.5 ) / CC.RATIO.ratio,'\n',
-            'clip width',
-            (CC.DOM.shapeCanvas.object.width / CC.RATIO.ratio),'\n',
-            'clip height',
-            (CC.DOM.shapeCanvas.object.height / CC.RATIO.ratio),'\n',
-            CC.RATIO
-        );
+        //console.log(
+        //    'model size',
+        //    CC.DOM.model.size,'\n',
+        //    'start clip x',
+        //    ( (CC.RATIO.width - CC.DOM.shapeCanvas.object.width) *.5 ) / CC.RATIO.ratio,'\n',
+        //    'start clip y',
+        //    ( (CC.RATIO.height - CC.DOM.shapeCanvas.object.height ) *.5 ) / CC.RATIO.ratio,'\n',
+        //    'clip width',
+        //    (CC.DOM.shapeCanvas.object.width / CC.RATIO.ratio),'\n',
+        //    'clip height',
+        //    (CC.DOM.shapeCanvas.object.height / CC.RATIO.ratio),'\n',
+        //    CC.RATIO
+        //);
         CC.drawVideo();
     };
 
@@ -621,7 +621,7 @@ var ClippedCanvas = function($container, options) {
         //if(!CC.options.colorize) return false;
         CC.DOM.shapeCanvas.context.globalCompositeOperation = 'multiply';
         CC.DOM.shapeCanvas.context.fillStyle = CC.options.colorize;
-        console.log('COLORIEZ', CC.DOM.shapeCanvas.context.fillStyle);
+        //console.log('COLORIEZ', CC.DOM.shapeCanvas.context.fillStyle);
         CC.DOM.shapeCanvas.context.fillRect(0, 0, CC.DOM.shapeCanvas.object.width, CC.DOM.shapeCanvas.object.height)
     }// colorize()
 
@@ -646,7 +646,7 @@ var ClippedCanvas = function($container, options) {
         // shapeCanvas & fullCanvas always have the same parent but fullCanvas may not always exist
         // so it is safe to use shapeCanvas to compute cover size & ratio
         CC.RATIO = getSizeToCover({ width:CC.$object.shapeCanvas.parent().width(), height:CC.$object.shapeCanvas.parent().height() }, CC.DOM.model.size);
-console.log('CC RATIO VALUES', CC.RATIO);
+//console.log('CC RATIO VALUES', CC.RATIO);
         
         if(typeof CC.DOM.fullCanvas !== 'undefined') {
             CC.DOM.fullCanvas.object.width = CC.RATIO.width;
@@ -699,7 +699,7 @@ console.log('CC RATIO VALUES', CC.RATIO);
     function init() {
 
 
-        console.log('ClippedCanvas', CC);
+        //console.log('ClippedCanvas', CC);
 
         createCanvas();
 

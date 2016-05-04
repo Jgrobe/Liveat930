@@ -115,7 +115,7 @@ var CanvasPainter = function($container, $model, options) {
 
     CP.init = function() {
 
-        console.log('CanvasPainter', CP);
+        //console.log('CanvasPainter', CP);
 
         createCanvas();
 

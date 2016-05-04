@@ -68,10 +68,10 @@ function init_sqsp() {
         var $thisVid = jQuery(vid);
 
         vid.addEventListener('loadeddata', function(e) {
-            console.log('-------------------------------------- video loaded -> size em');
+            //console.log('-------------------------------------- video loaded -> size em');
             size_video();
             //scrollMonitor.recalculateLocations();// needed on homepage so first video in viewport starts playing on load
-            TweenMax.to(e.target,.35,{autoAlpha:1, onComplete:function(){console.log('video faded in  ->  play',jQuery(this.target).attr('src'));}});
+            TweenMax.to(e.target,.35,{autoAlpha:1});
         });
 
         if($thisVid.hasClass('loop')) {
@@ -132,7 +132,7 @@ function populate_namespaces() {
             //console.log('--- start preloading');
         },
         onProgress:function(e){
-            console.log('--- still preloading... ', e.progress.pct);
+            //console.log('--- still preloading... ', e.progress.pct);
         },
         onComplete:function(e) {
 
@@ -148,9 +148,9 @@ function populate_namespaces() {
             var tl = new TimelineMax();
             var $page = jQuery('.page')
             tl.to($page,duration, {autoAlpha:1, onUpdate:function(){
-                console.log('tweening page into visibilty');
+                //console.log('tweening page into visibilty');
             }, onComplete:function() {
-                console.log('--- page should now be visible');
+                //console.log('--- page should now be visible');
                 $page.addClass('on');
             }});
 
@@ -187,7 +187,7 @@ function populate_namespaces() {
 
             });// endeach()
 
-            console.log('--- preloader return tl');
+            //console.log('--- preloader return tl');
             return tl;
 
             function updateCSS($elem, maskID, polygonPoints) {

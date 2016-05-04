@@ -45,7 +45,7 @@ var CanvasPainter = function($container, options) {
             lastCalledTime = Date.now();
             fps = 1/delta;
 
-            console.log('--------------- RAF FPS', fps);
+            //console.log('--------------- RAF FPS', fps);
         });
     };
 
@@ -127,7 +127,7 @@ var CanvasPainter = function($container, options) {
 
     CP.init = function() {
 
-        console.log('CanvasPainter', CP);
+        //console.log('CanvasPainter', CP);
 
         createCanvas();
 
@@ -147,7 +147,7 @@ var CanvasPainter = function($container, options) {
     CP.isTextureReady = false;
     CP.textureImg = new Image();
     var imgsrc = location.origin+'/assets/images/textures/texture-halftone-compressor-2-70k.jpg';
-    console.log('the txture img src', CP.textureImg.src);
+    //console.log('the txture img src', CP.textureImg.src);
     CP.textureImg.onload = function() {
         CP.PATTERN = CP.DOM.layerCanvas.context.createPattern(CP.textureImg,"repeat");
         CP.isTextureReady = true;

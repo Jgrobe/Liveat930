@@ -17,11 +17,11 @@ var AjaxSearch = function(options) {
     
     AS.extractData = function(data) {
 
-        console.log('search results', data);
+        //console.log('search results', data);
 
         var extractedResults = [],
             searchItems = data.items;
-        console.log('results found', data, searchItems);
+        //console.log('results found', data, searchItems);
 
 
         for(var i=0; i<searchItems.length; i++) {
@@ -32,7 +32,7 @@ var AjaxSearch = function(options) {
             if(AS.options.exclude) {
                 for(var attr in AS.options.exclude) {
                     if(typeof thisItem[attr] !== 'undefined' && thisItem[attr] == AS.options.exclude[attr]) {
-                        console.log('exclude this from search: '+attr+' : '+thisItem[attr]);
+                        //console.log('exclude this from search: '+attr+' : '+thisItem[attr]);
                         exclude = true;
                     }// endif
                 }// endfor
@@ -55,22 +55,22 @@ var AjaxSearch = function(options) {
     
     AS.search = function(query) {
 
-        console.log('search()', query, AS.options.searchPath);
+        //console.log('search()', query, AS.options.searchPath);
         
         jQuery.ajax(AS.options.searchPath, {
             method : 'get',
             data : {q: query},
             success: function(data) {
 
-                console.log('success() raw data', data);
+                //console.log('success() raw data', data);
                 
                 AS.results = AS.extractData(data);
-                console.log('success() extracted data', AS.results);
+                //console.log('success() extracted data', AS.results);
 
                 if(_.isFunction(AS.options.onSuccess)) AS.options.onSuccess(query, data, AS.results);
             },
             error : function(data) {
-                console.log('ajax error', data);
+                //console.log('ajax error', data);
             }
         });
         
