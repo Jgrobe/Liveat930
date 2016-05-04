@@ -54,15 +54,17 @@
         <div class="episodes-overview posters">
 
             {.repeated section items}
-                {.repeated section categories}
-                    {.equal?:@:"aired"}
+                {.if customContent.isPosterOverviewpage}
+                    {.repeated section categories}
+                        {.equal?:@:"aired"}
 
-                        <div class="episodes-overview-item prllxposter">
-                            {@|apply poster-parallax.block}
-                            <div class="cta-dummy" data-label="Explore" data-icon="eye" data-class="switch" data-attributes="href={fullUrl}">{@|apply svg-icon-eye.block}</div>
-                            <div class="light"></div>
-                        </div><!-- .episodes-overview-item -->
+                            <div class="episodes-overview-item prllxposter">
+                                {@|apply poster-parallax.block}
+                                <div class="cta-dummy" data-label="Explore" data-icon="eye" data-class="switch" data-attributes="href={fullUrl}">{@|apply svg-icon-eye.block}</div>
+                                <div class="light"></div>
+                            </div><!-- .episodes-overview-item -->
 
+                        {.end}
                     {.end}
                 {.end}
             {.end}<!-- .end repeated items -->
