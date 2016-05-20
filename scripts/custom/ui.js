@@ -643,8 +643,8 @@ function format_lineup_preview(truncate) {
         var $thisLineup = jQuery(this);
         var previewwartists = $thisLineup.data('artists');
         if(truncate) {
-            previewwartists = previewwartists.split(',').slice(0,4).join(' / ');
-            $thisLineup.append(previewwartists+' & more');
+            previewwartists = previewwartists.split(',').slice(0,4).join(' / ') +' & more';
         }
+        $thisLineup.append(previewwartists);
     });
 }
