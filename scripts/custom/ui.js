@@ -7,7 +7,7 @@ function init_sqsp() {
 
     populate_namespaces();
 
-    //format_lineup_preview();
+    format_lineup_preview();
 
     // set window listeners
     SQSP.$objects.window.load(function() {
@@ -635,12 +635,16 @@ function browser_processing() {
     }
 }
 
-function format_lineup_preview() {
+function format_lineup_preview(truncate) {
+    if(typeof truncate === 'undefined') truncate = false;
     // used where artits lists have to be shortened to '... & more'
     var $lineupPreview = jQuery('.lineup_preview');
     $lineupPreview.each(function(){
         var $thisLineup = jQuery(this);
-        var previewwartists = $thisLineup.data('artists').split(',').slice(0,4).join(' / ');
+        var previewwartists = $thisLineup.data('artists');
+        if(truncate) {
+            previewwartists = previewwartists.split(',').slice(0,4).join(' / ');
+        }
         $thisLineup.append(previewwartists+' & more');
     });
 }
