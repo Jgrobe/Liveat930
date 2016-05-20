@@ -53,9 +53,9 @@
         </section>
         <section class="footer-social">
             <ul>
-                <li><a class="instagram" href=""></a></li>
-                <li><a class="facebook" href=""></a></li>
-                <li><a class="twitter" href=""></a></li>
+                <li><a class="instagram" href="http://instagram.com/liveat930" target="_blank"></a></li>
+                <li><a class="facebook" href="https://www.facebook.com/Liveat930/" target="_blank"></a></li>
+                <li><a class="twitter" href="https://twitter.com/Liveat930" target="_blank"></a></li>
             </ul>
         </section>
     </footer>
