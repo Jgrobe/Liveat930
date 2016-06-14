@@ -1889,8 +1889,10 @@ input {
   width: 80%;
   left: 10%;
   border-radius: 100%; }
-.poster.circle .artist:hover .label {
-  background: black; }
+.poster.circle .artist:hover {
+  color: black; }
+  .poster.circle .artist:hover .label {
+    background: white; }
 .poster.circle .btn-play-episode {
   background: white;
   color: black; }
@@ -1918,8 +1920,10 @@ input {
   left: -5%; }
 .poster.fullTriangle .lineup-container:after {
   background: black; }
-.poster.fullTriangle .artist:hover .label {
-  background: white; }
+.poster.fullTriangle .artist:hover {
+  color: white; }
+  .poster.fullTriangle .artist:hover .label {
+    background: black; }
 .poster.fullTriangle .ep-lineup {
   color: black; }
 
@@ -1941,8 +1945,10 @@ input {
   width: 80%;
   left: 10%;
   border-radius: 100%; }
-.poster.circle .artist:hover .label {
-  background: black; }
+.poster.circle .artist:hover {
+  color: black; }
+  .poster.circle .artist:hover .label {
+    background: white; }
 .poster.circle .btn-play-episode {
   background: white;
   color: black; }
@@ -1970,8 +1976,10 @@ input {
   left: -5%; }
 .poster.fullTriangle .lineup-container:after {
   background: black; }
-.poster.fullTriangle .artist:hover .label {
-  background: white; }
+.poster.fullTriangle .artist:hover {
+  color: white; }
+  .poster.fullTriangle .artist:hover .label {
+    background: black; }
 .poster.fullTriangle .ep-lineup {
   color: black; }
 
@@ -1995,8 +2003,10 @@ input {
   overflow: hidden; }
   .poster.verticalRect .layer.model-layer:before {
     padding-top: 170%; }
-.poster.verticalRect .artist:hover .label {
-  background: black; }
+.poster.verticalRect .artist:hover {
+  color: black; }
+  .poster.verticalRect .artist:hover .label {
+    background: white; }
 .poster.verticalRect .btn-play-episode {
   background: white;
   color: black; }
@@ -2030,8 +2040,10 @@ input {
   color: white; }
 .poster.deltoid .ep-lineup {
   color: black; }
-.poster.deltoid .artist:hover .label {
-  background: white; }
+.poster.deltoid .artist:hover {
+  color: white; }
+  .poster.deltoid .artist:hover .label {
+    background: black; }
 .poster.deltoid .btn-play-episode {
   background: white;
   color: black; }
@@ -2057,8 +2069,10 @@ input {
   left: -7%; }
 .poster.hollowTriangle .ep-headline {
   color: black; }
-.poster.hollowTriangle .artist:hover .label {
-  background: black; }
+.poster.hollowTriangle .artist:hover {
+  color: black; }
+  .poster.hollowTriangle .artist:hover .label {
+    background: white; }
 .poster.hollowTriangle .btn-play-episode {
   background: white;
   color: black; }
@@ -2093,8 +2107,10 @@ input {
   color: white; }
 .poster.arc .ep-lineup {
   color: black; }
-.poster.arc .artist:hover .label {
-  background: white; }
+.poster.arc .artist:hover {
+  color: white; }
+  .poster.arc .artist:hover .label {
+    background: black; }
 .poster.arc .btn-play-episode {
   background: white;
   color: black; }
@@ -2127,8 +2143,10 @@ input {
   color: white; }
 .poster.halfCircle .ep-lineup {
   color: black; }
-.poster.halfCircle .artist:hover .label {
-  background: black; }
+.poster.halfCircle .artist:hover {
+  color: black; }
+  .poster.halfCircle .artist:hover .label {
+    background: white; }
 .poster.halfCircle .btn-play-episode {
   background: white;
   color: black; }
@@ -2163,8 +2181,10 @@ input {
   color: white; }
 .poster.square .ep-lineup {
   color: black; }
-.poster.square .artist:hover .label {
-  background: white; }
+.poster.square .artist:hover {
+  color: white; }
+  .poster.square .artist:hover .label {
+    background: black; }
 .poster.square .btn-play-episode {
   background: white;
   color: black; }
@@ -2228,8 +2248,10 @@ input {
   left: 17%; }
 .poster.general .ep-headline {
   color: black; }
-.poster.general .artist:hover .label {
-  background: black; }
+.poster.general .artist:hover {
+  color: black; }
+  .poster.general .artist:hover .label {
+    background: white; }
 .poster.general .btn-play-episode {
   background: white;
   color: black; }
@@ -2263,8 +2285,10 @@ input {
   color: white; }
 .poster.tripleRect .ep-lineup {
   color: black; }
-.poster.tripleRect .artist:hover .label {
-  background: black; }
+.poster.tripleRect .artist:hover {
+  color: black; }
+  .poster.tripleRect .artist:hover .label {
+    background: white; }
 .poster.tripleRect .btn-play-episode {
   background: white;
   color: black; }
@@ -2291,8 +2315,10 @@ input {
   top: 10%;
   width: 65%;
   left: 32%; }
-.poster.pentagon .artist:hover .label {
-  background: black; }
+.poster.pentagon .artist:hover {
+  color: black; }
+  .poster.pentagon .artist:hover .label {
+    background: white; }
 .poster.pentagon .btn-play-episode {
   background: white;
   color: black; }

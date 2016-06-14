@@ -42,7 +42,8 @@
 
   .artist{
     &:hover {
-      .label { background: black; }
+      color:black;
+      .label { background: white; }
     }
   }
 
