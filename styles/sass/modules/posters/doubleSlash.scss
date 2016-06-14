@@ -61,7 +61,8 @@
 
   .artist{
     &:hover {
-      .label { background: white; }
+      color:white;
+      .label { background: black; }
     }
   }
 

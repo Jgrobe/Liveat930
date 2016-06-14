@@ -2199,8 +2199,10 @@ input {
   color: white; }
 .poster.doubleSlash .ep-lineup {
   color: black; }
-.poster.doubleSlash .artist:hover .label {
-  background: white; }
+.poster.doubleSlash .artist:hover {
+  color: white; }
+  .poster.doubleSlash .artist:hover .label {
+    background: white; }
 .poster.doubleSlash .btn-play-episode {
   background: white;
   color: black; }
