@@ -2202,7 +2202,7 @@ input {
 .poster.doubleSlash .artist:hover {
   color: white; }
   .poster.doubleSlash .artist:hover .label {
-    background: white; }
+    background: black; }
 .poster.doubleSlash .btn-play-episode {
   background: white;
   color: black; }
