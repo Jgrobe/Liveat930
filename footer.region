@@ -68,6 +68,8 @@
     <squarespace:script src="custom/ui.js" />
     <squarespace:script src="libs/jquery.gray.min.js" />
 
+    <script> var _g = jQuery('.grayscale').gray(); console.log('grayscale?', _g);</script>
+
 {squarespace-footers}
 
 </body>
