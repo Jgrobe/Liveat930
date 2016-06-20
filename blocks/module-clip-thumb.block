@@ -1,4 +1,2 @@
-<div class="fill-parent thumb">
-    <img src="{assetUrl}" class="grayscale" alt="" />
-</div>
+<div class="fill-parent imgfill thumb" style="background-image:url('{assetUrl}');"></div>
 <div class="fill-parent imgfill hover-thumb" style="background-image:url('{assetUrl}');"></div>
