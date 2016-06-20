@@ -40,7 +40,8 @@
                         </div><!-- #mce-responses -->
                         <div class="cta-dummy" data-tag="button" data-label="Get me on the list" data-icon="icon-arrow" data-class="submit-email negative" data-attributes="type=submit,name=subscribe,id=mc-embedded-subscribe,data-prllx=-.02">{@|apply svg-icon-arrow.block}</div>
                     </form>
-                    <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+                    <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/
+                    mc-validate.js'></script>
                     <script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
                     <script>jQuery(document).on('click', '.response', function(){var $clicked=jQuery(this);TweenMax.to($clicked,.4,{autoAlpha:0,clearProps:'autoAlpha',onComplete:function(){$clicked.css({display:'none'})}})});</script>
                 </div><!-- #mc_embed_signup -->
@@ -68,7 +69,10 @@
     <squarespace:script src="custom/ui.js" />
     <squarespace:script src="libs/jquery.gray.min.js" />
 
-    <script> var _g = jQuery('.grayscale').gray(); console.log('grayscale?', _g);</script>
+    <script>
+        $('.thumb .grayscale').imagefill();
+        var _g = jQuery('.grayscale').gray(); console.log('grayscale?', _g);
+    </script>
 
 {squarespace-footers}
 
