@@ -577,13 +577,6 @@ $posterWidth: 84vw;
       }// svg
     }// .hoste
 
-    .ep-lineup {
-      .artist:hover {
-        color: initial;
-        .label{background: none;}
-      }
-    }
-
     .hosted-info {
       display: none;
       font-size: 8px;
@@ -607,6 +600,7 @@ $posterWidth: 84vw;
       width:100%;
       height:100%;
       opacity: 0;
+      z-index: 1;
     }
   }// BP MOBILE
 
