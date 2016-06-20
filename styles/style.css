@@ -3215,17 +3215,13 @@ input {
       transform: none; }
     .landing.episodes-landing .landing-head {
       white-space: normal; }
-    .landing.episodes-landing h1 {
-      font-size: 73px;
-      letter-spacing: .06em;
-      margin-top: 4.5vh; }
-      .landing.episodes-landing h1 .small {
-        left: 50%;
-        -webkit-transform: translateX(-50%);
-        -moz-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
-        -o-transform: translateX(-50%);
-        transform: translateX(-50%); }
+      .landing.episodes-landing .landing-head h1 {
+        font-size: 73px;
+        letter-spacing: .06em;
+        margin-top: 4.5vh; }
+        .landing.episodes-landing .landing-head h1 .small {
+          width: 100%;
+          text-align: center; }
     .landing.episodes-landing .landing-extra {
       margin-top: 4.5vh;
       margin-bottom: 0;

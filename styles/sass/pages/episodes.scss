@@ -76,7 +76,7 @@
 
     .landing-head {
       white-space: normal;
-    }
+
     //
     //.episodes-landing-head {
     //  margin-bottom: 0;
@@ -88,11 +88,12 @@
         margin-top: $vertSpace;
 
         .small {
-          left: 50%;
-          @include transform(translateX(-50%));
+          //transform: none;
+          width: 100%;
+          text-align: center;
         }
       }// h1
-    //}
+    }
 
     .landing-extra {
       margin-top: $vertSpace;
