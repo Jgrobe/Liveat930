@@ -69,8 +69,11 @@
     <squarespace:script src="custom/ui.js" />
     <squarespace:script src="libs/jquery.gray.min.js" />
 
+    <squarespace:script src="libs/imagesloaded.pkgd.min.js" />
+    <squarespace:script src="libs/jquery-imagefill.js" />
+
     <script>
-//        jQuery('.thumb .grayscale').imagefill();
+        jQuery('.thumb .grayscale').imagefill();
 //        var _g = jQuery('.grayscale').gray(); console.log('grayscale?', _g);
     </script>
 
