@@ -66,6 +66,7 @@
     <squarespace:script src="custom/cta-converter.js" />
     <squarespace:script src="custom/episodesDataHandler.js" />
     <squarespace:script src="custom/ui.js" />
+    <squarespace:script src="libs/jquery.gray.min.js" />
 
 {squarespace-footers}
 

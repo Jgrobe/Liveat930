@@ -1,3 +1,4 @@
+@import url(sass/overrides/gray.css);
 @font-face {
   font-family: "United Sans";
   src: url("assets/fonts/UnitedSansCdBd.eot");
@@ -4319,12 +4320,6 @@ input {
       position: relative;
       background-size: cover;
       background-position: center center; }
-      .video-gallery .video .image .thumb {
-        -webkit-filter: grayscale(100%);
-        -moz-filter: grayscale(100%);
-        -ms-filter: grayscale(100%);
-        -o-filter: grayscale(100%);
-        filter: grayscale(100%); }
       .video-gallery .video .image .hover-thumb {
         visibility: hidden;
         opacity: 0;
