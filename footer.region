@@ -1,6 +1,5 @@
 
     <squarespace:query collection="episodes" category="upcoming" limit="1">
-        <!--<script>console.log('upcoming query', {@|json-pretty}); </script>-->
         {.section items.0}
         <section class="upcoming">
             <div class="upcoming-headline prllx-custom" data-prllx=".04">
@@ -73,7 +72,7 @@
 
     <script>
         jQuery('.g-thumb').imagefill();
-        var _g = jQuery('.grayscale').gray(); console.log('grayscale?', _g);
+        var _g = jQuery('.grayscale').gray();
     </script>
 
 {squarespace-footers}
