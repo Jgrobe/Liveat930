@@ -1860,10 +1860,6 @@ input {
       .poster .hosted-logo svg {
         width: 100%;
         height: 2.5vw; }
-    .poster .ep-lineup .artist:hover {
-      color: initial; }
-      .poster .ep-lineup .artist:hover .label {
-        background: none; }
     .poster .hosted-info {
       display: none;
       font-size: 8px;
@@ -1878,7 +1874,8 @@ input {
       left: 0;
       width: 100%;
       height: 100%;
-      opacity: 0; } }
+      opacity: 0;
+      z-index: 1; } }
 
 .poster-container {
   position: absolute;
