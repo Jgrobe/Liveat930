@@ -525,6 +525,8 @@ $posterWidth: 84vw;
 
   }// BP overWrappper
 
+  .mobile-filler { display:none; }
+
   //---------------------- BREAKPOINT MOBILE
 
   @include breakpoint(mobile) {
@@ -575,6 +577,13 @@ $posterWidth: 84vw;
       }// svg
     }// .hoste
 
+    .ep-lineup {
+      .artist:hover {
+        color: initial;
+        .label{background: none;}
+      }
+    }
+
     .hosted-info {
       display: none;
       font-size: 8px;
@@ -589,6 +598,16 @@ $posterWidth: 84vw;
       }// .cta
 
     }// .btn-play-episode
+
+    .mobile-filler {
+      display: block;
+      position: absolute;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+      opacity: 0;
+    }
 
   }// BP MOBILE
 

@@ -73,4 +73,6 @@
     <div class="cta-dummy" data-label="{.if customContent.isFullEpisode}Play episode{.or}Play trailer{.end}" data-class="btn-play-episode prllx-custom prllx-no-disable{.odd? @index} negative{.end} switch" data-attributes="data-prllx=-.65,href={fullUrl}"></div>
     <!--<a class="btn-play-episode prllx-custom prllx-no-disable" data-prllx="-.65" href="{fullUrl}">Play Episode</a>-->
 
+    <a href="{fullUrl}" class="mobile-filler onlymobile fill-parent"></a>
+
 </div><!-- .poster -->
