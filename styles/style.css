@@ -2996,7 +2996,9 @@ input {
       width: calc(~"100vw - 24px"); }
       .episode-summary .shape-container {
         width: 80%;
-        margin: auto; }
+        margin: auto;
+        transform: translate3d(0, 0, 0);
+        margin-bottom: -20%; }
       .episode-summary .summary-copy {
         position: static;
         width: 80%;
