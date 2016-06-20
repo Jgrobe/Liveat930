@@ -49,6 +49,7 @@ var ScrollPoster = function($container, options) {
                 });
                 tl.to(SQSP.$objects.burger,.3, {autoAlpha:0}, 0);
                 tl.add(function() {
+                    if(!SQSP.instances.FieldTracker) return;
                     SQSP.instances.FieldTracker.update({x: e.clientX, y: e.clientY});
                     SQSP.instances.FieldTracker.$object.tracker.addClass('active');
                 }, 0);
@@ -75,7 +76,7 @@ var ScrollPoster = function($container, options) {
 
     function open_hoverstate($clicked) {
 
-        var scrollY = $clicked.offset().top - jQuery(window).height()*.5;
+        var scrollY = $clicked.offset().top - jQuery(window).height()*.3;
         TweenMax.to(window,.2, {scrollTo:{y:scrollY}, ease:Strong.easeInOut, onComplete:function() {
             lock(jQuery('body'), '100vh');
         }});
