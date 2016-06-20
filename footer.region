@@ -72,7 +72,7 @@
     <squarespace:script src="libs/jquery-imagefill.js" />
 
     <script>
-        jQuery('.thumb .grayscale').imagefill();
+        jQuery('.g-thumb').imagefill();
         var _g = jQuery('.grayscale').gray(); console.log('grayscale?', _g);
     </script>
 
