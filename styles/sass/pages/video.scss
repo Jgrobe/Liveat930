@@ -138,6 +138,7 @@ $gridGutter: 5%;
   width: $contentWidth;
   position: relative;
   padding: 0 0 8vw 0;
+  transform: translate3d(0,0,0);
 
   .rectangle {
     background: #fff;

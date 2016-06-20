@@ -4282,7 +4282,8 @@ input {
   margin: 10.41667vw auto;
   width: 75vw;
   position: relative;
-  padding: 0 0 8vw 0; }
+  padding: 0 0 8vw 0;
+  transform: translate3d(0, 0, 0); }
   .video-gallery .rectangle {
     background: #fff;
     position: absolute;
