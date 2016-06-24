@@ -227,23 +227,23 @@ jQuery(window).load(function() {
         //console.log('------------------------------- VIDEO STOPPED');
     //}, 400);
 }).scroll(function() {
-    var windowScrolltop = jQuery(window).scrollTop(),
-        objectScrolltop = SQSP.$objects.hostedInfo.offset().top;
 
-    //var heightByScroll = (windowScrolltop - SQSP.$objects.window.height() *.95) - Math.round(objectScrolltop / windowScrolltop);
-    var heightByScroll = (windowScrolltop - objectScrolltop + window.innerHeight *.95) / window.innerHeight * 300;
-    //console.log('-- calculation; window scrolltop',windowScrolltop , 'info offset top',objectScrolltop , 'window height', SQSP.$objects.window.height());
-    //console.log('----- legal heightByScroll', heightByScroll);
-    var vwHeight = heightByScroll / window.innerWidth *100;
-    if(vwHeight > 10) {
-        SQSP.$objects.hostedInfo.addClass('on');
-    } else {
-        SQSP.$objects.hostedInfo.removeClass('on');
-    }
-    if((windowScrolltop + window.innerHeight*.05) > objectScrolltop) SQSP.$objects.hostedInfo.removeClass('on');
+    // >>>>>>>>>>>>>> HOSTED INFO REMOVED UPON REQUEST 06|24|2016
 
-    //console.log('----- legal calcheihgt', vwHeight);
-    SQSP.$objects.hostedInfo.height(vwHeight + 'vw');
+    //var windowScrolltop = jQuery(window).scrollTop(),
+    //    objectScrolltop = SQSP.$objects.hostedInfo.offset().top;
+    //
+    //var heightByScroll = (windowScrolltop - objectScrolltop + window.innerHeight *.95) / window.innerHeight * 300;
+    //var vwHeight = heightByScroll / window.innerWidth *100;
+    //if(vwHeight > 10) {
+    //    SQSP.$objects.hostedInfo.addClass('on');
+    //} else {
+    //    SQSP.$objects.hostedInfo.removeClass('on');
+    //}
+    //if((windowScrolltop + window.innerHeight*.05) > objectScrolltop) SQSP.$objects.hostedInfo.removeClass('on');
+    //SQSP.$objects.hostedInfo.height(vwHeight + 'vw');
+
+    // <<<<<<<<<<<<<<
 });
 
 function onPosterEnterViewPort($poster) {
