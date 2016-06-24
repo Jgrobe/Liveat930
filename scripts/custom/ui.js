@@ -660,5 +660,5 @@ function addBackButtonToCart() {
     TweenMax.set($btn, {position: 'absolute', y:-50, cursor: 'pointer', 'font-size': '11px'});
     $btn.append($a);
     $cart.prepend($btn);
-    $btn.click(function(){ history.back(); });
+    //$btn.click(function(){ history.back(); });
 }
