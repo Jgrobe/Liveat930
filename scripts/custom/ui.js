@@ -657,7 +657,7 @@ function addBackButtonToCart() {
 
     var $btn = jQuery('<div class="backtomerch" />');
     $btn.html('< Back to merch');
-    TweenMax.set($btn, {position: 'absolute', y:'-50px', cursor: 'pointer', 'font-size': '10px', 'text-transform': 'uppercase'});
+    TweenMax.set($btn, {position: 'absolute', y:-50, cursor: 'pointer', 'font-size': '10px', 'text-transform': 'uppercase'});
     $cart.prepend($btn);
     $btn.click(function(){ history.back(); });
 }
