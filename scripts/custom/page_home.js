@@ -135,50 +135,45 @@ SQSP.functions.initPage = function() {
             onPosterExitViewPort($thisPoster);
         });
 
+        var $hostedInfo = $thisPoster.find('.hosted-info');
+        if( elem_exists($hostedInfo) ) {
 
-        // >>>>>>>>>>>>>> HOSTED INFO REMOVED UPON REQUEST 06|24|2016
 
-        //var $hostedInfo = $thisPoster.find('.hosted-info');
-        //if( elem_exists($hostedInfo) ) {
-        //
-        //
-        //    SQSP.$objects.hostedInfo = $hostedInfo;
-        //
-        //    // reveal hosted-info on mobile no tap
-        //    SQSP.$objects.hostedInfo.parent().click(function(){
-        //        //console.log('info clicked');
-        //        var $clicked = jQuery(this);
-        //        if(!is_mobile() || $clicked.get(0).isTransitionActive) return false;
-        //        $clicked.get(0).isTransitionActive = true;
-        //
-        //        var tl = new TimelineMax({onComplete:function(){
-        //            //console.log('info height reveal done');
-        //            $clicked.get(0).isTransitionActive = false;
-        //        }});
-        //
-        //        if(SQSP.$objects.hostedInfo.hasClass('on')) {
-        //            //console.log('info clicked close');
-        //            // close info
-        //            SQSP.$objects.hostedInfo.removeClass('on');
-        //            tl.to(SQSP.$objects.hostedInfo,.3, {height:0, ease:Strong.easeOut, clearProps:'all'});
-        //        } else {
-        //            //console.log('info clicked open');
-        //            // open info
-        //            SQSP.$objects.hostedInfo.height('auto');
-        //            var h = SQSP.$objects.hostedInfo.height() + parseFloat(SQSP.$objects.hostedInfo.siblings('.hosted-logo').css('padding-bottom'));
-        //            //console.log('actual info height', h);
-        //            SQSP.$objects.hostedInfo.height(0);
-        //            SQSP.$objects.hostedInfo.css({display:'block'});
-        //            tl.to(SQSP.$objects.hostedInfo,.3, {height:h, ease:Strong.easeOut});
-        //            tl.add(function(){
-        //                SQSP.$objects.hostedInfo.addClass('on');
-        //            }, '-=.2');
-        //        }
-        //    });
-        //
-        //}// endif
+            SQSP.$objects.hostedInfo = $hostedInfo;
 
-        // <<<<<<<<<<<<<<
+            // reveal hosted-info on mobile no tap
+            SQSP.$objects.hostedInfo.parent().click(function(){
+                //console.log('info clicked');
+                var $clicked = jQuery(this);
+                if(!is_mobile() || $clicked.get(0).isTransitionActive) return false;
+                $clicked.get(0).isTransitionActive = true;
+
+                var tl = new TimelineMax({onComplete:function(){
+                    //console.log('info height reveal done');
+                    $clicked.get(0).isTransitionActive = false;
+                }});
+
+                if(SQSP.$objects.hostedInfo.hasClass('on')) {
+                    //console.log('info clicked close');
+                    // close info
+                    SQSP.$objects.hostedInfo.removeClass('on');
+                    tl.to(SQSP.$objects.hostedInfo,.3, {height:0, ease:Strong.easeOut, clearProps:'all'});
+                } else {
+                    //console.log('info clicked open');
+                    // open info
+                    SQSP.$objects.hostedInfo.height('auto');
+                    var h = SQSP.$objects.hostedInfo.height() + parseFloat(SQSP.$objects.hostedInfo.siblings('.hosted-logo').css('padding-bottom'));
+                    //console.log('actual info height', h);
+                    SQSP.$objects.hostedInfo.height(0);
+                    SQSP.$objects.hostedInfo.css({display:'block'});
+                    tl.to(SQSP.$objects.hostedInfo,.3, {height:h, ease:Strong.easeOut});
+                    tl.add(function(){
+                        SQSP.$objects.hostedInfo.addClass('on');
+                    }, '-=.2');
+                }
+            });
+
+        }// endif
 
     });// endeach posters
 
@@ -228,22 +223,19 @@ jQuery(window).load(function() {
     //}, 400);
 }).scroll(function() {
 
-    // >>>>>>>>>>>>>> HOSTED INFO REMOVED UPON REQUEST 06|24|2016
+    var windowScrolltop = jQuery(window).scrollTop(),
+        objectScrolltop = SQSP.$objects.hostedInfo.offset().top;
 
-    //var windowScrolltop = jQuery(window).scrollTop(),
-    //    objectScrolltop = SQSP.$objects.hostedInfo.offset().top;
-    //
-    //var heightByScroll = (windowScrolltop - objectScrolltop + window.innerHeight *.95) / window.innerHeight * 300;
-    //var vwHeight = heightByScroll / window.innerWidth *100;
-    //if(vwHeight > 10) {
-    //    SQSP.$objects.hostedInfo.addClass('on');
-    //} else {
-    //    SQSP.$objects.hostedInfo.removeClass('on');
-    //}
-    //if((windowScrolltop + window.innerHeight*.05) > objectScrolltop) SQSP.$objects.hostedInfo.removeClass('on');
-    //SQSP.$objects.hostedInfo.height(vwHeight + 'vw');
+    var heightByScroll = (windowScrolltop - objectScrolltop + window.innerHeight *.95) / window.innerHeight * 300;
+    var vwHeight = heightByScroll / window.innerWidth *100;
+    if(vwHeight > 10) {
+        SQSP.$objects.hostedInfo.addClass('on');
+    } else {
+        SQSP.$objects.hostedInfo.removeClass('on');
+    }
+    if((windowScrolltop + window.innerHeight*.05) > objectScrolltop) SQSP.$objects.hostedInfo.removeClass('on');
+    SQSP.$objects.hostedInfo.height(vwHeight + 'vw');
 
-    // <<<<<<<<<<<<<<
 });
 
 function onPosterEnterViewPort($poster) {
