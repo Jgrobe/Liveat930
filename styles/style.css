@@ -1651,7 +1651,8 @@ input {
     transition: opacity 0.3s; }
   .poster .ep-lineup {
     text-align: left;
-    position: relative; }
+    position: relative;
+    word-break: break-all; }
     .poster .ep-lineup > * {
       -webkit-transition: opacity 0.3s, color 0.3s;
       -moz-transition: opacity 0.3s, color 0.3s;
@@ -3590,7 +3591,7 @@ input {
     letter-spacing: .02em;
     padding: 8vh 40px; }
   .landing.episodes-landing.episode-detail .cta-container {
-    margin: 0 0 auto auto;
+    margin: 0 auto auto auto;
     -webkit-transform: translateY(50%);
     -moz-transform: translateY(50%);
     -ms-transform: translateY(50%);
@@ -4568,7 +4569,8 @@ input {
   position: relative; }
   .clip-preview-container .video-js {
     overflow: hidden;
-    z-index: 1; }
+    z-index: 1;
+    background: black; }
   .clip-preview-container:before, .clip-preview-container:after {
     content: '';
     display: block; }

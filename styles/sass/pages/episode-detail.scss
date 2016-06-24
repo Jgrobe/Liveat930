@@ -103,10 +103,10 @@
       line-height: 26px;
       letter-spacing: .02em;
       padding: 8vh 40px;
-    }
+    }// .text-layer
 
     .cta-container {
-      margin: 0 0 auto auto;
+      margin: 0 auto auto auto;
       @include transform(translateY(50%));
 
       $size: 11px;

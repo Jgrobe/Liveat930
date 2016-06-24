@@ -378,6 +378,8 @@ function windowloaded() {
         toggleNavOverlay();
     });// click()
 
+    addBackButtonToCart();
+
 }// windowloaded
 
 function toggleNavOverlay() {
@@ -647,4 +649,15 @@ function format_lineup_preview(truncate) {
         }
         $thisLineup.append(previewwartists);
     });
+}
+
+function addBackButtonToCart() {
+    var $cart = jQuery('#sqs-shopping-cart-wrapper');
+    if($cart.length <= 0) return false;
+
+    var $btn = jQuery('<div class="backtomerch" />');
+    $btn.html('< Back to merch');
+    TweenMax.set($btn, {position: 'absolute', y:'-50px', cursor: pointer, 'font-size': '10px', 'text-transform': 'uppercase'});
+    $cart.prepend($btn);
+    $btn.click(function(){ history.back(); });
 }

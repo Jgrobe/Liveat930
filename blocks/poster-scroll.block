@@ -59,12 +59,15 @@
 
         <div class="poster-part info{.equal?:@index:1} has-info{.end}">
             <div class="hosted-logo">{@|apply svg-hosted-by.block}<!--php svg('images/hosted-by'); --></div>
-
+{##BEGIN}
+            <!--HOSTED INFO REMOVED UPON REQUEST 06|24|2016-->
+            <!--if re-enable -> re-enable related javascript in /scripts/custom/page_home.js:139 -->
             {.equal?:@index:1}
             <div class="hosted-info">
                 Live at 9:30 is hosted by Squarespace, combining powers with the 9:30 Club to do what they both do best: present talented people in the best light for the world to see.
             </div><!-- .hosted-info -->
             {.end}
+{##END}
 
         </div><!-- .poster-part.info -->
 
