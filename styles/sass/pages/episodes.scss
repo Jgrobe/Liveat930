@@ -120,6 +120,8 @@
       margin: $vertSpace auto auto auto;
       position: static;
       @include transform(none);
+
+      align-self: flex-end;// fix for auto-width
     }
 
   }// BP MOBILE

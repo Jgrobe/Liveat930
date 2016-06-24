@@ -3244,7 +3244,8 @@ input {
       -moz-transform: none;
       -ms-transform: none;
       -o-transform: none;
-      transform: none; } }
+      transform: none;
+      align-self: flex-end; } }
 
 .episodes-previous {
   margin: 10.41667vw 0; }
