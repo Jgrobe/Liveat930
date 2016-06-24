@@ -656,8 +656,9 @@ function addBackButtonToCart() {
     if($cart.length <= 0) return false;
 
     var $btn = jQuery('<div class="backtomerch" />');
-    $btn.html('< Back');
-    TweenMax.set($btn, {position: 'absolute', y:-50, cursor: 'pointer', 'font-size': '10px', 'text-transform': 'uppercase'});
+    var $a = jQuery('<a href="/products/"><span class="back-arrow">←</span> Back to Merch Booth</a>');
+    TweenMax.set($btn, {position: 'absolute', y:-50, cursor: 'pointer', 'font-size': '11px'});
+    $btn.append($a);
     $cart.prepend($btn);
     $btn.click(function(){ history.back(); });
 }
