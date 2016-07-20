@@ -705,13 +705,12 @@ function adjustDynamicFontSize($container, options) {
             var $this = jQuery(this);
             var thisText = $this.text();
             excludeCount += thisText.length;
-            console.log('removing this text: ', thisText);
             fullText = fullText.replace(thisText, '');
-            console.log('new full text', fullText);
         });// endeach
 
         //console.log('excluded letters from '+$excludes.length+' elems: '+excludeCount);
 
+        console.log('new full text', fullText);
         letterCount -= excludeCount;
         console.log('lettercount - excludes: '+letterCount);
         console.log('new lettercount: '+fullText.length);
