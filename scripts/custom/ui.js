@@ -31,6 +31,8 @@ function init_sqsp() {
             if(_.isFunction(SQSP.functions.windowResize[i])) SQSP.functions.windowResize[i]();
         }
 
+        sizePostersFontSize();
+
     });
 
     //sizeVideosOnReady();
@@ -661,4 +663,55 @@ function addBackButtonToCart() {
     $btn.append($a);
     $cart.prepend($btn);
     //$btn.click(function(){ history.back(); });
+}
+
+function sizePostersFontSize() {
+    var $posters = jQuery('.poster');
+    if(!$posters.length) return false;
+
+    console.log('sizePostersFontSize()');
+
+    $posters.each(function(i, elem) {
+        if(i>0) return false;
+
+        var $thisPoster = jQuery(this);
+        var $lineUp = $thisPoster.find('.ep-lineup');
+        if(!$lineUp.length) return true;
+
+        adjustDynamicFontSize($lineUp);
+    });
+}
+
+function adjustDynamicFontSize($container, options) {
+    if(typeof options === 'undefined') options = {};
+    var settings = jQuery.extend({
+        ratio: 0.8,
+        excludeFromLetterCount: '.description'
+    }, options);
+
+    var cwidth = $container.width();
+    var letterCount = $container.text().length;
+    console.log('adjusting dynamic fontsize @ container width '+cwidth+' | letterCount: '+letterCount);
+
+    var $excludes = jQuery(settings.excludeFromLetterCount);
+    if($excludes.length > 0) {
+        var excludeCount = 0;
+
+        $excludes.each(function(i, elem) {
+            var $this = jQuery(this);
+            excludeCount += $this.text().length;
+        });// endeach
+
+        console.log('excluded letters from '+$excludes.length+' elems: '+excludeCount);
+
+        letterCount -= excludeCount;
+
+    }// endif
+
+    var fontSize = cWidth / letterCount * settings.ratio;
+
+    $container.css({
+        'font-size' : fontSize
+    });
+
 }
