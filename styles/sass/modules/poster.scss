@@ -224,7 +224,7 @@ $posterWidth: 84vw;
   .lineup-container {
     position: relative;
 
-    &.padded { padding-bottom: calc(~"#{$posterPadding} / 2");}
+    //&.padded { padding-bottom: calc(~"#{$posterPadding} / 2");}
 
     &:after {
       content: '';
@@ -520,7 +520,7 @@ $posterWidth: 84vw;
 
     .lineup-container {
 
-      &.padded { padding-bottom: calc(~"#{$posterPadding} / 2");}
+      //&.padded { padding-bottom: calc(~"#{$posterPadding} / 2");}
 
       &:after {
         bottom: calc(~"#{$posterPadding} / 2");

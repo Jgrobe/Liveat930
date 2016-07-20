@@ -738,9 +738,9 @@ function adjustFontSizeByOverflow($container, options) {
         console.log('-------------- INCREASE');
         // text is not filling container -> increase font-size by span:last-child offset-bottom ratio
         var $lastChild = $container.children().last();
-        var bottomOffset = $lastChild.offset().top + $lastChild.height();
+        var bottomOffset = $lastChild.position().top + $lastChild.height();
         console.log('increase font-size: nuf space?', bottomOffset, currentFontsize*1.5, (bottomOffset < currentFontsize * 1.5));
-        return;
+        //return;
         if(bottomOffset < currentFontsize * 1.5) {
             // text wouldnt fit any more if increase font-size caused another linebreak
             return;

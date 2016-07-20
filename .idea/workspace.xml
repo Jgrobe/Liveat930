@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ba77c59-895c-4b6c-8ed1-52220cbb39bd" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/custom/ui.js" afterPath="$PROJECT_DIR$/scripts/custom/ui.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/sass/modules/poster.scss" afterPath="$PROJECT_DIR$/styles/sass/modules/poster.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/style.css" afterPath="$PROJECT_DIR$/styles/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/style.css.map" afterPath="$PROJECT_DIR$/styles/style.css.map" />
     </list>
     <ignored path="sqsp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -98,10 +102,10 @@
           <file leaf-file-name="ui.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/scripts/custom/ui.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.5802099">
-                  <caret line="737" column="38" selection-start-line="737" selection-start-column="38" selection-end-line="737" selection-end-column="38" />
+                <state vertical-scroll-proportion="0.7151424">
+                  <caret line="743" column="17" selection-start-line="743" selection-start-column="17" selection-end-line="743" selection-end-column="17" />
                   <folding>
-                    <marker date="1469021792000" expanded="true" signature="5134:5151" placeholder="..." />
+                    <marker date="1469023133000" expanded="true" signature="5134:5151" placeholder="..." />
                   </folding>
                 </state>
               </provider>
@@ -144,8 +148,8 @@
           <file leaf-file-name="poster.scss" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/styles/sass/modules/poster.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.75336325">
-                  <caret line="619" column="29" selection-start-line="619" selection-start-column="29" selection-end-line="619" selection-end-column="29" />
+                <state vertical-scroll-proportion="-0.15994021">
+                  <caret line="224" column="23" selection-start-line="224" selection-start-column="23" selection-end-line="224" selection-end-column="23" />
                   <folding />
                 </state>
               </provider>
@@ -930,18 +934,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/styles/sass/modules/poster.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.75336325">
-          <caret line="619" column="29" selection-start-line="619" selection-start-column="29" selection-end-line="619" selection-end-column="29" />
+        <state vertical-scroll-proportion="-0.15994021">
+          <caret line="224" column="23" selection-start-line="224" selection-start-column="23" selection-end-line="224" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/custom/ui.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5802099">
-          <caret line="737" column="38" selection-start-line="737" selection-start-column="38" selection-end-line="737" selection-end-column="38" />
+        <state vertical-scroll-proportion="0.7151424">
+          <caret line="743" column="17" selection-start-line="743" selection-start-column="17" selection-end-line="743" selection-end-column="17" />
           <folding>
-            <marker date="1469021792000" expanded="true" signature="5134:5151" placeholder="..." />
+            <marker date="1469023133000" expanded="true" signature="5134:5151" placeholder="..." />
           </folding>
         </state>
       </provider>
