@@ -697,7 +697,7 @@ function sizePostersFontSize() {
         if(!$lineUp.length) return true;
 
         if(isWindowGrowing) {
-            $container.css({
+            $lineUp.css({
                 'font-size' : '',
                 'line-height' : ''
             });
