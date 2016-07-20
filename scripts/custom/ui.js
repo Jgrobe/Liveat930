@@ -676,72 +676,6 @@ function addBackButtonToCart() {
     //$btn.click(function(){ history.back(); });
 }
 
-function preparePosterLineUpForFontResizing() {
-    var $posters = jQuery('.poster');
-    if(!$posters.length) return false;
-
-    console.log('scalePostersLineupToFit()');
-
-    $posters.each(function(i, elem) {
-        var $thisPoster = jQuery(this);
-        var $lineUp = $thisPoster.find('.ep-lineup');
-
-        $lineUp.css({height:'auto'});
-        $lineUp.get(0).origHeight = $lineUp.height();
-        $lineUp.css({height:''});
-        $lineUp.get(0).targetHeight = $lineUp.height();
-
-        $lineUp.get(0).sizeRatio = $lineUp.get(0).origHeight / $lineUp.get(0).targetHeight;
-
-        $lineUp.get(0).origFontsize = parseFloat($container.css('font-size'));
-
-
-    });
-
-    sizePostersFontSizeByHeight($posters);
-
-}// preparePosterLineUpForFontResizing()
-
-function sizePostersFontSizeByHeight($posters) {
-    if(typeof $posters === 'undefined') $posters = jQuery('.poster');
-    if(!$posters.length) return false;
-
-    $posters.each(function(i,elem){
-        var $thisPoster = jQuery(this);
-        var $lineUp = $thisPoster.find('.ep-lineup');
-    });// endeach()
-
-}
-
-function scalePostersLineupToFit() {
-
-    var $posters = jQuery('.poster');
-    if(!$posters.length) return false;
-
-    console.log('scalePostersLineupToFit()');
-
-    $posters.each(function(i, elem) {
-        var $thisPoster = jQuery(this);
-        var $lineup = $thisPoster.find('.ep-lineup');
-        $lineup.css({height:'100%'});
-        var containerProps = {
-            width:$lineup.width(),
-            height:$lineup.height()
-        };
-        $lineup.css({height:''});
-        var lineupProps = {
-            width: $lineup.width(),
-            height: $lineup.height()
-        };
-
-        var heightScale = containerProps.height / lineupProps.height;
-        console.log('getting heightScale', containerProps.height, lineupProps.height, heightScale);
-
-        TweenMax.set($lineup, {transformOrigin:'0 0', scale:heightScale});
-
-    });
-}// scalePostersLineupToFit()
-
 function sizePostersFontSize() {
     var $posters = jQuery('.poster');
     if(!$posters.length) return false;
@@ -763,124 +697,211 @@ function sizePostersFontSize() {
         //};
         //adjustFontSizeByCharCount($lineUp, opts);
 
-        adjustFontSizeByOverflow($lineUp);
+        recursivelyCorrectLineupFontsize($lineUp);
     });
 }
 
-function resetPostersFontSize() {
-    var $posters = jQuery('.poster');
-    if(!$posters.length) return false;
+function recursivelyCorrectLineupFontsize($container) {
 
-    if(window.postersfontsizereseted) return false;
-
-    console.log('sizePostersFontSize()');
-
-    $posters.each(function(i, elem) {
-
-        var $thisPoster = jQuery(this);
-        var $lineUp = $thisPoster.find('.ep-lineup');
-        $lineUp.css({
-            'font-size' : '',
-            'line-height' : ''
-        })
-    });
-
-    window.postersfontsizereseted = true;
-}
-
-function adjustFontSizeByOverflow($container, options) {
-    if (typeof options === 'undefined') options = {};
+    var sizingStep = 2;// px
 
     var cHeight = $container.height();
     var overflowHeight = $container.get(0).scrollHeight;
     var currentFontsize = parseFloat($container.css('font-size'));
-    var scaledFontsize = 0;//safety default
-    console.log('adjust by overflow', cHeight, overflowHeight, currentFontsize);
-    
+
     if(overflowHeight > cHeight) {
-        console.log('-------------- DECREASE');
-        // text is overflowing -> reduce font-size by height:overflow ratio
-        var overflowRatio = cHeight / overflowHeight;
-        scaledFontsize = currentFontsize * overflowRatio;
-        console.log('scale font size by ratio ', overflowRatio, scaledFontsize);
-    } else {
-
+        // decrease
         $container.css({
-            'font-size' : '1000px'
+            'font-size' : (Math.round(currentFontsize) - sizingStep) + 'px',
+            'line-height' : '100%'
         });
-        adjustFontSizeByOverflow($container);
-        return;
-        //
-        //console.log('-------------- INCREASE');
-        //// text is not filling container -> increase font-size by span:last-child offset-bottom ratio
-        //var $lastChild = $container.children().last();
-        //var bottomOffset = $lastChild.position().top + $lastChild.height();
-        //console.log('increase font-size: nuf space?', bottomOffset, currentFontsize*1.5, (bottomOffset < currentFontsize * 1.5));
-        ////return;
-        //if(bottomOffset < currentFontsize * 1.5) {
-        //    // text wouldnt fit any more if increase font-size caused another linebreak
-        //    return;
-        //} else {
-        //    var increaseRatio = 1 + bottomOffset / cHeight;
-        //    console.log('increase ratio = ', increaseRatio);
-        //    scaledFontsize = currentFontsize * increaseRatio;
-        //}// endif nuf space
+        $container.get(0).isFontSizeAdjusted = true;
+    } else {
+        // leave css font size
     }// endif
 
-    var fontsize = Math.round(scaledFontsize)+'px';
-    console.log('assigning fontSize: '+fontsize);
+}// recursivelyCorrectLineupFontsize();
 
-    $container.css({
-        'font-size' : fontsize,
-        'line-height': fontsize
-    })
-    
-}// adjustFontSizeByOverflow()
+//function preparePosterLineUpForFontResizing() {
+//    var $posters = jQuery('.poster');
+//    if(!$posters.length) return false;
+//
+//    console.log('scalePostersLineupToFit()');
+//
+//    $posters.each(function(i, elem) {
+//        var $thisPoster = jQuery(this);
+//        var $lineUp = $thisPoster.find('.ep-lineup');
+//
+//        $lineUp.css({height:'auto'});
+//        $lineUp.get(0).origHeight = $lineUp.height();
+//        $lineUp.css({height:''});
+//        $lineUp.get(0).targetHeight = $lineUp.height();
+//
+//        $lineUp.get(0).sizeRatio = $lineUp.get(0).origHeight / $lineUp.get(0).targetHeight;
+//
+//        $lineUp.get(0).origFontsize = parseFloat($container.css('font-size'));
+//
+//
+//    });
+//
+//    sizePostersFontSizeByHeight($posters);
+//
+//}// preparePosterLineUpForFontResizing()
 
-function adjustFontSizeByCharCount($container, options) {
-    if(typeof options === 'undefined') options = {};
+//function sizePostersFontSizeByHeight($posters) {
+//    if(typeof $posters === 'undefined') $posters = jQuery('.poster');
+//    if(!$posters.length) return false;
+//
+//    $posters.each(function(i,elem){
+//        var $thisPoster = jQuery(this);
+//        var $lineUp = $thisPoster.find('.ep-lineup');
+//    });// endeach()
+//
+//}
 
-    // base ratio: ($container width 800px) / (lettercount 98 @ font-size 7.2vw) * (ratio x) = ~ 92px
-    var settings = jQuery.extend({
-        ratio: 10
-    }, options);
+//function scalePostersLineupToFit() {
+//
+//    var $posters = jQuery('.poster');
+//    if(!$posters.length) return false;
+//
+//    console.log('scalePostersLineupToFit()');
+//
+//    $posters.each(function(i, elem) {
+//        var $thisPoster = jQuery(this);
+//        var $lineup = $thisPoster.find('.ep-lineup');
+//        $lineup.css({height:'100%'});
+//        var containerProps = {
+//            width:$lineup.width(),
+//            height:$lineup.height()
+//        };
+//        $lineup.css({height:''});
+//        var lineupProps = {
+//            width: $lineup.width(),
+//            height: $lineup.height()
+//        };
+//
+//        var heightScale = containerProps.height / lineupProps.height;
+//        console.log('getting heightScale', containerProps.height, lineupProps.height, heightScale);
+//
+//        TweenMax.set($lineup, {transformOrigin:'0 0', scale:heightScale});
+//
+//    });
+//}// scalePostersLineupToFit()
 
-    var cWidth = $container.width();
-    var fullText = $container.text();
-    var letterCount = fullText.length;
-    //console.log('full container text', $container.text());
-    //console.log('adjusting dynamic fontsize @ container width '+cWidth+' | letterCount: '+letterCount);
-
-    var $excludes = $container.find(settings.excludeFromLetterCount);
-    if($excludes.length > 0) {
-        //var excludeCount = 0;
-
-        $excludes.each(function(i, elem) {
-            var $this = jQuery(this);
-            var thisText = $this.text();
-            //excludeCount += thisText.length;
-            fullText = fullText.replace(thisText, '').trim();
-        });// endeach
-
-        if(settings.onTextComplete) {
-            fullText = settings.onTextComplete(fullText);
-        }
-
-        //console.log('excluded letters from '+$excludes.length+' elems: '+excludeCount);
-
-        console.log('new full text:\n', fullText);
-        //letterCount -= excludeCount;
-        letterCount = fullText.length;
-        console.log('lettercount - excludes: '+letterCount);
-
-    }// endif
-
-    var fontSize = Math.round( cWidth / letterCount * settings.ratio ) + 'px';
-    console.log('fontsize: '+fontSize);
-
-    $container.css({
-        'font-size' : fontSize,
-        'line-height' : fontSize
-    });
-
-}// adjustFontSizeByCharCount()
+//function resetPostersFontSize() {
+//    var $posters = jQuery('.poster');
+//    if(!$posters.length) return false;
+//
+//    if(window.postersfontsizereseted) return false;
+//
+//    console.log('sizePostersFontSize()');
+//
+//    $posters.each(function(i, elem) {
+//
+//        var $thisPoster = jQuery(this);
+//        var $lineUp = $thisPoster.find('.ep-lineup');
+//        $lineUp.css({
+//            'font-size' : '',
+//            'line-height' : ''
+//        })
+//    });
+//
+//    window.postersfontsizereseted = true;
+//}
+//
+//function adjustFontSizeByOverflow($container, options) {
+//    if (typeof options === 'undefined') options = {};
+//
+//    var cHeight = $container.height();
+//    var overflowHeight = $container.get(0).scrollHeight;
+//    var currentFontsize = parseFloat($container.css('font-size'));
+//    var scaledFontsize = 0;//safety default
+//    console.log('adjust by overflow', cHeight, overflowHeight, currentFontsize);
+//
+//    if(overflowHeight > cHeight) {
+//        console.log('-------------- DECREASE');
+//        // text is overflowing -> reduce font-size by height:overflow ratio
+//        var overflowRatio = cHeight / overflowHeight;
+//        scaledFontsize = currentFontsize * overflowRatio;
+//        console.log('scale font size by ratio ', overflowRatio, scaledFontsize);
+//    } else {
+//
+//        $container.css({
+//            'font-size' : '1000px'
+//        });
+//        adjustFontSizeByOverflow($container);
+//        return;
+//        //
+//        //console.log('-------------- INCREASE');
+//        //// text is not filling container -> increase font-size by span:last-child offset-bottom ratio
+//        //var $lastChild = $container.children().last();
+//        //var bottomOffset = $lastChild.position().top + $lastChild.height();
+//        //console.log('increase font-size: nuf space?', bottomOffset, currentFontsize*1.5, (bottomOffset < currentFontsize * 1.5));
+//        ////return;
+//        //if(bottomOffset < currentFontsize * 1.5) {
+//        //    // text wouldnt fit any more if increase font-size caused another linebreak
+//        //    return;
+//        //} else {
+//        //    var increaseRatio = 1 + bottomOffset / cHeight;
+//        //    console.log('increase ratio = ', increaseRatio);
+//        //    scaledFontsize = currentFontsize * increaseRatio;
+//        //}// endif nuf space
+//    }// endif
+//
+//    var fontsize = Math.round(scaledFontsize)+'px';
+//    console.log('assigning fontSize: '+fontsize);
+//
+//    $container.css({
+//        'font-size' : fontsize,
+//        'line-height': fontsize
+//    })
+//
+//}// adjustFontSizeByOverflow()
+//
+//function adjustFontSizeByCharCount($container, options) {
+//    if(typeof options === 'undefined') options = {};
+//
+//    // base ratio: ($container width 800px) / (lettercount 98 @ font-size 7.2vw) * (ratio x) = ~ 92px
+//    var settings = jQuery.extend({
+//        ratio: 10
+//    }, options);
+//
+//    var cWidth = $container.width();
+//    var fullText = $container.text();
+//    var letterCount = fullText.length;
+//    //console.log('full container text', $container.text());
+//    //console.log('adjusting dynamic fontsize @ container width '+cWidth+' | letterCount: '+letterCount);
+//
+//    var $excludes = $container.find(settings.excludeFromLetterCount);
+//    if($excludes.length > 0) {
+//        //var excludeCount = 0;
+//
+//        $excludes.each(function(i, elem) {
+//            var $this = jQuery(this);
+//            var thisText = $this.text();
+//            //excludeCount += thisText.length;
+//            fullText = fullText.replace(thisText, '').trim();
+//        });// endeach
+//
+//        if(settings.onTextComplete) {
+//            fullText = settings.onTextComplete(fullText);
+//        }
+//
+//        //console.log('excluded letters from '+$excludes.length+' elems: '+excludeCount);
+//
+//        console.log('new full text:\n', fullText);
+//        //letterCount -= excludeCount;
+//        letterCount = fullText.length;
+//        console.log('lettercount - excludes: '+letterCount);
+//
+//    }// endif
+//
+//    var fontSize = Math.round( cWidth / letterCount * settings.ratio ) + 'px';
+//    console.log('fontsize: '+fontSize);
+//
+//    $container.css({
+//        'font-size' : fontSize,
+//        'line-height' : fontSize
+//    });
+//
+//}// adjustFontSizeByCharCount()
