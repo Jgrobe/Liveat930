@@ -701,7 +701,7 @@ function sizePostersFontSize() {
     console.log('sizePostersFontSize()');
 
     $posters.each(function(i, elem) {
-        //if(i>0) return false;// DEV
+        if(i !== 1) return false;// DEV
 
         var $thisPoster = jQuery(this);
         var $lineUp = $thisPoster.find('.ep-lineup');
@@ -730,16 +730,27 @@ function adjustFontSizeByOverflow($container, options) {
     var cHeight = $container.height();
     var overflowHeight = $container.get(0).scrollHeight;
     var currentFontsize = parseFloat($container.css('font-size'));
-    var scaledFontsize;
+    var scaledFontsize = 0;//safety default
     console.log('adjust by overflow', cHeight, overflowHeight, currentFontsize);
     
     if(overflowHeight > cHeight) {
-        // text is overflowing -> reduce font-size
+        // text is overflowing -> reduce font-size by height:overflow ratio
         var overflowRatio = cHeight / overflowHeight;
         scaledFontsize = currentFontsize * overflowRatio;
         console.log('scale font size by ratio ', overflowRatio, scaledFontsize);
     } else {
-        // text is not filling container -> increase font-size
+        // text is not filling container -> increase font-size by span:last-child offset-bottom ratio
+        var $lastChild = $container.children().last();
+        var bottomOffset = $lastChild.offset().top + $lastChild.height();
+        console.log('increase font-size: nuf space?', bottomOffset, currentFontsize*1.5, (bottomOffset < currentFontsize * 1.5));
+        if(bottomOffset < currentFontsize * 1.5) {
+            // text wouldnt fit any more if increase font-size caused another linebreak
+            return;
+        } else {
+            var increaseRatio = 1 + bottomOffset / cHeight;
+            console.log('increase ratio = ', increaseRatio);
+            scaledFontsize = currentFontsize * increaseRatio;
+        }// endif nuf space
     }// endif
 
     var fontsize = Math.round(scaledFontsize)+'px';
@@ -747,7 +758,7 @@ function adjustFontSizeByOverflow($container, options) {
 
     $container.css({
         'font-size' : fontsize,
-        'line-height': '100%'
+        'line-height': fontsize
     })
     
 }// adjustFontSizeByOverflow()
