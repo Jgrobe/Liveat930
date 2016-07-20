@@ -735,7 +735,7 @@ function adjustFontSizeByOverflow($container, options) {
     
     if(overflowHeight > cHeight) {
         // text is overflowing -> reduce font-size
-        var overflowRatio = overflowHeight / cHeight;
+        var overflowRatio = cHeight / overflowHeight;
         scaledFontsize = currentFontsize * overflowRatio;
         console.log('scale font size by ratio ', overflowRatio, scaledFontsize);
     } else {
