@@ -81,8 +81,8 @@
           <file leaf-file-name="module-share.block" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/blocks/module-share.block">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.15948276">
-                  <caret line="30" column="31" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
+                <state vertical-scroll-proportion="0.8060345">
+                  <caret line="68" column="40" selection-start-line="68" selection-start-column="40" selection-end-line="68" selection-end-column="40" />
                   <folding />
                 </state>
               </provider>
@@ -938,8 +938,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/blocks/module-share.block">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15948276">
-          <caret line="30" column="31" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
+        <state vertical-scroll-proportion="0.8060345">
+          <caret line="68" column="40" selection-start-line="68" selection-start-column="40" selection-end-line="68" selection-end-column="40" />
           <folding />
         </state>
       </provider>

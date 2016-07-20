@@ -43,26 +43,34 @@
 
         if(!$fbContainer.length) return false;
 
-        var $btnFBshare = jQuery('<div/>');
-        $btnFBshare.attr({
-            class : 'fb-share-button',
-            'data-href' : window.location,
-            'data-layout' : 'button_count',
-            'data-size' : 'small',
-            'data-mobile-iframe' : 'true'
-        });
-        var $shareLink = jQuery('<a/>');
-        $shareLink.attr({
-            class : 'fb-xfbml-parse-ignore',
-            target : '_blank',
-            href : 'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(window.location)
-        });
-        $shareLink.html('Share');
-        $btnFBshare.append($shareLink);
-        $fbContainer.html($btnFBshare);
-
-        console.log('---> like has been replaced', $btnFBshare, $fbContainer);
-
+        $fbContainer.css({visibility:'hidden'});
         window.hasLikeBeenReplaced = true;
+
+        setTimeout(function() {
+
+            var $btnFBshare = jQuery('<div/>');
+            $btnFBshare.attr({
+                class : 'fb-share-button',
+                'data-href' : window.location,
+                'data-layout' : 'button_count',
+                'data-size' : 'small',
+                'data-mobile-iframe' : 'true'
+            });
+            var $shareLink = jQuery('<a/>');
+            $shareLink.attr({
+                class : 'fb-xfbml-parse-ignore',
+                target : '_blank',
+                href : 'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(window.location)
+            });
+            $shareLink.html('Share');
+            $btnFBshare.append($shareLink);
+            $fbContainer.html($btnFBshare);
+
+            $fbContainer.css({visibility:''});
+
+            console.log('---> like has been replaced', $btnFBshare, $fbContainer);
+
+        }, 1000);
+
     }
 </script>
