@@ -701,7 +701,7 @@ function sizePostersFontSize() {
     console.log('sizePostersFontSize()');
 
     $posters.each(function(i, elem) {
-        if(i !== 1) return true;// DEV
+        if(i > 0) return false;// DEV
 
         var $thisPoster = jQuery(this);
         var $lineUp = $thisPoster.find('.ep-lineup');
@@ -734,11 +734,11 @@ function adjustFontSizeByOverflow($container, options) {
         scaledFontsize = currentFontsize * overflowRatio;
         console.log('scale font size by ratio ', overflowRatio, scaledFontsize);
     } else {
-        return;
         // text is not filling container -> increase font-size by span:last-child offset-bottom ratio
         var $lastChild = $container.children().last();
         var bottomOffset = $lastChild.offset().top + $lastChild.height();
         console.log('increase font-size: nuf space?', bottomOffset, currentFontsize*1.5, (bottomOffset < currentFontsize * 1.5));
+        return;
         if(bottomOffset < currentFontsize * 1.5) {
             // text wouldnt fit any more if increase font-size caused another linebreak
             return;
