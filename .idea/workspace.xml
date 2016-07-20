@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ba77c59-895c-4b6c-8ed1-52220cbb39bd" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/blocks/sharebox-share-extension.block" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blocks/module-share.block" afterPath="$PROJECT_DIR$/blocks/module-share.block" />
     </list>
     <ignored path="sqsp.iws" />
@@ -81,8 +81,8 @@
           <file leaf-file-name="module-share.block" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/blocks/module-share.block">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.87068963">
-                  <caret line="63" column="76" selection-start-line="63" selection-start-column="76" selection-end-line="63" selection-end-column="76" />
+                <state vertical-scroll-proportion="0.15948276">
+                  <caret line="30" column="31" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
                   <folding />
                 </state>
               </provider>
@@ -938,8 +938,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/blocks/module-share.block">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.87068963">
-          <caret line="63" column="76" selection-start-line="63" selection-start-column="76" selection-end-line="63" selection-end-column="76" />
+        <state vertical-scroll-proportion="0.15948276">
+          <caret line="30" column="31" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
           <folding />
         </state>
       </provider>

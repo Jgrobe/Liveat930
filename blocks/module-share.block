@@ -28,7 +28,7 @@
 <script>
     /* custom replace fb like w/ share */
     var fbInterval = setInterval(function(){
-
+        replaceLikeWithShare();
     }, 200);
     function replaceLikeWithShare() {
         console.log('tryna replace like');
