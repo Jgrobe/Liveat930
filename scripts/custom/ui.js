@@ -701,7 +701,7 @@ function sizePostersFontSize() {
     console.log('sizePostersFontSize()');
 
     $posters.each(function(i, elem) {
-        if(i !== 1) return false;// DEV
+        if(i !== 1) return true;// DEV
 
         var $thisPoster = jQuery(this);
         var $lineUp = $thisPoster.find('.ep-lineup');
