@@ -704,7 +704,7 @@ function sizePostersFontSize() {
     console.log('sizePostersFontSize()');
 
     $posters.each(function(i, elem) {
-        if(i > 0) return false;// DEV
+        //if(i > 0) return false;// DEV
 
         var $thisPoster = jQuery(this);
         var $lineUp = $thisPoster.find('.ep-lineup');
@@ -726,10 +726,11 @@ function resetPostersFontSize() {
     var $posters = jQuery('.poster');
     if(!$posters.length) return false;
 
+    if(window.postersfontsizereseted) return false;
+
     console.log('sizePostersFontSize()');
 
     $posters.each(function(i, elem) {
-        if (i > 0) return false;// DEV
 
         var $thisPoster = jQuery(this);
         var $lineUp = $thisPoster.find('.ep-lineup');
@@ -738,6 +739,8 @@ function resetPostersFontSize() {
             'line-height' : ''
         })
     });
+
+    window.postersfontsizereseted = true;
 }
 
 function adjustFontSizeByOverflow($container, options) {
