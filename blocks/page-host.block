@@ -79,9 +79,9 @@
     <section class="host-become text-insert-container">
         <div class="rectangle"></div>
         <div class="main text-layer prllx-custom" data-prllx=".12">
-            {# the following is commented out because apparently firefox can't cope with parallaxing and blend modes at the same time and crashes}
-            {# also see the modified scss in sass/modules/text-insert.scss}
             {##BEGIN}
+            <!-- this is commented out because apparently firefox can't cope with parallaxing and blend modes at the same time and crashes -->
+            <!-- also see the modified scss in sass/modules/text-insert.scss -->
             <div class="logo blend-logo">
                 {@|apply svg-logo-squarespace.block}
                 <!--php svg('images/logo-squarespace'); -->
