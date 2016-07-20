@@ -714,7 +714,7 @@ function sizePostersFontSize() {
             }
         };
 
-        adjustFontSizeByCharCount($lineUp, opts);
+        //adjustFontSizeByCharCount($lineUp, opts);
         adjustFontSizeByOverflow($lineUp, opts);
     });
 }
@@ -734,6 +734,9 @@ function adjustFontSizeByOverflow($container, options) {
     
     if(overflowHeight > cHeight) {
         // text is overflowing -> reduce font-size
+        var overflowRatio = overflowHeight / cHeight;
+        var scaledFontsize = currentFontsize * overflowRatio;
+        console.log('scale font size by ratio ', overflowRatio, scaledFontsize);
     } else {
         // text is not filling container -> increase font-size
     }// endif
