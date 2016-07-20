@@ -4076,6 +4076,15 @@ input {
     padding-right: 7vw;
     background: black;
     color: white; }
+    .history-slider .text-layer:before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 100%;
+      width: 60px;
+      height: 100%;
+      background: black; }
     .history-slider .text-layer .slider-ui .slider-label {
       top: 50%;
       left: 100%;
@@ -4100,6 +4109,8 @@ input {
         left: 10%; }
       .history-slider .text-layer {
         position: static; }
+        .history-slider .text-layer:before {
+          content: none; }
       .history-slider .slider-images {
         height: auto; }
         .history-slider .slider-images .current-image {

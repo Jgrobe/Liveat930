@@ -161,6 +161,18 @@
     background: black;
     color: white;
 
+    &:before {
+      // this is to extend the black text box so that the whole gallery-counter text is underlayed -> legibility
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 100%;
+      width: 60px;
+      height: 100%;
+      background: black;
+    }
+
     .slider-ui .slider-label {
       top: 50%;
       left: 100%;
@@ -188,7 +200,11 @@
       left: 10%;
     }
 
-    .text-layer { position: static; }
+    .text-layer {
+      position: static;
+
+      &:before { content: none; }
+    }
 
     .slider-images {
       height: auto;
