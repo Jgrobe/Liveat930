@@ -729,11 +729,13 @@ function adjustFontSizeByOverflow($container, options) {
     console.log('adjust by overflow', cHeight, overflowHeight, currentFontsize);
     
     if(overflowHeight > cHeight) {
+        console.log('-------------- DECREASE');
         // text is overflowing -> reduce font-size by height:overflow ratio
         var overflowRatio = cHeight / overflowHeight;
         scaledFontsize = currentFontsize * overflowRatio;
         console.log('scale font size by ratio ', overflowRatio, scaledFontsize);
     } else {
+        console.log('-------------- INCREASE');
         // text is not filling container -> increase font-size by span:last-child offset-bottom ratio
         var $lastChild = $container.children().last();
         var bottomOffset = $lastChild.offset().top + $lastChild.height();
