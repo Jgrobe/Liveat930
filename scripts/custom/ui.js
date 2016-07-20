@@ -31,7 +31,7 @@ function init_sqsp() {
 
     }).resize(function() {
         //console.log('WINDOW RESIZED');
-        var _currentWindowHeight = window.innerHeight;
+        var _currentWindowHeight = window.innerWidth;
         isWindowGrowing = (_currentWindowHeight > _initialWindowHeight);
         console.log('is window growing? '+_currentWindowHeight+' > '+_initialWindowHeight, isWindowGrowing);
         _initialWindowHeight = _currentWindowHeight;
