@@ -724,13 +724,25 @@ function recursivelyCorrectLineupFontsize($container) {
     var currentFontsize = parseFloat($container.css('font-size'));
 
     if(overflowHeight > cHeight) {
-        // decrease
+        // text height is greater than container height -> decrease
         $container.css({
             'font-size' : (Math.round(currentFontsize) - sizingStep) + 'px',
             'line-height' : '100%'
         });
-        //$container.get(0).isFontSizeAdjusted = true;
         recursivelyCorrectLineupFontsize($container);
+    } else {
+        // text height is smaller than container height -> find out how much smaller the text is
+        $container.css({height:'auto'});
+        var textHeight = $container.height();
+        $container.css({height: ''});
+
+        if((cHeight-textHeight) > currentFontsize*2) {
+            // text is too small -> reset & resize again
+            $container.css({
+                'font-size' : ''
+            });
+            recursivelyCorrectLineupFontsize($container);
+        }// endif
     }// endif
 
 }// recursivelyCorrectLineupFontsize();
