@@ -2,6 +2,8 @@ init_sqsp();
 
 
 var resizeTimer;
+var _initialWindowHeight = 0;
+var isWindowGrowing = false;
 
 function init_sqsp() {
     //console.log('----------------------- init sqsp');
@@ -29,6 +31,11 @@ function init_sqsp() {
 
     }).resize(function() {
         //console.log('WINDOW RESIZED');
+        var _currentWindowHeight = window.innerHeight;
+        isWindowGrowing = (_currentWindowHeight > _initialWindowHeight);
+        console.log('is window growing?', isWindowGrowing);
+        _initialWindowHeight = _currentWindowHeight;
+
         SQSP._IS_MOBILE = is_mobile();
 
         for(var i=0; i<SQSP.functions.windowResize.length; i++) {
@@ -688,6 +695,13 @@ function sizePostersFontSize() {
         var $thisPoster = jQuery(this);
         var $lineUp = $thisPoster.find('.ep-lineup');
         if(!$lineUp.length) return true;
+
+        if(isWindowGrowing) {
+            $container.css({
+                'font-size' : '',
+                'line-height' : ''
+            });
+        };
         //
         //var opts = {
         //    excludeFromLetterCount: '.description',
