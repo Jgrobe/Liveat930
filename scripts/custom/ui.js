@@ -22,6 +22,8 @@ function init_sqsp() {
 
         windowloaded();
 
+        //preparePosterLineUpForFontResizing();
+
     }).resize(function() {
         //console.log('WINDOW RESIZED');
         SQSP._IS_MOBILE = is_mobile();
@@ -32,8 +34,9 @@ function init_sqsp() {
         }
 
         //resetPostersFontSize();
-        sizePostersFontSize();
+        //sizePostersFontSize();
         //scalePostersLineupToFit();
+        adjustFontSizeByOverflow();
     });
 
     //sizeVideosOnReady();
@@ -664,6 +667,43 @@ function addBackButtonToCart() {
     $btn.append($a);
     $cart.prepend($btn);
     //$btn.click(function(){ history.back(); });
+}
+
+function preparePosterLineUpForFontResizing() {
+    var $posters = jQuery('.poster');
+    if(!$posters.length) return false;
+
+    console.log('scalePostersLineupToFit()');
+
+    $posters.each(function(i, elem) {
+        var $thisPoster = jQuery(this);
+        var $lineUp = $thisPoster.find('.ep-lineup');
+
+        $lineUp.css({height:'auto'});
+        $lineUp.get(0).origHeight = $lineUp.height();
+        $lineUp.css({height:''});
+        $lineUp.get(0).targetHeight = $lineUp.height();
+
+        $lineUp.get(0).sizeRatio = $lineUp.get(0).origHeight / $lineUp.get(0).targetHeight;
+
+        $lineUp.get(0).origFontsize = parseFloat($container.css('font-size'));
+
+
+    });
+
+    sizePostersFontSizeByHeight($posters);
+
+}// preparePosterLineUpForFontResizing()
+
+function sizePostersFontSizeByHeight($posters) {
+    if(typeof $posters === 'undefined') $posters = jQuery('.poster');
+    if(!$posters.length) return false;
+
+    $posters.each(function(i,elem){
+        var $thisPoster = jQuery(this);
+        var $lineUp = $thisPoster.find('.ep-lineup');
+    });// endeach()
+
 }
 
 function scalePostersLineupToFit() {
