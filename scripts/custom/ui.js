@@ -678,7 +678,14 @@ function sizePostersFontSize() {
         var $lineUp = $thisPoster.find('.ep-lineup');
         if(!$lineUp.length) return true;
 
-        adjustDynamicFontSize($lineUp);
+        var opts = {
+            excludeFromLetterCount: '.description',
+            onTextComplete : function(txt) {
+                return txt.split('/').join(' / ');
+            }
+        };
+
+        adjustDynamicFontSize($lineUp, opts);
     });
 }
 
@@ -687,8 +694,7 @@ function adjustDynamicFontSize($container, options) {
 
     // base ratio: ($container width 800px) / (lettercount 98 @ font-size 7.2vw) * (ratio x) = ~ 92px
     var settings = jQuery.extend({
-        ratio: 11.3,
-        excludeFromLetterCount: '.description'
+        ratio: 11.3
     }, options);
 
     var cWidth = $container.width();
@@ -705,10 +711,12 @@ function adjustDynamicFontSize($container, options) {
             var $this = jQuery(this);
             var thisText = $this.text();
             excludeCount += thisText.length;
-            fullText = fullText.replace(thisText, '');
+            fullText = fullText.replace(thisText, '').trim();
         });// endeach
 
-        fullText = fullText.trim();
+        if(settings.onTextComplete) {
+            fullText = settings.onTextComplete(fullText);
+        }
 
         //console.log('excluded letters from '+$excludes.length+' elems: '+excludeCount);
 
