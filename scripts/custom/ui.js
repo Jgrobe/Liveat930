@@ -729,17 +729,23 @@ function adjustFontSizeByOverflow($container, options) {
 
     var cHeight = $container.height();
     var overflowHeight = $container.get(0).scrollHeight;
-    var currentFontsize = $container.css('font-size');
+    var currentFontsize = parseFloat($container.css('font-size'));
+    var scaledFontsize;
     console.log('adjust by overflow', cHeight, overflowHeight, currentFontsize);
     
     if(overflowHeight > cHeight) {
         // text is overflowing -> reduce font-size
         var overflowRatio = overflowHeight / cHeight;
-        var scaledFontsize = currentFontsize * overflowRatio;
+        scaledFontsize = currentFontsize * overflowRatio;
         console.log('scale font size by ratio ', overflowRatio, scaledFontsize);
     } else {
         // text is not filling container -> increase font-size
     }// endif
+
+    $container.css({
+        'fonts-size' : Math.round(scaledFontsize)+'px',
+        'line-height': '100%'
+    })
     
 }// adjustFontSizeByOverflow()
 
