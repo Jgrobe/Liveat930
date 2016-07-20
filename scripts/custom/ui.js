@@ -706,7 +706,7 @@ function adjustDynamicFontSize($container, options) {
             var thisText = $this.text();
             excludeCount += thisText.length;
             console.log('removing this text: ', thisText);
-            fullText.replace(thisText, '');
+            fullText = fullText.replace(thisText, '');
             console.log('new full text', fullText);
         });// endeach
 
