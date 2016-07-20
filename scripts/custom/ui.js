@@ -806,7 +806,7 @@ function adjustFontSizeByOverflow($container, options) {
     } else {
 
         $container.css({
-            'font-size' : '1000px'
+            'font-size' : ''
         });
         adjustFontSizeByOverflow($container);
         return;
