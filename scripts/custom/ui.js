@@ -34,9 +34,8 @@ function init_sqsp() {
         }
 
         //resetPostersFontSize();
-        //sizePostersFontSize();
+        sizePostersFontSize();
         //scalePostersLineupToFit();
-        adjustFontSizeByOverflow();
     });
 
     //sizeVideosOnReady();
@@ -744,19 +743,19 @@ function sizePostersFontSize() {
     $posters.each(function(i, elem) {
         //if(i > 0) return false;// DEV
 
-        var $thisPoster = jQuery(this);
-        var $lineUp = $thisPoster.find('.ep-lineup');
-        if(!$lineUp.length) return true;
+        //var $thisPoster = jQuery(this);
+        //var $lineUp = $thisPoster.find('.ep-lineup');
+        //if(!$lineUp.length) return true;
+        //
+        //var opts = {
+        //    excludeFromLetterCount: '.description',
+        //    onTextComplete : function(txt) {
+        //        return txt.split('/').join(' / ');
+        //    }
+        //};
+        //adjustFontSizeByCharCount($lineUp, opts);
 
-        var opts = {
-            excludeFromLetterCount: '.description',
-            onTextComplete : function(txt) {
-                return txt.split('/').join(' / ');
-            }
-        };
-        adjustFontSizeByCharCount($lineUp, opts);
-
-        //adjustFontSizeByOverflow($lineUp);
+        adjustFontSizeByOverflow($lineUp);
     });
 }
 
