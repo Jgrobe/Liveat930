@@ -13,8 +13,6 @@ function init_sqsp() {
     SQSP.$objects.window.load(function() {
         //console.log('WINDOW LOADED');
 
-        scalePostersLineupToFit();
-
         for(var i=0; i<SQSP.functions.windowLoad.length; i++) {
             if(_.isFunction(SQSP.functions.windowLoad[i])) SQSP.functions.windowLoad[i]();
         }
@@ -34,7 +32,7 @@ function init_sqsp() {
         }
 
         //sizePostersFontSize();
-
+        scalePostersLineupToFit();
     });
 
     //sizeVideosOnReady();
