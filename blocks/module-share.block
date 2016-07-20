@@ -38,7 +38,7 @@
 
         fbInterval = setInterval(function(){
             replaceLikeWithShare();
-        }, 200);
+        }, 20);
 
     });
     function replaceLikeWithShare() {
