@@ -734,6 +734,7 @@ function adjustFontSizeByOverflow($container, options) {
         scaledFontsize = currentFontsize * overflowRatio;
         console.log('scale font size by ratio ', overflowRatio, scaledFontsize);
     } else {
+        return;
         // text is not filling container -> increase font-size by span:last-child offset-bottom ratio
         var $lastChild = $container.children().last();
         var bottomOffset = $lastChild.offset().top + $lastChild.height();
