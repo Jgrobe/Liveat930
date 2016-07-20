@@ -17,7 +17,8 @@ jQuery('.cta-dummy').each(function() {
             ctaOpts[ctaVars[k]] = $this.data(ctaVars[k]);
         }
     };
-    //console.log('input cta opts');
+
+    console.log('input fetched cta opts', ctaOpts);
     var $CTA = jQuery(get_cta_html(ctaOpts));
     $this.replaceWith($CTA);
 });
