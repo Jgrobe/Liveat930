@@ -13,6 +13,8 @@ function init_sqsp() {
     SQSP.$objects.window.load(function() {
         //console.log('WINDOW LOADED');
 
+        scalePostersLineupToFit();
+
         for(var i=0; i<SQSP.functions.windowLoad.length; i++) {
             if(_.isFunction(SQSP.functions.windowLoad[i])) SQSP.functions.windowLoad[i]();
         }
@@ -31,7 +33,7 @@ function init_sqsp() {
             if(_.isFunction(SQSP.functions.windowResize[i])) SQSP.functions.windowResize[i]();
         }
 
-        sizePostersFontSize();
+        //sizePostersFontSize();
 
     });
 
@@ -664,6 +666,33 @@ function addBackButtonToCart() {
     $cart.prepend($btn);
     //$btn.click(function(){ history.back(); });
 }
+
+function scalePostersLineupToFit() {
+
+    var $posters = jQuery('.poster');
+    if(!$posters.length) return false;
+
+    console.log('sizePostersFontSize()');
+
+    $posters.each(function(i, elem) {
+        var $thisPoster = jQuery(this);
+        var $lineup = $thisPoster.find('.ep-lineup');
+        var $container = $lineup.parent();
+        var containerProps = {
+            width:$container.innerWidth(),
+            height:$container.innerHeight()
+        };
+        var lineupProps = {
+            width: $lineup.width(),
+            height: $lineup.height()
+        };
+
+        var heightScale = containerProps.height / lineupProps.height;
+
+        TweenMax.set($lineup, {scale:heightScale});
+
+    });
+}// scalePostersLineupToFit()
 
 function sizePostersFontSize() {
     var $posters = jQuery('.poster');
