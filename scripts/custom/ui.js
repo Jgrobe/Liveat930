@@ -13,6 +13,8 @@ function init_sqsp() {
     SQSP.$objects.window.load(function() {
         //console.log('WINDOW LOADED');
 
+        sizePostersFontSize();
+
         for(var i=0; i<SQSP.functions.windowLoad.length; i++) {
             if(_.isFunction(SQSP.functions.windowLoad[i])) SQSP.functions.windowLoad[i]();
         }
@@ -31,7 +33,8 @@ function init_sqsp() {
             if(_.isFunction(SQSP.functions.windowResize[i])) SQSP.functions.windowResize[i]();
         }
 
-        sizePostersFontSize();
+        resetPostersFontSize();
+        //sizePostersFontSize();
         //scalePostersLineupToFit();
     });
 
@@ -716,6 +719,24 @@ function sizePostersFontSize() {
 
         //adjustFontSizeByCharCount($lineUp, opts);
         adjustFontSizeByOverflow($lineUp);
+    });
+}
+
+function resetPostersFontSize() {
+    var $posters = jQuery('.poster');
+    if(!$posters.length) return false;
+
+    console.log('sizePostersFontSize()');
+
+    $posters.each(function(i, elem) {
+        if (i > 0) return false;// DEV
+
+        var $thisPoster = jQuery(this);
+        var $lineUp = $thisPoster.find('.ep-lineup');
+        $lineUp.css({
+            'font-size' : '',
+            'line-height' : ''
+        })
     });
 }
 
