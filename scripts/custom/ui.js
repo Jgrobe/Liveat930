@@ -804,20 +804,27 @@ function adjustFontSizeByOverflow($container, options) {
         scaledFontsize = currentFontsize * overflowRatio;
         console.log('scale font size by ratio ', overflowRatio, scaledFontsize);
     } else {
-        console.log('-------------- INCREASE');
-        // text is not filling container -> increase font-size by span:last-child offset-bottom ratio
-        var $lastChild = $container.children().last();
-        var bottomOffset = $lastChild.position().top + $lastChild.height();
-        console.log('increase font-size: nuf space?', bottomOffset, currentFontsize*1.5, (bottomOffset < currentFontsize * 1.5));
-        //return;
-        if(bottomOffset < currentFontsize * 1.5) {
-            // text wouldnt fit any more if increase font-size caused another linebreak
-            return;
-        } else {
-            var increaseRatio = 1 + bottomOffset / cHeight;
-            console.log('increase ratio = ', increaseRatio);
-            scaledFontsize = currentFontsize * increaseRatio;
-        }// endif nuf space
+
+        $container.css({
+            'font-size' : '1000px'
+        });
+        function adjustFontSizeByOverflow($container);
+        return;
+        //
+        //console.log('-------------- INCREASE');
+        //// text is not filling container -> increase font-size by span:last-child offset-bottom ratio
+        //var $lastChild = $container.children().last();
+        //var bottomOffset = $lastChild.position().top + $lastChild.height();
+        //console.log('increase font-size: nuf space?', bottomOffset, currentFontsize*1.5, (bottomOffset < currentFontsize * 1.5));
+        ////return;
+        //if(bottomOffset < currentFontsize * 1.5) {
+        //    // text wouldnt fit any more if increase font-size caused another linebreak
+        //    return;
+        //} else {
+        //    var increaseRatio = 1 + bottomOffset / cHeight;
+        //    console.log('increase ratio = ', increaseRatio);
+        //    scaledFontsize = currentFontsize * increaseRatio;
+        //}// endif nuf space
     }// endif
 
     var fontsize = Math.round(scaledFontsize)+'px';
