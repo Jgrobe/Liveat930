@@ -672,7 +672,7 @@ function scalePostersLineupToFit() {
     var $posters = jQuery('.poster');
     if(!$posters.length) return false;
 
-    console.log('sizePostersFontSize()');
+    console.log('scalePostersLineupToFit()');
 
     $posters.each(function(i, elem) {
         var $thisPoster = jQuery(this);
@@ -688,8 +688,9 @@ function scalePostersLineupToFit() {
         };
 
         var heightScale = containerProps.height / lineupProps.height;
+        console.log('getting heightScale', containerProps.height, lineupProps.height, heightScale);
 
-        TweenMax.set($lineup, {scale:heightScale});
+        TweenMax.set($lineup, {transformOrigin:'0 0', scale:heightScale});
 
     });
 }// scalePostersLineupToFit()
