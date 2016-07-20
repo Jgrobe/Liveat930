@@ -23,7 +23,7 @@
     //@include halftone();
     background: rgba(0,0,0,.55) url('assets/images/halftone-logo.jpg') no-repeat center;
     background-size: cover;
-    background-blend-mode: overlay;
+    //background-blend-mode: overlay;
 
     .is-ie & {
       &:before {
