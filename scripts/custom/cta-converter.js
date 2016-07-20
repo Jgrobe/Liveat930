@@ -1,7 +1,7 @@
 var ctaVars = ['class', 'icon', 'label', 'hover', 'tag', 'attributes'];
 jQuery('.cta-dummy').each(function() {
     var $this = jQuery(this);
-            console.log('this is cta converter', $this.data());
+            //console.log('this is cta converter', $this.data());
     var ctaOpts = {};
     for(var k=0; k< ctaVars.length; k++) {
         //console.log('proofing '+ctaVars[k], 'attr '+'data-'+ctaVars[k], $this.hasAttr('data-'+ctaVars[k]));
@@ -16,13 +16,12 @@ jQuery('.cta-dummy').each(function() {
         } else {
             ctaOpts[ctaVars[k]] = $this.data(ctaVars[k]);
         }
-    };
+    }// endfor
 
-    console.log('input fetched cta opts', ctaOpts);
+    //console.log('input fetched cta opts', ctaOpts);
     var $CTA = jQuery(get_cta_html(ctaOpts));
     $this.replaceWith($CTA);
 });
-
 
 function get_cta_html(options) {
     var settings = jQuery.extend({

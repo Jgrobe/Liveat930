@@ -684,8 +684,10 @@ function sizePostersFontSize() {
 
 function adjustDynamicFontSize($container, options) {
     if(typeof options === 'undefined') options = {};
+
+    // base ratio: ($container width 800px) / (lettercount 98 @ font-size 7.2vw) * (ratio x) = ~ 92px
     var settings = jQuery.extend({
-        ratio: 0.8,
+        ratio: 11.3,
         excludeFromLetterCount: '.description'
     }, options);
 
@@ -693,7 +695,7 @@ function adjustDynamicFontSize($container, options) {
     var letterCount = $container.text().length;
     console.log('adjusting dynamic fontsize @ container width '+cWidth+' | letterCount: '+letterCount);
 
-    var $excludes = jQuery(settings.excludeFromLetterCount);
+    var $excludes = $container.find(settings.excludeFromLetterCount);
     if($excludes.length > 0) {
         var excludeCount = 0;
 
@@ -705,13 +707,15 @@ function adjustDynamicFontSize($container, options) {
         console.log('excluded letters from '+$excludes.length+' elems: '+excludeCount);
 
         letterCount -= excludeCount;
+        console.log('lettercount - excludes: '+letterCount);
 
     }// endif
 
-    var fontSize = cWidth / letterCount * settings.ratio;
+    var fontSize = Math.round( cWidth / letterCount * settings.ratio );
+    console.log('fontsize: '+fontSize);
 
     $container.css({
-        'font-size' : fontSize
+        'font-size' : fontSize+'px'
     });
 
 }
