@@ -27,7 +27,7 @@
 </script>
 <script>
     /* custom replace fb like w/ share */
-    jQuery(window).ajaxComplete(function() {
+    jQuery(document).ajaxComplete(function() {
 
         var $fbContainer = jQuery('.ss-social-button-container.facebook');
         console.log('fbContainer found?', $fbContainer);
