@@ -99,10 +99,10 @@
           <file leaf-file-name="ui.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/scripts/custom/ui.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.27083334">
-                  <caret line="674" column="39" selection-start-line="674" selection-start-column="39" selection-end-line="674" selection-end-column="39" />
+                <state vertical-scroll-proportion="0.5">
+                  <caret line="685" column="27" selection-start-line="685" selection-start-column="27" selection-end-line="685" selection-end-column="27" />
                   <folding>
-                    <marker date="1469017343000" expanded="true" signature="5136:5153" placeholder="..." />
+                    <marker date="1469017490000" expanded="true" signature="5136:5153" placeholder="..." />
                   </folding>
                 </state>
               </provider>
@@ -864,14 +864,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/styles/sass/pages/episodes.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.208333">
-          <caret line="236" column="5" selection-start-line="236" selection-start-column="5" selection-end-line="236" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/styles/sass/pages/show.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.1568627">
@@ -928,6 +920,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/styles/sass/pages/episodes.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.208333">
+          <caret line="236" column="5" selection-start-line="236" selection-start-column="5" selection-end-line="236" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/custom/ScrollPoster.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.62777776">
@@ -938,10 +938,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/custom/ui.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.27083334">
-          <caret line="674" column="39" selection-start-line="674" selection-start-column="39" selection-end-line="674" selection-end-column="39" />
+        <state vertical-scroll-proportion="0.5">
+          <caret line="685" column="27" selection-start-line="685" selection-start-column="27" selection-end-line="685" selection-end-column="27" />
           <folding>
-            <marker date="1469017343000" expanded="true" signature="5136:5153" placeholder="..." />
+            <marker date="1469017490000" expanded="true" signature="5136:5153" placeholder="..." />
           </folding>
         </state>
       </provider>

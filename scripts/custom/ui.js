@@ -677,11 +677,12 @@ function scalePostersLineupToFit() {
     $posters.each(function(i, elem) {
         var $thisPoster = jQuery(this);
         var $lineup = $thisPoster.find('.ep-lineup');
-        var $container = $lineup.parent();
+        $lineup.css({height:'100%'});
         var containerProps = {
-            width:$container.innerWidth(),
-            height:$container.innerHeight()
+            width:$lineup.width(),
+            height:$lineup.height()
         };
+        $lineup.css({height:'auto'});
         var lineupProps = {
             width: $lineup.width(),
             height: $lineup.height()
