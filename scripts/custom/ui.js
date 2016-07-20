@@ -720,8 +720,8 @@ function adjustDynamicFontSize($container, options) {
     var fontSize = Math.round( cWidth / letterCount * settings.ratio );
     console.log('fontsize: '+fontSize);
 
-    $container.css({
-        'font-size' : fontSize+'px'
-    });
+    //$container.css({
+    //    'font-size' : fontSize+'px'
+    //});
 
 }

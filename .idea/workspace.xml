@@ -99,10 +99,11 @@
           <file leaf-file-name="ui.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/scripts/custom/ui.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.7835498">
-                  <caret line="716" column="0" selection-start-line="716" selection-start-column="0" selection-end-line="716" selection-end-column="0" />
+                <state vertical-scroll-proportion="0.95671">
+                  <caret line="725" column="0" selection-start-line="725" selection-start-column="0" selection-end-line="725" selection-end-column="0" />
                   <folding>
-                    <marker date="1469011396000" expanded="true" signature="5098:5115" placeholder="..." />
+                    <marker date="1469011414000" expanded="true" signature="5098:5115" placeholder="..." />
+                    <marker date="1469011414000" expanded="true" signature="27545:27592" placeholder="{...}" />
                   </folding>
                 </state>
               </provider>
@@ -938,10 +939,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/custom/ui.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7835498">
-          <caret line="716" column="0" selection-start-line="716" selection-start-column="0" selection-end-line="716" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.95671">
+          <caret line="725" column="0" selection-start-line="725" selection-start-column="0" selection-end-line="725" selection-end-column="0" />
           <folding>
-            <marker date="1469011396000" expanded="true" signature="5098:5115" placeholder="..." />
+            <marker date="1469011414000" expanded="true" signature="5098:5115" placeholder="..." />
+            <marker date="1469011414000" expanded="true" signature="27545:27592" placeholder="{...}" />
           </folding>
         </state>
       </provider>
