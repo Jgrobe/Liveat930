@@ -1,5 +1,8 @@
 init_sqsp();
 
+
+var resizeTimer;
+
 function init_sqsp() {
     //console.log('----------------------- init sqsp');
 
@@ -33,8 +36,13 @@ function init_sqsp() {
             if(_.isFunction(SQSP.functions.windowResize[i])) SQSP.functions.windowResize[i]();
         }
 
+// ghetto way of adding the font resize timer
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(function() {
+            sizePostersFontSize();
+        }, 250);
+
         //resetPostersFontSize();
-        sizePostersFontSize();
         //scalePostersLineupToFit();
     });
 
