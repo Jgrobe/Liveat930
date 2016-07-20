@@ -694,7 +694,7 @@ function adjustDynamicFontSize($container, options) {
 
     // base ratio: ($container width 800px) / (lettercount 98 @ font-size 7.2vw) * (ratio x) = ~ 92px
     var settings = jQuery.extend({
-        ratio: 11.3
+        ratio: 11
     }, options);
 
     var cWidth = $container.width();
