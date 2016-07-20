@@ -743,7 +743,7 @@ function adjustFontSizeByOverflow($container, options) {
     }// endif
 
     $container.css({
-        'fonts-size' : Math.round(scaledFontsize)+'px',
+        'font-size' : Math.round(scaledFontsize)+'px',
         'line-height': '100%'
     })
     
