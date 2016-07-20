@@ -742,8 +742,11 @@ function adjustFontSizeByOverflow($container, options) {
         // text is not filling container -> increase font-size
     }// endif
 
+    var fontsize = Math.round(scaledFontsize)+'px';
+    console.log('assigning fontSize: '+fontsize);
+
     $container.css({
-        'font-size' : Math.round(scaledFontsize)+'px',
+        'font-size' : fontsize,
         'line-height': '100%'
     })
     
