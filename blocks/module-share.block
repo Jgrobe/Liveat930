@@ -29,7 +29,7 @@
     /* custom replace fb like w/ share */
     var fbInterval;
     jQuery('.sharebox').click(function() {
-        console.log('social share list click -> replace like with share');
+//        console.log('social share list click -> replace like with share');
 
         if(window.hasLikeBeenReplaced) {
             return false;
@@ -42,11 +42,11 @@
 
     });
     function replaceLikeWithShare() {
-        console.log('tryna replace like');
+//        console.log('tryna replace like');
 
 
         var $fbContainer = jQuery('.ss-social-button-container.facebook');
-        console.log('fbContainer found?', $fbContainer);
+//        console.log('fbContainer found?', $fbContainer);
 
         if(!$fbContainer.length) return false;
 
@@ -72,7 +72,7 @@
 
         $fbContainer.css({visibility:''});
 
-        console.log('---> like has been replaced', $btnFBshare, $fbContainer);
+//        console.log('---> like has been replaced', $btnFBshare, $fbContainer);
 
         window.hasLikeBeenReplaced = true;
         clearInterval(fbInterval);
