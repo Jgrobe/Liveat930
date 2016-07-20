@@ -1652,7 +1652,9 @@ input {
   .poster .ep-lineup {
     text-align: left;
     position: relative;
-    word-break: break-word; }
+    word-break: break-word;
+    width: 100%;
+    height: 100%; }
     .poster .ep-lineup > * {
       -webkit-transition: opacity 0.3s, color 0.3s;
       -moz-transition: opacity 0.3s, color 0.3s;

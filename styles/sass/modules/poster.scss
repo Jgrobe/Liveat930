@@ -253,6 +253,9 @@ $posterWidth: 84vw;
     text-align:left;// justify;
     position: relative;
     word-break: break-word;
+    // width & height used to adjust font-size in js
+    width:100%;
+    height:100%;
 
     > * { @include prefixed(transition, (opacity $shortTrans, color $shortTrans)); }
 

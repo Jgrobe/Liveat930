@@ -32,7 +32,7 @@ function init_sqsp() {
         }
 
         //sizePostersFontSize();
-        scalePostersLineupToFit();
+        //scalePostersLineupToFit();
     });
 
     //sizeVideosOnReady();
@@ -714,11 +714,33 @@ function sizePostersFontSize() {
             }
         };
 
-        adjustDynamicFontSize($lineUp, opts);
+        adjustFontSizeByCharCount($lineUp, opts);
+        adjustFontSizeByOverflow($lineUp, opts);
     });
 }
 
-function adjustDynamicFontSize($container, options) {
+function adjustFontSizeByOverflow($container, options) {
+    if (typeof options === 'undefined') options = {};
+
+    // base ratio: ($container width 800px) / (lettercount 98 @ font-size 7.2vw) * (ratio x) = ~ 92px
+    var settings = jQuery.extend({
+        ratio: 11
+    }, options);
+
+    var cHeight = $container.height();
+    var overflowHeight = $container.get(0).scrollHeight;
+    var currentFontsize = $container.css('font-size');
+    console.log('adjust by overflow', cHeight, overflowHeight, currentFontsize);
+    
+    if(overflowHeight > cHeight) {
+        // text is overflowing -> reduce font-size
+    } else {
+        // text is not filling container -> increase font-size
+    }// endif
+    
+}// adjustFontSizeByOverflow()
+
+function adjustFontSizeByCharCount($container, options) {
     if(typeof options === 'undefined') options = {};
 
     // base ratio: ($container width 800px) / (lettercount 98 @ font-size 7.2vw) * (ratio x) = ~ 92px
@@ -764,4 +786,4 @@ function adjustDynamicFontSize($container, options) {
         'line-height' : fontSize
     });
 
-}
+}// adjustFontSizeByCharCount()
