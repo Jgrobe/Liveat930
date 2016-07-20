@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ba77c59-895c-4b6c-8ed1-52220cbb39bd" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blocks/sharebox-share-extension.block" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blocks/module-share.block" afterPath="$PROJECT_DIR$/blocks/module-share.block" />
     </list>
     <ignored path="sqsp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,10 +26,10 @@
     <splitter split-orientation="horizontal" split-proportion="0.4791386">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="show.scss" pinned="false" current-in-tab="true">
+          <file leaf-file-name="show.scss" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/styles/sass/pages/show.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.28401726">
+                <state vertical-scroll-proportion="-5.1568627">
                   <caret line="169" column="17" selection-start-line="169" selection-start-column="17" selection-end-line="169" selection-end-column="17" />
                   <folding />
                 </state>
@@ -71,8 +71,18 @@
           <file leaf-file-name="module-share-episode.block" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/blocks/module-share-episode.block">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-0.0">
-                  <caret line="0" column="12" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
+                <state vertical-scroll-proportion="-1.875">
+                  <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="module-share.block" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/blocks/module-share.block">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.5036726">
+                  <caret line="32" column="54" selection-start-line="32" selection-start-column="54" selection-end-line="32" selection-end-column="54" />
                   <folding />
                 </state>
               </provider>
@@ -81,8 +91,8 @@
           <file leaf-file-name="module-share-this.block" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/blocks/module-share-this.block">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-0.0">
-                  <caret line="0" column="12" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
+                <state vertical-scroll-proportion="-1.25">
+                  <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
                   <folding />
                 </state>
               </provider>
@@ -125,8 +135,8 @@
           <file leaf-file-name="sharebox-share-extension.block" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/blocks/sharebox-share-extension.block">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.31479537">
-                  <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -232,8 +242,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/styles/sass/base/main.scss" />
-        <option value="$PROJECT_DIR$/styles/sass/pages/host.scss" />
         <option value="$PROJECT_DIR$/scripts/custom/AjaxSearch.js" />
         <option value="$PROJECT_DIR$/scripts/custom/CanvasPainter-old.js" />
         <option value="$PROJECT_DIR$/scripts/custom/CanvasPainter.js" />
@@ -244,7 +252,6 @@
         <option value="$PROJECT_DIR$/scripts/custom/SVGClipper-old.js" />
         <option value="$PROJECT_DIR$/scripts/custom/SVGClipper.js" />
         <option value="$PROJECT_DIR$/template-home.region" />
-        <option value="$PROJECT_DIR$/blocks/module-share.block" />
         <option value="$PROJECT_DIR$/collections/episodes.item" />
         <option value="$PROJECT_DIR$/collections/blog.item" />
         <option value="$PROJECT_DIR$/styles/sass/pages/blog.scss" />
@@ -282,7 +289,10 @@
         <option value="$PROJECT_DIR$/scripts/custom/cta-converter.js" />
         <option value="$PROJECT_DIR$/styles/sass/modules/poster.scss" />
         <option value="$PROJECT_DIR$/scripts/custom/ui.js" />
+        <option value="$PROJECT_DIR$/blocks/module-share-this.block" />
+        <option value="$PROJECT_DIR$/blocks/module-share-episode.block" />
         <option value="$PROJECT_DIR$/blocks/sharebox-share-extension.block" />
+        <option value="$PROJECT_DIR$/blocks/module-share.block" />
       </list>
     </option>
   </component>
@@ -556,13 +566,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/styles/sass/modules/posters/arc.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.3333335">
-          <caret line="65" column="32" selection-start-line="65" selection-start-column="32" selection-end-line="65" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/styles/sass/modules/posters/circle.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-7.3333335">
@@ -919,34 +922,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blocks/module-share-episode.block">
+    <entry file="file://$PROJECT_DIR$/styles/sass/pages/show.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="12" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
+        <state vertical-scroll-proportion="-5.1568627">
+          <caret line="169" column="17" selection-start-line="169" selection-start-column="17" selection-end-line="169" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/blocks/module-share-this.block">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="12" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
+        <state vertical-scroll-proportion="-1.25">
+          <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/styles/sass/pages/show.scss">
+    <entry file="file://$PROJECT_DIR$/blocks/module-share-episode.block">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28401726">
-          <caret line="169" column="17" selection-start-line="169" selection-start-column="17" selection-end-line="169" selection-end-column="17" />
+        <state vertical-scroll-proportion="-1.875">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/blocks/sharebox-share-extension.block">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.31479537">
-          <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blocks/module-share.block">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5036726">
+          <caret line="32" column="54" selection-start-line="32" selection-start-column="54" selection-end-line="32" selection-end-column="54" />
           <folding />
         </state>
       </provider>

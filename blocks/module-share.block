@@ -27,7 +27,10 @@
 </script>
 <script>
     /* custom replace fb like w/ share */
-    jQuery(window).load(function() {
+    jQuery(window).ajaxComplete(function() {
+
+        var $fbContainer = jQuery('.ss-social-button-container.facebook');
+        console.log('fbContainer found?', $fbContainer);
 
         var $btnFBshare = jQuery('<div/>');
         $btnFBshare.attr({
@@ -45,7 +48,7 @@
         });
         $shareLink.html('Share');
         $btnFBshare.append($shareLink);
-        jQuery('.ss-social-button-container.facebook').html($btnFBshare);
+        $fbContainer.html($btnFBshare);
 
     });
 </script>
