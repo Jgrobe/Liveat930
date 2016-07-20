@@ -31,7 +31,7 @@ function init_sqsp() {
             if(_.isFunction(SQSP.functions.windowResize[i])) SQSP.functions.windowResize[i]();
         }
 
-        //sizePostersFontSize();
+        sizePostersFontSize();
         //scalePostersLineupToFit();
     });
 

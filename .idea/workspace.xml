@@ -4,7 +4,6 @@
     <list default="true" id="6ba77c59-895c-4b6c-8ed1-52220cbb39bd" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/custom/ui.js" afterPath="$PROJECT_DIR$/scripts/custom/ui.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/style.css.map" afterPath="$PROJECT_DIR$/styles/style.css.map" />
     </list>
     <ignored path="sqsp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -100,10 +99,10 @@
           <file leaf-file-name="ui.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/scripts/custom/ui.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.4617691">
-                  <caret line="717" column="39" selection-start-line="717" selection-start-column="39" selection-end-line="717" selection-end-column="39" />
+                <state vertical-scroll-proportion="0.33333334">
+                  <caret line="696" column="9" selection-start-line="696" selection-start-column="9" selection-end-line="696" selection-end-column="9" />
                   <folding>
-                    <marker date="1469019520000" expanded="true" signature="5136:5153" placeholder="..." />
+                    <marker date="1469019555000" expanded="true" signature="5134:5151" placeholder="..." />
                   </folding>
                 </state>
               </provider>
@@ -940,10 +939,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/custom/ui.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4617691">
-          <caret line="717" column="39" selection-start-line="717" selection-start-column="39" selection-end-line="717" selection-end-column="39" />
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="696" column="9" selection-start-line="696" selection-start-column="9" selection-end-line="696" selection-end-column="9" />
           <folding>
-            <marker date="1469019520000" expanded="true" signature="5136:5153" placeholder="..." />
+            <marker date="1469019555000" expanded="true" signature="5134:5151" placeholder="..." />
           </folding>
         </state>
       </provider>
