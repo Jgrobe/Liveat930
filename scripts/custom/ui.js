@@ -672,7 +672,7 @@ function sizePostersFontSize() {
     console.log('sizePostersFontSize()');
 
     $posters.each(function(i, elem) {
-        if(i>0) return false;
+        //if(i>0) return false;// DEV
 
         var $thisPoster = jQuery(this);
         var $lineUp = $thisPoster.find('.ep-lineup');
@@ -700,17 +700,17 @@ function adjustDynamicFontSize($container, options) {
     var cWidth = $container.width();
     var fullText = $container.text();
     var letterCount = fullText.length;
-    console.log('full container text', $container.text());
+    //console.log('full container text', $container.text());
     //console.log('adjusting dynamic fontsize @ container width '+cWidth+' | letterCount: '+letterCount);
 
     var $excludes = $container.find(settings.excludeFromLetterCount);
     if($excludes.length > 0) {
-        var excludeCount = 0;
+        //var excludeCount = 0;
 
         $excludes.each(function(i, elem) {
             var $this = jQuery(this);
             var thisText = $this.text();
-            excludeCount += thisText.length;
+            //excludeCount += thisText.length;
             fullText = fullText.replace(thisText, '').trim();
         });// endeach
 
@@ -720,18 +720,18 @@ function adjustDynamicFontSize($container, options) {
 
         //console.log('excluded letters from '+$excludes.length+' elems: '+excludeCount);
 
-        console.log('new full text', fullText);
-        letterCount -= excludeCount;
+        console.log('new full text:\n', fullText);
+        //letterCount -= excludeCount;
+        letterCount = fullText.length;
         console.log('lettercount - excludes: '+letterCount);
-        console.log('new lettercount: '+fullText.length);
 
     }// endif
 
     var fontSize = Math.round( cWidth / letterCount * settings.ratio );
     console.log('fontsize: '+fontSize);
 
-    //$container.css({
-    //    'font-size' : fontSize+'px'
-    //});
+    $container.css({
+        'font-size' : fontSize+'px'
+    });
 
 }
