@@ -715,7 +715,7 @@ function sizePostersFontSize() {
         //};
 
         //adjustFontSizeByCharCount($lineUp, opts);
-        adjustFontSizeByOverflow($lineUp, opts);
+        adjustFontSizeByOverflow($lineUp);
     });
 }
 
