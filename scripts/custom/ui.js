@@ -33,7 +33,7 @@ function init_sqsp() {
         //console.log('WINDOW RESIZED');
         var _currentWindowHeight = window.innerWidth;
         isWindowGrowing = (_currentWindowHeight > _initialWindowHeight);
-        console.log('is window growing? '+_currentWindowHeight+' > '+_initialWindowHeight, isWindowGrowing);
+        //console.log('is window growing? '+_currentWindowHeight+' > '+_initialWindowHeight, isWindowGrowing);
         _initialWindowHeight = _currentWindowHeight;
 
         SQSP._IS_MOBILE = is_mobile();
@@ -686,8 +686,6 @@ function addBackButtonToCart() {
 function sizePostersFontSize() {
     var $posters = jQuery('.poster');
     if(!$posters.length) return false;
-
-    console.log('sizePostersFontSize()');
 
     $posters.each(function(i, elem) {
         //if(i > 0) return false;// DEV
