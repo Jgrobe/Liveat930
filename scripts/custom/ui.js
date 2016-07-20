@@ -708,9 +708,11 @@ function adjustDynamicFontSize($container, options) {
             fullText = fullText.replace(thisText, '');
         });// endeach
 
+        fullText = fullText.trim();
+
         //console.log('excluded letters from '+$excludes.length+' elems: '+excludeCount);
 
-        console.log('new full text', fullText.trim());
+        console.log('new full text', fullText);
         letterCount -= excludeCount;
         console.log('lettercount - excludes: '+letterCount);
         console.log('new lettercount: '+fullText.length);
