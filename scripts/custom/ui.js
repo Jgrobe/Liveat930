@@ -689,9 +689,9 @@ function adjustDynamicFontSize($container, options) {
         excludeFromLetterCount: '.description'
     }, options);
 
-    var cwidth = $container.width();
+    var cWidth = $container.width();
     var letterCount = $container.text().length;
-    console.log('adjusting dynamic fontsize @ container width '+cwidth+' | letterCount: '+letterCount);
+    console.log('adjusting dynamic fontsize @ container width '+cWidth+' | letterCount: '+letterCount);
 
     var $excludes = jQuery(settings.excludeFromLetterCount);
     if($excludes.length > 0) {
