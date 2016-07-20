@@ -710,7 +710,7 @@ function adjustDynamicFontSize($container, options) {
 
         //console.log('excluded letters from '+$excludes.length+' elems: '+excludeCount);
 
-        console.log('new full text', fullText);
+        console.log('new full text', fullText.trim());
         letterCount -= excludeCount;
         console.log('lettercount - excludes: '+letterCount);
         console.log('new lettercount: '+fullText.length);
