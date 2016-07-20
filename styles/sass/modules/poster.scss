@@ -224,6 +224,8 @@ $posterWidth: 84vw;
   .lineup-container {
     position: relative;
 
+    &.padded { padding-bottom: calc(~"#{$posterPadding} / 2");}
+
     &:after {
       content: '';
       display: block;
@@ -458,7 +460,7 @@ $posterWidth: 84vw;
 
   }// &.hover-on
 
-  //---------------------- BREAKPOINT MOBILE
+  //---------------------- BREAKPOINT OVERWRAPPER
 
   @include breakpoint(overWrapper) {
 
@@ -517,6 +519,8 @@ $posterWidth: 84vw;
     }// .ep-lineup
 
     .lineup-container {
+
+      &.padded { padding-bottom: calc(~"#{$posterPadding} / 2");}
 
       &:after {
         bottom: calc(~"#{$posterPadding} / 2");

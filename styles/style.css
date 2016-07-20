@@ -1622,6 +1622,8 @@ input {
     transition: opacity 0.3s, visiblity 0.3s; }
   .poster .lineup-container {
     position: relative; }
+    .poster .lineup-container.padded {
+      padding-bottom: calc(~"5.20833vw / 2"); }
     .poster .lineup-container:after {
       content: '';
       display: block;
@@ -1834,6 +1836,8 @@ input {
       .poster .ep-lineup .description {
         font-size: 46px;
         line-height: 46px; }
+    .poster .lineup-container.padded {
+      padding-bottom: calc(~"100px / 2"); }
     .poster .lineup-container:after {
       bottom: calc(~"100px / 2");
       left: 100px;
