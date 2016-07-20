@@ -13,8 +13,6 @@ function init_sqsp() {
     SQSP.$objects.window.load(function() {
         //console.log('WINDOW LOADED');
 
-        sizePostersFontSize();
-
         for(var i=0; i<SQSP.functions.windowLoad.length; i++) {
             if(_.isFunction(SQSP.functions.windowLoad[i])) SQSP.functions.windowLoad[i]();
         }
@@ -33,8 +31,8 @@ function init_sqsp() {
             if(_.isFunction(SQSP.functions.windowResize[i])) SQSP.functions.windowResize[i]();
         }
 
-        resetPostersFontSize();
-        //sizePostersFontSize();
+        //resetPostersFontSize();
+        sizePostersFontSize();
         //scalePostersLineupToFit();
     });
 
@@ -708,17 +706,17 @@ function sizePostersFontSize() {
 
         var $thisPoster = jQuery(this);
         var $lineUp = $thisPoster.find('.ep-lineup');
-        //if(!$lineUp.length) return true;
-        //
-        //var opts = {
-        //    excludeFromLetterCount: '.description',
-        //    onTextComplete : function(txt) {
-        //        return txt.split('/').join(' / ');
-        //    }
-        //};
+        if(!$lineUp.length) return true;
 
-        //adjustFontSizeByCharCount($lineUp, opts);
-        adjustFontSizeByOverflow($lineUp);
+        var opts = {
+            excludeFromLetterCount: '.description',
+            onTextComplete : function(txt) {
+                return txt.split('/').join(' / ');
+            }
+        };
+        adjustFontSizeByCharCount($lineUp, opts);
+
+        //adjustFontSizeByOverflow($lineUp);
     });
 }
 
@@ -790,7 +788,7 @@ function adjustFontSizeByCharCount($container, options) {
 
     // base ratio: ($container width 800px) / (lettercount 98 @ font-size 7.2vw) * (ratio x) = ~ 92px
     var settings = jQuery.extend({
-        ratio: 11
+        ratio: 10
     }, options);
 
     var cWidth = $container.width();
