@@ -89,10 +89,10 @@
           <file leaf-file-name="ui.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/scripts/custom/ui.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.5416667">
-                  <caret line="815" column="56" selection-start-line="815" selection-start-column="56" selection-end-line="815" selection-end-column="56" />
+                <state vertical-scroll-proportion="0.4375">
+                  <caret line="810" column="8" selection-start-line="810" selection-start-column="8" selection-end-line="810" selection-end-column="8" />
                   <folding>
-                    <marker date="1469026263000" expanded="true" signature="5385:5402" placeholder="..." />
+                    <marker date="1469026284000" expanded="true" signature="5385:5402" placeholder="..." />
                   </folding>
                 </state>
               </provider>
@@ -940,10 +940,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/custom/ui.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5416667">
-          <caret line="815" column="56" selection-start-line="815" selection-start-column="56" selection-end-line="815" selection-end-column="56" />
+        <state vertical-scroll-proportion="0.4375">
+          <caret line="810" column="8" selection-start-line="810" selection-start-column="8" selection-end-line="810" selection-end-column="8" />
           <folding>
-            <marker date="1469026263000" expanded="true" signature="5385:5402" placeholder="..." />
+            <marker date="1469026284000" expanded="true" signature="5385:5402" placeholder="..." />
           </folding>
         </state>
       </provider>
