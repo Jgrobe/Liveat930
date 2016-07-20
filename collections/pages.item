@@ -161,17 +161,17 @@
 
         {.section item.customContent}{.if sponsors}
 
-            <section class="sponsors">
+            <section class="sqsp-partners">
 
                 <div class="section-head">
                     <h2>{sponsors-headline}</h2>
                 </div>
 
-                <div class="logos-container">
+                <div class="partners-container">
                 {.repeated section sponsors}
-                    <div class="sponsor">
+                    <div class="sqsp-partner">
                         <a{.if clickthroughUrl} href="{clickthroughUrl}" target="_blank"{.end}>
-                            <img class="sponsor-logo" src="{assetUrl}">
+                            <img class="sqsp-partner-logo" src="{assetUrl}">
                         </a>
                     </div>
                 {.end}

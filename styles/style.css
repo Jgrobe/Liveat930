@@ -4138,10 +4138,10 @@ input {
       .history-slider .gallery-copy {
         height: auto; } }
 
-.sponsors {
+.sqsp-partners {
   margin: 0 auto 10.41667vw auto;
   width: 75vw; }
-  .sponsors .logos-container {
+  .sqsp-partners .partners-container {
     margin-top: 2vw;
     display: -webkit-box;
     display: -moz-box;
@@ -4169,22 +4169,22 @@ input {
     -ms-justify-content: center;
     -o-justify-content: center;
     justify-content: center; }
-  .sponsors .sponsor {
+  .sqsp-partners .sqsp-partner {
     margin: 0 2.5% 2.5% 2.5%;
     -webkit-align-self: center;
     -moz-align-self: center;
     -ms-align-self: center;
     -o-align-self: center;
     align-self: center; }
-    .sponsors .sponsor .sponsor-logo {
-      height: 7vw;
+    .sqsp-partners .sqsp-partner .sqsp-partner-logo {
+      height: 6vw;
       width: auto; }
   @media only screen and (max-width: 750px) {
-    .sponsors {
+    .sqsp-partners {
       width: 100%; }
-      .sponsors .section-head {
+      .sqsp-partners .section-head {
         margin: auto; }
-      .sponsors .logos-container {
+      .sqsp-partners .partners-container {
         margin-top: 5vw;
         display: block;
         text-align: center;
@@ -4193,10 +4193,10 @@ input {
         -ms-column-count: 2;
         -o-column-count: 2;
         column-count: 2; }
-      .sponsors .sponsor {
+      .sqsp-partners .sqsp-partner {
         margin: 0 12% 12% 12%;
         display: block; }
-        .sponsors .sponsor .sponsor-logo {
+        .sqsp-partners .sqsp-partner .sqsp-partner-logo {
           height: 20vw; } }
 
 .landing.video-overview-landing .landing-bg:after {

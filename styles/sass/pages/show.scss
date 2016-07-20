@@ -234,11 +234,11 @@
 
 }// .history-slider
 
-.sponsors {// section.sponsors
+.sqsp-partners {// sqsp-partners
   margin: 0 auto $sectionMarginBottom auto;
   width: $contentWidth;
 
-  .logos-container {
+  .partners-container {
     margin-top: 2vw;
     @include flexbox();
     @include flex-value(direction, row);
@@ -247,40 +247,40 @@
 
   }// .logos-container
 
-  .sponsor {
+  .sqsp-partner {
     $margin: 2.5%;
     margin: 0 $margin $margin $margin;
     @include prefixed(align-self, center); // why not align-items:center on container? bc margin would prevent .sponsor from vertical centering
 
-    .sponsor-logo {// img
-      height: 7vw;
+    .sqsp-partner-logo {// img
+      height: 6vw;
       width: auto;
-    }// .sponsor-logo
+    }// .sqsp-partner-logo
 
-  }// .sponsor
+  }// .sqsp-partner
 
   @include breakpoint(mobile) {
     width: 100%;
 
     .section-head {margin:auto;}
 
-    .logos-container {
+    .partners-container {
       margin-top: 5vw;
       display: block;
       text-align: center;
       @include prefixed(column-count, 2);
     }// .logos-container
 
-    .sponsor {
+    .sqsp-partner {
       $margin: 12%;
       margin: 0 $margin $margin $margin;
       display: block;
 
-      .sponsor-logo {// img
+      .sqsp-partner-logo {// img
         height: 20vw;
-      }// .sponsor-logo
+      }// .sqsp-partner-logo
 
-    }// .sponsor
+    }// .sqsp-partner
   }// BP MOBILE
 
-}// .sponsors
+}// .sqsp-partners

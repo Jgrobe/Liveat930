@@ -1,7 +1,7 @@
 var ctaVars = ['class', 'icon', 'label', 'hover', 'tag', 'attributes'];
 jQuery('.cta-dummy').each(function() {
     var $this = jQuery(this);
-//            //console.log('this is cta converter', $this.data('icon'));
+            console.log('this is cta converter', $this.data());
     var ctaOpts = {};
     for(var k=0; k< ctaVars.length; k++) {
         //console.log('proofing '+ctaVars[k], 'attr '+'data-'+ctaVars[k], $this.hasAttr('data-'+ctaVars[k]));
