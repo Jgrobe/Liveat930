@@ -2412,7 +2412,7 @@ input {
     margin-left: 12.5%;
     width: 87.5%;
     color: white;
-    background: rgba(0, 0, 0, 0.55) url("assets/images/halftone.jpg") no-repeat center;
+    background: rgba(0, 0, 0, 0.55) url("assets/images/halftone-cropped.jpg") no-repeat center;
     background-size: cover;
     background-blend-mode: overlay; }
     .is-ie .text-insert-container .text-layer:before {

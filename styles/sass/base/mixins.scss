@@ -42,11 +42,11 @@
   }// BP MOBILE
 }// cta
 
-@mixin halftone($color:rgba(0,0,0,.55), $blendmode:overlay) {
-  background: $color url('assets/images/halftone.jpg') no-repeat center;
-  background-size: cover;
-  background-blend-mode: $blendmode;
-}
+//@mixin halftone($color:rgba(0,0,0,.55), $blendmode:overlay) {
+//  background: $color url('assets/images/halftone-cropped.jpg') no-repeat center;
+//  background-size: cover;
+//  background-blend-mode: $blendmode;
+//}
 
 @mixin texturizer($mode:after, $color:rgba(0,0,0,.5), $blendmode:overlay, $scale:5%) {
   &:#{$mode} {
