@@ -727,11 +727,12 @@ function adjustDynamicFontSize($container, options) {
 
     }// endif
 
-    var fontSize = Math.round( cWidth / letterCount * settings.ratio );
+    var fontSize = Math.round( cWidth / letterCount * settings.ratio ) + 'px';
     console.log('fontsize: '+fontSize);
 
     $container.css({
-        'font-size' : fontSize+'px'
+        'font-size' : fontSize,
+        'line-height' : fontSize
     });
 
 }
