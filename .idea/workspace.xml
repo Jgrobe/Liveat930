@@ -89,10 +89,10 @@
           <file leaf-file-name="ui.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/scripts/custom/ui.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.43722942">
-                  <caret line="699" column="19" selection-start-line="699" selection-start-column="19" selection-end-line="699" selection-end-column="19" />
+                <state vertical-scroll-proportion="0.7619048">
+                  <caret line="732" column="53" selection-start-line="732" selection-start-column="53" selection-end-line="732" selection-end-column="53" />
                   <folding>
-                    <marker date="1469028371000" expanded="true" signature="5734:5751" placeholder="..." />
+                    <marker date="1469028751000" expanded="true" signature="5734:5751" placeholder="..." />
                   </folding>
                 </state>
               </provider>
@@ -145,8 +145,8 @@
           <file leaf-file-name="poster.scss" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/styles/sass/modules/poster.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-0.15994021">
-                  <caret line="224" column="23" selection-start-line="224" selection-start-column="23" selection-end-line="224" selection-end-column="23" />
+                <state vertical-scroll-proportion="0.69207776">
+                  <caret line="262" column="0" selection-start-line="262" selection-start-column="0" selection-end-line="262" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -914,14 +914,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/styles/sass/modules/poster.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.15994021">
-          <caret line="224" column="23" selection-start-line="224" selection-start-column="23" selection-end-line="224" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/custom/handleArtists.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-7.888889">
@@ -938,12 +930,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/styles/sass/modules/poster.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.69207776">
+          <caret line="262" column="0" selection-start-line="262" selection-start-column="0" selection-end-line="262" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/custom/ui.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.43722942">
-          <caret line="699" column="19" selection-start-line="699" selection-start-column="19" selection-end-line="699" selection-end-column="19" />
+        <state vertical-scroll-proportion="0.7619048">
+          <caret line="732" column="53" selection-start-line="732" selection-start-column="53" selection-end-line="732" selection-end-column="53" />
           <folding>
-            <marker date="1469028371000" expanded="true" signature="5734:5751" placeholder="..." />
+            <marker date="1469028751000" expanded="true" signature="5734:5751" placeholder="..." />
           </folding>
         </state>
       </provider>

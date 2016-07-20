@@ -729,9 +729,8 @@ function recursivelyCorrectLineupFontsize($container) {
             'font-size' : (Math.round(currentFontsize) - sizingStep) + 'px',
             'line-height' : '100%'
         });
-        $container.get(0).isFontSizeAdjusted = true;
-    } else {
-        // leave css font size
+        //$container.get(0).isFontSizeAdjusted = true;
+        recursivelyCorrectLineupFontsize($container);
     }// endif
 
 }// recursivelyCorrectLineupFontsize();
