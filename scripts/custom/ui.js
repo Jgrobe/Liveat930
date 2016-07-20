@@ -692,8 +692,10 @@ function adjustDynamicFontSize($container, options) {
     }, options);
 
     var cWidth = $container.width();
-    var letterCount = $container.text().length;
-    console.log('adjusting dynamic fontsize @ container width '+cWidth+' | letterCount: '+letterCount);
+    var fullText = $container.text();
+    var letterCount = fullText.length;
+    console.log('full container text', $container.text());
+    //console.log('adjusting dynamic fontsize @ container width '+cWidth+' | letterCount: '+letterCount);
 
     var $excludes = $container.find(settings.excludeFromLetterCount);
     if($excludes.length > 0) {
@@ -701,13 +703,17 @@ function adjustDynamicFontSize($container, options) {
 
         $excludes.each(function(i, elem) {
             var $this = jQuery(this);
-            excludeCount += $this.text().length;
+            var thisText = $this.text();
+            excludeCount += thisText.length;
+            console.log('removing this text: ', thisText);
+            fullText.replace(thisText, '');
+            console.log('new full text', fullText);
         });// endeach
 
-        console.log('excluded letters from '+$excludes.length+' elems: '+excludeCount);
+        //console.log('excluded letters from '+$excludes.length+' elems: '+excludeCount);
 
         letterCount -= excludeCount;
-        console.log('lettercount - excludes: '+letterCount);
+        //console.log('lettercount - excludes: '+letterCount);
 
     }// endif
 
