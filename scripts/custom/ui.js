@@ -680,7 +680,7 @@ function scalePostersLineupToFit() {
             width:$lineup.width(),
             height:$lineup.height()
         };
-        $lineup.css({height:'auto'});
+        $lineup.css({height:''});
         var lineupProps = {
             width: $lineup.width(),
             height: $lineup.height()
