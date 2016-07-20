@@ -27,10 +27,21 @@
 </script>
 <script>
     /* custom replace fb like w/ share */
-    jQuery(document).ajaxComplete(function() {
+    var fbInterval = setInterval(function(){
+
+    }, 200);
+    function replaceLikeWithShare() {
+        console.log('tryna replace like');
+
+        if(window.hasLikeBeenReplaced) {
+            clearInterval(fbInterval);
+            return false;
+        }
 
         var $fbContainer = jQuery('.ss-social-button-container.facebook');
         console.log('fbContainer found?', $fbContainer);
+
+        if(!$fbContainer.length) return false;
 
         var $btnFBshare = jQuery('<div/>');
         $btnFBshare.attr({
@@ -50,5 +61,8 @@
         $btnFBshare.append($shareLink);
         $fbContainer.html($btnFBshare);
 
-    });
+        console.log('---> like has been replaced', $btnFBshare, $fbContainer);
+
+        window.hasLikeBeenReplaced = true;
+    }
 </script>
