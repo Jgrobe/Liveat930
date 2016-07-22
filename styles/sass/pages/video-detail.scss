@@ -26,6 +26,8 @@
 
   h1 {
     display:inline-block;
+    z-index: 5;
+    
     .small {
       @extend .s-headline;
       display: block;

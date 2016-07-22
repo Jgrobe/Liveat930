@@ -4522,7 +4522,8 @@ input {
 .landing.clip-landing .landing-container {
   text-align: center; }
 .landing.clip-landing h1 {
-  display: inline-block; }
+  display: inline-block;
+  z-index: 5; }
   .landing.clip-landing h1 .small {
     display: block;
     text-align: right;
