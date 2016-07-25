@@ -713,13 +713,7 @@ function sizePostersFontSize() {
     });
 }
 
-var recTimeOut;
-
 function recursivelyCorrectLineupFontsize($container) {
-
-    clearTimeout(recTimeOut);
-
-    //var recurFn = recursivelyCorrectLineupFontsize.apply(window, [$container]);
 
     var sizingStep = 2;// px
 
