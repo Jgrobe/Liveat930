@@ -717,6 +717,7 @@ var recTimeOut;
 
 function recursivelyCorrectLineupFontsize($container) {
 
+    clearTimeout(recTimeOut);
 
     //var recurFn = recursivelyCorrectLineupFontsize.apply(window, [$container]);
 
@@ -732,7 +733,6 @@ function recursivelyCorrectLineupFontsize($container) {
             'font-size' : (Math.round(currentFontsize) - sizingStep) + 'px',
             'line-height' : '100%'
         });
-        clearTimeout(recTimeOut);
         recTimeOut = setTimeout(function() {
             recursivelyCorrectLineupFontsize($container);
         }, 32);
@@ -747,7 +747,6 @@ function recursivelyCorrectLineupFontsize($container) {
             $container.css({
                 'font-size' : ''
             });
-            clearTimeout(recTimeOut);
             recTimeOut = setTimeout(function() {
                 recursivelyCorrectLineupFontsize($container);
             }, 32);

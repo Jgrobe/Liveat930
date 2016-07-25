@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ba77c59-895c-4b6c-8ed1-52220cbb39bd" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/custom/ui.js" afterPath="$PROJECT_DIR$/scripts/custom/ui.js" />
     </list>
     <ignored path="sqsp.iws" />
@@ -48,11 +49,11 @@
           <file leaf-file-name="ui.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/scripts/custom/ui.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.8857494">
-                  <caret line="750" column="25" selection-start-line="750" selection-start-column="25" selection-end-line="750" selection-end-column="25" />
+                <state vertical-scroll-proportion="0.73832923">
+                  <caret line="749" column="37" selection-start-line="749" selection-start-column="37" selection-end-line="749" selection-end-column="37" />
                   <folding>
-                    <marker date="1469438488000" expanded="true" signature="5736:5753" placeholder="..." />
-                    <marker date="1469438488000" expanded="false" signature="26832:27080" placeholder="..." />
+                    <marker date="1469438634000" expanded="true" signature="5736:5753" placeholder="..." />
+                    <marker date="1469438634000" expanded="false" signature="26832:27080" placeholder="..." />
                   </folding>
                 </state>
               </provider>
@@ -891,11 +892,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/custom/ui.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8857494">
-          <caret line="750" column="25" selection-start-line="750" selection-start-column="25" selection-end-line="750" selection-end-column="25" />
+        <state vertical-scroll-proportion="0.73832923">
+          <caret line="749" column="37" selection-start-line="749" selection-start-column="37" selection-end-line="749" selection-end-column="37" />
           <folding>
-            <marker date="1469438488000" expanded="true" signature="5736:5753" placeholder="..." />
-            <marker date="1469438488000" expanded="false" signature="26832:27080" placeholder="..." />
+            <marker date="1469438634000" expanded="true" signature="5736:5753" placeholder="..." />
+            <marker date="1469438634000" expanded="false" signature="26832:27080" placeholder="..." />
           </folding>
         </state>
       </provider>
