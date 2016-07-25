@@ -715,7 +715,7 @@ function sizePostersFontSize() {
 
 function recursivelyCorrectLineupFontsize($container) {
 
-    var sizingStep = 2;// px
+    var sizingStep = 4;// px
 
     var cHeight = $container.height();
     var overflowHeight = $container.get(0).scrollHeight;
@@ -732,6 +732,7 @@ function recursivelyCorrectLineupFontsize($container) {
             recursivelyCorrectLineupFontsize($container);
         //});
     } else {
+        console.log('text fits', currentFontsize, overflowHeight, cHeight);
         // text height is smaller than container height -> find out how much smaller the text is
         $container.css({height:'auto'});
         var textHeight = $container.height();
