@@ -717,7 +717,10 @@ function sizePostersFontSize() {
 }
 
 function recursivelyCorrectLineupFontsize($container) {
-    if(recCount > 5) return false;
+    if(recCount > 5) {
+        console.log('------------------- hit stack limit -> return');
+        return false;
+    }
 
     var sizingStep = 4;// px
 
