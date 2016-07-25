@@ -721,6 +721,8 @@ function recursivelyCorrectLineupFontsize($container) {
     var overflowHeight = $container.get(0).scrollHeight;
     var currentFontsize = parseFloat($container.css('font-size'));
 
+    console.log('check fontsize', currentFontsize, overflowHeight, cHeight);
+
     if(overflowHeight > cHeight) {
         console.log('size down', overflowHeight, cHeight);
         // text height is greater than container height -> decrease
@@ -732,7 +734,6 @@ function recursivelyCorrectLineupFontsize($container) {
             recursivelyCorrectLineupFontsize($container);
         //});
     } else {
-        console.log('text fits', currentFontsize, overflowHeight, cHeight);
         // text height is smaller than container height -> find out how much smaller the text is
         $container.css({height:'auto'});
         var textHeight = $container.height();
