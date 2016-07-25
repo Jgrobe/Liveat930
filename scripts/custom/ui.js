@@ -727,9 +727,9 @@ function recursivelyCorrectLineupFontsize($container) {
             'font-size' : (Math.round(currentFontsize) - sizingStep) + 'px',
             'line-height' : '100%'
         });
-        requestAnimationFrame( function() {
+        //requestAnimationFrame( function() {
             recursivelyCorrectLineupFontsize($container);
-        });
+        //});
     } else {
         // text height is smaller than container height -> find out how much smaller the text is
         $container.css({height:'auto'});
@@ -741,9 +741,9 @@ function recursivelyCorrectLineupFontsize($container) {
             $container.css({
                 'font-size' : ''
             });
-            requestAnimationFrame(function() {
+            //requestAnimationFrame(function() {
                 recursivelyCorrectLineupFontsize($container);
-            });
+            //});
         }// endif
     }// endif
 
