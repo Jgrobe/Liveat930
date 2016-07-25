@@ -711,7 +711,6 @@ function sizePostersFontSize() {
         //adjustFontSizeByCharCount($lineUp, opts);
 
         //recCount = 0;
-console.log('size font size of', $lineUp.text().split('/')[0]);
         recursivelyCorrectLineupFontsize($lineUp);
     });
 }
