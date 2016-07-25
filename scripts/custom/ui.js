@@ -722,7 +722,7 @@ function recursivelyCorrectLineupFontsize($container) {
     var currentFontsize = parseFloat($container.css('font-size'));
 
     if(overflowHeight > cHeight) {
-        console.log('size down');
+        console.log('size down', overflowHeight, cHeight);
         // text height is greater than container height -> decrease
         $container.css({
             'font-size' : (Math.round(currentFontsize) - sizingStep) + 'px',
@@ -743,7 +743,7 @@ function recursivelyCorrectLineupFontsize($container) {
             $container.css({
                 'font-size' : ''
             });
-            console.log('restart sizing', textHeight, cHeight);
+            console.log('restart sizing');
             //requestAnimationFrame(function() {
                 recursivelyCorrectLineupFontsize($container);
             //});
