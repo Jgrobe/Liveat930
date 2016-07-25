@@ -713,6 +713,8 @@ function sizePostersFontSize() {
     });
 }
 
+var recTimeOut;
+
 function recursivelyCorrectLineupFontsize($container) {
 
 
@@ -730,8 +732,8 @@ function recursivelyCorrectLineupFontsize($container) {
             'font-size' : (Math.round(currentFontsize) - sizingStep) + 'px',
             'line-height' : '100%'
         });
-        //throttle(recurFn, 100);
-        setTimeout(function() {
+        clearTimeout(recTimeOut);
+        recTimeOut = setTimeout(function() {
             recursivelyCorrectLineupFontsize($container);
         }, 32);
     } else {
@@ -745,7 +747,8 @@ function recursivelyCorrectLineupFontsize($container) {
             $container.css({
                 'font-size' : ''
             });
-            setTimeout(function() {
+            clearTimeout(recTimeOut);
+            recTimeOut = setTimeout(function() {
                 recursivelyCorrectLineupFontsize($container);
             }, 32);
         }// endif
