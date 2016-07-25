@@ -731,10 +731,10 @@ function recursivelyCorrectLineupFontsize($container) {
     var textHeight = getActualHeight($container);
     var currentFontsize = parseFloat($container.css('font-size'));
 
-    console.log('check fontsize', currentFontsize, textHeight, cHeight);
+    //console.log('check fontsize', currentFontsize, textHeight, cHeight);
 
     if(textHeight > cHeight) {
-        console.log('size down', textHeight, cHeight);
+        //console.log('size down', textHeight, cHeight);
         // text height is greater than container height -> decrease
         $container.css({
             'font-size' : (Math.round(currentFontsize) - sizingStep) + 'px',
@@ -746,14 +746,14 @@ function recursivelyCorrectLineupFontsize($container) {
     } else {
         // text height is smaller than container height -> find out how much smaller the text is
         //var textHeight = getInnerHeight($container);
-        console.log('check text size', textHeight, cHeight, 'difference: '+(cHeight-textHeight));
+        //console.log('check text size', textHeight, cHeight, 'difference: '+(cHeight-textHeight));
 
         if((cHeight-textHeight) > currentFontsize*2) {
             // text is too small -> reset & resize again
             $container.css({
                 'font-size' : ''
             });
-            console.log('restart sizing');
+            //console.log('restart sizing');
             //requestAnimationFrame(function() {
                 recursivelyCorrectLineupFontsize($container);
             //});

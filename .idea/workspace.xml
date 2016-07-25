@@ -49,11 +49,11 @@
           <file leaf-file-name="ui.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/scripts/custom/ui.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.6378653">
-                  <caret line="727" column="0" selection-start-line="727" selection-start-column="0" selection-end-line="727" selection-end-column="0" />
+                <state vertical-scroll-proportion="0.84752226">
+                  <caret line="756" column="39" selection-start-line="756" selection-start-column="39" selection-end-line="756" selection-end-column="39" />
                   <folding>
-                    <marker date="1469440720000" expanded="true" signature="5736:5753" placeholder="..." />
-                    <marker date="1469440720000" expanded="false" signature="26848:27096" placeholder="..." />
+                    <marker date="1469440895000" expanded="true" signature="5736:5753" placeholder="..." />
+                    <marker date="1469440895000" expanded="false" signature="26848:27096" placeholder="..." />
                   </folding>
                 </state>
               </provider>
@@ -450,7 +450,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-2556" y="23" width="2556" height="1417" extended-state="6" />
+    <frame x="-2556" y="23" width="2556" height="1417" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12071006" sideWeight="0.7513369" order="1" side_tool="false" content_ui="combo" />
@@ -892,11 +892,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/custom/ui.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6378653">
-          <caret line="727" column="0" selection-start-line="727" selection-start-column="0" selection-end-line="727" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.84752226">
+          <caret line="756" column="39" selection-start-line="756" selection-start-column="39" selection-end-line="756" selection-end-column="39" />
           <folding>
-            <marker date="1469440720000" expanded="true" signature="5736:5753" placeholder="..." />
-            <marker date="1469440720000" expanded="false" signature="26848:27096" placeholder="..." />
+            <marker date="1469440895000" expanded="true" signature="5736:5753" placeholder="..." />
+            <marker date="1469440895000" expanded="false" signature="26848:27096" placeholder="..." />
           </folding>
         </state>
       </provider>
