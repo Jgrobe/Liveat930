@@ -715,6 +715,9 @@ function sizePostersFontSize() {
 
 function recursivelyCorrectLineupFontsize($container) {
 
+
+    //var recurFn = recursivelyCorrectLineupFontsize.apply(window, [$container]);
+
     var sizingStep = 2;// px
 
     var cHeight = $container.height();
@@ -727,7 +730,10 @@ function recursivelyCorrectLineupFontsize($container) {
             'font-size' : (Math.round(currentFontsize) - sizingStep) + 'px',
             'line-height' : '100%'
         });
-        recursivelyCorrectLineupFontsize($container);
+        //throttle(recurFn, 100);
+        setTimeout(function() {
+            recursivelyCorrectLineupFontsize($container);
+        }, 32);
     } else {
         // text height is smaller than container height -> find out how much smaller the text is
         $container.css({height:'auto'});
@@ -739,11 +745,15 @@ function recursivelyCorrectLineupFontsize($container) {
             $container.css({
                 'font-size' : ''
             });
-            recursivelyCorrectLineupFontsize($container);
+            setTimeout(function() {
+                recursivelyCorrectLineupFontsize($container);
+            }, 32);
         }// endif
     }// endif
 
 }// recursivelyCorrectLineupFontsize();
+
+
 
 //function preparePosterLineUpForFontResizing() {
 //    var $posters = jQuery('.poster');
