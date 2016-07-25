@@ -683,13 +683,13 @@ function addBackButtonToCart() {
     //$btn.click(function(){ history.back(); });
 }
 
-var recCount;
+//var recCount;
 function sizePostersFontSize() {
     var $posters = jQuery('.poster');
     if(!$posters.length) return false;
 
     $posters.each(function(i, elem) {
-        if(i > 0) return false;// DEV
+        //if(i > 0) return false;// DEV
 
         var $thisPoster = jQuery(this);
         var $lineUp = $thisPoster.find('.ep-lineup');
@@ -710,21 +710,21 @@ function sizePostersFontSize() {
         //};
         //adjustFontSizeByCharCount($lineUp, opts);
 
-        recCount = 0;
+        //recCount = 0;
 console.log('size font size of', $lineUp.text().split('/')[0]);
         recursivelyCorrectLineupFontsize($lineUp);
     });
 }
 
 function recursivelyCorrectLineupFontsize($container) {
-    if(recCount > 5) {
-        console.log('------------------- hit stack limit -> return');
-        return false;
-    }
-
-    recCount++;
-
-    var sizingStep = 4;// px
+    //if(recCount > 5) {
+    //    console.log('------------------- hit stack limit -> return');
+    //    return false;
+    //}
+    //
+    //recCount++;
+    //
+    //var sizingStep = 4;// px
 
     var cHeight = $container.height();
     //var overflowHeight = $container.get(0).scrollHeight;
