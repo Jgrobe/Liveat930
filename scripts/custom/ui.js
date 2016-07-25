@@ -723,8 +723,8 @@ function recursivelyCorrectLineupFontsize($container) {
     //}
     //
     //recCount++;
-    //
-    //var sizingStep = 4;// px
+
+    var sizingStep = 4;// px
 
     var cHeight = $container.height();
     //var overflowHeight = $container.get(0).scrollHeight;
