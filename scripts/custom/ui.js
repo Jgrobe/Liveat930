@@ -722,6 +722,8 @@ function recursivelyCorrectLineupFontsize($container) {
         return false;
     }
 
+    recCount++;
+
     var sizingStep = 4;// px
 
     var cHeight = $container.height();
@@ -758,8 +760,6 @@ function recursivelyCorrectLineupFontsize($container) {
             //});
         }// endif
     }// endif
-
-    recCount++;
 
 }// recursivelyCorrectLineupFontsize();
 
