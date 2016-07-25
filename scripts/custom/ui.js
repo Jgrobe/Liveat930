@@ -688,7 +688,7 @@ function sizePostersFontSize() {
     if(!$posters.length) return false;
 
     $posters.each(function(i, elem) {
-        //if(i > 0) return false;// DEV
+        if(i > 0) return false;// DEV
 
         var $thisPoster = jQuery(this);
         var $lineUp = $thisPoster.find('.ep-lineup');
@@ -722,6 +722,7 @@ function recursivelyCorrectLineupFontsize($container) {
     var currentFontsize = parseFloat($container.css('font-size'));
 
     if(overflowHeight > cHeight) {
+        console.log('size down');
         // text height is greater than container height -> decrease
         $container.css({
             'font-size' : (Math.round(currentFontsize) - sizingStep) + 'px',
@@ -735,12 +736,14 @@ function recursivelyCorrectLineupFontsize($container) {
         $container.css({height:'auto'});
         var textHeight = $container.height();
         $container.css({height: ''});
+        console.log('check text size', textHeight, cHeight);
 
         if((cHeight-textHeight) > currentFontsize*2) {
             // text is too small -> reset & resize again
             $container.css({
                 'font-size' : ''
             });
+            console.log('restart sizing', textHeight, cHeight);
             //requestAnimationFrame(function() {
                 recursivelyCorrectLineupFontsize($container);
             //});
