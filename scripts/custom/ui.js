@@ -727,13 +727,14 @@ function recursivelyCorrectLineupFontsize($container) {
     var sizingStep = 4;// px
 
     var cHeight = $container.height();
-    var overflowHeight = $container.get(0).scrollHeight;
+    //var overflowHeight = $container.get(0).scrollHeight;
+    var textHeight = getActualHeight($container);
     var currentFontsize = parseFloat($container.css('font-size'));
 
-    console.log('check fontsize', currentFontsize, overflowHeight, cHeight);
+    console.log('check fontsize', currentFontsize, textHeight, cHeight);
 
-    if(overflowHeight > cHeight) {
-        console.log('size down', overflowHeight, cHeight);
+    if(textHeight > cHeight) {
+        console.log('size down', textHeight, cHeight);
         // text height is greater than container height -> decrease
         $container.css({
             'font-size' : (Math.round(currentFontsize) - sizingStep) + 'px',
@@ -744,9 +745,7 @@ function recursivelyCorrectLineupFontsize($container) {
         //});
     } else {
         // text height is smaller than container height -> find out how much smaller the text is
-        $container.css({height:'auto'});
-        var textHeight = $container.height();
-        $container.css({height: ''});
+        //var textHeight = getInnerHeight($container);
         console.log('check text size', textHeight, cHeight, 'difference: '+(cHeight-textHeight));
 
         if((cHeight-textHeight) > currentFontsize*2) {
@@ -763,6 +762,12 @@ function recursivelyCorrectLineupFontsize($container) {
 
 }// recursivelyCorrectLineupFontsize();
 
+function getActualHeight($container) {
+    $container.css({height:'auto'});
+    var innerHeight = $container.height();
+    $container.css({height: ''});
+    return innerHeight;
+}
 
 
 //function preparePosterLineUpForFontResizing() {
