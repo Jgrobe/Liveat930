@@ -738,7 +738,7 @@ function recursivelyCorrectLineupFontsize($container) {
         $container.css({height:'auto'});
         var textHeight = $container.height();
         $container.css({height: ''});
-        console.log('check text size', textHeight, cHeight);
+        console.log('check text size', textHeight, cHeight, 'difference: '+(cHeight-textHeight));
 
         if((cHeight-textHeight) > currentFontsize*2) {
             // text is too small -> reset & resize again
