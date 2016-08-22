@@ -8,7 +8,6 @@
 {.repeated section items}
     {.repeated section categories}
         {.equal?:@:"current"}
-<script>console.log('ep landing current?', {@}, {@index});</script>
             {.equal?:@index:1}
             <section class="landing episodes-landing">
                 <div class="fill-parent mask">
