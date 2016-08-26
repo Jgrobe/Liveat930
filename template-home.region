@@ -1,4 +1,4 @@
-<squarespace:query collection="artists" limit="99">
+<squarespace:query collection="artists" limit="999">
     <script>
         var _artists = {items|json};
         var _artistsReady = true;
