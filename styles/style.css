@@ -2017,6 +2017,8 @@ input {
   overflow: hidden; }
   .poster.verticalRect .layer.model-layer:before {
     padding-top: 170%; }
+.poster.verticalRect .ep-headline {
+  color: black; }
 .poster.verticalRect .artist:hover {
   color: black; }
   .poster.verticalRect .artist:hover .label {
