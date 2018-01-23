@@ -1640,8 +1640,6 @@ input {
     margin-top: 5.20833vw;
     line-height: 9.375vw;
     color: white; }
-  .poster .ep-date {
-    color: black; }
   .poster .ep-subheadline {
     display: none;
     -webkit-transition: opacity 0.3s;
@@ -1824,9 +1822,6 @@ input {
       margin-top: 65px;
       font-size: 165px;
       line-height: 165px; }
-    .poster .ep-date {
-      font-size: 105px;
-      line-height: 105px; }
     .poster .ep-lineup {
       font-size: 104px;
       line-height: 104px;
@@ -2052,8 +2047,6 @@ input {
   fill: white; }
 .poster.deltoid .icon.episode .icon-label {
   color: white; }
-.poster.deltoid .ep-date {
-  color: white; }
 .poster.deltoid .ep-lineup {
   color: black; }
 .poster.deltoid .artist:hover {
@@ -2119,8 +2112,6 @@ input {
   fill: white; }
 .poster.arc .icon.episode .icon-label {
   color: white; }
-.poster.arc .ep-date {
-  color: white; }
 .poster.arc .ep-lineup {
   color: black; }
 .poster.arc .artist:hover {
@@ -2155,8 +2146,6 @@ input {
   background: black; }
 .poster.halfCircle .ep-headline {
   color: black; }
-.poster.halfCircle .ep-date {
-  color: white; }
 .poster.halfCircle .ep-lineup {
   color: black; }
 .poster.halfCircle .artist:hover {
@@ -2193,8 +2182,6 @@ input {
   fill: white; }
 .poster.square .icon.episode .icon-label {
   color: white; }
-.poster.square .ep-date {
-  color: white; }
 .poster.square .ep-lineup {
   color: black; }
 .poster.square .artist:hover {
@@ -2230,8 +2217,6 @@ input {
 .poster.doubleSlash .icon.episode svg * {
   fill: white; }
 .poster.doubleSlash .icon.episode .icon-label {
-  color: white; }
-.poster.doubleSlash .ep-date {
   color: white; }
 .poster.doubleSlash .ep-lineup {
   color: black; }
@@ -2297,8 +2282,6 @@ input {
   background: black; }
 .poster.tripleRect .ep-headline {
   color: black; }
-.poster.tripleRect .ep-date {
-  color: white; }
 .poster.tripleRect .ep-lineup {
   color: black; }
 .poster.tripleRect .artist:hover {
@@ -3318,9 +3301,6 @@ input {
     margin-top: 1.38889vw;
     font-size: 5.55556vw;
     line-height: 5.55556vw; }
-  .episodes-overview .poster .ep-date {
-    font-size: 2.95139vw;
-    line-height: 2.95139vw; }
   .episodes-overview .poster .ep-subheadline {
     font-size: 1.73611vw;
     line-height: 1.73611vw; }
@@ -3359,9 +3339,6 @@ input {
     margin-top: 20px;
     font-size: 80px;
     line-height: 80px; }
-  .episodes-overview .poster .ep-date {
-    font-size: 43px;
-    line-height: 43px; }
   .episodes-overview .poster .ep-subheadline {
     font-size: 25px;
     line-height: 25px; }
@@ -3408,9 +3385,6 @@ input {
     margin-top: 5vw;
     font-size: 15vw;
     line-height: 12vw; }
-  .episodes-overview .poster .ep-date {
-    font-size: 8vw;
-    line-height: 9vw; }
   .episodes-overview .poster .ep-subheadline {
     font-size: 4vw;
     line-height: 6vw; }
