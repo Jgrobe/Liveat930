@@ -33,7 +33,7 @@
                         </p>
                     </div><!-- .episodes-landing-sub -->
 
-                    <div class="cta-dummy" data-icon="eye" data-label="{.if customContent.isFullEpisode}Watch episode no. {customContent.episode-number}, {addedOn|date %b %Y}{.or}Play trailer{.end}" data-class="prllx-custom prllx-scroll-depend switch" data-attributes="href={fullUrl},data-prllx=.075">{@|apply svg-icon-eye.block}</div>
+                    <div class="cta-dummy" data-icon="eye" data-label="{.if customContent.isFullEpisode}Watch episode no. {customContent.episode-number}, {.or}Play trailer{.end}" data-class="prllx-custom prllx-scroll-depend switch" data-attributes="href={fullUrl},data-prllx=.075">{@|apply svg-icon-eye.block}</div>
 
                 </div><!-- .landing-container -->
             </section>
@@ -81,7 +81,7 @@
                 <li>
                     <a {.if customContent.isUpcomingUnclickable}{.or}href="{fullUrl}" {.end}class="img tv prllx-custom{.if customContent.isUpcomingUnclickable}{.or} switch{.end}" data-prllx=".086" style="background-image:url('{customContent.upcoming-thumbnail.assetUrl}');">
                         <div class="inside prllx-lo-stndrd">
-                            <span>Ep.{customContent.episode-number}</span><strong>{addedOn|date %b %Y}</strong>
+                            <span>Ep.{customContent.episode-number}</span>
                         </div>
                     </a>
                 </li>
