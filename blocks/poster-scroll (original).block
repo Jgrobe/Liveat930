@@ -1,0 +1,78 @@
+<div class="poster {customContent.episode-shape}">
+
+    <div class="poster-pattern first prllx-custom" data-prllx=".3"></div>
+    <div class="poster-pattern second prllx-custom" data-prllx=".3"></div>
+
+    <div class="poster-content">
+
+        <div class="layer hover-layer"></div><!-- .hover-layer -->
+
+        <div class="poster-part content">
+
+            <div class="layer bg-layer padded">
+                <div class="half">
+                    <div class="fill-parent imgfill"></div>
+                </div><!-- .half -->
+                <div class="half">
+                    <div class="fill-parent imgfill"></div>
+                </div><!-- .half -->
+            </div><!-- .bg-layer -->
+
+            <div class="layer model-layer rel prllx-custom prllx-no-disable" data-prllx=".18">
+                <div class="model-container imgfill" data-shape="{customContent.episode-shape}" data-img="{customContent.poster-fallback-image.assetUrl}">
+
+                    {@|apply shape-video.block}
+
+                </div><!-- .model-container.img.widescreen -->
+            </div><!-- .model-layer -->
+
+            <div class="layer copy-layer padded">
+                <div class="half padded">
+
+                    <div class="rel">
+
+                        <div class="icon logo">
+                            {@|apply svg-icon-logo-full.block}
+                        </div><!-- .icon.logo -->
+                        <div class="icon episode">
+                            {@|apply svg-icon-episodenr.block}
+                            <span class="icon-label">{customContent.episode-number}</span>
+                        </div><!-- .icon.episode -->
+
+                        <h2 class="l-headline ep-headline prllx-custom prllx-no-disable" data-prllx=".1">{title}</h2>
+                        <h3 class="m-headline ep-date prllx-custom prllx-no-disable" data-prllx=".13">{addedOn|date %B %G}</h3>
+
+                    </div><!-- .relativizer -->
+
+                </div><!-- .half -->
+
+                <div class="half padded lineup-container prllx-custom prllx-no-disable" data-prllx=".08">
+                    <!--<h6 class="s-headline ep-subheadline">Additional performances by:</h6>-->
+                    <h4 class="m-headline ep-lineup prllx-custom prllx-no-disable" data-prllx=".06" data-artists="{customContent.featured-artists}">
+                        <!-- js populated -->
+                    </h4>
+                </div><!-- .half -->
+
+            </div><!-- .copy-layer -->
+
+        </div><!-- .poster-part.content -->
+
+        <div class="poster-part info{.equal?:@index:1} has-info{.end}">
+            <div class="hosted-logo">{@|apply svg-hosted-by.block}<!--php svg('images/hosted-by'); --></div>
+
+            {.equal?:@index:1}
+            <div class="hosted-info">
+                Live at 9:30 is hosted by Squarespace, combining powers with the 9:30 Club to do what they both do best: present talented people in the best light for the world to see.
+            </div><!-- .hosted-info -->
+            {.end}
+
+        </div><!-- .poster-part.info -->
+
+    </div><!-- .fill-parent --><!-- .poster-content -->
+
+    <div class="cta-dummy" data-label="{.if customContent.isFullEpisode}Play episode{.or}Play trailer{.end}" data-class="btn-play-episode prllx-custom prllx-no-disable{.odd? @index} negative{.end} switch" data-attributes="data-prllx=-.65,href={fullUrl}"></div>
+    <!--<a class="btn-play-episode prllx-custom prllx-no-disable" data-prllx="-.65" href="{fullUrl}">Play Episode</a>-->
+
+    <a href="{fullUrl}" class="mobile-filler onlymobile fill-parent"></a>
+
+</div><!-- .poster -->
