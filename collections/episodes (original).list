@@ -1,0 +1,94 @@
+<squarespace:query collection="artists" limit="99">
+    <script>
+        var _artists = {items|json};
+        var _artistsReady = true;
+        jQuery(document).trigger('artistsReady', _artists);
+    </script>
+</squarespace:query>
+{.repeated section items}
+    {.repeated section categories}
+        {.equal?:@:"current"}
+            {.equal?:@index:1}
+            <section class="landing episodes-landing">
+                <div class="fill-parent mask">
+                    <div class="landing-bg" data-shape="{customContent.episode-shape}">
+                        <div class="fill-parent imgfill{.if customContent.episode-hero-video} onlymobile{.end}" style="background-image:url('{customContent.hero-fallback-image.assetUrl}');"></div>
+                        {.if customContent.episode-hero-video}
+                            <video data-src="{customContent.episode-hero-video}" class="loop" muted autoplay></video>
+                        {.end}
+                    </div><!-- landing-bg -->
+                </div><!-- .fill-parent -->
+
+                <div class="landing-container">
+
+                    <div class="landing-head prllx-custom prllx-scroll-depend" data-prllx=".18">
+                        <h1 class="l-headline onloadclip">
+                            Episode No.{customContent.episode-number}
+                            <div class="small onloadclip">Featured Show</div>
+                        </h1>
+                    </div>
+                    <div class="landing-extra prllx-custom prllx-scroll-depend onloadclip" data-prllx=".12">
+                        <p class="lineup_preview" data-artists="{customContent.featured-artists}">
+                            <span class="onloadclip">with</span>
+                        </p>
+                    </div><!-- .episodes-landing-sub -->
+
+                    <div class="cta-dummy" data-icon="eye" data-label="{.if customContent.isFullEpisode}Watch episode no. {customContent.episode-number}, {addedOn|date %b %Y}{.or}Play trailer{.end}" data-class="prllx-custom prllx-scroll-depend switch" data-attributes="href={fullUrl},data-prllx=.075">{@|apply svg-icon-eye.block}</div>
+
+                </div><!-- .landing-container -->
+            </section>
+            {.end}
+        {.end}
+    {.end}
+{.end}
+
+<div class="site-content">
+
+    <section class="episodes-previous">
+        <div class="section-head prllx-custom" data-prllx="-.04">
+            <h2>All Shows</h2>
+            <p>See the performances</p>
+        </div><!-- .section-head -->
+        <div class="episodes-overview posters">
+
+            {.repeated section items}
+                {.if customContent.isPosterOverviewpage}
+                    {.repeated section categories}
+                        {.equal?:@:"aired"}
+
+                            <div class="episodes-overview-item prllxposter">
+                                {@|apply poster-parallax.block}
+                                <div class="cta-dummy" data-label="Explore" data-icon="eye" data-class="switch" data-attributes="href={fullUrl}">{@|apply svg-icon-eye.block}</div>
+                                <div class="light"></div>
+                            </div><!-- .episodes-overview-item -->
+
+                        {.end}
+                    {.end}
+                {.end}
+            {.end}<!-- .end repeated items -->
+
+        </div><!-- .posters.episodes-overview -->
+    </section><!-- .episodes-previous -->
+
+    <squarespace:query collection="{collection.urlId}" category="upcoming" limit="3">
+        <section class="episodes-upcoming">
+            <div class="section-head prllx-custom" data-prllx=".03">
+                <h2>Next Shows</h2>
+                <p>See who's coming</p>
+            </div>
+            <ul>
+                {.repeated section items}
+                <li>
+                    <a {.if customContent.isUpcomingUnclickable}{.or}href="{fullUrl}" {.end}class="img tv prllx-custom{.if customContent.isUpcomingUnclickable}{.or} switch{.end}" data-prllx=".086" style="background-image:url('{customContent.upcoming-thumbnail.assetUrl}');">
+                        <div class="inside prllx-lo-stndrd">
+                            <span>Ep.{customContent.episode-number}</span><strong>{addedOn|date %b %Y}</strong>
+                        </div>
+                    </a>
+                </li>
+                {.end}
+            </ul>
+        </section>
+    </squarespace:query>
+</div>
+<squarespace:script src="custom/handleArtists.js" />
+<squarespace:script src="custom/page_episodes.js" />
