@@ -12,7 +12,6 @@
 
             <div class="landing-head prllx-custom prllx-scroll-depend" data-prllx=".18">
                 <h1 class="l-headline onloadclip">Episode No.{customContent.episode-number}</h1>
-                <div class="small onloadclip">{addedOn|date %B %Y}</div>
                 <!--<a href="#" class="cta-play-episode">Watch now</a>-->
             </div><!-- .landing-head -->
             <div class="cta-dummy" data-label="{.if customContent.isFullEpisode}Play full episode{.or}Play trailer{.end}" data-icon="play" data-class="prllx-custom prllx-scroll-depend onloadclip" data-attributes="id=cta-play-episode,href=#,data-prllx=.075">{@|apply svg-icon-play.block}</div>
