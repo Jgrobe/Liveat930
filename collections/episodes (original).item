@@ -1,0 +1,174 @@
+{.section item}
+
+    <section class="landing episodes-landing episode-detail">
+        <div class="fill-parent mask">
+            <div class="landing-bg" data-shape="{customContent.episode-shape}">
+                <div class="fill-parent imgfill{.if customContent.episode-hero-video} onlymobile{.end}" style="background-image:url('{customContent.hero-fallback-image.assetUrl}');"></div>
+                <video data-src="{customContent.episode-hero-video}" muted autoplay class="loop"></video>
+            </div>
+        </div><!-- .mask -->
+
+        <div class="landing-container">
+
+            <div class="landing-head prllx-custom prllx-scroll-depend" data-prllx=".18">
+                <h1 class="l-headline onloadclip">Episode No.{customContent.episode-number}</h1>
+                <div class="small onloadclip">{addedOn|date %B %Y}</div>
+                <!--<a href="#" class="cta-play-episode">Watch now</a>-->
+            </div><!-- .landing-head -->
+            <div class="cta-dummy" data-label="{.if customContent.isFullEpisode}Play full episode{.or}Play trailer{.end}" data-icon="play" data-class="prllx-custom prllx-scroll-depend onloadclip" data-attributes="id=cta-play-episode,href=#,data-prllx=.075">{@|apply svg-icon-play.block}</div>
+            <div class="text-layer prllx-custom prllx-scroll-depend onloadclip" data-prllx=".12">
+                {body}
+                {@|apply module-share-episode.block}
+            </div><!-- .episodes-landing-sub -->
+
+        </div><!-- .landing-container -->
+
+    </section>
+
+    {.equal?:categories.0:"upcoming"}
+        <script>jQuery(document).ready(function(){jQuery('section.upcoming').remove();});</script>
+    {.or}
+
+    <div class="site-content episode-detail">
+
+        {.if customContent.episode-videoclips}
+        <section class="video-gallery teaser">
+
+            <div class="section-head">
+                <h2>Watch and share</h2>
+                <p><b>Video clips from this episode</b></p>
+            </div>
+
+            <squarespace:query collection="clips" tag="{customContent.episode-videoclips}">
+                <!--{.repeated section tags}{@},{.end}-->
+
+                <div class="video-gallery-videos related-clips-gallery top-spaced" data-payload="3">
+                    <div class="gutter-sizer"></div>
+
+                    {.repeated section items}
+
+                        {@|apply module-clip-item.block}
+
+                    {.end}<!-- .end repeated section items -->
+
+                </div><!-- .video-gallery-videos -->
+
+            </squarespace:query>
+
+            <div class="cta-dummy" data-label="Load more clips" data-icon="icon-load" data-class="load-clips upsized-icon load-more-cta">{@|apply svg-icon-load.block}</div>
+
+        </section><!-- .video-gallery -->
+
+        {.end}<!-- .end if tags -->
+
+        {.if customContent}{.section customContent}
+
+            {.if episode-gallery}
+                <section class="image-slider gallery-container episode-gallery">
+
+                    <script>
+                        var _gallery = {episode-gallery|json};
+                    </script>
+
+
+                    <div class="slider-container top-spaced">
+                        <div class="slider-images">
+                            <div class="image current-image imgfill gallery-image" style=""></div>
+                            <div class="image pattern imgfill prllx-custom" data-prllx=".06" style="background-image:url('{website.baseUrl}/assets/images/pattern-logo-bg.jpg');"></div>
+                            <div class="image next-image imgfill gallery-image prllx-custom" data-prllx=".1" style=""></div>
+                        </div><!-- .slider-images -->
+
+                        <div class="slider-ui">
+                            <div class="slider-arrows">
+                                <div class="arrow prev">{@|apply svg-arrow-cap.block}</div>
+                                <div class="arrow next">{@|apply svg-arrow-cap.block}</div>
+                            </div><!-- .slider-arrows -->
+                        </div><!-- .slider-ui -->
+                    </div><!-- .slider-container -->
+
+                </section><!-- .image-slider -->
+            {.end}<!-- .end if episode-gallery post -->
+
+            {.if episode-blogpost}
+                <squarespace:query collection="blog" limit="1" tag="{episode-blogpost}">
+                    {.section items.0}
+                    <section class="post-excerpt">
+
+                        <div class="section-head">
+                            <h2>Explore the episode</h2>
+                            <!--<p><b>Episode No.5, August 2016</b></p>-->
+                        </div><!-- .section-head -->
+
+                        <div class="excerpt-container top-spaced">
+                            <div class="image pattern imgfill" style="background-image:url('{website.baseUrl}/assets/images/pattern-logo-bg.jpg');"></div>
+                            <div class="image post-image imgfill" style="background-image:url('{assetUrl}');"></div>
+                            <div class="text-layer">
+                                <div class="section-head excerpt-head">
+                                    <h2>{title}</h2>
+                                </div>
+                                <div class="excerpt-body">
+                                    {excerpt}
+                                </div>
+                                <div class="cta-dummy" data-icon="eye" data-label="Full story" data-class="switch" data-attributes="href={fullUrl}">{@|apply svg-icon-eye.block}</div>
+                            </div><!-- .text-layer -->
+                        </div><!-- .excerpt-container -->
+
+                    </section><!-- .post-excerpt -->
+                    {.end}
+                </squarespace:query>
+            {.end}<!-- .end if blog post -->
+
+        {.end}{.end}<!-- .end if customContent -->
+
+        <section class="video-gallery related-categories teaser">
+
+            <div class="section-head">
+                <h2>Get more</h2>
+            </div>
+
+            <squarespace:query collection="clips" category="{customContent.episode-clips-categories}" limit="4">
+
+                <div class="video-gallery-videos related-clips-categories-gallery top-spaced" data-payload="4">
+                    <div class="gutter-sizer"></div>
+
+                    {.repeated section items}
+
+                    <a class="video video-item switch" href="{collection.fullUrl}?filter={categories.0|slugify}">
+                        <div class="image">
+                            {@|apply module-clip-thumb.block}
+
+                            <div class="cta-dummy" data-tag="div" data-icon="icon-arrow" data-class="negative play goto">{@|apply svg-icon-arrow.block}</div>
+                            <!--php print_cta(array(
+                                    'icon' => 'images/icon-arrow',
+                            'class' => array('negative', 'play', 'goto')
+                            )); -->
+                            <span class="video-label">More {categories.0}</span>
+                        </div>
+                        <div class="flex-cols">
+                            <div class="title">{.if customContent.subtitle}{customContent.subtitle} • {.end}{title}</div>
+                            <div class="cta-dummy" data-tag="div" data-label="View" data-icon="eye" data-class="plain" data-hover="true">{@|apply svg-icon-eye.block}</div>
+                        </div><!-- .flex-cols -->
+                    </a><!-- .video -->
+
+                    {.end}<!-- .end repeated section items -->
+                </div><!-- .video-gallery-videos -->
+
+            </squarespace:query>
+
+        </section><!-- .video-gallery -->
+    </div><!-- .site-content -->
+
+
+    {.end}<!-- .end.equal -->
+
+    <div id="episode-player" class="video-overlay">
+        <video id="full_episode_video" src="{.if customContent.isFullEpisode}{customContent.full-episode}{.or}{customContent.upcoming-trailer}{.end}" data-setup="{}" controls class="video-js fill-parent"></video>
+
+        <div class="close-overlay">
+            <p>Close</p>
+            {@|apply svg-icon-x.block}
+        </div><!-- .close-overlay -->
+    </div><!-- #episode-player -->
+
+{.end}
+<squarespace:script src="custom/page_episode.js" />
