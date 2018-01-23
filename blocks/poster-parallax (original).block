@@ -1,0 +1,61 @@
+<div class="poster {customContent.episode-shape}">
+    <div class="poster-content">
+
+        <div class="layer hover-layer"></div><!-- .hover-layer -->
+
+        <div class="poster-part content">
+
+            <div class="layer bg-layer padded">
+                <div class="half">
+                    <div class="fill-parent imgfill"></div>
+                </div>
+                <div class="half">
+                    <div class="fill-parent imgfill"></div>
+                </div>
+            </div>
+
+            <div class="layer model-layer rel">
+                <div class="model-container img widescreen" data-shape="{customContent.episode-shape}" data-img="{customContent.poster-fallback-image.assetUrl}">
+
+                    {@|apply shape.block}
+
+                </div><!-- .model-container.img.widescreen -->
+            </div><!-- .model-layer -->
+
+            <div class="layer copy-layer padded">
+                <div class="half padded">
+
+                    <div class="rel">
+
+                        <div class="icon logo">
+                            {@|apply svg-icon-logo-full.block}
+                        </div><!-- .icon.logo -->
+                        <div class="icon episode">
+                            {@|apply svg-icon-episodenr.block}
+                            <span class="icon-label">{customContent.episode-number}</span>
+                        </div><!-- .icon.episode -->
+
+                        <h2 class="l-headline ep-headline">{title}</h2>
+                        <h3 class="m-headline ep-date">{addedOn|date %B %G}</h3>
+
+                    </div><!-- .relativizer -->
+
+                </div><!-- .half -->
+
+                <div class="half padded lineup-container">
+                    <h6 class="s-headline ep-subheadline">Additional performances by:</h6>
+                    <h4 class="m-headline ep-lineup" data-artists="{customContent.featured-artists}">
+                        <!-- js populated -->
+                    </h4>
+                </div><!-- .half -->
+
+            </div><!-- .copy-layer -->
+
+        </div><!-- .poster-part.content -->
+
+        <div class="poster-part info">
+            <div class="hosted-logo">{@|apply svg-hosted-by.block}</div>
+        </div><!-- .poster-part.info -->
+    </div><!-- .fill-parent --><!-- .poster-content -->
+
+</div><!-- .poster -->
