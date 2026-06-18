@@ -6,28 +6,49 @@ SQSP.functions.initPage = function() {
         //console.log('Page Episode loaded');
     });
 
-    // Related clip grids. Wrapped in try/catch so that a missing dependency,
-    // an empty grid, or any error in here can NEVER abort page init. This used
-    // to run before the play button was bound, so a grid error left the
-    // "Play full episode" button dead (it only appended "#" to the URL).
-    try {
+    // Related clip grids. Deferred to the window 'load' event so that:
+    //   1) it runs past the early init race that previously left the grids
+    //      uninitialised on a normal page load, and
+    //   2) isotope/masonry lays out AFTER the clip images have real dimensions
+    //      (running it earlier collapses the grid to height:0 / empty).
+    // Still wrapped in try/catch so a grid error can never break the page, and
+    // guarded so it only runs once per page init. Empirically verified: running
+    // the same init post-load renders the grid correctly (full height, all tiles).
+    var relatedGridsDone = false;
+    function initRelatedGrids() {
+        if (relatedGridsDone) return;
+        relatedGridsDone = true;
+        try {
 
-        var $relatedGrid = jQuery('.related-clips-gallery');
-        SQSP.instances.relatedClipsGrid = new ClipGrid($relatedGrid, {
-            sizes : ['small'],
-            payload : $relatedGrid.data('payload'),
-            loadMoreCTA: $relatedGrid.parents('section').find('.load-more-cta')
-        });
+            var $relatedGrid = jQuery('.related-clips-gallery');
+            if ($relatedGrid.length) {
+                SQSP.instances.relatedClipsGrid = new ClipGrid($relatedGrid, {
+                    sizes : ['small'],
+                    payload : $relatedGrid.data('payload'),
+                    loadMoreCTA: $relatedGrid.parents('section').find('.load-more-cta')
+                });
+            }
 
-        var $catGrid = jQuery('.related-clips-categories-gallery');
-        SQSP.instances.relatedClipsCategoriesGrid = new ClipGrid($catGrid, {
-            sizes : ['medium'],
-            payload : $catGrid.data('payload'),
-            //distributeSizes : [1,1,0,0,0]
-        });
+            var $catGrid = jQuery('.related-clips-categories-gallery');
+            if ($catGrid.length) {
+                SQSP.instances.relatedClipsCategoriesGrid = new ClipGrid($catGrid, {
+                    sizes : ['medium'],
+                    payload : $catGrid.data('payload')
+                    //distributeSizes : [1,1,0,0,0]
+                });
+            }
 
-    } catch (err) {
-        if (window.console) console.error('Related clip grids failed to init:', err);
+        } catch (err) {
+            if (window.console) console.error('Related clip grids failed to init:', err);
+        }
+    }// initRelatedGrids
+
+    // If the page has already finished loading (e.g. SPA-style transition),
+    // run on the next tick; otherwise wait for the window load event.
+    if (document.readyState === 'complete') {
+        setTimeout(initRelatedGrids, 0);
+    } else {
+        jQuery(window).on('load', initRelatedGrids);
     }
 
 };// initPage
