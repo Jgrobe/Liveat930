@@ -6,52 +6,50 @@ SQSP.functions.initPage = function() {
         //console.log('Page Episode loaded');
     });
 
-    // Related clip grids. Deferred to the window 'load' event so that:
-    //   1) it runs past the early init race that previously left the grids
-    //      uninitialised on a normal page load, and
-    //   2) isotope/masonry lays out AFTER the clip images have real dimensions
-    //      (running it earlier collapses the grid to height:0 / empty).
-    // Still wrapped in try/catch so a grid error can never break the page, and
-    // guarded so it only runs once per page init. Empirically verified: running
-    // the same init post-load renders the grid correctly (full height, all tiles).
-    var relatedGridsDone = false;
-    function initRelatedGrids() {
-        if (relatedGridsDone) return;
-        relatedGridsDone = true;
-        try {
-
-            var $relatedGrid = jQuery('.related-clips-gallery');
-            if ($relatedGrid.length) {
-                SQSP.instances.relatedClipsGrid = new ClipGrid($relatedGrid, {
-                    sizes : ['small'],
-                    payload : $relatedGrid.data('payload'),
-                    loadMoreCTA: $relatedGrid.parents('section').find('.load-more-cta')
-                });
-            }
-
-            var $catGrid = jQuery('.related-clips-categories-gallery');
-            if ($catGrid.length) {
-                SQSP.instances.relatedClipsCategoriesGrid = new ClipGrid($catGrid, {
-                    sizes : ['medium'],
-                    payload : $catGrid.data('payload')
-                    //distributeSizes : [1,1,0,0,0]
-                });
-            }
-
-        } catch (err) {
-            if (window.console) console.error('Related clip grids failed to init:', err);
-        }
-    }// initRelatedGrids
-
-    // If the page has already finished loading (e.g. SPA-style transition),
-    // run on the next tick; otherwise wait for the window load event.
-    if (document.readyState === 'complete') {
-        setTimeout(initRelatedGrids, 0);
-    } else {
-        jQuery(window).on('load', initRelatedGrids);
-    }
-
 };// initPage
+
+
+// --- Related clip grids ------------------------------------------------------
+// Self-triggered on the window 'load' event, and deliberately NOT run from
+// SQSP.functions.initPage: on episode pages ui.js calls initPage() *before*
+// this file has defined it (script-order bug), so initPage never actually runs
+// here. Registering our own window-load handler -- the same self-registering
+// pattern that makes the play button reliable -- guarantees the grids initialise.
+// Deferring to 'load' also ensures isotope/masonry lays out after the clip
+// images have real dimensions (running earlier collapses the grid to height:0).
+// Guarded to run once; wrapped in try/catch so it can never break the page.
+var relatedGridsDone = false;
+function initRelatedGrids() {
+    if (relatedGridsDone) return;
+    relatedGridsDone = true;
+    try {
+
+        var $relatedGrid = jQuery('.related-clips-gallery');
+        if ($relatedGrid.length) {
+            SQSP.instances.relatedClipsGrid = new ClipGrid($relatedGrid, {
+                sizes : ['small'],
+                payload : $relatedGrid.data('payload'),
+                loadMoreCTA: $relatedGrid.parents('section').find('.load-more-cta')
+            });
+        }
+
+        var $catGrid = jQuery('.related-clips-categories-gallery');
+        if ($catGrid.length) {
+            SQSP.instances.relatedClipsCategoriesGrid = new ClipGrid($catGrid, {
+                sizes : ['medium'],
+                payload : $catGrid.data('payload')
+                //distributeSizes : [1,1,0,0,0]
+            });
+        }
+
+    } catch (err) {
+        if (window.console) console.error('Related clip grids failed to init:', err);
+    }
+}// initRelatedGrids
+
+jQuery(window).on('load', initRelatedGrids);
+// Fallback: if the load event already fired by the time this runs, init next tick.
+if (document.readyState === 'complete') setTimeout(initRelatedGrids, 0);
 
 
 // --- Episode player controls -------------------------------------------------
